@@ -1,5 +1,23 @@
+---
+branches:
+    only:
+    - master
+# if your page is user/ organization page, enable source branch and disable master branch build
+#   - source
 language: ruby
 rvm:
-  - 2.0.0
   - 1.9.3
-script: bundle exec rake install; bundle exec rake generate
+before_script:
+- git config --global user.name "Hoat Le"
+- git config --global user.email "hoatlevan@gmail.com"
+- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+- rake setup_github_pages[$REPO_URL]
+# To reset the 'url' to the custom domain in '_config.yml'
+- git checkout -- _config.yml
+script: bundle exec rake generate
+after_script:
+- bundle exec rake deploy
+env:
+    global:
+    - GH_REPO="teracy-official/teracy-official-blog"
+    - secure: "E0jQ6t7eYy5gp1xM+u7qfpoUnABfV93kOE1wsrzCFZQAzidHsg2rejXGxQZlwskFp9ic7ZuFPgJ6ESz0ezH47F/QST5E9U21qnbh/jSAaEbQjSoV/h1OEBvvyNbwP4p6qhSoFWfV670Ec9qF9YpZSy/QTXTYH6RLIXcjYboHFSI="
