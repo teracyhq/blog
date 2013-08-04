@@ -154,7 +154,7 @@ Pro Tip: You can add it automatically by running with --add.
 ```
 
 2.4. Configure `.travis.yml` like I did at
-https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c
+https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1
 
 You need to replace these with yours accordingly:
 
@@ -168,12 +168,60 @@ If you setup blog as user/ organization page, you need to enable `source` branch
 like mine.
 
 2.5. Configure `Rakefile` like I did at
-https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c
+https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2
 
 
 3\. Finally, enable travis-ci build for your project.
 
-Your blog should be running well now, happy blogging!
+You should make a post, `push` the change to see how travis-ci works.
+Your blog should be running well now.
+
+Custom `github` pages
+---------------------
+
+There are two types of github pages: user/ organization pages and project pages.
+
+You should only use user/ organization pages with root domain only, don't use it with sub domain.
+
+Before, we set up `blog.teracy.com` to map with the organization page at `teracy-official.github.io`
+repository. We could get what we want by:
+
+- adding CNAME `blog.teracy.com` with alias `teracy-official.github.io` via DNS manager (cloudflare)
+- adding CNAME file with 'blog.teracy.com' content to `teracy-official.github.io/tree/master/CNAME`
+
+However, by default, this domain will be used for all other project pages if you don't specify
+your projects sub domains.
+
+For example, by setting up like above, we have `teracy-dev` project with `gh-pages` branch.
+
+When we access `teracy-official.github.io/teracy-dev`, it will be redirected to
+`blog.teracy.com/teracy-dev` by github custom domain mechanism, and this was not what we expected.
+We don't think you would, too.
+
+That's the reason why we moved the organization page to project page and it works well now, it gives
+us much more flexibility.
+
+We want `teracy-dev` project page should be served by
+http://teracy-dev.teracy.org, it's so easy just configure CNAME and add CNAME file to `gh-pages`
+branch like with the blog configuration above:
+
+- add CNAME `teracy-dev.teracy.org` with alias `teracy-official.github.io`
+- add CNAME file with 'teracy-dev.teracy.org' content to `teracy-dev/tree/gh-pages/CNAME`
+
+There is a minor problem though:
+`teracy-official.github.io/teracy-dev` will not automatically redirected to
+http://teracy-dev.teracy.org.
+
+If we configure the root domain http://teracy.org to map with `teracy-official.github.io` page,
+the link `teracy-official.github.io/teracy-dev` will be redirected to
+`teracy.org/teracy-dev` by github custom domain mechanism. This is somehow better to use all
+your custom domains.
+
+We're figuring out if we could make `teracy-official.github.io/teracy-dev` will be redirected
+to http://teracy-dev.teracy.org. Do you know how? Please let us know by commenting.
+
+If you find this post useful to setup your blog or there is anything missing here, please let me
+know by commenting, too.
 
 Many thanks to:
 
@@ -182,6 +230,8 @@ deployment work.
 
 - http://www.harimenon.com/blog/2013/01/27/auto-deploying-to-my-octopress-blog/ for twitter button
 fixing.
+
+Happy blogging!
 
 [teracy-dev]: https://github.com/teracy-official/teracy-dev "teracy-dev"
 [octopress]: http://octopress.org "octopress"
