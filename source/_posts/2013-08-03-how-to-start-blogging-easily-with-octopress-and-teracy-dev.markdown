@@ -176,14 +176,14 @@ https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665
 You should make a post, `push` the change to see how travis-ci works.
 Your blog should be running well now.
 
-Custom `github` pages
----------------------
+Github custom domain
+--------------------
 
 There are two types of github pages: user/ organization pages and project pages.
 
 You should only use user/ organization pages with root domain only, don't use it with sub domain.
 
-Before, we set up `blog.teracy.com` to map with the organization page at `teracy-official.github.io`
+Before, we set up `blog.teracy.com` to map to the organization page at `teracy-official.github.io`
 repository. We could get what we want by:
 
 - adding CNAME `blog.teracy.com` with alias `teracy-official.github.io` via DNS manager (cloudflare)
@@ -212,7 +212,7 @@ There is a minor problem though:
 `teracy-official.github.io/teracy-dev` will not automatically redirected to
 http://teracy-dev.teracy.org.
 
-If we configure the root domain http://teracy.org to map with `teracy-official.github.io` page,
+If we configure the root domain http://teracy.org to map to `teracy-official.github.io` page,
 the link `teracy-official.github.io/teracy-dev` will be redirected to
 `teracy.org/teracy-dev` by github custom domain mechanism. This is somehow better to use all
 your custom domains.
