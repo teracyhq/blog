@@ -2,9 +2,13 @@
 layout: post
 title: "How to start blogging easily with octopress and teracy-dev"
 author: hoatle
-date: 2013-08-03 10:43
+date: "2013-08-03 10:43"
 comments: true
-categories: [how-to, octopress, teracy-dev]
+categories: 
+  - "how-to"
+  - octopress
+  - "teracy-dev"
+published: true
 ---
 
 This post will guide you to start blogging with [teracy-dev][] and [octopress][] like we did with
@@ -203,7 +207,7 @@ us much more flexibility.
 
 We want `teracy-dev` project page should be served by
 http://teracy-dev.teracy.org, it's so easy just configure CNAME and add CNAME file to `gh-pages`
-branch like with the blog configuration above:
+branch like I did with the blog configuration above:
 
 - add CNAME `teracy-dev.teracy.org` with alias `teracy-official.github.io`
 - add CNAME file with 'teracy-dev.teracy.org' content to `teracy-dev/tree/gh-pages/CNAME`
