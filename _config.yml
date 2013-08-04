@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://teracy-official.github.io/teracy-official-blog
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://blog.teracy.com
+title: Teracy's Official Blog
+subtitle: Get experience shared!
+author: Teracy
 simple_search: http://google.com/search
-description:
+description: Teracy's official blog to share our development experience
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /teracy-official-blog/atom.xml
+subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
@@ -26,13 +26,13 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /teracy-official-blog
-permalink: /blog/:year/:month/:day/:title/
+root: /
+permalink: /:year/:month/:day/:title/
 source: source
-destination: public/teracy-official-blog
+destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: categories
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -41,8 +41,8 @@ rdiscount:
     - smart
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+paginate: 3          # Posts per page on the blog index
+pagination_dir:  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
@@ -63,17 +63,17 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: teracy-official
+github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: teracy_official
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -90,11 +90,11 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: teracy-blog
+disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-42868657-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
