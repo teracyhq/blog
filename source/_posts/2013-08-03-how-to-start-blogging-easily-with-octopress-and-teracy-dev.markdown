@@ -8,7 +8,7 @@ categories: [how-to, octopress, teracy-dev]
 ---
 
 This post will guide you to start blogging with [teracy-dev][] and [octopress][] like we did with
-our blog at https://github.com/teracy-official/teracy-official.github.io with these outstanding
+our blog at https://github.com/teracy-official/teracy-official-blog with these outstanding
 advantages:
 
 - use `octopress` blogging framework
@@ -16,7 +16,7 @@ advantages:
 - could start blogging with any operating systems
 
 - have automatic deployment via travis-ci everytime you update the blog source like our at
-https://travis-ci.org/teracy-official/teracy-official.github.io
+https://travis-ci.org/teracy-official/teracy-official-blog
 
 <!-- more -->
 
@@ -78,7 +78,8 @@ deploy with *Github Pages*.
 
 5. Preview
 
-**Note**: To `preview` with ``$ rake preview`` you should enable forwarded-port on the VM.
+**Note**: To `preview` with ``$ rake preview`` you should enable forwarded-port on the VM mentioned
+above.
 
 `$ rake preview` and open your browser at: http://localhost:4000 to preview the `octopress` blog.
 
@@ -152,8 +153,8 @@ Please add the following to your .travis.yml file:
 Pro Tip: You can add it automatically by running with --add.
 ```
 
-2.4. Replace `.travis.yml` file with the one from
-https://github.com/teracy-official/teracy-official.github.io/blob/source/.travis.yml
+2.4. Configure `.travis.yml` like I did at
+https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c
 
 You need to replace these with yours accordingly:
 
@@ -163,27 +164,12 @@ You need to replace these with yours accordingly:
     - GH_REPO="teracy-official/teracy-official.github.io"
     - secure: "f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY="
 
-2.5. Replace `Rakefile` file with the one from
-https://github.com/teracy-official/teracy-official.github.io/blob/source/Rakefile
+If you setup blog as user/ organization page, you need to enable `source` branch instead of `master`
+like mine.
 
-You could see the noticed changes like below (`-` means deleted, `+` means added), you could see it
-more clearly with `git diff`:
+2.5. Configure `Rakefile` like I did at
+https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c
 
-    -    message = "Site updated at #{Time.now.utc}"
-    +    message = "Site updated at #{Time.now.utc}\n\n[ci skip]"
-
-    -    system "git push origin #{deploy_branch}"
-    +    system "git push origin #{deploy_branch} --force --quiet" #hide github token
-
-
-    -    user = repo_url.match(/:([^\/]+)/)[1]
-    +    user = repo_url.match(/[\/:]([^\/]+)\/[^\/]+$/)[1]
-
-    -    puts "Added remote #{repo_url} as origin"
-    +    puts "Added remote as origin" # don't put repo_url in travis-ci as it may contains token
-
-    -    system "git commit -m \"Octopress init\""
-    +    system "git commit -m \"Octopress init\n\n[ci skip]\""
 
 3\. Finally, enable travis-ci build for your project.
 
