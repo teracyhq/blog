@@ -33,7 +33,7 @@ That is the reason why we created [octopress-facebook-like-box] that meets our r
 To install and configure the plugin, please see instruction from README.md at
 https://github.com/hoatle/octopress-facebook-like-box
 
-The detailed steps carried out for this blog:
+These are the detailed steps carried out for this blog:
 
 - Merging: https://github.com/teracy-official/teracy-official-blog/commit/8f0da04d6366701b7c363b6792e8c74e9a9590df
 - Installing: https://github.com/teracy-official/teracy-official-blog/commit/218149037da3857a4af2bb3f9c9106ec29544206
