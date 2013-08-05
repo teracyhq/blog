@@ -214,15 +214,17 @@ branch like I did with the blog configuration above:
 
 There is a minor problem though:
 `teracy-official.github.io/teracy-dev` will not automatically redirected to
-http://teracy-dev.teracy.org.
+http://teracy-dev.teracy.org
 
 If we configure the root domain http://teracy.org to map to `teracy-official.github.io` page,
 the link `teracy-official.github.io/teracy-dev` will be redirected to
 `teracy.org/teracy-dev` by github custom domain mechanism. This is somehow better to use all
-your custom domains.
+your custom domains. With this approach, an issue is raised: it will also introduce more duplicated
+links for `teracy.org` that should be avoided, don't ever break existing links with 404 pages. Don't
+introduce new ones that you can't maintain or later you must do redirect.
 
 We're figuring out if we could make `teracy-official.github.io/teracy-dev` will be redirected
-to http://teracy-dev.teracy.org. Do you know how? Please let us know by commenting.
+to http://teracy-dev.teracy.org Do you know how? Please let us know by commenting.
 
 If you find this post useful to setup your blog or there is anything missing here, please let me
 know by commenting, too.
