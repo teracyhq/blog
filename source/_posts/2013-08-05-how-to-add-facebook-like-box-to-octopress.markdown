@@ -33,7 +33,13 @@ That is the reason why we created [octopress-facebook-like-box] that meets our r
 To install and configure the plugin, please see instruction from README.md at
 https://github.com/hoatle/octopress-facebook-like-box
 
-If you haven't tried `octopress` yet, we had a guide for to to get started with so much fun and ease
+The detailed steps carried out for this blog:
+
+- Merging: https://github.com/teracy-official/teracy-official-blog/commit/8f0da04d6366701b7c363b6792e8c74e9a9590df
+- Installing: https://github.com/teracy-official/teracy-official-blog/commit/218149037da3857a4af2bb3f9c9106ec29544206
+- Configuring: https://github.com/teracy-official/teracy-official-blog/commit/c4aadab5f7f035bc4604406b2a8686430f3d4989
+
+If you haven't tried `octopress` yet, we had a guide for you to get started with so much fun and ease
 at: http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/
 
 If you want to improve anything, please let us know by commenting on this post or create a new issue
