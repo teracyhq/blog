@@ -18,6 +18,8 @@ There is an existing plugin at https://github.com/geetotes/octopress-facebook-li
 https://github.com/imathis/octopress/wiki/3rd-party-plugins that does the work, however, we don't
 think that plugin approach meets our requirements from our [development philosophy][].
 
+<!-- more -->
+
 - We want to adhere with existing octopress conventions of plugins management
 - We want to avoid manual configuration
 - We want to avoid any conflict as much as possible
