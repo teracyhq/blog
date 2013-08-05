@@ -4,10 +4,10 @@ title: "How to start blogging easily with octopress and teracy-dev"
 author: hoatle
 date: "2013-08-03 10:43"
 comments: true
-categories: 
-  - "how-to"
-  - octopress
-  - "teracy-dev"
+categories:
+    - "how-to"
+    - "octopress"
+    - "teracy-dev"
 published: true
 ---
 
