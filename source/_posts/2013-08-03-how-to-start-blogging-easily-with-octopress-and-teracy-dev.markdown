@@ -224,7 +224,8 @@ links for `teracy.org` that should be avoided, don't ever break existing links w
 introduce new ones that you can't maintain or later you must do redirect.
 
 We're figuring out if we could make `teracy-official.github.io/teracy-dev` will be redirected
-to http://teracy-dev.teracy.org Do you know how? Please let us know by commenting.
+to http://teracy-dev.teracy.org Do you know how? Please let us know by commenting. The issue will be
+resolved by https://github.com/teracy-official/teracy-official-blog/issues/20
 
 If you find this post useful to setup your blog or there is anything missing here, please let me
 know by commenting, too.
