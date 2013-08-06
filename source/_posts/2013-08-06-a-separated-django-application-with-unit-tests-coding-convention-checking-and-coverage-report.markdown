@@ -10,6 +10,7 @@ categories:
     - "flake8"
     - "coverage"
     - "django-discover-runner"
+    - "teracy-html5boilerplate"
 ---
 
 Today we're going to share with you how to create a separated Django application with the following
