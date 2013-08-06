@@ -22,6 +22,8 @@ whether the application is within a Django application or a separated one.
 - must have coding convention checking for consistent style and best practices.
 - must be built by travis-ci (or other ci system).
 
+<!-- more -->
+
 And we managed to meets these requirements with [teracy-html5boilerplate][] project.
 Well, [teracy-html5boilerplate][] is just a simple Django application wrapper for
 `HTML5 Boilerplate`[^9] so that you could extend and reuse it on your Django project with much ease,
