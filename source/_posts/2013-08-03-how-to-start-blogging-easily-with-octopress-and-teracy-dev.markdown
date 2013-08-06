@@ -17,9 +17,9 @@ advantages:
 
 - use `octopress` blogging framework
 
-- could start blogging with any operating systems
+- could start blogging on any operating systems
 
-- have automatic deployment via travis-ci everytime you update the blog source like our at
+- have automatic deployment via travis-ci everytime you update the blog source like ours at
 https://travis-ci.org/teracy-official/teracy-official-blog
 
 <!-- more -->
@@ -36,7 +36,7 @@ bit of `Git` learning. Do you? :-)
 `octopress` requires `Ruby` for its runtime environment, `Git` for blog management.
 To make it dead-simple and error-prone-free to start, we're going to use `teracy-dev`.
 
-So let's begin now, this could take you a little long time for setting up, and it's worth it,
+So let's begin now, this could take you a little long time for setting up, but it's worth it,
 believe me!
 
 
@@ -50,13 +50,13 @@ preview `octopress` blog later (by removing the hash character (`#`) at the begi
 config.vm.network :forwarded_port, guest: 4000, host: 4000 # octopress preview, disabled by default
 ```
 
-Please follow the guide here at: http://teracy-official.github.io/teracy-dev/getting_started.html
+Please follow the guide here at: http://teracy-dev.teracy.org/getting_started.html
 
 
 Step 2: Install `Ruby`
 ----------------------
 
-Please follow the guide here at: http://teracy-official.github.io/teracy-dev/ruby_training.html#installation
+Please follow the guide here at: http://teracy-dev.teracy.org/ruby_training.html#installation
 
 Step 3: Setup `octopress`
 -------------------------
@@ -83,11 +83,11 @@ deploy with *Github Pages*.
 5. Preview
 
 **Note**: To `preview` with ``$ rake preview`` you should enable forwarded-port on the VM mentioned
-above.
+from step 1 above.
 
 `$ rake preview` and open your browser at: http://localhost:4000 to preview the `octopress` blog.
 
-After that, you could starting to blog and enjoy it now. However, one very cool thing is that you
+After that, you could start blogging and enjoy it now. However, one very cool thing is that you
 don't have to `$ rake generate` and then `$ rake deploy` anymore, it should be automatically
 done when you `push` updates to your github repository like we did for Teracy's official blog.
 
@@ -157,7 +157,7 @@ Please add the following to your .travis.yml file:
 Pro Tip: You can add it automatically by running with --add.
 ```
 
-2.4. Configure `.travis.yml` like I did at
+2.4. Configure `.travis.yml` like we did at
 https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1
 
 You need to replace these with yours accordingly:
@@ -169,9 +169,9 @@ You need to replace these with yours accordingly:
     - secure: "f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY="
 
 If you setup blog as user/ organization page, you need to enable `source` branch instead of `master`
-like mine.
+like ours.
 
-2.5. Configure `Rakefile` like I did at
+2.5. Configure `Rakefile` like we did at
 https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2
 
 
@@ -180,8 +180,8 @@ https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665
 You should make a post, `push` the change to see how travis-ci works.
 Your blog should be running well now.
 
-Github custom domain
---------------------
+Multiple Github custom domains
+------------------------------
 
 There are two types of github pages: user/ organization pages and project pages.
 
@@ -227,7 +227,10 @@ We're figuring out if we could make `teracy-official.github.io/teracy-dev` will 
 to http://teracy-dev.teracy.org Do you know how? Please let us know by commenting. The issue will be
 resolved by https://github.com/teracy-official/teracy-official-blog/issues/20
 
-If you find this post useful to setup your blog or there is anything missing here, please let me
+There is a workaround that you could use JavaScript location checking. However, well, it's not
+flexible enough and does not work well with search engines.
+
+If you find this post useful to setup your blog or there is anything missing here, please let us
 know by commenting, too.
 
 Many thanks to:
