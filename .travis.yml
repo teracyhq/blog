@@ -20,4 +20,4 @@ after_script:
 env:
     global:
     - GH_REPO="teracy-official/teracy-official-blog"
-    - secure: "E0jQ6t7eYy5gp1xM+u7qfpoUnABfV93kOE1wsrzCFZQAzidHsg2rejXGxQZlwskFp9ic7ZuFPgJ6ESz0ezH47F/QST5E9U21qnbh/jSAaEbQjSoV/h1OEBvvyNbwP4p6qhSoFWfV670Ec9qF9YpZSy/QTXTYH6RLIXcjYboHFSI="
+    - secure: "jraEpV7R9hwbJHH0hBH/FFU6Y38jVSh6KdDPTGCK7WOFhiCi9i8LJGKkNZZWJahQ53ZQN5mB+3axiGBtLw9Ecp5cKO+ykCnJsEu7xXSfc9bqH5aHOt7tysY88/zvcLwu7Rv+P4Cr8LtOL5MeWDrPbMdpJ/6AEJYYR5pAPABywmA="
