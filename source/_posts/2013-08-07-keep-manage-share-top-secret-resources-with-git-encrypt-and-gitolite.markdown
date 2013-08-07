@@ -25,7 +25,7 @@ Our requirements include:
 - **encryption** is a `must`
 - **backup strategy** is a `must`
 - **version control** is a `should`
-- **keep, share and manage** `easily`
+- **keep, share and manage** `easily` is a `should`
 
 "Encryption" and "version control" requirements lead us to `git-encrypt`[^1], it's not perfect but
 it works.
