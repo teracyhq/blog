@@ -10,7 +10,7 @@ categories:
     - "gitolite"
 ---
 
-Recently, we have a problem of top secret resources sharing that we need to resolve. Let's me start
+Recently, we have a problem of top secret resources sharing that we need to resolve. Let me start
 by a story.
 
 As a startup of 2 co-founders, we have common top secret resources to be shared with each other.
