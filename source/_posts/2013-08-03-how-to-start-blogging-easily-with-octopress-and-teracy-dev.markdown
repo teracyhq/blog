@@ -174,6 +174,8 @@ like ours.
 2.5. Configure `Rakefile` like we did at
 https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2
 
+And this [hot-fix]: https://github.com/teracy-official/teracy-official-blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1
+
 
 3\. Finally, enable travis-ci build for your project.
 
