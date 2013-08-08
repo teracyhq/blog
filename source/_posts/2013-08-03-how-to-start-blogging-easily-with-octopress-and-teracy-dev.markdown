@@ -182,58 +182,8 @@ And this [hot-fix]: https://github.com/teracy-official/teracy-official-blog/comm
 You should make a post, `push` the change to see how travis-ci works.
 Your blog should be running well now.
 
-Multiple Github custom domains
-------------------------------
-
-There are two types of github pages: user/ organization pages and project pages.
-
-You should only use user/ organization pages with root domain only, don't use it with sub domain.
-
-Before, we set up `blog.teracy.com` to map to the organization page at `teracy-official.github.io`
-repository. We could get what we want by:
-
-- adding CNAME `blog.teracy.com` with alias `teracy-official.github.io` via DNS manager (cloudflare)
-- adding CNAME file with 'blog.teracy.com' content to `teracy-official.github.io/tree/master/CNAME`
-
-However, by default, this domain will be used for all other project pages if you don't specify
-your projects sub domains.
-
-For example, by setting up like above, we have `teracy-dev` project with `gh-pages` branch.
-
-When we access `teracy-official.github.io/teracy-dev`, it will be redirected to
-`blog.teracy.com/teracy-dev` by github custom domain mechanism, and this was not what we expected.
-We don't think you would, too.
-
-That's the reason why we moved the organization page to project page and it works well now, it gives
-us much more flexibility.
-
-We want `teracy-dev` project page should be served by
-http://teracy-dev.teracy.org, it's so easy just configure CNAME and add CNAME file to `gh-pages`
-branch like I did with the blog configuration above:
-
-- add CNAME `teracy-dev.teracy.org` with alias `teracy-official.github.io`
-- add CNAME file with 'teracy-dev.teracy.org' content to `teracy-dev/tree/gh-pages/CNAME`
-
-There is a minor problem though:
-`teracy-official.github.io/teracy-dev` will not automatically redirected to
-http://teracy-dev.teracy.org
-
-If we configure the root domain http://teracy.org to map to `teracy-official.github.io` page,
-the link `teracy-official.github.io/teracy-dev` will be redirected to
-`teracy.org/teracy-dev` by github custom domain mechanism. This is somehow better to use all
-your custom domains. With this approach, an issue is raised: it will also introduce more duplicated
-links for `teracy.org` that should be avoided, don't ever break existing links with 404 pages. Don't
-introduce new ones that you can't maintain or later you must do redirect.
-
-We're figuring out if we could make `teracy-official.github.io/teracy-dev` will be redirected
-to http://teracy-dev.teracy.org Do you know how? Please let us know by commenting. The issue will be
-resolved by https://github.com/teracy-official/teracy-official-blog/issues/20
-
-There is a workaround that you could use JavaScript location checking. However, well, it's not
-flexible enough and does not work well with search engines.
-
-If you find this post useful to setup your blog or there is anything missing here, please let us
-know by commenting, too.
+If you want to use Github custom domains, please head to:
+http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/
 
 Many thanks to:
 
