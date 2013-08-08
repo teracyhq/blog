@@ -6,6 +6,8 @@ date: 2013-08-06 10:48
 comments: true
 categories:
     - "how-to"
+    - "projects"
+tags:
     - "Django"
     - "flake8"
     - "coverage"
