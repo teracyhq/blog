@@ -1,6 +1,6 @@
 {% capture tag %}{% if post %}{{ post.tags | tag_links | size }}{% else %}{{ page.tags | tag_links | size }}{% endif %}{% endcapture %}
 {% unless tag == '0' %}
-<span class="tags">
+<span class="tags">tagged with
   {% if post %}
     {{ post.tags | tag_links }}
   {% else %}
