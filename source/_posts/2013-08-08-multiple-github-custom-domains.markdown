@@ -64,7 +64,8 @@ should be avoided.
 There is a workaround that you could use JavaScript location checking. However, well, it's not
 flexible enough and does not work well with search engines.
 
-So we decided to have a router on `teracy.org` by using `nginx`.
+So we decided to have a router on `teracy.org` by using `nginx`. 
+
 
 2. Solution with `nginx` server
 -------------------------------
@@ -100,10 +101,25 @@ The detailed requirements are at: https://github.com/teracy-official/teracy-offi
 2.2. How to setup and configure `nginx` server
 
 With the above requirement rules, this is how to configure our `nginx` server.
+Create new nginx host file at /etc/nginx/sites-available/teracy.org and symlink it to /etc/nginx/sites-enable/teracy.org with content below
+```
+server {
+  listen 80;
+  server_name teracy.org;
 
-**//TODO phuonglm: focus on rules**
+  location / {
+  	# redirect to teracy-dev.teracy.org if match below regex
+    rewrite  ^/teracy-dev(/.*)?$  http://teracy-dev.teracy.org$1  break; 
 
+    # redirect to blog.teracy.com if match below regex
+    rewrite  ^/teracy-official-blog(/.*)?$  http://blog.teracy.com$1  break;
+    
+	# Otherwise redirect to blog.teracy.com
+    rewrite  ^/(.*)$  http://blog.teracy.com/$1  break;
+  }
+}
+```
 That's it. Have a nice day and happy hacking!
-
+P/S: Sure that you can you can have many other solution like Apache + Modrewrite,... but with us nginx is the more lightweight, simple and flexible enough. We also use Nginx to proxy and protect many other HTTP(S) resources in our project.
 [^1]: https://help.github.com/articles/user-organization-and-project-pages
 [^2]: https://help.github.com/articles/setting-up-a-custom-domain-with-pages
