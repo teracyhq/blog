@@ -67,6 +67,7 @@ github_user: teracy-official
 github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
+github_skip_repos: ['teracy-official-blog', 'teracy-official.github.io', 'teracy', 'teracy-tutorial']
 
 # Twitter
 twitter_user: teracy_official
