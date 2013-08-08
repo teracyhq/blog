@@ -64,7 +64,7 @@ should be avoided.
 There is a workaround that you could use JavaScript location checking. However, well, it's not
 flexible enough and does not work well with search engines.
 
-So we decided to have a router on `teracy.org` by using `nginx`. 
+So we decided to have a router on `teracy.org` by using `nginx`.
 
 
 2. Solution with `nginx` server
@@ -96,30 +96,43 @@ teracy-official.github.io/2013/08/02/teracy-hello-world/ -> blog.teracy.com/2013
 teracy-official.github.io/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/ -> blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/
 ```
 
+
 The detailed requirements are at: https://github.com/teracy-official/teracy-official-blog/issues/20
 
 2.2. How to setup and configure `nginx` server
 
 With the above requirement rules, this is how to configure our `nginx` server.
-Create new nginx host file at /etc/nginx/sites-available/teracy.org and symlink it to /etc/nginx/sites-enable/teracy.org with content below
+
+Create a new nginx host file at `/etc/nginx/sites-available/teracy.org` and symlink it to
+`/etc/nginx/sites-enable/teracy.org` with the content as below:
+
 ```
 server {
   listen 80;
   server_name teracy.org;
 
   location / {
-  	# redirect to teracy-dev.teracy.org if match below regex
-    rewrite  ^/teracy-dev(/.*)?$  http://teracy-dev.teracy.org$1  break; 
+    # redirect to teracy-dev.teracy.org if match below regex
+    rewrite  ^/teracy-dev(/.*)?$  http://teracy-dev.teracy.org$1  break;
 
     # redirect to blog.teracy.com if match below regex
     rewrite  ^/teracy-official-blog(/.*)?$  http://blog.teracy.com$1  break;
-    
-	# Otherwise redirect to blog.teracy.com
+
+    # Otherwise redirect to blog.teracy.com
     rewrite  ^/(.*)$  http://blog.teracy.com/$1  break;
   }
 }
 ```
+
+Just by applying rules from `HttpRewriteModule` [^3], we could solve the problems easily.
+
+
 That's it. Have a nice day and happy hacking!
-P/S: Sure that you can you can have many other solution like Apache + Modrewrite,... but with us nginx is the more lightweight, simple and flexible enough. We also use Nginx to proxy and protect many other HTTP(S) resources in our project.
+
+P/S: Sure that you can have many other solutions like Apache + Modrewrite, etc., but to us, `nginx`
+is more lightweight, simpler and flexible enough. We also use `nginx` to proxy and protect many
+other HTTP(S) resources for our projects.
+
 [^1]: https://help.github.com/articles/user-organization-and-project-pages
 [^2]: https://help.github.com/articles/setting-up-a-custom-domain-with-pages
+[^3]: http://wiki.nginx.org/HttpRewriteModule
