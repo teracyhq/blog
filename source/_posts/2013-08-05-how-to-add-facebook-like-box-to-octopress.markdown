@@ -6,6 +6,8 @@ date: 2013-08-05 02:48
 comments: true
 categories:
     - "how-to"
+    - "projects"
+tags:
     - "octopress-facebook-like-box"
     - "octopress"
 published: true

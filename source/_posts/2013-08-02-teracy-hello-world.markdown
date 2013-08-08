@@ -4,7 +4,7 @@ title: 'Teracy: "Hello World!"'
 author: hoatle
 date: 2013-08-02 18:07
 comments: true
-categories: teracy
+categories: news
 ---
 
 Hi, this is our official blog and this is the first post to say "hello" to the world.

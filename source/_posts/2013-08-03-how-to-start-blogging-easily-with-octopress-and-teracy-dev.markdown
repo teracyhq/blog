@@ -6,6 +6,8 @@ date: "2013-08-03 10:43"
 comments: true
 categories:
     - "how-to"
+    - "projects"
+tags:
     - "octopress"
     - "teracy-dev"
 published: true

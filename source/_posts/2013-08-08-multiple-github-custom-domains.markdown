@@ -6,6 +6,9 @@ date: 2013-08-8 00:00
 comments: true
 categories:
     - "how-to"
+tags:
+    - "github"
+    - "nginx"
 ---
 
 Today we're going to share with you the way how to use multiple github custom domains with our
