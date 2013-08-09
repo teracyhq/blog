@@ -6,6 +6,7 @@ date: 2013-08-07 00:00
 comments: true
 categories:
     - "how-to"
+    - "devops"
 tags:
     - "git-encrypt"
     - "gitolite"
