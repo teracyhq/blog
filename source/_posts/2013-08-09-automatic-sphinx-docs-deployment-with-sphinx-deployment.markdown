@@ -45,7 +45,7 @@ https://travis-ci.org/teracy-official/teracy-dev as an example.
 
 There are many things that we need to do, please help use to shape the project's future by
 contributing with `forking`, `hacking` and `pull requests` or giving your ideas. Your contributions
-are all welcome.
+are all welcome. Please head to the development branch at https://github.com/hoatle/sphinx-deployment/tree/develop
 
 Have a nice day and happy hacking!
 
