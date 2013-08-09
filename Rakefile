@@ -115,6 +115,22 @@ task :new_post, :title do |t, args|
     post.puts "    - "
     post.puts "published: true"
     post.puts "---"
+    # teracy: add blog post structure guide
+    post.puts ""
+    post.puts "The hook part: short text to get readers' interest so that they will continue reading"
+    post.puts ""
+    post.puts "Problem"
+    post.puts "-------"
+    post.puts ""
+    post.puts "Requirements"
+    post.puts "------------"
+    post.puts ""
+    post.puts "Solution"
+    post.puts "--------"
+    post.puts ""
+    post.puts "Summary"
+    post.puts "-------"
+
   end
 end
 
