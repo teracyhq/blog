@@ -11,7 +11,7 @@ tags:
     - "nginx"
 ---
 
-Today we're going to share with you the way how to use multiple github custom domains with our
+Today we're going to share with you the way to use multiple github custom domains as we did with our
 `teracy-official` organization account.
 
 As we know, there are two types of github pages: user/ organization pages and project pages [^1].
