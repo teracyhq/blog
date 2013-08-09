@@ -64,11 +64,13 @@ Please follow the guide here at: http://dev.teracy.org/ruby_training.html#instal
 Step 3: Setup `octopress`
 -------------------------
 
-1. Note that `Git` and `Ruby` was already installed on the VM.
+**Note**:
 
-2. You need to make sure to register a Github account at https://github.com/
+- `Git` and `Ruby` was already installed on the VM.
 
-3. [**Important**] You must store your repository at `teracy-dev/workspace/personal` directory or you could
+- You need to make sure to register a Github account at https://github.com/
+
+- You must store your repository at `teracy-dev/workspace/personal` directory or you could
 possibly loose it when `$ vagrant destroy`. For example, to clone `octopress` repository:
 
 ``` bash
@@ -80,10 +82,12 @@ $ git clone git://github.com/imathis/octopress.git octopress
 `$ ws` is an alias provided by `teracy-dev` to change directory to `workspace` directory where all
 your work must be kept there.
 
-4. Please follow the official guide here at: http://octopress.org/docs/setup/ and make sure to
-deploy with *Github Pages*.
+**1. Setup**
 
-5. Preview
+Please follow the official guide here at: http://octopress.org/docs/setup/ and make sure
+to deploy with *Github Pages*.
+
+**2. Preview**
 
 **Note**: To `preview` with ``$ rake preview`` you should enable forwarded-port on the VM mentioned
 from step 1 above.
@@ -97,9 +101,9 @@ done when you `push` updates to your github repository like we did for Teracy's 
 Step 4: Automatic deployment with travis-ci
 -------------------------------------------
 
-1. You need to register travis-ci account at: http://travis-ci.org
+**1. Register travis-ci account at:** http://travis-ci.org
 
-2. Configure your project build
+**2. Configure your project build**
 
 2.1. Install `curl` with:
 
@@ -143,7 +147,7 @@ $ gem install travis
 $ rbenv rehash
 ```
 
-2.3. Generate "secure" key from your provided token, mine is something like:
+2.4. Generate "secure" key from your provided token, mine is something like:
 
 ``` bash
 $ travis encrypt GH_TOKEN=1cbbaf4dd0b82c54006377b233ee528612345678
@@ -160,7 +164,7 @@ Please add the following to your .travis.yml file:
 Pro Tip: You can add it automatically by running with --add.
 ```
 
-2.4. Configure `.travis.yml` like we did at
+2.5. Configure `.travis.yml` like we did at
 https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1
 
 You need to replace these with yours accordingly:
@@ -174,13 +178,12 @@ You need to replace these with yours accordingly:
 If you setup blog as user/ organization page, you need to enable `source` branch instead of `master`
 like ours.
 
-2.5. Configure `Rakefile` like we did at
+2.6. Configure `Rakefile` like we did at
 https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2
 
 And this [hot-fix]: https://github.com/teracy-official/teracy-official-blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1
 
-
-3\. Finally, enable travis-ci build for your project.
+**3. Finally, enable travis-ci build for your project**
 
 You should make a post, `push` the change to see how travis-ci works.
 Your blog should be running well now.
