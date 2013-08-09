@@ -10,6 +10,7 @@ categories:
 tags:
     - "octopress"
     - "teracy-dev"
+    - "travis-ci"
 published: true
 ---
 
@@ -52,13 +53,13 @@ preview `octopress` blog later (by removing the hash character (`#`) at the begi
 config.vm.network :forwarded_port, guest: 4000, host: 4000 # octopress preview, disabled by default
 ```
 
-Please follow the guide here at: http://teracy-dev.teracy.org/getting_started.html
+Please follow the guide here at: http://dev.teracy.org/getting_started.html
 
 
 Step 2: Install `Ruby`
 ----------------------
 
-Please follow the guide here at: http://teracy-dev.teracy.org/ruby_training.html#installation
+Please follow the guide here at: http://dev.teracy.org/ruby_training.html#installation
 
 Step 3: Setup `octopress`
 -------------------------
@@ -87,7 +88,7 @@ deploy with *Github Pages*.
 **Note**: To `preview` with ``$ rake preview`` you should enable forwarded-port on the VM mentioned
 from step 1 above.
 
-`$ rake preview` and open your browser at: http://localhost:4000 to preview the `octopress` blog.
+`$ rake preview` and open your browser at: `http://localhost:4000` to preview the `octopress` blog.
 
 After that, you could start blogging and enjoy it now. However, one very cool thing is that you
 don't have to `$ rake generate` and then `$ rake deploy` anymore, it should be automatically

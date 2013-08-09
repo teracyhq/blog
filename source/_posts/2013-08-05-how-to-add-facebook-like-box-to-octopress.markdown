@@ -50,5 +50,5 @@ pull request, your contributions are all welcome.
 
 Happy hacking and happy blogging!
 
-[development philosophy]: http://teracy-dev.teracy.org/intro.html#join-and-work-with-us
+[development philosophy]: http://dev.teracy.org/intro.html#join-and-work-with-us
 [octopress-facebook-like-box]: https://github.com/hoatle/octopress-facebook-like-box

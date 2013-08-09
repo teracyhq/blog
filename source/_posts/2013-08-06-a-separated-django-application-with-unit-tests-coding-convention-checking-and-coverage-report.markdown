@@ -13,6 +13,11 @@ tags:
     - "coverage"
     - "django-discover-runner"
     - "teracy-html5boilerplate"
+    - "travis-ci"
+    - "pip"
+    - "setuptools"
+    - "PEP 8"
+    - "TDD"
 ---
 
 Today we're going to share with you how to create a separated Django application with the following
@@ -52,7 +57,7 @@ request just contain tests without any implementation, that's why its build stat
 https://github.com/teracy-official/teracy-html5boilerplate/pull/3
 
 All the setup work was done on the project repository, please take a look and we believe that you
-could setup yourself a similar Django application easily from this sample project.
+could setup yourself a similar `Django` application easily from this sample project.
 
 If there is anything missing that you could not setup yourself a project like this or you have a
 better approach, please let us know by commenting or forking the project, creating issues,
