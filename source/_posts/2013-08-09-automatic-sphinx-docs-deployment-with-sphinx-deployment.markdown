@@ -19,7 +19,7 @@ published: true
 
 At Teracy, all our documentations are written the the help from `sphinx`[^1]. It's easy to setup and
 manage. However, we could not find a **deployment solution** good enough for `sphinx` documentation
-project. What "good enough" here means?
+project. What does "good enough" here means? It means:
 
 - The installation and configuration should be easy with `git` and command line.
 
