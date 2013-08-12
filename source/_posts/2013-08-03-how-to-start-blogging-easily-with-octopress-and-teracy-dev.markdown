@@ -53,13 +53,13 @@ preview `octopress` blog later (by removing the hash character (`#`) at the begi
 config.vm.network :forwarded_port, guest: 4000, host: 4000 # octopress preview, disabled by default
 ```
 
-Please follow the guide here at: http://dev.teracy.org/getting_started.html
+Please follow the guide here at: http://dev.teracy.org/docs/getting_started.html
 
 
 Step 2: Install `Ruby`
 ----------------------
 
-Please follow the guide here at: http://dev.teracy.org/ruby_training.html#installation
+Please follow the guide here at: http://dev.teracy.org/docs/ruby_training.html#installation
 
 Step 3: Setup `octopress`
 -------------------------
