@@ -1,23 +1,19 @@
----
 branches:
-    only:
-    - master
-# if your page is user/ organization page, enable source branch and disable master branch build
-#   - source
+  only:
+  - master
 language: ruby
 rvm:
-  - 1.9.3
+- 1.9.3
 before_script:
 - git config --global user.name "Teracy Bot"
 - git config --global user.email "teracy.com@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 - rake setup_github_pages[$REPO_URL]
-# To reset the 'url' to the custom domain in '_config.yml'
 - git checkout -- _config.yml
 script: bundle exec rake generate
 after_script:
 - bundle exec rake deploy
 env:
-    global:
-    - GH_REPO="teracy-official/teracy-official-blog"
-    - secure: M1sAD48R1acCuGcRNRXs12FVnU8f37pw/tgu9wWJr5SrGx6lLATx5nfn3zr0MgUaAOkgnVCbLZ0L2rDU8C+91IPIRUEMTUX8ELv2sJljlSQcXOAJ4MSoQBOKYX4vRmJ4Fpn6NL2gQH66RUJMQwGDMf4Lt6MhPt5TB2HpkVSX
+  global:
+  - GH_REPO="teracy-official/teracy-official-blog"
+  - secure: mRj1SUZOC8ZFKIfk/V+tqe3kNnGWJSohNeDm4qq4e38WsPSZ24my9DsB1jHyWPAF/7JcpZzLGzQhxo31sghqEybCAjv5zERy3WsCG3zgLYw5QRCQY5yQqzBl3xht5Oi8HFbjDQ2zNVuii2j0CguKjuYmioth4noXzFSvhVQhgrA=
