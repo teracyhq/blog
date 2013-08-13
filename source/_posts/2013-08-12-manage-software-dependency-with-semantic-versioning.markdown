@@ -11,8 +11,8 @@ tags:
 published: true
 ---
 
-Do you know what it means to release your software labeled with `alpha`, `beta`, `release candicate` or
-`final release`? When and where to increase the number range? What's the difference between
+Do you know what it means to release your software labeled with `alpha`, `beta`, `release candidate`
+or `final release`? When and where to increase the number range? What's the difference between
 0.1.0, 1.0.0, 1.2.0 and 2.0.0? We're going to make it clear on this post.
 
 <!-- more -->
