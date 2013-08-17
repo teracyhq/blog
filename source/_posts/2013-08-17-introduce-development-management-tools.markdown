@@ -20,6 +20,7 @@ As we know, a development team should (at least) have:
 
 + issues management
 + source code management
++ continuous integration management
 + wiki management
 
 Well, if your team is small, `github`[^1] is good enough. However, if you have many repositories,
@@ -41,9 +42,12 @@ easily, thank you `github` :). There is no reason why we should not use both `gi
 
 `Confluence`[^5] instance for wiki management is at: https://wiki.teracy.org
 
+And many thanks to `Jenkins`[^6] for our continuous integration instance at: https://ci.teracy.org
+We'd love to use `Travis-ci`[^7], too.
+
 It took us just a few days to setup all these instances.
 
-We would like to take this opportunity to thank you very much, `GlobalSign`[^6], too, for approving
+We would like to take this opportunity to thank you very much, `GlobalSign`[^8], too, for approving
 our open source SSL certificate application.
 
 We're still migrating issues from `github` to http://issues.teracy.org and there are still many
@@ -56,4 +60,6 @@ Thanks for reading our news, have a nice weekend and and happy playing!
 [^3]: https://www.atlassian.com/software/jira
 [^4]: https://www.atlassian.com/software/stash
 [^5]: https://www.atlassian.com/software/confluence
-[^6]: https://www.globalsign.com
+[^6]: http://jenkins-ci.org
+[^7]: https://travis-ci.org
+[^8]: https://www.globalsign.com
