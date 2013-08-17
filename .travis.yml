@@ -15,5 +15,5 @@ after_script:
 - bundle exec rake deploy
 env:
   global:
-  - GH_REPO="teracy-official/teracy-official-blog"
-  - secure: mRj1SUZOC8ZFKIfk/V+tqe3kNnGWJSohNeDm4qq4e38WsPSZ24my9DsB1jHyWPAF/7JcpZzLGzQhxo31sghqEybCAjv5zERy3WsCG3zgLYw5QRCQY5yQqzBl3xht5Oi8HFbjDQ2zNVuii2j0CguKjuYmioth4noXzFSvhVQhgrA=
+  - GH_REPO="teracy-official/blog"
+  - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
