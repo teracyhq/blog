@@ -6,6 +6,7 @@ date: 2013-08-18 17:53
 comments: true
 categories:
     - "news"
+    - "projects"
 tags:
     - "sphinx-deployment"
     - "github"
