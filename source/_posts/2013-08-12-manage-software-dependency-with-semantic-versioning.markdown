@@ -47,6 +47,8 @@ From ``Python``[^4] world with ``setuptools``[^5] and ``pip``[^6] on top of ``se
 
 From ``Ruby``[^7] world with ``bundler``[^8]
 
+From ``PHP``[^9] world with ``composer``[^10]
+
 and you name it.
 
 All these kinds of dependency management tools have different kinds of version schemas, we need to
@@ -87,10 +89,12 @@ Have a nice day and happy working!
 
 
 [^1]: http://semver.org/spec/v2.0.0.html
-[^2]: http://www.java.com/
-[^3]: http://maven.apache.org/
-[^4]: http://python.org/
+[^2]: http://www.java.com
+[^3]: http://maven.apache.org
+[^4]: http://python.org
 [^5]: https://pypi.python.org/pypi/setuptools
 [^6]: https://pypi.python.org/pypi/pip
-[^7]: http://www.ruby-lang.org/
-[^8]: http://bundler.io/
+[^7]: http://www.ruby-lang.org
+[^8]: http://bundler.io
+[^9]: http://php.net
+[^10]: http://getcomposer.org
