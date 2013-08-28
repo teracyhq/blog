@@ -50,7 +50,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [custom/asides/facebook_like_box.html, asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [custom/asides/facebook_like_box.html, asides/recent_posts.html, asides/github.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -123,3 +123,23 @@ facebook_like_box_show_border: false
 # for Places, specifies whether the stream contains posts from the Place's wall or just checkins
 # from friends. Default value: false.
 facebook_like_box_force_wall:
+
+# cc license http://creativecommons.org/choose/
+
+# enable cc license, default: nil
+cc_license: true
+
+# allow mofiication of works? default: 'yes', options: 'yes', 'no' or 'share'
+cc_license_allow_modification: 'share'
+
+# allow commercial uses of your work? default: true
+cc_license_allow_commercial_uses: true
+
+# license jurisdiction? default: International //TODO(hoatle): implement cc_license_license_jurisdiction
+#cc_license_license_jurisdiction: International
+
+# add metadata? default: nil //TODO(hoatle): implement cc_license_metadata
+#cc_license_metadata:
+
+# icon styles? default: 'normal', options: 'normal' or 'compact'.
+cc_license_icon: 'normal'

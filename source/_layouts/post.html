@@ -13,6 +13,9 @@ single: true
       {% include post/categories.html %}
       {% include post/tags.html %}
     </p>
+    {% if site.cc_license %}
+      {% include post/cc_license.html %}
+    {% endif %}
     {% unless page.sharing == false %}
       {% include post/sharing.html %}
     {% endunless %}
