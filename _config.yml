@@ -143,3 +143,12 @@ cc_license_allow_commercial_uses: true
 
 # icon styles? default: 'normal', options: 'normal' or 'compact'.
 cc_license_icon: 'normal'
+
+
+# revision options
+# enable revision? true or false
+revision: true
+# associated github account
+revision_github_account: teracy-official
+# associated github repo for the blog
+revision_github_repo: blog
