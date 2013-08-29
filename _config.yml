@@ -69,9 +69,6 @@ github_show_profile_link: true
 github_skip_forks: true
 github_skip_repos: ['blog', 'teracy-dev', 'teracy-official.github.io', 'django-tutorial']
 
-# for revision plugin
-github_repo: blog
-
 # Twitter
 twitter_user: teracy_official
 twitter_tweet_button: true
