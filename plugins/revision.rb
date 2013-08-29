@@ -57,7 +57,7 @@ module Jekyll
       html = '<ul>'
       logs.each_line do |line|
         parts = line.split('|')
-        date, msg = parts[0], parts[1..-1].join
+        date, msg = parts[0], parts[1..-1].join('|')
         html << '<li><strong>' + date + '</strong><br/>' + msg + '</li>'
       end
       html << '</ul>'
