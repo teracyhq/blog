@@ -7,7 +7,9 @@ single: true
 <article class="hentry" role="article">
   {% include article.html %}
   <footer>
-    {% include post/revision.html %}
+    {% if site.revision %}
+      {% include post/revision.html %}
+    {% endif %}
     <p class="meta">
       {% include post/author.html %}
       {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}

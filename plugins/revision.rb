@@ -42,6 +42,15 @@ module Jekyll
 
       full_path = post_or_page['full_path']
 
+      if full_path == nil
+        puts '========= revision plugin::post_or_page =========='
+        puts post_or_page
+        puts "full_path is nil"
+        return ''
+      end
+
+      puts "revision plugin::full_path: " + full_path
+
       cmd = 'git log --date=local --pretty="%cd|%s" --max-count=' + @limit.to_s + ' ' + full_path
       logs = `#{cmd}`
 
@@ -53,17 +62,17 @@ module Jekyll
       end
       html << '</ul>'
 
-      if site['github_user'] != nil && site['github_repo'] != nil
+      if site['revision_github_account'] != nil && site['revision_github_repo'] != nil
         cmd = 'git rev-parse --abbrev-ref HEAD'
         # chop last '\n' of branch name
         branch = `#{cmd}`.chop
         if site['source'] != nil
           # for Octopress sites
-          link = File.join('https://github.com', site['github_user'], site['github_repo'],
+          link = File.join('https://github.com', site['revision_github_account'], site['revision_github_repo'],
                            'commits', branch, site['source'], '_posts', post_or_page['file_name'])
         else
           # for Jekyll sites
-          link = File.join('https://github.com', site['github_user'], site['github_repo'],
+          link = File.join('https://github.com', site['revision_github_account'], site['revision_github_repo'],
                            'commits', branch, '_posts', post_or_page['file_name'])
         end
         html << 'View all changes on <a href=' + link + ' target=_blank>Github</a>'
