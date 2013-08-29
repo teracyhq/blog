@@ -7,7 +7,7 @@ title: Teracy's Blog
 subtitle: Get experience shared!
 author: Teracy
 simple_search: http://google.com/search
-description: Teracy's official blog to share our development experience
+description: Teracy's official blog to share our development experience - get experience shared!
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -152,3 +152,6 @@ revision: true
 revision_github_account: teracy-official
 # associated github repo for the blog
 revision_github_repo: blog
+
+# semantic options
+cover: /images/teracy_logo.png
