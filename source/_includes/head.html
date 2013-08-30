@@ -12,7 +12,7 @@
   <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
-  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}/{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
 
   {% include custom/semantic.html %}
 
