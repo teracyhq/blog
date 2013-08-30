@@ -155,3 +155,7 @@ revision_github_repo: blog
 
 # semantic options
 cover: /images/teracy_logo.png
+
+semantic_fb_app_id: 523191011095012
+
+semantic_fb_admins: 627914300
