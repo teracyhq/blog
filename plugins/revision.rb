@@ -75,7 +75,7 @@ module Jekyll
           link = File.join('https://github.com', site['revision_github_account'], site['revision_github_repo'],
                            'commits', branch, '_posts', post_or_page['file_name'])
         end
-        html << 'View all changes on <a href=' + link + ' target=_blank>Github</a>'
+        html << '<a href=' + link + ' target=_blank>View all changes on Github</a>'
       end
 
       return html
