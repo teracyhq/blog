@@ -27,7 +27,7 @@ project. What does "good enough" here means? It means:
   better if we could have this deployment solution provided by `sphinx` out of the box.
 
 - The deployment should support as many services as possible: `github pages` [^2], `Rsync`[^3], and
-`PaaS`[^4] services like `heroku`[^5], etc,.
+`PaaS`[^4] services like `heroku`[^5], etc.
 
 - The usage should be easy like:
 
