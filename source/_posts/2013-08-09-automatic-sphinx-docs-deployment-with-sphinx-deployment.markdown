@@ -17,16 +17,17 @@ tags:
 published: true
 ---
 
-At Teracy, all our documentations are written the the help from `sphinx`[^1]. It's easy to setup and
-manage. However, we could not find a **deployment solution** good enough for `sphinx` documentation
+At Teracy, all our documentations are written with the help from `sphinx`[^1]. It's easy to setup and
+manage. However, we could not find a good enough **deployment solution** for `sphinx` documentation
 project. What does "good enough" here means? It means:
 
 - The installation and configuration should be easy with `git` and command line.
 
-- The deployment should be "decoupled" from `sphinx` project for easy upgrade and maintenance.
+- The deployment could be "decoupled" from `sphinx` project for easy upgrade and maintenance. It's
+  better if we could have this deployment solution provided by `sphinx` out of the box.
 
 - The deployment should support as many services as possible: `github pages` [^2], `Rsync`[^3], and
-`PaaS`[^4] services like `heroku`[^5], etc.
+`PaaS`[^4] services like `heroku`[^5], etc,.
 
 - The usage should be easy like:
 
@@ -41,11 +42,12 @@ We could not find a solution good enough meeting our requirements, so we created
 
 Currently, it's on very very early development stage to just
 support deployment on `github pages` automatically with `travis-ci`[^6], and
-https://travis-ci.org/teracy-official/teracy-dev as an example.
+https://travis-ci.org/teracy-official/dev as an example.
 
 There are many things that we need to do, please help use to shape the project's future by
 contributing with `forking`, `hacking` and `pull requests` or giving your ideas. Your contributions
-are all welcome. Please head to the development branch at https://github.com/hoatle/sphinx-deployment/tree/develop
+are all welcome. Please head to the development branch at
+https://github.com/teracy-official/sphinx-deployment/tree/develop
 
 Have a nice day and happy hacking!
 
@@ -55,4 +57,4 @@ Have a nice day and happy hacking!
 [^4]: http://en.wikipedia.org/wiki/Platform_as_a_service
 [^5]: http://heroku.com
 [^6]: http://travis-ci.org
-[sphinx-deployment]: https://github.com/hoatle/sphinx-deployment
+[sphinx-deployment]: https://github.com/teracy-official/sphinx-deployment
