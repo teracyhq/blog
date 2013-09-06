@@ -13,7 +13,7 @@ tags:
 published: true
 ---
 
-"Open" is one of the most important Teracy's values. We promote open source projects on our
+"Open" is one of Teracy's most important values. We promote open source projects on our
 development path.
 
 For open source projects, we have open source licenses. For other "creative" resources such as
