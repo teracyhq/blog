@@ -113,6 +113,11 @@ task :new_post, :title do |t, args|
     post.puts "comments: true"
     post.puts "categories:"
     post.puts "    - "
+    post.puts "tags:"
+    post.puts "    - "
+    post.puts "cover: "
+    post.puts "description: "
+    post.puts "keywords: "
     post.puts "published: true"
     post.puts "---"
     # teracy: add blog post structure guide
