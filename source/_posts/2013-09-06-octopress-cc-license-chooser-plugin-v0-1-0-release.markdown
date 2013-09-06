@@ -17,7 +17,7 @@ published: true
 development path.
 
 For open source projects, we have open source licenses. For other "creative" resources such as
-our blog posts and documetations, `Creative Commons`[^1] license is used.
+our blog posts and documentation, `Creative Commons`[^1] license is used.
 
 <!-- more -->
 
