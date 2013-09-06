@@ -11,7 +11,13 @@ tags:
     - "octopress"
     - "octopress-cc-license"
 published: true
+cover: /images/2013/09/06/cc-by.png
+description: "Open is one of Teracy's most important values, for creative resources, creative commons
+license is used."
+keywords: "open, open sources, creative commons, octopress, octopress-cc-license chooser plugin"
 ---
+
+{% img center /images/2013/09/06/cc-by.png Creative Commons License %}
 
 "Open" is one of Teracy's most important values. We promote open source projects on our
 development path.
