@@ -7,13 +7,13 @@ comments: true
 categories:
     - "how-to"
     - "projects"
-    - "devops"
 tags:
     - "sphinx"
     - "sphinx-deployment"
     - "github"
     - "rsync"
     - "travis-ci"
+    - "devops"
 published: true
 ---
 
