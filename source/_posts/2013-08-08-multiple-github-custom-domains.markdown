@@ -6,10 +6,10 @@ date: 2013-08-8 00:00
 comments: true
 categories:
     - "how-to"
-    - "devops"
 tags:
     - "github"
     - "nginx"
+    - "devops"
 ---
 
 Today we're going to share with you the way to use multiple github custom domains as we did with our

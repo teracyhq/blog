@@ -6,10 +6,10 @@ date: 2013-08-07 00:00
 comments: true
 categories:
     - "how-to"
-    - "devops"
 tags:
     - "git-encrypt"
     - "gitolite"
+    - "devops"
 ---
 
 Recently, we have a problem of top secret resources sharing that we need to resolve. Let me start
