@@ -11,43 +11,44 @@ tags:
     - "octopress"
     - "teracy-dev"
     - "travis-ci"
+    - "github"
 published: true
 ---
 
-This post will guide you to start blogging with [teracy-dev][] and [octopress][] like we did with
-our blog at https://github.com/teracy-official/teracy-official-blog with these outstanding
-advantages:
+This post will guide you to start blogging with Teracy's [dev][] and [octopress][] like we did with
+our blog at https://github.com/teracy-official/blog with these outstanding advantages:
 
 - use `octopress` blogging framework
 
 - could start blogging on any operating systems
 
 - have automatic deployment via travis-ci everytime you update the blog source like ours at
-https://travis-ci.org/teracy-official/teracy-official-blog
+https://travis-ci.org/teracy-official/blog
 
 <!-- more -->
 
 In case if you're wondering:
 
-- `teracy-dev` is a little virtual machine (VM) box that any Teraciers must use it to setup working
-environment. All the required runtime environment will be automatically setup there.
+- Teracy's `dev` is a little virtual machine (VM) box that any Teraciers must use it to setup
+working environment. All the required runtime environment will be automatically setup there.
 
 - `octopress` is "A blogging framework for hackers." I don't think it's for hackers anymore when
-you're using `teracy-dev` for blogging, it should be for everyone who knows how to type and a little
-bit of `Git` learning. Do you? :-)
+you're using Teracy's `dev` for blogging, it should be for everyone who knows how to type and a
+little bit of `Git` learning. Do you? :-)
 
 `octopress` requires `Ruby` for its runtime environment, `Git` for blog management.
-To make it dead-simple and error-prone-free to start, we're going to use `teracy-dev`.
+To make it dead-simple and error-prone-free to start, we're going to use Teracy's `dev`.
 
 So let's begin now, this could take you a little long time for setting up, but it's worth it,
 believe me!
 
 
-Step 1: Setup `teracy-dev`
---------------------------
+Step 1: Setup `dev`
+-------------------
 
-Note that before `$ vagrant up` as guided below, you need to enable forwarded-port on `Vagrantfile` to
-preview `octopress` blog later (by removing the hash character (`#`) at the beginning of the line):
+Note that before `$ vagrant up` as guided below, you need to enable forwarded-port on `Vagrantfile`
+to preview `octopress` blog later (by removing the hash character (`#`) at the beginning of the
+line):
 
 ```ruby Vagrantfile
 config.vm.network :forwarded_port, guest: 4000, host: 4000 # octopress preview, disabled by default
@@ -79,7 +80,7 @@ $ cd personal
 $ git clone git://github.com/imathis/octopress.git octopress
 ```
 
-`$ ws` is an alias provided by `teracy-dev` to change directory to `workspace` directory where all
+`$ ws` is an alias provided by Teracy's `dev` to change directory to `workspace` directory where all
 your work must be kept there.
 
 **1. Setup**
@@ -179,9 +180,9 @@ If you setup blog as user/ organization page, you need to enable `source` branch
 like ours.
 
 2.6. Configure `Rakefile` like we did at
-https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2
+https://github.com/teracy-official/blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2
 
-And this [hot-fix]: https://github.com/teracy-official/teracy-official-blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1
+And this [hot-fix]: https://github.com/teracy-official/blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1
 
 **3. Finally, enable travis-ci build for your project**
 
@@ -201,5 +202,5 @@ fixing.
 
 Happy blogging!
 
-[teracy-dev]: https://github.com/teracy-official/teracy-dev "teracy-dev"
+[dev]: https://github.com/teracy-official/dev "Teracy's dev"
 [octopress]: http://octopress.org "octopress"
