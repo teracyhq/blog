@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: pip | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/pip/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A separated Django application with unit tests, coding convention checking and coverage report]]></title>
+    <link href="http://blog.teracy.com/2013/08/06/a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report/"/>
+    <updated>2013-08-06T10:48:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/06/a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report</id>
+    <content type="html"><![CDATA[<p>Today we&rsquo;re going to share with you how to create a separated Django application with the following
+requirements:</p>
+
+<ul>
+<li>must be a separated Django application for easier packaging and distribution.</li>
+<li>must be tested like it was tested within a Django project for the same development experience
+whether the application is within a Django application or a separated one.</li>
+<li>must have test coverage report to check the quality of project.</li>
+<li>must have coding convention checking for consistent style and best practices.</li>
+<li>must be built by travis-ci (or other ci system).</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>And we managed to meets these requirements with [django-html5-boilerplate][] project.
+Well, [django-html5-boilerplate][] is just a simple Django application wrapper for
+<code>HTML5 Boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> so that you could extend and reuse it on your Django project with much ease,
+fun and:</p>
+
+<ul>
+<li>yes, it&rsquo;s a separated Django application, could be easily installed with <code>pip</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> or
+<code>setuptools</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>.</li>
+<li>yes, it was setup to be tested with the help from <code>django-discover-runner</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>.</li>
+<li>yes, it was setup to have test coverage report with the help from <code>coverage</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>.</li>
+<li>yes, it was setup to have coding convention checking (<code>PEP 8</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> and more) with the help from
+<code>flake8</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>.</li>
+<li>yes, it was setup to be automatically built with the help from <code>travis-ci</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>. The build page
+is here at: <a href="https://travis-ci.org/teracy-official/django-html5-boilerplate">https://travis-ci.org/teracy-official/django-html5-boilerplate</a></li>
+</ul>
+
+
+<p>One feature that we really love from the ci system is that whenever a pull request is made, we
+could see the build status immediately within that pull request thanks to the integration of
+<code>travis-ci</code> and <code>github</code>. You could see a failed pull request here as an example:
+<a href="https://github.com/teracy-official/django-html5-boilerplate/pull/3">https://github.com/teracy-official/django-html5-boilerplate/pull/3</a></p>
+
+<p>At Teracy, we&rsquo;re going to promote best development practices that we use every day, one of these is
+<code>Test Driven Development</code><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup> practice: &ldquo;Test first, implement later, then refactor&rdquo;. The pull
+request just contain tests without any implementation, that&rsquo;s why its build status was failed:
+<a href="https://github.com/teracy-official/django-html5-boilerplate/pull/3">https://github.com/teracy-official/django-html5-boilerplate/pull/3</a></p>
+
+<p>All the setup work was done on the project repository, please take a look and we believe that you
+could setup yourself a similar <code>Django</code> application easily from this sample project.</p>
+
+<p>If there is anything missing that you could not setup yourself a project like this or you have a
+better approach, please let us know by commenting or forking the project, creating issues,
+making pull requests.</p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://pypi.python.org/pypi/pip<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://pypi.python.org/pypi/setuptools<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://github.com/jezdez/django-discover-runner<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>https://pypi.python.org/pypi/coverage<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://www.python.org/dev/peps/pep-0008/<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p>https://pypi.python.org/pypi/flake8<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p>https://travis-ci.org/<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+<li id="fn:9">
+<p>http://www.agiledata.org/essays/tdd.html<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

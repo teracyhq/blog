@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[django-boilerplate v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release/"/>
+    <updated>2013-09-07T14:11:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2013/09/07/django-logo.png" title="Django Logo" ></p>
+
+<p>Today we&rsquo;re very glad to announce v0.1.0 release of <a href="https://github.com/teracy-official/django-boilerplate">django-boilerplate</a>. The project was started
+since May 26, 2013 and after many iterations and improvements, it&rsquo;s good enough to be shipped as
+v0.1.0 now.</p>
+
+<!-- more -->
+
+
+<p><a href="https://github.com/teracy-official/django-boilerplate">django-boilerplate</a> was created to &ldquo;promotes best practices to organize and start any <code>Django</code>
+project.&rdquo;</p>
+
+<p>Currently, the project promotes a <code>Django</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> project layout that could be used and upgraded
+seamlessly. It uses files overlay upgrade strategy, which basically just downloads and overwrites
+existing base files. By using this approach, your specific project files will not be affected by
+each upgrade.</p>
+
+<p>Moreover, the project also includes coding style checking (<code>pep8</code>, <code>flake8</code>, <code>pylint</code>, <code>coverage</code>,
+etc.), continuous integration build (<code>travis-ci</code>, <code>jenkins</code>). For more information, please head to
+its README file at <a href="https://github.com/teracy-official/django-boilerplate">https://github.com/teracy-official/django-boilerplate</a></p>
+
+<p>There are still many things to do, we&rsquo;re listening to feedback from the community and our usage to
+iterate for next version (v0.2.0) with improvements, rule violations reduction.</p>
+
+<p>Have a nice day and happy <code>Django</code> hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://djangoproject.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[octopress-cc-license chooser plugin v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release/"/>
+    <updated>2013-09-06T15:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2013/09/06/cc-by.png" title="Creative Commons License" ></p>
+
+<p>&ldquo;Open&rdquo; is one of Teracy&rsquo;s most important values. We promote open source projects on our
+development path.</p>
+
+<p>For open source projects, we have open source licenses. For other &ldquo;creative&rdquo; resources such as
+our blog posts and documentation, <code>Creative Commons</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> license is used.</p>
+
+<!-- more -->
+
+
+<p>To choose<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> and add <code>Creative Commons</code> license to <code>octopress</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> posts easily, we created
+<a href="https://github.com/hoatle/octopress-cc-license">octopress-cc-license</a> plugin. This is the first release milestone as of v0.1.0 with &ldquo;basic
+configuration for cc license allow modification, allow commercial uses and icon styles.&rdquo;</p>
+
+<p>What&rsquo;s next? For v0.2.0 release, we would like to support:</p>
+
+<ul>
+<li>cc_license_license_jurisdiction</li>
+<li>cc-license chooser for individual posts</li>
+<li>use tag plugin instead of template</li>
+</ul>
+
+
+<p>For details, please head to: <a href="https://github.com/hoatle/octopress-cc-license/issues?milestone=2">https://github.com/hoatle/octopress-cc-license/issues?milestone=2</a></p>
+
+<p>We hope that this plugin is helpful for your <code>octopress</code> blog posts. Happy blogging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://creativecommons.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://creativecommons.org/choose/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://octopress.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release/"/>
+    <updated>2013-08-20T15:44:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>After more than 3 months since the project was started, today we&rsquo;re very happy to announce
+<a href="https://github.com/teracy-official/django-html5-boilerplate">teracy-django-html5-boilerplate</a> v0.1.0 release.</p>
+
+<p>The project mission is to port <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to Django development so that every Django
+project could take and use it with ease, flexibility and customization by its needs.</p>
+
+<!-- more -->
+
+
+<p>This milestone release is just small enough to introduce:</p>
+
+<ul>
+<li><p><code>base.html</code> with context variables and blocks that gives much flexibility for customization</p></li>
+<li><p>a context processor to handle some fixed settings for context variables so that you don&rsquo;t have to
+(re)define it all the time from views.</p></li>
+</ul>
+
+
+<p>We&rsquo;re still far from the completed mission, the next version with <code>v0.2.0</code> we would like to include
+(almost) all the provided assets from <code>html5-boilerplate</code> and explore each items for Django
+development.</p>
+
+<p>This initial milestone release is stable enough for simple usage, stay tuned with our upcoming
+releases. You are all more than welcome to contribute to the project. Please fork it, hack it and
+make pull requests!</p>
+
+<p>In the meantime, you could grab it here at <a href="https://github.com/teracy-official/django-html5-boilerplate">https://github.com/teracy-official/django-html5-boilerplate</a></p>
+
+<p>We also released it to <code>pypi</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> at <a href="https://pypi.python.org/pypi/teracy-django-html5-boilerplate">https://pypi.python.org/pypi/teracy-django-html5-boilerplate</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://pypi.python.org/pypi<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/"/>
+    <updated>2013-08-18T17:53:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>10 days after the announcement of <code>sphinx-deployment</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> project, today we&rsquo;re very happy to
+announce v0.1.0 release.</p>
+
+<!-- more -->
+
+
+<p>This is just a small release milestone, it fully supports <code>Github Pages</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment. It&rsquo;s stable
+enough to use now.</p>
+
+<p>The next step we will support <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment with v0.2.0 release.</p>
+
+<p>Now it&rsquo;s really easy to deploy your <code>sphinx</code> docs to <code>Github Pages</code> with <code>sphinx-deployment</code>, grab
+it now at <a href="https://github.com/teracy-official/sphinx-deployment">https://github.com/teracy-official/sphinx-deployment</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Introduce development management tools]]></title>
+    <link href="http://blog.teracy.com/2013/08/17/introduce-development-management-tools/"/>
+    <updated>2013-08-17T04:21:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/17/introduce-development-management-tools</id>
+    <content type="html"><![CDATA[<p>At Teracy, development tools and development management are very important for us to keep and work
+in a consistent workflow manner. There are rules, however, the rules should be guided, checked
+and forced so that everyone could understand and work together more effectively. After a few days of
+setting up, we&rsquo;re very happy to introduce our development tools.</p>
+
+<!-- more -->
+
+
+<p>As we know, a development team should (at least) have:</p>
+
+<ul>
+<li>issues management</li>
+<li>source code management</li>
+<li>continuous integration management</li>
+<li>wiki management</li>
+</ul>
+
+
+<p>Well, if your team is small, <code>github</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> is good enough. However, if you have many repositories,
+issue management could be hard. Moreover, the workflow and issues management on <code>github</code> is
+just very simple.</p>
+
+<p>At Teracy, we need more than that. We need a better workflow, we need consistent development tools
+that have good and seamlessly integration and <code>Atlassian</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>&rsquo;s products meets our requirements.</p>
+
+<p>Many thanks to <code>Atlassian</code> for supporting open source projects, we could get open source licenses
+for all our development tools for free:</p>
+
+<p><code>Jira</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> instance for issues management is at: <a href="https://issues.teracy.org">https://issues.teracy.org</a></p>
+
+<p><code>Stash</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> instance for source code management is at: <a href="https://code.teracy.org">https://code.teracy.org</a></p>
+
+<p>Note that we&rsquo;re still using <code>github</code> for our open source projects to get more contribution
+easily, thank you <code>github</code> :). There is no reason why we should not use both <code>github</code> and <code>Jira</code>.</p>
+
+<p><code>Confluence</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> instance for wiki management is at: <a href="https://wiki.teracy.org">https://wiki.teracy.org</a></p>
+
+<p>And many thanks to <code>Jenkins</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> for our continuous integration instance at: <a href="https://ci.teracy.org">https://ci.teracy.org</a>
+We&rsquo;d love to use <code>Travis-ci</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>, too.</p>
+
+<p>It took us just a few days to setup all these instances.</p>
+
+<p>We would like to take this opportunity to thank you very much, <code>GlobalSign</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>, too, for approving
+our open source SSL certificate application.</p>
+
+<p>We&rsquo;re still migrating issues from <code>github</code> to <a href="http://issues.teracy.org">http://issues.teracy.org</a> and there are still many
+steps ahead to setup a good development environment.</p>
+
+<p>Thanks for reading our news, have a nice weekend and and happy playing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://github.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://www.atlassian.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://www.atlassian.com/software/jira<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://www.atlassian.com/software/stash<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>https://www.atlassian.com/software/confluence<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://jenkins-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p>https://travis-ci.org<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p>https://www.globalsign.com<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Manage software dependency with semantic versioning]]></title>
+    <link href="http://blog.teracy.com/2013/08/12/manage-software-dependency-with-semantic-versioning/"/>
+    <updated>2013-08-12T19:42:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/12/manage-software-dependency-with-semantic-versioning</id>
+    <content type="html"><![CDATA[<p>Do you know what it means to release your software labeled with <code>alpha</code>, <code>beta</code>, <code>release candidate</code>
+or <code>final release</code>? When and where to increase the number range? What&rsquo;s the difference between
+0.1.0, 1.0.0, 1.2.0 and 2.0.0? We&rsquo;re going to make it clear on this post.</p>
+
+<!-- more -->
+
+
+<h2>Problem</h2>
+
+<p>Usually, your software is composed of different small pieces of software libraries and they have
+different release schemas. When upgrading these libraries, it&rsquo;s very hard to know if your
+software still works normally without reading their APIs documentation, release notes and running
+many tests yourself to make sure the upgrading does not break anything and this hurts.</p>
+
+<blockquote><p>In the world of software management there exists a dread place called &#8220;dependency hell.&#8221; The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.</p><p>In systems with many dependencies, releasing new package versions can quickly become a nightmare.</p><footer><strong>Tom Preston-Werner</strong> <cite><a href='http://semver.org/spec/v2.0.0.html'>Semantic Versioning 2.0.0</a></cite></footer></blockquote>
+
+
+<p>Yes, it&rsquo;s true and some software companies I know are still struggling with the problem of dependency
+management. I myself had this kind of nightmare many times when working on a big growing software
+system with many layers of dependency and that&rsquo;s the reason I really want to improve its development
+experience.</p>
+
+<p>Fortunately, <code>semantic versioning</code> specification<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> was introduced and it&rsquo;s general enough to be
+applied to other existing dependency management tools and systems:</p>
+
+<p>From <code>Java</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> world with <code>Maven</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+<p>From <code>Python</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> world with <code>setuptools</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> and <code>pip</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> on top of <code>setuptools</code></p>
+
+<p>From <code>Ruby</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup> world with <code>bundler</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup></p>
+
+<p>From <code>PHP</code><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup> world with <code>composer</code><sup id="fnref:10"><a href="#fn:10" rel="footnote">10</a></sup></p>
+
+<p>and you name it.</p>
+
+<p>All these kinds of dependency management tools have different kinds of version schemas, we need to
+make it more consistent among projects within an organization.</p>
+
+<h2>Requirements</h2>
+
+<p>As <code>sementic versioning</code> specification is general enough, it&rsquo;s possible to extend it for more
+specific uses. We should have a semantic versioning base that is extensible for different dependency
+management tools.</p>
+
+<p>So a <code>Base</code> must:</p>
+
+<ul>
+<li><p>Extend <code>semantic versioning</code></p></li>
+<li><p>Provide a general policy to avoid &ldquo;incompatible&rdquo; with existing dependency management tools as much
+as possible.</p></li>
+</ul>
+
+
+<h2>Solution</h2>
+
+<p>At Teracy, we try to get all projects to follow a common base semantic versioning policy so that
+everything is clear and consistent.</p>
+
+<p>You could have a look at the docs here <a href="http://dev.teracy.org/docs/develop/semantic_versioning.html">http://dev.teracy.org/docs/develop/semantic_versioning.html</a> ,
+there is still much work left to be done, but it&rsquo;s good enough for <code>Python</code>&rsquo;s versioning
+now.</p>
+
+<h2>Summary</h2>
+
+<p>This is just an initiative to achieve a common base that is compatible with existing dependency
+management tools as much as possible. It will make a developer life easier with a consistent
+semantic versioning schema like <a href="http://dev.teracy.org/docs/develop/semantic_versioning.html">http://dev.teracy.org/docs/develop/semantic_versioning.html</a></p>
+
+<p>Have a nice day and happy working!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://semver.org/spec/v2.0.0.html<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.java.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://maven.apache.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://python.org<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>https://pypi.python.org/pypi/setuptools<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>https://pypi.python.org/pypi/pip<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p>http://www.ruby-lang.org<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p>http://bundler.io<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+<li id="fn:9">
+<p>http://php.net<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
+<li id="fn:10">
+<p>http://getcomposer.org<a href="#fnref:10" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatic sphinx docs deployment with sphinx-deployment]]></title>
+    <link href="http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/"/>
+    <updated>2013-08-09T03:13:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment</id>
+    <content type="html"><![CDATA[<p>At Teracy, all our documentations are written with the help from <code>sphinx</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. It&rsquo;s easy to setup and
+manage. However, we could not find a good enough <strong>deployment solution</strong> for <code>sphinx</code> documentation
+project. What does &ldquo;good enough&rdquo; here means? It means:</p>
+
+<ul>
+<li><p>The installation and configuration should be easy with <code>git</code> and command line.</p></li>
+<li><p>The deployment could be &ldquo;decoupled&rdquo; from <code>sphinx</code> project for easy upgrade and maintenance. It&rsquo;s
+better if we could have this deployment solution provided by <code>sphinx</code> out of the box.</p></li>
+<li><p>The deployment should support as many services as possible: <code>github pages</code> <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, and
+<code>PaaS</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> services like <code>heroku</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>, etc.</p></li>
+<li><p>The usage should be easy like:</p>
+
+<ul>
+<li><code>$ make setup</code> to setup deployment basing on the configurations</li>
+<li><code>$ make generate</code> to generate content basing on the configurations</li>
+<li><code>$ make deploy</code> to deploy the project basing on the configurations</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>We could not find a solution good enough meeting our requirements, so we created
+<a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project that implements the ideas and requirements above.</p>
+
+<p>Currently, it&rsquo;s on very very early development stage to just
+support deployment on <code>github pages</code> automatically with <code>travis-ci</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>, and
+<a href="https://travis-ci.org/teracy-official/dev">https://travis-ci.org/teracy-official/dev</a> as an example.</p>
+
+<p>There are many things that we need to do, please help use to shape the project&rsquo;s future by
+contributing with <code>forking</code>, <code>hacking</code> and <code>pull requests</code> or giving your ideas. Your contributions
+are all welcome. Please head to the development branch at
+<a href="https://github.com/teracy-official/sphinx-deployment/tree/develop">https://github.com/teracy-official/sphinx-deployment/tree/develop</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://sphinx-doc.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://en.wikipedia.org/wiki/Platform_as_a_service<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://heroku.com<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://travis-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Multiple Github custom domains]]></title>
+    <link href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/"/>
+    <updated>2013-08-08T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/08/multiple-github-custom-domains</id>
+    <content type="html"><![CDATA[<p>Today we&rsquo;re going to share with you the way to use multiple github custom domains as we did with our
+<code>teracy-official</code> organization account.</p>
+
+<p>As we know, there are two types of github pages: user/ organization pages and project pages <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>.
+Our organization account is located at: <a href="https://github.com/teracy-official">https://github.com/teracy-official</a></p>
+
+<p>By default, <code>http://teracy-official.github.io</code> will point to <code>teracy-official.github.io</code>&rsquo;s <code>master</code>
+branch. And <code>teracy-official.github.io/&lt;project_name&gt;</code> will point to the project&rsquo;s <code>gh-pages</code> branch
+if it&rsquo;s available.</p>
+
+<p>With our requirements, we don&rsquo;t want to use <code>http://teracy-official.github.io</code> but
+<code>http://teracy.com</code> and <code>http://teracy.org</code> only. That&rsquo;s why we have to setup multiple github custom
+domains <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
+
+<!-- more -->
+
+
+<h2>1. Problems</h2>
+
+<p>From the very first days, we setup <code>blog.teracy.com</code> to map to the organization page at
+<code>teracy-official.github.io</code> repository. We could get what we want by:</p>
+
+<ul>
+<li>adding CNAME <code>blog.teracy.com</code> with alias <code>teracy-official.github.io</code> via DNS manager</li>
+<li>adding CNAME file with &lsquo;blog.teracy.com&rsquo; content to <code>teracy-official.github.io/tree/master/CNAME</code></li>
+</ul>
+
+
+<p>However, by default, this domain will be used for all other project pages if you don&rsquo;t specify
+th project custom domains.</p>
+
+<p>For example, by setting up like above and we have <code>teracy-dev</code> project with <code>gh-pages</code> branch.
+When we access <code>teracy-official.github.io/teracy-dev</code>, it will be redirected to
+<code>blog.teracy.com/teracy-dev</code> project page by github custom domain mechanism, and this was not what
+we expected.</p>
+
+<p>We also want <code>teracy-dev</code> project page should be served by <code>http://teracy-dev.teracy.org</code>, it&rsquo;s also
+every easy just configure CNAME and add CNAME file to <code>gh-pages</code> branch like we did with the blog
+configuration above:</p>
+
+<ul>
+<li>add CNAME <code>teracy-dev.teracy.org</code> with alias <code>teracy-official.github.io</code></li>
+<li>add CNAME file with &lsquo;teracy-dev.teracy.org&rsquo; content to <code>teracy-dev/tree/gh-pages/CNAME</code></li>
+</ul>
+
+
+<p>Wait for DNS change to be updated and access <code>teracy-dev.teracy.org</code>, it should point to
+<code>teracy-dev/tree/gh-pages</code> site.</p>
+
+<p>There is a minor problem though:
+<code>teracy-official.github.io/teracy-dev</code> will not be automatically redirected to
+<a href="http://teracy-dev.teracy.org">http://teracy-dev.teracy.org</a></p>
+
+<p>If we configure the root domain <a href="http://teracy.org">http://teracy.org</a> to map to <code>teracy-official.github.io</code> page,
+the link <code>teracy-official.github.io/teracy-dev</code> will be redirected to <code>teracy.org/teracy-dev</code> by
+github custom domain mechanism. With this approach, an issue is raised: it will also introduce more
+duplicated links between <code>teracy-dev.teracy.org</code> and <code>teracy.org/teracy-dev</code>. This duplicated issue
+should be avoided.</p>
+
+<p>There is a workaround that you could use JavaScript location checking. However, well, it&rsquo;s not
+flexible enough and does not work well with search engines.</p>
+
+<p>So we decided to have a router on <code>teracy.org</code> by using <code>nginx</code>.</p>
+
+<h2>2. Solution with <code>nginx</code> server</h2>
+
+<p>2.1. Requirements</p>
+
+<p>Actually, before setting up our custom domains, existing links exists and we have to maintain these
+by redirecting. We have these requirement rules:</p>
+
+<ul>
+<li>By adding &lsquo;teracy.org&rsquo; to teracy-official.github.io/tree/master/CNAME => by github mechanism:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>teracy-official.github.io/* -&gt; teracy.org/*</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Our nginx rules:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>teracy-official.github.io/teracy-dev/* -&gt; teracy-dev.teracy.org/*
+</span><span class='line'>
+</span><span class='line'>teracy-official.github.io/teracy-official-blog/* -&gt; blog.teracy.com/*</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Fix existing links by redirecting as these links are already indexed by search engines:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>teracy-official.github.io/2013/08/02/teracy-hello-world/ -&gt; blog.teracy.com/2013/08/02/teracy-hello-world/
+</span><span class='line'>teracy-official.github.io/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/ -&gt; blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The detailed requirements are at: <a href="https://github.com/teracy-official/teracy-official-blog/issues/20">https://github.com/teracy-official/teracy-official-blog/issues/20</a></p>
+
+<p>2.2. How to setup and configure <code>nginx</code> server</p>
+
+<p>With the above requirement rules, this is how to configure our <code>nginx</code> server.</p>
+
+<p>Create a new nginx host file at <code>/etc/nginx/sites-available/teracy.org</code> and symlink it to
+<code>/etc/nginx/sites-enable/teracy.org</code> with the content as below:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>server {
+</span><span class='line'>  listen 80;
+</span><span class='line'>  server_name teracy.org;
+</span><span class='line'>
+</span><span class='line'>  location / {
+</span><span class='line'>    # redirect to teracy-dev.teracy.org if match below regex
+</span><span class='line'>    rewrite  ^/teracy-dev(/.*)?$  http://teracy-dev.teracy.org$1  break;
+</span><span class='line'>
+</span><span class='line'>    # redirect to blog.teracy.com if match below regex
+</span><span class='line'>    rewrite  ^/teracy-official-blog(/.*)?$  http://blog.teracy.com$1  break;
+</span><span class='line'>
+</span><span class='line'>    # Otherwise redirect to blog.teracy.com
+</span><span class='line'>    rewrite  ^/(.*)$  http://blog.teracy.com/$1  break;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Just by applying rules from <code>HttpRewriteModule</code> <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, we could solve the problems easily.</p>
+
+<p>That&rsquo;s it. Have a nice day and happy hacking!</p>
+
+<p>P/S: Sure that you can have many other solutions like Apache + Modrewrite, etc., but to us, <code>nginx</code>
+is more lightweight, simpler and flexible enough. We also use <code>nginx</code> to proxy and protect many
+other HTTP(S) resources for our projects.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://help.github.com/articles/user-organization-and-project-pages<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/articles/setting-up-a-custom-domain-with-pages<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://wiki.nginx.org/HttpRewriteModule<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Keep, share and manage top secret resources with git-encrypt and gitolite]]></title>
+    <link href="http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite/"/>
+    <updated>2013-08-07T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite</id>
+    <content type="html"><![CDATA[<p>Recently, we have a problem of top secret resources sharing that we need to resolve. Let me start
+by a story.</p>
+
+<p>As a startup of 2 co-founders, we have common top secret resources to be shared with each other.
+These common resources include credentials of many services (email, VPS, social networks, etc.),
+secret plan, road-map and secret documentation files. And we need to find a way to keep, share and
+manage these resources securely.</p>
+
+<!-- more -->
+
+
+<p>Our requirements include:</p>
+
+<ul>
+<li><strong>encryption</strong> is a <code>must</code></li>
+<li><strong>backup strategy</strong> is a <code>must</code></li>
+<li><strong>version control</strong> is a <code>should</code></li>
+<li><strong>keep, share and manage</strong> <code>easily</code> is a <code>should</code></li>
+</ul>
+
+
+<p>&ldquo;Encryption&rdquo; and &ldquo;version control&rdquo; requirements lead us to <code>git-encrypt</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, it&rsquo;s not perfect but
+it works.</p>
+
+<p>&ldquo;Backup strategy&rdquo; requirement leads us to keeping this secret git repository on a VPS, so we decided
+to install <code>gitolite</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> on the VPS because with <code>gitolite</code>, we could manage the security
+layer and git repository permissions more easily, we don&rsquo;t want to mess with linux permissions.
+For more details, please head to: <a href="http://git-scm.com/book/ch4-8.html">http://git-scm.com/book/ch4-8.html</a></p>
+
+<p>And that&rsquo;s it. Now we could enjoy top secret resources keeping, sharing and managing. It&rsquo;s not the
+most secured, but it&rsquo;s secured enough for us.</p>
+
+<p>If you have a better approach, please let us know by commenting.</p>
+
+<p>Happy working and happy securing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://github.com/shadowhand/git-encrypt<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://gitolite.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A separated Django application with unit tests, coding convention checking and coverage report]]></title>
+    <link href="http://blog.teracy.com/2013/08/06/a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report/"/>
+    <updated>2013-08-06T10:48:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/06/a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report</id>
+    <content type="html"><![CDATA[<p>Today we&rsquo;re going to share with you how to create a separated Django application with the following
+requirements:</p>
+
+<ul>
+<li>must be a separated Django application for easier packaging and distribution.</li>
+<li>must be tested like it was tested within a Django project for the same development experience
+whether the application is within a Django application or a separated one.</li>
+<li>must have test coverage report to check the quality of project.</li>
+<li>must have coding convention checking for consistent style and best practices.</li>
+<li>must be built by travis-ci (or other ci system).</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>And we managed to meets these requirements with [django-html5-boilerplate][] project.
+Well, [django-html5-boilerplate][] is just a simple Django application wrapper for
+<code>HTML5 Boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> so that you could extend and reuse it on your Django project with much ease,
+fun and:</p>
+
+<ul>
+<li>yes, it&rsquo;s a separated Django application, could be easily installed with <code>pip</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> or
+<code>setuptools</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>.</li>
+<li>yes, it was setup to be tested with the help from <code>django-discover-runner</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>.</li>
+<li>yes, it was setup to have test coverage report with the help from <code>coverage</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>.</li>
+<li>yes, it was setup to have coding convention checking (<code>PEP 8</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> and more) with the help from
+<code>flake8</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>.</li>
+<li>yes, it was setup to be automatically built with the help from <code>travis-ci</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>. The build page
+is here at: <a href="https://travis-ci.org/teracy-official/django-html5-boilerplate">https://travis-ci.org/teracy-official/django-html5-boilerplate</a></li>
+</ul>
+
+
+<p>One feature that we really love from the ci system is that whenever a pull request is made, we
+could see the build status immediately within that pull request thanks to the integration of
+<code>travis-ci</code> and <code>github</code>. You could see a failed pull request here as an example:
+<a href="https://github.com/teracy-official/django-html5-boilerplate/pull/3">https://github.com/teracy-official/django-html5-boilerplate/pull/3</a></p>
+
+<p>At Teracy, we&rsquo;re going to promote best development practices that we use every day, one of these is
+<code>Test Driven Development</code><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup> practice: &ldquo;Test first, implement later, then refactor&rdquo;. The pull
+request just contain tests without any implementation, that&rsquo;s why its build status was failed:
+<a href="https://github.com/teracy-official/django-html5-boilerplate/pull/3">https://github.com/teracy-official/django-html5-boilerplate/pull/3</a></p>
+
+<p>All the setup work was done on the project repository, please take a look and we believe that you
+could setup yourself a similar <code>Django</code> application easily from this sample project.</p>
+
+<p>If there is anything missing that you could not setup yourself a project like this or you have a
+better approach, please let us know by commenting or forking the project, creating issues,
+making pull requests.</p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://pypi.python.org/pypi/pip<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://pypi.python.org/pypi/setuptools<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://github.com/jezdez/django-discover-runner<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>https://pypi.python.org/pypi/coverage<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://www.python.org/dev/peps/pep-0008/<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p>https://pypi.python.org/pypi/flake8<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p>https://travis-ci.org/<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+<li id="fn:9">
+<p>http://www.agiledata.org/essays/tdd.html<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to add Facebook like-box to octopress]]></title>
+    <link href="http://blog.teracy.com/2013/08/05/how-to-add-facebook-like-box-to-octopress/"/>
+    <updated>2013-08-05T02:48:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/05/how-to-add-facebook-like-box-to-octopress</id>
+    <content type="html"><![CDATA[<p>We&rsquo;ve just added the Facebook like-box to the default asides as you could see it on the right
+sidebar and we want to share the way to do the same for your <code>octopress</code> blog.</p>
+
+<p>By the way, you should like our Facebook page to see how it works and to get news about us :).</p>
+
+<p>There is an existing plugin at <a href="https://github.com/geetotes/octopress-facebook-likebox">https://github.com/geetotes/octopress-facebook-likebox</a> introduced by
+<a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">https://github.com/imathis/octopress/wiki/3rd-party-plugins</a> that does the work, however, we don&rsquo;t
+think that plugin approach meets our requirements from our <a href="http://dev.teracy.org/docs/intro.html#join-and-work-with-us">development philosophy</a>.</p>
+
+<!-- more -->
+
+
+<ul>
+<li>We want to adhere with existing octopress conventions of plugins management</li>
+<li>We want to avoid manual configuration</li>
+<li>We want to avoid any conflict as much as possible</li>
+<li>We want to upgrade the plugin seamlessly</li>
+<li>We want to do friendly <code>Git</code> and command lines.</li>
+</ul>
+
+
+<p>That is the reason why we created <a href="https://github.com/hoatle/octopress-facebook-like-box">octopress-facebook-like-box</a> that meets our requirements.</p>
+
+<p>To install and configure the plugin, please see instruction from README.md at
+<a href="https://github.com/hoatle/octopress-facebook-like-box">https://github.com/hoatle/octopress-facebook-like-box</a></p>
+
+<p>These are the detailed steps carried out for this blog:</p>
+
+<ul>
+<li>Merging: <a href="https://github.com/teracy-official/teracy-official-blog/commit/8f0da04d6366701b7c363b6792e8c74e9a9590df">https://github.com/teracy-official/teracy-official-blog/commit/8f0da04d6366701b7c363b6792e8c74e9a9590df</a></li>
+<li>Installing: <a href="https://github.com/teracy-official/teracy-official-blog/commit/218149037da3857a4af2bb3f9c9106ec29544206">https://github.com/teracy-official/teracy-official-blog/commit/218149037da3857a4af2bb3f9c9106ec29544206</a></li>
+<li>Configuring: <a href="https://github.com/teracy-official/teracy-official-blog/commit/c4aadab5f7f035bc4604406b2a8686430f3d4989">https://github.com/teracy-official/teracy-official-blog/commit/c4aadab5f7f035bc4604406b2a8686430f3d4989</a></li>
+</ul>
+
+
+<p>If you haven&rsquo;t tried <code>octopress</code> yet, we had a guide for you to get started with so much fun and ease
+at: <a href="http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/">http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/</a></p>
+
+<p>If you want to improve anything, please let us know by commenting on this post or create a new issue
+at <a href="https://github.com/hoatle/octopress-facebook-like-box/issues">https://github.com/hoatle/octopress-facebook-like-box/issues</a> or fork the project, hack and make a
+pull request, your contributions are all welcome.</p>
+
+<p>Happy hacking and happy blogging!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to start blogging easily with octopress and teracy-dev]]></title>
+    <link href="http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/"/>
+    <updated>2013-08-03T10:43:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev</id>
+    <content type="html"><![CDATA[<p>This post will guide you to start blogging with Teracy&rsquo;s <a href="https://github.com/teracy-official/dev" title="Teracy's dev">dev</a> and <a href="http://octopress.org" title="octopress">octopress</a> like we did with
+our blog at <a href="https://github.com/teracy-official/blog">https://github.com/teracy-official/blog</a> with these outstanding advantages:</p>
+
+<ul>
+<li><p>use <code>octopress</code> blogging framework</p></li>
+<li><p>could start blogging on any operating systems</p></li>
+<li><p>have automatic deployment via travis-ci everytime you update the blog source like ours at
+<a href="https://travis-ci.org/teracy-official/blog">https://travis-ci.org/teracy-official/blog</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>In case if you&rsquo;re wondering:</p>
+
+<ul>
+<li><p>Teracy&rsquo;s <code>dev</code> is a little virtual machine (VM) box that any Teraciers must use it to setup
+working environment. All the required runtime environment will be automatically setup there.</p></li>
+<li><p><code>octopress</code> is &ldquo;A blogging framework for hackers.&rdquo; I don&rsquo;t think it&rsquo;s for hackers anymore when
+you&rsquo;re using Teracy&rsquo;s <code>dev</code> for blogging, it should be for everyone who knows how to type and a
+little bit of <code>Git</code> learning. Do you? :&ndash;)</p></li>
+</ul>
+
+
+<p><code>octopress</code> requires <code>Ruby</code> for its runtime environment, <code>Git</code> for blog management.
+To make it dead-simple and error-prone-free to start, we&rsquo;re going to use Teracy&rsquo;s <code>dev</code>.</p>
+
+<p>So let&rsquo;s begin now, this could take you a little long time for setting up, but it&rsquo;s worth it,
+believe me!</p>
+
+<h2>Step 1: Setup <code>dev</code></h2>
+
+<p>Note that before <code>$ vagrant up</code> as guided below, you need to enable forwarded-port on <code>Vagrantfile</code>
+to preview <code>octopress</code> blog later (by removing the hash character (<code>#</code>) at the beginning of the
+line):</p>
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="ss">:forwarded_port</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">4000</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">4000</span> <span class="c1"># octopress preview, disabled by default</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Please follow the guide here at: <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<h2>Step 2: Install <code>Ruby</code></h2>
+
+<p>Please follow the guide here at: <a href="http://dev.teracy.org/docs/ruby_training.html#installation">http://dev.teracy.org/docs/ruby_training.html#installation</a></p>
+
+<h2>Step 3: Setup <code>octopress</code></h2>
+
+<p><strong>Note</strong>:</p>
+
+<ul>
+<li><p><code>Git</code> and <code>Ruby</code> was already installed on the VM.</p></li>
+<li><p>You need to make sure to register a Github account at <a href="https://github.com/">https://github.com/</a></p></li>
+<li><p>You must store your repository at <code>teracy-dev/workspace/personal</code> directory or you could
+possibly loose it when <code>$ vagrant destroy</code>. For example, to clone <code>octopress</code> repository:</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>ws
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>personal
+</span><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git octopress
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>$ ws</code> is an alias provided by Teracy&rsquo;s <code>dev</code> to change directory to <code>workspace</code> directory where all
+your work must be kept there.</p>
+
+<p><strong>1. Setup</strong></p>
+
+<p>Please follow the official guide here at: <a href="http://octopress.org/docs/setup/">http://octopress.org/docs/setup/</a> and make sure
+to deploy with <em>Github Pages</em>.</p>
+
+<p><strong>2. Preview</strong></p>
+
+<p><strong>Note</strong>: To <code>preview</code> with <code>$ rake preview</code> you should enable forwarded-port on the VM mentioned
+from step 1 above.</p>
+
+<p><code>$ rake preview</code> and open your browser at: <code>http://localhost:4000</code> to preview the <code>octopress</code> blog.</p>
+
+<p>After that, you could start blogging and enjoy it now. However, one very cool thing is that you
+don&rsquo;t have to <code>$ rake generate</code> and then <code>$ rake deploy</code> anymore, it should be automatically
+done when you <code>push</code> updates to your github repository like we did for Teracy&rsquo;s official blog.</p>
+
+<h2>Step 4: Automatic deployment with travis-ci</h2>
+
+<p><strong>1. Register travis-ci account at:</strong> <a href="http://travis-ci.org">http://travis-ci.org</a></p>
+
+<p><strong>2. Configure your project build</strong></p>
+
+<p>2.1. Install <code>curl</code> with:</p>
+
+<figure class='code'><figcaption><span>install curl</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install curl
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2.2. Provide your github user account and run the following command, for example, my account is <code>hoatle</code>:</p>
+
+<figure class='code'><figcaption><span>get token</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>curl -u <span class="s1">&#39;hoatle&#39;</span> -d <span class="s1">&#39;{&quot;scopes&quot;:[&quot;public_repo&quot;], &quot;note&quot;:&quot;Travis access&quot;}&#39;</span> https://api.github.com/authorizations
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You could get the output something like this, you need to notice the &ldquo;token&rdquo; key:</p>
+
+<figure class='code'><figcaption><span>output</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Enter host password <span class="k">for </span>user <span class="s1">&#39;hoatle&#39;</span>:
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>  <span class="s2">&quot;id&quot;</span>: 3223760,
+</span><span class='line'>  <span class="s2">&quot;url&quot;</span>: <span class="s2">&quot;https://api.github.com/authorizations/3223760&quot;</span>,
+</span><span class='line'>  <span class="s2">&quot;app&quot;</span>: <span class="o">{</span>
+</span><span class='line'>    <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;Travis access (API)&quot;</span>,
+</span><span class='line'>    <span class="s2">&quot;url&quot;</span>: <span class="s2">&quot;http://developer.github.com/v3/oauth/#oauth-authorizations-api&quot;</span>,
+</span><span class='line'>    <span class="s2">&quot;client_id&quot;</span>: <span class="s2">&quot;66c370cb34ce199ab76a&quot;</span>
+</span><span class='line'>  <span class="o">}</span>,
+</span><span class='line'>  <span class="s2">&quot;token&quot;</span>: <span class="s2">&quot;1cbbaf4dd0b82c54006377b233ee528612345678&quot;</span>,
+</span><span class='line'>  <span class="s2">&quot;note&quot;</span>: <span class="s2">&quot;Travis access&quot;</span>,
+</span><span class='line'>  <span class="s2">&quot;note_url&quot;</span>: null,
+</span><span class='line'>  <span class="s2">&quot;created_at&quot;</span>: <span class="s2">&quot;2013-08-03T05:47:39Z&quot;</span>,
+</span><span class='line'>  <span class="s2">&quot;updated_at&quot;</span>: <span class="s2">&quot;2013-08-03T05:47:39Z&quot;</span>,
+</span><span class='line'>  <span class="s2">&quot;scopes&quot;</span>: <span class="o">[</span>
+</span><span class='line'>    <span class="s2">&quot;public_repo&quot;</span>
+</span><span class='line'>  <span class="o">]</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2.3. Install <code>travis</code> gem to generate &ldquo;secure&rdquo; key:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install travis
+</span><span class='line'><span class="nv">$ </span>rbenv rehash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2.4. Generate &ldquo;secure&rdquo; key from your provided token, mine is something like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>travis encrypt <span class="nv">GH_TOKEN</span><span class="o">=</span>1cbbaf4dd0b82c54006377b233ee528612345678
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And you will get the output something like below, you need to get &ldquo;secure&rdquo; key to configure travis-ci
+later.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Please add the following to your .travis.yml file:
+</span><span class='line'>
+</span><span class='line'>  secure: <span class="s2">&quot;f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY=&quot;</span>
+</span><span class='line'>
+</span><span class='line'>Pro Tip: You can add it automatically by running with --add.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2.5. Configure <code>.travis.yml</code> like we did at
+<a href="https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1">https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1</a></p>
+
+<p>You need to replace these with yours accordingly:</p>
+
+<pre><code>- git config --global user.name "Hoat Le"
+- git config --global user.email "hoatlevan @ gmail . com"
+
+- GH_REPO="teracy-official/teracy-official.github.io"
+- secure: "f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY="
+</code></pre>
+
+<p>If you setup blog as user/ organization page, you need to enable <code>source</code> branch instead of <code>master</code>
+like ours.</p>
+
+<p>2.6. Configure <code>Rakefile</code> like we did at
+<a href="https://github.com/teracy-official/blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2">https://github.com/teracy-official/blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2</a></p>
+
+<p>And this [hot-fix]: <a href="https://github.com/teracy-official/blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1">https://github.com/teracy-official/blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1</a></p>
+
+<p><strong>3. Finally, enable travis-ci build for your project</strong></p>
+
+<p>You should make a post, <code>push</code> the change to see how travis-ci works.
+Your blog should be running well now.</p>
+
+<p>If you want to use Github custom domains, please head to:
+<a href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/">http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/</a></p>
+
+<p>Many thanks to:</p>
+
+<ul>
+<li><p><a href="http://rogerz.github.io/blog/2013/02/21/prose-io-github-travis-ci/">http://rogerz.github.io/blog/2013/02/21/prose-io-github-travis-ci/</a> for automatic
+deployment work.</p></li>
+<li><p><a href="http://www.harimenon.com/blog/2013/01/27/auto-deploying-to-my-octopress-blog/">http://www.harimenon.com/blog/2013/01/27/auto-deploying-to-my-octopress-blog/</a> for twitter button
+fixing.</p></li>
+</ul>
+
+
+<p>Happy blogging!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Teracy: "Hello World!"]]></title>
+    <link href="http://blog.teracy.com/2013/08/02/teracy-hello-world/"/>
+    <updated>2013-08-02T18:07:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/02/teracy-hello-world</id>
+    <content type="html"><![CDATA[<p>Hi, this is our official blog and this is the first post to say &ldquo;hello&rdquo; to the world.</p>
+
+<p>We have a clear mission for this blog: <em>share any experience during our development path that we
+think it&rsquo;s useful.</em></p>
+
+<p>We&rsquo;re starting up and there are tons of things to do. Stay tuned with our upcoming blog posts!</p>
+]]></content>
+  </entry>
+  
+</feed>

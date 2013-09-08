@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: github | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/github/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/"/>
+    <updated>2013-08-18T17:53:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>10 days after the announcement of <code>sphinx-deployment</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> project, today we&rsquo;re very happy to
+announce v0.1.0 release.</p>
+
+<!-- more -->
+
+
+<p>This is just a small release milestone, it fully supports <code>Github Pages</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment. It&rsquo;s stable
+enough to use now.</p>
+
+<p>The next step we will support <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment with v0.2.0 release.</p>
+
+<p>Now it&rsquo;s really easy to deploy your <code>sphinx</code> docs to <code>Github Pages</code> with <code>sphinx-deployment</code>, grab
+it now at <a href="https://github.com/teracy-official/sphinx-deployment">https://github.com/teracy-official/sphinx-deployment</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatic sphinx docs deployment with sphinx-deployment]]></title>
+    <link href="http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/"/>
+    <updated>2013-08-09T03:13:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment</id>
+    <content type="html"><![CDATA[<p>At Teracy, all our documentations are written with the help from <code>sphinx</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. It&rsquo;s easy to setup and
+manage. However, we could not find a good enough <strong>deployment solution</strong> for <code>sphinx</code> documentation
+project. What does &ldquo;good enough&rdquo; here means? It means:</p>
+
+<ul>
+<li><p>The installation and configuration should be easy with <code>git</code> and command line.</p></li>
+<li><p>The deployment could be &ldquo;decoupled&rdquo; from <code>sphinx</code> project for easy upgrade and maintenance. It&rsquo;s
+better if we could have this deployment solution provided by <code>sphinx</code> out of the box.</p></li>
+<li><p>The deployment should support as many services as possible: <code>github pages</code> <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, and
+<code>PaaS</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> services like <code>heroku</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>, etc.</p></li>
+<li><p>The usage should be easy like:</p>
+
+<ul>
+<li><code>$ make setup</code> to setup deployment basing on the configurations</li>
+<li><code>$ make generate</code> to generate content basing on the configurations</li>
+<li><code>$ make deploy</code> to deploy the project basing on the configurations</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>We could not find a solution good enough meeting our requirements, so we created
+<a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project that implements the ideas and requirements above.</p>
+
+<p>Currently, it&rsquo;s on very very early development stage to just
+support deployment on <code>github pages</code> automatically with <code>travis-ci</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>, and
+<a href="https://travis-ci.org/teracy-official/dev">https://travis-ci.org/teracy-official/dev</a> as an example.</p>
+
+<p>There are many things that we need to do, please help use to shape the project&rsquo;s future by
+contributing with <code>forking</code>, <code>hacking</code> and <code>pull requests</code> or giving your ideas. Your contributions
+are all welcome. Please head to the development branch at
+<a href="https://github.com/teracy-official/sphinx-deployment/tree/develop">https://github.com/teracy-official/sphinx-deployment/tree/develop</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://sphinx-doc.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://en.wikipedia.org/wiki/Platform_as_a_service<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://heroku.com<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://travis-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Multiple Github custom domains]]></title>
+    <link href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/"/>
+    <updated>2013-08-08T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/08/multiple-github-custom-domains</id>
+    <content type="html"><![CDATA[<p>Today we&rsquo;re going to share with you the way to use multiple github custom domains as we did with our
+<code>teracy-official</code> organization account.</p>
+
+<p>As we know, there are two types of github pages: user/ organization pages and project pages <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>.
+Our organization account is located at: <a href="https://github.com/teracy-official">https://github.com/teracy-official</a></p>
+
+<p>By default, <code>http://teracy-official.github.io</code> will point to <code>teracy-official.github.io</code>&rsquo;s <code>master</code>
+branch. And <code>teracy-official.github.io/&lt;project_name&gt;</code> will point to the project&rsquo;s <code>gh-pages</code> branch
+if it&rsquo;s available.</p>
+
+<p>With our requirements, we don&rsquo;t want to use <code>http://teracy-official.github.io</code> but
+<code>http://teracy.com</code> and <code>http://teracy.org</code> only. That&rsquo;s why we have to setup multiple github custom
+domains <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
+
+<!-- more -->
+
+
+<h2>1. Problems</h2>
+
+<p>From the very first days, we setup <code>blog.teracy.com</code> to map to the organization page at
+<code>teracy-official.github.io</code> repository. We could get what we want by:</p>
+
+<ul>
+<li>adding CNAME <code>blog.teracy.com</code> with alias <code>teracy-official.github.io</code> via DNS manager</li>
+<li>adding CNAME file with &lsquo;blog.teracy.com&rsquo; content to <code>teracy-official.github.io/tree/master/CNAME</code></li>
+</ul>
+
+
+<p>However, by default, this domain will be used for all other project pages if you don&rsquo;t specify
+th project custom domains.</p>
+
+<p>For example, by setting up like above and we have <code>teracy-dev</code> project with <code>gh-pages</code> branch.
+When we access <code>teracy-official.github.io/teracy-dev</code>, it will be redirected to
+<code>blog.teracy.com/teracy-dev</code> project page by github custom domain mechanism, and this was not what
+we expected.</p>
+
+<p>We also want <code>teracy-dev</code> project page should be served by <code>http://teracy-dev.teracy.org</code>, it&rsquo;s also
+every easy just configure CNAME and add CNAME file to <code>gh-pages</code> branch like we did with the blog
+configuration above:</p>
+
+<ul>
+<li>add CNAME <code>teracy-dev.teracy.org</code> with alias <code>teracy-official.github.io</code></li>
+<li>add CNAME file with &lsquo;teracy-dev.teracy.org&rsquo; content to <code>teracy-dev/tree/gh-pages/CNAME</code></li>
+</ul>
+
+
+<p>Wait for DNS change to be updated and access <code>teracy-dev.teracy.org</code>, it should point to
+<code>teracy-dev/tree/gh-pages</code> site.</p>
+
+<p>There is a minor problem though:
+<code>teracy-official.github.io/teracy-dev</code> will not be automatically redirected to
+<a href="http://teracy-dev.teracy.org">http://teracy-dev.teracy.org</a></p>
+
+<p>If we configure the root domain <a href="http://teracy.org">http://teracy.org</a> to map to <code>teracy-official.github.io</code> page,
+the link <code>teracy-official.github.io/teracy-dev</code> will be redirected to <code>teracy.org/teracy-dev</code> by
+github custom domain mechanism. With this approach, an issue is raised: it will also introduce more
+duplicated links between <code>teracy-dev.teracy.org</code> and <code>teracy.org/teracy-dev</code>. This duplicated issue
+should be avoided.</p>
+
+<p>There is a workaround that you could use JavaScript location checking. However, well, it&rsquo;s not
+flexible enough and does not work well with search engines.</p>
+
+<p>So we decided to have a router on <code>teracy.org</code> by using <code>nginx</code>.</p>
+
+<h2>2. Solution with <code>nginx</code> server</h2>
+
+<p>2.1. Requirements</p>
+
+<p>Actually, before setting up our custom domains, existing links exists and we have to maintain these
+by redirecting. We have these requirement rules:</p>
+
+<ul>
+<li>By adding &lsquo;teracy.org&rsquo; to teracy-official.github.io/tree/master/CNAME => by github mechanism:</li>
+</ul>
+
+
+<p><code>
+teracy-official.github.io/* -&gt; teracy.org/*
+</code></p>
+
+<ul>
+<li>Our nginx rules:</li>
+</ul>
+
+
+<p>```
+teracy-official.github.io/teracy-dev/<em> &ndash;> teracy-dev.teracy.org/</em></p>
+
+<p>teracy-official.github.io/teracy-official-blog/<em> &ndash;> blog.teracy.com/</em>
+```</p>
+
+<ul>
+<li>Fix existing links by redirecting as these links are already indexed by search engines:</li>
+</ul>
+
+
+<p><code>
+teracy-official.github.io/2013/08/02/teracy-hello-world/ -&gt; blog.teracy.com/2013/08/02/teracy-hello-world/
+teracy-official.github.io/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/ -&gt; blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/
+</code></p>
+
+<p>The detailed requirements are at: <a href="https://github.com/teracy-official/teracy-official-blog/issues/20">https://github.com/teracy-official/teracy-official-blog/issues/20</a></p>
+
+<p>2.2. How to setup and configure <code>nginx</code> server</p>
+
+<p>With the above requirement rules, this is how to configure our <code>nginx</code> server.</p>
+
+<p>Create a new nginx host file at <code>/etc/nginx/sites-available/teracy.org</code> and symlink it to
+<code>/etc/nginx/sites-enable/teracy.org</code> with the content as below:</p>
+
+<p>```
+server {
+  listen 80;
+  server_name teracy.org;</p>
+
+<p>  location / {</p>
+
+<pre><code># redirect to teracy-dev.teracy.org if match below regex
+rewrite  ^/teracy-dev(/.*)?$  http://teracy-dev.teracy.org$1  break;
+
+# redirect to blog.teracy.com if match below regex
+rewrite  ^/teracy-official-blog(/.*)?$  http://blog.teracy.com$1  break;
+
+# Otherwise redirect to blog.teracy.com
+rewrite  ^/(.*)$  http://blog.teracy.com/$1  break;
+</code></pre>
+
+<p>  }
+}
+```</p>
+
+<p>Just by applying rules from <code>HttpRewriteModule</code> <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, we could solve the problems easily.</p>
+
+<p>That&rsquo;s it. Have a nice day and happy hacking!</p>
+
+<p>P/S: Sure that you can have many other solutions like Apache + Modrewrite, etc., but to us, <code>nginx</code>
+is more lightweight, simpler and flexible enough. We also use <code>nginx</code> to proxy and protect many
+other HTTP(S) resources for our projects.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://help.github.com/articles/user-organization-and-project-pages<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/articles/setting-up-a-custom-domain-with-pages<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://wiki.nginx.org/HttpRewriteModule<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to start blogging easily with octopress and teracy-dev]]></title>
+    <link href="http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/"/>
+    <updated>2013-08-03T10:43:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev</id>
+    <content type="html"><![CDATA[<p>This post will guide you to start blogging with Teracy&rsquo;s <a href="https://github.com/teracy-official/dev" title="Teracy's dev">dev</a> and <a href="http://octopress.org" title="octopress">octopress</a> like we did with
+our blog at <a href="https://github.com/teracy-official/blog">https://github.com/teracy-official/blog</a> with these outstanding advantages:</p>
+
+<ul>
+<li><p>use <code>octopress</code> blogging framework</p></li>
+<li><p>could start blogging on any operating systems</p></li>
+<li><p>have automatic deployment via travis-ci everytime you update the blog source like ours at
+<a href="https://travis-ci.org/teracy-official/blog">https://travis-ci.org/teracy-official/blog</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>In case if you&rsquo;re wondering:</p>
+
+<ul>
+<li><p>Teracy&rsquo;s <code>dev</code> is a little virtual machine (VM) box that any Teraciers must use it to setup
+working environment. All the required runtime environment will be automatically setup there.</p></li>
+<li><p><code>octopress</code> is &ldquo;A blogging framework for hackers.&rdquo; I don&rsquo;t think it&rsquo;s for hackers anymore when
+you&rsquo;re using Teracy&rsquo;s <code>dev</code> for blogging, it should be for everyone who knows how to type and a
+little bit of <code>Git</code> learning. Do you? :&ndash;)</p></li>
+</ul>
+
+
+<p><code>octopress</code> requires <code>Ruby</code> for its runtime environment, <code>Git</code> for blog management.
+To make it dead-simple and error-prone-free to start, we&rsquo;re going to use Teracy&rsquo;s <code>dev</code>.</p>
+
+<p>So let&rsquo;s begin now, this could take you a little long time for setting up, but it&rsquo;s worth it,
+believe me!</p>
+
+<h2>Step 1: Setup <code>dev</code></h2>
+
+<p>Note that before <code>$ vagrant up</code> as guided below, you need to enable forwarded-port on <code>Vagrantfile</code>
+to preview <code>octopress</code> blog later (by removing the hash character (<code>#</code>) at the beginning of the
+line):</p>
+
+<p><code>ruby Vagrantfile
+config.vm.network :forwarded_port, guest: 4000, host: 4000 # octopress preview, disabled by default
+</code></p>
+
+<p>Please follow the guide here at: <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<h2>Step 2: Install <code>Ruby</code></h2>
+
+<p>Please follow the guide here at: <a href="http://dev.teracy.org/docs/ruby_training.html#installation">http://dev.teracy.org/docs/ruby_training.html#installation</a></p>
+
+<h2>Step 3: Setup <code>octopress</code></h2>
+
+<p><strong>Note</strong>:</p>
+
+<ul>
+<li><p><code>Git</code> and <code>Ruby</code> was already installed on the VM.</p></li>
+<li><p>You need to make sure to register a Github account at <a href="https://github.com/">https://github.com/</a></p></li>
+<li><p>You must store your repository at <code>teracy-dev/workspace/personal</code> directory or you could
+possibly loose it when <code>$ vagrant destroy</code>. For example, to clone <code>octopress</code> repository:</p></li>
+</ul>
+
+
+<p><code>bash
+$ ws
+$ cd personal
+$ git clone git://github.com/imathis/octopress.git octopress
+</code></p>
+
+<p><code>$ ws</code> is an alias provided by Teracy&rsquo;s <code>dev</code> to change directory to <code>workspace</code> directory where all
+your work must be kept there.</p>
+
+<p><strong>1. Setup</strong></p>
+
+<p>Please follow the official guide here at: <a href="http://octopress.org/docs/setup/">http://octopress.org/docs/setup/</a> and make sure
+to deploy with <em>Github Pages</em>.</p>
+
+<p><strong>2. Preview</strong></p>
+
+<p><strong>Note</strong>: To <code>preview</code> with <code>$ rake preview</code> you should enable forwarded-port on the VM mentioned
+from step 1 above.</p>
+
+<p><code>$ rake preview</code> and open your browser at: <code>http://localhost:4000</code> to preview the <code>octopress</code> blog.</p>
+
+<p>After that, you could start blogging and enjoy it now. However, one very cool thing is that you
+don&rsquo;t have to <code>$ rake generate</code> and then <code>$ rake deploy</code> anymore, it should be automatically
+done when you <code>push</code> updates to your github repository like we did for Teracy&rsquo;s official blog.</p>
+
+<h2>Step 4: Automatic deployment with travis-ci</h2>
+
+<p><strong>1. Register travis-ci account at:</strong> <a href="http://travis-ci.org">http://travis-ci.org</a></p>
+
+<p><strong>2. Configure your project build</strong></p>
+
+<p>2.1. Install <code>curl</code> with:</p>
+
+<p><code>bash install curl
+$ sudo apt-get install curl
+</code></p>
+
+<p>2.2. Provide your github user account and run the following command, for example, my account is <code>hoatle</code>:</p>
+
+<p><code>bash get token
+$ curl -u 'hoatle' -d '{"scopes":["public_repo"], "note":"Travis access"}' https://api.github.com/authorizations
+</code></p>
+
+<p>You could get the output something like this, you need to notice the &ldquo;token&rdquo; key:</p>
+
+<p>``` bash output
+Enter host password for user &lsquo;hoatle&rsquo;:
+{
+  &ldquo;id&rdquo;: 3223760,
+  &ldquo;url&rdquo;: &ldquo;<a href="https://api.github.com/authorizations/3223760">https://api.github.com/authorizations/3223760</a>&rdquo;,
+  &ldquo;app&rdquo;: {</p>
+
+<pre><code>"name": "Travis access (API)",
+"url": "http://developer.github.com/v3/oauth/#oauth-authorizations-api",
+"client_id": "66c370cb34ce199ab76a"
+</code></pre>
+
+<p>  },
+  &ldquo;token&rdquo;: &ldquo;1cbbaf4dd0b82c54006377b233ee528612345678&rdquo;,
+  &ldquo;note&rdquo;: &ldquo;Travis access&rdquo;,
+  &ldquo;note_url&rdquo;: null,
+  &ldquo;created_at&rdquo;: &ldquo;2013-08-03T05:47:39Z&rdquo;,
+  &ldquo;updated_at&rdquo;: &ldquo;2013-08-03T05:47:39Z&rdquo;,
+  &ldquo;scopes&rdquo;: [</p>
+
+<pre><code>"public_repo"
+</code></pre>
+
+<p>  ]
+}
+```</p>
+
+<p>2.3. Install <code>travis</code> gem to generate &ldquo;secure&rdquo; key:</p>
+
+<p><code>bash
+$ gem install travis
+$ rbenv rehash
+</code></p>
+
+<p>2.4. Generate &ldquo;secure&rdquo; key from your provided token, mine is something like:</p>
+
+<p><code>bash
+$ travis encrypt GH_TOKEN=1cbbaf4dd0b82c54006377b233ee528612345678
+</code></p>
+
+<p>And you will get the output something like below, you need to get &ldquo;secure&rdquo; key to configure travis-ci
+later.</p>
+
+<p>``` bash
+Please add the following to your .travis.yml file:</p>
+
+<p>  secure: &ldquo;f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY=&rdquo;</p>
+
+<p>Pro Tip: You can add it automatically by running with &mdash;add.
+```</p>
+
+<p>2.5. Configure <code>.travis.yml</code> like we did at
+<a href="https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1">https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1</a></p>
+
+<p>You need to replace these with yours accordingly:</p>
+
+<pre><code>- git config --global user.name "Hoat Le"
+- git config --global user.email "hoatlevan @ gmail . com"
+
+- GH_REPO="teracy-official/teracy-official.github.io"
+- secure: "f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY="
+</code></pre>
+
+<p>If you setup blog as user/ organization page, you need to enable <code>source</code> branch instead of <code>master</code>
+like ours.</p>
+
+<p>2.6. Configure <code>Rakefile</code> like we did at
+<a href="https://github.com/teracy-official/blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2">https://github.com/teracy-official/blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2</a></p>
+
+<p>And this [hot-fix]: <a href="https://github.com/teracy-official/blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1">https://github.com/teracy-official/blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1</a></p>
+
+<p><strong>3. Finally, enable travis-ci build for your project</strong></p>
+
+<p>You should make a post, <code>push</code> the change to see how travis-ci works.
+Your blog should be running well now.</p>
+
+<p>If you want to use Github custom domains, please head to:
+<a href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/">http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/</a></p>
+
+<p>Many thanks to:</p>
+
+<ul>
+<li><p><a href="http://rogerz.github.io/blog/2013/02/21/prose-io-github-travis-ci/">http://rogerz.github.io/blog/2013/02/21/prose-io-github-travis-ci/</a> for automatic
+deployment work.</p></li>
+<li><p><a href="http://www.harimenon.com/blog/2013/01/27/auto-deploying-to-my-octopress-blog/">http://www.harimenon.com/blog/2013/01/27/auto-deploying-to-my-octopress-blog/</a> for twitter button
+fixing.</p></li>
+</ul>
+
+
+<p>Happy blogging!</p>
+]]></content>
+  </entry>
+  
+</feed>

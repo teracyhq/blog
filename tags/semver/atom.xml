@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: semver | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/semver/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Manage software dependency with semantic versioning]]></title>
+    <link href="http://blog.teracy.com/2013/08/12/manage-software-dependency-with-semantic-versioning/"/>
+    <updated>2013-08-12T19:42:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/12/manage-software-dependency-with-semantic-versioning</id>
+    <content type="html"><![CDATA[<p>Do you know what it means to release your software labeled with <code>alpha</code>, <code>beta</code>, <code>release candidate</code>
+or <code>final release</code>? When and where to increase the number range? What&rsquo;s the difference between
+0.1.0, 1.0.0, 1.2.0 and 2.0.0? We&rsquo;re going to make it clear on this post.</p>
+
+<!-- more -->
+
+
+<h2>Problem</h2>
+
+<p>Usually, your software is composed of different small pieces of software libraries and they have
+different release schemas. When upgrading these libraries, it&rsquo;s very hard to know if your
+software still works normally without reading their APIs documentation, release notes and running
+many tests yourself to make sure the upgrading does not break anything and this hurts.</p>
+
+<p><blockquote><p></p></p><p><p>In the world of software management there exists a dread place called &ldquo;dependency hell.&rdquo; The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.</p></p><p><p>In systems with many dependencies, releasing new package versions can quickly become a nightmare.</p></p><p><p></p><footer><strong>Tom Preston-Werner <a href="http://semver.org/spec/v2.0.0.html">http://semver.org/spec/v2.0.0.html</a> Semantic Versioning 2.0.0</strong></footer></blockquote></p>
+
+<p>Yes, it&rsquo;s true and some software companies I know are still struggling with the problem of dependency
+management. I myself had this kind of nightmare many times when working on a big growing software
+system with many layers of dependency and that&rsquo;s the reason I really want to improve its development
+experience.</p>
+
+<p>Fortunately, <code>semantic versioning</code> specification<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> was introduced and it&rsquo;s general enough to be
+applied to other existing dependency management tools and systems:</p>
+
+<p>From <code>Java</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> world with <code>Maven</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+<p>From <code>Python</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> world with <code>setuptools</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> and <code>pip</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> on top of <code>setuptools</code></p>
+
+<p>From <code>Ruby</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup> world with <code>bundler</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup></p>
+
+<p>From <code>PHP</code><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup> world with <code>composer</code><sup id="fnref:10"><a href="#fn:10" rel="footnote">10</a></sup></p>
+
+<p>and you name it.</p>
+
+<p>All these kinds of dependency management tools have different kinds of version schemas, we need to
+make it more consistent among projects within an organization.</p>
+
+<h2>Requirements</h2>
+
+<p>As <code>sementic versioning</code> specification is general enough, it&rsquo;s possible to extend it for more
+specific uses. We should have a semantic versioning base that is extensible for different dependency
+management tools.</p>
+
+<p>So a <code>Base</code> must:</p>
+
+<ul>
+<li><p>Extend <code>semantic versioning</code></p></li>
+<li><p>Provide a general policy to avoid &ldquo;incompatible&rdquo; with existing dependency management tools as much
+as possible.</p></li>
+</ul>
+
+
+<h2>Solution</h2>
+
+<p>At Teracy, we try to get all projects to follow a common base semantic versioning policy so that
+everything is clear and consistent.</p>
+
+<p>You could have a look at the docs here <a href="http://dev.teracy.org/docs/develop/semantic_versioning.html">http://dev.teracy.org/docs/develop/semantic_versioning.html</a> ,
+there is still much work left to be done, but it&rsquo;s good enough for <code>Python</code>&rsquo;s versioning
+now.</p>
+
+<h2>Summary</h2>
+
+<p>This is just an initiative to achieve a common base that is compatible with existing dependency
+management tools as much as possible. It will make a developer life easier with a consistent
+semantic versioning schema like <a href="http://dev.teracy.org/docs/develop/semantic_versioning.html">http://dev.teracy.org/docs/develop/semantic_versioning.html</a></p>
+
+<p>Have a nice day and happy working!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://semver.org/spec/v2.0.0.html<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.java.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://maven.apache.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://python.org<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>https://pypi.python.org/pypi/setuptools<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>https://pypi.python.org/pypi/pip<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p>http://www.ruby-lang.org<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p>http://bundler.io<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+<li id="fn:9">
+<p>http://php.net<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
+<li id="fn:10">
+<p>http://getcomposer.org<a href="#fnref:10" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

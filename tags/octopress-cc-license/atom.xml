@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: octopress-cc-license | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/octopress-cc-license/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[octopress-cc-license chooser plugin v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release/"/>
+    <updated>2013-09-06T15:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/06/cc-by.png" title="Creative Commons License" ></p>
+
+<p>&ldquo;Open&rdquo; is one of Teracy&rsquo;s most important values. We promote open source projects on our
+development path.</p>
+
+<p>For open source projects, we have open source licenses. For other &ldquo;creative&rdquo; resources such as
+our blog posts and documentation, <code>Creative Commons</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> license is used.</p>
+
+<!-- more -->
+
+
+<p>To choose<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> and add <code>Creative Commons</code> license to <code>octopress</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> posts easily, we created
+<a href="https://github.com/hoatle/octopress-cc-license">octopress-cc-license</a> plugin. This is the first release milestone as of v0.1.0 with &ldquo;basic
+configuration for cc license allow modification, allow commercial uses and icon styles.&rdquo;</p>
+
+<p>What&rsquo;s next? For v0.2.0 release, we would like to support:</p>
+
+<ul>
+<li>cc_license_license_jurisdiction</li>
+<li>cc-license chooser for individual posts</li>
+<li>use tag plugin instead of template</li>
+</ul>
+
+
+<p>For details, please head to: <a href="https://github.com/hoatle/octopress-cc-license/issues?milestone=2">https://github.com/hoatle/octopress-cc-license/issues?milestone=2</a></p>
+
+<p>We hope that this plugin is helpful for your <code>octopress</code> blog posts. Happy blogging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://creativecommons.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://creativecommons.org/choose/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://octopress.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

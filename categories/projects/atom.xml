@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: projects | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[django-boilerplate v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release/"/>
+    <updated>2013-09-07T14:11:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/07/django-logo.png" title="Django Logo" ></p>
+
+<p>Today we&rsquo;re very glad to announce v0.1.0 release of <a href="https://github.com/teracy-official/django-boilerplate">django-boilerplate</a>. The project was started
+since May 26, 2013 and after many iterations and improvements, it&rsquo;s good enough to be shipped as
+v0.1.0 now.</p>
+
+<!-- more -->
+
+
+<p><a href="https://github.com/teracy-official/django-boilerplate">django-boilerplate</a> was created to &ldquo;promotes best practices to organize and start any <code>Django</code>
+project.&rdquo;</p>
+
+<p>Currently, the project promotes a <code>Django</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> project layout that could be used and upgraded
+seamlessly. It uses files overlay upgrade strategy, which basically just downloads and overwrites
+existing base files. By using this approach, your specific project files will not be affected by
+each upgrade.</p>
+
+<p>Moreover, the project also includes coding style checking (<code>pep8</code>, <code>flake8</code>, <code>pylint</code>, <code>coverage</code>,
+etc.), continuous integration build (<code>travis-ci</code>, <code>jenkins</code>). For more information, please head to
+its README file at <a href="https://github.com/teracy-official/django-boilerplate">https://github.com/teracy-official/django-boilerplate</a></p>
+
+<p>There are still many things to do, we&rsquo;re listening to feedback from the community and our usage to
+iterate for next version (v0.2.0) with improvements, rule violations reduction.</p>
+
+<p>Have a nice day and happy <code>Django</code> hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://djangoproject.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[octopress-cc-license chooser plugin v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release/"/>
+    <updated>2013-09-06T15:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/06/cc-by.png" title="Creative Commons License" ></p>
+
+<p>&ldquo;Open&rdquo; is one of Teracy&rsquo;s most important values. We promote open source projects on our
+development path.</p>
+
+<p>For open source projects, we have open source licenses. For other &ldquo;creative&rdquo; resources such as
+our blog posts and documentation, <code>Creative Commons</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> license is used.</p>
+
+<!-- more -->
+
+
+<p>To choose<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> and add <code>Creative Commons</code> license to <code>octopress</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> posts easily, we created
+<a href="https://github.com/hoatle/octopress-cc-license">octopress-cc-license</a> plugin. This is the first release milestone as of v0.1.0 with &ldquo;basic
+configuration for cc license allow modification, allow commercial uses and icon styles.&rdquo;</p>
+
+<p>What&rsquo;s next? For v0.2.0 release, we would like to support:</p>
+
+<ul>
+<li>cc_license_license_jurisdiction</li>
+<li>cc-license chooser for individual posts</li>
+<li>use tag plugin instead of template</li>
+</ul>
+
+
+<p>For details, please head to: <a href="https://github.com/hoatle/octopress-cc-license/issues?milestone=2">https://github.com/hoatle/octopress-cc-license/issues?milestone=2</a></p>
+
+<p>We hope that this plugin is helpful for your <code>octopress</code> blog posts. Happy blogging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://creativecommons.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://creativecommons.org/choose/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://octopress.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release/"/>
+    <updated>2013-08-20T15:44:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>After more than 3 months since the project was started, today we&rsquo;re very happy to announce
+<a href="https://github.com/teracy-official/django-html5-boilerplate">teracy-django-html5-boilerplate</a> v0.1.0 release.</p>
+
+<p>The project mission is to port <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to Django development so that every Django
+project could take and use it with ease, flexibility and customization by its needs.</p>
+
+<!-- more -->
+
+
+<p>This milestone release is just small enough to introduce:</p>
+
+<ul>
+<li><p><code>base.html</code> with context variables and blocks that gives much flexibility for customization</p></li>
+<li><p>a context processor to handle some fixed settings for context variables so that you don&rsquo;t have to
+(re)define it all the time from views.</p></li>
+</ul>
+
+
+<p>We&rsquo;re still far from the completed mission, the next version with <code>v0.2.0</code> we would like to include
+(almost) all the provided assets from <code>html5-boilerplate</code> and explore each items for Django
+development.</p>
+
+<p>This initial milestone release is stable enough for simple usage, stay tuned with our upcoming
+releases. You are all more than welcome to contribute to the project. Please fork it, hack it and
+make pull requests!</p>
+
+<p>In the meantime, you could grab it here at <a href="https://github.com/teracy-official/django-html5-boilerplate">https://github.com/teracy-official/django-html5-boilerplate</a></p>
+
+<p>We also released it to <code>pypi</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> at <a href="https://pypi.python.org/pypi/teracy-django-html5-boilerplate">https://pypi.python.org/pypi/teracy-django-html5-boilerplate</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://pypi.python.org/pypi<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/"/>
+    <updated>2013-08-18T17:53:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>10 days after the announcement of <code>sphinx-deployment</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> project, today we&rsquo;re very happy to
+announce v0.1.0 release.</p>
+
+<!-- more -->
+
+
+<p>This is just a small release milestone, it fully supports <code>Github Pages</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment. It&rsquo;s stable
+enough to use now.</p>
+
+<p>The next step we will support <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment with v0.2.0 release.</p>
+
+<p>Now it&rsquo;s really easy to deploy your <code>sphinx</code> docs to <code>Github Pages</code> with <code>sphinx-deployment</code>, grab
+it now at <a href="https://github.com/teracy-official/sphinx-deployment">https://github.com/teracy-official/sphinx-deployment</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatic sphinx docs deployment with sphinx-deployment]]></title>
+    <link href="http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/"/>
+    <updated>2013-08-09T03:13:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment</id>
+    <content type="html"><![CDATA[<p>At Teracy, all our documentations are written with the help from <code>sphinx</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. It&rsquo;s easy to setup and
+manage. However, we could not find a good enough <strong>deployment solution</strong> for <code>sphinx</code> documentation
+project. What does &ldquo;good enough&rdquo; here means? It means:</p>
+
+<ul>
+<li><p>The installation and configuration should be easy with <code>git</code> and command line.</p></li>
+<li><p>The deployment could be &ldquo;decoupled&rdquo; from <code>sphinx</code> project for easy upgrade and maintenance. It&rsquo;s
+better if we could have this deployment solution provided by <code>sphinx</code> out of the box.</p></li>
+<li><p>The deployment should support as many services as possible: <code>github pages</code> <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, and
+<code>PaaS</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> services like <code>heroku</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>, etc.</p></li>
+<li><p>The usage should be easy like:</p>
+
+<ul>
+<li><code>$ make setup</code> to setup deployment basing on the configurations</li>
+<li><code>$ make generate</code> to generate content basing on the configurations</li>
+<li><code>$ make deploy</code> to deploy the project basing on the configurations</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>We could not find a solution good enough meeting our requirements, so we created
+<a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project that implements the ideas and requirements above.</p>
+
+<p>Currently, it&rsquo;s on very very early development stage to just
+support deployment on <code>github pages</code> automatically with <code>travis-ci</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>, and
+<a href="https://travis-ci.org/teracy-official/dev">https://travis-ci.org/teracy-official/dev</a> as an example.</p>
+
+<p>There are many things that we need to do, please help use to shape the project&rsquo;s future by
+contributing with <code>forking</code>, <code>hacking</code> and <code>pull requests</code> or giving your ideas. Your contributions
+are all welcome. Please head to the development branch at
+<a href="https://github.com/teracy-official/sphinx-deployment/tree/develop">https://github.com/teracy-official/sphinx-deployment/tree/develop</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://sphinx-doc.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://en.wikipedia.org/wiki/Platform_as_a_service<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://heroku.com<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://travis-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

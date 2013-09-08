@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: git-encrypt | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/git-encrypt/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Keep, share and manage top secret resources with git-encrypt and gitolite]]></title>
+    <link href="http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite/"/>
+    <updated>2013-08-07T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite</id>
+    <content type="html"><![CDATA[<p>Recently, we have a problem of top secret resources sharing that we need to resolve. Let me start
+by a story.</p>
+
+<p>As a startup of 2 co-founders, we have common top secret resources to be shared with each other.
+These common resources include credentials of many services (email, VPS, social networks, etc.),
+secret plan, road-map and secret documentation files. And we need to find a way to keep, share and
+manage these resources securely.</p>
+
+<!-- more -->
+
+
+<p>Our requirements include:</p>
+
+<ul>
+<li><strong>encryption</strong> is a <code>must</code></li>
+<li><strong>backup strategy</strong> is a <code>must</code></li>
+<li><strong>version control</strong> is a <code>should</code></li>
+<li><strong>keep, share and manage</strong> <code>easily</code> is a <code>should</code></li>
+</ul>
+
+
+<p>&ldquo;Encryption&rdquo; and &ldquo;version control&rdquo; requirements lead us to <code>git-encrypt</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, it&rsquo;s not perfect but
+it works.</p>
+
+<p>&ldquo;Backup strategy&rdquo; requirement leads us to keeping this secret git repository on a VPS, so we decided
+to install <code>gitolite</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> on the VPS because with <code>gitolite</code>, we could manage the security
+layer and git repository permissions more easily, we don&rsquo;t want to mess with linux permissions.
+For more details, please head to: <a href="http://git-scm.com/book/ch4-8.html">http://git-scm.com/book/ch4-8.html</a></p>
+
+<p>And that&rsquo;s it. Now we could enjoy top secret resources keeping, sharing and managing. It&rsquo;s not the
+most secured, but it&rsquo;s secured enough for us.</p>
+
+<p>If you have a better approach, please let us know by commenting.</p>
+
+<p>Happy working and happy securing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://github.com/shadowhand/git-encrypt<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://gitolite.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

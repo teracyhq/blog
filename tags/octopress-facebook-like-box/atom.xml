@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: octopress-facebook-like-box | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/octopress-facebook-like-box/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to add Facebook like-box to octopress]]></title>
+    <link href="http://blog.teracy.com/2013/08/05/how-to-add-facebook-like-box-to-octopress/"/>
+    <updated>2013-08-05T02:48:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/05/how-to-add-facebook-like-box-to-octopress</id>
+    <content type="html"><![CDATA[<p>We&rsquo;ve just added the Facebook like-box to the default asides as you could see it on the right
+sidebar and we want to share the way to do the same for your <code>octopress</code> blog.</p>
+
+<p>By the way, you should like our Facebook page to see how it works and to get news about us :).</p>
+
+<p>There is an existing plugin at <a href="https://github.com/geetotes/octopress-facebook-likebox">https://github.com/geetotes/octopress-facebook-likebox</a> introduced by
+<a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">https://github.com/imathis/octopress/wiki/3rd-party-plugins</a> that does the work, however, we don&rsquo;t
+think that plugin approach meets our requirements from our <a href="http://dev.teracy.org/docs/intro.html#join-and-work-with-us">development philosophy</a>.</p>
+
+<!-- more -->
+
+
+<ul>
+<li>We want to adhere with existing octopress conventions of plugins management</li>
+<li>We want to avoid manual configuration</li>
+<li>We want to avoid any conflict as much as possible</li>
+<li>We want to upgrade the plugin seamlessly</li>
+<li>We want to do friendly <code>Git</code> and command lines.</li>
+</ul>
+
+
+<p>That is the reason why we created <a href="https://github.com/hoatle/octopress-facebook-like-box">octopress-facebook-like-box</a> that meets our requirements.</p>
+
+<p>To install and configure the plugin, please see instruction from README.md at
+<a href="https://github.com/hoatle/octopress-facebook-like-box">https://github.com/hoatle/octopress-facebook-like-box</a></p>
+
+<p>These are the detailed steps carried out for this blog:</p>
+
+<ul>
+<li>Merging: <a href="https://github.com/teracy-official/teracy-official-blog/commit/8f0da04d6366701b7c363b6792e8c74e9a9590df">https://github.com/teracy-official/teracy-official-blog/commit/8f0da04d6366701b7c363b6792e8c74e9a9590df</a></li>
+<li>Installing: <a href="https://github.com/teracy-official/teracy-official-blog/commit/218149037da3857a4af2bb3f9c9106ec29544206">https://github.com/teracy-official/teracy-official-blog/commit/218149037da3857a4af2bb3f9c9106ec29544206</a></li>
+<li>Configuring: <a href="https://github.com/teracy-official/teracy-official-blog/commit/c4aadab5f7f035bc4604406b2a8686430f3d4989">https://github.com/teracy-official/teracy-official-blog/commit/c4aadab5f7f035bc4604406b2a8686430f3d4989</a></li>
+</ul>
+
+
+<p>If you haven&rsquo;t tried <code>octopress</code> yet, we had a guide for you to get started with so much fun and ease
+at: <a href="http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/">http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/</a></p>
+
+<p>If you want to improve anything, please let us know by commenting on this post or create a new issue
+at <a href="https://github.com/hoatle/octopress-facebook-like-box/issues">https://github.com/hoatle/octopress-facebook-like-box/issues</a> or fork the project, hack and make a
+pull request, your contributions are all welcome.</p>
+
+<p>Happy hacking and happy blogging!</p>
+]]></content>
+  </entry>
+  
+</feed>

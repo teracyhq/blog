@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: how-to | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/categories/how-to/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Manage software dependency with semantic versioning]]></title>
+    <link href="http://blog.teracy.com/2013/08/12/manage-software-dependency-with-semantic-versioning/"/>
+    <updated>2013-08-12T19:42:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/12/manage-software-dependency-with-semantic-versioning</id>
+    <content type="html"><![CDATA[<p>Do you know what it means to release your software labeled with <code>alpha</code>, <code>beta</code>, <code>release candidate</code>
+or <code>final release</code>? When and where to increase the number range? What&rsquo;s the difference between
+0.1.0, 1.0.0, 1.2.0 and 2.0.0? We&rsquo;re going to make it clear on this post.</p>
+
+<!-- more -->
+
+
+<h2>Problem</h2>
+
+<p>Usually, your software is composed of different small pieces of software libraries and they have
+different release schemas. When upgrading these libraries, it&rsquo;s very hard to know if your
+software still works normally without reading their APIs documentation, release notes and running
+many tests yourself to make sure the upgrading does not break anything and this hurts.</p>
+
+<p><blockquote><p></p></p><p><p>In the world of software management there exists a dread place called &ldquo;dependency hell.&rdquo; The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.</p></p><p><p>In systems with many dependencies, releasing new package versions can quickly become a nightmare.</p></p><p><p></p><footer><strong>Tom Preston-Werner <a href="http://semver.org/spec/v2.0.0.html">http://semver.org/spec/v2.0.0.html</a> Semantic Versioning 2.0.0</strong></footer></blockquote></p>
+
+<p>Yes, it&rsquo;s true and some software companies I know are still struggling with the problem of dependency
+management. I myself had this kind of nightmare many times when working on a big growing software
+system with many layers of dependency and that&rsquo;s the reason I really want to improve its development
+experience.</p>
+
+<p>Fortunately, <code>semantic versioning</code> specification<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> was introduced and it&rsquo;s general enough to be
+applied to other existing dependency management tools and systems:</p>
+
+<p>From <code>Java</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> world with <code>Maven</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+<p>From <code>Python</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> world with <code>setuptools</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> and <code>pip</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> on top of <code>setuptools</code></p>
+
+<p>From <code>Ruby</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup> world with <code>bundler</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup></p>
+
+<p>From <code>PHP</code><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup> world with <code>composer</code><sup id="fnref:10"><a href="#fn:10" rel="footnote">10</a></sup></p>
+
+<p>and you name it.</p>
+
+<p>All these kinds of dependency management tools have different kinds of version schemas, we need to
+make it more consistent among projects within an organization.</p>
+
+<h2>Requirements</h2>
+
+<p>As <code>sementic versioning</code> specification is general enough, it&rsquo;s possible to extend it for more
+specific uses. We should have a semantic versioning base that is extensible for different dependency
+management tools.</p>
+
+<p>So a <code>Base</code> must:</p>
+
+<ul>
+<li><p>Extend <code>semantic versioning</code></p></li>
+<li><p>Provide a general policy to avoid &ldquo;incompatible&rdquo; with existing dependency management tools as much
+as possible.</p></li>
+</ul>
+
+
+<h2>Solution</h2>
+
+<p>At Teracy, we try to get all projects to follow a common base semantic versioning policy so that
+everything is clear and consistent.</p>
+
+<p>You could have a look at the docs here <a href="http://dev.teracy.org/docs/develop/semantic_versioning.html">http://dev.teracy.org/docs/develop/semantic_versioning.html</a> ,
+there is still much work left to be done, but it&rsquo;s good enough for <code>Python</code>&rsquo;s versioning
+now.</p>
+
+<h2>Summary</h2>
+
+<p>This is just an initiative to achieve a common base that is compatible with existing dependency
+management tools as much as possible. It will make a developer life easier with a consistent
+semantic versioning schema like <a href="http://dev.teracy.org/docs/develop/semantic_versioning.html">http://dev.teracy.org/docs/develop/semantic_versioning.html</a></p>
+
+<p>Have a nice day and happy working!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://semver.org/spec/v2.0.0.html<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.java.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://maven.apache.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://python.org<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>https://pypi.python.org/pypi/setuptools<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>https://pypi.python.org/pypi/pip<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p>http://www.ruby-lang.org<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p>http://bundler.io<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+<li id="fn:9">
+<p>http://php.net<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
+<li id="fn:10">
+<p>http://getcomposer.org<a href="#fnref:10" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatic sphinx docs deployment with sphinx-deployment]]></title>
+    <link href="http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/"/>
+    <updated>2013-08-09T03:13:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment</id>
+    <content type="html"><![CDATA[<p>At Teracy, all our documentations are written with the help from <code>sphinx</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. It&rsquo;s easy to setup and
+manage. However, we could not find a good enough <strong>deployment solution</strong> for <code>sphinx</code> documentation
+project. What does &ldquo;good enough&rdquo; here means? It means:</p>
+
+<ul>
+<li><p>The installation and configuration should be easy with <code>git</code> and command line.</p></li>
+<li><p>The deployment could be &ldquo;decoupled&rdquo; from <code>sphinx</code> project for easy upgrade and maintenance. It&rsquo;s
+better if we could have this deployment solution provided by <code>sphinx</code> out of the box.</p></li>
+<li><p>The deployment should support as many services as possible: <code>github pages</code> <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, and
+<code>PaaS</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> services like <code>heroku</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>, etc.</p></li>
+<li><p>The usage should be easy like:</p>
+
+<ul>
+<li><code>$ make setup</code> to setup deployment basing on the configurations</li>
+<li><code>$ make generate</code> to generate content basing on the configurations</li>
+<li><code>$ make deploy</code> to deploy the project basing on the configurations</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>We could not find a solution good enough meeting our requirements, so we created
+<a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project that implements the ideas and requirements above.</p>
+
+<p>Currently, it&rsquo;s on very very early development stage to just
+support deployment on <code>github pages</code> automatically with <code>travis-ci</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>, and
+<a href="https://travis-ci.org/teracy-official/dev">https://travis-ci.org/teracy-official/dev</a> as an example.</p>
+
+<p>There are many things that we need to do, please help use to shape the project&rsquo;s future by
+contributing with <code>forking</code>, <code>hacking</code> and <code>pull requests</code> or giving your ideas. Your contributions
+are all welcome. Please head to the development branch at
+<a href="https://github.com/teracy-official/sphinx-deployment/tree/develop">https://github.com/teracy-official/sphinx-deployment/tree/develop</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://sphinx-doc.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://en.wikipedia.org/wiki/Platform_as_a_service<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://heroku.com<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://travis-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Multiple Github custom domains]]></title>
+    <link href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/"/>
+    <updated>2013-08-08T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/08/multiple-github-custom-domains</id>
+    <content type="html"><![CDATA[<p>Today we&rsquo;re going to share with you the way to use multiple github custom domains as we did with our
+<code>teracy-official</code> organization account.</p>
+
+<p>As we know, there are two types of github pages: user/ organization pages and project pages <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>.
+Our organization account is located at: <a href="https://github.com/teracy-official">https://github.com/teracy-official</a></p>
+
+<p>By default, <code>http://teracy-official.github.io</code> will point to <code>teracy-official.github.io</code>&rsquo;s <code>master</code>
+branch. And <code>teracy-official.github.io/&lt;project_name&gt;</code> will point to the project&rsquo;s <code>gh-pages</code> branch
+if it&rsquo;s available.</p>
+
+<p>With our requirements, we don&rsquo;t want to use <code>http://teracy-official.github.io</code> but
+<code>http://teracy.com</code> and <code>http://teracy.org</code> only. That&rsquo;s why we have to setup multiple github custom
+domains <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
+
+<!-- more -->
+
+
+<h2>1. Problems</h2>
+
+<p>From the very first days, we setup <code>blog.teracy.com</code> to map to the organization page at
+<code>teracy-official.github.io</code> repository. We could get what we want by:</p>
+
+<ul>
+<li>adding CNAME <code>blog.teracy.com</code> with alias <code>teracy-official.github.io</code> via DNS manager</li>
+<li>adding CNAME file with &lsquo;blog.teracy.com&rsquo; content to <code>teracy-official.github.io/tree/master/CNAME</code></li>
+</ul>
+
+
+<p>However, by default, this domain will be used for all other project pages if you don&rsquo;t specify
+th project custom domains.</p>
+
+<p>For example, by setting up like above and we have <code>teracy-dev</code> project with <code>gh-pages</code> branch.
+When we access <code>teracy-official.github.io/teracy-dev</code>, it will be redirected to
+<code>blog.teracy.com/teracy-dev</code> project page by github custom domain mechanism, and this was not what
+we expected.</p>
+
+<p>We also want <code>teracy-dev</code> project page should be served by <code>http://teracy-dev.teracy.org</code>, it&rsquo;s also
+every easy just configure CNAME and add CNAME file to <code>gh-pages</code> branch like we did with the blog
+configuration above:</p>
+
+<ul>
+<li>add CNAME <code>teracy-dev.teracy.org</code> with alias <code>teracy-official.github.io</code></li>
+<li>add CNAME file with &lsquo;teracy-dev.teracy.org&rsquo; content to <code>teracy-dev/tree/gh-pages/CNAME</code></li>
+</ul>
+
+
+<p>Wait for DNS change to be updated and access <code>teracy-dev.teracy.org</code>, it should point to
+<code>teracy-dev/tree/gh-pages</code> site.</p>
+
+<p>There is a minor problem though:
+<code>teracy-official.github.io/teracy-dev</code> will not be automatically redirected to
+<a href="http://teracy-dev.teracy.org">http://teracy-dev.teracy.org</a></p>
+
+<p>If we configure the root domain <a href="http://teracy.org">http://teracy.org</a> to map to <code>teracy-official.github.io</code> page,
+the link <code>teracy-official.github.io/teracy-dev</code> will be redirected to <code>teracy.org/teracy-dev</code> by
+github custom domain mechanism. With this approach, an issue is raised: it will also introduce more
+duplicated links between <code>teracy-dev.teracy.org</code> and <code>teracy.org/teracy-dev</code>. This duplicated issue
+should be avoided.</p>
+
+<p>There is a workaround that you could use JavaScript location checking. However, well, it&rsquo;s not
+flexible enough and does not work well with search engines.</p>
+
+<p>So we decided to have a router on <code>teracy.org</code> by using <code>nginx</code>.</p>
+
+<h2>2. Solution with <code>nginx</code> server</h2>
+
+<p>2.1. Requirements</p>
+
+<p>Actually, before setting up our custom domains, existing links exists and we have to maintain these
+by redirecting. We have these requirement rules:</p>
+
+<ul>
+<li>By adding &lsquo;teracy.org&rsquo; to teracy-official.github.io/tree/master/CNAME => by github mechanism:</li>
+</ul>
+
+
+<p><code>
+teracy-official.github.io/* -&gt; teracy.org/*
+</code></p>
+
+<ul>
+<li>Our nginx rules:</li>
+</ul>
+
+
+<p>```
+teracy-official.github.io/teracy-dev/<em> &ndash;> teracy-dev.teracy.org/</em></p>
+
+<p>teracy-official.github.io/teracy-official-blog/<em> &ndash;> blog.teracy.com/</em>
+```</p>
+
+<ul>
+<li>Fix existing links by redirecting as these links are already indexed by search engines:</li>
+</ul>
+
+
+<p><code>
+teracy-official.github.io/2013/08/02/teracy-hello-world/ -&gt; blog.teracy.com/2013/08/02/teracy-hello-world/
+teracy-official.github.io/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/ -&gt; blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/
+</code></p>
+
+<p>The detailed requirements are at: <a href="https://github.com/teracy-official/teracy-official-blog/issues/20">https://github.com/teracy-official/teracy-official-blog/issues/20</a></p>
+
+<p>2.2. How to setup and configure <code>nginx</code> server</p>
+
+<p>With the above requirement rules, this is how to configure our <code>nginx</code> server.</p>
+
+<p>Create a new nginx host file at <code>/etc/nginx/sites-available/teracy.org</code> and symlink it to
+<code>/etc/nginx/sites-enable/teracy.org</code> with the content as below:</p>
+
+<p>```
+server {
+  listen 80;
+  server_name teracy.org;</p>
+
+<p>  location / {</p>
+
+<pre><code># redirect to teracy-dev.teracy.org if match below regex
+rewrite  ^/teracy-dev(/.*)?$  http://teracy-dev.teracy.org$1  break;
+
+# redirect to blog.teracy.com if match below regex
+rewrite  ^/teracy-official-blog(/.*)?$  http://blog.teracy.com$1  break;
+
+# Otherwise redirect to blog.teracy.com
+rewrite  ^/(.*)$  http://blog.teracy.com/$1  break;
+</code></pre>
+
+<p>  }
+}
+```</p>
+
+<p>Just by applying rules from <code>HttpRewriteModule</code> <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, we could solve the problems easily.</p>
+
+<p>That&rsquo;s it. Have a nice day and happy hacking!</p>
+
+<p>P/S: Sure that you can have many other solutions like Apache + Modrewrite, etc., but to us, <code>nginx</code>
+is more lightweight, simpler and flexible enough. We also use <code>nginx</code> to proxy and protect many
+other HTTP(S) resources for our projects.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://help.github.com/articles/user-organization-and-project-pages<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/articles/setting-up-a-custom-domain-with-pages<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://wiki.nginx.org/HttpRewriteModule<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Keep, share and manage top secret resources with git-encrypt and gitolite]]></title>
+    <link href="http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite/"/>
+    <updated>2013-08-07T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite</id>
+    <content type="html"><![CDATA[<p>Recently, we have a problem of top secret resources sharing that we need to resolve. Let me start
+by a story.</p>
+
+<p>As a startup of 2 co-founders, we have common top secret resources to be shared with each other.
+These common resources include credentials of many services (email, VPS, social networks, etc.),
+secret plan, road-map and secret documentation files. And we need to find a way to keep, share and
+manage these resources securely.</p>
+
+<!-- more -->
+
+
+<p>Our requirements include:</p>
+
+<ul>
+<li><strong>encryption</strong> is a <code>must</code></li>
+<li><strong>backup strategy</strong> is a <code>must</code></li>
+<li><strong>version control</strong> is a <code>should</code></li>
+<li><strong>keep, share and manage</strong> <code>easily</code> is a <code>should</code></li>
+</ul>
+
+
+<p>&ldquo;Encryption&rdquo; and &ldquo;version control&rdquo; requirements lead us to <code>git-encrypt</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, it&rsquo;s not perfect but
+it works.</p>
+
+<p>&ldquo;Backup strategy&rdquo; requirement leads us to keeping this secret git repository on a VPS, so we decided
+to install <code>gitolite</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> on the VPS because with <code>gitolite</code>, we could manage the security
+layer and git repository permissions more easily, we don&rsquo;t want to mess with linux permissions.
+For more details, please head to: <a href="http://git-scm.com/book/ch4-8.html">http://git-scm.com/book/ch4-8.html</a></p>
+
+<p>And that&rsquo;s it. Now we could enjoy top secret resources keeping, sharing and managing. It&rsquo;s not the
+most secured, but it&rsquo;s secured enough for us.</p>
+
+<p>If you have a better approach, please let us know by commenting.</p>
+
+<p>Happy working and happy securing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://github.com/shadowhand/git-encrypt<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://gitolite.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A separated Django application with unit tests, coding convention checking and coverage report]]></title>
+    <link href="http://blog.teracy.com/2013/08/06/a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report/"/>
+    <updated>2013-08-06T10:48:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/06/a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report</id>
+    <content type="html"><![CDATA[<p>Today we&rsquo;re going to share with you how to create a separated Django application with the following
+requirements:</p>
+
+<ul>
+<li>must be a separated Django application for easier packaging and distribution.</li>
+<li>must be tested like it was tested within a Django project for the same development experience
+whether the application is within a Django application or a separated one.</li>
+<li>must have test coverage report to check the quality of project.</li>
+<li>must have coding convention checking for consistent style and best practices.</li>
+<li>must be built by travis-ci (or other ci system).</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>And we managed to meets these requirements with [django-html5-boilerplate][] project.
+Well, [django-html5-boilerplate][] is just a simple Django application wrapper for
+<code>HTML5 Boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> so that you could extend and reuse it on your Django project with much ease,
+fun and:</p>
+
+<ul>
+<li>yes, it&rsquo;s a separated Django application, could be easily installed with <code>pip</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> or
+<code>setuptools</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>.</li>
+<li>yes, it was setup to be tested with the help from <code>django-discover-runner</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>.</li>
+<li>yes, it was setup to have test coverage report with the help from <code>coverage</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>.</li>
+<li>yes, it was setup to have coding convention checking (<code>PEP 8</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> and more) with the help from
+<code>flake8</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>.</li>
+<li>yes, it was setup to be automatically built with the help from <code>travis-ci</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>. The build page
+is here at: <a href="https://travis-ci.org/teracy-official/django-html5-boilerplate">https://travis-ci.org/teracy-official/django-html5-boilerplate</a></li>
+</ul>
+
+
+<p>One feature that we really love from the ci system is that whenever a pull request is made, we
+could see the build status immediately within that pull request thanks to the integration of
+<code>travis-ci</code> and <code>github</code>. You could see a failed pull request here as an example:
+<a href="https://github.com/teracy-official/django-html5-boilerplate/pull/3">https://github.com/teracy-official/django-html5-boilerplate/pull/3</a></p>
+
+<p>At Teracy, we&rsquo;re going to promote best development practices that we use every day, one of these is
+<code>Test Driven Development</code><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup> practice: &ldquo;Test first, implement later, then refactor&rdquo;. The pull
+request just contain tests without any implementation, that&rsquo;s why its build status was failed:
+<a href="https://github.com/teracy-official/django-html5-boilerplate/pull/3">https://github.com/teracy-official/django-html5-boilerplate/pull/3</a></p>
+
+<p>All the setup work was done on the project repository, please take a look and we believe that you
+could setup yourself a similar <code>Django</code> application easily from this sample project.</p>
+
+<p>If there is anything missing that you could not setup yourself a project like this or you have a
+better approach, please let us know by commenting or forking the project, creating issues,
+making pull requests.</p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://pypi.python.org/pypi/pip<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://pypi.python.org/pypi/setuptools<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://github.com/jezdez/django-discover-runner<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>https://pypi.python.org/pypi/coverage<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p>http://www.python.org/dev/peps/pep-0008/<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p>https://pypi.python.org/pypi/flake8<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p>https://travis-ci.org/<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+<li id="fn:9">
+<p>http://www.agiledata.org/essays/tdd.html<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

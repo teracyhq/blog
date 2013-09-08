@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: django-boilerplate | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/django-boilerplate/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[django-boilerplate v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release/"/>
+    <updated>2013-09-07T14:11:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/07/django-logo.png" title="Django Logo" ></p>
+
+<p>Today we&rsquo;re very glad to announce v0.1.0 release of <a href="https://github.com/teracy-official/django-boilerplate">django-boilerplate</a>. The project was started
+since May 26, 2013 and after many iterations and improvements, it&rsquo;s good enough to be shipped as
+v0.1.0 now.</p>
+
+<!-- more -->
+
+
+<p><a href="https://github.com/teracy-official/django-boilerplate">django-boilerplate</a> was created to &ldquo;promotes best practices to organize and start any <code>Django</code>
+project.&rdquo;</p>
+
+<p>Currently, the project promotes a <code>Django</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> project layout that could be used and upgraded
+seamlessly. It uses files overlay upgrade strategy, which basically just downloads and overwrites
+existing base files. By using this approach, your specific project files will not be affected by
+each upgrade.</p>
+
+<p>Moreover, the project also includes coding style checking (<code>pep8</code>, <code>flake8</code>, <code>pylint</code>, <code>coverage</code>,
+etc.), continuous integration build (<code>travis-ci</code>, <code>jenkins</code>). For more information, please head to
+its README file at <a href="https://github.com/teracy-official/django-boilerplate">https://github.com/teracy-official/django-boilerplate</a></p>
+
+<p>There are still many things to do, we&rsquo;re listening to feedback from the community and our usage to
+iterate for next version (v0.2.0) with improvements, rule violations reduction.</p>
+
+<p>Have a nice day and happy <code>Django</code> hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://djangoproject.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: html5-boilerplate | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/html5-boilerplate/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-08T18:27:17+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release/"/>
+    <updated>2013-08-20T15:44:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>After more than 3 months since the project was started, today we&rsquo;re very happy to announce
+<a href="https://github.com/teracy-official/django-html5-boilerplate">teracy-django-html5-boilerplate</a> v0.1.0 release.</p>
+
+<p>The project mission is to port <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to Django development so that every Django
+project could take and use it with ease, flexibility and customization by its needs.</p>
+
+<!-- more -->
+
+
+<p>This milestone release is just small enough to introduce:</p>
+
+<ul>
+<li><p><code>base.html</code> with context variables and blocks that gives much flexibility for customization</p></li>
+<li><p>a context processor to handle some fixed settings for context variables so that you don&rsquo;t have to
+(re)define it all the time from views.</p></li>
+</ul>
+
+
+<p>We&rsquo;re still far from the completed mission, the next version with <code>v0.2.0</code> we would like to include
+(almost) all the provided assets from <code>html5-boilerplate</code> and explore each items for Django
+development.</p>
+
+<p>This initial milestone release is stable enough for simple usage, stay tuned with our upcoming
+releases. You are all more than welcome to contribute to the project. Please fork it, hack it and
+make pull requests!</p>
+
+<p>In the meantime, you could grab it here at <a href="https://github.com/teracy-official/django-html5-boilerplate">https://github.com/teracy-official/django-html5-boilerplate</a></p>
+
+<p>We also released it to <code>pypi</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> at <a href="https://pypi.python.org/pypi/teracy-django-html5-boilerplate">https://pypi.python.org/pypi/teracy-django-html5-boilerplate</a></p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://pypi.python.org/pypi<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>
