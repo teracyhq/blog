@@ -124,6 +124,9 @@ task :new_post, :title do |t, args|
     post.puts ""
     post.puts "The hook part: short text to get readers' interest so that they will continue reading"
     post.puts ""
+    post.puts "Abstract"
+    post.puts "--------"
+    post.puts ""
     post.puts "Problem"
     post.puts "-------"
     post.puts ""
@@ -285,7 +288,7 @@ multitask :push do
     message = "Site updated at #{Time.now.utc}\n\n[ci skip]"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch} --force --quiet" #hide github token
+    system "git push origin #{deploy_branch} --quiet" #hide github token
     puts "\n## Github Pages deploy complete"
   end
 end
@@ -324,6 +327,7 @@ task :set_root_dir, :dir do |t, args|
     puts "## Site's root directory is now '/#{dir.sub(/^\//, '')}' ##"
   end
 end
+
 
 desc "Set up _deploy folder and deploy branch for Github Pages deployment"
 task :setup_github_pages, :repo do |t, args|
@@ -382,6 +386,14 @@ task :setup_github_pages, :repo do |t, args|
     rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
     File.open(__FILE__, 'w') do |f|
       f.write rakefile
+    end
+    if (`git ls-remote origin #{deploy_branch} | grep #{deploy_branch}`).empty?
+      puts "Preparing Github deployment branch: #{deploy_branch} for the first time only..."
+      system "git push -u origin #{deploy_branch}"
+    else
+      system "git fetch origin"
+      system "git reset --hard origin/#{deploy_branch}"
+      system "git branch --set-upstream #{deploy_branch} origin/#{deploy_branch}"
     end
   end
   puts "\n---\n## Now you can deploy to Github Pages with `rake deploy` ##" # TODO hot-fix to hide token
