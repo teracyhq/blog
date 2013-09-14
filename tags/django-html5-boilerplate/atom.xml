@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: django-html5-boilerplate | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/django-html5-boilerplate/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-11T09:06:19+00:00</updated>
+  <updated>2013-09-14T22:41:59+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.2.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/"/>
+    <updated>2013-09-14T21:29:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/15/html5-boilerplate.png" title="HTML5 Boilerplate" ></p>
+
+<p>It was planned that v0.2.0 would be released by Sep 20th, 2013 and we&rsquo;re very glad to announce
+v0.2.0 release 5 days earlier. This release includes many exciting changes.</p>
+
+<!-- more -->
+
+
+<p>The first exciting change is that (almost) all provided assets from <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> v4.3.0
+is included and handled (except <code>.htaccess</code> is not included and <code>404.html</code> is not handled yet).
+All the included resources could be overridden and the instruction is on the project <code>README</code>
+file.</p>
+
+<p>The second exciting change is that this release introduces <code>python</code> style check with <code>pylint</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
+<code>pep8</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> violations report and unit test report via <code>nosetests</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>. These reports help us to
+have a better view at the project&rsquo;s health and quality as reported by <code>jenkins</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> at:
+<a href="https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/">https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/</a></p>
+
+<p>The third exciting change is that javascript source code files are included and returned on the page
+if the site is running on debug mode with <code>debug</code> context processor configured. We think that this
+is very helpful to debug and fix bugs more easily.</p>
+
+<p>The last but not least exciting change is that we found out and fixed a bug at the last release
+minute. It should have been included in v0.1.0 release. It was a mistake from unit tests and not
+thorough testing. We learned this lesson very hard and it should not occur anymore.</p>
+
+<p>So what&rsquo;s next? We expect to release v0.3.0 by Nov 15th, 2013 with bug fixed and improvements.
+We&rsquo;re very close to v1.0.0 release, the first public production-ready release that we&rsquo;re all
+working on.</p>
+
+<p>We hope that this would be helpful to your <code>django</code> project.</p>
+
+<p><code>$ pip install teracy-django-html5-boilerplate</code> and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.pylint.org/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://pypi.python.org/pypi/pep8<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://nose.readthedocs.org/en/latest/<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://jenkins-ci.org/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.1.0 release]]></title>

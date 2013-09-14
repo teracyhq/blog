@@ -4,7 +4,7 @@
   <title><![CDATA[Category: news | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/news/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-11T09:06:19+00:00</updated>
+  <updated>2013-09-14T22:41:59+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.2.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/"/>
+    <updated>2013-09-14T21:29:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/15/html5-boilerplate.png" title="HTML5 Boilerplate" ></p>
+
+<p>It was planned that v0.2.0 would be released by Sep 20th, 2013 and we&rsquo;re very glad to announce
+v0.2.0 release 5 days earlier. This release includes many exciting changes.</p>
+
+<!-- more -->
+
+
+<p>The first exciting change is that (almost) all provided assets from <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> v4.3.0
+is included and handled (except <code>.htaccess</code> is not included and <code>404.html</code> is not handled yet).
+All the included resources could be overridden and the instruction is on the project <code>README</code>
+file.</p>
+
+<p>The second exciting change is that this release introduces <code>python</code> style check with <code>pylint</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
+<code>pep8</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> violations report and unit test report via <code>nosetests</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>. These reports help us to
+have a better view at the project&rsquo;s health and quality as reported by <code>jenkins</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> at:
+<a href="https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/">https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/</a></p>
+
+<p>The third exciting change is that javascript source code files are included and returned on the page
+if the site is running on debug mode with <code>debug</code> context processor configured. We think that this
+is very helpful to debug and fix bugs more easily.</p>
+
+<p>The last but not least exciting change is that we found out and fixed a bug at the last release
+minute. It should have been included in v0.1.0 release. It was a mistake from unit tests and not
+thorough testing. We learned this lesson very hard and it should not occur anymore.</p>
+
+<p>So what&rsquo;s next? We expect to release v0.3.0 by Nov 15th, 2013 with bug fixed and improvements.
+We&rsquo;re very close to v1.0.0 release, the first public production-ready release that we&rsquo;re all
+working on.</p>
+
+<p>We hope that this would be helpful to your <code>django</code> project.</p>
+
+<p><code>$ pip install teracy-django-html5-boilerplate</code> and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.pylint.org/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://pypi.python.org/pypi/pep8<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://nose.readthedocs.org/en/latest/<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://jenkins-ci.org/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[django-boilerplate v0.1.0 release]]></title>
@@ -179,85 +236,6 @@ it now at <a href="https://github.com/teracy-official/sphinx-deployment">https:/
 <p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Introduce development management tools]]></title>
-    <link href="http://blog.teracy.com/2013/08/17/introduce-development-management-tools/"/>
-    <updated>2013-08-17T04:21:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/08/17/introduce-development-management-tools</id>
-    <content type="html"><![CDATA[<p>At Teracy, development tools and development management are very important for us to keep and work
-in a consistent workflow manner. There are rules, however, the rules should be guided, checked
-and forced so that everyone could understand and work together more effectively. After a few days of
-setting up, we&rsquo;re very happy to introduce our development tools.</p>
-
-<!-- more -->
-
-
-<p>As we know, a development team should (at least) have:</p>
-
-<ul>
-<li>issues management</li>
-<li>source code management</li>
-<li>continuous integration management</li>
-<li>wiki management</li>
-</ul>
-
-
-<p>Well, if your team is small, <code>github</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> is good enough. However, if you have many repositories,
-issue management could be hard. Moreover, the workflow and issues management on <code>github</code> is
-just very simple.</p>
-
-<p>At Teracy, we need more than that. We need a better workflow, we need consistent development tools
-that have good and seamlessly integration and <code>Atlassian</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>&rsquo;s products meets our requirements.</p>
-
-<p>Many thanks to <code>Atlassian</code> for supporting open source projects, we could get open source licenses
-for all our development tools for free:</p>
-
-<p><code>Jira</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> instance for issues management is at: <a href="https://issues.teracy.org">https://issues.teracy.org</a></p>
-
-<p><code>Stash</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> instance for source code management is at: <a href="https://code.teracy.org">https://code.teracy.org</a></p>
-
-<p>Note that we&rsquo;re still using <code>github</code> for our open source projects to get more contribution
-easily, thank you <code>github</code> :). There is no reason why we should not use both <code>github</code> and <code>Jira</code>.</p>
-
-<p><code>Confluence</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> instance for wiki management is at: <a href="https://wiki.teracy.org">https://wiki.teracy.org</a></p>
-
-<p>And many thanks to <code>Jenkins</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> for our continuous integration instance at: <a href="https://ci.teracy.org">https://ci.teracy.org</a>
-We&rsquo;d love to use <code>Travis-ci</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>, too.</p>
-
-<p>It took us just a few days to setup all these instances.</p>
-
-<p>We would like to take this opportunity to thank you very much, <code>GlobalSign</code><sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>, too, for approving
-our open source SSL certificate application.</p>
-
-<p>We&rsquo;re still migrating issues from <code>github</code> to <a href="http://issues.teracy.org">http://issues.teracy.org</a> and there are still many
-steps ahead to setup a good development environment.</p>
-
-<p>Thanks for reading our news, have a nice weekend and and happy playing!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>https://github.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://www.atlassian.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://www.atlassian.com/software/jira<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>https://www.atlassian.com/software/stash<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-<li id="fn:5">
-<p>https://www.atlassian.com/software/confluence<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
-<li id="fn:6">
-<p>http://jenkins-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
-<li id="fn:7">
-<p>https://travis-ci.org<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
-<li id="fn:8">
-<p>https://www.globalsign.com<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

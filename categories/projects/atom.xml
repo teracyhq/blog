@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-11T09:06:19+00:00</updated>
+  <updated>2013-09-14T22:41:59+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.2.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/"/>
+    <updated>2013-09-14T21:29:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/15/html5-boilerplate.png" title="HTML5 Boilerplate" ></p>
+
+<p>It was planned that v0.2.0 would be released by Sep 20th, 2013 and we&rsquo;re very glad to announce
+v0.2.0 release 5 days earlier. This release includes many exciting changes.</p>
+
+<!-- more -->
+
+
+<p>The first exciting change is that (almost) all provided assets from <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> v4.3.0
+is included and handled (except <code>.htaccess</code> is not included and <code>404.html</code> is not handled yet).
+All the included resources could be overridden and the instruction is on the project <code>README</code>
+file.</p>
+
+<p>The second exciting change is that this release introduces <code>python</code> style check with <code>pylint</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
+<code>pep8</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> violations report and unit test report via <code>nosetests</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>. These reports help us to
+have a better view at the project&rsquo;s health and quality as reported by <code>jenkins</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> at:
+<a href="https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/">https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/</a></p>
+
+<p>The third exciting change is that javascript source code files are included and returned on the page
+if the site is running on debug mode with <code>debug</code> context processor configured. We think that this
+is very helpful to debug and fix bugs more easily.</p>
+
+<p>The last but not least exciting change is that we found out and fixed a bug at the last release
+minute. It should have been included in v0.1.0 release. It was a mistake from unit tests and not
+thorough testing. We learned this lesson very hard and it should not occur anymore.</p>
+
+<p>So what&rsquo;s next? We expect to release v0.3.0 by Nov 15th, 2013 with bug fixed and improvements.
+We&rsquo;re very close to v1.0.0 release, the first public production-ready release that we&rsquo;re all
+working on.</p>
+
+<p>We hope that this would be helpful to your <code>django</code> project.</p>
+
+<p><code>$ pip install teracy-django-html5-boilerplate</code> and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.pylint.org/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://pypi.python.org/pypi/pep8<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://nose.readthedocs.org/en/latest/<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://jenkins-ci.org/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[django-boilerplate v0.1.0 release]]></title>
@@ -179,69 +236,6 @@ it now at <a href="https://github.com/teracy-official/sphinx-deployment">https:/
 <p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Automatic sphinx docs deployment with sphinx-deployment]]></title>
-    <link href="http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/"/>
-    <updated>2013-08-09T03:13:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment</id>
-    <content type="html"><![CDATA[<p>At Teracy, all our documentations are written with the help from <code>sphinx</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. It&rsquo;s easy to setup and
-manage. However, we could not find a good enough <strong>deployment solution</strong> for <code>sphinx</code> documentation
-project. What does &ldquo;good enough&rdquo; here means? It means:</p>
-
-<ul>
-<li><p>The installation and configuration should be easy with <code>git</code> and command line.</p></li>
-<li><p>The deployment could be &ldquo;decoupled&rdquo; from <code>sphinx</code> project for easy upgrade and maintenance. It&rsquo;s
-better if we could have this deployment solution provided by <code>sphinx</code> out of the box.</p></li>
-<li><p>The deployment should support as many services as possible: <code>github pages</code> <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, and
-<code>PaaS</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> services like <code>heroku</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>, etc.</p></li>
-<li><p>The usage should be easy like:</p>
-
-<ul>
-<li><code>$ make setup</code> to setup deployment basing on the configurations</li>
-<li><code>$ make generate</code> to generate content basing on the configurations</li>
-<li><code>$ make deploy</code> to deploy the project basing on the configurations</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- more -->
-
-
-<p>We could not find a solution good enough meeting our requirements, so we created
-<a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project that implements the ideas and requirements above.</p>
-
-<p>Currently, it&rsquo;s on very very early development stage to just
-support deployment on <code>github pages</code> automatically with <code>travis-ci</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>, and
-<a href="https://travis-ci.org/teracy-official/dev">https://travis-ci.org/teracy-official/dev</a> as an example.</p>
-
-<p>There are many things that we need to do, please help use to shape the project&rsquo;s future by
-contributing with <code>forking</code>, <code>hacking</code> and <code>pull requests</code> or giving your ideas. Your contributions
-are all welcome. Please head to the development branch at
-<a href="https://github.com/teracy-official/sphinx-deployment/tree/develop">https://github.com/teracy-official/sphinx-deployment/tree/develop</a></p>
-
-<p>Have a nice day and happy hacking!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://sphinx-doc.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>http://en.wikipedia.org/wiki/Platform_as_a_service<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-<li id="fn:5">
-<p>http://heroku.com<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
-<li id="fn:6">
-<p>http://travis-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
