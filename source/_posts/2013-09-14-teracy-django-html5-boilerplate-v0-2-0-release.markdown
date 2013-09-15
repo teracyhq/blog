@@ -14,15 +14,15 @@ tags:
     - "pylint"
     - "pep8"
     - "nosetests"
-cover: /images/2013/09/15/html5-boilerplate.png
+cover: /images/2013/09/14/html5-boilerplate.png
 description: teracy-django-html5-boilerplate v0.2.0 release announcement
 keywords: teracy-django-html5-boilerplate v0.2.0, django, html5-boilerplate
 published: true
 ---
 
-{% img center /images/2013/09/15/html5-boilerplate.png HTML5 Boilerplate %}
+{% img center /images/2013/09/14/html5-boilerplate.png HTML5 Boilerplate %}
 
-It was planned that v0.2.0 would be released by Sep 20th, 2013 and we're very glad to announce
+It was planned that [teracy-django-html5-boilerplate][] v0.2.0 would be released by Sep 20th, 2013 and we're very glad to announce
 v0.2.0 release 5 days earlier. This release includes many exciting changes.
 
 <!-- more -->
@@ -58,3 +58,4 @@ We hope that this would be helpful to your ``django`` project.
 [^3]: https://pypi.python.org/pypi/pep8
 [^4]: http://nose.readthedocs.org/en/latest/
 [^5]: http://jenkins-ci.org/
+[teracy-django-html5-boilerplate]: https://github.com/teracy-official/django-html5-boilerplate
