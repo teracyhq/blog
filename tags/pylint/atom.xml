@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: pylint | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/pylint/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-14T22:46:05+00:00</updated>
+  <updated>2013-09-15T04:06:29+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,9 +18,9 @@
     <link href="http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/"/>
     <updated>2013-09-14T21:29:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/15/html5-boilerplate.png" title="HTML5 Boilerplate" ></p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/14/html5-boilerplate.png" title="HTML5 Boilerplate" ></p>
 
-<p>It was planned that v0.2.0 would be released by Sep 20th, 2013 and we&rsquo;re very glad to announce
+<p>It was planned that <a href="https://github.com/teracy-official/django-html5-boilerplate">teracy-django-html5-boilerplate</a> v0.2.0 would be released by Sep 20th, 2013 and we&rsquo;re very glad to announce
 v0.2.0 release 5 days earlier. This release includes many exciting changes.</p>
 
 <!-- more -->
