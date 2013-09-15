@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: pep8 | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/pep8/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-15T04:06:29+00:00</updated>
+  <updated>2013-09-15T11:27:13+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -44,9 +44,9 @@ is very helpful to debug and fix bugs more easily.</p>
 minute. It should have been included in v0.1.0 release. It was a mistake from unit tests and not
 thorough testing. We learned this lesson very hard and it should not occur anymore.</p>
 
-<p>So what&rsquo;s next? We expect to release v0.3.0 by Nov 15th, 2013 with bug fixed and improvements.
-We&rsquo;re very close to v1.0.0 release, the first public production-ready release that we&rsquo;re all
-working on.</p>
+<p>So what&rsquo;s next? We expect to release v0.3.0 by Nov 15th, 2013 with page context overridable, bug fixed
+and improvements. We&rsquo;re very close to v1.0.0 release &ndash; the first public production-ready release that
+we&rsquo;re all working on.</p>
 
 <p>We hope that this would be helpful to your <code>django</code> project.</p>
 
