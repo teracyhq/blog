@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: semantic-web | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/semantic-web/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-20T10:22:55+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[octopress-semantic v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release/"/>
+    <updated>2013-09-20T08:55:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/20/semantic-web.jpg" title="semantic web" ></p>
+
+<p>We&rsquo;re very glad to announce <a href="https://github.com/hoatle/octopress-semantic">octopress-semantic</a> v0.1.0 plugin which will make your <code>octopress</code>
+blog semantic-web-friendly.</p>
+
+<p><code>octopress</code> already supports <code>hcard</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> microformat, however, it&rsquo;s not enough, we need to support
+more.</p>
+
+<p>We&rsquo;re using this plugin for our blog posts, you could see how it works with Facebook Open Graph<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
+Twitter Cards<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> and Structured Data<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> by viewing the screen-shots captured below:</p>
+
+<p>Facebook Open Graph:</p>
+
+<p><img class="center" src="/images/2013/09/20/facebook-open-graph.png" title="facebook open graph" ></p>
+
+<p>Twitter Cards:</p>
+
+<p><img class="center" src="/images/2013/09/20/twitter-cards.png" title="twitter cards" ></p>
+
+<p>Structured Data:</p>
+
+<p><img class="center" src="/images/2013/09/20/structured-data.png" title="structured data" ></p>
+
+<p>More details: <a href="http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/">http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/</a></p>
+
+<p>Please head to <a href="https://github.com/hoatle/octopress-semantic">octopress-semantic</a> project to see how to install, configure and use it by
+following the instructions on <code>README.md</code> file.</p>
+
+<p>Have a nice day and happy blogging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://microformats.org/wiki/hcard<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://developers.facebook.com/docs/opengraph/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://dev.twitter.com/docs/cards<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://developers.google.com/custom-search/docs/structured_data#microdata<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

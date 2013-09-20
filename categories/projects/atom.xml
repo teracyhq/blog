@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-15T11:29:10+00:00</updated>
+  <updated>2013-09-20T10:22:55+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[octopress-semantic v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release/"/>
+    <updated>2013-09-20T08:55:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/20/semantic-web.jpg" title="semantic web" ></p>
+
+<p>We&rsquo;re very glad to announce <a href="https://github.com/hoatle/octopress-semantic">octopress-semantic</a> v0.1.0 plugin which will make your <code>octopress</code>
+blog semantic-web-friendly.</p>
+
+<p><code>octopress</code> already supports <code>hcard</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> microformat, however, it&rsquo;s not enough, we need to support
+more.</p>
+
+<p>We&rsquo;re using this plugin for our blog posts, you could see how it works with Facebook Open Graph<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
+Twitter Cards<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> and Structured Data<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> by viewing the screen-shots captured below:</p>
+
+<p>Facebook Open Graph:</p>
+
+<p><img class="center" src="/images/2013/09/20/facebook-open-graph.png" title="facebook open graph" ></p>
+
+<p>Twitter Cards:</p>
+
+<p><img class="center" src="/images/2013/09/20/twitter-cards.png" title="twitter cards" ></p>
+
+<p>Structured Data:</p>
+
+<p><img class="center" src="/images/2013/09/20/structured-data.png" title="structured data" ></p>
+
+<p>More details: <a href="http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/">http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/</a></p>
+
+<p>Please head to <a href="https://github.com/hoatle/octopress-semantic">octopress-semantic</a> project to see how to install, configure and use it by
+following the instructions on <code>README.md</code> file.</p>
+
+<p>Have a nice day and happy blogging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://microformats.org/wiki/hcard<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://developers.facebook.com/docs/opengraph/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://dev.twitter.com/docs/cards<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://developers.google.com/custom-search/docs/structured_data#microdata<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.2.0 release]]></title>
@@ -201,41 +252,6 @@ make pull requests!</p>
 <p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
 <li id="fn:2">
 <p>https://pypi.python.org/pypi<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sphinx-deployment v0.1.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/"/>
-    <updated>2013-08-18T17:53:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p>10 days after the announcement of <code>sphinx-deployment</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> project, today we&rsquo;re very happy to
-announce v0.1.0 release.</p>
-
-<!-- more -->
-
-
-<p>This is just a small release milestone, it fully supports <code>Github Pages</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment. It&rsquo;s stable
-enough to use now.</p>
-
-<p>The next step we will support <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment with v0.2.0 release.</p>
-
-<p>Now it&rsquo;s really easy to deploy your <code>sphinx</code> docs to <code>Github Pages</code> with <code>sphinx-deployment</code>, grab
-it now at <a href="https://github.com/teracy-official/sphinx-deployment">https://github.com/teracy-official/sphinx-deployment</a></p>
-
-<p>Have a nice day and happy hacking!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
