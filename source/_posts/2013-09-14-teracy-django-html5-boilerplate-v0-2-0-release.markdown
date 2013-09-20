@@ -45,9 +45,9 @@ The last but not least exciting change is that we found out and fixed a bug at t
 minute. It should have been included in v0.1.0 release. It was a mistake from unit tests and not
 thorough testing. We learned this lesson very hard and it should not occur anymore.
 
-So what's next? We expect to release v0.3.0 by Nov 15th, 2013 with bug fixed and improvements.
-We're very close to v1.0.0 release, the first public production-ready release that we're all
-working on.
+So what's next? We expect to release v0.3.0 by Nov 15th, 2013 with page context overridable, bug fixed
+and improvements. We're very close to v1.0.0 release - the first public production-ready release that
+we're all working on.
 
 We hope that this would be helpful to your ``django`` project.
 
