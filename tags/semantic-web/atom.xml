@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: semantic-web | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/semantic-web/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-20T10:22:55+00:00</updated>
+  <updated>2013-09-20T10:29:57+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -25,6 +25,9 @@ blog semantic-web-friendly.</p>
 
 <p><code>octopress</code> already supports <code>hcard</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> microformat, however, it&rsquo;s not enough, we need to support
 more.</p>
+
+<!-- more -->
+
 
 <p>We&rsquo;re using this plugin for our blog posts, you could see how it works with Facebook Open Graph<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
 Twitter Cards<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> and Structured Data<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> by viewing the screen-shots captured below:</p>
