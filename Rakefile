@@ -124,6 +124,8 @@ task :new_post, :title do |t, args|
     post.puts ""
     post.puts "The hook part: short text to get readers' interest so that they will continue reading"
     post.puts ""
+    post.puts "<!-- more -->"
+    post.puts ""
     post.puts "Abstract"
     post.puts "--------"
     post.puts ""
