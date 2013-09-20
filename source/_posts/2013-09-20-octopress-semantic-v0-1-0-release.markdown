@@ -25,6 +25,8 @@ blog semantic-web-friendly.
 `octopress` already supports `hcard`[^1] microformat, however, it's not enough, we need to support
 more.
 
+<!-- more -->
+
 We're using this plugin for our blog posts, you could see how it works with Facebook Open Graph[^2],
 Twitter Cards[^3] and Structured Data[^4] by viewing the screen-shots captured below:
 
