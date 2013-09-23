@@ -4,7 +4,7 @@
   <title><![CDATA[Category: news | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/news/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-20T10:32:21+00:00</updated>
+  <updated>2013-09-23T09:18:46+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-chef v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/"/>
+    <updated>2013-09-23T02:30:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/23/chef-logo.png" title="Chef Logo" ></p>
+
+<p>&ldquo;automation&rdquo; is one of the most important <code>Teracy development philosophies</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>
+is one small step for us to automate all our infrastructure services, development experience and
+other services later.</p>
+
+<p>Today we&rsquo;re very happy to announce v0.1.0 release of <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>.</p>
+
+<!-- more -->
+
+
+<p><a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a> is a &ldquo;base common project that other chef-specific projects should extend.&rdquo;
+It includes all common stuff (rake tasks, project layout management, etc.) that is easy to use
+right away. Moreover, it includes test-driven development with <code>Chef</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> thanks to
+<code>Chef best practices</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>.</p>
+
+<p>By using this base common project, we&rsquo;re going to extend it for <code>teracy-dev</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> to improve it to
+a next level.</p>
+
+<p>We hope that this could be useful to you as it is to us. There are many rooms for its improvements,
+though.</p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://dev.teracy.org/docs/develop/intro.html#about-teracy<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.opscode.com/chef/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://neverstopbuilding.net/chef-best-practices-a-series/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://github.com/teracy-official/dev<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[octopress-semantic v0.1.0 release]]></title>
@@ -206,55 +251,6 @@ configuration for cc license allow modification, allow commercial uses and icon 
 <p>http://creativecommons.org/choose/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>http://octopress.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.1.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release/"/>
-    <updated>2013-08-20T15:44:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p>After more than 3 months since the project was started, today we&rsquo;re very happy to announce
-<a href="https://github.com/teracy-official/django-html5-boilerplate">teracy-django-html5-boilerplate</a> v0.1.0 release.</p>
-
-<p>The project mission is to port <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to Django development so that every Django
-project could take and use it with ease, flexibility and customization by its needs.</p>
-
-<!-- more -->
-
-
-<p>This milestone release is just small enough to introduce:</p>
-
-<ul>
-<li><p><code>base.html</code> with context variables and blocks that gives much flexibility for customization</p></li>
-<li><p>a context processor to handle some fixed settings for context variables so that you don&rsquo;t have to
-(re)define it all the time from views.</p></li>
-</ul>
-
-
-<p>We&rsquo;re still far from the completed mission, the next version with <code>v0.2.0</code> we would like to include
-(almost) all the provided assets from <code>html5-boilerplate</code> and explore each items for Django
-development.</p>
-
-<p>This initial milestone release is stable enough for simple usage, stay tuned with our upcoming
-releases. You are all more than welcome to contribute to the project. Please fork it, hack it and
-make pull requests!</p>
-
-<p>In the meantime, you could grab it here at <a href="https://github.com/teracy-official/django-html5-boilerplate">https://github.com/teracy-official/django-html5-boilerplate</a></p>
-
-<p>We also released it to <code>pypi</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> at <a href="https://pypi.python.org/pypi/teracy-django-html5-boilerplate">https://pypi.python.org/pypi/teracy-django-html5-boilerplate</a></p>
-
-<p>Have a nice day and happy hacking!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://pypi.python.org/pypi<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

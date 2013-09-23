@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: tdd | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/tdd/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-20T10:32:21+00:00</updated>
+  <updated>2013-09-23T09:18:46+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-chef v0.1.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/"/>
+    <updated>2013-09-23T02:30:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/23/chef-logo.png" title="Chef Logo" ></p>
+
+<p>&ldquo;automation&rdquo; is one of the most important <code>Teracy development philosophies</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>
+is one small step for us to automate all our infrastructure services, development experience and
+other services later.</p>
+
+<p>Today we&rsquo;re very happy to announce v0.1.0 release of <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>.</p>
+
+<!-- more -->
+
+
+<p><a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a> is a &ldquo;base common project that other chef-specific projects should extend.&rdquo;
+It includes all common stuff (rake tasks, project layout management, etc.) that is easy to use
+right away. Moreover, it includes test-driven development with <code>Chef</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> thanks to
+<code>Chef best practices</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>.</p>
+
+<p>By using this base common project, we&rsquo;re going to extend it for <code>teracy-dev</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> to improve it to
+a next level.</p>
+
+<p>We hope that this could be useful to you as it is to us. There are many rooms for its improvements,
+though.</p>
+
+<p>Have a nice day and happy hacking!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://dev.teracy.org/docs/develop/intro.html#about-teracy<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.opscode.com/chef/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://neverstopbuilding.net/chef-best-practices-a-series/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://github.com/teracy-official/dev<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A separated Django application with unit tests, coding convention checking and coverage report]]></title>
