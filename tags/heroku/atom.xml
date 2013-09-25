@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: heroku | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/heroku/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2013-09-25T22:01:59+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.2.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/"/>
+    <updated>2013-09-25T20:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
+
+<p>After v0.1.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with improvements and new
+features for v0.2.0 release.</p>
+
+<!-- more -->
+
+
+<p>This release version includes an improvement and a new feature.</p>
+
+<p>We improved <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> by removing the duplication of git initialize step when
+<code>$ make setup_gh_pages</code>, this will reduce the time for setting up github pages to some mili-seconds,
+so it could be considered as performance improvement.</p>
+
+<p>We also would like to introduce a new feature that supports <code>Rsync</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment out of the box.
+So by now, you could not only automatically deploy the <code>sphinx</code> docs project with Github Pages, but
+you could also automatically deploy it with <code>Rsync</code>.</p>
+
+<p><code>sphinx</code> deployment is never easy like this, please head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project, then read
+the introductions on <code>README</code> file and you&rsquo;re done.</p>
+
+<p>And what&rsquo;s next? For v0.3.0 release, we plan to support as many PaaS services as possible,
+the first one on the list is <code>heroku</code>. So stay tuned with our upcoming releases!</p>
+
+<p>Have a nice day and happy docs writing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>
