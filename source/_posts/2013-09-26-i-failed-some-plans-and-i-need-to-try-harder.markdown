@@ -71,9 +71,9 @@ and some conflicts, I thought that it was ok as long as we could achieve the res
 well together along the time when we understand the way we work better.
 
 So after the brand logo task, we moved on brand style guidelines. I proposed some well-known work
-from http://www.logodesignlove.com/brand-identity-style-guides, especially from adobe
-http://brandcenterdl.adobe.com/Corpmktg/Brandmktg/Campaign_Assets/guidelines/corporate/corporate_brand_guidelines.pdf.
-I expected our brand guidelines should be somehow as much detailed as those. I proposed
+from http://www.logodesignlove.com/brand-identity-style-guides , especially from Adobe
+http://brandcenterdl.adobe.com/Corpmktg/Brandmktg/Campaign_Assets/guidelines/corporate/corporate_brand_guidelines.pdf
+. I expected our brand guidelines should be somehow as much detailed as those. I proposed
 agile development workflow, every day after 1 hour of design work, she should send me any result for
 us to make adjustment. But she declined, she wanted to work on result-oriented workflow. So I said ok,
 as I try to make the workflow as flexible as possible. With result-oriented workflow, I had to wait
