@@ -94,7 +94,7 @@ Migration
 Are you using v0.2.0 and want to upgrade? Just install it normally with `spxd.sh` bash script and
 adjust a little the configuration with the following migration instruction:
 
-- Migration (from v0.1.0 to v0.2.0)
+- Migration (from v0.2.0 to v0.3.0)
     + `REPO_URL` was changed to `REPO_URL_GITHUB`
     + `DEPLOY_BRANCH` was changed to `DEPLOY_BRANCH_GITHUB`
     + `$ make push` was changed to `$ make deploy_gh_pages`
