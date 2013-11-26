@@ -4,7 +4,7 @@
   <title><![CDATA[Category: news | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/news/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-11-26T17:45:58+00:00</updated>
+  <updated>2013-11-26T17:52:07+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -87,7 +87,7 @@ provided so far, we hope that you love it as much as we love developing and usin
 adjust a little the configuration with the following migration instruction:</p>
 
 <ul>
-<li>Migration (from v0.1.0 to v0.2.0)
+<li>Migration (from v0.2.0 to v0.3.0)
 
 <ul>
 <li><code>REPO_URL</code> was changed to <code>REPO_URL_GITHUB</code></li>
