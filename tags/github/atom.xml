@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: github | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/github/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-26T12:02:33+00:00</updated>
+  <updated>2013-11-26T17:45:58+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,118 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.3.0 with heroku deployment support]]></title>
+    <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
+    <updated>2013-11-26T09:06:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
+
+<p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
+support for v0.3.0 release. This release introduces some breaking changes and you should know to
+upgrade successfully.</p>
+
+<!-- more -->
+
+
+<p><a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> is in active development phase and breaking changes are expected (you know,
+it&rsquo;s still v0.3.0).</p>
+
+<p>Simplicity is one of our <a href="http://dev.teracy.org/docs/intro.html#about-teracy">development philosophy</a>, and you could see it clearly with our following
+supported commands for <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>.</p>
+
+<h2>Supported Commands</h2>
+
+<p><strong>1. <code>$ make generate</code></strong></p>
+
+<p>For generating contents, alias for <code>$ make html</code></p>
+
+<p><strong>2. <code>$ make deploy</code></strong></p>
+
+<p>For short-cut deployment, it could be <code>$ make deploy_gh_pages</code>, <code>$ make deploy_rsync</code> or
+<code>$ make deploy_heroku</code> basing on the configuration of <code>DEPLOY_DEFAULT</code>.</p>
+
+<p><strong>3. <code>$ make gen_deploy</code></strong></p>
+
+<p>For short-cut generation and deployment: <code>$ make generate</code> and then <code>$ make deploy</code>.</p>
+
+<p>Basically, you just need to know 3 commands above after some settings (with a little configuration
+and setting up). Until now sphinx-deployment supports github pages<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment, rsync<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>
+deployment and heroku deployment.</p>
+
+<p>Before setting up, you need to install and configure <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> first, and then:</p>
+
+<p><strong>4. <code>$ make setup_gh_pages</code></strong></p>
+
+<p>For the first time only to create <code>$(DEPLOY_DIR)</code> to track <code>$(DEPLOY_BRANCH)</code>. This is used for
+github pages deployment.</p>
+
+<p><strong>5. <code>$ make setup_heroku</code></strong></p>
+
+<p>For the first time only to create <code>$(DEPLOY_DIR_HEROKU</code> to track the heroku repo&rsquo;s master branch.
+This is used for heroku deployment.</p>
+
+<p>After setting up, you could deploy the docs easily with:</p>
+
+<p><strong>6. <code>$ make deploy_gh_pages</code></strong></p>
+
+<p>For deploying with github pages only.</p>
+
+<p><strong>7. <code>$ make deploy_rsync</code></strong></p>
+
+<p>For deploying with rsync only.</p>
+
+<p><strong>8. <code>$ make deploy_heroku</code></strong></p>
+
+<p>For deploying with heroku only.</p>
+
+<p>That&rsquo;s it, very easy to use. This is the first ultimate simple sphinx docs deployment solution
+provided so far, we hope that you love it as much as we love developing and using it.</p>
+
+<h2>Migration</h2>
+
+<p>Are you using v0.2.0 and want to upgrade? Just install it normally with <code>spxd.sh</code> bash script and
+adjust a little the configuration with the following migration instruction:</p>
+
+<ul>
+<li>Migration (from v0.1.0 to v0.2.0)
+
+<ul>
+<li><code>REPO_URL</code> was changed to <code>REPO_URL_GITHUB</code></li>
+<li><code>DEPLOY_BRANCH</code> was changed to <code>DEPLOY_BRANCH_GITHUB</code></li>
+<li><code>$ make push</code> was changed to <code>$ make deploy_gh_pages</code></li>
+<li><code>$ make rsync</code> was changed to <code>$ make deploy_rsync</code></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>What&rsquo;s Next?</h2>
+
+<p>The next version we would like to stabilize the project with improvements, bug fixes. Moreover,
+we&rsquo;re starting sphinx-live-view project for easier docs writing, too. Stay tuned for our
+upcoming exciting features and projects.</p>
+
+<p>Have a nice day and happy docs writing!</p>
+
+<p>P/S: Remember to head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> and read README for usage instruction.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://heroku.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[sphinx-deployment v0.2.0 release]]></title>
@@ -309,208 +421,6 @@ other HTTP(S) resources for our projects.</p>
 </ol>
 </div>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to start blogging easily with octopress and teracy-dev]]></title>
-    <link href="http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/"/>
-    <updated>2013-08-03T10:43:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev</id>
-    <content type="html"><![CDATA[<p>This post will guide you to start blogging with Teracy&rsquo;s <a href="https://github.com/teracy-official/dev" title="Teracy's dev">dev</a> and <a href="http://octopress.org" title="octopress">octopress</a> like we did with
-our blog at <a href="https://github.com/teracy-official/blog">https://github.com/teracy-official/blog</a> with these outstanding advantages:</p>
-
-<ul>
-<li><p>use <code>octopress</code> blogging framework</p></li>
-<li><p>could start blogging on any operating systems</p></li>
-<li><p>have automatic deployment via travis-ci everytime you update the blog source like ours at
-<a href="https://travis-ci.org/teracy-official/blog">https://travis-ci.org/teracy-official/blog</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<p>In case if you&rsquo;re wondering:</p>
-
-<ul>
-<li><p>Teracy&rsquo;s <code>dev</code> is a little virtual machine (VM) box that any Teraciers must use it to setup
-working environment. All the required runtime environment will be automatically setup there.</p></li>
-<li><p><code>octopress</code> is &ldquo;A blogging framework for hackers.&rdquo; I don&rsquo;t think it&rsquo;s for hackers anymore when
-you&rsquo;re using Teracy&rsquo;s <code>dev</code> for blogging, it should be for everyone who knows how to type and a
-little bit of <code>Git</code> learning. Do you? :&ndash;)</p></li>
-</ul>
-
-
-<p><code>octopress</code> requires <code>Ruby</code> for its runtime environment, <code>Git</code> for blog management.
-To make it dead-simple and error-prone-free to start, we&rsquo;re going to use Teracy&rsquo;s <code>dev</code>.</p>
-
-<p>So let&rsquo;s begin now, this could take you a little long time for setting up, but it&rsquo;s worth it,
-believe me!</p>
-
-<h2>Step 1: Setup <code>dev</code></h2>
-
-<p>Note that before <code>$ vagrant up</code> as guided below, you need to enable forwarded-port on <code>Vagrantfile</code>
-to preview <code>octopress</code> blog later (by removing the hash character (<code>#</code>) at the beginning of the
-line):</p>
-
-<p><code>ruby Vagrantfile
-config.vm.network :forwarded_port, guest: 4000, host: 4000 # octopress preview, disabled by default
-</code></p>
-
-<p>Please follow the guide here at: <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
-
-<h2>Step 2: Install <code>Ruby</code></h2>
-
-<p>Please follow the guide here at: <a href="http://dev.teracy.org/docs/ruby_training.html#installation">http://dev.teracy.org/docs/ruby_training.html#installation</a></p>
-
-<h2>Step 3: Setup <code>octopress</code></h2>
-
-<p><strong>Note</strong>:</p>
-
-<ul>
-<li><p><code>Git</code> and <code>Ruby</code> was already installed on the VM.</p></li>
-<li><p>You need to make sure to register a Github account at <a href="https://github.com/">https://github.com/</a></p></li>
-<li><p>You must store your repository at <code>teracy-dev/workspace/personal</code> directory or you could
-possibly loose it when <code>$ vagrant destroy</code>. For example, to clone <code>octopress</code> repository:</p></li>
-</ul>
-
-
-<p><code>bash
-$ ws
-$ cd personal
-$ git clone git://github.com/imathis/octopress.git octopress
-</code></p>
-
-<p><code>$ ws</code> is an alias provided by Teracy&rsquo;s <code>dev</code> to change directory to <code>workspace</code> directory where all
-your work must be kept there.</p>
-
-<p><strong>1. Setup</strong></p>
-
-<p>Please follow the official guide here at: <a href="http://octopress.org/docs/setup/">http://octopress.org/docs/setup/</a> and make sure
-to deploy with <em>Github Pages</em>.</p>
-
-<p><strong>2. Preview</strong></p>
-
-<p><strong>Note</strong>: To <code>preview</code> with <code>$ rake preview</code> you should enable forwarded-port on the VM mentioned
-from step 1 above.</p>
-
-<p><code>$ rake preview</code> and open your browser at: <code>http://localhost:4000</code> to preview the <code>octopress</code> blog.</p>
-
-<p>After that, you could start blogging and enjoy it now. However, one very cool thing is that you
-don&rsquo;t have to <code>$ rake generate</code> and then <code>$ rake deploy</code> anymore, it should be automatically
-done when you <code>push</code> updates to your github repository like we did for Teracy&rsquo;s official blog.</p>
-
-<h2>Step 4: Automatic deployment with travis-ci</h2>
-
-<p><strong>1. Register travis-ci account at:</strong> <a href="http://travis-ci.org">http://travis-ci.org</a></p>
-
-<p><strong>2. Configure your project build</strong></p>
-
-<p>2.1. Install <code>curl</code> with:</p>
-
-<p><code>bash install curl
-$ sudo apt-get install curl
-</code></p>
-
-<p>2.2. Provide your github user account and run the following command, for example, my account is <code>hoatle</code>:</p>
-
-<p><code>bash get token
-$ curl -u 'hoatle' -d '{"scopes":["public_repo"], "note":"Travis access"}' https://api.github.com/authorizations
-</code></p>
-
-<p>You could get the output something like this, you need to notice the &ldquo;token&rdquo; key:</p>
-
-<p>``` bash output
-Enter host password for user &lsquo;hoatle&rsquo;:
-{
-  &ldquo;id&rdquo;: 3223760,
-  &ldquo;url&rdquo;: &ldquo;<a href="https://api.github.com/authorizations/3223760">https://api.github.com/authorizations/3223760</a>&rdquo;,
-  &ldquo;app&rdquo;: {</p>
-
-<pre><code>"name": "Travis access (API)",
-"url": "http://developer.github.com/v3/oauth/#oauth-authorizations-api",
-"client_id": "66c370cb34ce199ab76a"
-</code></pre>
-
-<p>  },
-  &ldquo;token&rdquo;: &ldquo;1cbbaf4dd0b82c54006377b233ee528612345678&rdquo;,
-  &ldquo;note&rdquo;: &ldquo;Travis access&rdquo;,
-  &ldquo;note_url&rdquo;: null,
-  &ldquo;created_at&rdquo;: &ldquo;2013-08-03T05:47:39Z&rdquo;,
-  &ldquo;updated_at&rdquo;: &ldquo;2013-08-03T05:47:39Z&rdquo;,
-  &ldquo;scopes&rdquo;: [</p>
-
-<pre><code>"public_repo"
-</code></pre>
-
-<p>  ]
-}
-```</p>
-
-<p>2.3. Install <code>travis</code> gem to generate &ldquo;secure&rdquo; key:</p>
-
-<p><code>bash
-$ gem install travis
-$ rbenv rehash
-</code></p>
-
-<p>2.4. Generate &ldquo;secure&rdquo; key from your provided token, mine is something like:</p>
-
-<p><code>bash
-$ travis encrypt GH_TOKEN=1cbbaf4dd0b82c54006377b233ee528612345678
-</code></p>
-
-<p>And you will get the output something like below, you need to get &ldquo;secure&rdquo; key to configure travis-ci
-later.</p>
-
-<p>``` bash
-Please add the following to your .travis.yml file:</p>
-
-<p>  secure: &ldquo;f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY=&rdquo;</p>
-
-<p>Pro Tip: You can add it automatically by running with &mdash;add.
-```</p>
-
-<p>2.5. Configure <code>.travis.yml</code> like we did at
-<a href="https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1">https://github.com/teracy-official/teracy-official-blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-1</a></p>
-
-<p>You need to replace these with yours accordingly:</p>
-
-<pre><code>- git config --global user.name "Hoat Le"
-- git config --global user.email "hoatlevan @ gmail . com"
-
-- GH_REPO="teracy-official/teracy-official.github.io"
-- secure: "f+g8tyvZYOYm+jUARCD5qLNMFkslYu26PwAFe8s4VzngJ2iv37T0yj5d8R40/cLIQ6LX+nHAltuJeNK786qjtiIuKuvHAypL0/3ZgVSN9XZAKnVvwh7fz7W7bETrJDkyk1WVSTini37CLSIdDS8lBg4iKHAhSuD35FZviuf/CbY="
-</code></pre>
-
-<p>If you setup blog as user/ organization page, you need to enable <code>source</code> branch instead of <code>master</code>
-like ours.</p>
-
-<p>2.6. Configure <code>Rakefile</code> like we did at
-<a href="https://github.com/teracy-official/blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2">https://github.com/teracy-official/blog/commit/263f79000b4fa3665ce704b502b5ddf5db25e88c#diff-2</a></p>
-
-<p>And this [hot-fix]: <a href="https://github.com/teracy-official/blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1">https://github.com/teracy-official/blog/commit/8aba0181098b3964b8c19cf5dfbdd06178f222f8#diff-1</a></p>
-
-<p><strong>3. Finally, enable travis-ci build for your project</strong></p>
-
-<p>You should make a post, <code>push</code> the change to see how travis-ci works.
-Your blog should be running well now.</p>
-
-<p>If you want to use Github custom domains, please head to:
-<a href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/">http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/</a></p>
-
-<p>Many thanks to:</p>
-
-<ul>
-<li><p><a href="http://rogerz.github.io/blog/2013/02/21/prose-io-github-travis-ci/">http://rogerz.github.io/blog/2013/02/21/prose-io-github-travis-ci/</a> for automatic
-deployment work.</p></li>
-<li><p><a href="http://www.harimenon.com/blog/2013/01/27/auto-deploying-to-my-octopress-blog/">http://www.harimenon.com/blog/2013/01/27/auto-deploying-to-my-octopress-blog/</a> for twitter button
-fixing.</p></li>
-</ul>
-
-
-<p>Happy blogging!</p>
 ]]></content>
   </entry>
   

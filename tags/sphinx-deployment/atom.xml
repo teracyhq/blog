@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: sphinx-deployment | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/sphinx-deployment/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-09-26T12:02:33+00:00</updated>
+  <updated>2013-11-26T17:45:58+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,118 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.3.0 with heroku deployment support]]></title>
+    <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
+    <updated>2013-11-26T09:06:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
+
+<p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
+support for v0.3.0 release. This release introduces some breaking changes and you should know to
+upgrade successfully.</p>
+
+<!-- more -->
+
+
+<p><a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> is in active development phase and breaking changes are expected (you know,
+it&rsquo;s still v0.3.0).</p>
+
+<p>Simplicity is one of our <a href="http://dev.teracy.org/docs/intro.html#about-teracy">development philosophy</a>, and you could see it clearly with our following
+supported commands for <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>.</p>
+
+<h2>Supported Commands</h2>
+
+<p><strong>1. <code>$ make generate</code></strong></p>
+
+<p>For generating contents, alias for <code>$ make html</code></p>
+
+<p><strong>2. <code>$ make deploy</code></strong></p>
+
+<p>For short-cut deployment, it could be <code>$ make deploy_gh_pages</code>, <code>$ make deploy_rsync</code> or
+<code>$ make deploy_heroku</code> basing on the configuration of <code>DEPLOY_DEFAULT</code>.</p>
+
+<p><strong>3. <code>$ make gen_deploy</code></strong></p>
+
+<p>For short-cut generation and deployment: <code>$ make generate</code> and then <code>$ make deploy</code>.</p>
+
+<p>Basically, you just need to know 3 commands above after some settings (with a little configuration
+and setting up). Until now sphinx-deployment supports github pages<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment, rsync<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>
+deployment and heroku deployment.</p>
+
+<p>Before setting up, you need to install and configure <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> first, and then:</p>
+
+<p><strong>4. <code>$ make setup_gh_pages</code></strong></p>
+
+<p>For the first time only to create <code>$(DEPLOY_DIR)</code> to track <code>$(DEPLOY_BRANCH)</code>. This is used for
+github pages deployment.</p>
+
+<p><strong>5. <code>$ make setup_heroku</code></strong></p>
+
+<p>For the first time only to create <code>$(DEPLOY_DIR_HEROKU</code> to track the heroku repo&rsquo;s master branch.
+This is used for heroku deployment.</p>
+
+<p>After setting up, you could deploy the docs easily with:</p>
+
+<p><strong>6. <code>$ make deploy_gh_pages</code></strong></p>
+
+<p>For deploying with github pages only.</p>
+
+<p><strong>7. <code>$ make deploy_rsync</code></strong></p>
+
+<p>For deploying with rsync only.</p>
+
+<p><strong>8. <code>$ make deploy_heroku</code></strong></p>
+
+<p>For deploying with heroku only.</p>
+
+<p>That&rsquo;s it, very easy to use. This is the first ultimate simple sphinx docs deployment solution
+provided so far, we hope that you love it as much as we love developing and using it.</p>
+
+<h2>Migration</h2>
+
+<p>Are you using v0.2.0 and want to upgrade? Just install it normally with <code>spxd.sh</code> bash script and
+adjust a little the configuration with the following migration instruction:</p>
+
+<ul>
+<li>Migration (from v0.1.0 to v0.2.0)
+
+<ul>
+<li><code>REPO_URL</code> was changed to <code>REPO_URL_GITHUB</code></li>
+<li><code>DEPLOY_BRANCH</code> was changed to <code>DEPLOY_BRANCH_GITHUB</code></li>
+<li><code>$ make push</code> was changed to <code>$ make deploy_gh_pages</code></li>
+<li><code>$ make rsync</code> was changed to <code>$ make deploy_rsync</code></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>What&rsquo;s Next?</h2>
+
+<p>The next version we would like to stabilize the project with improvements, bug fixes. Moreover,
+we&rsquo;re starting sphinx-live-view project for easier docs writing, too. Stay tuned for our
+upcoming exciting features and projects.</p>
+
+<p>Have a nice day and happy docs writing!</p>
+
+<p>P/S: Remember to head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> and read README for usage instruction.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://heroku.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[sphinx-deployment v0.2.0 release]]></title>
