@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: github | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/github/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2013-11-26T17:52:07+00:00</updated>
+  <updated>2013-12-01T08:22:02+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -101,7 +101,7 @@ adjust a little the configuration with the following migration instruction:</p>
 
 <h2>What&rsquo;s Next?</h2>
 
-<p>The next version we would like to stabilize the project with improvements, bug fixes. Moreover,
+<p>The next version we would like to introduce i18n feature and stabilize the project with improvements, bug fixes. Moreover,
 we&rsquo;re starting sphinx-live-view project for easier docs writing, too. Stay tuned for our
 upcoming exciting features and projects.</p>
 
