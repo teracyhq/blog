@@ -103,7 +103,7 @@ adjust a little the configuration with the following migration instruction:
 What's Next?
 ------------
 
-The next version we would like to stabilize the project with improvements, bug fixes. Moreover,
+The next version we would like to introduce i18n feature and stabilize the project with improvements, bug fixes. Moreover,
 we're starting sphinx-live-view project for easier docs writing, too. Stay tuned for our
 upcoming exciting features and projects.
 
