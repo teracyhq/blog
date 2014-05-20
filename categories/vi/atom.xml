@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vi | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2014-05-20T03:45:23+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cần chiến binh gia nhập đội phát triển]]></title>
+    <link href="http://blog.teracy.com/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien/"/>
+    <updated>2014-05-19T15:46:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/05/poster_kick_ass.jpg"></p>
+
+<p>Sau gần một năm startup, Teracy cần tìm &ldquo;chiến binh&rdquo; gia nhập đội phát triển.</p>
+
+<p>Công việc sẽ là gia công phần mềm cho khách hàng, khách hàng hầu hết là các công ty Mỹ vì làm việc
+với họ rất tốt.</p>
+
+<p>Teracy có 2 mảng là gia công phần mềm và nghiên cứu phát triển, hiện tại tập trung phát triển mảng gia
+công phần mềm trước để lấy ngắn (nguồn lực, vốn) nuôi dài (nghiên cứu, phát triển).</p>
+
+<p>Về mảng nghiên cứu, phát triển bạn sẽ được tiếp cận dần dần, nhưng trước mắt bạn cần phải là chiến
+binh để gia công phần mềm trước đã.</p>
+
+<!-- more -->
+
+
+<h2>Tại sao lại là chiến binh?</h2>
+
+<ul>
+<li><p>Vì bạn phải chiến đấu, tất nhiên là chiến đấu với những yêu cầu khá trừu tượng của khách hàng để
+hoàn thành nhiệm vụ được giao (có sự trợ giúp và code review từ các đồng nghiệp)</p></li>
+<li><p>Vì bạn sẽ phải chịu rất nhiều áp lực</p></li>
+<li><p>Vì bạn không thể chọn làm những việc chỉ mình bạn thích, bạn cần làm cả những việc khách hàng yêu
+cầu</p></li>
+<li><p>Vì bạn sẽ phải làm nhiều việc khác nhau, cả sở trường lẫn sở đoản, sở đoản thì phải biến nó thành
+sở trường trong thời gian ngắn (học kỹ năng mới)</p></li>
+</ul>
+
+
+<h2>Bạn cần gì?</h2>
+
+<ul>
+<li><p>1 chiếc laptop có thể làm việc được, ưu tiên Mac, Linux.</p></li>
+<li><p>Có kết nối Internet</p></li>
+<li><p>Cầu tiến, không bao giờ ngừng học hỏi</p></li>
+<li><p>Có kỹ năng làm được việc (yêu cầu cụ thể bên dưới)</p></li>
+<li><p>Làm việc nhóm tốt (nhận việc từ xa, giao tiếp từ xa.v.v&hellip;)</p></li>
+</ul>
+
+
+<h2>Những kỹ năng cần thiết?</h2>
+
+<ul>
+<li><p>Làm khá tốt với JavaScript là yêu cầu bắt buộc (Nắm rõ OOP, Scope, Closure, etc.)</p></li>
+<li><p>Làm việc tốt với Git là yêu cầu bắt buộc (Bắt buộc sử dụng command line và biết sử dụng những lệnh
+sau <a href="http://dev.teracy.org/docs/most_used_git_commands.html">http://dev.teracy.org/docs/most_used_git_commands.html</a>)</p></li>
+<li><p>Tiếng Anh khá tốt là yêu cầu bắt buộc</p></li>
+<li><p>Biết 1 chút mà muốn làm việc với Python là một lợi thế</p></li>
+<li><p>Biết làm 1 chút HTML/CSS là một lợi thế</p></li>
+<li><p>Tự quản lý thời gian của mình, không bó buộc không gian, thời gian làm việc miễn hoành thành
+nhiệm vụ đã cam kết đúng thời hạn</p></li>
+<li><p>Khiến khách hàng luôn hài lòng là ưu tiên hàng đầu (&ldquo;deliver more than you can promise.&rdquo;)</p></li>
+</ul>
+
+
+<h2>Ví dụ những công việc cụ thể điển hình?</h2>
+
+<ul>
+<li><p>Viết chrome extension hiện chỉ số cổ phiếu thay đổi theo thời gian 1 giây (dữ liệu giả do bạn
+tạo và chạy ngẫu nhiên)</p></li>
+<li><p>Viết Notify component và notify service cho reactjs dùng twitter bootstrap alert component,
+viết trong 8h (với giả sử bạn chưa biết gì về reactjs)</p></li>
+<li><p>Có 2 nút &ldquo;Next&rdquo; và &ldquo;Previous&rdquo; cho Image Slider, bình thường click vào những nút này sẽ hiển thị
+ảnh tiếp theo hoặc trước đó. Yêu cầu là khi nhấn giữ chuột lâu các nút này thì các ảnh tự nhảy,
+càng nhấn giữ lâu thì ảnh nhảy càng nhanh. (làm trong vòng 12h để tích hợp vào backbone
+application hiện có)</p></li>
+<li><p>Dùng CollectionView của Chaplin để quản lý các views trong backbone application</p></li>
+<li><p>Fix failing tests of a Django application and improve it</p></li>
+<li><p>Xây dựng gulp build system cho ứng dụng web để compile reactjs (.jsx) thành (.js), đóng gói ứng
+dùng thành các bản phân phối cho chrome extension, web</p></li>
+<li><p>Convert code HTML/CSS hiện có đang viết rất dở, dùng jquery-ui, chuyển sang dùng twitter bootstrap</p></li>
+<li><p>2 way data-binding for backbone model and view</p></li>
+<li><p>Bạn có 2 iframe trong 1 trang web, làm thế nào để truyền lệnh từ iframe này qua iframe kia?</p></li>
+<li><p>Chọn 1 vùng hình chữ nhật trên 1 canvas và làm mở 1 phần được chọn đó.</p></li>
+<li><p>Hãy implement eyedropper cho 1 canvas element?</p></li>
+<li><p>Implement class <code>Settings</code> theo spec docs sau:</p></li>
+</ul>
+
+
+<p>```
+  /<em>*
+   * Settings class to support json deep model setting.
+   *
+   * For example:
+   *
+   * var settings = new Settings({
+   *   env: &lsquo;dev&rsquo;,
+   *   payment: {
+   *     method: &lsquo;paypal&rsquo;
+   *   }
+   * });
+   *
+   * var env = settings.get(&lsquo;env&rsquo;);
+   * var paymentMethod = settings.get(&lsquo;payment.method&rsquo;);
+   *
+   * settings.set(&lsquo;payment&rsquo;, {
+   *   method: &lsquo;stripe&rsquo;,
+   *   activated: false
+   * }, true);
+   *
+   * var paymentActivated = settings.get(&lsquo;payment.activated&rsquo;);
+   *
+   * key must be valid javascript identifier and does not contain &ldquo;.&rdquo;.
+   *
+   * @constructor
+   </em>/
+  function Settings() {</p>
+
+<pre><code>//TODO: implement this
+</code></pre>
+
+<p>  }</p>
+
+<p>  //supported methods</p>
+
+<p>  /<em>*
+   * Gets setting by key, if the key does not exist:
+   * + throw Error
+   *
+   * + If default def is provided and key does not exist, return def.
+   *
+   * @param key the specified key
+   * @param def the default value if key is not found
+   </em>/
+  Settings.prototype.get = function(key, def) {</p>
+
+<pre><code>//TODO: implement this
+</code></pre>
+
+<p>  }</p>
+
+<p>  /<em>*
+   * Sets new key
+   *
+   * by default, does not allow overwrite existing key.
+   *
+   * if overwrite existing key without forcing, throw Error.
+   *
+   * @param key
+   * @param value
+   * @param force
+   </em>/
+  Settings.prototype.set = function(key, value, force) {</p>
+
+<pre><code>//TODO: implement this
+</code></pre>
+
+<p>  }</p>
+
+<p>  /<em>*
+   * Checks if a key is valid or not.
+   *
+   * key must be valid javascript identifier and does not contain &ldquo;.&rdquo;
+   *
+   * @param key
+   </em>/
+  Settings.prototype.isValidKey = function(key) {</p>
+
+<pre><code>//TODO: implement this
+</code></pre>
+
+<p>  }
+```</p>
+
+<ul>
+<li>Hãy implement <code>template</code> function theo spec docs sau:</li>
+</ul>
+
+
+<p>`&ldquo;
+/**
+ * Creates a compile template function to construct parsed string from string template and params object.
+ *
+ * var compileTemplate = template(strTemplate);
+ * var parsedString = compileTemplate(params, [strict]);
+ *
+ * params is required otherwise error will be thrown.
+ *
+ * By default, strict is true and if there is any missing params key for strTemplate then
+ * an error will be thrown.
+ *
+ * If params has unused keys in strTemplate, that keys will be ignored.
+ *
+ * If strict is false then parsedString will be returned with missing keys.
+ *
+ * Note: template key must match: \w+
+ *
+ * For example:
+ *
+ * var helloTemplate = template(&lsquo;Hello !&rsquo;),
+ *     urlTemplate = template(&lsquo;//.json&rsquo;);
+ *
+ * var output = helloTemplate({name: &lsquo;World&rsquo;}); // => Hello World!
+ *
+ * helloTemplate(); // => error is thrown
+ * helloTemplate({}); // => error is thrown
+ *
+ * var output2 = helloTemplate({}, false); // => Hello !
+ *
+ * var userUrl = urlTemplate({resource: &lsquo;users&rsquo;, id: 1}); // => /users/1.json
+ *
+ * var pricesTemplate = template(&lsquo;/prices?marketplace=&amp;&amp;num_results=&amp;&amp;since=&rsquo;, {
+ *   defaults: {
+ *     num_result: 80
+ *   },
+ *   processors: {
+ *     since: function(processedStr, paramValue, params) {
+ *       if (_.isUndefined(paramValue)) {
+ *         processedStr = processStr.replace(&lsquo;&amp;&amp;since=&rsquo;, &rdquo;);
+ *       }
+ *       return processedStr;
+ *     }
+ *   }
+ * });
+ *
+ * pricesTemplate({marketplace: &lsquo;mtgox&rsquo;}); => /prices/marketplace=mtgox&amp;&amp;num_results=80
+ *
+ * @param str the string template
+ * @param options the optional options
+ * @return a compiled template function
+ */</p>
+
+<p> function template(str, opts) {
+  //TODO: implement this
+ }
+```</p>
+
+<ul>
+<li>v.v&hellip;</li>
+</ul>
+
+
+<h2>Bạn được những gì?</h2>
+
+<ul>
+<li><p>Lương cạnh tranh, nếu làm trung bình khá thì ít nhất 1 tháng bạn được trả $700/tháng (lương phụ
+thuộc vào khả năng của bạn)</p></li>
+<li><p>Có cơ hội góp vốn, cổ phần</p></li>
+<li><p>Rèn luyện bản thân vì đây là công việc không phải dành cho tất cả mọi người, chỉ dành cho những
+chiến binh và biết chiến đấu thật tốt</p></li>
+<li><p>Được tham gia làm việc nhóm với nhiều loại công việc thú vị khác nhau</p></li>
+<li><p>Có nhiều chế độ hỗ trợ thêm như: hỗ trợ bữa ăn (1 bữa với part-time, 2 bữa với full-time; hỗ trợ
+và khuyến khích các hoạt động thể thao; hỗ trợ làm từ xa&hellip;)</p></li>
+</ul>
+
+
+<h2>Bạn ứng tuyển thế nào?</h2>
+
+<p>Nhiều công việc thú vị, thử thách đang chờ bạn. Hãy liên lạc ngay với Teracy, mọi liên lạc hãy
+gửi về: <strong>hr at teracy dot com</strong> với:</p>
+
+<ul>
+<li><p>1 bản CV đầy đủ của bạn</p></li>
+<li><p>Bạn nghĩ gì về những công việc cụ thể điển hình trên?</p></li>
+</ul>
+
+
+<p>Cảm ơn bạn đã quan tâm!</p>
+
+<h2>Hình Ảnh</h2>
+
+<ul>
+<li><a href="http://blog.affenheimtheater.de/en/2010/03/14/kick-ass-vintage-posters/">http://blog.affenheimtheater.de/en/2010/03/14/kick-ass-vintage-posters/</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
