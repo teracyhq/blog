@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://teracy-official.github.io/teracy-official-blog
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://blog.teracy.com
+title: Teracy's Blog
+subtitle: Get experience shared!
+author: Teracy
 simple_search: http://google.com/search
-description:
+description: Teracy's official blog to share our development experience - get experience shared!
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /teracy-official-blog/atom.xml
+subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
@@ -26,13 +26,13 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /teracy-official-blog
-permalink: /blog/:year/:month/:day/:title/
+root: /
+permalink: /:year/:month/:day/:title/
 source: source
-destination: public/teracy-official-blog
+destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: categories
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -42,7 +42,7 @@ rdiscount:
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+pagination_dir:  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
@@ -50,7 +50,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [custom/asides/facebook_like_box.html, asides/recent_posts.html, asides/delicious.html, asides/github.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -63,17 +63,18 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: teracy-official
+github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
+github_skip_repos: ['blog', 'teracy-dev', 'teracy-official.github.io', 'django-tutorial']
 
 # Twitter
-twitter_user:
+twitter_user: teracy_official
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -86,15 +87,75 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user:
-delicious_count: 3
+delicious_user: teracy
+delicious_count: 5
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: teracy-blog
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-42868657-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
+# Custom settings for https://developers.facebook.com/docs/reference/plugins/like-box/
+# the URL of the Facebook Page for this Like Box. Note: After July 2013 migration, href should be
+# an absolute URL.
+facebook_like_box_href: https://www.facebook.com/teracy.official
+# the width of the plugin in pixels. Default width: 300px.
+facebook_like_box_width: 260
+# the height of the plugin in pixels. The default height varies based on number of faces to display,
+# and whether the stream is displayed. With the stream displayed, and 10 faces the default height is
+# 556px. With no faces, and no stream the default height is 63px.
+facebook_like_box_height:
+# the color scheme for the plugin. Options: 'light', 'dark'
+facebook_like_box_colorschema:
+# specifies whether or not to display profile photos in the plugin. Default value: true.
+facebook_like_box_show_faces:
+# specifies whether to display a stream of the latest posts from the Page's wall.
+facebok_like_box_stream:
+# specifies whether to display the Facebook header at the top of the plugin.
+facebook_like_box_header: false
+# specifies whether or not to show a border around the plugin, default true.
+# Set to false to style the iframe with your custom CSS.
+facebook_like_box_show_border: false
+# for Places, specifies whether the stream contains posts from the Place's wall or just checkins
+# from friends. Default value: false.
+facebook_like_box_force_wall:
+
+# cc license http://creativecommons.org/choose/
+
+# enable cc license, default: nil
+cc_license: true
+
+# allow mofiication of works? default: 'yes', options: 'yes', 'no' or 'share'
+cc_license_allow_modification: 'share'
+
+# allow commercial uses of your work? default: true
+cc_license_allow_commercial_uses: true
+
+# license jurisdiction? default: International //TODO(hoatle): implement cc_license_license_jurisdiction
+#cc_license_license_jurisdiction: International
+
+# add metadata? default: nil //TODO(hoatle): implement cc_license_metadata
+#cc_license_metadata:
+
+# icon styles? default: 'normal', options: 'normal' or 'compact'.
+cc_license_icon: 'normal'
+
+
+# revision options
+# enable revision? true or false
+revision: true
+# associated github account
+revision_github_account: teracy-official
+# associated github repo for the blog
+revision_github_repo: blog
+
+# semantic options
+cover: /images/teracy_logo.png
+
+semantic_fb_app_id: 523191011095012
+
+semantic_fb_admins: 627914300

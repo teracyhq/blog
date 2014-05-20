@@ -1,0 +1,51 @@
+{% case site.cc_license_allow_modification %}
+
+    {% when 'yes' %}
+        {% if site.cc_license_allow_commercial_uses %}
+            {% assign license_code = 'by' %}
+            {% assign license_type_label = 'Attribution' %}
+        {% else %}
+            {% assign license_code = 'by-nc' %}
+            {% assign license_type_label = 'Attribution-NonCommercial' %}
+        {% endif %}
+
+    {% when 'no' %}
+        {% if site.cc_license_allow_commercial_uses %}
+            {% assign license_code = 'by-nd' %}
+            {% assign license_type_label = 'Attribution-NoDerivs' %}
+        {% else %}
+            {% assign license_code = 'by-nc-nd' %}
+            {% assign license_type_label = 'Attribution-NonCommercial-NoDerivs' %}
+        {% endif %}
+
+    {% else %}
+        {% if site.cc_license_allow_commercial_uses %}
+            {% assign license_code = 'by-sa' %}
+            {% assign license_type_label = 'Attribution-ShareAlike' %}
+        {% else %}
+            {% assign license_code = 'by-nc-sa' %}
+            {% assign license_type_label = 'Attribution-NonCommercial-ShareAlike' %}
+        {% endif %}
+
+{% endcase %}
+
+{% assign license_type_country = 'Unported' %}
+
+{% case site.cc_license_icon %}
+    {% when 'normal' %}
+        {% assign license_img_size = '88x31' %}
+    {% else %}
+        {% assign license_img_size = '88x15' %}
+{% endcase %}
+
+{% capture license_href %}http://creativecommons.org/licenses/{{ license_code }}/3.0/deed.en_US{% endcapture %}
+{% capture license_img %}http://i.creativecommons.org/l/{{ license_code }}/3.0/{{ license_img_size }}.png{% endcapture %}
+{% capture license_type %}Creative Commons {{ license_type_label }} 3.0 {{ license_type_country}} License{% endcapture %}
+
+<div class="cc-license">
+    <a rel="license" href="{{ license_href }}">
+        <img alt="{{ license_type }}" src="{{ license_img }}" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="{{ license_href }}">{{ license_type }}</a>.
+</div>

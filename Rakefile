@@ -16,7 +16,7 @@ deploy_branch  = "gh-pages"
 
 ## -- Misc Configs -- ##
 
-public_dir      = "public/teracy-official-blog"    # compiled site directory
+public_dir      = "public"    # compiled site directory
 source_dir      = "source"    # source file directory
 blog_index_dir  = 'source'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
@@ -108,10 +108,39 @@ task :new_post, :title do |t, args|
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    post.puts "author: "
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "comments: true"
-    post.puts "categories: "
+    post.puts "categories:"
+    post.puts "    - "
+    post.puts "tags:"
+    post.puts "    - "
+    post.puts "cover: "
+    post.puts "description: "
+    post.puts "keywords: "
+    post.puts "published: true"
     post.puts "---"
+    # teracy: add blog post structure guide
+    post.puts ""
+    post.puts "The hook part: short text to get readers' interest so that they will continue reading"
+    post.puts ""
+    post.puts "<!-- more -->"
+    post.puts ""
+    post.puts "Abstract"
+    post.puts "--------"
+    post.puts ""
+    post.puts "Problem"
+    post.puts "-------"
+    post.puts ""
+    post.puts "Requirements"
+    post.puts "------------"
+    post.puts ""
+    post.puts "Solution"
+    post.puts "--------"
+    post.puts ""
+    post.puts "Summary"
+    post.puts "-------"
+
   end
 end
 
@@ -248,7 +277,7 @@ desc "deploy public directory to github pages"
 multitask :push do
   puts "## Deploying branch to Github Pages "
   puts "## Pulling any updates from Github Pages "
-  cd "#{deploy_dir}" do 
+  cd "#{deploy_dir}" do
     system "git pull"
   end
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
@@ -258,10 +287,10 @@ multitask :push do
   cd "#{deploy_dir}" do
     system "git add -A"
     puts "\n## Commiting: Site updated at #{Time.now.utc}"
-    message = "Site updated at #{Time.now.utc}"
+    message = "Site updated at #{Time.now.utc}\n\n[ci skip]"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch}"
+    system "git push origin #{deploy_branch} --quiet" #hide github token
     puts "\n## Github Pages deploy complete"
   end
 end
@@ -301,6 +330,7 @@ task :set_root_dir, :dir do |t, args|
   end
 end
 
+
 desc "Set up _deploy folder and deploy branch for Github Pages deployment"
 task :setup_github_pages, :repo do |t, args|
   if args.repo
@@ -326,7 +356,7 @@ task :setup_github_pages, :repo do |t, args|
       # If this is a user/organization pages repository, add the correct origin remote
       # and checkout the source branch for committing changes to the blog source.
       system "git remote add origin #{repo_url}"
-      puts "Added remote #{repo_url} as origin"
+      puts "Added remote as origin" # don't put repo_url in travis-ci as it may contains token
       system "git config branch.master.remote origin"
       puts "Set origin as default remote"
       system "git branch -m master source"
@@ -350,7 +380,7 @@ task :setup_github_pages, :repo do |t, args|
     system "git init"
     system "echo 'My Octopress Page is coming soon &hellip;' > index.html"
     system "git add ."
-    system "git commit -m \"Octopress init\""
+    system "git commit -m \"Octopress init\n\n[ci skip]\""
     system "git branch -m gh-pages" unless branch == 'master'
     system "git remote add origin #{repo_url}"
     rakefile = IO.read(__FILE__)
@@ -359,8 +389,16 @@ task :setup_github_pages, :repo do |t, args|
     File.open(__FILE__, 'w') do |f|
       f.write rakefile
     end
+    if (`git ls-remote origin #{deploy_branch} | grep #{deploy_branch}`).empty?
+      puts "Preparing Github deployment branch: #{deploy_branch} for the first time only..."
+      system "git push -u origin #{deploy_branch}"
+    else
+      system "git fetch origin"
+      system "git reset --hard origin/#{deploy_branch}"
+      system "git branch --set-upstream #{deploy_branch} origin/#{deploy_branch}"
+    end
   end
-  puts "\n---\n## Now you can deploy to #{url} with `rake deploy` ##"
+  puts "\n---\n## Now you can deploy to Github Pages with `rake deploy` ##" # TODO hot-fix to hide token
 end
 
 def ok_failed(condition)
