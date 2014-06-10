@@ -17,3 +17,6 @@ env:
   global:
   - GH_REPO="teracy-official/blog"
   - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
+notifications:
+  slack:
+    secure: VAmZmzSWCRmSdUfKrISsgFfnJOYdZmXmymdjRj8teZoObVqyCzDNHB+LC5fLMpDC+cnHTZTVhMtcYO7+2g9/48V9BP+pGf1d8b56hk8l5AXSTAdgGI142/WPc26UdqWBhTrq+WNZXFUtdkP1p3ExvVMH/fSRaeg1mxsL9DQC+Ik=
