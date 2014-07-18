@@ -14,8 +14,8 @@ tags:
     - "virtualbox"
     - "docker"
 cover: /images/2014/07/binary_code.jpg
-description: teracy-dev v0.3.0 release annoucement
-keywords: teracy-dev, v0.3.0 release annoucement, dev, vagrant, virtualbox, docker
+description: teracy-dev v0.3.0 release announcement
+keywords: teracy-dev, v0.3.0 release announcement, dev, vagrant, virtualbox, docker
 published: true
 ---
 
