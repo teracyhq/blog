@@ -34,13 +34,14 @@ It saves a lot of time and is a very cheap operation to destroy and provision a 
 with the exactly defined provisioned software packages.
 
 
-We are now using `Chef` to provision a VM with `nodejs`, `mysql`, `php`, `coldfusion` for a client to develop
-a wordpress, a coldfusion and a MVC client (using backone.js with Grunt build), and it works greatly.
+We are now using `Chef` to provision a VM with `nodejs`, `mysql`, `php`, `coldfusion` for a client to
+develop a wordpress, a coldfusion and a MVC client (using backone.js with Grunt build), and it works
+great.
 
 Normally, it takes several days for new developers to install every packages on
 their machines and they must follow instruction guide, but not anymore with [teracy-dev][].
 Every new developer just needs 2-3 hours to get the dev VM provisoned for the first time (to
-download the basebox thanks to `vagrant cloud`) and it just takes less than 1 min to
+download the basebox thanks to `vagrant cloud`) and it just takes less than 1 minute to
 `$ vagrant destroy` and `$ vagrant up` later again - this is a very cheap operation.
 
 
@@ -54,7 +55,7 @@ painful on Windows host machine. We are going to fix this problem on the next ve
 
 `docker`[^3] is very promising and we'd like to use it for our workflow at v0.4.0, too.
 
-Stay tuned for our upcoming exciting release version.
+Please stay tuned for our upcoming exciting release version.
 
 Have a nice day and happy coding!
 
