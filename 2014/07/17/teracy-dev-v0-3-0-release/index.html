@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>teracy-dev v0.3.0 release - Teracy's Blog</title>
+  
+  <meta name="author" content="hoatle">
+
+  
+  <meta name="description" content="teracy-dev v0.3.0 release annoucement">
+  <meta name="keywords" content="teracy-dev, v0.3.0 release annoucement, dev, vagrant, virtualbox, docker">
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="teracy-dev v0.3.0 release - Teracy's Blog" />
+  <meta property="og:description" content="teracy-dev v0.3.0 release annoucement" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/2014/07/binary_code.jpg" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracy_official" />
+  <meta name="twitter:creator" content="@hoatle" />
+  <meta name="twitter:title" content="teracy-dev v0.3.0 release - Teracy's Blog" />
+  <meta name="twitter:description" content="teracy-dev v0.3.0 release annoucement" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/2014/07/binary_code.jpg" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news">News</a></li>
+  <li><a href="/categories/projects">Projects</a></li>
+  <li><a href="/categories/how-to">How-to</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">Teracy-dev v0.3.0 Release</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2014-07-17T03:39:00+00:00" datetime="2014-07-17T03:39:00+00:00" pubdate data-updated="true">Jul 17<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p><img class="center" src="/images/2014/07/binary_code.jpg"></p>
+
+<p>Creating an isolated consistent development with a predefined consistent workflow is always our
+goal of development, that is the reason why we create <a href="https://github.com/teracy-official/dev">teracy-dev</a>. It is a virtualbox virtual
+machine (VM) that is provisioned by <code>Chef</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and managed by <code>vagrant</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>. Today, we are very happy
+to announce <a href="https://github.com/teracy-official/dev">teracy-dev</a> v0.3.0 released  after more than a year of development and usage.</p>
+
+<!-- more -->
+
+
+<p>We have used <code>vagrant</code> and <code>Chef</code> to provision a common VM for all our developers.
+It saves a lot of time and is a very cheap operation to destroy and provision a new VM again in minutes
+with the exactly defined provisioned software packages.</p>
+
+<p>We are now using <code>Chef</code> to provision a VM with <code>nodejs</code>, <code>mysql</code>, <code>php</code>, <code>coldfusion</code> for a client to
+develop a wordpress, a coldfusion and a MVC client (using backone.js with Grunt build), and it works
+great.</p>
+
+<p>Normally, it takes several days for new developers to install every packages on
+their machines and they must follow instruction guide, but not anymore with <a href="https://github.com/teracy-official/dev">teracy-dev</a>.
+Every new developer just needs 2-3 hours to get the dev VM provisoned for the first time (to
+download the basebox thanks to <code>vagrant cloud</code>) and it just takes less than 1 minute to
+<code>$ vagrant destroy</code> and <code>$ vagrant up</code> later again &ndash; this is a very cheap operation.</p>
+
+<p><a href="https://github.com/teracy-official/dev">teracy-dev</a> is really a general-purpose development environment for all developers for all platforms
+(<code>nodejs</code>, <code>python</code>, <code>java</code>, <code>php</code>, <code>mysql</code>, <code>posgreSQL</code>, <code>mongodb</code>) built-in and you could extend
+more by using <code>Chef</code> to create more cookbooks or recipes for it.</p>
+
+<p>However, we still have performance problem with shared folders. It is still quite slow and
+painful on Windows host machine. We are going to fix this problem on the next version (v0.4.0).</p>
+
+<p><code>docker</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> is very promising and we&rsquo;d like to use it for our workflow at v0.4.0, too.</p>
+
+<p>Please stay tuned for our upcoming exciting release version.</p>
+
+<p>Have a nice day and happy coding!</p>
+
+<h2>Credit</h2>
+
+<ul>
+<li><a href="http://www.superbwallpapers.com/computers/binary-code-9004/">http://www.superbwallpapers.com/computers/binary-code-9004/</a></li>
+</ul>
+
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://www.getchef.com/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.vagrantup.com/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://www.docker.com/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Fri Jul 18 03:16:38 2014</strong><br/>BLOG-41 | conte content update and corrections for teracy-dev v0.3.0 release announcement
+</li><li><strong>Thu Jul 17 11:04:51 2014</strong><br/>BLOG-41 | Review Blog about dev-teracy-v0.3.0 release announcement
+</li><li><strong>Thu Jul 17 07:53:57 2014</strong><br/>BLOG-41 | teracy-dev v0.3.0 release announcement
+</li></ul><a href=https://github.com/teracy-official/blog/commits/HEAD/source/_posts/2014-07-17-teracy-dev-v0-3-0-release.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">hoatle</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2014-07-17T03:39:00+00:00" datetime="2014-07-17T03:39:00+00:00" pubdate data-updated="true">Jul 17<span>th</span>, 2014</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/en/'>en</a>, <a class='category' href='/categories/news/'>news</a>, <a class='category' href='/categories/projects/'>projects</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/dev/'>dev</a>, <a class='tag' href='/tags/docker/'>docker</a>, <a class='tag' href='/tags/vagrant/'>vagrant</a>, <a class='tag' href='/tags/virtualbox/'>virtualbox</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/" data-via="teracy_official" data-counturl="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien/" title="Previous Post: Cần chiến binh gia nhập đội phát triển">&laquo; Cần chiến binh gia nhập đội phát triển</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracy.official"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2014/07/17/teracy-dev-v0-3-0-release/">Teracy-dev v0.3.0 Release</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien/">Cần Chiến Binh Gia Nhập đội Phát Triển</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/">Sphinx-deployment v0.3.0 With Heroku Deployment Support</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/09/26/i-failed-some-plans-and-i-need-to-try-harder/">I Failed Some Plans and I Need to Try Harder!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/09/25/sphinx-deployment-v0-2-0-release/">Sphinx-deployment v0.2.0 Release</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/teracy?count=5&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/teracy">See all bookmarks &raquo;</a></p>
+</section>
+
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracy-official">@teracy-official</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracy-official',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/';
+        var disqus_url = 'http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
