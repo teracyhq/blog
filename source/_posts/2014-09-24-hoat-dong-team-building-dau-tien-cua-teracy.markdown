@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hoạt động team building đầu tiên của Teracy
+title: Hoạt Động Team Building Đầu Tiên Của Teracy
 author: Ngoc Nguyen
 editor: Hanh Le
 date: 2014-09-24 15:46

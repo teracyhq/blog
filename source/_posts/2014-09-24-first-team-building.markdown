@@ -67,7 +67,7 @@ onto our bare feet, with the cheerful voices and laugh of people.
 **Day 2**
 
 Indeed, it was an unlucky day for us. After visiting Son Tra Peninsula in the morning, we took a nap
-until afternoon (I guess  because we stayed up late playing cards last night). We went eating around
+until afternoon (I guess because we stayed up late playing cards last night). We went eating around
 3 pm (well, I actually didn't know if it was considered as lunch or dinner). As planned, we would go
 to play Paintball after the meal. However, all of a sudden, it started to rain so we couldn't play.
 Instead, we had to switch to go swimming when the rain was over.
