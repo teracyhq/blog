@@ -7,6 +7,8 @@ date: 2014-09-24 15:46
 comments: true
 categories:
     - "vi"
+    - news
+
 tags:
     - "team buidling"
     - "Đà Nẵng"
@@ -14,7 +16,7 @@ tags:
 
 published: true
 ---
-{% img center /images/2014/09/upload4.png %}
+{% img center /images/2014/09/teracy1.png %}
 
 Sau một năm làm việc vất vả thì cái ngày mong đợi cũng đã đến - một chuyến nghỉ mát 4 ngày 3 đêm 
 cùng Teracy. Chuyến đi lần này hướng về miền trung để đến với mảnh đất Đà Nẵng – một 
@@ -78,7 +80,7 @@ Heo, ăn xong chúng tôi hí hửng bàn nhau đi chơi bowling để đổi gi
 thấy tấm biển ”tạm ngưng hoạt động để sửa chữa”. Không đổi được gió nên chúng tôi quay lại đi 
 “vòng quay mặt trời - vòng quay lớn thứ 4 trên thế giới”. May thay nó chưa bị đóng cửa.
 
- Chùa Linh Ứng - Bán đảo Sơn Trà {% img center /images/2014/09/upload1.png %}
+ Chùa Linh Ứng - Bán đảo Sơn Trà {% img center /images/2014/09/teracy2.png %}
 
 
 **Ngày thứ 3:**
@@ -89,7 +91,7 @@ nghênh ngang giữa đường như thể làm chướng ngại vật tạo cho 
 khiến trò chơi càng thêm phần mạo hiểm (trò chơi khá vui và thú vị mỗi tội sắc da có hơi chuyển 
 màu một chút). 
 
-Chuẩn bị vượt thác {% img center /images/2014/09/upload5.jpg %}
+Chuẩn bị vượt thác {% img center /images/2014/09/teracy3.jpg %}
 
 Chơi xong chúng tôi đi thưởng thức những đặc sản nơi đây (với món cá suối rán 
 giòn rụm, món gà rừng, lợn rừng thịt chắc nịch và món rau rừng xào có vị hơi chát chát khi ăn xong 
@@ -97,7 +99,7 @@ còn để lại một dư vị khó tả). Buổi tối chúng tôi có những
 Đông (đây là phương án 2 của chúng tôi vì không được vào bar Sky 36 do không mặc đúng trang 
 phục).
 
-Hòa mình vào không khí sôi động - tại bar Phương Đông{% img center /images/2014/09/upload3.png %}
+Hòa mình vào không khí sôi động - tại bar Phương Đông{% img center /images/2014/09/teracy4.png %}
 
 **Ngày thứ 4:**
 
@@ -105,7 +107,7 @@ Buối sáng chúng tôi đi bắn súng sơn. Đây là trò chơi tập thể 
 mặc bộ quần áo như các chú bộ đội ấy, nhìn oai ghê cơ. Chúng tôi có 6 người, chia ra làm 2 đội. Tất 
 cả sẵn sàng chiến đấu nhé!
 
-Sẵn sàng ra trận bắn súng sơn {% img center /images/2014/09/upload6.jpg %}
+Sẵn sàng ra trận bắn súng sơn {% img center /images/2014/09/teracy5.jpg %}
 
 Sau khi "ra trận" về, chúng tôi trở về khách sạn, nghỉ ngơi, trả phòng rồi đến thăm nhà anh Phương -
 1 đồng nghiệp đang sống ở Đà Nẵng. Còn đêm cuối cùng ở Đà Nẵng thôi, cả hội đều phải tận dụng 

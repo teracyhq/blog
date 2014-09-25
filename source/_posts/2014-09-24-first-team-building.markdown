@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "First Team Building of Teracy in Da Nang city"
+title: "First Team Building Activity Of Teracy In Da Nang City"
 author: Hanh Le
 date: 2014-09-25 10:39
 comments: true
 categories:
     - "en"
     - "news"
-    - "projects"
+
 tags:
     - "team building"
     - "Da Nang"
@@ -16,7 +16,7 @@ tags:
 keywords: team building
 published: true
 ---
-{% img center /images/2014/09/upload4.png %}
+{% img center /images/2014/09/teracy1.png %}
 
 After a hard working year, the long-awaited day has arrived - Teracy's vacation for 4 days and 3 nights.
 This destination reaches the Central Vietnam - Da Nang, a beautiful and bustling city with the fresh
@@ -79,7 +79,7 @@ After that, we were eager to go to play bowling for pleasure, however, we were d
 the sign "suspend operations to fix". Eventually, we turned to visit "Sun-Wheel- the world's
 fourth-largest one".
 
-Linh Ung Pogoda - Son Tra peninsula {% img center /images/2014/09/upload1.png %}
+Linh Ung Pogoda - Son Tra peninsula {% img center /images/2014/09/teracy2.png %}
 
 **Day 3**
 
@@ -88,21 +88,21 @@ challenge game "waterfall slide" to challenge ourselves with rushing water, alon
 different sizes as obstacles to give us the sudden collision and to make the game more and more
 adventurous. It was really a funny and adventurous game.
 
-Prepare for sliding waterfall {% img center /images/2014/09/upload5.jpg %}
+Prepare for sliding waterfall {% img center /images/2014/09/teracy3.jpg %}
 
 After that, we went to enjoy the specialties here, such as, fried brook fish, boiled chicken, stocky
 wild boar meat and stir-fried wild vegetables with a little acrid, and strange taste. In the evening,
 we had real comfortable moments at "Phuong Dong" bar. This was our second option because we were not
 in proper clothes to come into "Sky 36"- our first option.
 
-Join the exciting atmosphere at Phuong Dong bar {% img center /images/2014/09/upload3.png %}
+Join the exciting atmosphere at Phuong Dong bar {% img center /images/2014/09/teracy4.png %}
 
 **Day 4**
 
 In the morning we went to play paintball game. It was a quite interesting team game. We also wore as
 soldiers, looked very majestic. We had 6 people, divided into two teams. All were ready to fight!
 
-Prepare for playing paintball game {% img center /images/2014/09/upload6.jpg %}
+Prepare for playing paintball game {% img center /images/2014/09/teracy5.jpg %}
 
 After the game, we returned to the hotel, relaxed, and checked out to visit Mr Phuong's house - a
 colleague who lives in Da Nang. It was the last night in Da Nang, we must take advantage of the worthful
@@ -119,4 +119,4 @@ specialties of Da Nang.
 The trip was not as successful as expected, but it helped the members of Teracy become close and
 understand each other better. It really brought us the great moments.
 
-See all Tereciers next year - in the second  team building activity of Teracy!
+See all Tereciers next year - in the second team building activity of Teracy!
