@@ -2,6 +2,7 @@
 layout: post
 title: "First Team Building Activity Of Teracy In Da Nang City"
 author: Hanh Le
+editor: Hoa VT
 date: 2014-09-25 10:39
 comments: true
 categories:
@@ -11,9 +12,9 @@ categories:
 tags:
     - "team building"
     - "Da Nang"
-    - "Teracy"
 
-keywords: team building
+cover: /images/2014/09/teracy1.png
+keywords: teracy team building 2014
 published: true
 ---
 {% img center /images/2014/09/teracy1.png %}
