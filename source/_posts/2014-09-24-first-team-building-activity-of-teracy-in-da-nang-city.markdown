@@ -13,11 +13,11 @@ tags:
     - "team building"
     - "Da Nang"
 
-cover: /images/2014/09/teracy1.png
+cover: /images/2014/09/teracy1.jpg
 keywords: teracy team building 2014
 published: true
 ---
-{% img center /images/2014/09/teracy1.png %}
+{% img center /images/2014/09/teracy1.jpg %}
 
 After a hard working year, the long-awaited day had arrived - Teracy's vacation for 4 days and 3 nights.
 This destination reaches the Central Vietnam - Da Nang, a beautiful and bustling city with the fresh
@@ -82,7 +82,7 @@ After that, we were eager to go to play bowling for pleasure, however, we were d
 the sign "suspend operations to fix". Eventually, we turned to visit "Sun-Wheel- the world's
 fourth-largest one".
 
-Linh Ung Pogoda - Son Tra peninsula {% img center /images/2014/09/teracy2.png %}
+Linh Ung Pogoda - Son Tra peninsula {% img center /images/2014/09/teracy2.jpg %}
 
 **Day 3**
 
@@ -98,7 +98,7 @@ wild boar meat and stir-fried wild vegetables with a little acrid, and strange t
 we had real comfortable moments at "Phuong Dong" bar. This was our second option because we were not
 in proper clothes to come into "Sky 36"- our first option.
 
-Join the exciting atmosphere at Phuong Dong bar {% img center /images/2014/09/teracy4.png %}
+Join the exciting atmosphere at Phuong Dong bar {% img center /images/2014/09/teracy4.jpg %}
 
 **Day 4**
 

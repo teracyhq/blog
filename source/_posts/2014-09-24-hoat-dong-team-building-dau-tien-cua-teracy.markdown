@@ -13,11 +13,11 @@ tags:
     - "team buidling"
     - "Đà Nẵng"
 
-cover: /images/2014/09/teracy1.png
+cover: /images/2014/09/teracy1.jpg
 keywords: teracy team building 2014
 published: true
 ---
-{% img center /images/2014/09/teracy1.png %}
+{% img center /images/2014/09/teracy1.jpg %}
 
 Sau một năm làm việc vất vả thì cái ngày mong đợi cũng đã đến - một chuyến nghỉ mát 4 ngày 3 đêm
 cùng Teracy. Chuyến đi lần này hướng về miền trung để đến với mảnh đất Đà Nẵng – một
@@ -83,7 +83,7 @@ Heo, ăn xong chúng tôi hí hửng bàn nhau đi chơi bowling để đổi gi
 thấy tấm biển ”tạm ngưng hoạt động để sửa chữa”. Không đổi được gió nên chúng tôi quay lại đi
 “vòng quay mặt trời - vòng quay lớn thứ 4 trên thế giới”. May thay nó chưa bị đóng cửa.
 
- Chùa Linh Ứng - Bán đảo Sơn Trà {% img center /images/2014/09/teracy2.png %}
+ Chùa Linh Ứng - Bán đảo Sơn Trà {% img center /images/2014/09/teracy2.jpg %}
 
 
 **Ngày thứ 3:**
@@ -102,7 +102,7 @@ còn để lại một dư vị khó tả). Buổi tối chúng tôi có những
 Đông (đây là phương án 2 của chúng tôi vì không được vào bar Sky 36 do không mặc đúng trang
 phục).
 
-Hòa mình vào không khí sôi động - tại bar Phương Đông{% img center /images/2014/09/teracy4.png %}
+Hòa mình vào không khí sôi động - tại bar Phương Đông{% img center /images/2014/09/teracy4.jpg %}
 
 **Ngày thứ 4:**
 
