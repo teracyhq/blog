@@ -28,6 +28,8 @@ chuyến đi này lại càng có ý nghĩa với tất cả các Teracier. Đâ
 được gặp mặt nhau, cùng trải qua những giây phút vui chơi, nghỉ ngơi bên nhau...Vì thế mà ai cũng háo
 hức lắm :)
 
+<!-- more -->
+
 Hành trình nào cũng cần có sự chuẩn bị trước thật tốt để đảm bảo có một chuyến đi thật hoàn hảo. Cũng
 như các hành trình khác, tôi gặp rất nhiều khó khăn và mất rất nhiều thời gian trong công tác chuẩn bị. 
 

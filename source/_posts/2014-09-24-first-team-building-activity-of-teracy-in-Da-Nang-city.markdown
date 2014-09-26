@@ -18,7 +18,7 @@ published: true
 ---
 {% img center /images/2014/09/teracy1.png %}
 
-After a hard working year, the long-awaited day has arrived - Teracy's vacation for 4 days and 3 nights.
+After a hard working year, the long-awaited day had arrived - Teracy's vacation for 4 days and 3 nights.
 This destination reaches the Central Vietnam - Da Nang, a beautiful and bustling city with the fresh
 atmosphere and taste of the sea.
 
@@ -26,6 +26,8 @@ It was not simply a vacation but also a team building activity for Teracy. Altho
 come into operation with relatively few members in the North - Central - South, this trip is even
 more meaningful for all Teraciers. It was the first time all the members met together to experience
 moments of fun, and relaxation side by side, so everyone was very excited :)
+
+<!-- more -->
 
 The journey should always have a good preparation to make sure to have a perfect trip. Just like the
 other times, I encountered many difficulties and took a lot of time in preparation for the trip.
@@ -53,11 +55,11 @@ When walking down the airport, just at dusk, I felt the taste of the sea, fresh 
 peace of the city, unlike the crowded bustling scene, and hot summer in Hanoi. We
 arrived at the hotel at 6.30 pm, did check-in procedures, relaxed and chatted together.
 It was the first convergence of the Teraciers, (unfortunately, some members could not join) but we all
-felt so familiar and close. After moments of unceasing talk, the stomaches started growling to
-urge to have dinner. To the coastal city, of course, the first dishes we chose were seafood. As planned,
-we tried the seafood in a pretty cool and clean coastal restaurant. The menu had wide variety
-of options, all look tasty. How I could find myself enjoy such delicious dishes in Hanoi. Until now,
-I still remember the fresh delicious favor of Tamarind crab, steamed prawn and crab on that day.
+felt so familiar and close. After moments of unceasing talk, all of us felt very hungry. To the coastal
+city, of course, the first dishes we chose were seafood. As planned, we tried the seafood in a pretty
+cool and clean coastal restaurant. The menu had wide variety of options, all look tasty. How I could
+find myself enjoy such delicious dishes in Hanoi. Until now, I still remember the fresh delicious
+favor of Tamarind crab, steamed prawn and crab on that day.
 
 After the meal, we walked along My Khe beach. The murmur of the wind and the waves was singing to
 welcome us. A soft sea breeze kissed our face and a salty warmth blew into our face, which dissipated
@@ -69,7 +71,7 @@ onto our bare feet, with the cheerful voices and laugh of people.
 Indeed, it was an unlucky day for us. After visiting Son Tra Peninsula in the morning, we took a nap
 until afternoon (I guess because we stayed up late playing cards last night). We went eating around
 3 pm (well, I actually didn't know if it was considered as lunch or dinner). As planned, we would go
-to play Paintball after the meal. However, all of a sudden, it started to rain so we couldn't play.
+to play paint-ball after the meal. However, all of a sudden, it started to rain so we couldn't play.
 Instead, we had to switch to go swimming when the rain was over.
 
 In the evening, we went to eat veil. When telling the taxi-driver the address of a restaurant, he
@@ -99,10 +101,10 @@ Join the exciting atmosphere at Phuong Dong bar {% img center /images/2014/09/te
 
 **Day 4**
 
-In the morning we went to play paintball game. It was a quite interesting team game. We also wore as
+In the morning we went to play paint-ball game. It was a quite interesting team game. We also wore as
 soldiers, looked very majestic. We had 6 people, divided into two teams. All were ready to fight!
 
-Prepare for playing paintball game {% img center /images/2014/09/teracy5.jpg %}
+Prepare for playing paint-ball game {% img center /images/2014/09/teracy5.jpg %}
 
 After the game, we returned to the hotel, relaxed, and checked out to visit Mr Phuong's house - a
 colleague who lives in Da Nang. It was the last night in Da Nang, we must take advantage of the worthful
