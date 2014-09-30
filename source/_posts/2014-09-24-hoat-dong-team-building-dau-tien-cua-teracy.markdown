@@ -102,7 +102,7 @@ còn để lại một dư vị khó tả). Buổi tối chúng tôi có những
 Đông (đây là phương án 2 của chúng tôi vì không được vào bar Sky 36 do không mặc đúng trang
 phục).
 
-Hòa mình vào không khí sôi động - tại bar Phương Đông{% img center /images/2014/09/teracy4.jpg %}
+Hòa mình vào không khí sôi động tại bar Phương Đông{% img center /images/2014/09/teracy4.jpg %}
 
 **Ngày thứ 4:**
 

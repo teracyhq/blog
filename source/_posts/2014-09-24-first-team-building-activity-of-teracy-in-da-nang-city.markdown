@@ -82,7 +82,7 @@ After that, we were eager to go to play bowling for pleasure, however, we were d
 the sign "suspend operations to fix". Eventually, we turned to visit "Sun-Wheel- the world's
 fourth-largest one".
 
-Linh Ung Pogoda - Son Tra peninsula {% img center /images/2014/09/teracy2.jpg %}
+Linh Ung Pagoda - Son Tra peninsula {% img center /images/2014/09/teracy2.jpg %}
 
 **Day 3**
 
