@@ -2,7 +2,7 @@
 layout: post
 title: Free Bootflat UI kit for Sketch
 author: Anh Nguyen
-date: 2014-10-07 
+date: 2014-10-08 
 comments: true
 categories:
     - "en"
@@ -15,7 +15,7 @@ tags:
     - "sketch"
     - "bootflat"
 
-cover: /images/2014/09/teracy1.jpg
+cover: /images/2014/10/cover.png
 keywords: free Bootflat UI kit for Sketch
 published: true
 ---
@@ -32,7 +32,7 @@ published: true
 
 <!-- more -->
 
-You may don't beleive how much time this application have saved us when designing UI. It's simple, 
+You may not believe how much time this application have saved us when designing UI. It's simple, 
 fast and so connected to the way designers work. You definitely should give Sketch a try in your 
 next project. There are already a lot of articles about how Sketch excels in designing UI. Here to 
 name a few:
@@ -49,9 +49,9 @@ great experience but developing and maintaining the UI kit will take time. Clock
 We have to release our Teracy Finance Assistant app by the end of this year. 
 So, we've come to decide on finding an open source framework that matches our flat designs. 
 
-And we found [Bootflat][] - an open source Flat UI kit based on Twitter Boostrap 3 framework. For 
+And we found [Bootflat][] - an open source Flat UI kit based on Twitter Bootstrap 3 framework. For 
 designers, they offer a free PSD, including a set of beautiful and pure elements, which you can 
-use to create startup projects, websites or iOS/Android Apps. This will save the developing time a lot. 
+use to create startup projects, websites or iOS/Android Apps. This will save a lot of developing time. 
 
 There's still one thing that's bugging us though. As our company starts switching to Sketch for UI design, this 
 beautiful framework doesn't provide the .sketch file of elements, only .psd. So we think "OK, why not
