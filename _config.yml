@@ -63,14 +63,14 @@ default_asides: [custom/asides/facebook_like_box.html, asides/recent_posts.html,
 # ----------------------- #
 
 # Github repositories
-github_user: teracy-official
+github_user: teracyhq
 github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
 github_skip_repos: ['blog', 'teracy-dev', 'teracy-official.github.io', 'django-tutorial']
 
 # Twitter
-twitter_user: teracy_official
+twitter_user: teracyhq
 twitter_tweet_button: true
 
 # Google +1
@@ -102,7 +102,7 @@ facebook_like: true
 # Custom settings for https://developers.facebook.com/docs/reference/plugins/like-box/
 # the URL of the Facebook Page for this Like Box. Note: After July 2013 migration, href should be
 # an absolute URL.
-facebook_like_box_href: https://www.facebook.com/teracy.official
+facebook_like_box_href: https://www.facebook.com/teracyhq
 # the width of the plugin in pixels. Default width: 300px.
 facebook_like_box_width: 260
 # the height of the plugin in pixels. The default height varies based on number of faces to display,
@@ -149,7 +149,7 @@ cc_license_icon: 'normal'
 # enable revision? true or false
 revision: true
 # associated github account
-revision_github_account: teracy-official
+revision_github_account: teracyhq
 # associated github repo for the blog
 revision_github_repo: blog
 
