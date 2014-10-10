@@ -15,7 +15,7 @@ after_script:
 - bundle exec rake deploy
 env:
   global:
-  - GH_REPO="teracy-official/blog"
+  - GH_REPO="teracyhq/blog"
   - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
 notifications:
   slack:
