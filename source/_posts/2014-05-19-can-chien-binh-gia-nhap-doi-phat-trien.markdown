@@ -281,10 +281,3 @@ gửi về: **hr at teracy dot com** với:
 
 
 Cảm ơn bạn đã quan tâm!
-
-
-
-Hình Ảnh
---------
-
-- http://blog.affenheimtheater.de/en/2010/03/14/kick-ass-vintage-posters/
