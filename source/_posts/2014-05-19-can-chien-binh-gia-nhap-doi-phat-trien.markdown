@@ -9,13 +9,13 @@ categories:
     - "vi"
 tags:
     - "tuyển dụng"
-cover: /images/2014/05/poster_kick_ass.jpg
+cover: /images/2014/05/teracy_recruitment_poster.jpg
 description: Teracy cần tuyển chiến binh gia nhập đội phát triển
 keywords: tuyển dụng, chiến binh, phát triển, Teracy
 published: true
 ---
 
-{% img center /images/2014/05/poster_kick_ass.jpg %}
+{% img center /images/2014/05/teracy_recruitment_poster.jpg %}
 
 Sau gần một năm startup, Teracy cần tìm "chiến binh" gia nhập đội phát triển.
 
