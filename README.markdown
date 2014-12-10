@@ -23,6 +23,75 @@ $ cd personal
 $ git clone <your_forked_repository_here>
 ```
 
+How to run blog on teracy-dev vagrant box
+-----------------------------------------
+
+1. Setup dev VM like this: http://dev.teracy.org/docs/develop/getting_started.html
+
+2. Enable Ruby: http://dev.teracy.org/docs/develop/ruby_training.html
+
+3. Forward port 4000 for vagrant_config_override.json
+
+```
+  "vm_forwarded_ports":[
+    {
+      "guest": 4000,
+      "host": 4000
+    }
+    ...
+```
+
+4. Install dependency, clone this repository and preview
+
+After `$ vagrant ssh`:
+
+4.1. Install with `bundle`
+
+Installs this for the first time only
+
+```
+$ ws
+$ git clone <repo_url>
+$ cd personal/blog
+$ bundle install
+```
+
+4.2. Preview blog
+
+```
+$ ws
+$ cd personal/blog
+$ rake preview
+```
+
+You should see something like this:
+
+```
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
+[2014-12-10 10:31:54] INFO  WEBrick 1.3.1
+[2014-12-10 10:31:54] INFO  ruby 1.9.3 (2012-04-20) [i686-linux]
+[2014-12-10 10:31:54] INFO  WEBrick::HTTPServer#start: pid=20200 port=4000
+Configuration from /home/vagrant/workspace/personal/spec-int/_config.yml
+Auto-regenerating enabled: source -> public
+[2013-11-04 10:31:56] regeneration: 186 files changed
+>>> Change detected at 10:31:58 to: screen.scss
+identical public/stylesheets/screen.css
+
+Dear developers making use of FSSM in your projects,
+FSSM is essentially dead at this point. Further development will
+be taking place in the new shared guard/listen project. Please
+let us know if you need help transitioning! ^_^b
+- Travis Tilley
+
+>>> Compass is polling for changes. Press Ctrl-C to Stop.
+```
+
+Now, open http://localhost:4000 to see the blog.
+
+Note that sometimes the content was cached, you need to stop the preview (Cmd/Ctrl + c) then
+`$ rake generate` and `$ rake preview` again.
+
+
 Blog post structure guide
 -------------------------
 
