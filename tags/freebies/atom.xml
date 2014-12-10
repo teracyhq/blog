@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: freebies | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/freebies/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2014-12-10T10:24:59+00:00</updated>
+  <updated>2014-12-10T18:52:29+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Free Teracy Wireframe UI kit for Sketch]]></title>
+    <link href="http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch/"/>
+    <updated>2014-12-08T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/12/cover.jpg"></p>
+
+<p>It’s always a good idea to begin with a wireframe when beginning a new web design or mobile app project.
+Wireframes can be a big time saver as they help both designers and developers come to an agreement on placement
+of major UI elements. The key is to get the layout nailed down so you don&rsquo;t have to change major layout when
+ detailed design elements are in place.</p>
+
+<!-- more -->
+
+
+<p>In our design process at Teracy, wireframing and mockups takes an important position. We have developed
+a wireframe kit to speedup the design process and use it in our daily design workflow. Today, we are excited
+ to share the version of our wireframe kit that we are using, which includes the most common UI elements
+in web projects. This is the second UI kit we share to <a href="http://www.bohemiancoding.com/sketch/">Sketch</a> community, you can also check out our first freebie <a href="https://github.com/teracy-official/bootflat-ui-kit.sketch">Bootflat UI kit for Sketch</a> shared not a long time ago.</p>
+
+<p>Here it is, hope it&rsquo;s useful for all Sketch lovers!</p>
+
+<p><a href="https://github.com/teracyhq/wireframe">Download the Teracy Wireframe kit for Sketch</a></p>
+
+<p><img class="center" src="/images/2014/12/ss2.jpg">
+<img class="center" src="/images/2014/12/ss1.jpg"></p>
+
+<p>Features:</p>
+
+<ul>
+<li>All UI Elements are Symbols.</li>
+<li>Symbols grouped by categories.</li>
+<li>UI elements for mobile devices will be added in the next version.</li>
+<li>Markups and annotations included.</li>
+<li>Over 140 icons included.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Free Bootflat UI kit for Sketch]]></title>
