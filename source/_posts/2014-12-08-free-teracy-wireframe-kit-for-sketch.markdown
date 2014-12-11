@@ -15,7 +15,7 @@ tags:
     - "sketch"
     - "wireframe"
 
-cover: /images/2014/12/cover.png
+cover: /images/2014/12/cover.jpg
 keywords: free Teracy Wireframe UI kit for Sketch
 published: true
 ---
