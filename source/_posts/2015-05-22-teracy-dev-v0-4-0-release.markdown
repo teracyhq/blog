@@ -82,6 +82,30 @@ If you want to customize more, please follow:
 http://dev.teracy.org/docs/0.4.0/teracy_dev_development.html
 
 
+How To Upgrade
+--------------
+
+We support seamless upgrade, this is the step for upgrade if you're using `teracy-dev` v0.3.5:
+
+```
+$ cd ~/teracy-dev
+$ git pull
+$ vagrant box update
+```
+
+`teracy-dev` v0.4.0 introduced a breaking change of configuration for the VM's network[^4],
+so you need to adjust it on your `vagrant_config_override.js` if you're overriding it.
+
+Then:
+
+```
+$ vagrant destroy
+$ vagrant up
+```
+
+and you're done.
+
+
 What's Next?
 ------------
 
@@ -98,7 +122,7 @@ that everyone could leverage it to setup their own development environment like 
 The possibilies are limitless for everyone to create their own baseboxes.
 
 And by next version of `teracy-dev` and `teracy-dev`, we'll support provisioning the servers
-with `knife-solo`[^4].
+with `knife-solo`[^5].
 
 And we'll also support many different types of operating systems for the base boxes, even with
 Windows base box.
@@ -126,4 +150,5 @@ Happy developing!
 [^1]: http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/
 [^2]: http://dev.teracy.org/docs/getting_started.html
 [^3]: https://github.com/teracyhq/dev/blob/v0.4.0/vagrant_config.json
-[^4]: http://matschaffer.github.io/knife-solo/
+[^4]: https://issues.teracy.org/browse/DEV-198
+[^5]: http://matschaffer.github.io/knife-solo/
