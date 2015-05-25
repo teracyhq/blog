@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: vagrant | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/vagrant/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2014-12-11T03:20:07+00:00</updated>
+  <updated>2015-05-25T12:20:16+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,161 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.4.0 release]]></title>
+    <link href="http://blog.teracy.com/2015/05/22/teracy-dev-v0-4-0-release/"/>
+    <updated>2015-05-22T09:19:00+00:00</updated>
+    <id>http://blog.teracy.com/2015/05/22/teracy-dev-v0-4-0-release</id>
+    <content type="html"><![CDATA[<p>About 1 year 8 months ago we announced the <code>teracy-chef</code> v1.0.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> with a plan to extend
+it for <code>teracy-dev</code>. And today we&rsquo;re very happy to announce <code>teracy-dev</code> v4.0.0 release, a really
+important release we&rsquo;ve been waiting for after nearly 2 years of development. Why is it so
+important?</p>
+
+<!-- more -->
+
+
+<h2>Easy Setup And Time Saving</h2>
+
+<p>Traditionally, setting up a development environment takes a lot of time to install the required
+packages and it also requires skillful developers to do it. Now with <code>teracy-dev</code>, its mission
+is to be an <code>all in one development environment managed by Vagrant and provisioned by Chef</code>.
+It&rsquo;s easy and cheap to install the same development environment on all types of operating
+systems (Linux, Mac, Windows) by just following some simple steps with a clear guide<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
+
+<h2>All In One Development Environment</h2>
+
+<p>You want to work with:</p>
+
+<ul>
+<li>Python? here we go: <a href="http://dev.teracy.org/docs/0.4.0/python_dev_guide.html">http://dev.teracy.org/docs/0.4.0/python_dev_guide.html</a></li>
+<li>Node.js? here we go: <a href="http://dev.teracy.org/docs/0.4.0/nodejs_dev_guide.html">http://dev.teracy.org/docs/0.4.0/nodejs_dev_guide.html</a></li>
+<li>PHP? here we go: <a href="http://dev.teracy.org/docs/0.4.0/php_dev_guide.html">http://dev.teracy.org/docs/0.4.0/php_dev_guide.html</a></li>
+<li>Ruby? here we go: <a href="http://dev.teracy.org/docs/0.4.0/ruby_dev_guide.html">http://dev.teracy.org/docs/0.4.0/ruby_dev_guide.html</a></li>
+<li>MySQL? here we go: <a href="http://dev.teracy.org/docs/0.4.0/databases_guide.html#mysql">http://dev.teracy.org/docs/0.4.0/databases_guide.html#mysql</a></li>
+<li>Git?</li>
+<li>phpMyAdmin?</li>
+<li>&hellip;?</li>
+</ul>
+
+
+<p>All these components are already available when you setup the <code>teracy-dev</code> VM.</p>
+
+<p>If you want to have more, such as:</p>
+
+<ul>
+<li>Java</li>
+<li>PostgreSQL</li>
+<li>MongoDB</li>
+<li>&hellip;</li>
+</ul>
+
+
+<p>It&rsquo;s just a few minutes to configure and enable these components to use right away.</p>
+
+<p>We&rsquo;re using <code>teracy-dev</code> everyday for all our clients' projects and our internal projects with a
+wide range of technology stacks and <code>teracy-dev</code> makes our lives (trainees, QA engineers, designers,
+developers) easier to collaborate.</p>
+
+<h2>Customization</h2>
+
+<p>You could customize <code>teracy-dev</code> by overriding the default configuration on the
+<code>vagrant_config.json</code> file<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> such as:</p>
+
+<ul>
+<li>VM customization: networks, synced folders, memory, cpus, etc.</li>
+<li>Enable/ disable or use different versions of <code>Git</code>, <code>Node.js</code>, <code>Python</code>, <code>Ruby</code>, <code>Nginx</code>, <code>Apache</code>,
+<code>PHP</code>, <code>MySql</code>, <code>MongoDB</code>, <code>PostgreSQL</code>, <code>Java</code>, <code>PHPMyAdmin</code>, <code>codebox</code>.</li>
+</ul>
+
+
+<p>If you want to have more customization, please follow:
+<a href="http://dev.teracy.org/docs/0.4.0/teracy_dev_development.html">http://dev.teracy.org/docs/0.4.0/teracy_dev_development.html</a></p>
+
+<h2>How To Upgrade</h2>
+
+<p>We support seamless upgrade, these are the steps for upgrading if you&rsquo;re using <code>teracy-dev</code> v0.3.5:</p>
+
+<p><code>
+$ cd ~/teracy-dev
+$ git pull
+$ vagrant box update
+</code></p>
+
+<p><code>teracy-dev</code> v0.4.0 introduced a breaking change of configuration for the VM&rsquo;s network<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>,
+so you need to adjust it on your <code>vagrant_config_override.js</code> if you&rsquo;re overriding it.</p>
+
+<p>Then:</p>
+
+<p><code>
+$ vagrant destroy
+$ vagrant up
+</code></p>
+
+<p>And you&rsquo;re done.</p>
+
+<h2>What&rsquo;s Next?</h2>
+
+<p>We&rsquo;re going to back-port some stuff from <code>teracy-dev</code> to <code>teracy-chef</code> to make it modular so
+that everyone could leverage <code>teracy-chef</code> to setup their own development environment like we&rsquo;re
+doing for <code>teracy-dev</code> such as:</p>
+
+<ul>
+<li>LAMP stack only</li>
+<li>Java stack only</li>
+<li>Ruby stack only</li>
+<li>Node.js stack only</li>
+<li>Ruby stack only</li>
+</ul>
+
+
+<p>The possibilies are limitless for everyone to create their own baseboxes.</p>
+
+<p>By the next versions of <code>teracy-chef</code> and <code>teracy-dev</code>, we&rsquo;ll support provisioning the servers
+with <code>knife-solo</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>.</p>
+
+<p>And we&rsquo;ll also support many different types of operating systems for the base boxes, even with
+Windows base boxes.</p>
+
+<p>We can&rsquo;t wait to continue developing and releasing the next versions.</p>
+
+<h2>One More Thing&hellip;</h2>
+
+<p>If you want to get our support, consultant or to develop web applications, please drop us an
+email at: hq[at]teracy.com to collaborate and get your dreams come true!</p>
+
+<p>Or you could contact us via:</p>
+
+<ul>
+<li><a href="https://www.upwork.com/companies/Teracy_~01bea4242f6b165592">https://www.upwork.com/companies/Teracy_~01bea4242f6b165592</a></li>
+<li><a href="https://www.upwork.com/users/~01ae32490908995384">https://www.upwork.com/users/~01ae32490908995384</a></li>
+</ul>
+
+
+<p>In the meantime, enjoy <code>teracy-dev</code> for all your projects and hope that you will love using it like
+we do.</p>
+
+<p>Let&rsquo;s get started: <a href="http://dev.teracy.org/docs/0.4.0/getting_started.html">http://dev.teracy.org/docs/0.4.0/getting_started.html</a></p>
+
+<p>Happy developing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://dev.teracy.org/docs/getting_started.html<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://github.com/teracyhq/dev/blob/v0.4.0/vagrant_config.json<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://issues.teracy.org/browse/DEV-198<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://matschaffer.github.io/knife-solo/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.3.0 release]]></title>
