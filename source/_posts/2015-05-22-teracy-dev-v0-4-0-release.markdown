@@ -141,8 +141,8 @@ Or you could contact us via:
 - https://www.upwork.com/users/~01ae32490908995384
 
 
-In the meantime, enjoy `teracy-dev` for all your projects and hope that you will love using it like
-we do.
+In the meantime, enjoy `teracy-dev` for all your projects and hope that you will love using it as
+much as we do.
 
 Let's get started: http://dev.teracy.org/docs/0.4.0/getting_started.html
 
