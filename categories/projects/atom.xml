@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2015-05-25T16:23:18+00:00</updated>
+  <updated>2015-05-29T18:35:05+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -129,6 +129,23 @@ with <code>knife-solo</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</
 Windows base boxes.</p>
 
 <p>We can&rsquo;t wait to continue developing and releasing the next versions.</p>
+
+<h2>0.4.x Releases</h2>
+
+<p>This section will be used to announce v0.4.x releases and we&rsquo;re very happy to announce:</p>
+
+<ul>
+<li><p><code>teracy-dev</code> v0.4.1 release which fixes 2 bugs:</p>
+
+<ul>
+<li>[DEV-232] &ndash; mysql with php not work</li>
+<li>[DEV-233] &ndash; wrong default forwarded port for mysql</li>
+</ul>
+
+
+<p>Details: <a href="https://issues.teracy.org/secure/ReleaseNote.jspa?projectId=10400&amp;version=12200">https://issues.teracy.org/secure/ReleaseNote.jspa?projectId=10400&amp;version=12200</a></p></li>
+</ul>
+
 
 <h2>One More Thing&hellip;</h2>
 
