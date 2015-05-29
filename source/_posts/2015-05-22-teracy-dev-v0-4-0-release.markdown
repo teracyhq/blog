@@ -129,6 +129,19 @@ Windows base boxes.
 We can't wait to continue developing and releasing the next versions.
 
 
+0.4.x Releases
+--------------
+
+This section will be used to announce v0.4.x releases and we're very happy to announce:
+
+- `teracy-dev` v0.4.1 release which fixes 2 bugs:
+
+  + [DEV-232] - mysql with php not work
+  + [DEV-233] - wrong default forwarded port for mysql
+
+  Details: https://issues.teracy.org/secure/ReleaseNote.jspa?projectId=10400&version=12200
+
+
 One More Thing...
 -----------------
 
