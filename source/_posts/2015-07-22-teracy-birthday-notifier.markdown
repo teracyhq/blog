@@ -35,7 +35,7 @@ With this recipe, Zapier will notify to the #_general channel with the message g
 description at the time of the event start. To make thing more interesting, I want to attach a birthday
 cake image which has an employee name on it along with the message so I use PHP GD to show of a dynamic
 birthday cake taking the employee name from calendar title and add it to the image. It takes me 30
-minutes to download the birthday cake image which has space for the text, choice a font and add it
+minutes to get the birthday cake image which has space for the text, choice a font and add it
 to my script. Finally, uploading it to our server and here is the result: 
 
 {% img center /images/2015/07/22/cake_sample.png Birthday cake %}
