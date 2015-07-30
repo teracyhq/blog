@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2015-05-29T18:35:05+00:00</updated>
+  <updated>2015-07-30T10:15:01+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Teracy happy birthday Slack bot]]></title>
+    <link href="http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot/"/>
+    <updated>2015-07-22T09:19:00+00:00</updated>
+    <id>http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/teracy_birthday_slack_bot.png" title="Teracy happy birthday Slack bot" ></p>
+
+<p>Getting everything automated is one of my daily tasks, such as running tests automatically each time
+there is a new commit, packaging products and sending them to customers, or deploying the
+staging/ production servers when a project manager releases a new version, and more.</p>
+
+<!-- more -->
+
+
+<p>Today my task is something quite different: Congrats team members on their birthdays automatically
+by the data got from Google calendar. After a little search, there are many automation solutions to
+do it: from commercial Zapier, IFFT to opensource like Huginn.
+I want something simple to use, maintenance-free, and free for small usage, so my last
+choice is Zapier. It has already had the recipe<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to read events from Google calendar and another
+action to interactive with Slack that will be easy to start (although the document of the recipe
+is not quite clear for a new user like me). Here is the recipe for Zapier:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/Zapier_recipe_config.png" title="Zapier recipe config" ></p>
+
+<p>With this recipe, Zapier will notify to the #_general slack channel with the message got from the
+calendar description at the time of the event start. To make thing more interesting, I want to
+attach a birthday cake image which has an employee name on it along with the message so I use PHP GD
+to show a dynamic birthday cake taking the employee name from the calendar title and add it to the
+image. It took me 30 minutes to get the birthday cake image which has space for the text, choose a
+font and add it to my script. Finally, uploading it to our server and here is the result:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/cake_sample.png" title="Birthday cake" ></p>
+
+<p>This PHP script<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> along with the Zapier recipe above makes the birthday reminder more interesting.
+What I&rsquo;m thinking now is some funny fortune teller texts which are added randomly to the cake, a
+lucky draw game for the team members to pick up their birthday gift and hopefully some online
+merchants will open their API for our script to bring the gift to our team members&#8217; homes.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://zapier.com/zapbook/google-calendar/slack/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://github.com/teracyhq/birthday-image<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.4.0 release]]></title>
@@ -1708,69 +1758,6 @@ semantic versioning schema like <a href="http://dev.teracy.org/docs/develop/sema
 <p>http://php.net<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
 <li id="fn:10">
 <p>http://getcomposer.org<a href="#fnref:10" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Automatic sphinx docs deployment with sphinx-deployment]]></title>
-    <link href="http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/"/>
-    <updated>2013-08-09T03:13:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment</id>
-    <content type="html"><![CDATA[<p>At Teracy, all our documentations are written with the help from <code>sphinx</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. It&rsquo;s easy to setup and
-manage. However, we could not find a good enough <strong>deployment solution</strong> for <code>sphinx</code> documentation
-project. What does &ldquo;good enough&rdquo; here means? It means:</p>
-
-<ul>
-<li><p>The installation and configuration should be easy with <code>git</code> and command line.</p></li>
-<li><p>The deployment could be &ldquo;decoupled&rdquo; from <code>sphinx</code> project for easy upgrade and maintenance. It&rsquo;s
-better if we could have this deployment solution provided by <code>sphinx</code> out of the box.</p></li>
-<li><p>The deployment should support as many services as possible: <code>github pages</code> <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, <code>Rsync</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, and
-<code>PaaS</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> services like <code>heroku</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>, etc.</p></li>
-<li><p>The usage should be easy like:</p>
-
-<ul>
-<li><code>$ make setup</code> to setup deployment basing on the configurations</li>
-<li><code>$ make generate</code> to generate content basing on the configurations</li>
-<li><code>$ make deploy</code> to deploy the project basing on the configurations</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- more -->
-
-
-<p>We could not find a solution good enough meeting our requirements, so we created
-<a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project that implements the ideas and requirements above.</p>
-
-<p>Currently, it&rsquo;s on very very early development stage to just
-support deployment on <code>github pages</code> automatically with <code>travis-ci</code><sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>, and
-<a href="https://travis-ci.org/teracy-official/dev">https://travis-ci.org/teracy-official/dev</a> as an example.</p>
-
-<p>There are many things that we need to do, please help use to shape the project&rsquo;s future by
-contributing with <code>forking</code>, <code>hacking</code> and <code>pull requests</code> or giving your ideas. Your contributions
-are all welcome. Please head to the development branch at
-<a href="https://github.com/teracy-official/sphinx-deployment/tree/develop">https://github.com/teracy-official/sphinx-deployment/tree/develop</a></p>
-
-<p>Have a nice day and happy hacking!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://sphinx-doc.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://help.github.com/categories/20/articles<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>http://en.wikipedia.org/wiki/Platform_as_a_service<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-<li id="fn:5">
-<p>http://heroku.com<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
-<li id="fn:6">
-<p>http://travis-ci.org<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
