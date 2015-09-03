@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2015-07-30T10:15:01+00:00</updated>
+  <updated>2015-09-03T13:37:50+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[how to make JWT requests with httpie-jwt-auth plugin?]]></title>
+    <link href="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/"/>
+    <updated>2015-09-03T11:33:00+00:00</updated>
+    <id>http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin</id>
+    <content type="html"><![CDATA[<p>At Teracy, we embrace JWT (JSON Web Tokens)<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>  for REST APIs to make secure requests. Just for
+your information: &ldquo;JSON Web Tokens are an open, industry standard RFC 7519 method for representing
+claims securely between two parties&rdquo;.</p>
+
+<!-- more -->
+
+
+<p>We&rsquo;re using JWT for our REST APIs basing on the flask-boilerplate<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> project that are empowering
+our clients' web applications and our internal projects.</p>
+
+<p>And to test REST APIs, we&rsquo;re using a really simple powerful http client called httpie<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> .</p>
+
+<p>To make a JWT request with <code>httpie</code>, you need to use the following command:</p>
+
+<p><code>
+$ http example.org Authorization:'Bearer jwt_token_here'
+</code></p>
+
+<p>Hower, typing <code>Authorization</code> with the exact value format is a bit hard and error-prone, that&rsquo;s the
+reason why we created <a href="https://github.com/teracyhq/httpie-jwt-auth">httpie-jwt-auth</a> plugin with the first v0.1.0 release. After installing
+<code>httpie-jwt-auth</code>, you could use this instead:</p>
+
+<p><code>
+$ http --auth-type=jwt --auth=jwt_token_here: example.org
+</code></p>
+
+<p>That&rsquo;s it. It&rsquo;s really easy to use for any JWT requests with <code>httpie</code>.</p>
+
+<p>Please note that colon character at the end of <code>jwt_token_here</code>, we&rsquo;re going to work on removing
+the redundant colon character with: <a href="https://github.com/teracyhq/httpie-jwt-auth/issues/3">https://github.com/teracyhq/httpie-jwt-auth/issues/3</a></p>
+
+<p>Hope that you&rsquo;ll like it and use it as much as we do.</p>
+
+<p>Happy developing and debugging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://jwt.io/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://github.com/teracyhq/flask-boilerplate<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://github.com/jkbrzt/httpie<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Teracy happy birthday Slack bot]]></title>
@@ -404,49 +458,6 @@ upcoming exciting features and projects.</p>
 <p>https://help.github.com/categories/20/articles<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
 <li id="fn:4">
 <p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sphinx-deployment v0.2.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/"/>
-    <updated>2013-09-25T20:56:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
-
-<p>After v0.1.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with improvements and new
-features for v0.2.0 release.</p>
-
-<!-- more -->
-
-
-<p>This release version includes an improvement and a new feature.</p>
-
-<p>We improved <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> by removing the duplication of git initialize step when
-<code>$ make setup_gh_pages</code>, this will reduce the time for setting up github pages to some mili-seconds,
-so it could be considered as performance improvement.</p>
-
-<p>We also would like to introduce a new feature that supports <code>Rsync</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment out of the box.
-So by now, you could not only automatically deploy the <code>sphinx</code> docs project with Github Pages, but
-you could also automatically deploy it with <code>Rsync</code>.</p>
-
-<p><code>sphinx</code> deployment is never easy like this, please head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project, then read
-the introductions on <code>README</code> file and you&rsquo;re done.</p>
-
-<p>And what&rsquo;s next? For v0.3.0 release, we plan to support as many PaaS services as possible,
-the first one on the list is <code>heroku</code>. So stay tuned with our upcoming releases!</p>
-
-<p>Have a nice day and happy docs writing!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
