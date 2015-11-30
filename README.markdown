@@ -26,26 +26,13 @@ $ git clone <your_forked_repository_here>
 How to run blog on teracy-dev vagrant box
 -----------------------------------------
 
-1. Setup dev VM like this: http://dev.teracy.org/docs/develop/getting_started.html
+1. Setup dev VM like this: http://dev.teracy.org/docs/getting_started.html
 
-2. Enable Ruby: http://dev.teracy.org/docs/develop/ruby_training.html
-
-3. Forward port 4000 for vagrant_config_override.json
-
-```
-  "vm_forwarded_ports":[
-    {
-      "guest": 4000,
-      "host": 4000
-    }
-    ...
-```
-
-4. Install dependency, clone this repository and preview
+2. Install dependency, clone this repository and preview
 
 After `$ vagrant ssh`:
 
-4.1. Install with `bundle`
+2.1. Install with `bundle`
 
 Installs this for the first time only
 
@@ -56,7 +43,7 @@ $ cd personal/blog
 $ bundle install
 ```
 
-4.2. Preview blog
+2.2. Preview blog
 
 ```
 $ ws
@@ -90,6 +77,8 @@ Now, open http://localhost:4000 to see the blog.
 
 Note that sometimes the content was cached, you need to stop the preview (Cmd/Ctrl + c) then
 `$ rake generate` and `$ rake preview` again.
+
+3. Learn more at http://octopress.org/docs/
 
 
 Blog post structure guide
