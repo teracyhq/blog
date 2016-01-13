@@ -5,8 +5,8 @@ language: ruby
 rvm:
 - 1.9.3
 before_script:
-- git config --global user.name "Teracy Bot"
-- git config --global user.email "teracy.com@gmail.com"
+- git config --global user.name "Tung Tran"
+- git config --global user.email "tranthanhtung52@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 - bundle exec rake setup_github_pages[$REPO_URL]
 - git checkout -- _config.yml
@@ -15,8 +15,8 @@ after_script:
 - bundle exec rake deploy
 env:
   global:
-  - GH_REPO="teracyhq/blog"
-  - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
+  - GH_REPO="teracy-official/teracy-official.github.io"
+  - secure: Z1VIU1pRcgCfC6nKr0xsMo/HAxqw6f0saUib9e5zTQkbuKCUeSc0CYw9IPcEsabED2NjuIj1CPt3zNwA3prhJJNT2KueEJofO3pWMTKH4azEJAvHkuQngRTSWEqKg0gqjyxFbeWQpN3e4TqCz0EAVmxh2GmfTBkPCIYCG15m7Yg08D2F+YYKv/IGoecFLivhaytJyGKAktY34gnzfJiBf75BG8oLxZ9hRFu3ZSIpDxp7V0MjdEBKzXS/YsedQZX59YEPCXO9xOkBy4CWFJs6kpbqJpWi044iDP9vccxvLn6aecCtltDH0Yil0oRQbaVt0KuQDY0xn//rPjeY+zfIx7HYPx3G/dFR4wn28z+u9j9HhAjBeFoHm9A7/0TUUmQfA8KEDSG28h2rkBR58ult9xX5WBx65LEsKqSjg2ctgOVfbvIKz6BF5QgwuYCXPzpMATZygUBh6mxzmAlOVPrzxLuVh8EFQQj7e+A1DBZVdkLdCbwOt8xGmIBMW5RyQjtBsSWkf8BWufmqppxO4rSjTjztgO5i3ajE4TlZDXKwRKNi3adDZLwWQwwXue56wFHzPz1c4mdWggglRYh0lZBgYPporbSMyp5ON03KfnX8al/hHgTIomXm7ST6g9P5vEvv1oSv+4TmQu0ilToxlLZQyK4VJPQC1RGw03vZoD7EH7c=
 notifications:
   slack:
     secure: VAmZmzSWCRmSdUfKrISsgFfnJOYdZmXmymdjRj8teZoObVqyCzDNHB+LC5fLMpDC+cnHTZTVhMtcYO7+2g9/48V9BP+pGf1d8b56hk8l5AXSTAdgGI142/WPc26UdqWBhTrq+WNZXFUtdkP1p3ExvVMH/fSRaeg1mxsL9DQC+Ik=
