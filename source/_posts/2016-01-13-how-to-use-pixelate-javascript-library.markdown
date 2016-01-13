@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to use Pixelate JavaScript library?"
-author: 
+author: Tung Tran
 date: 2016-01-13 13:52
 comments: true
 categories:
@@ -35,15 +35,14 @@ When we want to pixelate an area of image. But we don't have one application in 
 photoshop, coreldraw, or which application edit image. So, how will we do? Don't worry!
 I have away very easy. That! We will use Pixelate JavaScript library(PJL).
 
-Requirements
-----------------------
+##Requirements
 
 - We need install least one of browsers as: `IE 9+`, `Firefox 17+`, `chrome 13+`, `Safari 5+`, `Opera 11+`.
 - We need have one of editor as: `sublime`, `notepad++` or `notepad`.
 Now, I think, we had full tool for work. So, I will usage for you how to use PJL in your website. And we will see it, very interesting.
 
-Step 1: Setup bower, gruntjs
-----------------------
+###Step 1: Setup bower, gruntjs
+
 Bower is application manages all these things our project. Before install bower, we need install `node`, `npm`, `nvm`. You must install exact version in figure:
 
 ```
@@ -65,8 +64,8 @@ $ bower install
 $ grunt build
 ```
 
-Step 2: Clone PJL on Github
-----------------------
+###Step 2: Clone PJL on Github
+
 We are going to: https://github.com/teracyhq/pixelate then clone pixelate on the local respository.
 
 ```
@@ -74,8 +73,8 @@ $ git init repo_local
 $ git clone https://github.com/teracyhq/pixelate
 ```
 
-Step 3: Create canvas and custom PJL
-----------------------
+###Step 3: Create canvas and custom PJL
+
 - We need to create `custom.js` and turn an image url to a canvas then pixelate it.
 
 ```bash form-1
@@ -116,8 +115,8 @@ pxl.on('load', function() {
 });
 ```
 
-Step 4: Create APIs
-----------------------
+###Step 4: Create APIs
+
 Let 's use pixelate in your website. You need to create APIs which interact with file logic `pixleate.js`. APIs will help for our frontend in interactive with user.
 
 - Selects an area for masking, unmasking and pixelating.
@@ -203,8 +202,8 @@ console.log(pxl.getSelectedArea());
 ```
 We can update and delete APIs. If we don't need to use in the our website, you can delete it.
 
-Step 5: Event trigger
-----------------------
+###Step 5: Event trigger
+
 `Event trigger` is very important. We need to specifies the event that we want to trigger or custom.
 
 ```bash Event trigger
@@ -229,9 +228,9 @@ pxl.
     console.log('select stopped at: ' + x + ':' + y, selectedArea);
   });
 ```
-Summary
-----------------------
+###Summary
+
 In this post, I've guide you step by step to use Pixelate as diffrent JavaScrip libaries. I think you can own this library. It's very easy and convenient for any developer.
 If you need any Pixelate consultant or Pixelate development, don’t hesitate to contact us at: hq@teracy.com and we’re very eager to work with you about Pixelate JavaScript Library.
-Detail PJL: https://github.com/teracyhq/pixelate
+Detail Pixelate JavaScript Library: https://github.com/teracyhq/pixelate
 
