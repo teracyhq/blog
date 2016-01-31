@@ -15,11 +15,8 @@ keywords: How, library, Pixelate, Javascript
 published: true
 ---
 
-We knew. Javscript is programming language very flexible. It is simple and convenient. This language 
-have very more support library as: Carousel slider, slideshow,... Today, I want to introduce with
-you one diffrent library. That library is Pixelate Javascript Library (PJL). It will help for you pixlate any the images
-easy. You don't use photoshop or anything which edit imgae. So, I worte this post as step by step guide for anyone who wants to work with this library. 
-So, let's get started!
+We knew. Javscript is language used for developing-web. It is simple, convenient and very flexible. This is a language
+very much support libraries as: Carousel slider, slideshow,... You can study more other libraries but I want to recommend you one library. That library is Pixelate Javascript Library (PJL). It will help you to pixelate any images. You don't use photoshop or anything, which edits imgaes. So I worte this post as step by step guide for anyone who wants to work with this library. So let's get started!
 
 - This is an image before pixelate.
 
@@ -31,19 +28,17 @@ So, let's get started!
 
 <!-- more -->
 
-When we want to pixelate an area of image. But we don't have one application in the computer as:
-photoshop, coreldraw, or which application edit image. So, how will we do? Don't worry!
-I have away very easy. That! We will use Pixelate JavaScript library(PJL).
+When we want to pixelate an area of the image. But we don't have one application in the computer as: photoshop, coreldraw, or any application which edits images. So how will we do? Don't worry! I have away very easy. That! We will use Pixelate JavaScript library(PJL).
 
 ##Requirements
 
-- We need install least one of browsers as: `IE 9+`, `Firefox 17+`, `chrome 13+`, `Safari 5+`, `Opera 11+`.
-- We need have one of editor as: `sublime`, `notepad++` or `notepad`.
-Now, I think, we had full tool for work. So, I will usage for you how to use PJL in your website. And we will see it, very interesting.
+- We need to install one of browsers as: `IE 9+`, `Firefox 17+`, `chrome 13+`, `Safari 5+`, `Opera 11+`.
+- We need to have one of editors as: `sublime`, `notepad++` or `notepad`.
+I think we had full tools for the work. So I will usage you how to use PJL in your website. And look at, it is very interesting.
 
 ###Step 1: Setup bower, gruntjs
 
-Bower is application manages all these things our project. Before install bower, we need install `node`, `npm`, `nvm`. You must install exact version in figure:
+Bower is application manages all these things our project. Before install bower and gruntjs, we need to install `node`, `npm`, `nvm`. You have to install exactly version as shown in figure:
 
 ```
 $ node --version
@@ -66,7 +61,7 @@ $ grunt build
 
 ###Step 2: Clone PJL on Github
 
-We are going to: https://github.com/teracyhq/pixelate then clone pixelate on the local respository.
+We 're going to: https://github.com/teracyhq/pixelate then clone pixelate into the local respository.
 
 ```
 $ git init repo_local
@@ -75,7 +70,7 @@ $ git clone https://github.com/teracyhq/pixelate
 
 ###Step 3: Create canvas and custom PJL
 
-- We need to create `custom.js` and turn an image url to a canvas then pixelate it.
+- We need to create `custom.js` and turn an image's url to a selectable are that you can select and real time preview what is changing.
 
 ```bash form-1
 var canvas = document.createElement('canvas'),
@@ -117,7 +112,7 @@ pxl.on('load', function() {
 
 ###Step 4: Create APIs
 
-Let 's use pixelate in your website. You need to create APIs which interact with file logic `pixleate.js`. APIs will help for our frontend in interactive with user.
+Let 's use pixelate in your website. You need to create APIs which interact to the file logic `pixleate.js`. It will give interaction to user who use your application.
 
 - Selects an area for masking, unmasking and pixelating.
 
@@ -204,7 +199,7 @@ We can update and delete APIs. If we don't need to use in the our website, you c
 
 ###Step 5: Event trigger
 
-`Event trigger` is very important. We need to specifies the event that we want to trigger or custom.
+`Event trigger` is very important. We need to specify the event which we want to trigger or custom.
 
 ```bash Event trigger
 on('select:start', fn(x, y)) //when select start
@@ -234,3 +229,4 @@ In this post, I've guide you step by step to use Pixelate as diffrent JavaScrip 
 If you need any Pixelate consultant or Pixelate development, don’t hesitate to contact us at: hq@teracy.com and we’re very eager to work with you about Pixelate JavaScript Library.
 Detail Pixelate JavaScript Library: https://github.com/teracyhq/pixelate
 
+Happy Pixelate Developing!
