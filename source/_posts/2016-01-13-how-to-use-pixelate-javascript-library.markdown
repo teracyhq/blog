@@ -59,7 +59,7 @@ $ grunt build
 
 ###Step 2: Clone PJL on Github
 
-We 're going to: https://github.com/teracyhq/pixelate clone into the local respository.
+We 're going to use https://github.com/teracyhq/pixelate to clone into the local respository.
 
 ```
 $ git init repo_local
