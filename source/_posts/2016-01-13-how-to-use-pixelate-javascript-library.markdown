@@ -15,8 +15,8 @@ keywords: How, library, Pixelate, Javascript
 published: true
 ---
 
-We knew. Javscript is language used for developing-web. It is simple, convenient and very flexible. This is a language
-very much support libraries as: Carousel slider, slideshow,... You can study more other libraries but I want to recommend you one library. That library is Pixelate Javascript Library (PJL). It will help you to pixelate any images. You don't use photoshop or anything, which edits imgaes. So I worte this post as step by step guide for anyone who wants to work with this library. So let's get started!
+You've seen many shows where they pixelate part of an image to scramble it. Sometimes it's used to hide the more interesting parts in a nude shot. This technique is also used to conceal information like numbers on credit cards or license plates. When you are reading here, I guess you are thinking that You have to archieve this effect with Photoshop Elements.
+But not, I had a way very easy. This technique is more easy than Photoshop. That is Pixelate Javascript Library(PJL). It will help you to pixelate any images. You needn't use Photoshop or anything, Which edit images. I worte this post as step by step guide for anyone who wants to work with this Library. So let 's get started! 
 
 - This is an image before pixelate.
 
@@ -28,7 +28,7 @@ very much support libraries as: Carousel slider, slideshow,... You can study mor
 
 <!-- more -->
 
-When we want to pixelate an area of the image. But we don't have one application in the computer as: photoshop, coreldraw, or any application which edits images. So how will we do? Don't worry! I have away very easy. That! We will use Pixelate JavaScript library(PJL).
+When we want to pixelate an area of the image. But we don't have one application in the computer as: photoshop, coreldraw, or any application which edit images. So how will we do? Don't worry! I have away very easy. That! We will use Pixelate JavaScript library(PJL).
 
 ##Requirements
 
@@ -195,7 +195,7 @@ var pxl = pixelate(canvas);
 ...
 console.log(pxl.getSelectedArea());
 ```
-We can update and delete APIs. If we don't need to use in the our website, you can delete it.
+We can update and delete APIs. If we needn't use in the our website, you can delete it.
 
 ###Step 5: Event trigger
 
