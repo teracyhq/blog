@@ -15,8 +15,8 @@ keywords: How, library, Pixelate, Javascript
 published: true
 ---
 
-You've seen many shows where they pixelate part of an image to scramble it. Sometimes it's used to hide the more interesting parts in a nude shot. This technique is also used to conceal information like numbers on credit cards or license plates. When you are reading here, I guess you are thinking that You have to achieve this effect with Photoshop Elements.
-But I don't think so, I had a way quick and very easy. This technique is more easy than Photoshop. That is Pixelate Javascript Library(PJL). It will help you to pixelate any images. You needn't use Photoshop or anything for modification. I worte this post as step by step guide for anyone who wants to work with this Library. So let's get started! 
+You've seen many shows where they pixelate a part of an image to scramble it. Sometimes it's used to hide the more interesting parts in a nude shot. This technique is also used to conceal information like numbers on credit cards or license plates. When you are reading here, I guess you are thinking that you have to achieve this effect with Photoshop Elements.
+But I don't think so, I had a quick and very easy way .  This technique is easier than Photoshop. That is Pixelate Javascript Library(PJL). It will help you to pixelate any images. You needn't use Photoshop or anything for modification. I write this post as step by step guide for anyone who wants to work with this Library. So let's get started! 
 
 - This is an image before effect.
 
@@ -32,11 +32,11 @@ But I don't think so, I had a way quick and very easy. This technique is more ea
 
 - We need to install one of browsers as: `IE 9+`, `Firefox 17+`, `chrome 13+`, `Safari 5+`, `Opera 11+`.
 - We need to have one of editors as: `sublime`, `notepad++` or `notepad`.
-I think we had all the tools to work. So I will usage you how to use PJL in your website. And look at, it is very interesting.
+I think we had all the tools to work. I will show you how to use PJL in your website, and you will see it is very interesting.
 
 ###Step 1: Setup bower, gruntjs
 
-Bower is application manages all these things our project. Before install bower and gruntjs, we need to install `node`, `npm`, `nvm`. You have to install exactly versions, as shown in figure:
+Bower is an application manages all these things our project. Before install bower and gruntjs, we need to install `node`, `npm`, `nvm`. You have to install exact versions, as shown in the figure below:
 
 ```
 $ node --version
