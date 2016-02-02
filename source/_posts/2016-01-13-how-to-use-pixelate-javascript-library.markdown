@@ -16,7 +16,7 @@ published: true
 ---
 
 You've seen many shows where they pixelate a part of an image to scramble it. Sometimes it's used to hide the more interesting parts in a nude shot. This technique is also used to conceal information like numbers on credit cards or license plates. When you are reading here, I guess you are thinking that you have to achieve this effect with Photoshop Elements.
-But I don't think so, I had a quick and very easy way .  This technique is easier than Photoshop. That is Pixelate Javascript Library(PJL). It will help you to pixelate any images. You needn't use Photoshop or anything for modification. I write this post as step by step guide for anyone who wants to work with this Library. So let's get started! 
+But I don't think so, I had a quick and very easy way. This technique is easier than Photoshop. That is Pixelate Javascript Library(PJL). It will help you to pixelate any images. You needn't use Photoshop or anything for modification. I write this post as step by step guide for anyone who wants to work with this Library. So let's get started! 
 
 - This is an image before effect.
 
@@ -59,16 +59,16 @@ $ grunt build
 
 ###Step 2: Clone PJL on Github
 
-We 're going to use https://github.com/teracyhq/pixelate to clone into the local respository.
+Go to https://github.com/teracyhq/pixelate and clone it to the local respository.
 
 ```
 $ git init repo_local
 $ git clone https://github.com/teracyhq/pixelate
 ```
 
-###Step 3: Create file custom.js
+###Step 3: Create the custom.js file
 
-- We need to create `custom.js` and turn an image url to a canvas then pixelate it.
+- We need to create `custom.js` and turn an image url into a canvas, then pixelate it.
 
 ```bash form-1
 var canvas = document.createElement('canvas'),
@@ -110,9 +110,9 @@ pxl.on('load', function() {
 
 ###Step 4: Create APIs
 
-Let's use PJL in your website. You need to create APIs which interact with the file logic `pixleate.js`. It will give interaction to users who use your application.
+Create APIs which interact with the logic file `pixleate.js`. It will give interaction to users who use your application.
 
-- Selects an area for masking, unmasking and pixelating.
+- Select an area for masking, unmasking and pixelating.
 
 ```bash select(x, y, width, height)
 var pxl = pixelate(canvas);
@@ -224,7 +224,7 @@ pxl.
 ###Summary
 
 In this post, I've guide you step by step to use PJL as different JavaScrip libaries. I think you can own this library. It's very easy and convenient for any developer.
-If you need any Pixelate consultant or Pixelate development, don’t hesitate to contact us at: hq@teracy.com and we’re very eager to work with you about Pixelate JavaScript Library.
+If you need any pixelate consultant or pixelate development, don’t hesitate to contact us at: hq@teracy.com and we’re very eager to work with you about Pixelate JavaScript Library.
 Detail Pixelate JavaScript Library: https://github.com/teracyhq/pixelate
 
 Happy PJL Developing!
