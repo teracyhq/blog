@@ -197,7 +197,7 @@ We can update and delete APIs. If you needn't use in the your website, you can d
 
 ###Step 5: Event trigger
 
-`Event trigger` is very important. We need to specify the event which we want to use.
+Event trigger is very important. Specify the event which you want to use.
 
 ```bash Event trigger
 on('select:start', fn(x, y)) //when select start
@@ -223,8 +223,8 @@ pxl.
 ```
 ###Summary
 
-In this post, I've guide you step by step to use PJL as different JavaScrip libaries. I think you can own this library. It's very easy and convenient for any developer.
+In this post, I've guided you step by step to use PJL as different JavaScript libraries. I think you can now own this library. It's very easy and convenient for any developer..
 If you need any pixelate consultant or pixelate development, don’t hesitate to contact us at: hq@teracy.com and we’re very eager to work with you about Pixelate JavaScript Library.
-Detail Pixelate JavaScript Library: https://github.com/teracyhq/pixelate
+The details about Pixelate JavaScript Library at: https://github.com/teracyhq/pixelate
 
 Happy PJL Developing!
