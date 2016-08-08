@@ -21,6 +21,8 @@ Nếu bạn là một nhà thiết kế có kinh nghiệm, bạn nên hiểu r�
 
 Một số người nói rằng việc cứ bám theo các quy tắc cứng nhắc và bắt chước người khác thì sẽ giết chết sự sáng tạo và rồi cuối cùng mọi ứng dụng sẽ có thiết kế giống nhau. Theo quan điểm của của người thiết kế UX (trải nghiệm người dùng) tôi lại thấy một vấn đề khác. Việc quen áp dụng các cách khuyên dùng tốt nhất có thể khiến bạn tin rằng Google/Facebook/Instagram hay các ứng dụng khác luôn đúng, mục tiêu thiết kế của họ cũng giống của bạn nên bạn sẽ không bao giờ tự hỏi “có gì sai ở đây?!”. Để chứng minh điều này dưới đây là một số mẫu thiết kế (hoặc đã từng) được coi là những mẫu thiết kế tốt nhất nhưng rút cuộc nó lại không thực sự tốt như bạn nghĩ.
 
+<!-- more -->
+
 ### 1. Ẩn menu điều hướng [^2]
 
 Ít nhất cũng có đến nửa triệu bài báo chủ yếu được viết bởi các designer tranh cãi về menu dạng hamburger (☰) Nếu bạn đã bỏ lỡ chúng thì hãy đọc [ở đây](http://techcrunch.com/2014/05/24/before-the-hamburger-button-kills-you/) và [ở đây](http://deep.design/the-hamburger-menu/). Các bài viết ấy thường không bàn cãi về việc sử dụng biểu tượng hamburger mà đó là về việc có nên ẩn các menu điều hướng và hiển thị nó khi người dùng nhấn vào biểu tượng hamburger.
