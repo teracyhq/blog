@@ -26,7 +26,7 @@ Một số người nói rằng việc cứ bám theo các quy tắc cứng nh�
 ### 1. Ẩn menu điều hướng [^2]
 
 Ít nhất cũng có đến nửa triệu bài báo chủ yếu được viết bởi các designer tranh cãi về menu dạng hamburger (☰) Nếu bạn đã bỏ lỡ chúng thì hãy đọc [ở đây](http://techcrunch.com/2014/05/24/before-the-hamburger-button-kills-you/) và [ở đây](http://deep.design/the-hamburger-menu/). Các bài viết ấy thường không bàn cãi về việc sử dụng biểu tượng hamburger mà đó là về việc có nên ẩn các menu điều hướng và hiển thị nó khi người dùng nhấn vào biểu tượng hamburger.
-Ban đầu thì việc ẩn hàng loạt menu điều hướng đăng sau nút hamburger này có vẻ như rất tiện lợi cho người thiết kế - bạn không phải lo lắng về việc màn hình bị chiếm diện tích bởi những menu cha con dài trên màn hình quá nhỏ của thiết bị di động, mọi thứ sẽ được ẩn một cách mặc định và chỉ hiện ra khi người dùng muốn.
+Ban đầu thì việc ẩn hàng loạt menu điều hướng đằng sau nút hamburger này có vẻ như rất tiện lợi cho người thiết kế - bạn không phải lo lắng về việc màn hình bị chiếm diện tích bởi những menu cha con dài trên màn hình quá nhỏ của thiết bị di động, mọi thứ sẽ được ẩn một cách mặc định và chỉ hiện ra khi người dùng muốn.
 Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu điều hướng thường trực trên màn hình lại tăng khả năng tương tác giữa người dùng và ứng dụng, làm người dùng hài lòng hơn và thậm chí còn tăng doanh thu từ ứng dụng. Đó là lý do vì sao các ứng dụng lớn đang dần thay đồi bằng cách bỏ đi nút hamburger và quay lại hiển thị những tính năng hay được sử dụng ngay trên màn hình.
 
 {% img center /images/2016/08/06/youtube-nav-change.png Menu điều hướng của Youtube %}
@@ -35,9 +35,9 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 
 ### 2. Lạm dụng icon.
 
-Khi thiết kế trên màn hình nhỏ đôi lúc đôi lúc bạn quá lạm dụng việc thay thế các nhãn bằng các icon. Bạn có thể có nhiều lý do để dùng icon như chúng chiếm ít không gian hơn, bạn không phải lo lắng về việc màn hình bị xô lệch khi được dịch sang ngôn ngữ khác hay với ý nghĩ rằng người dùng đã rất quen với icon này rồi.
+Khi thiết kế trên màn hình nhỏ đôi lúc bạn quá lạm dụng việc thay thế các nhãn bằng các icon. Bạn có thể có nhiều lý do để dùng icon như chúng chiếm ít không gian hơn, bạn không phải lo lắng về việc màn hình bị xô lệch khi được dịch sang ngôn ngữ khác hay với ý nghĩ rằng người dùng đã rất quen với icon này rồi.
 
-Với kiểu suy nghĩ như vậy các bảng thiết kế nhiều khi vô tình dấu đi các tính năng của chương trình đằng sau những icon khó hiểu hoặc đôi lúc mình cũng chẳng biết là cái gì nữa và dưới đây là một ví dụ: 
+Với kiểu suy nghĩ như vậy các bảng thiết kế nhiều khi vô tình giấu đi các tính năng của chương trình đằng sau những icon khó hiểu hoặc đôi lúc mình cũng chẳng biết là cái gì nữa và dưới đây là một ví dụ: 
 
 {% img center /images/2016/08/06/instagram-bad-icon.png Icon khó hiểu của Instagram %}
 
@@ -67,7 +67,7 @@ Với những tính năng không quen thuộc và phức tạp thì bạn nên s
 
 ### 3. Chuyển hướng dựa vào cử chỉ [^3]
 
-Khi Apple giới thiệu Iphone vào năm 2007, công nghệ cảm ứng đa điểm đã thu hút sự chú ý của ngưới dùng và họ thấy rằng không những có thể chạm và nhấn vào giao diện mà còn có thể phóng to, thu nhỏ và vuốt.
+Khi Apple giới thiệu iPhone vào năm 2007, công nghệ cảm ứng đa điểm đã thu hút sự chú ý của ngưới dùng và họ thấy rằng không những có thể chạm và nhấn vào giao diện mà còn có thể phóng to, thu nhỏ và vuốt.
 
 Tương tác dùng cảm ứng đã trở nên quen thuộc hơn với người thiết kế giao diện và đã có nhiều ứng dụng được thử nghiệm sử dụng nhận dạng cử chỉ đa điểm để tương tác.
 
@@ -75,7 +75,7 @@ Tương tác dùng cảm ứng đã trở nên quen thuộc hơn với người 
 
 -> Chuyển hướng dựa vào cử chỉ trong ứng dụng Clear. <-
 
-Cũng giống như trường hợp giấu điều hướng và lạm dụng các icon thay vì dùng nhãn văn bản, đôi khi các nhà thiết kế cũng bị cuốn vào việc sử dụng cử chỉ để tiết kiệm không gian màn hình ( Một khi không có biểu tượng nào thể hiện việc bạn có thể vuốt sang trái để xóa thì người dùng chẳng có cách nào để biết là nó tồn tại ). Và cũng như vấn đề về hamburger menu, tính năng nào bị dấu đi thì sẽ ít người dùng nó. Thêm nữa là phần lớn nhận dạng cử chỉ chưa được chuẩn hóa trên các ứng dụng khác nhau, đơn cử là ứng dụng email nổi tiếng cũng hành xử khá là khác nhau đối với việc bạn vuốt sang phải trên mỗi email.
+Cũng giống như trường hợp giấu điều hướng và lạm dụng các icon thay vì dùng nhãn văn bản, đôi khi các nhà thiết kế cũng bị cuốn vào việc sử dụng cử chỉ để tiết kiệm không gian màn hình ( Một khi không có biểu tượng nào thể hiện việc bạn có thể vuốt sang trái để xóa thì người dùng chẳng có cách nào để biết là nó tồn tại ). Và cũng như vấn đề về hamburger menu, tính năng nào bị giấu đi thì sẽ ít người dùng nó. Thêm nữa là phần lớn nhận dạng cử chỉ chưa được chuẩn hóa trên các ứng dụng khác nhau, đơn cử là ứng dụng email nổi tiếng cũng hành xử khá là khác nhau đối với việc bạn vuốt sang phải trên mỗi email.
 
 {% img center /images/2016/08/06/apple-mail-gestures.png vuốt sang phải trên Apple mail %}
 
@@ -141,7 +141,7 @@ Màn hình trống sẽ làm mọi thứ dễ dàng hơn nếu nó thiết kế 
 
 Đừng quên rằng màn hình trống (tương tự như các trang 404 trên web) không chỉ là nơi thể hiện khả năng sáng tạo và đặc tính thương hiệu mà còn có vai trò quan trọng hơn để thể hiện tính năng của chương trình. Vì vậy hãy làm cho màn hình trống trở nên trực quan hơn.
 
-### 5. Hãy luôn tự hỏi mọi thứ:
+### 5. Hãy luôn tự hỏi mọi thứ
 
 Những điều tôi chia sẽ ở đây không phải là để chỉ trích các mẫu thiết kế hay các thực nghiệm tốt nhất. Hãy nhớ rằng các mẫu thiết kế trên các ứng dụng nổi tiếng đôi lúc có đối tượng người dùng khác với ứng dụng mà bạn tạo và điều đó có nghĩa rằng không có chìa khóa vàng chung cho tất cả mọi thứ. Vì thế hay tự nghiên cứu để tạo nên một thiết kế riêng cho mình, mọi thứ cần phải được đo đếm và kiểm thử để rút ra cách giải quyết tốt nhất cho ứng dụng của mình.
 
