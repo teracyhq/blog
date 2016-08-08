@@ -4,7 +4,7 @@
   <title><![CDATA[Category: trans | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/trans/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-08T11:02:37+00:00</updated>
+  <updated>2016-08-08T11:07:13+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>Nếu bạn là một nhà thiết kế có kinh nghiệm, bạn nên hiểu rằng trong  thiết kế giao diện người dùng <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> , việc lấy cảm hứng từ những sản phẩm của người khác không phải là ăn cắp ý tưởng mà là việc học hỏi những kinh nghiệm tốt nhất của những người đi trước, là sử dụng những mẫu thiết kế và làm theo các chỉ dẫn (guideline) nhằm đảm bảo sử dụng các kiểu mẫu quen thuộc và tạo nên các giao diện thực sự hữu ích cho người dùng.</p>
 
 <p>Một số người nói rằng việc cứ bám theo các quy tắc cứng nhắc và bắt chước người khác thì sẽ giết chết sự sáng tạo và rồi cuối cùng mọi ứng dụng sẽ có thiết kế giống nhau. Theo quan điểm của người thiết kế UX (trải nghiệm người dùng) tôi lại thấy một vấn đề khác. Việc quen áp dụng các cách khuyên dùng tốt nhất có thể khiến bạn tin rằng Google/Facebook/Instagram hay các ứng dụng khác luôn đúng, mục tiêu thiết kế của họ cũng giống của bạn nên bạn sẽ không bao giờ tự hỏi “có gì sai ở đây?!”. Để chứng minh điều này dưới đây là một số mẫu thiết kế (hoặc đã từng) được coi là những mẫu thiết kế tốt nhất nhưng rút cuộc nó lại không thực sự tốt như bạn nghĩ.</p>
+
+<!-- more -->
+
 
 <h3>1. Ẩn menu điều hướng <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></h3>
 
