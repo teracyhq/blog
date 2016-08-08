@@ -11,7 +11,7 @@ tags:
     - "ux"
     - "mobile"
     - "design"
-cover: /images/2015/12/21/django_celery.png
+cover: /images/2016/08/06/youtube-nav-change.png
 description: Nhiều khi áp dụng rập khuôn theo những mẫu thiết kế không đem lại kết quả tốt như bạn nghĩ.
 keywords: UX, mobile, design
 published: true
@@ -27,7 +27,7 @@ Một số người nói rằng việc cứ bám theo các quy tắc cứng nh�
 Ban đầu thì việc ẩn hàng loạt menu điều hướng đăng sau nút hamburger này có vẻ như rất tiện lợi cho người thiết kế - bạn không phải lo lắng về việc màn hình bị chiếm diện tích bởi những menu cha con dài trên màn hình quá nhỏ của thiết bị di động, mọi thứ sẽ được ẩn một cách mặc định và chỉ hiện ra khi người dùng muốn.
 Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu điều hướng thường trực trên màn hình lại tăng khả năng tương tác giữa người dùng và ứng dụng, làm người dùng hài lòng hơn và thậm chí còn tăng doanh thu từ ứng dụng. Đó là lý do vì sao các ứng dụng lớn đang dần thay đồi bằng cách bỏ đi nút hamburger và quay lại hiển thị những tính năng hay được sử dụng ngay trên màn hình.
 
-{% img center /images/2016/08/06/image_0.png %}
+{% img center /images/2016/08/06/youtube-nav-change.png Menu điều hướng của Youtube %}
 
 -> Sự thay đổi menu điều hướng của Youtube - Luke Wroblewski <-
 
@@ -37,17 +37,17 @@ Khi thiết kế trên màn hình nhỏ đôi lúc đôi lúc bạn quá lạm d
 
 Với kiểu suy nghĩ như vậy các bảng thiết kế nhiều khi vô tình dấu đi các tính năng của chương trình đằng sau những icon khó hiểu hoặc đôi lúc mình cũng chẳng biết là cái gì nữa và dưới đây là một ví dụ: 
 
-{% img center /images/2016/08/06/image_1.png %}
+{% img center /images/2016/08/06/instagram-bad-icon.png Icon khó hiểu của Instagram %}
 
 -> Liệu bạn có đoán được icon này trong Instagram là để gửi tin nhắn không! <-
 
-{% img center /images/2016/08/06/image_2.png %}
+{% img center /images/2016/08/06/google-trans-bad-icon.png Icon Khó hiểu trên Google Translate %}
 
 -> Hay icon này trong Google Translate dùng để làm gì? <-
 
 Sẽ là sai lầm khi bạn nghĩ rằng người dùng đã quen với việc dùng những icon trừu tượng như thế này hay bá đạo hơn là nghĩ rằng họ sẽ tò mò mà bỏ thời gian ra tìm hiểu xem nó là cái gì.
 
-{% img center /images/2016/08/06/image_3.png %}
+{% img center /images/2016/08/06/bloom-fm-bad-icon.png Icon khó hiểu trong Bloom.fm %}
 
 -> Một số icon của Bloom.fm mà thật mình cũng chẳng hiểu nó dùng để làm gì! <-
 
@@ -55,11 +55,11 @@ Nếu bạn là người thiết kế một icon và bạn cảm thấy sản ph
 
 Điều này không có nghĩa là bạn không nên dùng icon, thật sự thì có rất nhiều icon mà người dùng đã quen thuộc và phần lớn những chức năng quen thuộc của một ứng dụng đều đã có icon tương ứng ( tìm kiếm, phát video, email, cài đặt... ). Tuy vậy vẫn có nhiều icon khá là mơ hồ đối với người dùng vì mỗi ứng dụng sẽ có hành vi khác nhau một chút trên cùng một chức năng (ví dụ như sẽ có chuyện gì xảy ra nếu ta nhấn vào nút trái tim nhỉ (yêu thích, đánh dấu) ??? ).
 
-{% img center /images/2016/08/06/image_4.png %}
+{% img center /images/2016/08/06/another-example-heart.png đôi lúc thật khó để biết icon quen thuộc thật sự sẽ làm gì %}
 
 Với những tính năng không quen thuộc và phức tạp thì bạn nên sử dụng icon kèm theo nhãn đầy đủ, nhãn sẽ giúp tính năng của bạn rõ ràng hơn và icon sẽ giúp người dùng nhận dạng tính năng nhanh hơn và đem lại một chút cá tính cho ứng dụng của bạn.
 
-{% img center /images/2016/08/06/image_5.png %}
+{% img center /images/2016/08/06/complicate-action-should-have-label.png %}
 
 -> Một ví dụ trong ứng dụng Pixelmator. <-
 
@@ -69,17 +69,17 @@ Khi Apple giới thiệu Iphone vào năm 2007, công nghệ cảm ứng đa đi
 
 Tương tác dùng cảm ứng đã trở nên quen thuộc hơn với người thiết kế giao diện và đã có nhiều ứng dụng được thử nghiệm sử dụng nhận dạng cử chỉ đa điểm để tương tác.
 
-{% img center /images/2016/08/06/image_6.jpg %}
+{% img center /images/2016/08/06/clear-app-gestures.jpg %}
 
 -> Chuyển hướng dựa vào cử chỉ trong ứng dụng Clear. <-
 
 Cũng giống như trường hợp giấu điều hướng và lạm dụng các icon thay vì dùng nhãn văn bản, đôi khi các nhà thiết kế cũng bị cuốn vào việc sử dụng cử chỉ để tiết kiệm không gian màn hình ( Một khi không có biểu tượng nào thể hiện việc bạn có thể vuốt sang trái để xóa thì người dùng chẳng có cách nào để biết là nó tồn tại ). Và cũng như vấn đề về hamburger menu, tính năng nào bị dấu đi thì sẽ ít người dùng nó. Thêm nữa là phần lớn nhận dạng cử chỉ chưa được chuẩn hóa trên các ứng dụng khác nhau, đơn cử là ứng dụng email nổi tiếng cũng hành xử khá là khác nhau đối với việc bạn vuốt sang phải trên mỗi email.
 
-{% img center /images/2016/08/06/image_7.png %}
+{% img center /images/2016/08/06/apple-mail-gestures.png vuốt sang phải trên Apple mail %}
 
 -> Với Apple mail vuốt sang phải sẽ hiện ra tùy chọn Đánh dấu chưa đọc. <-
 
-{% img center /images/2016/08/06/image_8.png %}
+{% img center /images/2016/08/06/gmail-gestures.png vuốt sang phải trên Gmail %}
 
 -> Trong khi đó với ứng dụng Gmail thì vuốt sang phải sẽ là chuyển email sang mục lưu trữ. <-
 
@@ -89,27 +89,27 @@ Vậy nên hãy nhớ rằng những tính năng sử dụng nhận dạng cử 
 
 Onboarding, đang là chủ đề nóng trong việc thiết kế giao diện. Tính năng này tự động chạy chỉ dùng một lần khi người dùng lần đầu tiên mở dụng dụng. Phần lớn tính năng này được dùng để giới thiệu và giải thích các tính năng của chương trình một cách trực quan trên màn hình:
 
-{% img center /images/2016/08/06/image_9.png %}
+{% img center /images/2016/08/06/onboarding-overlay.png %}
 
 -> Một ví dụ về Onboarding <-
 
 Nhìn thì hay nhưng thật ra thì đây là một giải pháp khá tệ đấy. Bởi vì nhiều người đôi lúc sẽ bỏ qua phần giới thiệu của bạn, họ đang muốn sử dụng ứng dụng của bạn ngay cơ mà. Thậm chí nếu họ dành thời gian xem hướng dẫn của bạn thì họ cũng sẽ nhanh chóng quên mọi thứ ngay khi đóng cửa sổ hướng dẫn đó lại. (đặc biệt là với màn hình hướng dẫn có quá nhiều thông tin). Và cuối cùng là, nếu bạn phải giải thích giao diện của mình với người dùng thì điều đó đồng nghĩa rằng giao diện bạn đang có trên ứng dụng thật sự đang có vấn đề.
 
-{% img center /images/2016/08/06/image_10.jpg %}
+{% img center /images/2016/08/06/ux-design-like-make-a-joke.jpg Thiết kế giao diện giống như bạn đang kể truyện cười. Nếu bạn phải giải thích câu chuyện thì chẳng còn gì hay nữa. %}
 
 -> Việc thiết kế giao diện giống như bạn đang kể truyện cười. Nếu bạn phải giải thích câu chuyện thì chẳng còn gì hay nữa. <-
 
 Onboarding có thể được thiết kế theo nhiều cách khác nhau để trở nên hữu ích hơn đối với người dùng. Như với Slack, màn hình chào của họ tập trung việc giới thiệu khái quát về lợi ích mang lại hơn là giới thiệu chi tiết về các tính năng.
 
-{% img center /images/2016/08/06/image_11.png %}
+{% img center /images/2016/08/06/slack-onboarding.png Slack sử màn hình chào của họ tập trung việc giới thiệu khái quát về lợi ích mang lại hơn là giới thiệu chi tiết về các tính năng %}
 
 Duolingo thì biến Onboarding thành các bài học và cổ vũ người dùng học các bài học đấy. Hướng tiếp cận này cũng giúp người dùng quen dần và hiểu hơn các tính năng/ giá trị của ứng dụng.
 
-{% img center /images/2016/08/06/image_12.jpg %}
+{% img center /images/2016/08/06/duolingo-onboarding.jpg Duolingo thì biến Onboarding thành các bài học và cổ vũ người dùng học các bài học đấy %}
 
 Bạn còn nhớ vấn đề khác nhau giữa Mailbox và AppleMail khi dùng tính năng vuốt sang phải qua email? đây là cách hướng dẫn người dùng mới về tính năng đó: Người dùng sẽ cần xem những cử chỉ đó được thực hiện như thế nào/ở đâu trước khi thực sự bắt đầu sử dụng ứng dụng:
 
-{% img center /images/2016/08/06/image_13.png %}
+{% img center /images/2016/08/06/apple-mail-onboarding-tutor.png %}
 
 Trước khi áp dụng rập khuôn sử dụng Onboarding bằng cách tạo một lớp trong suốt trên chính ứng dụng của mình để giới thiệu các tính năng và hướng dẫn cho người dùng mới, hãy nên dừng lại và thử nghĩ xem liệu người dùng nên được chào đón như thế nào cho hợp lý và bạn sẽ thấy có nhiều cách giải quyết khác hay hơn việc rập khuôn lại từ ứng dụng khác.
 5. Sử dụng màn hình trống
@@ -120,7 +120,7 @@ Màn hình trống đôi lúc là một thứ dễ bị bỏ sót bởi các nh�
 
 Hãy xem ví dụ dưới đây của Google photos:
 
-{% img center /images/2016/08/06/image_14.png %}
+{% img center /images/2016/08/06/gphoto-empty-state.png Màn hình trống trên GPhoto %}
 
 Nhìn qua thì có vẻ ổn nhưng hãy thử nhìn lại màn hình bạn sẽ thấy có một số vấn đề ở đây:
 
@@ -134,7 +134,7 @@ Và như thế màn hình trống này không làm cho việc sử dụng ứng 
 
 Màn hình trống sẽ làm mọi thứ dễ dàng hơn nếu nó thiết kế theo kiểu như dưới đây.
 
-{% img center /images/2016/08/06/image_15.png %}
+{% img center /images/2016/08/06/empty-state-good-example.png Một ví dụ về màn hình trống tốt %}
 
 Đừng quên rằng màn hình trống (tương tự như các trang 404 trên web) không chỉ là nơi thể hiện khả năng sáng tạo và đặc tính thương hiệu mà còn có vai trò quan trọng hơn để thể hiện tính năng của chương trình. Vì vậy hãy làm cho màn hình trống trở nên trực quan hơn.
 
