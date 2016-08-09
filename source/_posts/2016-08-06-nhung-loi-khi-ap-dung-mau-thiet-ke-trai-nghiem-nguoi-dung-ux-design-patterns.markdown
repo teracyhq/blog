@@ -141,7 +141,7 @@ Màn hình trống sẽ làm mọi thứ dễ dàng hơn nếu nó thiết kế 
 
 Đừng quên rằng màn hình trống (tương tự như các trang 404 trên web) không chỉ là nơi thể hiện khả năng sáng tạo và đặc tính thương hiệu mà còn có vai trò quan trọng hơn để thể hiện tính năng của chương trình. Vì vậy hãy làm cho màn hình trống trở nên trực quan hơn.
 
-### 5. Hãy luôn tự hỏi mọi thứ
+### 6. Hãy luôn tự hỏi mọi thứ
 
 Những điều tôi chia sẽ ở đây không phải là để chỉ trích các mẫu thiết kế hay các thực nghiệm tốt nhất. Hãy nhớ rằng các mẫu thiết kế trên các ứng dụng nổi tiếng đôi lúc có đối tượng người dùng khác với ứng dụng mà bạn tạo và điều đó có nghĩa rằng không có chìa khóa vàng chung cho tất cả mọi thứ. Vì thế hay tự nghiên cứu để tạo nên một thiết kế riêng cho mình, mọi thứ cần phải được đo đếm và kiểm thử để rút ra cách giải quyết tốt nhất cho ứng dụng của mình.
 
