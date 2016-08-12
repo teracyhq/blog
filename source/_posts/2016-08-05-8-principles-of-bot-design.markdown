@@ -2,7 +2,7 @@
 layout: post
 title: "8 nguyên tắc trong thiết kế bot"
 author: hoavu
-date: 2016-08-12 09:40
+date: 2016-08-05 09:40
 comments: true
 categories:
     - "vi"
@@ -10,7 +10,7 @@ categories:
 tags:
     - "bot"
     - "design"
-cover: /images/2016/bot-design.png
+cover: /images/2016/08/05/bot-design.png
 description: 8 nguyên tắc trong thiết kế bot
 keywords: bot, design, UI, giao diện người dùng, thiết kế
 published: true
