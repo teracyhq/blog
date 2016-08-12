@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-11T06:55:50+00:00</updated>
+  <updated>2016-08-12T12:20:19+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -441,6 +441,99 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 <p>Navigation menu<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>Gesture based navigation<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[8 nguyên tắc trong thiết kế bot]]></title>
+    <link href="http://blog.teracy.com/2016/08/05/8-principles-of-bot-design/"/>
+    <updated>2016-08-05T09:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/08/05/8-principles-of-bot-design</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/08/05/bot-design.png" title="Bot Design" ></p>
+
+<p>Thiết kế UI đàm thoại<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> thu hút được nhiều sự quan tâm nhưng để chúng phát huy được hiệu quả trong thực tế thì vẫn là một vấn đề chưa rõ ràng.</p>
+
+<p>Tuy nhiên những nguyên tắc thiết kế cơ bản có định hướng có thể giúp chúng ta thiết kế những thứ thật sự hữu dụng mà mọi người sẽ muốn dùng hàng ngày.</p>
+
+<p>Chúng ta không thiếu những bài viết về những UI đàm thoại trong tương lai, nhưng lại có quá ít các bài viết về tính thực tiễn khi thiết kế sự tương tác của các chatbot.</p>
+
+<p>Có vẻ như đây chính xác là những gì mà hiện tại chúng ta đang cần. Nỗ lực ban đầu khi thực hiện các chatbot đều thất bại, chủ yếu là do các chatbot phụ thuộc quá nhiều vào việc xử lý ngôn ngữ tự nhiên hoặc khả năng của A.I mà vẫn chưa làm
+được. Ngoài ra người ta cũng cố gắng loại bỏ những thứ không phù hợp trong mô hình mới này.</p>
+
+<p>Vì quá quan tâm đến công nghệ mới mà chúng ta quên đi nhân tố quan trọng nhất trong lĩnh vực này đó là con người &ndash; được cho là sẽ giao tiếp với bot.</p>
+
+<!-- more -->
+
+
+<p>Vậy chúng ta dự định thiết kế các bot như thế nào? Các bot có ích trong trường hợp nào? Nên thân thiện và đơn giản như Slackbot hay thông minh như Facbook M? Nên cho phép thoải mái nhập văn bản hay tạo ra các tùy chọn như IVR<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>? Đây là những câu hỏi không khó trả lời, nhưng thực tế chúng ta vẫn đang khám phá cách sử dụng phương tiện mới này để tạo ra những trải nghiệm thật tốt.</p>
+
+<p>Những tình huống này đòi hỏi các quan điểm thống nhất. Khi bạn làm việc trong lĩnh vực chatbot với nhiều quan điểm khác nhau thì bạn cần phải tuân theo các nguyên tắc thiết kế thật rõ ràng.</p>
+
+<p>(Bài viết này được đăng lần đầu trên Inside Intercom &ndash; trang web mà chúng tôi thường xuyên chia sẻ suy nghĩ của mình về thiết kế, startup và quản lý sản phẩm).</p>
+
+<h1>Các nguyên tắc thiết kế là gì?</h1>
+
+<p>Tất cả các sản phẩm tốt đều tuân theo các nguyên tắc có quan điểm rõ ràng và các nguyên tắc đó phải được đặt lên hàng đầu.</p>
+
+<p>Hiểu theo nghĩa đơn giản nhất thì các nguyên tắc thiết kế là tập hợp các quan điểm được cả nhóm ủng hộ. Các nguyên tắc phải rõ ràng, không mơ hồ và là tôn chỉ để mọi người hướng đến.</p>
+
+<p>Tạo ra các nguyên tắc thiết kế hay là cả một nghệ thuật. Nó không đơn thuần chỉ là những chân lý. Vì nếu như vậy, mọi người sẽ chỉ biết gật đầu, và chẳng giúp bạn được gì khi triển khai thực hiện.</p>
+
+<p>Ví dụ, &ldquo;chúng tôi không làm những thiết kế quá phức tạp&rdquo; là một nguyên tắc chán kinh khủng &ndash; Thực tế sẽ không ai tranh cãi điều ngược lại. Những chân lý như vậy không thể giúp định hướng khả thi cho các quyết định của bạn.</p>
+
+<p>Ngược lại, &ldquo;Chúng tôi thích sự đơn giản hơn là việc gì cũng muốn làm&rdquo; là một nguyên tắc thiết kế tuyệt vời. Chúng ta cũng có thể đưa ra một lập luận ngược với nguyên tắc trên đó là &ldquo;Chúng tôi bổ sung tính phức tạp để người dùng có thể tạo ra những thứ tuyệt vời hơn&rdquo;. Những nguyên tắc có quan điểm rõ ràng như vậy sẽ giúp bạn có được những quyết định thống nhất khi thiết kế.
+Với định hướng như vậy, hãy cùng đưa ra một số nguyên tắc giúp chúng ta tiến bộ khi thiết kế các UI đàm thoại.</p>
+
+<h1>Các nguyên tắc thiết kế bot</h1>
+
+<h2>1. Không nên giả lập là con người</h2>
+
+<p>Trò mồi chài người dùng có thể làm họ cảm thấy như mình đang bị lừa, hoặc là họ không hiểu hệ thống hoạt động như thế nào. Cả hai trường hợp này đều là những trải nghiệm người dùng không tốt. Điều đó có nghĩa là chúng ta không nên sử dụng các chỉ dẫn như &ldquo;đang đánh máy&rdquo; hay các trì hoãn giả tạo để có vẻ khiến cho bot mang nhân cách nhiều hơn. Thay vì đó, các thông điệp bot nên theo các kiểu cách khác nhau, và được dán nhãn rõ ràng để thể hiện rằng nó không phải là con người. Điều này cũng sẽ không ngăn cản chúng ta tạo ra cá tính cho bot.</p>
+
+<h2>2. Đơn giản hóa hết mức có thể</h2>
+
+<p>Các đàm thoại bot nên gắn với các chủ đề cụ thể và theo lộ trình đàm thoại tuyến tính, như vậy sẽ tránh được các đường rẽ nhánh phức tạp. Không nên tạo ra các A.I tự cảm nhận và chung chung. Tốt hơn là nên trình bày và giải thích những giới hạn của bot. Như vậy, các nhà thiết kế bot cũng sẽ không phải giải thích gì cho các trường hợp bị lỗi lừa bot và người dùng cũng sẽ không cảm thấy mệt mỏi với các thông điệp đàm thoại phức tạp.</p>
+
+<h2>3. Tôn trọng phương tiện chat</h2>
+
+<p>Lợi thế của các ứng dụng gửi tin nhắn thông minh đó là có thể loại bỏ rất nhiều ứng dụng, giao diện và làm giảm tính tương tác, thay vào đó là một UI chat đơn giản. Do đó, sẽ thật là vô nghĩa khi loanh quanh và vứt cả 1 ứng dụng vào trong một cuộc đàm thoại. Hãy giữ mọi thứ thật tự nhiên với ứng dụng đàm thoại. Mọi tương tác của bot là gọi và trả lời kèm theo các bình luận trong một luồng chat và người dùng sẽ phản hồi lại trong vùng trả lời. Các bot không thể thay đổi nội dung đàm thoại như con người. Cùng với đó, hãy sử dụng các quy ước: hiển thị một tấm thẻ được định dạng bắt mắt cho phép xem trước trang liên kết hơn là việc in ra một URL vô nghĩa trong phản hồi của bot.</p>
+
+<h2>4. Tối ưu cho người dùng cuối</h2>
+
+<p>Các bot nên được dùng để cải thiện trải nghiệm người dùng cuối chứ không chỉ là công cụ hỗ trợ tốt cho các đội chăm sóc khách hàng. Người thiết kế nên tự hỏi rằng: Con người có tốt hơn cho người dùng cuối không? Nếu câu trả lời là có thì bạn không nên sử dụng bot. Bot không nên làm thay những việc con người có thể làm tốt hơn, mà nên cải thiện những cái mà con người còn làm chậm chạp. Máy móc nên làm việc, con người thì nên suy nghĩ.</p>
+
+<h2>5. Sử dụng một cách tiết kiệm</h2>
+
+<p>Các tương tác của bot nên ngắn gọn và chính xác. Không nên có một cuộc trò chuyện kéo dài qua lại với bot, điều này sẽ làm mất thời gian của cả hai bên. Bất cứ khi nào cần quá 2 lần nhập là thấy nặng nề rồi.</p>
+
+<h2>6. Cung cấp đường thoát</h2>
+
+<p>Luôn luôn có lựa chọn dự phòng cho người dùng, cho phép họ bày tỏ ý định của mình như: &ldquo;Tôi muốn đợi và nói chuyện với một con người thực sự. Tôi không muốn tiếp tục nói chuyện với robot nữa.&rdquo;</p>
+
+<h2>7. Sử dụng đầu vào có cấu trúc khi có thể</h2>
+
+<p>Một cuộc đàm thoại mà càng có nhiều hướng đi khác nhau thì nguy cơ đi vào ngõ cụt càng lớn. Đừng đặt người dùng vào tình thế khiến họ phải đoán xem điều gì là đúng cần phải làm. Bàn phím mềm cho phép nhập một lượng ký tự nhất định và có thể tránh phải đánh máy nhiều. Ví dụ, thay vì yêu cầu người dùng cuối gõ các từ &ldquo;có&rdquo; hoặc &ldquo;không&rdquo;, hãy cho họ 2 nút tùy chọn. Hoặc xác nhận đầu vào có cấu trúc như địa chỉ email trước khi gửi. Bằng cách này, bạn có thể đưa ra được các phản hồi đúng mục đích và tránh phải xử lý các văn bản phức tạp mà đầu vào không đoán trước được.</p>
+
+<h2>8. Mọi người đều thấy được điểm giống nhau</h2>
+
+<p>Các bot không chỉ xuất hiện với người dùng cuối mà người thiết kế bot cũng cần phải ghi lại được các bối cảnh hội thoại &ndash; bot trả lời như thế nào và người dùng cuối phản hồi lại ra sao. Các thông điệp dài hoặc phổ biến của bot có thể hiện thị ở trạng thái đóng để quản trị viên quản lý dễ dàng hơn. Trường hợp ngoại lệ là các thông điệp bot mang tính riêng tư với quản trị viên thì cần hiển thị luôn.</p>
+
+<h1>Tuân thủ nhưng không bị giới hạn bởi các nguyên tắc</h1>
+
+<p>Điều quan trọng cần chú ý đó là những nguyên tắc trên chắc chắn sẽ luôn được phát triển, do khả năng mới về mặt công nghệ hoặc đơn giản là một số nguyên tắc hướng dẫn chưa đúng. Chúng ta nên chấp nhận cả hai thực tế trên.
+Tuy nhiên việc nắm bắt được các nguyên tắc trên sẽ làm cho mọi thứ trở lên dễ dàng hơn. Chúng ta đã có các nguyên tắc và giờ chỉ cần áp dụng chúng một cách có hệ thống và đồng nhất. Nếu không có các nguyên tắc này, bạn chỉ có thể thực hiện các ý tưởng của mình một cách ngẫu nhiên và hi vọng nó sẽ hiệu quả như mong muốn.</p>
+
+<p>Bài dịch từ <a href="https://medium.com/intercom-inside/8-principles-of-bot-design-51f03df1d84c#.hb10iooyq">8 principles of bot design</a></p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>conversational UI (user interface)<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>IVR (Interactive Voice Response) &ndash; tổng đài trả lời tự động<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
@@ -1148,7 +1241,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#104;&#113;&#64;&#x74;&#x65;&#114;&#x61;&#99;&#x79;&#46;&#99;&#x6f;&#109;">&#x68;&#113;&#64;&#x74;&#x65;&#x72;&#x61;&#99;&#x79;&#46;&#99;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x68;&#113;&#x40;&#x74;&#x65;&#114;&#97;&#x63;&#121;&#46;&#99;&#x6f;&#x6d;">&#104;&#113;&#64;&#x74;&#101;&#114;&#x61;&#x63;&#x79;&#x2e;&#x63;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -2649,53 +2742,6 @@ iterate for next version (v0.2.0) with improvements, rule violations reduction.<
 <ol>
 <li id="fn:1">
 <p>http://djangoproject.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[octopress-cc-license chooser plugin v0.1.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release/"/>
-    <updated>2013-09-06T15:56:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2013/09/06/cc-by.png" title="Creative Commons License" ></p>
-
-<p>&ldquo;Open&rdquo; is one of Teracy&rsquo;s most important values. We promote open source projects on our
-development path.</p>
-
-<p>For open source projects, we have open source licenses. For other &ldquo;creative&rdquo; resources such as
-our blog posts and documentation, <code>Creative Commons</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> license is used.</p>
-
-<!-- more -->
-
-
-<p>To choose<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> and add <code>Creative Commons</code> license to <code>octopress</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> posts easily, we created
-<a href="https://github.com/hoatle/octopress-cc-license">octopress-cc-license</a> plugin. This is the first release milestone as of v0.1.0 with &ldquo;basic
-configuration for cc license allow modification, allow commercial uses and icon styles.&rdquo;</p>
-
-<p>What&rsquo;s next? For v0.2.0 release, we would like to support:</p>
-
-<ul>
-<li>cc_license_license_jurisdiction</li>
-<li>cc-license chooser for individual posts</li>
-<li>use tag plugin instead of template</li>
-</ul>
-
-
-<p>For details, please head to: <a href="https://github.com/hoatle/octopress-cc-license/issues?milestone=2">https://github.com/hoatle/octopress-cc-license/issues?milestone=2</a></p>
-
-<p>We hope that this plugin is helpful for your <code>octopress</code> blog posts. Happy blogging!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://creativecommons.org<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://creativecommons.org/choose/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>http://octopress.org<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
