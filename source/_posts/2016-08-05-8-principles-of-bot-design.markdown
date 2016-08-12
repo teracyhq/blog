@@ -16,7 +16,7 @@ keywords: bot, design, UI, giao diện người dùng, thiết kế
 published: true
 ---
 
--------------------------------
+{% img center /images/2016/08/05/bot-design.png Bot Design %}
 
 Thiết kế UI đàm thoại[^1] thu hút được nhiều sự quan tâm nhưng để chúng phát huy được hiệu quả trong thực tế thì vẫn là một vấn đề chưa rõ ràng.
 
@@ -87,7 +87,7 @@ Các bot không chỉ xuất hiện với người dùng cuối mà người thi
 Tuân thủ nhưng không bị giới hạn bởi các nguyên tắc
 ===================================================
 Điều quan trọng cần chú ý đó là những nguyên tắc trên chắc chắn sẽ luôn được phát triển, do khả năng mới về mặt công nghệ hoặc đơn giản là một số nguyên tắc hướng dẫn chưa đúng. Chúng ta nên chấp nhận cả hai thực tế trên.
-Tuy nhiên việc nắm bắt được các nguyên tắc trên sẽ làm cho mọi thứ trở lên dễ dàng hơn. Chúng ta đã có các nguyên tắc và giờ chỉ cần áp dụng chúng một cách có hệ thống và đồng nhất. Nếu không có các nguyên tắc này, bạn chỉ có thể thực hiện các ý tưởng của mình một cách ngẫu nhiên và hi vọng nó sẽ hiệu quả như mong muốn. 
+Tuy nhiên việc nắm bắt được các nguyên tắc trên sẽ làm cho mọi thứ trở lên dễ dàng hơn. Chúng ta đã có các nguyên tắc và giờ chỉ cần áp dụng chúng một cách có hệ thống và đồng nhất. Nếu không có các nguyên tắc này, bạn chỉ có thể thực hiện các ý tưởng của mình một cách ngẫu nhiên và hi vọng nó sẽ hiệu quả như mong muốn.
 
 
 Bài dịch từ [8 principles of bot design](https://medium.com/intercom-inside/8-principles-of-bot-design-51f03df1d84c#.hb10iooyq)
