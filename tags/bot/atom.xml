@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: bot | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/bot/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-12T12:25:28+00:00</updated>
+  <updated>2016-08-12T13:35:29+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -34,7 +34,7 @@
 <!-- more -->
 
 
-<p>Vậy chúng ta dự định thiết kế các bot như thế nào? Các bot có ích trong trường hợp nào? Nên thân thiện và đơn giản như Slackbot hay thông minh như Facbook M? Nên cho phép thoải mái nhập văn bản hay tạo ra các tùy chọn như IVR<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>? Đây là những câu hỏi không khó trả lời, nhưng thực tế chúng ta vẫn đang khám phá cách sử dụng phương tiện mới này để tạo ra những trải nghiệm thật tốt.</p>
+<p>Vậy chúng ta dự định thiết kế các bot như thế nào? Các bot có ích trong trường hợp nào? Nên thân thiện và đơn giản như Slackbot hay thông minh như Facebook M? Nên cho phép thoải mái nhập văn bản hay tạo ra các tùy chọn như IVR<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>? Đây là những câu hỏi không khó trả lời, nhưng thực tế chúng ta vẫn đang khám phá cách sử dụng phương tiện mới này để tạo ra những trải nghiệm thật tốt.</p>
 
 <p>Những tình huống này đòi hỏi các quan điểm thống nhất. Khi bạn làm việc trong lĩnh vực chatbot với nhiều quan điểm khác nhau thì bạn cần phải tuân theo các nguyên tắc thiết kế thật rõ ràng.</p>
 

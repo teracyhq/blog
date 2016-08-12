@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-12T12:25:28+00:00</updated>
+  <updated>2016-08-12T13:35:29+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -468,7 +468,7 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 <!-- more -->
 
 
-<p>Vậy chúng ta dự định thiết kế các bot như thế nào? Các bot có ích trong trường hợp nào? Nên thân thiện và đơn giản như Slackbot hay thông minh như Facbook M? Nên cho phép thoải mái nhập văn bản hay tạo ra các tùy chọn như IVR<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>? Đây là những câu hỏi không khó trả lời, nhưng thực tế chúng ta vẫn đang khám phá cách sử dụng phương tiện mới này để tạo ra những trải nghiệm thật tốt.</p>
+<p>Vậy chúng ta dự định thiết kế các bot như thế nào? Các bot có ích trong trường hợp nào? Nên thân thiện và đơn giản như Slackbot hay thông minh như Facebook M? Nên cho phép thoải mái nhập văn bản hay tạo ra các tùy chọn như IVR<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>? Đây là những câu hỏi không khó trả lời, nhưng thực tế chúng ta vẫn đang khám phá cách sử dụng phương tiện mới này để tạo ra những trải nghiệm thật tốt.</p>
 
 <p>Những tình huống này đòi hỏi các quan điểm thống nhất. Khi bạn làm việc trong lĩnh vực chatbot với nhiều quan điểm khác nhau thì bạn cần phải tuân theo các nguyên tắc thiết kế thật rõ ràng.</p>
 
@@ -1241,7 +1241,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x68;&#x71;&#64;&#x74;&#101;&#114;&#97;&#x63;&#x79;&#46;&#99;&#111;&#109;">&#x68;&#113;&#64;&#x74;&#x65;&#x72;&#97;&#99;&#x79;&#x2e;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x68;&#x71;&#x40;&#x74;&#x65;&#x72;&#97;&#99;&#121;&#46;&#x63;&#111;&#109;">&#x68;&#x71;&#64;&#116;&#101;&#114;&#x61;&#x63;&#121;&#46;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
