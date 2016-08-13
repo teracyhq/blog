@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: dev | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/dev/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-12T13:35:29+00:00</updated>
+  <updated>2016-08-13T16:18:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -21,9 +21,9 @@
     <content type="html"><![CDATA[<p><img class="center" src="/images/2014/07/binary_code.jpg"></p>
 
 <p>Creating an isolated consistent development with a predefined consistent workflow is always our
-goal of development, that is the reason why we create <a href="https://github.com/teracy-official/dev">teracy-dev</a>. It is a virtualbox virtual
+goal of development, that is the reason why we create <a href="https://github.com/teracyhq/dev">teracy-dev</a>. It is a virtualbox virtual
 machine (VM) that is provisioned by <code>Chef</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and managed by <code>vagrant</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>. Today, we are very happy
-to announce <a href="https://github.com/teracy-official/dev">teracy-dev</a> v0.3.0 released  after more than a year of development and usage.</p>
+to announce <a href="https://github.com/teracyhq/dev">teracy-dev</a> v0.3.0 released  after more than a year of development and usage.</p>
 
 <!-- more -->
 
@@ -37,12 +37,12 @@ develop a wordpress, a coldfusion and a MVC client (using backone.js with Grunt 
 great.</p>
 
 <p>Normally, it takes several days for new developers to install every packages on
-their machines and they must follow instruction guide, but not anymore with <a href="https://github.com/teracy-official/dev">teracy-dev</a>.
+their machines and they must follow instruction guide, but not anymore with <a href="https://github.com/teracyhq/dev">teracy-dev</a>.
 Every new developer just needs 2-3 hours to get the dev VM provisoned for the first time (to
 download the basebox thanks to <code>vagrant cloud</code>) and it just takes less than 1 minute to
 <code>$ vagrant destroy</code> and <code>$ vagrant up</code> later again &ndash; this is a very cheap operation.</p>
 
-<p><a href="https://github.com/teracy-official/dev">teracy-dev</a> is really a general-purpose development environment for all developers for all platforms
+<p><a href="https://github.com/teracyhq/dev">teracy-dev</a> is really a general-purpose development environment for all developers for all platforms
 (<code>nodejs</code>, <code>python</code>, <code>java</code>, <code>php</code>, <code>mysql</code>, <code>posgreSQL</code>, <code>mongodb</code>) built-in and you could extend
 more by using <code>Chef</code> to create more cookbooks or recipes for it.</p>
 
