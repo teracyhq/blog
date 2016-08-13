@@ -13,6 +13,7 @@ tags:
     - "vagrant"
     - "virtualbox"
     - "docker"
+    - "teracy-dev"
 cover: /images/2014/07/binary_code.jpg
 description: teracy-dev v0.3.0 release announcement
 keywords: teracy-dev, v0.3.0 release announcement, dev, vagrant, virtualbox, docker
@@ -66,7 +67,7 @@ Credit
 - http://www.superbwallpapers.com/computers/binary-code-9004/
 
 
-[teracy-dev]: https://github.com/teracy-official/dev
+[teracy-dev]: https://github.com/teracyhq/dev
 [^1]: http://www.getchef.com/
 [^2]: http://www.vagrantup.com/
 [^3]: https://www.docker.com/
