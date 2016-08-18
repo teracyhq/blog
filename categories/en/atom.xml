@@ -4,7 +4,7 @@
   <title><![CDATA[Category: en | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/en/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-13T16:18:28+00:00</updated>
+  <updated>2016-08-18T05:07:44+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev vision]]></title>
+    <link href="http://blog.teracy.com/2016/08/19/teracy-dev-vision/"/>
+    <updated>2016-08-19T16:27:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/08/19/teracy-dev-vision</id>
+    <content type="html"><![CDATA[<p>teracy-dev has been being developed and in use from the first days of Teracy, it&rsquo;s been
+about 3 years<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> now. We&rsquo;re in a hurry for a really big, exciting release for the next version of
+teracy-dev. I&rsquo;d like to take this chance to share with you about teracy-dev vision first and many
+other new features and improvements for the next long awaiting teracy-dev release.</p>
+
+<!-- more -->
+
+
+<p>Let&rsquo;s get started with a story about my first working days as a developer when joining my first
+company 8 years ago. As developers, it&rsquo;s expected that we should have our development environment
+ready before starting coding. At that time, my company used Maven to build Java projects and I was
+required to install it. However, as a junior, I had difficulties to install it on the Ubuntu
+computer provided to me. I struggled with it for nearly a day and eventually I had to ask for
+help to install it successfully. This is a true story. Now I can even install it in just some
+minutes with a few lines of commands because I have more experience.</p>
+
+<p>Now just imagine what if juniors don&rsquo;t have to set up these boring tools each by each but just enjoy
+coding, that&rsquo;s the more fun part. What if all developers should have the same development environment
+even they use different kinds of operating systems so that we don&rsquo;t have to deal with the very common
+problem: &ldquo;But it works on my machine&rdquo;. What if the production environment is easily set up exactly
+the same on a developer machine to debug and fix things and vice versa?</p>
+
+<p>These what ifs lead us to use <code>vagrant</code> as the base to complete these things as the first days of
+Teracy journey. We&rsquo;d like to upgrade the vagrant dev environment easily, for example, <code>$ git pull</code>
+then <code>$ vagrant reload --provision</code> and you&rsquo;re done. We have default configuration and we could
+override it easily. We&rsquo;d like to use this development environment for all our projects: from our
+internal projects to our clients' projects.</p>
+
+<p>We created teracy-dev to solve the mentioned problems above, help boost our productivity and it could
+even help us more than that. Everyone just enjoys it, we don&rsquo;t have to deal with installing things
+manually, it&rsquo;s auto provided with just one command (<code>$ vagrant up</code>) thanks to the provision software.
+We&rsquo;re using Chef to provision but we can use others to provision, too, for example Ansible, Puppet, etc.</p>
+
+<p>We see that teracy-dev is so useful for developers, so we&rsquo;d like to share it, shape its future
+together with anyone who wants to work with software. And we envision teracy-dev with the following
+statement:</p>
+
+<p><blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote></p>
+
+<p>That&rsquo;s our vision for teracy-dev as the base development platform and we&rsquo;re going to make it true.
+Note that it should be used for everyone, even with our QA engineers, with our manual testers, with
+our employees, with our users as long as they follow exactly a little setup instruction guide.</p>
+
+<p>I believe that everyone should use it as much as we enjoy using and developing it. It&rsquo;s been saving
+us and our clients a lot of money as we don&rsquo;t have to spend the time to set up development environment
+for each and every project manually.</p>
+
+<p>We improve it day by day though our projects, we listen to our developers, our clients for feedback
+on usage and development. However, we still have some problems with it. For example, on Windows, the
+file sharing system is really slow. It&rsquo;s not really lightweight and modular enough to serve every
+project&rsquo;s needs.</p>
+
+<p>We know all these problems and we&rsquo;re going to fix these all with the next version by leveraging
+Docker and Rsync. We intended to use Docker for long, we expected it should be in use since
+teracy-dev v0.4.0 but we failed to make it. Now we promise you that teracy-dev v0.5.0 will leverage
+Docker as the core workflow and it will rule the world of developers.</p>
+
+<p>We will add more documentation for usage, accelate the development pace so that you should benefit
+from it as we do. Let&rsquo;s try using it once with
+<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">teracy-dev v0.4.2</a>, it&rsquo;s open source and
+totally free. You will love it as we do now for 3 years and counting. Let&rsquo;s together make it better
+and better and better.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/tags/teracy-dev/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[how to use django-celery-email on Heroku]]></title>
@@ -225,9 +303,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#117;&#115;&#101;&#114;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#115;&#97;&#109;&#x70;&#108;&#101;&#46;&#x75;&#x73;&#x65;&#114;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>
+To: <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#115;&#97;&#109;&#x70;&#108;&#101;&#46;&#117;&#x73;&#x65;&#114;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#115;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x75;&#115;&#x65;&#x72;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#x3a;&#x32;&#48;&#49;&#x35;&#x31;&#50;&#x32;&#x31;&#49;&#x31;&#x30;&#x32;&#x33;&#x30;&#46;&#x32;&#x33;&#52;&#54;&#51;&#x2e;&#x38;&#48;&#56;&#x34;&#53;&#64;&#x76;&#x61;&#x67;&#114;&#97;&#x6e;&#116;&#x2e;&#118;&#x6d;">&#50;&#48;&#x31;&#53;&#x31;&#x32;&#x32;&#49;&#x31;&#49;&#x30;&#x32;&#x33;&#48;&#x2e;&#50;&#51;&#x34;&#54;&#x33;&#46;&#x38;&#48;&#x38;&#52;&#53;&#64;&#118;&#x61;&#x67;&#x72;&#97;&#x6e;&#x74;&#46;&#118;&#109;</a></p>
+Message-ID: <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x32;&#48;&#x31;&#53;&#49;&#x32;&#x32;&#49;&#49;&#x31;&#x30;&#50;&#51;&#48;&#46;&#x32;&#51;&#x34;&#x36;&#51;&#x2e;&#x38;&#48;&#56;&#x34;&#x35;&#x40;&#118;&#97;&#x67;&#114;&#97;&#x6e;&#x74;&#46;&#x76;&#109;">&#x32;&#x30;&#x31;&#53;&#49;&#x32;&#50;&#49;&#49;&#x31;&#48;&#x32;&#51;&#x30;&#46;&#50;&#x33;&#x34;&#x36;&#51;&#46;&#x38;&#48;&#x38;&#x34;&#53;&#x40;&#118;&#97;&#103;&#114;&#x61;&#110;&#x74;&#x2e;&#118;&#x6d;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -526,7 +604,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#104;&#x71;&#x40;&#116;&#x65;&#x72;&#x61;&#x63;&#121;&#x2e;&#99;&#111;&#x6d;">&#104;&#x71;&#x40;&#x74;&#101;&#x72;&#97;&#x63;&#x79;&#46;&#x63;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#104;&#113;&#x40;&#x74;&#x65;&#114;&#x61;&#99;&#x79;&#46;&#x63;&#111;&#109;">&#104;&#113;&#x40;&#x74;&#x65;&#114;&#x61;&#99;&#121;&#x2e;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -682,58 +760,6 @@ in web projects. This is the second UI kit we share to <a href="http://www.bohem
 <li>Over 140 icons included.</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Free Bootflat UI kit for Sketch]]></title>
-    <link href="http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch/"/>
-    <updated>2014-10-08T00:00:00+00:00</updated>
-    <id>http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/10/cover.png"></p>
-
-<p><strong><em>Why Sketch?</em></strong></p>
-
-<p><a href="http://www.bohemiancoding.com/sketch/">Sketch</a> is a powerful tool designed entirely to do UI. It&rsquo;s a young graphic program when compared
-to Photoshop but we see its user base&rsquo;s growing strong. Centered around vector design, Sketch is
-getting plenty of buzz among UI designers as an alternative to Adobe&rsquo;s Creative Suite. With Sketch,
-designs come out pixel perfect and in vector format, a requirement for multiple screen sizes.</p>
-
-<!-- more -->
-
-
-<p>You may not believe how much time this application have saved us when designing UI. It&rsquo;s simple,
-fast and so connected to the way designers work. You definitely should give Sketch a try in your
-next project. There are already a lot of articles about how Sketch excels in designing UI. Here to
-name a few:</p>
-
-<ul>
-<li><a href="http://blog.mengto.com/sketch-vs-photoshop/">Sketch VS Photoshop</a></li>
-<li><a href="http://blog.mengto.com/photoshop-users-how-to-switch-to-sketch/">Photoshop Users: How To Switch To Sketch</a></li>
-<li><a href="https://medium.com/@jm_denis/discovering-sketch-25545f6cb161">Discovering Sketch</a></li>
-</ul>
-
-
-<p><strong><em>Bootflat UI Kit</em></strong></p>
-
-<p>At the beginning, Teracy planned to develop its own UI kit and framework based on bootstrap. It&rsquo;s a
-great experience but developing and maintaining the UI kit will take time. Clock&rsquo;s still ticking.
-We have to release one of our ambitious products by the end of this year.
-So, we&rsquo;ve come to decide on finding an open source framework that matches our flat designs.</p>
-
-<p>And we found <a href="http://bootflat.github.io/">Bootflat</a> &ndash; an open source Flat UI kit based on Twitter Bootstrap 3 framework. For
-designers, they offer a free PSD, including a set of beautiful and pure elements, which you can
-use to create startup projects, websites or iOS/Android Apps. This will save a lot of developing
-time.</p>
-
-<p>There&rsquo;s still one thing that&rsquo;s bugging us though. As our company starts switching to Sketch for UI
-design, this beautiful framework doesn&rsquo;t provide the .sketch file of elements, only .psd. So we
-think &ldquo;OK, why not create one? Sketch community might find it helpful and it&rsquo;s also good for
-creators of Bootflat.&rdquo;</p>
-
-<p>So here it is, hope it&rsquo;s useful for Sketch lovers!</p>
-
-<p><a href="https://github.com/teracy-official/bootflat-ui-kit.sketch">Download the Bootflat UI kit for Sketch</a></p>
 ]]></content>
   </entry>
   

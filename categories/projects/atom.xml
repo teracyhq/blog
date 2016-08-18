@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-13T16:18:28+00:00</updated>
+  <updated>2016-08-18T05:07:44+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev vision]]></title>
+    <link href="http://blog.teracy.com/2016/08/19/teracy-dev-vision/"/>
+    <updated>2016-08-19T16:27:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/08/19/teracy-dev-vision</id>
+    <content type="html"><![CDATA[<p>teracy-dev has been being developed and in use from the first days of Teracy, it&rsquo;s been
+about 3 years<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> now. We&rsquo;re in a hurry for a really big, exciting release for the next version of
+teracy-dev. I&rsquo;d like to take this chance to share with you about teracy-dev vision first and many
+other new features and improvements for the next long awaiting teracy-dev release.</p>
+
+<!-- more -->
+
+
+<p>Let&rsquo;s get started with a story about my first working days as a developer when joining my first
+company 8 years ago. As developers, it&rsquo;s expected that we should have our development environment
+ready before starting coding. At that time, my company used Maven to build Java projects and I was
+required to install it. However, as a junior, I had difficulties to install it on the Ubuntu
+computer provided to me. I struggled with it for nearly a day and eventually I had to ask for
+help to install it successfully. This is a true story. Now I can even install it in just some
+minutes with a few lines of commands because I have more experience.</p>
+
+<p>Now just imagine what if juniors don&rsquo;t have to set up these boring tools each by each but just enjoy
+coding, that&rsquo;s the more fun part. What if all developers should have the same development environment
+even they use different kinds of operating systems so that we don&rsquo;t have to deal with the very common
+problem: &ldquo;But it works on my machine&rdquo;. What if the production environment is easily set up exactly
+the same on a developer machine to debug and fix things and vice versa?</p>
+
+<p>These what ifs lead us to use <code>vagrant</code> as the base to complete these things as the first days of
+Teracy journey. We&rsquo;d like to upgrade the vagrant dev environment easily, for example, <code>$ git pull</code>
+then <code>$ vagrant reload --provision</code> and you&rsquo;re done. We have default configuration and we could
+override it easily. We&rsquo;d like to use this development environment for all our projects: from our
+internal projects to our clients' projects.</p>
+
+<p>We created teracy-dev to solve the mentioned problems above, help boost our productivity and it could
+even help us more than that. Everyone just enjoys it, we don&rsquo;t have to deal with installing things
+manually, it&rsquo;s auto provided with just one command (<code>$ vagrant up</code>) thanks to the provision software.
+We&rsquo;re using Chef to provision but we can use others to provision, too, for example Ansible, Puppet, etc.</p>
+
+<p>We see that teracy-dev is so useful for developers, so we&rsquo;d like to share it, shape its future
+together with anyone who wants to work with software. And we envision teracy-dev with the following
+statement:</p>
+
+<p><blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote></p>
+
+<p>That&rsquo;s our vision for teracy-dev as the base development platform and we&rsquo;re going to make it true.
+Note that it should be used for everyone, even with our QA engineers, with our manual testers, with
+our employees, with our users as long as they follow exactly a little setup instruction guide.</p>
+
+<p>I believe that everyone should use it as much as we enjoy using and developing it. It&rsquo;s been saving
+us and our clients a lot of money as we don&rsquo;t have to spend the time to set up development environment
+for each and every project manually.</p>
+
+<p>We improve it day by day though our projects, we listen to our developers, our clients for feedback
+on usage and development. However, we still have some problems with it. For example, on Windows, the
+file sharing system is really slow. It&rsquo;s not really lightweight and modular enough to serve every
+project&rsquo;s needs.</p>
+
+<p>We know all these problems and we&rsquo;re going to fix these all with the next version by leveraging
+Docker and Rsync. We intended to use Docker for long, we expected it should be in use since
+teracy-dev v0.4.0 but we failed to make it. Now we promise you that teracy-dev v0.5.0 will leverage
+Docker as the core workflow and it will rule the world of developers.</p>
+
+<p>We will add more documentation for usage, accelate the development pace so that you should benefit
+from it as we do. Let&rsquo;s try using it once with
+<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">teracy-dev v0.4.2</a>, it&rsquo;s open source and
+totally free. You will love it as we do now for 3 years and counting. Let&rsquo;s together make it better
+and better and better.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/tags/teracy-dev/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[how to make JWT requests with httpie-jwt-auth plugin?]]></title>
@@ -346,118 +424,6 @@ painful on Windows host machine. We are going to fix this problem on the next ve
 <p>http://www.vagrantup.com/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>https://www.docker.com/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sphinx-deployment v0.3.0 with heroku deployment support]]></title>
-    <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
-    <updated>2013-11-26T09:06:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
-
-<p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
-support for v0.3.0 release. This release introduces some breaking changes and you should know to
-upgrade successfully.</p>
-
-<!-- more -->
-
-
-<p><a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> is in active development phase and breaking changes are expected (you know,
-it&rsquo;s still v0.3.0).</p>
-
-<p>Simplicity is one of our <a href="http://dev.teracy.org/docs/intro.html#about-teracy">development philosophy</a>, and you could see it clearly with our following
-supported commands for <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>.</p>
-
-<h2>Supported Commands</h2>
-
-<p><strong>1. <code>$ make generate</code></strong></p>
-
-<p>For generating contents, alias for <code>$ make html</code></p>
-
-<p><strong>2. <code>$ make deploy</code></strong></p>
-
-<p>For short-cut deployment, it could be <code>$ make deploy_gh_pages</code>, <code>$ make deploy_rsync</code> or
-<code>$ make deploy_heroku</code> basing on the configuration of <code>DEPLOY_DEFAULT</code>.</p>
-
-<p><strong>3. <code>$ make gen_deploy</code></strong></p>
-
-<p>For short-cut generation and deployment: <code>$ make generate</code> and then <code>$ make deploy</code>.</p>
-
-<p>Basically, you just need to know 3 commands above after some settings (with a little configuration
-and setting up). Until now sphinx-deployment supports github pages<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment, rsync<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>
-deployment and heroku deployment.</p>
-
-<p>Before setting up, you need to install and configure <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> first, and then:</p>
-
-<p><strong>4. <code>$ make setup_gh_pages</code></strong></p>
-
-<p>For the first time only to create <code>$(DEPLOY_DIR)</code> to track <code>$(DEPLOY_BRANCH)</code>. This is used for
-github pages deployment.</p>
-
-<p><strong>5. <code>$ make setup_heroku</code></strong></p>
-
-<p>For the first time only to create <code>$(DEPLOY_DIR_HEROKU</code> to track the heroku repo&rsquo;s master branch.
-This is used for heroku deployment.</p>
-
-<p>After setting up, you could deploy the docs easily with:</p>
-
-<p><strong>6. <code>$ make deploy_gh_pages</code></strong></p>
-
-<p>For deploying with github pages only.</p>
-
-<p><strong>7. <code>$ make deploy_rsync</code></strong></p>
-
-<p>For deploying with rsync only.</p>
-
-<p><strong>8. <code>$ make deploy_heroku</code></strong></p>
-
-<p>For deploying with heroku only.</p>
-
-<p>That&rsquo;s it, very easy to use. This is the first ultimate simple sphinx docs deployment solution
-provided so far, we hope that you love it as much as we love developing and using it.</p>
-
-<h2>Migration</h2>
-
-<p>Are you using v0.2.0 and want to upgrade? Just install it normally with <code>spxd.sh</code> bash script and
-adjust a little the configuration with the following migration instruction:</p>
-
-<ul>
-<li>Migration (from v0.2.0 to v0.3.0)
-
-<ul>
-<li><code>REPO_URL</code> was changed to <code>REPO_URL_GITHUB</code></li>
-<li><code>DEPLOY_BRANCH</code> was changed to <code>DEPLOY_BRANCH_GITHUB</code></li>
-<li><code>$ make push</code> was changed to <code>$ make deploy_gh_pages</code></li>
-<li><code>$ make rsync</code> was changed to <code>$ make deploy_rsync</code></li>
-</ul>
-</li>
-</ul>
-
-
-<h2>What&rsquo;s Next?</h2>
-
-<p>The next version we would like to introduce i18n feature and stabilize the project with improvements, bug fixes. Moreover,
-we&rsquo;re starting sphinx-live-view project for easier docs writing, too. Stay tuned for our
-upcoming exciting features and projects.</p>
-
-<p>Have a nice day and happy docs writing!</p>
-
-<p>P/S: Remember to head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> and read README for usage instruction.</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://heroku.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://help.github.com/categories/20/articles<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
