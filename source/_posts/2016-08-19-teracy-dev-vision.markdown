@@ -78,7 +78,7 @@ Docker and Rsync. We intended to use Docker for long, we expected it should be i
 teracy-dev v0.4.0 but we failed to make it. Now we promise you that teracy-dev v0.5.0 will leverage
 Docker as the core workflow and it will rule the world of developers.
 
-We will add more documentation for usage, accelate the development pace so that you should benefit
+We will add more documentation for usage, accelerate the development pace so that you should benefit
 from it as we do. Let's try using it once with
 [teracy-dev v0.4.2](http://dev.teracy.org/docs/0.4.2/getting_started.html), it's open source and
 totally free. You will love it as we do now for 3 years and counting. Let's together make it better
