@@ -19,8 +19,5 @@ env:
   - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
 notifications:
   slack:
-    on_success: change
-    on_failure: always
     on_pull_requests: false
-    rooms:
-      secure: QvNDAD9xAorQ42+PbdzdRukaGJXYPmrqiGtiAjucBNNG5aRVXzh22vT7m1Y9SJGkX3c5hKjM68gDwlIjqTMLzCWYkSkW+NgEvIE1rRxFPBtCXNd1jDX4MtmRDP63G2tnqdtIl+S74vRdU2jL8E5bvjZL5NYtVbeCcgPAg/E/clA=
+    secure: KTgEd5QGsr2HIwSQRkwryoyQZqL1d/D/EysniwUgRO89MP3sGu/6rC6FVXFHI3//s7rm8MWCoX+USfQffp9JtipxD95LRsGCF+0s51M1RF76wfW65IJJe+OFOB0r99lZmjk2oOI7dxy+BJ288+Cnz6jzmPm/jHxlS9/MPktwUKg=
