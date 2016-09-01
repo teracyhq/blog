@@ -23,11 +23,11 @@ Cuộc du hành mới 1% thôi, hãy cứ theo dõi và học hỏi nhé.
 
 #### **Tổng quát**
 
-1. Sản phẩm có thành công vì nó giải quyết được vấn đề cho mọi người. Nghe thì rất căn bản, nhưng mà là thứ quan trọng duy nhất cần phải được hiểu để có thể xây dựng được sản phẩm tốt,
+1. Sản phẩm có thành công vì nó giải quyết được vấn đề cho mọi người. Nghe thì rất căn bản, nhưng mà là thứ quan trọng duy nhất cần phải được hiểu để có thể xây dựng được sản phẩm tốt.
 
 2. Bước đầu tiên khi làm cái gì đó mới là bạn phải hiểu được vấn đề cần phải giải quyết, và giải quyết cho ai. Điều này khá rõ ràng và cần được làm rõ trước khi bạn nghĩ tới giải pháp nào.
 
-3. Hãy tự hỏi bản thân "Tại sao vấn đề này đáng được giải quyết?"
+3. Hãy tự hỏi bản thân "Tại sao vấn đề này đáng được giải quyết?".
 
 4. Nếu đối tượng bạn nhắm tới là 1 nhóm nhỏ xác định nào đó (bạn có thể nằm trong nhóm này), thì bạn có thể dựa vào trực giác của mình để tự đưa ra quyết định xây dựng sản phẩm nó như thế nào, nếu không, thì bạn phải dựa vào các dữ liệu nghiên cứu để tạo quyết định cho mình.
 
@@ -49,23 +49,23 @@ Cuộc du hành mới 1% thôi, hãy cứ theo dõi và học hỏi nhé.
 
 4. Khi truy tìm giải pháp cho 1 vấn đề nào đó, hãy đào rộng trước khi đào sâu. Thu thập ý kiến (Brainstorm) 10, 20, 50 giải pháp cho cái vấn đề đó trước khi chọn giải pháp tốt nhất. 5 ý tưởng đầu tiên sẽ là cái tất nhiên, sáng tạo sẽ xảy ra khi bạn đào sâu hơn vào ý tưởng 11, 20 hay 50.
 
-5. Nếu bạn đang thuyết trình 1 bản kế hoạch sản phẩm và ai đó có hỏi "Bạn có bao giờ thử giải pháp X thay cho cái này chưa?" và câu trả lời của bạn là “Không" thì đó chính là cái red flag của quá trình khai thác ý tưởng và nó chưa đủ nghiêm ngặt.
+5. Nếu bạn đang thuyết trình 1 bản kế hoạch sản phẩm và ai đó có hỏi "Bạn có bao giờ thử giải pháp X thay cho cái này chưa?" và câu trả lời của bạn là “Không" thì đó chính là cái [red flag](http://www.urbandictionary.com/define.php?term=red%20flag) của quá trình khai thác ý tưởng và nó chưa đủ nghiêm ngặt.
 
 6. Sử dụng kinh nghiệm đã trải qua để giúp bạn thu hẹp các ý tưởng tốt nhất. (Ví dụ như sử dụng N ý tưởng của các thành viên trong nhóm, rồi phác thảo nó ra và cho mọi người xem rồi xem phản ứng của họ).
 
 7. Khi bạn đã tìm được một giải pháp hãy đặt giả thuyết và tự hỏi điều gì sẽ xảy ra nếu bạn xây dựng theo cách như thế này? (ví dụ: "Vấn đề mà chúng ta muốn xử lý đó là đảm bảo mọi công dân của thành phố biết được mỗi tuần sẽ có sự kiện nào đó xảy ra. Vậy thì giả thuyết sẽ là: chúng ta có thể thông báo cho X% công dân thông qua e-mail").
 
-8. Bạn phải tìm được cách để rút ngắn công việc rà soát các giả thuyết của mình. Bạn có thể thực hiện nó với bất kì người nào, và những người đó có thể hiểu mình đang nói gì? Bạn có thể thu thập ý kiến khách hàng và xem mọi người có hứng thú với ý tưởng của mình hay không? Bạn có thể làm nhanh 1 sản phầm để demo (chứng minh kết quả đạt được) và cho khách hàng biết tầm nhìn của mình hay không? cho dù nó chưa hoàn thiện?
+8. Bạn phải tìm được cách để rút ngắn công việc rà soát các giả thuyết của mình. Bạn có thể thực hiện nó với bất kì người nào, và những người đó có thể hiểu mình đang nói gì? Bạn có thể thu thập ý kiến khách hàng và xem mọi người có hứng thú với ý tưởng của mình hay không? Bạn có thể làm nhanh 1 sản phẩm để demo (chứng minh kết quả đạt được) và cho khách hàng biết tầm nhìn của mình hay không? cho dù nó chưa hoàn thiện?
 
 9. Một khi bạn đã tìm được 1 giả thuyết hợp lý và rõ ràng, đừng cứ phải thử nghiệm nó ngay và luôn (vì có thể bạn tìm được 1 cách nào đó nhanh hơn), thay vào đó, hãy phân tách, hãy rà soát xem sản phẩm sẽ như thế nào khi nó được chau chuốt và thêm những tính năng mới, kiểm thử trường hợp khác nhau mà sản phẩm cầm phải đạt được.
 
-10. Nếu dự án bạn đang làm nó lớn và có rất nhiều sự thay đổi khác nhau, hãy xem mình có thể chia nó ra nhiều phần nhỏ và độc lập. Đừng làm các phần này liên quan tới nhau khi mà 1 phần hỏng, bạn không biết nó được gây ra bởi phần nào.
+10. Nếu dự án bạn đang làm nó lớn và có rất nhiều sự thay đổi khác nhau, hãy xem mình có thể chia nó ra nhiều phần nhỏ và độc lập. Đừng làm các phần này liên quan quá tới nhau khi mà 1 phần hỏng, bạn không biết nó được gây ra bởi phần nào.
 
 11. Tuỳ sản phẩm mà hãy xem xét  và nhìn lại chúng, dù là thất bại hay thành công. Từ sản phẩm đó học được bài học gì? Đồng đội có học được gì hay không? Tương lai bạn có cần làm gì khác hơn? Sau đó hãy chia sẻ với tất cả người khác.
 
 #### **Đo lường thành quả**
 
-1. Việc bạn đo đếm thành quả là tối quan trọng vì đó là cái mà mọi người nhìn vào, Hãy chắc chắn việc này được làm vào đúng thời điểm và được chú ý (mặc dù đôi lúc bạn nghĩ rằng "Làm sao để làm được việc này?").
+1. Việc bạn đo đếm thành quả là tối quan trọng vì đó là cái mà mọi người nhìn vào. Hãy chắc chắn việc này được làm vào đúng thời điểm và được chú ý (mặc dù đôi lúc bạn nghĩ rằng "Làm sao để làm được việc này?").
 
 2. Hãy xác định các số liệu được cho là thành công cho sản phẩm trước khi chúng được tung ra, nếu không các ý kiến trái chiều sẽ làm mất phương hướng cho dư luận.
 
@@ -93,6 +93,6 @@ Cuộc du hành mới 1% thôi, hãy cứ theo dõi và học hỏi nhé.
 
 4. Biết người biết ta, biết mình giỏi về cái gì, biết đồng đội giỏi về cái gì, rồi phân chia trách nhiệm cho mỗi người.
 
-5. Một team tốt và tồn tại lâu dài cần phải giao tiếp tốt, mỗi thành viên cần phải cảm thấy rằng họ có thể thể hiện cảm nghĩ, sự nhìn nhận của mình, cho dù nó có hơi trái ngược, nhiều luồng ý kiến đa dạng là cách để đặt được kết quả tốt nhất, Cho nên đừng sợ hãi thể hiện ý kiến của mình, đừng sợ hãi lặp đi lặp lại ý kiến đó nếu những người khác chưa hiểu bạn muốn gì, hãy khuyến khích và cố gắng để đồng đội cảm thấy làm điều đó là an toàn.
+5. Một team tốt và tồn tại lâu dài cần phải giao tiếp tốt, mỗi thành viên cần phải cảm thấy rằng họ có thể thể hiện cảm nghĩ, sự nhìn nhận của mình, cho dù nó có hơi trái ngược, nhiều luồng ý kiến đa dạng là cách để đạt được kết quả tốt nhất. Cho nên đừng sợ hãi thể hiện ý kiến của mình, đừng sợ hãi lặp đi lặp lại ý kiến đó nếu những người khác chưa hiểu bạn muốn gì, hãy khuyến khích và cố gắng để đồng đội cảm thấy làm điều đó là an toàn.
 
 
