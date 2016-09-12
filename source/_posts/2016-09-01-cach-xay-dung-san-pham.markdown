@@ -15,57 +15,57 @@ keywords:
 published: true
 ---
 
-Tôi vừa có dịp trình bày tại [TNW Europe](http://thenextweb.com/conference/europe/#gref) về [framework (khung sườn) mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình](https://www.youtube.com/watch?v=IIm289_YMIE&index=9&list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi). Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
+Tôi vừa có dịp trình bày tại [TNW Europe](http://thenextweb.com/conference/europe/#gref) về [framework mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình](https://www.youtube.com/watch?v=IIm289_YMIE&index=9&list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi). Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
 Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước* 1: Bắt đầu. *Bước* 2: ??? *Bước* 3: Thu tiền!*), thì có lẽ chúng tôi vứt hết tiền của mình đi xong rồi ngồi vuốt lưng nhau trong khi xem các sản phẩm tuyệt vời mới đua nhau nở rộ như là vườn hoa tháng 5 rồi.
-Cuộc du hành mới 1% thôi, hãy cứ theo dõi và học hỏi nhé.
+Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nhé.
 
 <!-- more -->
 
 #### **Tổng quát**
 
-1. Sản phẩm có thành công vì nó giải quyết được vấn đề cho mọi người. Nghe thì rất căn bản, nhưng mà là thứ quan trọng duy nhất cần phải được hiểu để có thể xây dựng được sản phẩm tốt.
+1. Sản phẩm có thành công vì nó giải quyết được vấn đề cho mọi người. Nghe thì rất căn bản, nhưng mà là thứ quan trọng duy nhất cần phải được hiểu để có thể xây dựng được sản phẩm chất lượng.
 
-2. Bước đầu tiên khi làm cái gì đó mới là bạn phải hiểu được vấn đề cần phải giải quyết, và giải quyết cho ai. Điều này khá rõ ràng và cần được làm rõ trước khi bạn nghĩ tới giải pháp nào.
+2. Bước đầu tiên khi làm cái gì đó mới là bạn phải hiểu được vấn đề cần phải giải quyết và giải quyết cho ai. Điều này khá rõ ràng và cần được làm rõ trước khi bạn nghĩ tới giải pháp nào.
 
 3. Hãy tự hỏi bản thân "Tại sao vấn đề này đáng được giải quyết?".
 
-4. Nếu đối tượng bạn nhắm tới là 1 nhóm nhỏ xác định nào đó (bạn có thể nằm trong nhóm này), thì bạn có thể dựa vào trực giác của mình để tự đưa ra quyết định xây dựng sản phẩm nó như thế nào, nếu không, thì bạn phải dựa vào các dữ liệu nghiên cứu để tạo quyết định cho mình.
+4. Nếu đối tượng bạn nhắm tới là 1 nhóm nhỏ xác định nào đó (bạn có thể nằm trong nhóm này), thì bạn có thể dựa vào trực giác của mình để tự đưa ra quyết định xây dựng sản phẩm nó như thế nào. Nếu không, thì bạn phải dựa vào các dữ liệu đã nghiên cứu để tạo quyết định cho mình.
 
-5. Nếu bạn là người sáng lập (start-up founder), thì con đường sẽ dễ dàng hơn nếu bạn đi theo hướng giải quyết vấn đề cho một nhóm đối tượng khách hàng nào đó, sau đó sẽ mở rộng thị trường sau khi đã có một vài kết quả ban đầu.
+5. Nếu bạn là người sáng lập (start-up founder), thì con đường sẽ dễ dàng hơn nếu bạn đi theo hướng giải quyết vấn đề cho một nhóm đối tượng khách hàng nào đó, sau đó sẽ mở rộng đối tượng khách hàng sau khi đã có một vài kết quả ban đầu.
 
-6. Cái vấn đề mà bạn đang muốn giải quyết cần phải dễ dàng trao đổi và dễ dàng giao tiếp với ai đó trong nhóm khách hàng mà bạn nhắm tới, nếu không thì hãy cho nó là cái vấn đề nguy hiểm đáng được quan tâm ([red flag](http://www.urbandictionary.com/define.php?term=red%20flag)).
+6. Cái vấn đề mà bạn đang muốn giải quyết cần phải dễ dàng trao đổi, giao tiếp trong 1 vài câu ngắn gọn và được ủng hộ từ một ai đó trong nhóm đối tượng khách hàng của bạn, nếu không thì hãy cho nó là cái vấn đề nguy hiểm cần được quan tâm ([red flag](http://www.urbandictionary.com/define.php?term=red%20flag)).
 
-#### **Thực hành**
+#### **Thực hiện**
 
-1. Thực hành tốt là có 1 cái kết luận đáng tin trong thời gian ngắn nhất có thể.
+1. Thực hiện tốt là có 1 cái kết luận đáng tin trong thời gian ngắn nhất có thể.
 
-2. Thực hành không tốt là khi bạn thử làm cái gì đó, nó thất bại và:
+2. Thực hiện không tốt là khi bạn thử làm cái gì đó, nó thất bại và:
 
     1. Bạn không rút ra được bài học nào để có thể áp dụng vào các dự án tương lai (vì bạn không biết tại sao nó thất bại)
 
-    2. Bạn mất 3 năm để học được 1 bài học nào đó trong khi con đường thông minh hơn chỉ mất bạn 3 tháng.
+    2. Bạn mất 1 năm để học được 1 bài học nào đó trong khi con đường thông minh hơn chỉ mất bạn 3 tháng.
 
 3. Vấn đề chủ yếu phân cách giữa 1 đội thành công và không thành công là không phải họ làm những việc có thất bại hay không (chuyện tất yếu sẽ xảy ra), mà là họ thực hiện nó kiên định như thế nào.
 
-4. Khi truy tìm giải pháp cho 1 vấn đề nào đó, hãy đào rộng trước khi đào sâu. Thu thập ý kiến (Brainstorm) 10, 20, 50 giải pháp cho cái vấn đề đó trước khi chọn giải pháp tốt nhất. 5 ý tưởng đầu tiên sẽ là cái tất nhiên, sáng tạo sẽ xảy ra khi bạn đào sâu hơn vào ý tưởng 11, 20 hay 50.
+4. Khi truy tìm giải pháp cho 1 vấn đề nào đó, hãy đào rộng trước khi đào sâu. Thu thập ý kiến (Brainstorm) để tìm ra 10, 20, 50 giải pháp cho cái vấn đề đó trước khi chọn giải pháp tốt nhất. 5 ý tưởng đầu tiên sẽ là cái tất nhiên, sáng tạo sẽ xảy ra khi bạn đào sâu hơn vào ý tưởng 11, 20 hay 50.
 
-5. Nếu bạn đang thuyết trình 1 bản kế hoạch sản phẩm và ai đó có hỏi "Bạn có bao giờ thử giải pháp X thay cho cái này chưa?" và câu trả lời của bạn là “Không" thì đó chính là cái [red flag](http://www.urbandictionary.com/define.php?term=red%20flag) của quá trình khai thác ý tưởng và nó chưa đủ nghiêm ngặt.
+5. Nếu bạn đang thuyết trình 1 bản kế hoạch sản phẩm và ai đó có hỏi "Bạn có bao giờ thử giải pháp X thay cho cái này chưa?" và câu trả lời của bạn là “Không" thì đó chính là cái dấu hiệu nguy hiểm [red flag](http://www.urbandictionary.com/define.php?term=red%20flag) của quá trình khai thác ý tưởng và nó chưa đủ nghiêm ngặt.
 
-6. Sử dụng kinh nghiệm đã trải qua để giúp bạn thu hẹp các ý tưởng tốt nhất. (Ví dụ như sử dụng N ý tưởng của các thành viên trong nhóm, rồi phác thảo nó ra và cho mọi người xem rồi xem phản ứng của họ).
+6. Sử dụng kinh nghiệm đã trải qua để giúp bạn thu hẹp các ý tưởng tốt nhất. (Ví dụ như lựa chọn N ý tưởng của các thành viên trong nhóm, rồi phác thảo nó ra và cho mọi người xem rồi xem phản ứng của họ).
 
 7. Khi bạn đã tìm được một giải pháp hãy đặt giả thuyết và tự hỏi điều gì sẽ xảy ra nếu bạn xây dựng theo cách như thế này? (ví dụ: "Vấn đề mà chúng ta muốn xử lý đó là đảm bảo mọi công dân của thành phố biết được mỗi tuần sẽ có sự kiện nào đó xảy ra. Vậy thì giả thuyết sẽ là: chúng ta có thể thông báo cho X% công dân thông qua e-mail").
 
-8. Bạn phải tìm được cách để rút ngắn công việc rà soát các giả thuyết của mình. Bạn có thể thực hiện nó với bất kì người nào, và những người đó có thể hiểu mình đang nói gì? Bạn có thể thu thập ý kiến khách hàng và xem mọi người có hứng thú với ý tưởng của mình hay không? Bạn có thể làm nhanh 1 sản phẩm để demo (chứng minh kết quả đạt được) và cho khách hàng biết tầm nhìn của mình hay không? cho dù nó chưa hoàn thiện?
+8. Bạn phải tìm được cách để rút ngắn công việc rà soát các giả thuyết của mình. Bạn có thể thực hiện nó với một ai đó bất kỳ và xem hợ thể hiểu mình đang nói gì? Bạn có thể thu thập ý kiến khách hàng và xem có đủ lượng người có hứng thú với ý tưởng của mình hay không? Bạn có thể làm nhanh 1 sản phẩm để minh hoạ và sẽ cho bạn 1 kết quả rõ ràng cho dù nó chưa hoàn thiện?
 
-9. Một khi bạn đã tìm được 1 giả thuyết hợp lý và rõ ràng, đừng cứ phải thử nghiệm nó ngay và luôn (vì có thể bạn tìm được 1 cách nào đó nhanh hơn), thay vào đó, hãy phân tách, hãy rà soát xem sản phẩm sẽ như thế nào khi nó được chau chuốt và thêm những tính năng mới, kiểm thử trường hợp khác nhau mà sản phẩm cầm phải đạt được.
+9. Một khi bạn đã tìm được 1 giả thuyết hợp lý và rõ ràng, đừng cứ phải thử nghiệm nó ngay và luôn (vì có thể bạn tìm được 1 cách nào đó nhanh hơn), thay vào đó, hãy phân tách, hãy rà soát xem sản phẩm sẽ như thế nào khi nó được chau chuốt và thêm những tính năng mới, kiểm thử trường hợp khác nhau mà sản phẩm cần phải đạt được.
 
-10. Nếu dự án bạn đang làm nó lớn và có rất nhiều sự thay đổi khác nhau, hãy xem mình có thể chia nó ra nhiều phần nhỏ và độc lập. Đừng làm các phần này liên quan quá tới nhau khi mà 1 phần hỏng, bạn không biết nó được gây ra bởi phần nào.
+10. Nếu dự án bạn đang làm nó lớn và có rất nhiều sự thay đổi khác nhau, hãy xem mình có thể chia nó ra nhiều cột mốc nhỏ và độc lập và có thể kiểm thử được. Đừng để mình rơi vào trường hợp khi mà bạn thực hiện 5 thay đổi và có một phần thay đổi gây ra sản phẩm bị lỗi, khi đó bạn không thể biết lỗi bị gây gây ra bởi phần nào.
 
-11. Tuỳ sản phẩm mà hãy xem xét  và nhìn lại chúng, dù là thất bại hay thành công. Từ sản phẩm đó học được bài học gì? Đồng đội có học được gì hay không? Tương lai bạn có cần làm gì khác hơn? Sau đó hãy chia sẻ với tất cả người khác.
+11. Tuỳ sản phẩm mà hãy xem xét và nhìn lại chúng, dù là thất bại hay thành công. Từ sản phẩm đó học được bài học gì? Đồng đội có học được gì hay không? Tương lai bạn có cần làm gì khác hơn? Sau đó hãy chia sẻ với tất cả người khác.
 
 #### **Đo lường thành quả**
 
-1. Việc bạn đo đếm thành quả là tối quan trọng vì đó là cái mà mọi người nhìn vào. Hãy chắc chắn việc này được làm vào đúng thời điểm và được chú ý (mặc dù đôi lúc bạn nghĩ rằng "Làm sao để làm được việc này?").
+1. Làm thế nào để đo lường được thành công đối với kết quả lâu dài là điều rất quan trọng vì đó là cái mà mọi người mong đợi. Hãy chắc chắn thực hiện điều này vào đúng thời điểm (thậm chí còn quan trọng hơn cả việc bạn nghĩ "Làm sao để làm được việc này?").
 
 2. Hãy xác định các số liệu được cho là thành công cho sản phẩm trước khi chúng được tung ra, nếu không các ý kiến trái chiều sẽ làm mất phương hướng cho dư luận.
 
