@@ -16,7 +16,7 @@ published: true
 ---
 
 Tôi vừa có dịp trình bày tại [TNW Europe](http://thenextweb.com/conference/europe/#gref) về [framework mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình](https://www.youtube.com/watch?v=IIm289_YMIE&index=9&list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi). Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
-Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước* 1: Bắt đầu. *Bước* 2: ??? *Bước* 3: Thu tiền!*), thì có lẽ chúng tôi vứt hết tiền của mình đi xong rồi ngồi vuốt lưng nhau trong khi xem các sản phẩm tuyệt vời mới đua nhau nở rộ như là vườn hoa tháng 5 rồi.
+Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước* 1: Bắt đầu. *Bước* 2: ??? *Bước* 3: Thu tiền!*), thì có lẽ chúng tôi đã chi một khoản tiền cho nó xong rồi ngồi chờ xem các sản phẩm mới tuyệt vời đua nhau nở rộ như là vườn hoa tháng 5 rồi.
 Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nhé.
 
 <!-- more -->
@@ -67,13 +67,13 @@ Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nh�
 
 1. Làm thế nào để đo lường được thành công đối với kết quả lâu dài là điều rất quan trọng vì đó là cái mà mọi người mong đợi. Hãy chắc chắn thực hiện điều này vào đúng thời điểm (thậm chí còn quan trọng hơn cả việc bạn nghĩ "Làm sao để làm được việc này?").
 
-2. Hãy xác định các số liệu được cho là thành công cho sản phẩm trước khi chúng được tung ra, nếu không các ý kiến trái chiều sẽ làm mất phương hướng cho dư luận.
+2. Hãy xác định các số liệu được cho là thành công cho sản phẩm trước khi chúng được tung ra. Nếu không, sau khi đã có kết quả sản phẩm và bạn cố gắng giải thích các kết quả đó sẽ làm cho việc đánh giá thành công của sản phẩm không còn khách quan nữa.
 
 3. Với mỗi số liệu đạt được, hãy tạo ra 1 số liệu đối nghịch nào đó mà dựa vào đó có thể cho thấy sự việc này không phải là ngẫu nhiên mà ra (Ví dụ: Sản phẩm bán ra nhiều hơn là do chất lượng của sản phẩm đó tốt hơn)
 
 4. Nếu có số liệu nào đó thay đổi đột ngột, dù tốt hay xấu, hãy đặt câu hỏi "Tại sao?" trước khi lập kế hoạch để thúc đẩy hay giảm thiểu kết quả đó khi bạn chưa hiểu vì sao nó lại như thế.
 
-5. Hãy tự hỏi mình "Nếu tôi có thể biết được tất cả về việc mọi người sử dụng sản phẩm của tôi ra sao, thì tôi muốn biết những gì về nó mà có thể biết được nó thành công hay không?" Dựa vào câu trả lời đó rồi nhìn lại các số liệu thống kê gần với câu trả lời đó nhất.
+5. Hãy sử dụng công nghệ quả bóng thủy tinh (Crystal Ball) - phần mềm phân tích rủi ro để lựa chọn các cách đánh giá đúng sự thành công của sản phẩm. Hãy tự hỏi mình "Nếu tôi có thể biết được tất cả về việc mọi người sử dụng sản phẩm của tôi ra sao, thì tôi muốn biết những gì về nó mà có thể biết được nó thành công hay không?" Dựa vào câu trả lời đó rồi nhìn lại các số liệu thống kê gần với câu trả lời đó nhất.
 
 6. Mục tiêu luôn luôn phải đi đôi với thông tin bạn tin tưởng nhất. Nếu bạn đang làm việc để đạt được 1 mục tiêu đã xác định nào đó, và rồi trong quá trình làm phát hiện những thông tin mới mẻ khiến bạn thay đổi cách suy nghĩ, hãy tự hỏi mình có nên điều chỉnh mục tiêu của mình hay không dựa trên luồng thông tin mới này.
 
@@ -81,7 +81,7 @@ Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nh�
 
 8. Nếu bạn hay dính vào việc tranh cãi với các thành viên trong đội nhóm của mình về việc hướng đi cho sản phẩm, có thể lý do chính là do sự không hợp ý, không đồng tình về sự đo lường thành quả của nhau, hãy lên tiếng dựa trên 1 sự đề nghị nào đó hợp lý hơn.
 
-9. Nếu bạn đang cố để tìm ra liệu sản phẩm của mình có hợp với thị trường hay không (đối nghịch với tinh chỉnh hay mở rộng), có lẽ bạn nên đặt mục tiêu vào việc giữ lại khách hàng, tự đặt câu hỏi "có bao nhiêu người sử dụng sản phẩm của mình và thấy đủ tốt và quay lại dùng tiếp?" thay vì hỏi rằng có bao nhiêu khách hàng.
+9. Nếu bạn đang cố để tìm ra liệu sản phẩm của mình có hợp với thị trường hay không (so với việc cố gắng tối ưu hóa hoặc mở rộng), có lẽ bạn nên đặt mục tiêu vào việc giữ lại khách hàng, tự đặt câu hỏi "có bao nhiêu người sử dụng sản phẩm của mình và thấy đủ tốt và quay lại dùng tiếp?" thay vì hỏi rằng có bao nhiêu khách hàng.
 
 #### **Đội nhóm cơ động**
 
