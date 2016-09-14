@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-08-18T08:07:51+00:00</updated>
+  <updated>2016-09-14T02:00:52+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cách xây dựng một sản phẩm]]></title>
+    <link href="http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham/"/>
+    <updated>2016-09-01T16:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham</id>
+    <content type="html"><![CDATA[<p>Tôi vừa có dịp trình bày tại <a href="http://thenextweb.com/conference/europe/#gref">TNW Europe</a> về <a href="https://www.youtube.com/watch?v=IIm289_YMIE&amp;index=9&amp;list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi">framework mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình</a>. Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
+Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước<em> 1: Bắt đầu. </em>Bước<em> 2: ??? </em>Bước<em> 3: Thu tiền!</em>), thì có lẽ chúng tôi đã chi một khoản tiền cho nó xong rồi ngồi chờ xem các sản phẩm mới tuyệt vời đua nhau nở rộ như là vườn hoa tháng 5 rồi.
+Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nhé.</p>
+
+<!-- more -->
+
+
+<h4><strong>Tổng quát</strong></h4>
+
+<ol>
+<li><p>Sản phẩm có thành công vì nó giải quyết được vấn đề cho mọi người. Nghe thì rất căn bản, nhưng mà là thứ quan trọng duy nhất cần phải được hiểu để có thể xây dựng được sản phẩm chất lượng.</p></li>
+<li><p>Bước đầu tiên khi làm cái gì đó mới là bạn phải hiểu được vấn đề cần phải giải quyết và giải quyết cho ai. Điều này khá rõ ràng và cần được làm rõ trước khi bạn nghĩ tới giải pháp nào.</p></li>
+<li><p>Hãy tự hỏi bản thân &ldquo;Tại sao vấn đề này đáng được giải quyết?&rdquo;.</p></li>
+<li><p>Nếu đối tượng bạn nhắm tới là 1 nhóm nhỏ xác định nào đó (bạn có thể nằm trong nhóm này), thì bạn có thể dựa vào trực giác của mình để tự đưa ra quyết định xây dựng sản phẩm nó như thế nào. Nếu không, thì bạn phải dựa vào các dữ liệu đã nghiên cứu để tạo quyết định cho mình.</p></li>
+<li><p>Nếu bạn là người sáng lập (start-up founder), thì con đường sẽ dễ dàng hơn nếu bạn đi theo hướng giải quyết vấn đề cho một nhóm đối tượng khách hàng nào đó, sau đó sẽ mở rộng đối tượng khách hàng sau khi đã có một vài kết quả ban đầu.</p></li>
+<li><p>Cái vấn đề mà bạn đang muốn giải quyết cần phải dễ dàng trao đổi, giao tiếp trong 1 vài câu ngắn gọn và được ủng hộ từ một ai đó trong nhóm đối tượng khách hàng của bạn, nếu không thì hãy cho nó là cái vấn đề nguy hiểm cần được quan tâm (<a href="http://www.urbandictionary.com/define.php?term=red%20flag">red flag</a>).</p></li>
+</ol>
+
+
+<h4><strong>Thực hiện</strong></h4>
+
+<ol>
+<li><p>Thực hiện tốt là có 1 cái kết luận đáng tin trong thời gian ngắn nhất có thể.</p></li>
+<li><p>Thực hiện không tốt là khi bạn thử làm cái gì đó, nó thất bại và:</p>
+
+<ol>
+<li><p>Bạn không rút ra được bài học nào để có thể áp dụng vào các dự án tương lai (vì bạn không biết tại sao nó thất bại)</p></li>
+<li><p>Bạn mất 1 năm để học được 1 bài học nào đó trong khi con đường thông minh hơn chỉ mất bạn 3 tháng.</p></li>
+</ol>
+</li>
+<li><p>Vấn đề chủ yếu phân cách giữa 1 đội thành công và không thành công là không phải họ làm những việc có thất bại hay không (chuyện tất yếu sẽ xảy ra), mà là họ thực hiện nó kiên định như thế nào.</p></li>
+<li><p>Khi truy tìm giải pháp cho 1 vấn đề nào đó, hãy đào rộng trước khi đào sâu. Thu thập ý kiến (Brainstorm) để tìm ra 10, 20, 50 giải pháp cho cái vấn đề đó trước khi chọn giải pháp tốt nhất. 5 ý tưởng đầu tiên sẽ là cái tất nhiên, sáng tạo sẽ xảy ra khi bạn đào sâu hơn vào ý tưởng 11, 20 hay 50.</p></li>
+<li><p>Nếu bạn đang thuyết trình 1 bản kế hoạch sản phẩm và ai đó có hỏi &ldquo;Bạn có bao giờ thử giải pháp X thay cho cái này chưa?&rdquo; và câu trả lời của bạn là “Không&#8221; thì đó chính là cái dấu hiệu nguy hiểm <a href="http://www.urbandictionary.com/define.php?term=red%20flag">red flag</a> của quá trình khai thác ý tưởng và nó chưa đủ nghiêm ngặt.</p></li>
+<li><p>Sử dụng kinh nghiệm đã trải qua để giúp bạn thu hẹp các ý tưởng tốt nhất. (Ví dụ như lựa chọn N ý tưởng của các thành viên trong nhóm, rồi phác thảo nó ra và cho mọi người xem rồi xem phản ứng của họ).</p></li>
+<li><p>Khi bạn đã tìm được một giải pháp hãy đặt giả thuyết và tự hỏi điều gì sẽ xảy ra nếu bạn xây dựng theo cách như thế này? (ví dụ: &ldquo;Vấn đề mà chúng ta muốn xử lý đó là đảm bảo mọi công dân của thành phố biết được mỗi tuần sẽ có sự kiện nào đó xảy ra. Vậy thì giả thuyết sẽ là: chúng ta có thể thông báo cho X% công dân thông qua e-mail&rdquo;).</p></li>
+<li><p>Bạn phải tìm được cách để rút ngắn công việc rà soát các giả thuyết của mình. Bạn có thể thực hiện nó với một ai đó bất kỳ và xem hợ thể hiểu mình đang nói gì? Bạn có thể thu thập ý kiến khách hàng và xem có đủ lượng người có hứng thú với ý tưởng của mình hay không? Bạn có thể làm nhanh 1 sản phẩm để minh hoạ và sẽ cho bạn 1 kết quả rõ ràng cho dù nó chưa hoàn thiện?</p></li>
+<li><p>Một khi bạn đã tìm được 1 giả thuyết hợp lý và rõ ràng, đừng cứ phải thử nghiệm nó ngay và luôn (vì có thể bạn tìm được 1 cách nào đó nhanh hơn), thay vào đó, hãy phân tách, hãy rà soát xem sản phẩm sẽ như thế nào khi nó được chau chuốt và thêm những tính năng mới, kiểm thử trường hợp khác nhau mà sản phẩm cần phải đạt được.</p></li>
+<li><p>Nếu dự án bạn đang làm nó lớn và có rất nhiều sự thay đổi khác nhau, hãy xem mình có thể chia nó ra nhiều cột mốc nhỏ và độc lập và có thể kiểm thử được. Đừng để mình rơi vào trường hợp khi mà bạn thực hiện 5 thay đổi và có một phần thay đổi gây ra sản phẩm bị lỗi, khi đó bạn không thể biết lỗi bị gây gây ra bởi phần nào.</p></li>
+<li><p>Tuỳ sản phẩm mà hãy xem xét và nhìn lại chúng, dù là thất bại hay thành công. Từ sản phẩm đó học được bài học gì? Đồng đội có học được gì hay không? Tương lai bạn có cần làm gì khác hơn? Sau đó hãy chia sẻ với tất cả người khác.</p></li>
+</ol>
+
+
+<h4><strong>Đo lường thành quả</strong></h4>
+
+<ol>
+<li><p>Làm thế nào để đo lường được thành công đối với kết quả lâu dài là điều rất quan trọng vì đó là cái mà mọi người mong đợi. Hãy chắc chắn thực hiện điều này vào đúng thời điểm (thậm chí còn quan trọng hơn cả việc bạn nghĩ &ldquo;Làm sao để làm được việc này?&rdquo;).</p></li>
+<li><p>Hãy xác định các số liệu được cho là thành công cho sản phẩm trước khi chúng được tung ra. Nếu không, sau khi đã có kết quả sản phẩm và bạn cố gắng giải thích các kết quả đó sẽ làm cho việc đánh giá thành công của sản phẩm không còn khách quan nữa.</p></li>
+<li><p>Với mỗi số liệu đạt được, hãy tạo ra 1 số liệu đối nghịch nào đó mà dựa vào đó có thể cho thấy sự việc này không phải là ngẫu nhiên mà ra (Ví dụ: Sản phẩm bán ra nhiều hơn là do chất lượng của sản phẩm đó tốt hơn)</p></li>
+<li><p>Nếu có số liệu nào đó thay đổi đột ngột, dù tốt hay xấu, hãy đặt câu hỏi &ldquo;Tại sao?&rdquo; trước khi lập kế hoạch để thúc đẩy hay giảm thiểu kết quả đó khi bạn chưa hiểu vì sao nó lại như thế.</p></li>
+<li><p>Hãy sử dụng công nghệ quả bóng thủy tinh (Crystal Ball) &ndash; phần mềm phân tích rủi ro để lựa chọn các cách đánh giá đúng sự thành công của sản phẩm. Hãy tự hỏi mình &ldquo;Nếu tôi có thể biết được tất cả về việc mọi người sử dụng sản phẩm của tôi ra sao, thì tôi muốn biết những gì về nó mà có thể biết được nó thành công hay không?&rdquo; Dựa vào câu trả lời đó rồi nhìn lại các số liệu thống kê gần với câu trả lời đó nhất.</p></li>
+<li><p>Mục tiêu luôn luôn phải đi đôi với thông tin bạn tin tưởng nhất. Nếu bạn đang làm việc để đạt được 1 mục tiêu đã xác định nào đó, và rồi trong quá trình làm phát hiện những thông tin mới mẻ khiến bạn thay đổi cách suy nghĩ, hãy tự hỏi mình có nên điều chỉnh mục tiêu của mình hay không dựa trên luồng thông tin mới này.</p></li>
+<li><p>Nếu bạn làm việc trong 1 đội nhóm nào đó nhưng mà bạn không đồng ý hay không hiểu gì về các đo lường thành quả của đội mình, hãy lên tiếng ngay và luôn, sớm còn hơn muộn khi mà mọi việc đã đâu vào đó.</p></li>
+<li><p>Nếu bạn hay dính vào việc tranh cãi với các thành viên trong đội nhóm của mình về việc hướng đi cho sản phẩm, có thể lý do chính là do sự không hợp ý, không đồng tình về sự đo lường thành quả của nhau, hãy lên tiếng dựa trên 1 sự đề nghị nào đó hợp lý hơn.</p></li>
+<li><p>Nếu bạn đang cố để tìm ra liệu sản phẩm của mình có hợp với thị trường hay không (so với việc cố gắng tối ưu hóa hoặc mở rộng), có lẽ bạn nên đặt mục tiêu vào việc giữ lại khách hàng, tự đặt câu hỏi &ldquo;có bao nhiêu người sử dụng sản phẩm của mình và thấy đủ tốt và quay lại dùng tiếp?&rdquo; thay vì hỏi rằng có bao nhiêu khách hàng.</p></li>
+</ol>
+
+
+<h4><strong>Đội nhóm cơ động</strong></h4>
+
+<ol>
+<li><p>Đừng nghĩ về vai trò của bạn (bạn là designer thì cần làm gì? bạn là kĩ sư thì cần làm gì?) mà hãy nghĩ rằng &ldquo;Tôi có thể làm gì tốt nhất để có thể giúp đội của mình thành công?&rdquo;</p></li>
+<li><p>Các team ưu tiên tìm hiểu, giải quyết vấn đề có khả năng thành công cao hơn so với các team ưu tiên vào giải pháp. Bởi vì vấn đề cần giải quyết có tạo động lực, còn giải pháp thì có sẵn.</p></li>
+<li><p>Cuối cùng thì mọi người luôn có 1 ý tưởng giống nhau đó là xây dựng 1 cái gì đó tuyệt vời.</p></li>
+<li><p>Biết người biết ta, biết mình giỏi về cái gì, biết đồng đội giỏi về cái gì, rồi phân chia trách nhiệm cho mỗi người.</p></li>
+<li><p>Một team tốt và tồn tại lâu dài cần phải giao tiếp tốt, mỗi thành viên cần phải cảm thấy rằng họ có thể thể hiện cảm nghĩ, sự nhìn nhận của mình, cho dù nó có hơi trái ngược, nhiều luồng ý kiến đa dạng là cách để đạt được kết quả tốt nhất. Cho nên đừng sợ hãi thể hiện ý kiến của mình, đừng sợ hãi lặp đi lặp lại ý kiến đó nếu những người khác chưa hiểu bạn muốn gì, hãy khuyến khích và cố gắng để đồng đội cảm thấy làm điều đó là an toàn.</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev vision]]></title>
@@ -1320,7 +1395,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x68;&#113;&#64;&#116;&#101;&#x72;&#x61;&#99;&#121;&#x2e;&#99;&#x6f;&#x6d;">&#104;&#113;&#x40;&#x74;&#101;&#x72;&#x61;&#x63;&#121;&#x2e;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#104;&#113;&#64;&#x74;&#101;&#114;&#x61;&#99;&#x79;&#46;&#x63;&#x6f;&#x6d;">&#x68;&#x71;&#x40;&#116;&#101;&#x72;&#97;&#99;&#121;&#x2e;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -2723,63 +2798,6 @@ following the instructions on <code>README.md</code> file.</p>
 <p>https://dev.twitter.com/docs/cards<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
 <li id="fn:4">
 <p>https://developers.google.com/custom-search/docs/structured_data#microdata<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-django-html5-boilerplate v0.2.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/"/>
-    <updated>2013-09-14T21:29:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2013/09/14/html5-boilerplate.png" title="HTML5 Boilerplate" ></p>
-
-<p>It was planned that <a href="https://github.com/teracy-official/django-html5-boilerplate">teracy-django-html5-boilerplate</a> v0.2.0 would be released by Sep 20th, 2013 and we&rsquo;re very glad to announce
-v0.2.0 release 5 days earlier. This release includes many exciting changes.</p>
-
-<!-- more -->
-
-
-<p>The first exciting change is that (almost) all provided assets from <code>html5-boilerplate</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> v4.3.0
-is included and handled (except <code>.htaccess</code> is not included and <code>404.html</code> is not handled yet).
-All the included resources could be overridden and the instruction is on the project <code>README</code>
-file.</p>
-
-<p>The second exciting change is that this release introduces <code>python</code> style check with <code>pylint</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
-<code>pep8</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> violations report and unit test report via <code>nosetests</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>. These reports help us to
-have a better view at the project&rsquo;s health and quality as reported by <code>jenkins</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> at:
-<a href="https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/">https://ci.teracy.org/job/django-html5-boilerplate-develop/PYTHON=System-CPython-2.7/</a></p>
-
-<p>The third exciting change is that javascript source code files are included and returned on the page
-if the site is running on debug mode with <code>debug</code> context processor configured. We think that this
-is very helpful to debug and fix bugs more easily.</p>
-
-<p>The last but not least exciting change is that we found out and fixed a bug at the last release
-minute. It should have been included in v0.1.0 release. It was a mistake from unit tests and not
-thorough testing. We learned this lesson very hard and it should not occur anymore.</p>
-
-<p>So what&rsquo;s next? We expect to release v0.3.0 by Nov 15th, 2013 with page context overridable, bug fixed
-and improvements. We&rsquo;re very close to v1.0.0 release &ndash; the first public production-ready release that
-we&rsquo;re all working on.</p>
-
-<p>We hope that this would be helpful to your <code>django</code> project.</p>
-
-<p><code>$ pip install teracy-django-html5-boilerplate</code> and happy hacking!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://html5boilerplate.com<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://www.pylint.org/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://pypi.python.org/pypi/pep8<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>http://nose.readthedocs.org/en/latest/<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-<li id="fn:5">
-<p>http://jenkins-ci.org/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
