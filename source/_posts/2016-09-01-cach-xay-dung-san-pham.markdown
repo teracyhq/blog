@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cách xây dựng một sản phẩm"
+title: "Cách xây dựng sản phẩm"
 author: datphan
 date: 2016-09-01 16:56
 comments: true
@@ -8,10 +8,10 @@ categories:
     - "vi"
     - "trans"
 tags:
-    - 
+    - "product"
 cover: /images/2016/08/08/meeting-930x548.jpg
 description: Cách xây dựng sản phẩm tốt theo kĩ sư của facebook
-keywords: 
+keywords: xây dựng, sản phẩm, tốt, kỹ sư facebook
 published: true
 ---
 
