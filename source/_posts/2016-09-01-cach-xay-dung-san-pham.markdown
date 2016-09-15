@@ -9,11 +9,15 @@ categories:
     - "trans"
 tags:
     - "product"
-cover: /images/2016/08/08/meeting-930x548.jpg
+cover: /images/2016/09/15/looking-glass.jpg
 description: Cách xây dựng sản phẩm tốt theo kĩ sư của facebook
 keywords: xây dựng, sản phẩm, tốt, kỹ sư facebook
 published: true
 ---
+
+{% img center /images/2016/09/15/looking-glass.jpg Looking Glass %}
+
+-> *Ảnh của [Alex Kislow](https://www.flickr.com/photos/corpz/5634268846/)* <-
 
 Tôi vừa có dịp trình bày tại [TNW Europe](http://thenextweb.com/conference/europe/#gref) về [framework mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình](https://www.youtube.com/watch?v=IIm289_YMIE&index=9&list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi). Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
 Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước* 1: Bắt đầu. *Bước* 2: ??? *Bước* 3: Thu tiền!*), thì có lẽ chúng tôi đã chi một khoản tiền cho nó xong rồi ngồi chờ xem các sản phẩm mới tuyệt vời đua nhau nở rộ như là vườn hoa tháng 5 rồi.
@@ -95,4 +99,4 @@ Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nh�
 
 5. Một team tốt và tồn tại lâu dài cần phải giao tiếp tốt, mỗi thành viên cần phải cảm thấy rằng họ có thể thể hiện cảm nghĩ, sự nhìn nhận của mình, cho dù nó có hơi trái ngược, nhiều luồng ý kiến đa dạng là cách để đạt được kết quả tốt nhất. Cho nên đừng sợ hãi thể hiện ý kiến của mình, đừng sợ hãi lặp đi lặp lại ý kiến đó nếu những người khác chưa hiểu bạn muốn gì, hãy khuyến khích và cố gắng để đồng đội cảm thấy làm điều đó là an toàn.
 
-
+Bài dịch từ: [Building Products](https://medium.com/the-year-of-the-looking-glass/building-products-91aa93bea4bb#.kd7eag413)
