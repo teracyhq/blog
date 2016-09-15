@@ -9,11 +9,15 @@ categories:
     - "trans"
 tags:
     - 
-cover: /images/2016/08/08/meeting-930x548.jpg
+cover: /images/2016/09/15/looking-glass.jpg
 description: Cách xây dựng sản phẩm tốt theo kĩ sư của facebook
 keywords: 
 published: true
 ---
+
+{% img center /images/2016/09/15/looking-glass.jpg Looking Glass %}
+
+-> *Ảnh của [Alex Kislow](https://www.flickr.com/photos/corpz/5634268846/)* <-
 
 Tôi vừa có dịp trình bày tại [TNW Europe](http://thenextweb.com/conference/europe/#gref) về [framework mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình](https://www.youtube.com/watch?v=IIm289_YMIE&index=9&list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi). Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
 Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước* 1: Bắt đầu. *Bước* 2: ??? *Bước* 3: Thu tiền!*), thì có lẽ chúng tôi đã chi một khoản tiền cho nó xong rồi ngồi chờ xem các sản phẩm mới tuyệt vời đua nhau nở rộ như là vườn hoa tháng 5 rồi.
