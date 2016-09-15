@@ -99,4 +99,4 @@ Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nh�
 
 5. Một team tốt và tồn tại lâu dài cần phải giao tiếp tốt, mỗi thành viên cần phải cảm thấy rằng họ có thể thể hiện cảm nghĩ, sự nhìn nhận của mình, cho dù nó có hơi trái ngược, nhiều luồng ý kiến đa dạng là cách để đạt được kết quả tốt nhất. Cho nên đừng sợ hãi thể hiện ý kiến của mình, đừng sợ hãi lặp đi lặp lại ý kiến đó nếu những người khác chưa hiểu bạn muốn gì, hãy khuyến khích và cố gắng để đồng đội cảm thấy làm điều đó là an toàn.
 
-
+Bài dịch từ: [Building Products](https://medium.com/the-year-of-the-looking-glass/building-products-91aa93bea4bb#.kd7eag413)
