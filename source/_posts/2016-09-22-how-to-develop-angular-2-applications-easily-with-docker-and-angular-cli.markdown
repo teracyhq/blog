@@ -25,7 +25,7 @@ getting started article from the Angular 2 official documentation. That's the re
 tool, however, it takes a lot of time to get it working by installing nodejs and `angular-cli`.
 Luckily, we create [docker-angular-cli](https://github.com/teracyhq/docker-angular-cli) project
 to build a Docker image so that anyone could use it right away for any Angular 2 projects without the
-hassle of installing ndoejs and `angular-cli`. This is the guide to help you get started in the most
+hassle of installing nodejs and `angular-cli`. This guide will help you get started in the most
 easily and convenient way. It's assumed that you don't need master Docker but only require that
 Docker is installed on your machine and you could follow the instructions below.
 
@@ -38,7 +38,7 @@ Docker is installed on your machine and you could follow the instructions below.
 https://docs.docker.com/docker-for-mac/ or https://docs.docker.com/engine/installation/linux/ or
 https://docs.docker.com/docker-for-windows/ to install them.
 
-- `docker-angular-cli` is tested with `Docker` v1.12.1 and `docker-compose` v1.8.0 with native app
+- `docker-angular-cli` is tested with `Docker` v1.12.1 and `docker-compose` v1.8.0 with the native app
 on Mac and on Ubuntu. It should work well on Windows, too.
 
 1. Init a new project
@@ -64,7 +64,7 @@ You should see the <project-name> yourself. By default, the style file is `css`.
 2. Add Dockerfile and docker-compose.yml file
 ---------------------------------------------
 
-Add Dockerfile and docker-compose.yml like I did with: https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642
+Add Dockerfile and docker-compose.yml like I did with https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642
 
 3. Note for angular-boilerplate
 -------------------------------
@@ -107,7 +107,7 @@ and you should see the unit test running on Chrome browser pre-installed on the 
 
 To exec some commands, for example:
 
-for linting:
+for linting (code style checking):
 
 ```
 $ docker-compose exec serve ng lint
