@@ -8,6 +8,7 @@ categories:
     - "en"
     - "how-to"
 tags:
+    - "angular"
     - "docker"
     - "angular-cli"
     - "docker-angular-cli"
