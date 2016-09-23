@@ -48,7 +48,7 @@ First, to init a new Angular 2 project, follow:
 ```
 $ mkdir new-ng-project
 $ cd new-ng-project
-$ docker rm -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash
+$ docker run -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash
 ```
 
 After that, you should be presented with bash console for the docker container. Use `ng init` to
