@@ -4,7 +4,7 @@
   <title><![CDATA[Category: en | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/en/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-16T04:05:24+00:00</updated>
+  <updated>2016-09-23T07:23:25+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,157 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to develop Angular 2 applications easily with Docker and angular-cli]]></title>
+    <link href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/"/>
+    <updated>2016-09-22T12:44:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
+
+<p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
+getting started article from the Angular 2 official documentation. That&rsquo;s the reason why
+<a href="https://cli.angular.io/">angular-cli</a> is created to ease the pain. <code>angular-cli</code> is a great CLI
+tool, however, it takes a lot of time to get it working by installing nodejs and <code>angular-cli</code>.
+Luckily, we&rsquo;ve created <a href="https://github.com/teracyhq/docker-angular-cli">docker-angular-cli</a> project
+to build a Docker image so that anyone could use it right away for any Angular 2 projects without the
+hassle of installing nodejs and <code>angular-cli</code>. This guide will help you get started in the most
+easily and convenient way. It&rsquo;s assumed that you don&rsquo;t need to master Docker but only require that
+Docker is installed on your machine and you could follow the instructions below.</p>
+
+<!-- more -->
+
+
+<h2>0. Prerequisites</h2>
+
+<ul>
+<li><p>Make sure the latest <code>Docker</code> and <code>docker-compose</code> is installed on your machine. If not, follow
+<a href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a> or <a href="https://docs.docker.com/engine/installation/linux/">https://docs.docker.com/engine/installation/linux/</a> or
+<a href="https://docs.docker.com/docker-for-windows/">https://docs.docker.com/docker-for-windows/</a> to install them.</p></li>
+<li><p><code>docker-angular-cli</code> is tested with <code>Docker</code> v1.12.1 and <code>docker-compose</code> v1.8.0 with the native app
+on Mac and on Ubuntu. It should work well on Windows, too.</p></li>
+</ul>
+
+
+<h2>1. Init a new project</h2>
+
+<p>First, to init a new Angular 2 project, follow:</p>
+
+<p><code>
+$ mkdir new-ng-project
+$ cd new-ng-project
+$ docker rm -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash
+</code></p>
+
+<p>After that, you should be presented with bash console for the docker container. Use <code>ng init</code> to
+init a new project.</p>
+
+<p>```</p>
+
+<h1>ng init &mdash;name &lt;project-name> &mdash;style scss</h1>
+
+<p>```</p>
+
+<p>You should see the &lt;project-name> yourself. By default, the style file is <code>css</code>. I recommend using
+<code>scss</code> extension for style files.</p>
+
+<h2>2. Add Dockerfile and docker-compose.yml file</h2>
+
+<p>Add Dockerfile and docker-compose.yml as I did with <a href="https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642">https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642</a></p>
+
+<h2>3. Note for angular-boilerplate</h2>
+
+<p>For easier setup with best practices, you can combine the 2 steps above (1 + 2) with:</p>
+
+<p><code>
+$ git clone git@github.com:teracyhq/angular-boilerplate.git --depth=1 new-ng-project
+</code></p>
+
+<p>More useful stuff will come to <a href="https://github.com/teracyhq/angular-boilerplate">angular-boilerplate</a>
+later such as CI, CD, production deployment, server side rendering, desktop app and native apps, etc
+best practices.</p>
+
+<h2>4. Serve</h2>
+
+<p>To start serving the web app, follow:</p>
+
+<p><code>
+$ docker-compose up serve
+</code></p>
+
+<p>and then open <a href="http://localhost:4200">http://localhost:4200</a> to see the web app.</p>
+
+<h2>5. Test</h2>
+
+<p>To run the unit test with Karma and Chrome, follow:</p>
+
+<p><code>
+$ docker-compose up test
+</code></p>
+
+<p>and you should see the unit test running on Chrome browser pre-installed on the Docker image.</p>
+
+<h2>6. Exec commands</h2>
+
+<p>To exec some commands, for example:</p>
+
+<p>for linting (code style checking):</p>
+
+<p><code>
+$ docker-compose exec serve ng lint
+</code></p>
+
+<p>or for installing more npm packages:</p>
+
+<p><code>
+$ docker-compose exec serve npm install
+</code></p>
+
+<p>or for running unit tests:</p>
+
+<p><code>
+$ docker-compose exec serve ng test --browsers Chrome_no_sandbox
+</code></p>
+
+<p>You can exec any commands on the running container.</p>
+
+<h2>7. Develop</h2>
+
+<p>Or if you want to open a new ssh session, open a new terminal window, and execute this:</p>
+
+<p><code>
+$ cd new-ng-project
+$ docker-compose run serve /bin/bash
+</code></p>
+
+<p>and then you should see something like:</p>
+
+<p><code>
+Starting virtual X frame buffer: Xvfb.
+Executing command /bin/bash
+root@6d15153f5858:~#
+</code>
+And now you can execute any commands you want.</p>
+
+<p>That&rsquo;s it. Now you should start developing Angular 2 applications more easily with <code>docker-compose</code>
+and <code>angular-cli</code> by using <code>docker-angular-cli</code>.</p>
+
+<p>You can follow the following tutorial to create a simple todo application: <a href="https://www.sitepoint.com/angular-2-tutorial/">https://www.sitepoint.com/angular-2-tutorial/</a></p>
+
+<h2>8. Learn more</h2>
+
+<ul>
+<li><a href="https://github.com/AngularClass/awesome-angular2">https://github.com/AngularClass/awesome-angular2</a></li>
+<li><a href="https://github.com/timjacobi/angular2-education">https://github.com/timjacobi/angular2-education</a></li>
+</ul>
+
+
+<p>If you need any consultancy or outsourcing, please contact us. We&rsquo;re eager to build world class web
+applications for you!</p>
+
+<p>Happy developing!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev vision]]></title>
@@ -303,9 +454,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#115;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x75;&#115;&#101;&#x72;&#x40;&#103;&#109;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;">&#115;&#97;&#109;&#x70;&#x6c;&#101;&#x2e;&#x75;&#x73;&#x65;&#114;&#64;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a>
+To: <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x73;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#x75;&#x73;&#x65;&#x72;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#111;&#109;">&#115;&#97;&#x6d;&#112;&#108;&#101;&#46;&#117;&#x73;&#101;&#x72;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#58;&#x32;&#48;&#x31;&#53;&#49;&#x32;&#x32;&#49;&#x31;&#49;&#x30;&#x32;&#51;&#x30;&#x2e;&#x32;&#x33;&#52;&#54;&#x33;&#x2e;&#56;&#x30;&#56;&#x34;&#53;&#64;&#x76;&#97;&#103;&#x72;&#x61;&#110;&#116;&#x2e;&#x76;&#109;">&#50;&#x30;&#x31;&#x35;&#49;&#50;&#x32;&#49;&#49;&#49;&#x30;&#50;&#x33;&#48;&#x2e;&#x32;&#x33;&#52;&#54;&#x33;&#46;&#x38;&#x30;&#56;&#52;&#x35;&#x40;&#x76;&#97;&#103;&#x72;&#x61;&#x6e;&#116;&#46;&#x76;&#x6d;</a></p>
+Message-ID: <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x32;&#48;&#49;&#x35;&#49;&#50;&#x32;&#49;&#49;&#x31;&#48;&#x32;&#51;&#48;&#x2e;&#50;&#51;&#x34;&#x36;&#x33;&#x2e;&#56;&#48;&#x38;&#x34;&#53;&#x40;&#118;&#97;&#x67;&#114;&#x61;&#110;&#x74;&#46;&#118;&#x6d;">&#x32;&#x30;&#x31;&#53;&#x31;&#50;&#50;&#x31;&#x31;&#x31;&#48;&#50;&#51;&#x30;&#46;&#50;&#x33;&#x34;&#54;&#51;&#46;&#56;&#48;&#56;&#52;&#x35;&#64;&#x76;&#x61;&#103;&#114;&#97;&#x6e;&#x74;&#46;&#x76;&#x6d;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -604,7 +755,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#104;&#x71;&#x40;&#116;&#x65;&#x72;&#x61;&#x63;&#121;&#x2e;&#x63;&#x6f;&#109;">&#104;&#113;&#64;&#116;&#x65;&#x72;&#x61;&#x63;&#x79;&#x2e;&#99;&#111;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#104;&#x71;&#x40;&#x74;&#x65;&#x72;&#x61;&#x63;&#x79;&#x2e;&#x63;&#x6f;&#109;">&#x68;&#x71;&#x40;&#116;&#x65;&#x72;&#x61;&#x63;&#121;&#46;&#99;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -719,46 +870,6 @@ merchants will open their API for our script to bring the gift to our team membe
 <p>https://github.com/teracyhq/birthday-image<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Free Teracy Wireframe UI kit for Sketch]]></title>
-    <link href="http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch/"/>
-    <updated>2014-12-08T00:00:00+00:00</updated>
-    <id>http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/12/cover.jpg"></p>
-
-<p>It’s always a good idea to begin with a wireframe when beginning a new web design or mobile app project.
-Wireframes can be a big time saver as they help both designers and developers come to an agreement on placement
-of major UI elements. The key is to get the layout nailed down so you don&rsquo;t have to change major layout when
- detailed design elements are in place.</p>
-
-<!-- more -->
-
-
-<p>In our design process at Teracy, wireframing and mockups takes an important position. We have developed
-a wireframe kit to speedup the design process and use it in our daily design workflow. Today, we are excited
- to share the version of our wireframe kit that we are using, which includes the most common UI elements
-in web projects. This is the second UI kit we share to <a href="http://www.bohemiancoding.com/sketch/">Sketch</a> community, you can also check out our first freebie <a href="https://github.com/teracy-official/bootflat-ui-kit.sketch">Bootflat UI kit for Sketch</a> shared not a long time ago.</p>
-
-<p>Here it is, hope it&rsquo;s useful for all Sketch lovers!</p>
-
-<p><a href="https://github.com/teracyhq/wireframe">Download the Teracy Wireframe kit for Sketch</a></p>
-
-<p><img class="center" src="/images/2014/12/ss2.jpg">
-<img class="center" src="/images/2014/12/ss1.jpg"></p>
-
-<p>Features:</p>
-
-<ul>
-<li>All UI Elements are Symbols.</li>
-<li>Symbols grouped by categories.</li>
-<li>UI elements for mobile devices will be added in the next version.</li>
-<li>Markups and annotations included.</li>
-<li>Over 140 icons included.</li>
-</ul>
 
 ]]></content>
   </entry>

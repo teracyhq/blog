@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-16T04:05:24+00:00</updated>
+  <updated>2016-09-23T07:23:25+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,161 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to develop Angular 2 applications easily with Docker and angular-cli]]></title>
+    <link href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/"/>
+    <updated>2016-09-22T12:44:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
+
+<p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
+getting started article from the Angular 2 official documentation. That&rsquo;s the reason why
+<a href="https://cli.angular.io/">angular-cli</a> is created to ease the pain. <code>angular-cli</code> is a great CLI
+tool, however, it takes a lot of time to get it working by installing nodejs and <code>angular-cli</code>.
+Luckily, we&rsquo;ve created <a href="https://github.com/teracyhq/docker-angular-cli">docker-angular-cli</a> project
+to build a Docker image so that anyone could use it right away for any Angular 2 projects without the
+hassle of installing nodejs and <code>angular-cli</code>. This guide will help you get started in the most
+easily and convenient way. It&rsquo;s assumed that you don&rsquo;t need to master Docker but only require that
+Docker is installed on your machine and you could follow the instructions below.</p>
+
+<!-- more -->
+
+
+<h2>0. Prerequisites</h2>
+
+<ul>
+<li><p>Make sure the latest <code>Docker</code> and <code>docker-compose</code> is installed on your machine. If not, follow
+<a href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a> or <a href="https://docs.docker.com/engine/installation/linux/">https://docs.docker.com/engine/installation/linux/</a> or
+<a href="https://docs.docker.com/docker-for-windows/">https://docs.docker.com/docker-for-windows/</a> to install them.</p></li>
+<li><p><code>docker-angular-cli</code> is tested with <code>Docker</code> v1.12.1 and <code>docker-compose</code> v1.8.0 with the native app
+on Mac and on Ubuntu. It should work well on Windows, too.</p></li>
+</ul>
+
+
+<h2>1. Init a new project</h2>
+
+<p>First, to init a new Angular 2 project, follow:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkdir new-ng-project
+</span><span class='line'>$ cd new-ng-project
+</span><span class='line'>$ docker rm -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After that, you should be presented with bash console for the docker container. Use <code>ng init</code> to
+init a new project.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># ng init --name &lt;project-name&gt; --style scss</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see the &lt;project-name> yourself. By default, the style file is <code>css</code>. I recommend using
+<code>scss</code> extension for style files.</p>
+
+<h2>2. Add Dockerfile and docker-compose.yml file</h2>
+
+<p>Add Dockerfile and docker-compose.yml as I did with <a href="https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642">https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642</a></p>
+
+<h2>3. Note for angular-boilerplate</h2>
+
+<p>For easier setup with best practices, you can combine the 2 steps above (1 + 2) with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git@github.com:teracyhq/angular-boilerplate.git --depth=1 new-ng-project</span></code></pre></td></tr></table></div></figure>
+
+
+<p>More useful stuff will come to <a href="https://github.com/teracyhq/angular-boilerplate">angular-boilerplate</a>
+later such as CI, CD, production deployment, server side rendering, desktop app and native apps, etc
+best practices.</p>
+
+<h2>4. Serve</h2>
+
+<p>To start serving the web app, follow:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose up serve</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and then open <a href="http://localhost:4200">http://localhost:4200</a> to see the web app.</p>
+
+<h2>5. Test</h2>
+
+<p>To run the unit test with Karma and Chrome, follow:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose up test</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should see the unit test running on Chrome browser pre-installed on the Docker image.</p>
+
+<h2>6. Exec commands</h2>
+
+<p>To exec some commands, for example:</p>
+
+<p>for linting (code style checking):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose exec serve ng lint</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or for installing more npm packages:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose exec serve npm install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or for running unit tests:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose exec serve ng test --browsers Chrome_no_sandbox</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can exec any commands on the running container.</p>
+
+<h2>7. Develop</h2>
+
+<p>Or if you want to open a new ssh session, open a new terminal window, and execute this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd new-ng-project
+</span><span class='line'>$ docker-compose run serve /bin/bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and then you should see something like:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Starting virtual X frame buffer: Xvfb.
+</span><span class='line'>Executing command /bin/bash
+</span><span class='line'>root@6d15153f5858:~# </span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now you can execute any commands you want.</p>
+
+<p>That&rsquo;s it. Now you should start developing Angular 2 applications more easily with <code>docker-compose</code>
+and <code>angular-cli</code> by using <code>docker-angular-cli</code>.</p>
+
+<p>You can follow the following tutorial to create a simple todo application: <a href="https://www.sitepoint.com/angular-2-tutorial/">https://www.sitepoint.com/angular-2-tutorial/</a></p>
+
+<h2>8. Learn more</h2>
+
+<ul>
+<li><a href="https://github.com/AngularClass/awesome-angular2">https://github.com/AngularClass/awesome-angular2</a></li>
+<li><a href="https://github.com/timjacobi/angular2-education">https://github.com/timjacobi/angular2-education</a></li>
+</ul>
+
+
+<p>If you need any consultancy or outsourcing, please contact us. We&rsquo;re eager to build world class web
+applications for you!</p>
+
+<p>Happy developing!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cách xây dựng sản phẩm]]></title>
@@ -1401,7 +1556,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#104;&#113;&#x40;&#116;&#x65;&#x72;&#x61;&#x63;&#121;&#46;&#x63;&#111;&#109;">&#104;&#113;&#x40;&#116;&#101;&#x72;&#97;&#99;&#121;&#46;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x68;&#113;&#64;&#x74;&#x65;&#114;&#x61;&#99;&#x79;&#46;&#99;&#111;&#x6d;">&#x68;&#x71;&#x40;&#x74;&#x65;&#114;&#97;&#x63;&#x79;&#46;&#99;&#111;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -2750,60 +2905,6 @@ though.</p>
 <p>http://neverstopbuilding.net/chef-best-practices-a-series/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
 <li id="fn:4">
 <p>https://github.com/teracy-official/dev<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[octopress-semantic v0.1.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release/"/>
-    <updated>2013-09-20T08:55:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2013/09/20/semantic-web.jpg" title="semantic web" ></p>
-
-<p>We&rsquo;re very glad to announce <a href="https://github.com/hoatle/octopress-semantic">octopress-semantic</a> v0.1.0 plugin which will make your <code>octopress</code>
-blog semantic-web-friendly.</p>
-
-<p><code>octopress</code> already supports <code>hcard</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> microformat, however, it&rsquo;s not enough, we need to support
-more.</p>
-
-<!-- more -->
-
-
-<p>We&rsquo;re using this plugin for our blog posts, you could see how it works with Facebook Open Graph<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>,
-Twitter Cards<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> and Structured Data<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> by viewing the screen-shots captured below:</p>
-
-<p>Facebook Open Graph:</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2013/09/20/facebook-open-graph.png" title="facebook open graph" ></p>
-
-<p>Twitter Cards:</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2013/09/20/twitter-cards.png" title="twitter cards" ></p>
-
-<p>Structured Data:</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2013/09/20/structured-data.png" title="structured data" ></p>
-
-<p>More details: <a href="http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/">http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/</a></p>
-
-<p>Please head to <a href="https://github.com/hoatle/octopress-semantic">octopress-semantic</a> project to see how to install, configure and use it by
-following the instructions on <code>README.md</code> file.</p>
-
-<p>Have a nice day and happy blogging!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://microformats.org/wiki/hcard<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://developers.facebook.com/docs/opengraph/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://dev.twitter.com/docs/cards<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>https://developers.google.com/custom-search/docs/structured_data#microdata<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

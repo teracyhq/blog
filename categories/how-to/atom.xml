@@ -4,7 +4,7 @@
   <title><![CDATA[Category: how-to | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/how-to/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-16T04:05:24+00:00</updated>
+  <updated>2016-09-23T07:23:25+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,157 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to develop Angular 2 applications easily with Docker and angular-cli]]></title>
+    <link href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/"/>
+    <updated>2016-09-22T12:44:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
+
+<p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
+getting started article from the Angular 2 official documentation. That&rsquo;s the reason why
+<a href="https://cli.angular.io/">angular-cli</a> is created to ease the pain. <code>angular-cli</code> is a great CLI
+tool, however, it takes a lot of time to get it working by installing nodejs and <code>angular-cli</code>.
+Luckily, we&rsquo;ve created <a href="https://github.com/teracyhq/docker-angular-cli">docker-angular-cli</a> project
+to build a Docker image so that anyone could use it right away for any Angular 2 projects without the
+hassle of installing nodejs and <code>angular-cli</code>. This guide will help you get started in the most
+easily and convenient way. It&rsquo;s assumed that you don&rsquo;t need to master Docker but only require that
+Docker is installed on your machine and you could follow the instructions below.</p>
+
+<!-- more -->
+
+
+<h2>0. Prerequisites</h2>
+
+<ul>
+<li><p>Make sure the latest <code>Docker</code> and <code>docker-compose</code> is installed on your machine. If not, follow
+<a href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a> or <a href="https://docs.docker.com/engine/installation/linux/">https://docs.docker.com/engine/installation/linux/</a> or
+<a href="https://docs.docker.com/docker-for-windows/">https://docs.docker.com/docker-for-windows/</a> to install them.</p></li>
+<li><p><code>docker-angular-cli</code> is tested with <code>Docker</code> v1.12.1 and <code>docker-compose</code> v1.8.0 with the native app
+on Mac and on Ubuntu. It should work well on Windows, too.</p></li>
+</ul>
+
+
+<h2>1. Init a new project</h2>
+
+<p>First, to init a new Angular 2 project, follow:</p>
+
+<p><code>
+$ mkdir new-ng-project
+$ cd new-ng-project
+$ docker rm -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash
+</code></p>
+
+<p>After that, you should be presented with bash console for the docker container. Use <code>ng init</code> to
+init a new project.</p>
+
+<p>```</p>
+
+<h1>ng init &mdash;name &lt;project-name> &mdash;style scss</h1>
+
+<p>```</p>
+
+<p>You should see the &lt;project-name> yourself. By default, the style file is <code>css</code>. I recommend using
+<code>scss</code> extension for style files.</p>
+
+<h2>2. Add Dockerfile and docker-compose.yml file</h2>
+
+<p>Add Dockerfile and docker-compose.yml as I did with <a href="https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642">https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642</a></p>
+
+<h2>3. Note for angular-boilerplate</h2>
+
+<p>For easier setup with best practices, you can combine the 2 steps above (1 + 2) with:</p>
+
+<p><code>
+$ git clone git@github.com:teracyhq/angular-boilerplate.git --depth=1 new-ng-project
+</code></p>
+
+<p>More useful stuff will come to <a href="https://github.com/teracyhq/angular-boilerplate">angular-boilerplate</a>
+later such as CI, CD, production deployment, server side rendering, desktop app and native apps, etc
+best practices.</p>
+
+<h2>4. Serve</h2>
+
+<p>To start serving the web app, follow:</p>
+
+<p><code>
+$ docker-compose up serve
+</code></p>
+
+<p>and then open <a href="http://localhost:4200">http://localhost:4200</a> to see the web app.</p>
+
+<h2>5. Test</h2>
+
+<p>To run the unit test with Karma and Chrome, follow:</p>
+
+<p><code>
+$ docker-compose up test
+</code></p>
+
+<p>and you should see the unit test running on Chrome browser pre-installed on the Docker image.</p>
+
+<h2>6. Exec commands</h2>
+
+<p>To exec some commands, for example:</p>
+
+<p>for linting (code style checking):</p>
+
+<p><code>
+$ docker-compose exec serve ng lint
+</code></p>
+
+<p>or for installing more npm packages:</p>
+
+<p><code>
+$ docker-compose exec serve npm install
+</code></p>
+
+<p>or for running unit tests:</p>
+
+<p><code>
+$ docker-compose exec serve ng test --browsers Chrome_no_sandbox
+</code></p>
+
+<p>You can exec any commands on the running container.</p>
+
+<h2>7. Develop</h2>
+
+<p>Or if you want to open a new ssh session, open a new terminal window, and execute this:</p>
+
+<p><code>
+$ cd new-ng-project
+$ docker-compose run serve /bin/bash
+</code></p>
+
+<p>and then you should see something like:</p>
+
+<p><code>
+Starting virtual X frame buffer: Xvfb.
+Executing command /bin/bash
+root@6d15153f5858:~#
+</code>
+And now you can execute any commands you want.</p>
+
+<p>That&rsquo;s it. Now you should start developing Angular 2 applications more easily with <code>docker-compose</code>
+and <code>angular-cli</code> by using <code>docker-angular-cli</code>.</p>
+
+<p>You can follow the following tutorial to create a simple todo application: <a href="https://www.sitepoint.com/angular-2-tutorial/">https://www.sitepoint.com/angular-2-tutorial/</a></p>
+
+<h2>8. Learn more</h2>
+
+<ul>
+<li><a href="https://github.com/AngularClass/awesome-angular2">https://github.com/AngularClass/awesome-angular2</a></li>
+<li><a href="https://github.com/timjacobi/angular2-education">https://github.com/timjacobi/angular2-education</a></li>
+</ul>
+
+
+<p>If you need any consultancy or outsourcing, please contact us. We&rsquo;re eager to build world class web
+applications for you!</p>
+
+<p>Happy developing!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[how to use django-celery-email on Heroku]]></title>
@@ -225,9 +376,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#115;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#117;&#x73;&#x65;&#114;&#64;&#x67;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#115;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#117;&#115;&#101;&#114;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a>
+To: <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#115;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#117;&#115;&#101;&#114;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#115;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#x75;&#115;&#x65;&#x72;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x32;&#48;&#49;&#x35;&#49;&#50;&#x32;&#49;&#49;&#x31;&#x30;&#50;&#51;&#x30;&#46;&#x32;&#x33;&#52;&#x36;&#x33;&#x2e;&#56;&#48;&#x38;&#x34;&#53;&#64;&#118;&#97;&#x67;&#114;&#97;&#110;&#116;&#x2e;&#118;&#109;">&#50;&#x30;&#x31;&#53;&#49;&#x32;&#50;&#x31;&#x31;&#x31;&#x30;&#50;&#51;&#48;&#x2e;&#50;&#x33;&#52;&#x36;&#x33;&#x2e;&#56;&#48;&#56;&#52;&#53;&#64;&#118;&#x61;&#x67;&#x72;&#97;&#110;&#116;&#46;&#118;&#x6d;</a></p>
+Message-ID: <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#50;&#x30;&#x31;&#53;&#x31;&#50;&#50;&#x31;&#x31;&#49;&#48;&#x32;&#x33;&#x30;&#46;&#50;&#51;&#x34;&#x36;&#51;&#x2e;&#x38;&#x30;&#x38;&#x34;&#53;&#x40;&#x76;&#x61;&#103;&#x72;&#x61;&#x6e;&#116;&#46;&#x76;&#x6d;">&#50;&#48;&#49;&#53;&#49;&#x32;&#50;&#x31;&#x31;&#49;&#48;&#50;&#x33;&#48;&#x2e;&#x32;&#x33;&#52;&#54;&#x33;&#x2e;&#56;&#48;&#56;&#x34;&#53;&#x40;&#x76;&#97;&#103;&#114;&#97;&#110;&#116;&#46;&#118;&#x6d;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -526,7 +677,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#x68;&#113;&#64;&#116;&#101;&#114;&#x61;&#x63;&#121;&#x2e;&#99;&#111;&#x6d;">&#104;&#113;&#x40;&#x74;&#x65;&#x72;&#x61;&#x63;&#x79;&#x2e;&#x63;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#104;&#113;&#x40;&#x74;&#x65;&#x72;&#x61;&#99;&#x79;&#x2e;&#99;&#111;&#x6d;">&#104;&#113;&#x40;&#116;&#101;&#x72;&#x61;&#x63;&#121;&#x2e;&#99;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -858,59 +1009,6 @@ other HTTP(S) resources for our projects.</p>
 <p>https://help.github.com/articles/setting-up-a-custom-domain-with-pages<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>http://wiki.nginx.org/HttpRewriteModule<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Keep, share and manage top secret resources with git-encrypt and gitolite]]></title>
-    <link href="http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite/"/>
-    <updated>2013-08-07T00:00:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite</id>
-    <content type="html"><![CDATA[<p>Recently, we have a problem of top secret resources sharing that we need to resolve. Let me start
-by a story.</p>
-
-<p>As a startup of 2 co-founders, we have common top secret resources to be shared with each other.
-These common resources include credentials of many services (email, VPS, social networks, etc.),
-secret plan, road-map and secret documentation files. And we need to find a way to keep, share and
-manage these resources securely.</p>
-
-<!-- more -->
-
-
-<p>Our requirements include:</p>
-
-<ul>
-<li><strong>encryption</strong> is a <code>must</code></li>
-<li><strong>backup strategy</strong> is a <code>must</code></li>
-<li><strong>version control</strong> is a <code>should</code></li>
-<li><strong>keep, share and manage</strong> <code>easily</code> is a <code>should</code></li>
-</ul>
-
-
-<p>&ldquo;Encryption&rdquo; and &ldquo;version control&rdquo; requirements lead us to <code>git-encrypt</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, it&rsquo;s not perfect but
-it works.</p>
-
-<p>&ldquo;Backup strategy&rdquo; requirement leads us to keeping this secret git repository on a VPS, so we decided
-to install <code>gitolite</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> on the VPS because with <code>gitolite</code>, we could manage the security
-layer and git repository permissions more easily, we don&rsquo;t want to mess with linux permissions.
-For more details, please head to: <a href="http://git-scm.com/book/ch4-8.html">http://git-scm.com/book/ch4-8.html</a></p>
-
-<p>And that&rsquo;s it. Now we could enjoy top secret resources keeping, sharing and managing. It&rsquo;s not the
-most secured, but it&rsquo;s secured enough for us.</p>
-
-<p>If you have a better approach, please let us know by commenting.</p>
-
-<p>Happy working and happy securing!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>https://github.com/shadowhand/git-encrypt<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://gitolite.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
