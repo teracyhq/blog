@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to develop Angular 2 applications easily with Docker and angular-cli"
-author: 
+author: hoatle
 date: 2016-09-22 12:44
 comments: true
 categories:
