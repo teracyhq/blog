@@ -23,10 +23,10 @@ Everyone who is new to Angular 2 usually has many difficulties to get started wi
 getting started article from the Angular 2 official documentation. That's the reason why
 [angular-cli](https://cli.angular.io/) is created to ease the pain. `angular-cli` is a great CLI
 tool, however, it takes a lot of time to get it working by installing nodejs and `angular-cli`.
-Luckily, we create [docker-angular-cli](https://github.com/teracyhq/docker-angular-cli) project
+Luckily, we've created [docker-angular-cli](https://github.com/teracyhq/docker-angular-cli) project
 to build a Docker image so that anyone could use it right away for any Angular 2 projects without the
 hassle of installing nodejs and `angular-cli`. This guide will help you get started in the most
-easily and convenient way. It's assumed that you don't need master Docker but only require that
+easily and convenient way. It's assumed that you don't need to master Docker but only require that
 Docker is installed on your machine and you could follow the instructions below.
 
 <!-- more -->
@@ -64,7 +64,7 @@ You should see the <project-name> yourself. By default, the style file is `css`.
 2. Add Dockerfile and docker-compose.yml file
 ---------------------------------------------
 
-Add Dockerfile and docker-compose.yml like I did with https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642
+Add Dockerfile and docker-compose.yml as I did with https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642
 
 3. Note for angular-boilerplate
 -------------------------------
