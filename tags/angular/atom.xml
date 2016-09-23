@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag: angular-cli | Teracy's Blog]]></title>
-  <link href="http://blog.teracy.com/tags/angular-cli/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: angular | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/angular/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
   <updated>2016-09-23T08:55:38+00:00</updated>
   <id>http://blog.teracy.com/</id>
