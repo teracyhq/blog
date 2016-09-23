@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: docker-angular-cli | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/docker-angular-cli/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-23T07:33:34+00:00</updated>
+  <updated>2016-09-23T08:26:57+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -51,7 +51,7 @@ on Mac and on Ubuntu. It should work well on Windows, too.</p></li>
 <p><code>
 $ mkdir new-ng-project
 $ cd new-ng-project
-$ docker rm -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash
+$ docker run -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash
 </code></p>
 
 <p>After that, you should be presented with bash console for the docker container. Use <code>ng init</code> to

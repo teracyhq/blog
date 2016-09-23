@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-23T07:33:34+00:00</updated>
+  <updated>2016-09-23T08:26:57+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -53,7 +53,7 @@ on Mac and on Ubuntu. It should work well on Windows, too.</p></li>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ mkdir new-ng-project
 </span><span class='line'>$ cd new-ng-project
-</span><span class='line'>$ docker rm -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>$ docker run -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash</span></code></pre></td></tr></table></div></figure>
 
 
 <p>After that, you should be presented with bash console for the docker container. Use <code>ng init</code> to
@@ -1556,7 +1556,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x68;&#113;&#x40;&#116;&#101;&#114;&#x61;&#99;&#x79;&#46;&#99;&#x6f;&#109;">&#104;&#113;&#64;&#x74;&#101;&#x72;&#97;&#x63;&#121;&#x2e;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#104;&#x71;&#x40;&#116;&#x65;&#114;&#97;&#x63;&#x79;&#x2e;&#99;&#111;&#x6d;">&#x68;&#113;&#x40;&#116;&#x65;&#114;&#x61;&#99;&#121;&#x2e;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 

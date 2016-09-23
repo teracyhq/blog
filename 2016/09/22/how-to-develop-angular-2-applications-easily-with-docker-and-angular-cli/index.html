@@ -176,7 +176,7 @@ on Mac and on Ubuntu. It should work well on Windows, too.</p></li>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ mkdir new-ng-project
 </span><span class='line'>$ cd new-ng-project
-</span><span class='line'>$ docker rm -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>$ docker run -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash</span></code></pre></td></tr></table></div></figure>
 
 
 <p>After that, you should be presented with bash console for the docker container. Use <code>ng init</code> to
@@ -296,7 +296,8 @@ applications for you!</p>
       <div class="revision">
     <hr/>
     <p><strong>Latest Change Log:</strong></p>
-    <ul><li><strong>Fri Sep 23 07:31:37 2016</strong><br/>BLOG-73 | update author
+    <ul><li><strong>Fri Sep 23 08:24:14 2016</strong><br/>BLOG-73 | fix typo
+</li><li><strong>Fri Sep 23 07:31:37 2016</strong><br/>BLOG-73 | update author
 </li><li><strong>Fri Sep 23 07:17:02 2016</strong><br/>BLOG-73 | minor updates thanks to @hoavt's reviewing
 </li><li><strong>Fri Sep 23 02:49:48 2016</strong><br/>BLOG-73 | minor update
 </li><li><strong>Thu Sep 22 19:18:07 2016</strong><br/>BLOG-73 | How to develop Angular 2 applications easily with Docker and angular-cli
