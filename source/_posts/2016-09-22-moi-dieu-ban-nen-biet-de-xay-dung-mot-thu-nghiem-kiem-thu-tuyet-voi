@@ -10,14 +10,11 @@ categories:
 tags:
     - "testing"
     - "design"
-cover: /images/2016/08/05/bot-design.png
+cover: 
 description: 8 nguyên tắc trong thiết kế bot
 keywords: testing, design, UI, giao diện người dùng, thiết kế
 published: true
 ---
-
-{% img center /images/2016/08/05/bot-design.png Bot Design %}
-
 
 
 Gần đây số lượng các ứng dụng trong thị trường android và iOs đã vượt xa con số 8 triệu, ngoài ra còn
@@ -25,20 +22,20 @@ có một con số không giới hạn các trang web và các ứng dụng web 
 nữa. Với khối lượng khổng lồ các ứng dụng đó thì điều khan hiếm nhất là khoảng thời gian tập trung
 của người dùng cho mỗi ứng dụng.
 
-Thách thức lớn nhất trong thiết kế UX là thu hút được thời gian tập trung của người dùng.
+Thách thức lớn nhất trong thiết kế UX là thu hút được nhiều thời gian tập trung của người dùng.
 Điều này đặt ra một thách thức với người chủ sở hữu sản phẩm và những người thiết kế UX làm sao thiết kế
 ra những ứng dụng thu hút được sự chú ý và tham gia của người dùng.
 
-Tại sao kiểm thử lại đặc biệt quan trọng như vậy
+Tại sao thử nghiệm người dùng lại đặc biệt quan trọng như vậy
 ------------------------------------------------
 Một trong những cách rất hiệu quả để đảm bảo chuyển đổi và tham gia tốt hơn là thực hiện "thử nghiệm
 người dùng" (Hay đúng hơn là thử nghiệm khả năng sử dụng). Đó là một cách khoa học để tìm ra những gì
 mà người dùng dễ dàng tìm thấy và những điều họ phải làm. Nghiên cứu về người dùng thường xuyên được
 thảo luận bởi rất nhiều lãnh đạo nhóm thiết kế bao gồm IDEO, frog và nhiều nhà thiết kế khác.
 
-Chúng tôi đã quan sát một trong những đội hàng đầu thế giới có kinh nghiệm thiết kế phục vụ hàng triệu
+Chúng tôi đã quan sát một trong những đội ngũ hàng đầu thế giới có kinh nghiệm thiết kế phục vụ hàng triệu
 người dùng trên toàn cầu và đã rút ra được vài bài học nhanh chóng mà bạn có thể sử dụng trong nghiên
-cứu người dùng tới của mình:
+cứu người dùng săptới của mình:
 
 1. Biết được bạn đang mong muốn gì
 ----------------------------------
@@ -62,7 +59,7 @@ Trong ví dụ của chúng tôi, chúng tôi muốn xác nhận liệu người
 Việc thiết lập mục tiêu ngay từ đầu khi kiểm thử  sẽ giúp bạn có những câu hỏi đúng.
 
 2. Tuyển chọn người dùng thử nghiệm cẩn thận
---------------------------------------------
+-------------------------------------------------
 Khi bạn đã quyết định được mục tiêu thử nghiệm người dùng, bạn cần phải kiểm tra người dùng để thực hiện
 thử nghiệm người dùng. Khi một sản phẩm được xây dựng, bạn cũng đã có hồ sơ người dùng và bạn có một vài người dùng thực - những người muốn được xem các ứng dựng mới. Bạn có thể cùng họ thực hiện kiểm thử.
 
@@ -71,6 +68,8 @@ Mặc dù rất dễ dàng để kiểm thử với người dùng hiện tại 
 Để giảm bớt thành kiến từ những kinh nghiệm sẵn có, bạn có thể muốn tạo một phiên bản đầy đủ các ứng dụng để làm cho toàn bộ trải nghiệm của họ tự nhiên hơn.
 
 Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.
+
+{% img center /images/2016/09/22/image1.png %}
 
 Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
 quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
@@ -86,6 +85,8 @@ Bạn còn nghĩ ra được ý tưởng nào nữa không? Hãy cho chúng tôi
 -------------------------------------------------------
 "Tôi sẽ đợi tới giao diện cuối cùng để tiến hành kiểm thử người dùng". Chủ sở hữu sản phẩm chỉ tiến hành kiểm thử người dùng khi họ có được phiên bản cuối cùng. Đó không phải là một ý hay, bởi vì khi đó bạn sẽ phải lặp lại hầu hết thời gian và công sức đã bỏ ra.
 Lặp lại ngay khi có thể trong quy trình thiết kế để tiết kiệm thời gian và công sức.
+{% img center /images/2016/09/22/image2.png %}
+
 Những mong đợi trong các giai đoạn khác nhau của quy trình kiểm thử người dùng.
 - Từ ý tưởng đến phác hoạ bằng tay: Thảo luận các ý kiến trên giấy bút hoặc trên bảng trắng. Tập hợp các phác hoạ bằng tay vào CanvasFlip và mời người dùng nội bộ kiểm thử.
 - Từ phác học bằng tay đến thiết kế khung sườn (wireframing): Trong giai đoạn này, bạn gần như đã tạo được hình dáng phiên bản giao diện người dùng, xác định các icon và nhãn. Cách tốt nhất là giới thiệu chúng đến người dùng bên ngoài nhưng ở quy mô nhỏ.
@@ -95,9 +96,13 @@ Hầu hết các đội nổi tiếng đều sử dụng công cụ phân tích 
 4. Mức độ tham gia của bạn như thế nào trong quá trình kiểm thử người dùng
 --------------------------------------------------------------------------
 Luôn có sự đánh đổi giữa việc tạo ra một ngữ cảnh kiểm thử theo giời gian thực và việc quan sát người dùng.
-Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức và đưa ra quyết định mang tính quyết đoán hơn so với bản năng. Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:
+Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức và đưa ra quyết định mang tính quyết đoán hơn so với bản năng. 
+
+{% img center /images/2016/09/22/image3.png %}
+
+Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:
 - Kiểm duyệt tại chỗ: Trong giai đoạn này, bạn sẽ luôn ở cạnh người dùng, yêu cầu tiến hành các tác vụ, ra câu hỏi và quan sát phản ứng. Điều này sẽ có ích ở giai đoạn đầu phát triển thiết kế.
-- Kiểm duyệt điều khiển từ xa: Trong giai đoạn này, bạn có thể kết nối qua Skype, Google Hangout, Zoom hoặc Go-to-Meeting... Bạn có thể yêu cầu nhiệm vụ thực hiện và quan sát phản ứng. Nói chung là giữ cho sự tương tác càng ít càng tốt. Điều này hữu dụng trong giai đoạn dựng khung và thiết kế mockup.
+- Kiểm duyệt từ xa: Trong giai đoạn này, bạn có thể kết nối qua Skype, Google Hangout, Zoom hoặc Go-to-Meeting... Bạn có thể yêu cầu nhiệm vụ thực hiện và quan sát phản ứng. Nói chung là giữ cho sự tương tác càng ít càng tốt. Điều này hữu dụng trong giai đoạn dựng khung và thiết kế mockup.
 - Không kiểm duyệt: đúng như tên của nó, một thử nghiệm người dùng không được kiểm duyệt được tiến hành mà gần như không có sự can thiệp nào. Người dùng được đưa cho một nguyên mẫu thiết kê (phototype) và yêu cầu chạy thử hoặc đưa ra một tác vụ để thực hiện. Ví dụ: Mua/tìm kiếm một item nào đó. 
 
 5. Cách phân tích kết quả thử nghiệm người dùng
@@ -106,14 +111,14 @@ Khi bạn tiến hành thử nghiệm người dùng bằng bản thiết kế h
 
 Phân tích kết quả thử nghiệm người dùng ở giai đoạn đầu
 =====================================================
-Giai đoạn đầu thường tiến hành thử nghiệm người dùng ở mức có kiểm xoát. Kết quả thu được thường mang tính chủ quan, qua đó có thể hiểu được mong đợi và hành vi của người dùng và trên cơ sở đó để xây dụng thiết kế. Khi đã hiểu được các tính năng, các mẫu thiết kế, các lựa chọn điều hướng, sơ đồ icon, ưu iên về font chữ, nhãn, bạn có thể xây dựng khung cho toàn bộ quy trình thiết kế còn lại.
+Giai đoạn đầu thường tiến hành thử nghiệm người dùng ở mức có kiểm soát. Kết quả thu được thường mang tính chủ quan, qua đó có thể hiểu được mong đợi và hành vi của người dùng và trên cơ sở đó để xây dụng thiết kế. Khi đã hiểu được các tính năng, các mẫu thiết kế, các lựa chọn điều hướng, sơ đồ icon, ưu iên về font chữ, nhãn, bạn có thể xây dựng khung cho toàn bộ quy trình thiết kế còn lại.
 
 Phân tích kết quả thử nghiệm người dùng ở giai đoạn sau.
 =====================================================
 
 Khi nghiên cứu kết quả thử nghiệm người dùng ở giai đoạn sau, bạn buộc phải tuân theo thuyết thiết kế đã xây dựng ở giai đoạn trước. Các thuyết đó theo dạng "chuyển đổi theo dòng UX" hoặc "Thẩm định CTA" trong các thiết kế màn hình. Ví dụ, bạn muốn biết có bao nhiêu người dùng đã bỏ đi khi đã chọn xong sản phẩm và đang chuẩn bị sang bước thanh toán. Hay có bao nhiêu người dùng đã click vào "Login" CTA so với phần còn lại của màn hình. 
 
-Khi bạn hiểu được hành vi và mong đợi của người dùng, bạn sẽ có lựa chọn tốt hơn giữa thử nghiệm người dùng ở mức kiểm xoát từ xa và không kiểm xoát.
+Khi bạn hiểu được hành vi và mong đợi của người dùng, bạn sẽ có lựa chọn tốt hơn giữa thử nghiệm người dùng ở mức kiểm soát từ xa và không kiểm soát.
 
 Công cụ kiểm thử tính khả dụng từ xa như Canvasflip có thể cung cấp rất nhiều thông tin hữu ích. 
 
@@ -121,17 +126,24 @@ Biết được người dùng sẽ bỏ UX-flow từ chỗ nào.
 =============================================
 Trong kênh chuyển đổi trên (được tạo ra với CanvasFlip.com), bạn có thể thấy được sừ rời bỏ lớn tại vòng lặp thứ 1 trong màn hình "Experiencies".
 
+{% img center /images/2016/09/22/image4.png %}
+
+
 Nơi người dùng tương tác nhiều nhất trong giao diện
 ===================================================
 Một bản đồ nhiệt tương tác về thử nghiệm người dùng được tạo ra bởi CanvasFlip.com giúp bạn biết được khu vực tương tác thường xuyên của người dùng trong giao diện người dùng.
+{% img center /images/2016/09/22/image5.png %}
+
 
 Phân tích hành trình của từng cá nhân người dùng
 ================================================
 Với CanvasFlip.com, bạn có thể phân tích được những điều hướng của người dùng và thời gian người dùng ở lại mỗi màn hình.
+{% img center /images/2016/09/22/image6.png %}
 
 Xem toàn bộ video phiên người dùng để phân tích và cải thiện hành vi người dùng
 ===============================================================================
 Bạn có thể phân tích các điều hướng người dùng, sau đó tìm ra nơi người dùng gặp vấn đề và tìm cách cải thiện trải nghiệm người dùng.
+{% img center /images/2016/09/22/image7.png %}
 
 Kết luận
 --------
