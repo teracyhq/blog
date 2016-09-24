@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: docker-angular-cli | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/docker-angular-cli/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-23T08:55:38+00:00</updated>
+  <updated>2016-09-24T03:33:52+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -75,7 +75,7 @@ init a new project.</p>
 <p>For easier setup with best practices, you can combine the 2 steps above (1 + 2) with:</p>
 
 <p><code>
-$ git clone git@github.com:teracyhq/angular-boilerplate.git --depth=1 new-ng-project
+$ git clone https://github.com/teracyhq/angular-boilerplate.git --depth=1 new-ng-project
 </code></p>
 
 <p>More useful stuff will come to <a href="https://github.com/teracyhq/angular-boilerplate">angular-boilerplate</a>

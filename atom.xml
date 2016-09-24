@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-23T08:55:38+00:00</updated>
+  <updated>2016-09-24T03:33:52+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -75,7 +75,7 @@ init a new project.</p>
 <p>For easier setup with best practices, you can combine the 2 steps above (1 + 2) with:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git@github.com:teracyhq/angular-boilerplate.git --depth=1 new-ng-project</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone https://github.com/teracyhq/angular-boilerplate.git --depth=1 new-ng-project</span></code></pre></td></tr></table></div></figure>
 
 
 <p>More useful stuff will come to <a href="https://github.com/teracyhq/angular-boilerplate">angular-boilerplate</a>
@@ -1556,7 +1556,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x68;&#113;&#x40;&#116;&#101;&#114;&#97;&#99;&#x79;&#46;&#x63;&#x6f;&#x6d;">&#x68;&#x71;&#x40;&#x74;&#x65;&#114;&#97;&#x63;&#x79;&#x2e;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#x71;&#x40;&#x74;&#x65;&#x72;&#97;&#x63;&#121;&#46;&#99;&#x6f;&#x6d;">&#104;&#x71;&#64;&#116;&#x65;&#114;&#97;&#x63;&#121;&#46;&#99;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
