@@ -73,7 +73,7 @@ Add Dockerfile and docker-compose.yml as I did with https://github.com/teracyhq/
 For easier setup with best practices, you can combine the 2 steps above (1 + 2) with:
 
 ```
-$ git clone git@github.com:teracyhq/angular-boilerplate.git --depth=1 new-ng-project
+$ git clone https://github.com/teracyhq/angular-boilerplate.git --depth=1 new-ng-project
 ```
 
 More useful stuff will come to [angular-boilerplate](https://github.com/teracyhq/angular-boilerplate)
