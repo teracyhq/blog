@@ -2,7 +2,7 @@
 layout: post
 title: "Những điều cần biết để xây dựng thử nghiệm người dùng hiệu quả"
 author: hoavu
-date: 2016-09-22 09:40
+date: 2016-09-29 09:40
 comments: true
 categories:
     - "vi"
@@ -11,13 +11,13 @@ tags:
     - "testing"
     - "design"
     - "UX"
-cover: /images/2016/09/22/xay-dung-thu-nghiem-nguoi-dung.png
+cover: /images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png
 description: Những điều cần biết để xây dựng thử nghiệm người dùng hiệu quả
 keywords: user testing, design, UX, trải nghiệm người dùng, thiết kế
 published: true
 ---
 
-{% img center /images/2016/09/22/xay-dung-thu-nghiem-nguoi-dung.png Xây dựng thử nghiệm người dùng %}
+{% img center /images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png Xây dựng thử nghiệm người dùng %}
 
 Gần đây số lượng các ứng dụng trong thị trường android và iOs đã vượt xa con số 8 triệu, ngoài ra còn
 có một con số không giới hạn các trang web và các ứng dụng web đang xuất hiện khắp nơi trên thế giới
@@ -72,7 +72,7 @@ Mặc dù rất dễ dàng để kiểm thử với người dùng hiện tại 
 
 Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.
 
-{% img center /images/2016/09/22/ho-so-nguoi-dung-cua-airbnb.jpeg % Hồ sơ người dùng của airbnb}
+{% img center /images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg % Hồ sơ người dùng của airbnb}
 
 Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
 quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
@@ -88,7 +88,7 @@ Bạn còn nghĩ ra được ý tưởng nào nữa không? Hãy cho chúng tôi
 =======================================================
 "Tôi sẽ đợi tới giao diện cuối cùng để tiến hành kiểm thử người dùng". Chủ sở hữu sản phẩm chỉ tiến hành kiểm thử người dùng khi họ có được phiên bản cuối cùng. Đó không phải là một ý hay, bởi vì khi đó bạn sẽ phải lặp lại hầu hết thời gian và công sức đã bỏ ra.
 Lặp lại ngay khi có thể trong quy trình thiết kế để tiết kiệm thời gian và công sức.
-{% img center /images/2016/09/22/quy-trinh-thiet-ke.jpeg Quy trình thiết kế %}
+{% img center /images/2016/09/29/quy-trinh-thiet-ke.jpeg Quy trình thiết kế %}
 
 Những mong đợi trong các giai đoạn khác nhau của quy trình kiểm thử người dùng.
 - **Từ ý tưởng đến phác hoạ bằng tay**: Thảo luận các ý kiến trên giấy bút hoặc trên bảng trắng. Tập hợp các phác hoạ bằng tay vào CanvasFlip và mời người dùng nội bộ kiểm thử.
@@ -101,7 +101,7 @@ Hầu hết các nhóm nổi tiếng đều sử dụng công cụ phân tích U
 Luôn có sự đánh đổi giữa việc tạo ra một ngữ cảnh kiểm thử theo giời gian thực và việc quan sát người dùng.
 Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức và đưa ra quyết định mang tính quyết đoán hơn so với bản năng. 
 
-{% img center /images/2016/09/22/kiem-thu-tinh-kha-dung.png Kiểm thử tính khả dụng %}
+{% img center /images/2016/09/29/kiem-thu-tinh-kha-dung.png Kiểm thử tính khả dụng %}
 
 Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:
 - **Kiểm duyệt tại chỗ**: Trong giai đoạn này, bạn sẽ luôn ở cạnh người dùng, yêu cầu tiến hành các tác vụ, ra câu hỏi và quan sát phản ứng. Điều này sẽ có ích ở giai đoạn đầu phát triển thiết kế.
@@ -127,25 +127,25 @@ Công cụ kiểm thử tính khả dụng từ xa như Canvasflip có thể cun
 **Biết được người dùng sẽ bỏ UX-flow từ chỗ nào**
 Trong kênh chuyển đổi trên (được tạo ra với CanvasFlip.com), bạn có thể thấy được sừ rời bỏ lớn tại vòng lặp thứ 1 trong màn hình "Experiencies".
 
-{% img center /images/2016/09/22/quy-trinh-chuyen-doi-hinh-pheu.png Quy trình chuyển đổi hình phễu %}
+{% img center /images/2016/09/29/quy-trinh-chuyen-doi-hinh-pheu.png Quy trình chuyển đổi hình phễu %}
 
 
 **Nơi người dùng tương tác nhiều nhất trong giao diện**
 
 Một bản đồ nhiệt tương tác về thử nghiệm người dùng được tạo ra bởi CanvasFlip.com giúp bạn biết được khu vực tương tác thường xuyên của người dùng trong giao diện người dùng.
 
-{% img center /images/2016/09/22/ban-do-nhiet-tuong-tac.png Bản đồ nhiệt tương tác %}
+{% img center /images/2016/09/29/ban-do-nhiet-tuong-tac.png Bản đồ nhiệt tương tác %}
 
 
 **Phân tích hành trình của từng cá nhân người dùng**
 
 Với CanvasFlip.com, bạn có thể phân tích được những điều hướng của người dùng và thời gian người dùng ở lại mỗi màn hình.
-{% img center /images/2016/09/22/hanh-trinh-cua-nguoi-dung.png Hành trình của người dùng %}
+{% img center /images/2016/09/29/hanh-trinh-cua-nguoi-dung.png Hành trình của người dùng %}
 
 **Xem toàn bộ video phiên người dùng để phân tích và cải thiện hành vi người dùng**
 
 Bạn có thể ghi lại các điều hướng người dùng, sau đó tìm ra nơi người dùng gặp vấn đề và tìm cách cải thiện trải nghiệm người dùng.
-{% img center /images/2016/09/22/ghi-lai-dieu-huong-nguoi-dung.png Ghi lại điều hướng người dùng %}
+{% img center /images/2016/09/29/ghi-lai-dieu-huong-nguoi-dung.png Ghi lại điều hướng người dùng %}
 
 Kết luận
 =======
