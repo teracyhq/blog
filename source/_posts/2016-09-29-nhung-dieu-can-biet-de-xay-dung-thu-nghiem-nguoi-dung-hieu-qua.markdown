@@ -72,13 +72,13 @@ Mặc dù rất dễ dàng để kiểm thử với người dùng hiện tại 
 
 Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.
 
-{% img center /images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg % Hồ sơ người dùng của airbnb}
+{% img center /images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg % Hồ sơ người dùng của airbnb %}
 
 Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
 quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
 chọn người dùng mẫu cho thử nghiệm người dùng:
 - **Liên quan**: Ứng dụng của bạn có liên quan tới người dùng thử nghiệm không?
-- Tần suất sử dụng: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?
+- **Tần suất sử dụng**: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?
 - **Nhân khẩu học**: Sự khác biệt văn hoá là một yếu tố quan trọng đối với trải nghiệm của người dùng. Tập trung vào nơi ở, tuổi, giới tính khi lựa chọn người dùng mẫu. 
 - **Mức thu nhập**: Những người dùng này có sẵn sàng trả tiền để sử dụng ứng dụng/dịch vụ của bạn không? Điều này bao gồm cả khả năng tài chính và thói quen mua sắm.
 
