@@ -40,7 +40,7 @@ thảo luận bởi rất nhiều lãnh đạo nhóm thiết kế bao gồm [IDE
 
 Chúng tôi đã quan sát một số những đội ngũ hàng đầu thế giới có kinh nghiệm thiết kế phục vụ hàng triệu
 người dùng trên toàn cầu và đã rút ra được vài bài học nhanh chóng mà bạn có thể sử dụng trong nghiên
-cứu người dùng săp tới của mình:
+cứu người dùng sắp tới của mình:
 
 1. Biết được bạn đang mong muốn gì
 ==================================
@@ -61,6 +61,7 @@ Ví dụ, mục tiêu chính đối với ứng dụng hiện có trong ví dụ
 Đối với ứng dụng sắp ra, mục tiêu chính có thể là xác nhận các giả thuyết thiết kế.
 
 Trong ví dụ của chúng tôi, chúng tôi muốn xác nhận liệu người dùng sẽ sử dụng các tuỳ chọn để tìm các loại âm nhạc thay vì sử dụng bộ lọc.
+
 **Việc thiết lập mục tiêu ngay từ đầu khi kiểm thử sẽ giúp bạn có những câu hỏi đúng**.
 
 2. Tuyển chọn người dùng thử nghiệm cẩn thận
@@ -74,14 +75,18 @@ Mặc dù rất dễ dàng để kiểm thử với người dùng hiện tại 
 
 Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.
 
-{% img center /images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg % Hồ sơ người dùng của airbnb %}
+{% img center /images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg Hồ sơ người dùng của airbnb %}
 
 Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
 quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
 chọn người dùng mẫu cho thử nghiệm người dùng:
+
 - **Liên quan**: Ứng dụng của bạn có liên quan tới người dùng thử nghiệm không?
+
 - **Tần suất sử dụng**: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?
+
 - **Nhân khẩu học**: Sự khác biệt văn hoá là một yếu tố quan trọng đối với trải nghiệm của người dùng. Tập trung vào nơi ở, tuổi, giới tính khi lựa chọn người dùng mẫu. 
+
 - **Mức thu nhập**: Những người dùng này có sẵn sàng trả tiền để sử dụng ứng dụng/dịch vụ của bạn không? Điều này bao gồm cả khả năng tài chính và thói quen mua sắm.
 
 Bạn còn nghĩ ra được ý tưởng nào nữa không? Hãy cho chúng tôi biết nhé.
@@ -93,9 +98,13 @@ Lặp lại ngay khi có thể trong quy trình thiết kế để tiết kiệm
 {% img center /images/2016/09/29/quy-trinh-thiet-ke.jpeg Quy trình thiết kế %}
 
 Những mong đợi trong các giai đoạn khác nhau của quy trình kiểm thử người dùng.
+
 - **Từ ý tưởng đến phác hoạ bằng tay**: Thảo luận các ý kiến trên giấy bút hoặc trên bảng trắng. Tập hợp các phác hoạ bằng tay vào CanvasFlip và mời người dùng nội bộ kiểm thử.
+
 - **Từ phác họa bằng tay đến thiết kế khung sườn (wireframing)**: Trong giai đoạn này, bạn gần như đã tạo được hình dáng phiên bản giao diện người dùng, xác định các icon và nhãn. Cách tốt nhất là giới thiệu chúng đến người dùng bên ngoài nhưng ở quy mô nhỏ.
+
 - **Từ thiết kế khung sườn đến mockup ban đầu**: Khi bạn xây dựng các mockup, bạn nên giới thiệu chúng đến người dùng để thu được các trải nghiệm ban đầu. Bạn tiếp tục sửa đổi và đưa ra bản giao diện người dùng cuối cùng trên cơ sở nhận xét của người dùng ở giai đoạn này.
+
 Hầu hết các nhóm nổi tiếng đều sử dụng công cụ phân tích UX như CanvasFlip để tạo ra dòng UX tương tác (nguyên mẫu) và tạo ra bộ phân tích UX như video người dùng, quy trình chuyển đổi hình phễu, và bản đồ nhiệt tương tác.
 
 4. Mức độ tham gia của bạn như thế nào trong quá trình kiểm thử người dùng
@@ -106,13 +115,16 @@ Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức v�
 {% img center /images/2016/09/29/kiem-thu-tinh-kha-dung.png Kiểm thử tính khả dụng %}
 
 Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:
+
 - **Kiểm duyệt tại chỗ**: Trong giai đoạn này, bạn sẽ luôn ở cạnh người dùng, yêu cầu tiến hành các tác vụ, ra câu hỏi và quan sát phản ứng. Điều này sẽ có ích ở giai đoạn đầu phát triển thiết kế.
+
 - **Kiểm duyệt từ xa**: Trong giai đoạn này, bạn có thể kết nối qua Skype, Google Hangout, Zoom hoặc Go-to-Meeting... Bạn có thể yêu cầu nhiệm vụ thực hiện và quan sát phản ứng. Nói chung là giữ cho sự tương tác càng ít càng tốt. Điều này hữu dụng trong giai đoạn dựng khung và thiết kế mockup.
-- **Không kiểm duyệt**: đúng như tên của nó, một thử nghiệm người dùng không được kiểm duyệt được tiến hành mà gần như không có sự can thiệp nào. Người dùng được đưa cho một nguyên mẫu thiết kê (phototype) và yêu cầu chạy thử hoặc đưa ra một tác vụ để thực hiện. Ví dụ: Mua/tìm kiếm một item nào đó. 
+
+- **Không kiểm duyệt**: đúng như tên của nó, một thử nghiệm người dùng không được kiểm duyệt được tiến hành mà gần như không có sự can thiệp nào. Người dùng được đưa cho một nguyên mẫu thiết kế (phototype) và yêu cầu chạy thử hoặc đưa ra một tác vụ để thực hiện. Ví dụ: Mua/tìm kiếm một item nào đó. 
 
 5. Cách phân tích kết quả thử nghiệm người dùng
 ==============================================
-Khi bạn tiến hành thử nghiệm người dùng bằng bản thiết kế hiện có, bạn thường thực thực hiện với phần dễ trước. Tiếp đến sẽ là những phần quan trọng và phức tạp hơn - để phân tích kết quả kiểm thử người dùng, tìm ra những thứ cần loại bỏ và xem xét mức độ ảnh hưởng của các kết quả đó đối với thiết kế hiện tại.
+Khi bạn tiến hành thử nghiệm người dùng bằng bản thiết kế hiện có, bạn thường thực hiện với phần dễ trước. Tiếp đến sẽ là những phần quan trọng và phức tạp hơn - để phân tích kết quả kiểm thử người dùng, tìm ra những thứ cần loại bỏ và xem xét mức độ ảnh hưởng của các kết quả đó đối với thiết kế hiện tại.
 
 **Phân tích kết quả thử nghiệm người dùng ở giai đoạn đầu**
 
@@ -127,6 +139,7 @@ Khi bạn hiểu được hành vi và mong đợi của người dùng, bạn s
 Công cụ kiểm thử tính khả dụng từ xa như Canvasflip có thể cung cấp rất nhiều thông tin hữu ích. 
 
 **Biết được người dùng sẽ bỏ UX-flow từ chỗ nào**
+
 Trong kênh chuyển đổi trên (được tạo ra với CanvasFlip.com), bạn có thể thấy được sừ rời bỏ lớn tại vòng lặp thứ 1 trong màn hình "Experiencies".
 
 {% img center /images/2016/09/29/quy-trinh-chuyen-doi-hinh-pheu.png Quy trình chuyển đổi hình phễu %}
