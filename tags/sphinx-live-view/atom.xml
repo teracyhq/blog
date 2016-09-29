@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: sphinx-live-view | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/sphinx-live-view/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
     <updated>2013-11-26T09:06:00+00:00</updated>
     <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
-    <content type="html"><![CDATA[<p>{% img center /images/sphinx.png Sphinx Doc Logo %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
 
 <p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
 support for v0.3.0 release. This release introduces some breaking changes and you should know to

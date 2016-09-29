@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress-semantic | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/octopress-semantic/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release/"/>
     <updated>2013-09-20T08:55:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2013/09/20/semantic-web.jpg semantic web %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/20/semantic-web.jpg" title="semantic web" ></p>
 
 <p>We&rsquo;re very glad to announce <a href="https://github.com/hoatle/octopress-semantic">octopress-semantic</a> v0.1.0 plugin which will make your <code>octopress</code>
 blog semantic-web-friendly.</p>
@@ -34,15 +34,15 @@ Twitter Cards<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> and St
 
 <p>Facebook Open Graph:</p>
 
-<p>{% img center /images/2013/09/20/facebook-open-graph.png facebook open graph %}</p>
+<p><img class="center" src="/images/2013/09/20/facebook-open-graph.png" title="facebook open graph" ></p>
 
 <p>Twitter Cards:</p>
 
-<p>{% img center /images/2013/09/20/twitter-cards.png twitter cards %}</p>
+<p><img class="center" src="/images/2013/09/20/twitter-cards.png" title="twitter cards" ></p>
 
 <p>Structured Data:</p>
 
-<p>{% img center /images/2013/09/20/structured-data.png structured data %}</p>
+<p><img class="center" src="/images/2013/09/20/structured-data.png" title="structured data" ></p>
 
 <p>More details: <a href="http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/">http://www.google.com/webmasters/tools/richsnippets?url=http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/</a></p>
 

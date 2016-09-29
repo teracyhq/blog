@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress-cc-license | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/octopress-cc-license/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release/"/>
     <updated>2013-09-06T15:56:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2013/09/06/cc-by.png Creative Commons License %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/06/cc-by.png" title="Creative Commons License" ></p>
 
 <p>&ldquo;Open&rdquo; is one of Teracy&rsquo;s most important values. We promote open source projects on our
 development path.</p>

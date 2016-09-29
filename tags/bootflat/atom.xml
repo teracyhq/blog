@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: bootflat | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/bootflat/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch/"/>
     <updated>2014-10-08T00:00:00+00:00</updated>
     <id>http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/10/cover.png %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/10/cover.png"></p>
 
 <p><strong><em>Why Sketch?</em></strong></p>
 

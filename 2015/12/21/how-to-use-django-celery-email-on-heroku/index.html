@@ -1,0 +1,1110 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>how to use django-celery-email on Heroku - Teracy's Blog</title>
+  
+  <meta name="author" content="hoatle">
+
+  
+  <meta name="description" content="How to use django-celery-email on Heroku?">
+  <meta name="keywords" content="Django, Celery, email, django-celery-email, Heroku, distributed task queue">
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="how to use django-celery-email on Heroku - Teracy's Blog" />
+  <meta property="og:description" content="How to use django-celery-email on Heroku?" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/2015/12/21/django_celery.png" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracyhq" />
+  <meta name="twitter:creator" content="@hoatle" />
+  <meta name="twitter:title" content="how to use django-celery-email on Heroku - Teracy's Blog" />
+  <meta name="twitter:description" content="How to use django-celery-email on Heroku?" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/2015/12/21/django_celery.png" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="/javascripts/libs/jquery.browser.min.js" type="text/javascript"></script>
+<script src="/javascripts/font.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news">News</a></li>
+  <li><a href="/categories/projects">Projects</a></li>
+  <li><a href="/categories/how-to">How-to</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">How to Use Django-celery-email on Heroku</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2015-12-21T09:40:00+00:00" datetime="2015-12-21T09:40:00+00:00" pubdate data-updated="true">Dec 21<span>st</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p><img class="center" src="/images/2015/12/21/django_celery.png" title="Django Celery" ></p>
+
+<p>When I was asked to use a distributed task queue for emails on a Django project, I chose
+django-celery-email. However, during developing and testing, I faced some problems due to the lack
+of clear guide from django-celery-email, so I wrote this post as a step by step guide for anyone
+who wants use it with much ease. So let&rsquo;s get started!</p>
+
+<!-- more -->
+
+
+<h2>Project Setup</h2>
+
+<ul>
+<li><p>You need to setup local development environment with teracy-dev v0.4.2:
+<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">http://dev.teracy.org/docs/0.4.2/getting_started.html</a></p></li>
+<li><p>We&rsquo;re going to use <a href="https://github.com/teracyhq/django-boilerplate">https://github.com/teracyhq/django-boilerplate</a> v0.4.0 to develop Django
+applications:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant ssh
+</span><span class='line'>$ ws
+</span><span class='line'>$ cd personal
+</span><span class='line'>$ mkdir django-celery
+</span><span class='line'>$ cd django-celery
+</span><span class='line'>$ git init
+</span><span class='line'>$ git remote add djbp https://github.com/teracyhq/django-boilerplate
+</span><span class='line'>$ git fetch djbp
+</span><span class='line'>$ git merge djbp/v0.4.0</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>We need to create a virtual environment for the Django app and to install dependencies:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkvirtualenv django-celery
+</span><span class='line'>$ pip install -r requirements/dev.txt</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Set the required environment variables:</li>
+</ul>
+
+
+<p>By following <a href="http://12factor.net/config,">http://12factor.net/config,</a> we should <code>export</code> the required variables. For development
+convenience, .env file is supported and recommeded only for development mode. So let&rsquo;s create .env
+file at <code>django-celery/.env</code> with the following content:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ADMINS=(('&lt;your_name&gt;', '&lt;your_email&gt;'),)
+</span><span class='line'>DATABASE_URL=sqlite:///project/data/dj-celery.db</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>ADMINS</code> variable is used for testing emails, you should fill in your admins details.</p>
+
+<ul>
+<li>Run the Django application:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py migrate # migrate for the first time to create db schema creation and migration
+</span><span class='line'>$ ./manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(django-celery)vagrant@vagrant:~/workspace/personal/django-celery$ ./manage.py runserver 0.0.0.0:8000
+</span><span class='line'>Performing system checks...
+</span><span class='line'>
+</span><span class='line'>System check identified no issues (0 silenced).
+</span><span class='line'>December 01, 2015 - 13:09:11
+</span><span class='line'>Django version 1.8.7, using settings 'settings.project.dev'
+</span><span class='line'>Starting development server at http://0.0.0.0:8000/
+</span><span class='line'>Quit the server with CONTROL-C.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Open <a href="http://localhost:8000,">http://localhost:8000,</a> you should see the 404 error page and it&rsquo;s expected. We&rsquo;ll add
+functionalities for the application by next steps.</p>
+
+<h2>Heroku Deployment</h2>
+
+<p>Let&rsquo;s deploy the Django application on Heroku to apply continuous delivery philosophy.</p>
+
+<p>Make sure you have an account at <a href="https://heroku.com">https://heroku.com</a></p>
+
+<ul>
+<li>Install Heroku Toolbelt</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Login</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku login</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Create a Heroku application</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ws
+</span><span class='line'>$ cd personal/django-celery
+</span><span class='line'>$ heroku create &lt;your_app_name&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Configure</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config:set DJANGO_SETTINGS_MODULE=project.settings.prod
+</span><span class='line'>$ heroku config:set ADMINS="(('&lt;your_name&gt;', '&lt;your_email&gt;'),)"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Deploy</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push heroku master
+</span><span class='line'>$ heroku run python manage.py migrate</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After that, you should access your deployment app at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/</p>
+
+<p>I created <code>dj-celery</code> app name and it&rsquo;s availalbe at: <a href="https://dj-celery.herokuapp.com/">https://dj-celery.herokuapp.com/</a></p>
+
+<p>From now on, to update the deployment on Heroku, we just need to push new commits to the heroku
+repository.</p>
+
+<h2>django-userena Setup</h2>
+
+<p>To see how emails work with celery, let&rsquo;s add user management functionalities which should also send
+emails for confirming when signing up.</p>
+
+<p>There is already an application for that, it is: <code>django-userena</code>.</p>
+
+<ul>
+<li><p>Install:</p>
+
+<p>By following the installation guide at:
+<a href="http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena">http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena</a> and
+adapting to <code>django-boilerplate</code>.</p>
+
+<ul>
+<li><p>Add <code>django-userena&gt;=1.4.1,&lt;1.5.0</code> to <code>requirements/project/common.txt</code>, so we&rsquo;ll use 1.4.x
+versions of <code>django-userena</code> like I did at:
+<a href="https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c">https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c</a></p></li>
+<li><p>Install with: <code>$ pip install -r requirements/dev.txt --upgrade</code> (<code>upgrade</code> here means installing
+and upgrading any outdated packages)</p></li>
+</ul>
+</li>
+<li><p>Configure:</p>
+
+<p>By following the guide at:
+<a href="http://django-userena.readthedocs.org/en/latest/installation.html#required-settings">http://django-userena.readthedocs.org/en/latest/installation.html#required-settings</a> like I did
+at: <a href="https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9">https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9</a></p>
+
+<p>There is a migration issue that requires to create apps/userena_patch like I did at:
+<a href="https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580">https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580</a></p></li>
+<li><p><code>makemigrations</code> for the accounts app:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py makemigrations</span></code></pre></td></tr></table></div></figure>
+
+
+<p>  Commit the changes like I did at:
+  <a href="https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578">https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578</a></p>
+
+<ul>
+<li>Migrate and Run:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py migrate
+</span><span class='line'>$ ./manage.py check_permissions
+</span><span class='line'>$ ./manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see the page of <a href="http://localhost:8000/accounts/signup">http://localhost:8000/accounts/signup</a> now. Let&rsquo;s signup a user and you
+should see something similar on the console:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>MIME-Version: 1.0
+</span><span class='line'>Content-Type: text/plain; charset="utf-8"
+</span><span class='line'>Content-Transfer-Encoding: 7bit
+</span><span class='line'>Subject: Your signup at localhost.
+</span><span class='line'>From: webmaster@localhost
+</span><span class='line'>To: sample.user@gmail.com
+</span><span class='line'>Date: Mon, 21 Dec 2015 11:02:30 -0000
+</span><span class='line'>Message-ID: &lt;20151221110230.23463.80845@vagrant.vm&gt;
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>Dear hoatle,
+</span><span class='line'>
+</span><span class='line'>Thank you for signing up at localhost.
+</span><span class='line'>
+</span><span class='line'>To activate your account you should click on the link below:
+</span><span class='line'>
+</span><span class='line'>http://localhost:8000/accounts/activate/fe547230a3039c476a127408e9d824894d0a9064/
+</span><span class='line'>
+</span><span class='line'>Thanks for using our site!
+</span><span class='line'>
+</span><span class='line'>Sincerely,
+</span><span class='line'>localhost
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>-------------------------------------------------------------------------------</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>To deploy Heroku:</li>
+</ul>
+
+
+<p>Note: we need to set SITE_DOMAIN and SITE_NAME to match the created Heroku application.
+These variables are already configured by django-boilerplate by default on development mode.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config:set SITE_DOMAIN=&lt;your_app_name&gt;.herokuapp.com
+</span><span class='line'>$ heroku config:set SITE_NAME=&lt;your_site_name&gt;
+</span><span class='line'>$ git push heroku master
+</span><span class='line'>$ heroku run python manage.py migrate
+</span><span class='line'>$ heroku run python manage.py check_permissions</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see the page of <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup now. However, don&rsquo;t
+try to signup on the Heroku app yet because we need to configure the email backend.</p>
+
+<h2>SMTP Email Backend Setup</h2>
+
+<p>By default, development mode uses console backend and production mode uses SMTP backend for emails.
+Let&rsquo;s use SMTP backend for both development mode on localhost and production mode on Heroku.</p>
+
+<p>For easier setup, let&rsquo;s use mailgun addon (free plan) from the Heroku app:
+<a href="https://elements.heroku.com/addons/mailgun">https://elements.heroku.com/addons/mailgun</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku addons:create mailgun:starter</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To see all available variables, use:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should see something similar to this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=== dj-celery Config Vars
+</span><span class='line'>ADMINS:                 (('&lt;your_name&gt;', '&lt;your_email&gt;'),)
+</span><span class='line'>DATABASE_URL:           postgres://erdidqkixwegwg:hGZztw2Oh3EmNWfD5IfTb3XcyO@ec2-107-21-224-11.compute-1.amazonaws.com:5432/dembq6s6m1mohq
+</span><span class='line'>DJANGO_SETTINGS_MODULE: project.settings.prod
+</span><span class='line'>MAILGUN_API_KEY:        key-9587e40f127a1fe8fbab10622be69169
+</span><span class='line'>MAILGUN_DOMAIN:         appb8c22c19f6654edeb3c25768d4674002.mailgun.org
+</span><span class='line'>MAILGUN_PUBLIC_KEY:     pubkey-51b28300a981d7f184bb55c4726742d8
+</span><span class='line'>MAILGUN_SMTP_LOGIN:     postmaster@appb8c22c19f6654edeb3c25768d4674002.mailgun.org
+</span><span class='line'>MAILGUN_SMTP_PASSWORD:  f1c39a13079d8db398073fc6717de59a
+</span><span class='line'>MAILGUN_SMTP_PORT:      587
+</span><span class='line'>MAILGUN_SMTP_SERVER:    smtp.mailgun.org
+</span><span class='line'>SITE_DOMAIN:            dj-celery.herokuapp.com
+</span><span class='line'>SITE_NAME:              dj-celery</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We see that <code>MAILGUN_XXX</code> variables are provided, we will use it on development
+mode by adding the following lines into the .env file from the config content of your app
+environment:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+</span><span class='line'>
+</span><span class='line'>MAILGUN_API_KEY=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_DOMAIN=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_PUBLIC_KEY=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_LOGIN=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_PASSWORD=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_PORT=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_SERVER=&lt;your_app_environment_value&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Let&rsquo;s test if the email works:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py shell
+</span><span class='line'>
+</span><span class='line'>Python 2.7.6 (default, Apr 15 2015, 20:14:49) 
+</span><span class='line'>Type "copyright", "credits" or "license" for more information.
+</span><span class='line'>
+</span><span class='line'>IPython 4.0.1 -- An enhanced Interactive Python.
+</span><span class='line'>?         -&gt; Introduction and overview of IPython's features.
+</span><span class='line'>%quickref -&gt; Quick reference.
+</span><span class='line'>help      -&gt; Python's own help system.
+</span><span class='line'>object?   -&gt; Details about 'object', use 'object??' for extra details.
+</span><span class='line'>
+</span><span class='line'>In [1]: from django.core import mail
+</span><span class='line'>
+</span><span class='line'>In [2]: mail.mail_admins('test', 'test')
+</span><span class='line'>
+</span><span class='line'>In [3]: </span></code></pre></td></tr></table></div></figure>
+
+
+<p>You need to check your mailbox to see that a test email should be sent to you.</p>
+
+<p>Now you could signup and receive email at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup/</p>
+
+<h2>django-celery-email Setup</h2>
+
+<p>If could see that <code>mail.mail_admins</code> is blocked and waiting until the email sending is finished.
+To avoid these blocking, let&rsquo;s use Celery. Celery app is already setup by django-boilerplate at:
+<a href="https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613">https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613</a></p>
+
+<p>Let&rsquo;s just follow <a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a> to configure it like I did at:
+<a href="https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6">https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6</a></p>
+
+<p>and then:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ pip install -r requirements/dev.txt --upgrade</span></code></pre></td></tr></table></div></figure>
+
+
+<p>update EMAIL_BACKEND for .env file with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>EMAIL_BACKEND='djcelery_email.backends.CeleryEmailBackend'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>One important step is to enable Celery by using <a href="https://elements.heroku.com/addons/cloudamqp">https://elements.heroku.com/addons/cloudamqp</a></p>
+
+<p>To use cloudamqp heroku addon:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku addons:create cloudamqp:lemur</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should see <code>CLOUDAMQP_URL</code> environment variable by <code>$ heroku config</code></p>
+
+<p>Let&rsquo;s add that variable into the .env file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CLOUDAMQP_URL=&lt;your_app_environment_value&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The full .env file I created was at: <a href="https://gist.github.com/hoatle/7cb82d437213db4f373d">https://gist.github.com/hoatle/7cb82d437213db4f373d</a></p>
+
+<p>To start Celery app: <code>$ ./scripts/celery.sh</code>, and you should see the following content:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> -------------- celery@vagrant v3.1.19 (Cipater)
+</span><span class='line'>---- **** ----- 
+</span><span class='line'>--- * ***  * -- Linux-3.13.0-49-generic-x86_64-with-debian-wheezy-sid
+</span><span class='line'>-- * - **** --- 
+</span><span class='line'>- ** ---------- [config]
+</span><span class='line'>- ** ---------- .&gt; app:         Project:0x2f9a710
+</span><span class='line'>- ** ---------- .&gt; transport:   amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>- ** ---------- .&gt; results:     disabled
+</span><span class='line'>- *** --- * --- .&gt; concurrency: 2 (prefork)
+</span><span class='line'>-- ******* ---- 
+</span><span class='line'>--- ***** ----- [queues]
+</span><span class='line'> -------------- .&gt; celery           exchange=celery(direct) key=celery
+</span><span class='line'>                
+</span><span class='line'>
+</span><span class='line'>[tasks]
+</span><span class='line'>  . djcelery_email_send_multiple
+</span><span class='line'>
+</span><span class='line'>[2015-12-21 12:13:22,788: INFO/Beat] beat: Starting...
+</span><span class='line'>[2015-12-21 12:13:24,532: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>[2015-12-21 12:13:26,851: INFO/MainProcess] mingle: searching for neighbors
+</span><span class='line'>[2015-12-21 12:13:31,216: INFO/MainProcess] mingle: all alone
+</span><span class='line'>/home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+</span><span class='line'>  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+</span><span class='line'>
+</span><span class='line'>[2015-12-21 12:13:36,019: WARNING/MainProcess] /home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+</span><span class='line'>  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+</span><span class='line'>
+</span><span class='line'>[2015-12-21 12:13:36,023: WARNING/MainProcess] celery@vagrant ready.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After that, sending test email to admins should work without any blocking by opening a new terminal
+window:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant ssh
+</span><span class='line'>$ ws
+</span><span class='line'>$ cd personal/django-celery
+</span><span class='line'>$ workon django-celery
+</span><span class='line'>$ ./manage.py shell
+</span><span class='line'>
+</span><span class='line'>Python 2.7.6 (default, Apr 15 2015, 20:14:49) 
+</span><span class='line'>Type "copyright", "credits" or "license" for more information.
+</span><span class='line'>
+</span><span class='line'>IPython 4.0.1 -- An enhanced Interactive Python.
+</span><span class='line'>?         -&gt; Introduction and overview of IPython's features.
+</span><span class='line'>%quickref -&gt; Quick reference.
+</span><span class='line'>help      -&gt; Python's own help system.
+</span><span class='line'>object?   -&gt; Details about 'object', use 'object??' for extra details.
+</span><span class='line'>
+</span><span class='line'>In [1]: from django.core import mail
+</span><span class='line'>
+</span><span class='line'>In [2]: mail.mail_admins('test', 'test')</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it. We&rsquo;re done on development mode. Let&rsquo;s deploy on Heroku with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push heroku master
+</span><span class='line'>$ heroku ps:scale celery=1</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>$ heroku logs -p celery</code> to see the logs of celery, you should see something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>2015-12-21T12:30:35.946701+00:00 heroku[celery.1]: Starting process with command `scripts/celery.sh`
+</span><span class='line'>2015-12-21T12:30:37.616409+00:00 app[celery.1]: /app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env - it doesn't exist.
+</span><span class='line'>2015-12-21T12:30:37.616419+00:00 app[celery.1]:   warnings.warn("Not reading {0} - it doesn't exist.".format(dotenv))
+</span><span class='line'>2015-12-21T12:30:38.278350+00:00 app[celery.1]: [2015-12-21 12:30:38,278: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>2015-12-21T12:30:38.220898+00:00 app[celery.1]: [2015-12-21 12:30:38,220: WARNING/MainProcess] /app/.heroku/python/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+</span><span class='line'>2015-12-21T12:30:38.220902+00:00 app[celery.1]: Starting from version 3.2 Celery will refuse to accept pickle by default.
+</span><span class='line'>2015-12-21T12:30:38.220904+00:00 app[celery.1]: The pickle serializer is a security concern as it may give attackers
+</span><span class='line'>2015-12-21T12:30:38.220903+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220905+00:00 app[celery.1]: the ability to execute any command.  It's important to secure
+</span><span class='line'>2015-12-21T12:30:38.220908+00:00 app[celery.1]: the default choice.
+</span><span class='line'>2015-12-21T12:30:38.220907+00:00 app[celery.1]: that enabling pickle should require a deliberate action and not be
+</span><span class='line'>2015-12-21T12:30:38.220906+00:00 app[celery.1]: your broker from unauthorized access when using pickle, so we think
+</span><span class='line'>2015-12-21T12:30:38.220909+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220910+00:00 app[celery.1]: If you depend on pickle then you should set a setting to disable this
+</span><span class='line'>2015-12-21T12:30:38.220910+00:00 app[celery.1]: warning and to be sure that everything will continue working
+</span><span class='line'>2015-12-21T12:30:38.220914+00:00 app[celery.1]: You must only enable the serializers that you will actually use.
+</span><span class='line'>2015-12-21T12:30:38.220913+00:00 app[celery.1]:     CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+</span><span class='line'>2015-12-21T12:30:38.220912+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220915+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220913+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220915+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220911+00:00 app[celery.1]: when you upgrade to Celery 3.2::
+</span><span class='line'>2015-12-21T12:30:38.220917+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.223101+00:00 app[celery.1]: ---- **** ----- 
+</span><span class='line'>2015-12-21T12:30:38.220916+00:00 app[celery.1]:   warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+</span><span class='line'>2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; app:         Project:0x7f590f5fad10
+</span><span class='line'>2015-12-21T12:30:38.223107+00:00 app[celery.1]: --- ***** ----- [queues]
+</span><span class='line'>2015-12-21T12:30:38.223111+00:00 app[celery.1]:   . djcelery_email_send_multiple
+</span><span class='line'>2015-12-21T12:30:38.223102+00:00 app[celery.1]: --- * ***  * -- Linux-3.13.0-66-generic-x86_64-with-debian-jessie-sid
+</span><span class='line'>2015-12-21T12:30:38.262153+00:00 app[celery.1]: [2015-12-21 12:30:38,261: INFO/Beat] beat: Starting...
+</span><span class='line'>2015-12-21T12:30:38.223098+00:00 app[celery.1]:  
+</span><span class='line'>2015-12-21T12:30:38.301313+00:00 app[celery.1]: [2015-12-21 12:30:38,301: INFO/MainProcess] mingle: searching for neighbors
+</span><span class='line'>2015-12-21T12:30:38.223105+00:00 app[celery.1]: - ** ---------- .&gt; results:     disabled
+</span><span class='line'>2015-12-21T12:30:38.223109+00:00 app[celery.1]:                 
+</span><span class='line'>2015-12-21T12:30:38.223100+00:00 app[celery.1]:  -------------- celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 v3.1.19 (Cipater)
+</span><span class='line'>2015-12-21T12:30:38.223102+00:00 app[celery.1]: -- * - **** --- 
+</span><span class='line'>2015-12-21T12:30:38.223106+00:00 app[celery.1]: - *** --- * --- .&gt; concurrency: 8 (prefork)
+</span><span class='line'>2015-12-21T12:30:38.223109+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.223103+00:00 app[celery.1]: - ** ---------- [config]
+</span><span class='line'>2015-12-21T12:30:38.223106+00:00 app[celery.1]: -- ******* ---- 
+</span><span class='line'>2015-12-21T12:30:38.223110+00:00 app[celery.1]: [tasks]
+</span><span class='line'>2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; transport:   amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>2015-12-21T12:30:38.223108+00:00 app[celery.1]:  -------------- .&gt; celery           exchange=celery(direct) key=celery
+</span><span class='line'>2015-12-21T12:30:38.223111+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:39.322701+00:00 app[celery.1]: [2015-12-21 12:30:39,322: INFO/MainProcess] mingle: all alone
+</span><span class='line'>2015-12-21T12:30:39.352403+00:00 app[celery.1]: [2015-12-21 12:30:39,352: WARNING/MainProcess] celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 ready.
+</span><span class='line'>2015-12-21T12:30:36.537615+00:00 heroku[celery.1]: State changed from starting to up</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You could try sending test emails to admins with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku run python manage.py shell
+</span><span class='line'>Running python manage.py shell on dj-celery... up, run.9412
+</span><span class='line'>/app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env - it doesn't exist.
+</span><span class='line'>  warnings.warn("Not reading {0} - it doesn't exist.".format(dotenv))
+</span><span class='line'>Python 2.7.10 (default, May 27 2015, 20:38:41) 
+</span><span class='line'>[GCC 4.8.2] on linux2
+</span><span class='line'>Type "help", "copyright", "credits" or "license" for more information.
+</span><span class='line'>(InteractiveConsole)
+</span><span class='line'>&gt;&gt;&gt; from django.core import mail
+</span><span class='line'>&gt;&gt;&gt; mail.mail_admins('test', 'test')</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it, email sending is not blocked anymore. The full project for this guide is located at:
+<a href="https://github.com/hoatle/django-celery">https://github.com/hoatle/django-celery</a></p>
+
+<h2>Remote Debugging Python Tip</h2>
+
+<p>This is a bonus if you need to remote debug Python applications. You could apply this for
+Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging">http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging</a></p>
+
+<h2>Summary</h2>
+
+<p>In this post, I&rsquo;ve guided you step by step to setup Celery as a distributed task queue for emails
+on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
+
+<p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
+<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x68;&#113;&#x40;&#116;&#101;&#x72;&#x61;&#99;&#121;&#46;&#x63;&#111;&#x6d;">&#104;&#113;&#64;&#x74;&#101;&#x72;&#x61;&#x63;&#121;&#46;&#99;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+
+<p>Happy Django developing!</p>
+
+<h2>References</h2>
+
+<ul>
+<li><a href="https://github.com/bread-and-pepper/django-userena">https://github.com/bread-and-pepper/django-userena</a></li>
+<li><a href="http://www.celeryproject.org/">http://www.celeryproject.org/</a></li>
+<li><a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a></li>
+</ul>
+
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Tue Dec 22 08:01:33 2015</strong><br/>BLOG-56 | How to use django-celery-email on Heroku
+</li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2015-12-21-how-to-use-django-celery-email-on-heroku.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">hoatle</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2015-12-21T09:40:00+00:00" datetime="2015-12-21T09:40:00+00:00" pubdate data-updated="true">Dec 21<span>st</span>, 2015</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/en/'>en</a>, <a class='category' href='/categories/how-to/'>how-to</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/celery/'>celery</a>, <a class='tag' href='/tags/django/'>django</a>, <a class='tag' href='/tags/django-boilerplate/'>django-boilerplate</a>, <a class='tag' href='/tags/django-celery-email/'>django-celery-email</a>, <a class='tag' href='/tags/heroku/'>heroku</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/" data-via="teracyhq" data-counturl="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/" title="Previous Post: how to make JWT requests with httpie-jwt-auth plugin?">&laquo; how to make JWT requests with httpie-jwt-auth plugin?</a>
+      
+      
+        <a class="basic-alignment right" href="/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot/" title="Next Post: 8 nguyên tắc trong thiết kế bot">8 nguyên tắc trong thiết kế bot &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracyhq"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/">Những điều Cần Biết để Xây Dựng Thử Nghiệm Người Dùng Hiệu Quả</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/">How to Develop Angular 2 Applications Easily With Docker and Angular-cli</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/09/01/cach-xay-dung-san-pham/">Cách Xây Dựng Sản Phẩm</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/08/19/teracy-dev-vision/">Teracy-dev Vision</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi/">Khi Kỹ Sư Trở Thành Quản Lý: Làm Thế Nào để Trở Thành Lãnh đạo Kỹ Thuật Giỏi</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracyhq">@teracyhq</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracyhq',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/';
+        var disqus_url = 'http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

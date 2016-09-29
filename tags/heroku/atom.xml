@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: heroku | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/heroku/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/"/>
     <updated>2015-12-21T09:40:00+00:00</updated>
     <id>http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2015/12/21/django_celery.png Django Celery %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2015/12/21/django_celery.png" title="Django Celery" ></p>
 
 <p>When I was asked to use a distributed task queue for emails on a Django project, I chose
 django-celery-email. However, during developing and testing, I faced some problems due to the lack
@@ -225,9 +225,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x73;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#117;&#115;&#101;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;">&#115;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#x75;&#115;&#x65;&#114;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;</a>
+To: <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x73;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#x75;&#115;&#x65;&#114;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;">&#x73;&#x61;&#x6d;&#x70;&#108;&#x65;&#x2e;&#117;&#115;&#x65;&#x72;&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x32;&#x30;&#x31;&#x35;&#49;&#50;&#x32;&#49;&#x31;&#x31;&#x30;&#x32;&#51;&#x30;&#46;&#50;&#51;&#x34;&#x36;&#x33;&#x2e;&#56;&#x30;&#x38;&#52;&#x35;&#64;&#118;&#97;&#x67;&#114;&#x61;&#110;&#116;&#46;&#118;&#109;">&#x32;&#48;&#x31;&#x35;&#x31;&#x32;&#x32;&#x31;&#x31;&#49;&#x30;&#x32;&#x33;&#48;&#46;&#x32;&#51;&#x34;&#x36;&#x33;&#x2e;&#56;&#48;&#56;&#52;&#x35;&#64;&#118;&#97;&#103;&#114;&#x61;&#x6e;&#116;&#46;&#118;&#x6d;</a></p>
+Message-ID: <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#50;&#x30;&#49;&#x35;&#49;&#50;&#50;&#x31;&#x31;&#49;&#x30;&#50;&#x33;&#x30;&#x2e;&#x32;&#51;&#x34;&#x36;&#x33;&#x2e;&#56;&#x30;&#x38;&#x34;&#53;&#x40;&#118;&#x61;&#103;&#x72;&#x61;&#110;&#x74;&#x2e;&#118;&#x6d;">&#x32;&#x30;&#x31;&#x35;&#x31;&#x32;&#50;&#49;&#49;&#49;&#48;&#50;&#x33;&#x30;&#x2e;&#x32;&#51;&#52;&#x36;&#51;&#x2e;&#x38;&#x30;&#x38;&#52;&#x35;&#x40;&#x76;&#97;&#103;&#x72;&#x61;&#x6e;&#116;&#x2e;&#118;&#x6d;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -526,7 +526,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x68;&#x71;&#64;&#x74;&#101;&#x72;&#97;&#x63;&#x79;&#46;&#x63;&#111;&#109;">&#x68;&#113;&#64;&#116;&#x65;&#x72;&#x61;&#x63;&#121;&#x2e;&#99;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#113;&#64;&#116;&#101;&#x72;&#97;&#x63;&#121;&#46;&#x63;&#111;&#x6d;">&#104;&#113;&#x40;&#116;&#x65;&#114;&#97;&#x63;&#x79;&#46;&#99;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -546,7 +546,7 @@ on Django projects. It&rsquo;s very easy to set everything up thanks to the djan
     <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
     <updated>2013-11-26T09:06:00+00:00</updated>
     <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
-    <content type="html"><![CDATA[<p>{% img center /images/sphinx.png Sphinx Doc Logo %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
 
 <p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
 support for v0.3.0 release. This release introduces some breaking changes and you should know to
@@ -658,7 +658,7 @@ upcoming exciting features and projects.</p>
     <link href="http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/"/>
     <updated>2013-09-25T20:56:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release</id>
-    <content type="html"><![CDATA[<p>{% img center /images/sphinx.png Sphinx Doc Logo %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
 
 <p>After v0.1.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with improvements and new
 features for v0.2.0 release.</p>

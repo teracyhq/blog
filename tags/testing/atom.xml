@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: testing | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/testing/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Những điều cần biết để xây dựng thử nghiệm người dùng hiệu quả]]></title>
-    <link href="http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung--thu-nghiem-nguoi-dung-hieu-qua/"/>
+    <link href="http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/"/>
     <updated>2016-09-29T09:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung--thu-nghiem-nguoi-dung-hieu-qua</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png Xây dựng thử nghiệm người dùng %}</p>
+    <id>http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png" title="Xây dựng thử nghiệm người dùng" ></p>
 
 <p>Gần đây số lượng các ứng dụng trong thị trường android và iOs đã vượt xa con số 8 triệu, ngoài ra còn
 có một con số không giới hạn các trang web và các ứng dụng web đang xuất hiện khắp nơi trên thế giới
@@ -79,13 +79,13 @@ thử nghiệm người dùng. Khi một sản phẩm được xây dựng, bạ
 
 <p>Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.</p>
 
-<p>{% img center /images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg % Hồ sơ người dùng của airbnb}</p>
+<p><img class="center" src="/images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg" title="% Hồ sơ người dùng của airbnb" ></p>
 
 <p>Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
 quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
 chọn người dùng mẫu cho thử nghiệm người dùng:
 &ndash; <strong>Liên quan</strong>: Ứng dụng của bạn có liên quan tới người dùng thử nghiệm không?
-&ndash; Tần suất sử dụng: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?
+&ndash; <strong>Tần suất sử dụng</strong>: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?
 &ndash; <strong>Nhân khẩu học</strong>: Sự khác biệt văn hoá là một yếu tố quan trọng đối với trải nghiệm của người dùng. Tập trung vào nơi ở, tuổi, giới tính khi lựa chọn người dùng mẫu.
 &ndash; <strong>Mức thu nhập</strong>: Những người dùng này có sẵn sàng trả tiền để sử dụng ứng dụng/dịch vụ của bạn không? Điều này bao gồm cả khả năng tài chính và thói quen mua sắm.</p>
 
@@ -95,7 +95,7 @@ chọn người dùng mẫu cho thử nghiệm người dùng:
 
 <p>&ldquo;Tôi sẽ đợi tới giao diện cuối cùng để tiến hành kiểm thử người dùng&rdquo;. Chủ sở hữu sản phẩm chỉ tiến hành kiểm thử người dùng khi họ có được phiên bản cuối cùng. Đó không phải là một ý hay, bởi vì khi đó bạn sẽ phải lặp lại hầu hết thời gian và công sức đã bỏ ra.
 Lặp lại ngay khi có thể trong quy trình thiết kế để tiết kiệm thời gian và công sức.
-{% img center /images/2016/09/29/quy-trinh-thiet-ke.jpeg Quy trình thiết kế %}</p>
+<img class="center" src="/images/2016/09/29/quy-trinh-thiet-ke.jpeg" title="Quy trình thiết kế" ></p>
 
 <p>Những mong đợi trong các giai đoạn khác nhau của quy trình kiểm thử người dùng.
 &ndash; <strong>Từ ý tưởng đến phác hoạ bằng tay</strong>: Thảo luận các ý kiến trên giấy bút hoặc trên bảng trắng. Tập hợp các phác hoạ bằng tay vào CanvasFlip và mời người dùng nội bộ kiểm thử.
@@ -108,7 +108,7 @@ Hầu hết các nhóm nổi tiếng đều sử dụng công cụ phân tích U
 <p>Luôn có sự đánh đổi giữa việc tạo ra một ngữ cảnh kiểm thử theo giời gian thực và việc quan sát người dùng.
 Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức và đưa ra quyết định mang tính quyết đoán hơn so với bản năng.</p>
 
-<p>{% img center /images/2016/09/29/kiem-thu-tinh-kha-dung.png Kiểm thử tính khả dụng %}</p>
+<p><img class="center" src="/images/2016/09/29/kiem-thu-tinh-kha-dung.png" title="Kiểm thử tính khả dụng" ></p>
 
 <p>Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:
 &ndash; <strong>Kiểm duyệt tại chỗ</strong>: Trong giai đoạn này, bạn sẽ luôn ở cạnh người dùng, yêu cầu tiến hành các tác vụ, ra câu hỏi và quan sát phản ứng. Điều này sẽ có ích ở giai đoạn đầu phát triển thiết kế.
@@ -134,23 +134,23 @@ Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức v�
 <p><strong>Biết được người dùng sẽ bỏ UX-flow từ chỗ nào</strong>
 Trong kênh chuyển đổi trên (được tạo ra với CanvasFlip.com), bạn có thể thấy được sừ rời bỏ lớn tại vòng lặp thứ 1 trong màn hình &ldquo;Experiencies&rdquo;.</p>
 
-<p>{% img center /images/2016/09/29/quy-trinh-chuyen-doi-hinh-pheu.png Quy trình chuyển đổi hình phễu %}</p>
+<p><img class="center" src="/images/2016/09/29/quy-trinh-chuyen-doi-hinh-pheu.png" title="Quy trình chuyển đổi hình phễu" ></p>
 
 <p><strong>Nơi người dùng tương tác nhiều nhất trong giao diện</strong></p>
 
 <p>Một bản đồ nhiệt tương tác về thử nghiệm người dùng được tạo ra bởi CanvasFlip.com giúp bạn biết được khu vực tương tác thường xuyên của người dùng trong giao diện người dùng.</p>
 
-<p>{% img center /images/2016/09/29/ban-do-nhiet-tuong-tac.png Bản đồ nhiệt tương tác %}</p>
+<p><img class="center" src="/images/2016/09/29/ban-do-nhiet-tuong-tac.png" title="Bản đồ nhiệt tương tác" ></p>
 
 <p><strong>Phân tích hành trình của từng cá nhân người dùng</strong></p>
 
 <p>Với CanvasFlip.com, bạn có thể phân tích được những điều hướng của người dùng và thời gian người dùng ở lại mỗi màn hình.
-{% img center /images/2016/09/29/hanh-trinh-cua-nguoi-dung.png Hành trình của người dùng %}</p>
+<img class="center" src="/images/2016/09/29/hanh-trinh-cua-nguoi-dung.png" title="Hành trình của người dùng" ></p>
 
 <p><strong>Xem toàn bộ video phiên người dùng để phân tích và cải thiện hành vi người dùng</strong></p>
 
 <p>Bạn có thể ghi lại các điều hướng người dùng, sau đó tìm ra nơi người dùng gặp vấn đề và tìm cách cải thiện trải nghiệm người dùng.
-{% img center /images/2016/09/29/ghi-lai-dieu-huong-nguoi-dung.png Ghi lại điều hướng người dùng %}</p>
+<img class="center" src="/images/2016/09/29/ghi-lai-dieu-huong-nguoi-dung.png" title="Ghi lại điều hướng người dùng" ></p>
 
 <h1>Kết luận</h1>
 

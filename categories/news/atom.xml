@@ -4,7 +4,7 @@
   <title><![CDATA[Category: news | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/news/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -190,7 +190,7 @@ much as we do.</p>
     <link href="http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch/"/>
     <updated>2014-12-08T00:00:00+00:00</updated>
     <id>http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/12/cover.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/12/cover.jpg"></p>
 
 <p>It’s always a good idea to begin with a wireframe when beginning a new web design or mobile app project.
 Wireframes can be a big time saver as they help both designers and developers come to an agreement on placement
@@ -209,8 +209,8 @@ in web projects. This is the second UI kit we share to <a href="http://www.bohem
 
 <p><a href="https://github.com/teracyhq/wireframe">Download the Teracy Wireframe kit for Sketch</a></p>
 
-<p>{% img center /images/2014/12/ss2.jpg %}
-{% img center /images/2014/12/ss1.jpg %}</p>
+<p><img class="center" src="/images/2014/12/ss2.jpg">
+<img class="center" src="/images/2014/12/ss1.jpg"></p>
 
 <p>Features:</p>
 
@@ -230,7 +230,7 @@ in web projects. This is the second UI kit we share to <a href="http://www.bohem
     <link href="http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch/"/>
     <updated>2014-10-08T00:00:00+00:00</updated>
     <id>http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/10/cover.png %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/10/cover.png"></p>
 
 <p><strong><em>Why Sketch?</em></strong></p>
 
@@ -282,7 +282,7 @@ creators of Bootflat.&rdquo;</p>
     <link href="http://blog.teracy.com/2014/09/25/first-team-building-activity-of-teracy-in-da-nang-city/"/>
     <updated>2014-09-25T10:39:00+00:00</updated>
     <id>http://blog.teracy.com/2014/09/25/first-team-building-activity-of-teracy-in-da-nang-city</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/09/teracy1.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/09/teracy1.jpg"></p>
 
 <p>After a hard working year, the long-awaited day had arrived &ndash; Teracy&rsquo;s vacation for 4 days and 3 nights.
 This destination reaches the Central Vietnam &ndash; Da Nang, a beautiful and bustling city with the fresh
@@ -348,7 +348,7 @@ After that, we were eager to go to play bowling for pleasure, however, we were d
 the sign &ldquo;suspend operations to fix&rdquo;. Eventually, we turned to visit &ldquo;Sun-Wheel- the world&rsquo;s
 fourth-largest one&rdquo;.</p>
 
-<p>Linh Ung Pagoda &ndash; Son Tra peninsula {% img center /images/2014/09/teracy2.jpg %}</p>
+<p>Linh Ung Pagoda &ndash; Son Tra peninsula <img class="center" src="/images/2014/09/teracy2.jpg"></p>
 
 <p><strong>Day 3</strong></p>
 
@@ -357,21 +357,21 @@ challenge game &ldquo;waterfall slide&rdquo; to challenge ourselves with rushing
 different sizes as obstacles to give us the sudden collision and to make the game more and more
 adventurous. It was really a funny and adventurous game.</p>
 
-<p>Prepare for sliding waterfall {% img center /images/2014/09/teracy3.jpg %}</p>
+<p>Prepare for sliding waterfall <img class="center" src="/images/2014/09/teracy3.jpg"></p>
 
 <p>After that, we went to enjoy the specialties here, such as, fried brook fish, boiled chicken, stocky
 wild boar meat and stir-fried wild vegetables with a little acrid, and strange taste. In the evening,
 we had real comfortable moments at &ldquo;Phuong Dong&rdquo; bar. This was our second option because we were not
 in proper clothes to come into &ldquo;Sky 36&rdquo;&ndash; our first option.</p>
 
-<p>Join the exciting atmosphere at Phuong Dong bar {% img center /images/2014/09/teracy4.jpg %}</p>
+<p>Join the exciting atmosphere at Phuong Dong bar <img class="center" src="/images/2014/09/teracy4.jpg"></p>
 
 <p><strong>Day 4</strong></p>
 
 <p>In the morning we went to play paint-ball game. It was a quite interesting team game. We also wore as
 soldiers, looked very majestic. We had 6 people, divided into two teams. All were ready to fight!</p>
 
-<p>Prepare for playing paint-ball game {% img center /images/2014/09/teracy5.jpg %}</p>
+<p>Prepare for playing paint-ball game <img class="center" src="/images/2014/09/teracy5.jpg"></p>
 
 <p>After the game, we returned to the hotel, relaxed, and checked out to visit Mr Phuong&rsquo;s house &ndash; a
 colleague who lives in Da Nang. It was the last night in Da Nang, we must take advantage of the worthful
@@ -397,7 +397,7 @@ understand each other better. It really brought us the great moments.</p>
     <link href="http://blog.teracy.com/2014/09/24/hoat-dong-team-building-dau-tien-cua-teracy/"/>
     <updated>2014-09-24T15:46:00+00:00</updated>
     <id>http://blog.teracy.com/2014/09/24/hoat-dong-team-building-dau-tien-cua-teracy</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/09/teracy1.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/09/teracy1.jpg"></p>
 
 <p>Sau một năm làm việc vất vả thì cái ngày mong đợi cũng đã đến &ndash; một chuyến nghỉ mát 4 ngày 3 đêm
 cùng Teracy. Chuyến đi lần này hướng về miền trung để đến với mảnh đất Đà Nẵng – một
@@ -464,7 +464,7 @@ Heo, ăn xong chúng tôi hí hửng bàn nhau đi chơi bowling để đổi gi
 thấy tấm biển ”tạm ngưng hoạt động để sửa chữa”. Không đổi được gió nên chúng tôi quay lại đi
 “vòng quay mặt trời &ndash; vòng quay lớn thứ 4 trên thế giới”. May thay nó chưa bị đóng cửa.</p>
 
-<p> Chùa Linh Ứng &ndash; Bán đảo Sơn Trà {% img center /images/2014/09/teracy2.jpg %}</p>
+<p> Chùa Linh Ứng &ndash; Bán đảo Sơn Trà <img class="center" src="/images/2014/09/teracy2.jpg"></p>
 
 <p><strong>Ngày thứ 3:</strong></p>
 
@@ -474,7 +474,7 @@ nghênh ngang giữa đường như thể làm chướng ngại vật tạo cho 
 khiến trò chơi càng thêm phần mạo hiểm (trò chơi khá vui và thú vị mỗi tội sắc da có hơi chuyển
 màu một chút).</p>
 
-<p>Chuẩn bị vượt thác {% img center /images/2014/09/teracy3.jpg %}</p>
+<p>Chuẩn bị vượt thác <img class="center" src="/images/2014/09/teracy3.jpg"></p>
 
 <p>Chơi xong chúng tôi đi thưởng thức những đặc sản nơi đây (với món cá suối rán
 giòn rụm, món gà rừng, lợn rừng thịt chắc nịch và món rau rừng xào có vị hơi chát chát khi ăn xong
@@ -482,7 +482,7 @@ còn để lại một dư vị khó tả). Buổi tối chúng tôi có những
 Đông (đây là phương án 2 của chúng tôi vì không được vào bar Sky 36 do không mặc đúng trang
 phục).</p>
 
-<p>Hòa mình vào không khí sôi động tại bar Phương Đông{% img center /images/2014/09/teracy4.jpg %}</p>
+<p>Hòa mình vào không khí sôi động tại bar Phương Đông<img class="center" src="/images/2014/09/teracy4.jpg"></p>
 
 <p><strong>Ngày thứ 4:</strong></p>
 
@@ -490,7 +490,7 @@ phục).</p>
 mặc bộ quần áo như các chú bộ đội ấy, nhìn oai ghê cơ. Chúng tôi có 6 người, chia ra làm 2 đội. Tất
 cả sẵn sàng chiến đấu nhé!</p>
 
-<p>Sẵn sàng ra trận bắn súng sơn {% img center /images/2014/09/teracy5.jpg %}</p>
+<p>Sẵn sàng ra trận bắn súng sơn <img class="center" src="/images/2014/09/teracy5.jpg"></p>
 
 <p>Sau khi &ldquo;ra trận&rdquo; về, chúng tôi trở về khách sạn, nghỉ ngơi, trả phòng rồi đến thăm nhà anh Phương &ndash;
 1 đồng nghiệp đang sống ở Đà Nẵng. Còn đêm cuối cùng ở Đà Nẵng thôi, cả hội đều phải tận dụng

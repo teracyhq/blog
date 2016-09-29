@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: tuyển dụng | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/tuyen-dung/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien/"/>
     <updated>2014-05-19T15:46:00+00:00</updated>
     <id>http://blog.teracy.com/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/05/teracy_recruitment_poster.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/05/teracy_recruitment_poster.jpg"></p>
 
 <p>Sau gần một năm startup, Teracy cần tìm &ldquo;chiến binh&rdquo; gia nhập đội phát triển.</p>
 
@@ -207,26 +207,26 @@ dùng thành các bản phân phối cho chrome extension, web</p></li>
  *
  * For example:
  *
- * var helloTemplate = template(&lsquo;Hello {{name}}!&rsquo;),
- *     urlTemplate = template(&lsquo;/{{resource}}/{{id}}.json&rsquo;);
+ * var helloTemplate = template(&lsquo;Hello !&rsquo;),
+ *     urlTemplate = template(&lsquo;//.json&rsquo;);
  *
  * var output = helloTemplate({name: &lsquo;World&rsquo;}); // => Hello World!
  *
  * helloTemplate(); // => error is thrown
  * helloTemplate({}); // => error is thrown
  *
- * var output2 = helloTemplate({}, false); // => Hello {{name}}!
+ * var output2 = helloTemplate({}, false); // => Hello !
  *
  * var userUrl = urlTemplate({resource: &lsquo;users&rsquo;, id: 1}); // => /users/1.json
  *
- * var pricesTemplate = template(&lsquo;/prices?marketplace={{marketplace}}&amp;&amp;num_results={{num_result}}&amp;&amp;since={{since}}&rsquo;, {
+ * var pricesTemplate = template(&lsquo;/prices?marketplace=&amp;&amp;num_results=&amp;&amp;since=&rsquo;, {
  *   defaults: {
  *     num_result: 80
  *   },
  *   processors: {
  *     since: function(processedStr, paramValue, params) {
  *       if (_.isUndefined(paramValue)) {
- *         processedStr = processStr.replace(&lsquo;&amp;&amp;since={{since}}&rsquo;, &rdquo;);
+ *         processedStr = processStr.replace(&lsquo;&amp;&amp;since=&rsquo;, &rdquo;);
  *       }
  *       return processedStr;
  *     }

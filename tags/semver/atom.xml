@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: semver | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/semver/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -32,13 +32,7 @@ different release schemas. When upgrading these libraries, it&rsquo;s very hard 
 software still works normally without reading their APIs documentation, release notes and running
 many tests yourself to make sure the upgrading does not break anything and this hurts.</p>
 
-<p>{% blockquote  Tom Preston-Werner <a href="http://semver.org/spec/v2.0.0.html">http://semver.org/spec/v2.0.0.html</a> Semantic Versioning 2.0.0 %}</p>
-
-<p>In the world of software management there exists a dread place called &ldquo;dependency hell.&rdquo; The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.</p>
-
-<p>In systems with many dependencies, releasing new package versions can quickly become a nightmare.</p>
-
-<p>{% endblockquote %}</p>
+<p><blockquote><p></p></p><p><p>In the world of software management there exists a dread place called &ldquo;dependency hell.&rdquo; The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.</p></p><p><p>In systems with many dependencies, releasing new package versions can quickly become a nightmare.</p></p><p><p></p><footer><strong>Tom Preston-Werner <a href="http://semver.org/spec/v2.0.0.html">http://semver.org/spec/v2.0.0.html</a> Semantic Versioning 2.0.0</strong></footer></blockquote></p>
 
 <p>Yes, it&rsquo;s true and some software companies I know are still struggling with the problem of dependency
 management. I myself had this kind of nightmare many times when working on a big growing software

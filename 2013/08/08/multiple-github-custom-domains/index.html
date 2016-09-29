@@ -1,0 +1,566 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Multiple Github custom domains - Teracy's Blog</title>
+  
+  <meta name="author" content="hoatle, phuonglm">
+
+  
+  <meta name="description" content="Multiple Github Custom Domains Aug 8th, 2013 Today we&rsquo;re going to share with you the way to use multiple github custom domains as we did with &hellip;">
+  
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Multiple Github custom domains - Teracy's Blog" />
+  <meta property="og:description" content="Multiple Github Custom Domains Aug 8th, 2013 Today we&rsquo;re going to share with you the way to use multiple github custom domains as we did with &hellip;" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/teracy_logo.png" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracyhq" />
+  <meta name="twitter:creator" content="@hoatle, phuonglm" />
+  <meta name="twitter:title" content="Multiple Github custom domains - Teracy's Blog" />
+  <meta name="twitter:description" content="Multiple Github Custom Domains Aug 8th, 2013 Today we&rsquo;re going to share with you the way to use multiple github custom domains as we did with &hellip;" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/teracy_logo.png" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="/javascripts/libs/jquery.browser.min.js" type="text/javascript"></script>
+<script src="/javascripts/font.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news">News</a></li>
+  <li><a href="/categories/projects">Projects</a></li>
+  <li><a href="/categories/how-to">How-to</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">Multiple Github Custom Domains</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2013-08-08T00:00:00+00:00" datetime="2013-08-08T00:00:00+00:00" pubdate data-updated="true">Aug 8<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p>Today we&rsquo;re going to share with you the way to use multiple github custom domains as we did with our
+<code>teracy-official</code> organization account.</p>
+
+<p>As we know, there are two types of github pages: user/ organization pages and project pages <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>.
+Our organization account is located at: <a href="https://github.com/teracy-official">https://github.com/teracy-official</a></p>
+
+<p>By default, <code>http://teracy-official.github.io</code> will point to <code>teracy-official.github.io</code>&rsquo;s <code>master</code>
+branch. And <code>teracy-official.github.io/&lt;project_name&gt;</code> will point to the project&rsquo;s <code>gh-pages</code> branch
+if it&rsquo;s available.</p>
+
+<p>With our requirements, we don&rsquo;t want to use <code>http://teracy-official.github.io</code> but
+<code>http://teracy.com</code> and <code>http://teracy.org</code> only. That&rsquo;s why we have to setup multiple github custom
+domains <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
+
+<!-- more -->
+
+
+<h2>1. Problems</h2>
+
+<p>From the very first days, we setup <code>blog.teracy.com</code> to map to the organization page at
+<code>teracy-official.github.io</code> repository. We could get what we want by:</p>
+
+<ul>
+<li>adding CNAME <code>blog.teracy.com</code> with alias <code>teracy-official.github.io</code> via DNS manager</li>
+<li>adding CNAME file with &lsquo;blog.teracy.com&rsquo; content to <code>teracy-official.github.io/tree/master/CNAME</code></li>
+</ul>
+
+
+<p>However, by default, this domain will be used for all other project pages if you don&rsquo;t specify
+th project custom domains.</p>
+
+<p>For example, by setting up like above and we have <code>teracy-dev</code> project with <code>gh-pages</code> branch.
+When we access <code>teracy-official.github.io/teracy-dev</code>, it will be redirected to
+<code>blog.teracy.com/teracy-dev</code> project page by github custom domain mechanism, and this was not what
+we expected.</p>
+
+<p>We also want <code>teracy-dev</code> project page should be served by <code>http://teracy-dev.teracy.org</code>, it&rsquo;s also
+every easy just configure CNAME and add CNAME file to <code>gh-pages</code> branch like we did with the blog
+configuration above:</p>
+
+<ul>
+<li>add CNAME <code>teracy-dev.teracy.org</code> with alias <code>teracy-official.github.io</code></li>
+<li>add CNAME file with &lsquo;teracy-dev.teracy.org&rsquo; content to <code>teracy-dev/tree/gh-pages/CNAME</code></li>
+</ul>
+
+
+<p>Wait for DNS change to be updated and access <code>teracy-dev.teracy.org</code>, it should point to
+<code>teracy-dev/tree/gh-pages</code> site.</p>
+
+<p>There is a minor problem though:
+<code>teracy-official.github.io/teracy-dev</code> will not be automatically redirected to
+<a href="http://teracy-dev.teracy.org">http://teracy-dev.teracy.org</a></p>
+
+<p>If we configure the root domain <a href="http://teracy.org">http://teracy.org</a> to map to <code>teracy-official.github.io</code> page,
+the link <code>teracy-official.github.io/teracy-dev</code> will be redirected to <code>teracy.org/teracy-dev</code> by
+github custom domain mechanism. With this approach, an issue is raised: it will also introduce more
+duplicated links between <code>teracy-dev.teracy.org</code> and <code>teracy.org/teracy-dev</code>. This duplicated issue
+should be avoided.</p>
+
+<p>There is a workaround that you could use JavaScript location checking. However, well, it&rsquo;s not
+flexible enough and does not work well with search engines.</p>
+
+<p>So we decided to have a router on <code>teracy.org</code> by using <code>nginx</code>.</p>
+
+<h2>2. Solution with <code>nginx</code> server</h2>
+
+<p>2.1. Requirements</p>
+
+<p>Actually, before setting up our custom domains, existing links exists and we have to maintain these
+by redirecting. We have these requirement rules:</p>
+
+<ul>
+<li>By adding &lsquo;teracy.org&rsquo; to teracy-official.github.io/tree/master/CNAME => by github mechanism:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>teracy-official.github.io/* -&gt; teracy.org/*</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Our nginx rules:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>teracy-official.github.io/teracy-dev/* -&gt; teracy-dev.teracy.org/*
+</span><span class='line'>
+</span><span class='line'>teracy-official.github.io/teracy-official-blog/* -&gt; blog.teracy.com/*</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Fix existing links by redirecting as these links are already indexed by search engines:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>teracy-official.github.io/2013/08/02/teracy-hello-world/ -&gt; blog.teracy.com/2013/08/02/teracy-hello-world/
+</span><span class='line'>teracy-official.github.io/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/ -&gt; blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The detailed requirements are at: <a href="https://github.com/teracy-official/teracy-official-blog/issues/20">https://github.com/teracy-official/teracy-official-blog/issues/20</a></p>
+
+<p>2.2. How to setup and configure <code>nginx</code> server</p>
+
+<p>With the above requirement rules, this is how to configure our <code>nginx</code> server.</p>
+
+<p>Create a new nginx host file at <code>/etc/nginx/sites-available/teracy.org</code> and symlink it to
+<code>/etc/nginx/sites-enable/teracy.org</code> with the content as below:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>server {
+</span><span class='line'>  listen 80;
+</span><span class='line'>  server_name teracy.org;
+</span><span class='line'>
+</span><span class='line'>  location / {
+</span><span class='line'>    # redirect to teracy-dev.teracy.org if match below regex
+</span><span class='line'>    rewrite  ^/teracy-dev(/.*)?$  http://teracy-dev.teracy.org$1  break;
+</span><span class='line'>
+</span><span class='line'>    # redirect to blog.teracy.com if match below regex
+</span><span class='line'>    rewrite  ^/teracy-official-blog(/.*)?$  http://blog.teracy.com$1  break;
+</span><span class='line'>
+</span><span class='line'>    # Otherwise redirect to blog.teracy.com
+</span><span class='line'>    rewrite  ^/(.*)$  http://blog.teracy.com/$1  break;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Just by applying rules from <code>HttpRewriteModule</code> <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>, we could solve the problems easily.</p>
+
+<p>That&rsquo;s it. Have a nice day and happy hacking!</p>
+
+<p>P/S: Sure that you can have many other solutions like Apache + Modrewrite, etc., but to us, <code>nginx</code>
+is more lightweight, simpler and flexible enough. We also use <code>nginx</code> to proxy and protect many
+other HTTP(S) resources for our projects.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://help.github.com/articles/user-organization-and-project-pages<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://help.github.com/articles/setting-up-a-custom-domain-with-pages<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>http://wiki.nginx.org/HttpRewriteModule<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Tue Jun 10 16:26:17 2014</strong><br/>INFR-92 | add travis-ci and jenkins notification to #internal-projects slack channel
+</li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2013-08-08-multiple-github-custom-domains.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">hoatle, phuonglm</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2013-08-08T00:00:00+00:00" datetime="2013-08-08T00:00:00+00:00" pubdate data-updated="true">Aug 8<span>th</span>, 2013</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/how-to/'>how-to</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/devops/'>devops</a>, <a class='tag' href='/tags/github/'>github</a>, <a class='tag' href='/tags/nginx/'>nginx</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/" data-via="teracyhq" data-counturl="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite/" title="Previous Post: Keep, share and manage top secret resources with git-encrypt and gitolite">&laquo; Keep, share and manage top secret resources with git-encrypt and gitolite</a>
+      
+      
+        <a class="basic-alignment right" href="/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/" title="Next Post: Automatic sphinx docs deployment with sphinx-deployment">Automatic sphinx docs deployment with sphinx-deployment &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracyhq"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/">Những điều Cần Biết để Xây Dựng Thử Nghiệm Người Dùng Hiệu Quả</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/">How to Develop Angular 2 Applications Easily With Docker and Angular-cli</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/09/01/cach-xay-dung-san-pham/">Cách Xây Dựng Sản Phẩm</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/08/19/teracy-dev-vision/">Teracy-dev Vision</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi/">Khi Kỹ Sư Trở Thành Quản Lý: Làm Thế Nào để Trở Thành Lãnh đạo Kỹ Thuật Giỏi</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracyhq">@teracyhq</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracyhq',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/';
+        var disqus_url = 'http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

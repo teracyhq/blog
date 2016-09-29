@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: sketch | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/sketch/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch/"/>
     <updated>2014-12-08T00:00:00+00:00</updated>
     <id>http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/12/cover.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/12/cover.jpg"></p>
 
 <p>It’s always a good idea to begin with a wireframe when beginning a new web design or mobile app project.
 Wireframes can be a big time saver as they help both designers and developers come to an agreement on placement
@@ -37,8 +37,8 @@ in web projects. This is the second UI kit we share to <a href="http://www.bohem
 
 <p><a href="https://github.com/teracyhq/wireframe">Download the Teracy Wireframe kit for Sketch</a></p>
 
-<p>{% img center /images/2014/12/ss2.jpg %}
-{% img center /images/2014/12/ss1.jpg %}</p>
+<p><img class="center" src="/images/2014/12/ss2.jpg">
+<img class="center" src="/images/2014/12/ss1.jpg"></p>
 
 <p>Features:</p>
 
@@ -58,7 +58,7 @@ in web projects. This is the second UI kit we share to <a href="http://www.bohem
     <link href="http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch/"/>
     <updated>2014-10-08T00:00:00+00:00</updated>
     <id>http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2014/10/cover.png %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/10/cover.png"></p>
 
 <p><strong><em>Why Sketch?</em></strong></p>
 

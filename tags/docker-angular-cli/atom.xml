@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: docker-angular-cli | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/docker-angular-cli/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/"/>
     <updated>2016-09-22T12:44:00+00:00</updated>
     <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2016/09/22/angular-boilerplate.png angular-boilerplate %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
 
 <p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
 getting started article from the Angular 2 official documentation. That&rsquo;s the reason why

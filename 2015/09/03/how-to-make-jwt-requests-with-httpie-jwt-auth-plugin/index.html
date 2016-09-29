@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>how to make JWT requests with httpie-jwt-auth plugin? - Teracy's Blog</title>
+  
+  <meta name="author" content="hoatle">
+
+  
+  <meta name="description" content="how to make JWT requests with httpie-jwt-auth plugin?">
+  <meta name="keywords" content="http request, httpie, JWT, Json Web Tokens, httpie-jwt-auth plugin">
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="how to make JWT requests with httpie-jwt-auth plugin? - Teracy's Blog" />
+  <meta property="og:description" content="how to make JWT requests with httpie-jwt-auth plugin?" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/teracy_logo.png" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracyhq" />
+  <meta name="twitter:creator" content="@hoatle" />
+  <meta name="twitter:title" content="how to make JWT requests with httpie-jwt-auth plugin? - Teracy's Blog" />
+  <meta name="twitter:description" content="how to make JWT requests with httpie-jwt-auth plugin?" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/teracy_logo.png" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="/javascripts/libs/jquery.browser.min.js" type="text/javascript"></script>
+<script src="/javascripts/font.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news">News</a></li>
+  <li><a href="/categories/projects">Projects</a></li>
+  <li><a href="/categories/how-to">How-to</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">How to Make JWT Requests With Httpie-jwt-auth Plugin?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2015-09-03T11:33:00+00:00" datetime="2015-09-03T11:33:00+00:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p>At Teracy, we embrace JWT (JSON Web Tokens)<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>  for REST APIs to make secure requests. Just for
+your information: &ldquo;JSON Web Tokens are an open, industry standard RFC 7519 method for representing
+claims securely between two parties&rdquo;.</p>
+
+<!-- more -->
+
+
+<p>We&rsquo;re using JWT for our REST APIs basing on the flask-boilerplate<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> project that are empowering
+our clients&#8217; web applications and our internal projects.</p>
+
+<p>And to test REST APIs, we&rsquo;re using a really simple powerful http client called httpie<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> .</p>
+
+<p>To make a JWT request with <code>httpie</code>, you need to use the following command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ http example.org Authorization:'Bearer jwt_token_here'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hower, typing <code>Authorization</code> with the exact value format is a bit hard and error-prone, that&rsquo;s the
+reason why we created <a href="https://github.com/teracyhq/httpie-jwt-auth">httpie-jwt-auth</a> plugin with the first v0.1.0 release. After installing
+<code>httpie-jwt-auth</code>, you could use this instead:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ http --auth-type=jwt --auth=jwt_token_here: example.org</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it. It&rsquo;s really easy to use for any JWT requests with <code>httpie</code>.</p>
+
+<p>Please note that colon character at the end of <code>jwt_token_here</code>, we&rsquo;re going to work on removing
+the redundant colon character with: <a href="https://github.com/teracyhq/httpie-jwt-auth/issues/3">https://github.com/teracyhq/httpie-jwt-auth/issues/3</a></p>
+
+<p>Hope that you&rsquo;ll like it and use it as much as we do.</p>
+
+<p>Happy developing and debugging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://jwt.io/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://github.com/teracyhq/flask-boilerplate<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://github.com/jkbrzt/httpie<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Thu Sep 3 12:53:24 2015</strong><br/>BLOG-55 | httpie-jwt-auth v0.1.0 release announcement
+</li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2015-09-03-how-to-make-jwt-requests-with-httpie-jwt-auth-plugin.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">hoatle</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2015-09-03T11:33:00+00:00" datetime="2015-09-03T11:33:00+00:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2015</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/en/'>en</a>, <a class='category' href='/categories/projects/'>projects</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/httpie/'>httpie</a>, <a class='tag' href='/tags/httpie-jwt-auth/'>httpie-jwt-auth</a>, <a class='tag' href='/tags/jwt/'>jwt</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/" data-via="teracyhq" data-counturl="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2015/07/22/teracy-birthday-slack-bot/" title="Previous Post: Teracy happy birthday Slack bot">&laquo; Teracy happy birthday Slack bot</a>
+      
+      
+        <a class="basic-alignment right" href="/2015/12/21/how-to-use-django-celery-email-on-heroku/" title="Next Post: how to use django-celery-email on Heroku">how to use django-celery-email on Heroku &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracyhq"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/">Những điều Cần Biết để Xây Dựng Thử Nghiệm Người Dùng Hiệu Quả</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/">How to Develop Angular 2 Applications Easily With Docker and Angular-cli</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/09/01/cach-xay-dung-san-pham/">Cách Xây Dựng Sản Phẩm</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/08/19/teracy-dev-vision/">Teracy-dev Vision</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi/">Khi Kỹ Sư Trở Thành Quản Lý: Làm Thế Nào để Trở Thành Lãnh đạo Kỹ Thuật Giỏi</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracyhq">@teracyhq</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracyhq',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/';
+        var disqus_url = 'http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,3016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2016-09-29T11:30:26+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Những điều cần biết để xây dựng thử nghiệm người dùng hiệu quả]]></title>
+    <link href="http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/"/>
+    <updated>2016-09-29T09:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png" title="Xây dựng thử nghiệm người dùng" ></p>
+
+<p>Gần đây số lượng các ứng dụng trong thị trường android và iOs đã vượt xa con số 8 triệu, ngoài ra còn
+có một con số không giới hạn các trang web và các ứng dụng web đang xuất hiện khắp nơi trên thế giới
+nữa. Với khối lượng khổng lồ các ứng dụng đó thì điều khan hiếm nhất là khoảng thời gian tập trung
+của người dùng cho mỗi ứng dụng.</p>
+
+<p>Thách thức lớn nhất trong thiết kế UX là thu hút được nhiều thời gian tập trung của người dùng.
+Điều này đặt ra một thách thức với người chủ sở hữu sản phẩm và những người thiết kế UX làm sao thiết kế
+ra những ứng dụng thu hút được sự chú ý và tham gia của người dùng.</p>
+
+<h1>Tại sao thử nghiệm người dùng lại đặc biệt quan trọng như vậy</h1>
+
+<p>Một trong những cách rất hiệu quả để đảm bảo chuyển đổi và tham gia tốt hơn là thực hiện &ldquo;thử nghiệm
+người dùng&rdquo; (Hay đúng hơn là thử nghiệm khả năng sử dụng). Đó là một cách khoa học để tìm ra những gì
+mà người dùng dễ dàng tìm thấy và những điều họ phải làm. Nghiên cứu về người dùng thường xuyên được
+thảo luận bởi rất nhiều lãnh đạo nhóm thiết kế bao gồm <a href="https://medium.com/@ideo">IDEO</a>,
+<a href="https://medium.com/@frogdesign">frog</a> và nhiều nhà thiết kế khác.</p>
+
+<p>Chúng tôi đã quan sát một số những đội ngũ hàng đầu thế giới có kinh nghiệm thiết kế phục vụ hàng triệu
+người dùng trên toàn cầu và đã rút ra được vài bài học nhanh chóng mà bạn có thể sử dụng trong nghiên
+cứu người dùng săp tới của mình:</p>
+
+<h1>1. Biết được bạn đang mong muốn gì</h1>
+
+<p>Thậm chí trước khi bạn nghĩ về thử nghiệm người dùng, bạn nên đặt ra cho mình một mục tiêu nào đó.
+Các cách xây dựng mục tiêu có thể sẽ khác nhau nếu như bạn đang giải quyết vấn đề về thiết kế của
+một ứng dụng hiện có hoặc khi bạn thẩm định một thiết kế hoàn toàn mới của một ứng dụng sắp được tung ra.</p>
+
+<ul>
+<li><strong>Đối với ứng dụng/trang web hiện có</strong>: Bạn có được những quan sát về các vấn đề thiết kế từ Google
+Analytics, Mixpanel. Giải pháp của vấn đề này đó là bạn là người dùng thử nghiệm trên những thách thức
+hiện tại trong khi khám phá các cách khác để cải thiện. Ví dụ: đối với ứng dụng thương mại điện tử,
+người dùng có thể thêm một số sản phẩm vào giỏ hàng, nhưng họ sẽ quay lại để xem chi tiết sản phẩm thay vì thanh toán.</li>
+</ul>
+
+
+<p>Đối với những ứng dụng hiện có, cải thiện kết quả kinh doanh chính là mục tiêu chính của thử nghiệm người dùng.</p>
+
+<p>Ví dụ, mục tiêu chính đối với ứng dụng hiện có trong ví dụ trên là chuyển từ giỏ hàng sang mục thanh toán.</p>
+
+<ul>
+<li><strong>Đối với ứng dụng/trang web sắp ra</strong>: với ứng dụng sắp được tung ra, bạn cần phải có giả thuyết thiết kế nhất định bao gồm: hướng dẫn thương hiệu, thành phần thiết kế&hellip; Ví dụ: với trường hợp ứng dụng âm nhạc, bạn đưa ra lựa chọn các tab cho các loại nhạc khác nhau thay vì dùng bộ lọc.
+Đối với ứng dụng sắp ra, mục tiêu chính có thể là xác nhận các giả thuyết thiết kế.</li>
+</ul>
+
+
+<p>Trong ví dụ của chúng tôi, chúng tôi muốn xác nhận liệu người dùng sẽ sử dụng các tuỳ chọn để tìm các loại âm nhạc thay vì sử dụng bộ lọc.
+<strong>Việc thiết lập mục tiêu ngay từ đầu khi kiểm thử sẽ giúp bạn có những câu hỏi đúng</strong>.</p>
+
+<h1>2. Tuyển chọn người dùng thử nghiệm cẩn thận</h1>
+
+<p>Khi bạn đã quyết định được mục tiêu thử nghiệm người dùng, bạn cần phải kiểm tra người dùng để thực hiện
+thử nghiệm người dùng. Khi một sản phẩm được xây dựng, bạn cũng đã có hồ sơ người dùng và bạn có một vài người dùng thực &ndash; những người muốn được xem các ứng dựng mới. Bạn có thể cùng họ thực hiện kiểm thử.</p>
+
+<p>Mặc dù rất dễ dàng để kiểm thử với người dùng hiện tại nhưng cũng thật cẩn thận để loại bỏ thành kiến từ những trải nghiệm của họ.</p>
+
+<p>Để giảm bớt thành kiến từ những kinh nghiệm sẵn có, bạn có thể muốn tạo một phiên bản đầy đủ các ứng dụng để làm cho toàn bộ trải nghiệm của họ tự nhiên hơn.</p>
+
+<p>Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg" title="% Hồ sơ người dùng của airbnb" ></p>
+
+<p>Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
+quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
+chọn người dùng mẫu cho thử nghiệm người dùng:
+&ndash; <strong>Liên quan</strong>: Ứng dụng của bạn có liên quan tới người dùng thử nghiệm không?
+&ndash; <strong>Tần suất sử dụng</strong>: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?
+&ndash; <strong>Nhân khẩu học</strong>: Sự khác biệt văn hoá là một yếu tố quan trọng đối với trải nghiệm của người dùng. Tập trung vào nơi ở, tuổi, giới tính khi lựa chọn người dùng mẫu.
+&ndash; <strong>Mức thu nhập</strong>: Những người dùng này có sẵn sàng trả tiền để sử dụng ứng dụng/dịch vụ của bạn không? Điều này bao gồm cả khả năng tài chính và thói quen mua sắm.</p>
+
+<p>Bạn còn nghĩ ra được ý tưởng nào nữa không? Hãy cho chúng tôi biết nhé.</p>
+
+<h1>3. Thời điểm nào thích hợp cho việc kiểm thử người dùng?</h1>
+
+<p>&ldquo;Tôi sẽ đợi tới giao diện cuối cùng để tiến hành kiểm thử người dùng&rdquo;. Chủ sở hữu sản phẩm chỉ tiến hành kiểm thử người dùng khi họ có được phiên bản cuối cùng. Đó không phải là một ý hay, bởi vì khi đó bạn sẽ phải lặp lại hầu hết thời gian và công sức đã bỏ ra.
+Lặp lại ngay khi có thể trong quy trình thiết kế để tiết kiệm thời gian và công sức.
+<img class="center" src="http://blog.teracy.com/images/2016/09/29/quy-trinh-thiet-ke.jpeg" title="Quy trình thiết kế" ></p>
+
+<p>Những mong đợi trong các giai đoạn khác nhau của quy trình kiểm thử người dùng.
+&ndash; <strong>Từ ý tưởng đến phác hoạ bằng tay</strong>: Thảo luận các ý kiến trên giấy bút hoặc trên bảng trắng. Tập hợp các phác hoạ bằng tay vào CanvasFlip và mời người dùng nội bộ kiểm thử.
+&ndash; <strong>Từ phác họa bằng tay đến thiết kế khung sườn (wireframing)</strong>: Trong giai đoạn này, bạn gần như đã tạo được hình dáng phiên bản giao diện người dùng, xác định các icon và nhãn. Cách tốt nhất là giới thiệu chúng đến người dùng bên ngoài nhưng ở quy mô nhỏ.
+&ndash; <strong>Từ thiết kế khung sườn đến mockup ban đầu</strong>: Khi bạn xây dựng các mockup, bạn nên giới thiệu chúng đến người dùng để thu được các trải nghiệm ban đầu. Bạn tiếp tục sửa đổi và đưa ra bản giao diện người dùng cuối cùng trên cơ sở nhận xét của người dùng ở giai đoạn này.
+Hầu hết các nhóm nổi tiếng đều sử dụng công cụ phân tích UX như CanvasFlip để tạo ra dòng UX tương tác (nguyên mẫu) và tạo ra bộ phân tích UX như video người dùng, quy trình chuyển đổi hình phễu, và bản đồ nhiệt tương tác.</p>
+
+<h1>4. Mức độ tham gia của bạn như thế nào trong quá trình kiểm thử người dùng</h1>
+
+<p>Luôn có sự đánh đổi giữa việc tạo ra một ngữ cảnh kiểm thử theo giời gian thực và việc quan sát người dùng.
+Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức và đưa ra quyết định mang tính quyết đoán hơn so với bản năng.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/09/29/kiem-thu-tinh-kha-dung.png" title="Kiểm thử tính khả dụng" ></p>
+
+<p>Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:
+&ndash; <strong>Kiểm duyệt tại chỗ</strong>: Trong giai đoạn này, bạn sẽ luôn ở cạnh người dùng, yêu cầu tiến hành các tác vụ, ra câu hỏi và quan sát phản ứng. Điều này sẽ có ích ở giai đoạn đầu phát triển thiết kế.
+&ndash; <strong>Kiểm duyệt từ xa</strong>: Trong giai đoạn này, bạn có thể kết nối qua Skype, Google Hangout, Zoom hoặc Go-to-Meeting&hellip; Bạn có thể yêu cầu nhiệm vụ thực hiện và quan sát phản ứng. Nói chung là giữ cho sự tương tác càng ít càng tốt. Điều này hữu dụng trong giai đoạn dựng khung và thiết kế mockup.
+&ndash; <strong>Không kiểm duyệt</strong>: đúng như tên của nó, một thử nghiệm người dùng không được kiểm duyệt được tiến hành mà gần như không có sự can thiệp nào. Người dùng được đưa cho một nguyên mẫu thiết kê (phototype) và yêu cầu chạy thử hoặc đưa ra một tác vụ để thực hiện. Ví dụ: Mua/tìm kiếm một item nào đó.</p>
+
+<h1>5. Cách phân tích kết quả thử nghiệm người dùng</h1>
+
+<p>Khi bạn tiến hành thử nghiệm người dùng bằng bản thiết kế hiện có, bạn thường thực thực hiện với phần dễ trước. Tiếp đến sẽ là những phần quan trọng và phức tạp hơn &ndash; để phân tích kết quả kiểm thử người dùng, tìm ra những thứ cần loại bỏ và xem xét mức độ ảnh hưởng của các kết quả đó đối với thiết kế hiện tại.</p>
+
+<p><strong>Phân tích kết quả thử nghiệm người dùng ở giai đoạn đầu</strong></p>
+
+<p>Giai đoạn đầu thường tiến hành thử nghiệm người dùng ở mức có kiểm soát. Kết quả thu được thường mang tính chủ quan, qua đó có thể hiểu được mong đợi và hành vi của người dùng và trên cơ sở đó để xây dụng thiết kế. Khi đã hiểu được các tính năng, các mẫu thiết kế, các lựa chọn điều hướng, sơ đồ icon, ưu iên về font chữ, nhãn, bạn có thể xây dựng khung cho toàn bộ quy trình thiết kế còn lại.</p>
+
+<p><strong>Phân tích kết quả thử nghiệm người dùng ở giai đoạn sau</strong></p>
+
+<p>Khi nghiên cứu kết quả thử nghiệm người dùng ở giai đoạn sau, bạn buộc phải tuân theo thuyết thiết kế đã xây dựng ở giai đoạn trước. Các thuyết đó theo dạng &ldquo;chuyển đổi theo dòng UX&rdquo; hoặc &ldquo;Thẩm định CTA&rdquo; trong các thiết kế màn hình. Ví dụ, bạn muốn biết có bao nhiêu người dùng đã bỏ đi khi đã chọn xong sản phẩm và đang chuẩn bị sang bước thanh toán. Hay có bao nhiêu người dùng đã click vào &ldquo;Login&rdquo; CTA so với phần còn lại của màn hình.</p>
+
+<p>Khi bạn hiểu được hành vi và mong đợi của người dùng, bạn sẽ có lựa chọn tốt hơn giữa thử nghiệm người dùng ở mức kiểm soát từ xa và không kiểm soát.</p>
+
+<p>Công cụ kiểm thử tính khả dụng từ xa như Canvasflip có thể cung cấp rất nhiều thông tin hữu ích.</p>
+
+<p><strong>Biết được người dùng sẽ bỏ UX-flow từ chỗ nào</strong>
+Trong kênh chuyển đổi trên (được tạo ra với CanvasFlip.com), bạn có thể thấy được sừ rời bỏ lớn tại vòng lặp thứ 1 trong màn hình &ldquo;Experiencies&rdquo;.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/09/29/quy-trinh-chuyen-doi-hinh-pheu.png" title="Quy trình chuyển đổi hình phễu" ></p>
+
+<p><strong>Nơi người dùng tương tác nhiều nhất trong giao diện</strong></p>
+
+<p>Một bản đồ nhiệt tương tác về thử nghiệm người dùng được tạo ra bởi CanvasFlip.com giúp bạn biết được khu vực tương tác thường xuyên của người dùng trong giao diện người dùng.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/09/29/ban-do-nhiet-tuong-tac.png" title="Bản đồ nhiệt tương tác" ></p>
+
+<p><strong>Phân tích hành trình của từng cá nhân người dùng</strong></p>
+
+<p>Với CanvasFlip.com, bạn có thể phân tích được những điều hướng của người dùng và thời gian người dùng ở lại mỗi màn hình.
+<img class="center" src="http://blog.teracy.com/images/2016/09/29/hanh-trinh-cua-nguoi-dung.png" title="Hành trình của người dùng" ></p>
+
+<p><strong>Xem toàn bộ video phiên người dùng để phân tích và cải thiện hành vi người dùng</strong></p>
+
+<p>Bạn có thể ghi lại các điều hướng người dùng, sau đó tìm ra nơi người dùng gặp vấn đề và tìm cách cải thiện trải nghiệm người dùng.
+<img class="center" src="http://blog.teracy.com/images/2016/09/29/ghi-lai-dieu-huong-nguoi-dung.png" title="Ghi lại điều hướng người dùng" ></p>
+
+<h1>Kết luận</h1>
+
+<p>Với nỗ lực nhằm tạo ra một trải nghiệm người dùng tuyệt vời, cần phải tiến hành thử nghiệm người dùng và để thực hiện thử nghiệm hiệu quả, bạn phải biết cần gì/ sửa đổi gì, lựa chọn nhóm người dùng càng hẹp càng tốt, kiểm thử ngay từ lúc đầu, và sử dụng những thông tin hữu ích để rút ra kết luận từ kết quả thử nghiệm người dùng.</p>
+
+<p>Bài dịch từ: <a href="https://blog.prototypr.io/everything-you-should-know-to-conduct-a-kickass-user-testing-89977e653123#.shhsbhhoy">Everything you should know to conduct a kickass user testing</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to develop Angular 2 applications easily with Docker and angular-cli]]></title>
+    <link href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/"/>
+    <updated>2016-09-22T12:44:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
+
+<p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
+getting started article from the Angular 2 official documentation. That&rsquo;s the reason why
+<a href="https://cli.angular.io/">angular-cli</a> is created to ease the pain. <code>angular-cli</code> is a great CLI
+tool, however, it takes a lot of time to get it working by installing nodejs and <code>angular-cli</code>.
+Luckily, we&rsquo;ve created <a href="https://github.com/teracyhq/docker-angular-cli">docker-angular-cli</a> project
+to build a Docker image so that anyone could use it right away for any Angular 2 projects without the
+hassle of installing nodejs and <code>angular-cli</code>. This guide will help you get started in the most
+easily and convenient way. It&rsquo;s assumed that you don&rsquo;t need to master Docker but only require that
+Docker is installed on your machine and you could follow the instructions below.</p>
+
+<!-- more -->
+
+
+<h2>0. Prerequisites</h2>
+
+<ul>
+<li><p>Make sure the latest <code>Docker</code> and <code>docker-compose</code> is installed on your machine. If not, follow
+<a href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a> or <a href="https://docs.docker.com/engine/installation/linux/">https://docs.docker.com/engine/installation/linux/</a> or
+<a href="https://docs.docker.com/docker-for-windows/">https://docs.docker.com/docker-for-windows/</a> to install them.</p></li>
+<li><p><code>docker-angular-cli</code> is tested with <code>Docker</code> v1.12.1 and <code>docker-compose</code> v1.8.0 with the native app
+on Mac and on Ubuntu. It should work well on Windows, too.</p></li>
+</ul>
+
+
+<h2>1. Init a new project</h2>
+
+<p>First, to init a new Angular 2 project, follow:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkdir new-ng-project
+</span><span class='line'>$ cd new-ng-project
+</span><span class='line'>$ docker run -it --rm -v "$PWD":/usr/src -w /usr/src teracy/angular-cli /bin/bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After that, you should be presented with bash console for the docker container. Use <code>ng init</code> to
+init a new project.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># ng init --name &lt;project-name&gt; --style scss</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see the &lt;project-name> yourself. By default, the style file is <code>css</code>. I recommend using
+<code>scss</code> extension for style files.</p>
+
+<h2>2. Add Dockerfile and docker-compose.yml file</h2>
+
+<p>Add Dockerfile and docker-compose.yml as I did with <a href="https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642">https://github.com/teracyhq/angular-boilerplate/commit/082a879c5df3fa0ae6ddc000d84512754b62a642</a></p>
+
+<h2>3. Note for angular-boilerplate</h2>
+
+<p>For easier setup with best practices, you can combine the 2 steps above (1 + 2) with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone https://github.com/teracyhq/angular-boilerplate.git --depth=1 new-ng-project</span></code></pre></td></tr></table></div></figure>
+
+
+<p>More useful stuff will come to <a href="https://github.com/teracyhq/angular-boilerplate">angular-boilerplate</a>
+later such as CI, CD, production deployment, server side rendering, desktop app and native apps, etc
+best practices.</p>
+
+<h2>4. Serve</h2>
+
+<p>To start serving the web app, follow:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose up serve</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and then open <a href="http://localhost:4200">http://localhost:4200</a> to see the web app.</p>
+
+<h2>5. Test</h2>
+
+<p>To run the unit test with Karma and Chrome, follow:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose up test</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should see the unit test running on Chrome browser pre-installed on the Docker image.</p>
+
+<h2>6. Exec commands</h2>
+
+<p>To exec some commands, for example:</p>
+
+<p>for linting (code style checking):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose exec serve ng lint</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or for installing more npm packages:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose exec serve npm install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or for running unit tests:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ docker-compose exec serve ng test --browsers Chrome_no_sandbox</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can exec any commands on the running container.</p>
+
+<h2>7. Develop</h2>
+
+<p>Or if you want to open a new ssh session, open a new terminal window, and execute this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd new-ng-project
+</span><span class='line'>$ docker-compose run serve /bin/bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and then you should see something like:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Starting virtual X frame buffer: Xvfb.
+</span><span class='line'>Executing command /bin/bash
+</span><span class='line'>root@6d15153f5858:~# </span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now you can execute any commands you want.</p>
+
+<p>That&rsquo;s it. Now you should start developing Angular 2 applications more easily with <code>docker-compose</code>
+and <code>angular-cli</code> by using <code>docker-angular-cli</code>.</p>
+
+<p>You can follow the following tutorial to create a simple todo application: <a href="https://www.sitepoint.com/angular-2-tutorial/">https://www.sitepoint.com/angular-2-tutorial/</a></p>
+
+<h2>8. Learn more</h2>
+
+<ul>
+<li><a href="https://github.com/AngularClass/awesome-angular2">https://github.com/AngularClass/awesome-angular2</a></li>
+<li><a href="https://github.com/timjacobi/angular2-education">https://github.com/timjacobi/angular2-education</a></li>
+</ul>
+
+
+<p>If you need any consultancy or outsourcing, please contact us. We&rsquo;re eager to build world class web
+applications for you!</p>
+
+<p>Happy developing!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cách xây dựng sản phẩm]]></title>
+    <link href="http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham/"/>
+    <updated>2016-09-01T16:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/09/15/looking-glass.jpg" title="Looking Glass" ></p>
+
+<p style="text-align:center;"> <em>Ảnh của <a href="https://www.flickr.com/photos/corpz/5634268846/">Alex Kislow</a></em></p>
+
+<p>Tôi vừa có dịp trình bày tại <a href="http://thenextweb.com/conference/europe/#gref">TNW Europe</a> về <a href="https://www.youtube.com/watch?v=IIm289_YMIE&amp;index=9&amp;list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi">framework mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình</a>. Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
+Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước<em> 1: Bắt đầu. </em>Bước<em> 2: ??? </em>Bước<em> 3: Thu tiền!</em>), thì có lẽ chúng tôi đã chi một khoản tiền cho nó xong rồi ngồi chờ xem các sản phẩm mới tuyệt vời đua nhau nở rộ như là vườn hoa tháng 5 rồi.
+Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nhé.</p>
+
+<!-- more -->
+
+
+<h4><strong>Tổng quát</strong></h4>
+
+<ol>
+<li><p>Sản phẩm có thành công vì nó giải quyết được vấn đề cho mọi người. Nghe thì rất căn bản, nhưng mà là thứ quan trọng duy nhất cần phải được hiểu để có thể xây dựng được sản phẩm chất lượng.</p></li>
+<li><p>Bước đầu tiên khi làm cái gì đó mới là bạn phải hiểu được vấn đề cần phải giải quyết và giải quyết cho ai. Điều này khá rõ ràng và cần được làm rõ trước khi bạn nghĩ tới giải pháp nào.</p></li>
+<li><p>Hãy tự hỏi bản thân &ldquo;Tại sao vấn đề này đáng được giải quyết?&rdquo;.</p></li>
+<li><p>Nếu đối tượng bạn nhắm tới là 1 nhóm nhỏ xác định nào đó (bạn có thể nằm trong nhóm này), thì bạn có thể dựa vào trực giác của mình để tự đưa ra quyết định xây dựng sản phẩm nó như thế nào. Nếu không, thì bạn phải dựa vào các dữ liệu đã nghiên cứu để tạo quyết định cho mình.</p></li>
+<li><p>Nếu bạn là người sáng lập (start-up founder), thì con đường sẽ dễ dàng hơn nếu bạn đi theo hướng giải quyết vấn đề cho một nhóm đối tượng khách hàng nào đó, sau đó sẽ mở rộng đối tượng khách hàng sau khi đã có một vài kết quả ban đầu.</p></li>
+<li><p>Cái vấn đề mà bạn đang muốn giải quyết cần phải dễ dàng trao đổi, giao tiếp trong 1 vài câu ngắn gọn và được ủng hộ từ một ai đó trong nhóm đối tượng khách hàng của bạn, nếu không thì hãy cho nó là cái vấn đề nguy hiểm cần được quan tâm (<a href="http://www.urbandictionary.com/define.php?term=red%20flag">red flag</a>).</p></li>
+</ol>
+
+
+<h4><strong>Thực hiện</strong></h4>
+
+<ol>
+<li><p>Thực hiện tốt là có 1 cái kết luận đáng tin trong thời gian ngắn nhất có thể.</p></li>
+<li><p>Thực hiện không tốt là khi bạn thử làm cái gì đó, nó thất bại và:</p>
+
+<ol>
+<li><p>Bạn không rút ra được bài học nào để có thể áp dụng vào các dự án tương lai (vì bạn không biết tại sao nó thất bại)</p></li>
+<li><p>Bạn mất 1 năm để học được 1 bài học nào đó trong khi con đường thông minh hơn chỉ mất bạn 3 tháng.</p></li>
+</ol>
+</li>
+<li><p>Vấn đề chủ yếu phân cách giữa 1 đội thành công và không thành công là không phải họ làm những việc có thất bại hay không (chuyện tất yếu sẽ xảy ra), mà là họ thực hiện nó kiên định như thế nào.</p></li>
+<li><p>Khi truy tìm giải pháp cho 1 vấn đề nào đó, hãy đào rộng trước khi đào sâu. Thu thập ý kiến (Brainstorm) để tìm ra 10, 20, 50 giải pháp cho cái vấn đề đó trước khi chọn giải pháp tốt nhất. 5 ý tưởng đầu tiên sẽ là cái tất nhiên, sáng tạo sẽ xảy ra khi bạn đào sâu hơn vào ý tưởng 11, 20 hay 50.</p></li>
+<li><p>Nếu bạn đang thuyết trình 1 bản kế hoạch sản phẩm và ai đó có hỏi &ldquo;Bạn có bao giờ thử giải pháp X thay cho cái này chưa?&rdquo; và câu trả lời của bạn là “Không&#8221; thì đó chính là cái dấu hiệu nguy hiểm <a href="http://www.urbandictionary.com/define.php?term=red%20flag">red flag</a> của quá trình khai thác ý tưởng và nó chưa đủ nghiêm ngặt.</p></li>
+<li><p>Sử dụng kinh nghiệm đã trải qua để giúp bạn thu hẹp các ý tưởng tốt nhất. (Ví dụ như lựa chọn N ý tưởng của các thành viên trong nhóm, rồi phác thảo nó ra và cho mọi người xem rồi xem phản ứng của họ).</p></li>
+<li><p>Khi bạn đã tìm được một giải pháp hãy đặt giả thuyết và tự hỏi điều gì sẽ xảy ra nếu bạn xây dựng theo cách như thế này? (ví dụ: &ldquo;Vấn đề mà chúng ta muốn xử lý đó là đảm bảo mọi công dân của thành phố biết được mỗi tuần sẽ có sự kiện nào đó xảy ra. Vậy thì giả thuyết sẽ là: chúng ta có thể thông báo cho X% công dân thông qua e-mail&rdquo;).</p></li>
+<li><p>Bạn phải tìm được cách để rút ngắn công việc rà soát các giả thuyết của mình. Bạn có thể thực hiện nó với một ai đó bất kỳ và xem liệu họ có thể hiểu mình đang nói gì? Bạn có thể thu thập ý kiến khách hàng và xem có đủ lượng người có hứng thú với ý tưởng của mình hay không? Bạn có thể làm nhanh 1 sản phẩm để minh hoạ và sẽ cho bạn 1 kết quả rõ ràng cho dù nó chưa hoàn thiện?</p></li>
+<li><p>Một khi bạn đã tìm được 1 giả thuyết hợp lý và rõ ràng, đừng cứ phải thử nghiệm nó ngay và luôn (vì có thể bạn tìm được 1 cách nào đó nhanh hơn), thay vào đó, hãy phân tách, hãy rà soát xem sản phẩm sẽ như thế nào khi nó được trau chuốt và thêm những tính năng mới, kiểm thử trường hợp khác nhau mà sản phẩm cần phải đạt được.</p></li>
+<li><p>Nếu dự án bạn đang làm nó lớn và có rất nhiều sự thay đổi khác nhau, hãy xem mình có thể chia nó ra nhiều cột mốc nhỏ và độc lập và có thể kiểm thử được. Đừng để mình rơi vào trường hợp khi mà bạn thực hiện 5 thay đổi và có một phần thay đổi gây ra sản phẩm bị lỗi, khi đó bạn không thể biết lỗi bị gây ra bởi phần nào.</p></li>
+<li><p>Tuỳ sản phẩm mà hãy xem xét và nhìn lại chúng, dù là thất bại hay thành công. Từ sản phẩm đó học được bài học gì? Đồng đội có học được gì hay không? Tương lai bạn có cần làm gì khác hơn? Sau đó hãy chia sẻ với tất cả người khác.</p></li>
+</ol>
+
+
+<h4><strong>Đo lường thành quả</strong></h4>
+
+<ol>
+<li><p>Làm thế nào để đo lường được thành công đối với kết quả lâu dài là điều rất quan trọng vì đó là cái mà mọi người mong đợi. Hãy chắc chắn thực hiện điều này vào đúng thời điểm (thậm chí còn quan trọng hơn cả việc bạn nghĩ &ldquo;Làm sao để làm được việc này?&rdquo;).</p></li>
+<li><p>Hãy xác định các số liệu được cho là thành công cho sản phẩm trước khi chúng được tung ra. Nếu không, sau khi đã có kết quả sản phẩm và bạn cố gắng giải thích các kết quả đó sẽ làm cho việc đánh giá thành công của sản phẩm không còn khách quan nữa.</p></li>
+<li><p>Với mỗi số liệu đạt được, hãy tạo ra 1 số liệu đối nghịch nào đó mà dựa vào đó có thể cho thấy sự việc này không phải là ngẫu nhiên mà ra (Ví dụ: Sản phẩm bán ra nhiều hơn là do chất lượng của sản phẩm đó tốt hơn)</p></li>
+<li><p>Nếu có số liệu nào đó thay đổi đột ngột, dù tốt hay xấu, hãy đặt câu hỏi &ldquo;Tại sao?&rdquo; trước khi lập kế hoạch để thúc đẩy hay giảm thiểu kết quả đó khi bạn chưa hiểu vì sao nó lại như thế.</p></li>
+<li><p>Hãy sử dụng công nghệ quả bóng thủy tinh (Crystal Ball) &ndash; phần mềm phân tích rủi ro để lựa chọn các cách đánh giá đúng sự thành công của sản phẩm. Hãy tự hỏi mình &ldquo;Nếu tôi có thể biết được tất cả về việc mọi người sử dụng sản phẩm của tôi ra sao, thì tôi muốn biết những gì về nó mà có thể biết được nó thành công hay không?&rdquo; Dựa vào câu trả lời đó rồi nhìn lại các số liệu thống kê gần với câu trả lời đó nhất.</p></li>
+<li><p>Mục tiêu luôn luôn phải đi đôi với thông tin bạn tin tưởng nhất. Nếu bạn đang làm việc để đạt được 1 mục tiêu đã xác định nào đó, và rồi trong quá trình làm phát hiện những thông tin mới mẻ khiến bạn thay đổi cách suy nghĩ, hãy tự hỏi mình có nên điều chỉnh mục tiêu của mình hay không dựa trên luồng thông tin mới này.</p></li>
+<li><p>Nếu bạn làm việc trong 1 đội nhóm nào đó nhưng mà bạn không đồng ý hay không hiểu gì về các đo lường thành quả của đội mình, hãy lên tiếng ngay và luôn, sớm còn hơn muộn khi mà mọi việc đã đâu vào đó.</p></li>
+<li><p>Nếu bạn hay dính vào việc tranh cãi với các thành viên trong đội nhóm của mình về việc hướng đi cho sản phẩm, có thể lý do chính là do sự không hợp ý, không đồng tình về sự đo lường thành quả của nhau, hãy lên tiếng dựa trên 1 sự đề nghị nào đó hợp lý hơn.</p></li>
+<li><p>Nếu bạn đang cố để tìm ra liệu sản phẩm của mình có hợp với thị trường hay không (so với việc cố gắng tối ưu hóa hoặc mở rộng), có lẽ bạn nên đặt mục tiêu vào việc giữ lại khách hàng, tự đặt câu hỏi &ldquo;có bao nhiêu người sử dụng sản phẩm của mình và thấy đủ tốt và quay lại dùng tiếp?&rdquo; thay vì hỏi rằng có bao nhiêu khách hàng.</p></li>
+</ol>
+
+
+<h4><strong>Đội nhóm cơ động</strong></h4>
+
+<ol>
+<li><p>Đừng nghĩ về vai trò của bạn (bạn là designer thì cần làm gì? bạn là kĩ sư thì cần làm gì?) mà hãy nghĩ rằng &ldquo;Tôi có thể làm gì tốt nhất để có thể giúp đội của mình thành công?&rdquo;</p></li>
+<li><p>Các team ưu tiên tìm hiểu, giải quyết vấn đề có khả năng thành công cao hơn so với các team ưu tiên vào giải pháp. Bởi vì vấn đề cần giải quyết có tạo động lực, còn giải pháp thì có sẵn.</p></li>
+<li><p>Cuối cùng thì mọi người luôn có 1 ý tưởng giống nhau đó là xây dựng 1 cái gì đó tuyệt vời.</p></li>
+<li><p>Biết người biết ta, biết mình giỏi về cái gì, biết đồng đội giỏi về cái gì, rồi phân chia trách nhiệm cho mỗi người.</p></li>
+<li><p>Một team tốt và tồn tại lâu dài cần phải giao tiếp tốt, mỗi thành viên cần phải cảm thấy rằng họ có thể thể hiện cảm nghĩ, sự nhìn nhận của mình, cho dù nó có hơi trái ngược, nhiều luồng ý kiến đa dạng là cách để đạt được kết quả tốt nhất. Cho nên đừng sợ hãi thể hiện ý kiến của mình, đừng sợ hãi lặp đi lặp lại ý kiến đó nếu những người khác chưa hiểu bạn muốn gì, hãy khuyến khích và cố gắng để đồng đội cảm thấy làm điều đó là an toàn.</p></li>
+</ol>
+
+
+<p>Bài dịch từ: <a href="https://medium.com/the-year-of-the-looking-glass/building-products-91aa93bea4bb#.kd7eag413">Building Products</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev vision]]></title>
+    <link href="http://blog.teracy.com/2016/08/19/teracy-dev-vision/"/>
+    <updated>2016-08-19T16:27:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/08/19/teracy-dev-vision</id>
+    <content type="html"><![CDATA[<p>teracy-dev has been being developed and in use from the first days of Teracy, it&rsquo;s been
+about 3 years<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> now. We&rsquo;re in a hurry for a really big, exciting release for the next version of
+teracy-dev. I&rsquo;d like to take this chance to share with you about teracy-dev vision first and many
+other new features and improvements for the next long awaiting teracy-dev release.</p>
+
+<!-- more -->
+
+
+<p>Let&rsquo;s get started with a story about my first working days as a developer when joining my first
+company 8 years ago. As developers, it&rsquo;s expected that we should have our development environment
+ready before starting coding. At that time, my company used Maven to build Java projects and I was
+required to install it. However, as a junior, I had difficulties to install it on the Ubuntu
+computer provided to me. I struggled with it for nearly a day and eventually I had to ask for
+help to install it successfully. This is a true story. Now I can even install it in just some
+minutes with a few lines of commands because I have more experience.</p>
+
+<p>Now just imagine what if juniors don&rsquo;t have to set up these boring tools each by each but just enjoy
+coding, that&rsquo;s the more fun part. What if all developers should have the same development environment
+even they use different kinds of operating systems so that we don&rsquo;t have to deal with the very common
+problem: &ldquo;But it works on my machine&rdquo;. What if the production environment is easily set up exactly
+the same on a developer machine to debug and fix things and vice versa?</p>
+
+<p>These what ifs lead us to use <code>vagrant</code> as the base to complete these things as the first days of
+Teracy journey. We&rsquo;d like to upgrade the vagrant dev environment easily, for example, <code>$ git pull</code>
+then <code>$ vagrant reload --provision</code> and you&rsquo;re done. We have default configuration and we could
+override it easily. We&rsquo;d like to use this development environment for all our projects: from our
+internal projects to our clients&#8217; projects.</p>
+
+<p>We created teracy-dev to solve the mentioned problems above, help boost our productivity and it could
+even help us more than that. Everyone just enjoys it, we don&rsquo;t have to deal with installing things
+manually, it&rsquo;s auto provided with just one command (<code>$ vagrant up</code>) thanks to the provision software.
+We&rsquo;re using Chef to provision but we can use others to provision, too, for example Ansible, Puppet, etc.</p>
+
+<p>We see that teracy-dev is so useful for developers, so we&rsquo;d like to share it, shape its future
+together with anyone who wants to work with software. And we envision teracy-dev with the following
+statement:</p>
+
+<blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote>
+
+
+<p>That&rsquo;s our vision for teracy-dev as the base development platform and we&rsquo;re going to make it true.
+Note that it should be used for everyone, even with our QA engineers, with our manual testers, with
+our employees, with our users as long as they follow exactly a little setup instruction guide.</p>
+
+<p>I believe that everyone should use it as much as we enjoy using and developing it. It&rsquo;s been saving
+us and our clients a lot of money as we don&rsquo;t have to spend the time to set up development environment
+for each and every project manually.</p>
+
+<p>We improve it day by day though our projects, we listen to our developers, our clients for feedback
+on usage and development. However, we still have some problems with it. For example, on Windows, the
+file sharing system is really slow. It&rsquo;s not really lightweight and modular enough to serve every
+project&rsquo;s needs.</p>
+
+<p>We know all these problems and we&rsquo;re going to fix these all with the next version by leveraging
+Docker and Rsync. We intended to use Docker for long, we expected it should be in use since
+teracy-dev v0.4.0 but we failed to make it. Now we promise you that teracy-dev v0.5.0 will leverage
+Docker as the core workflow and it will rule the world of developers.</p>
+
+<p>We will add more documentation for usage, accelerate the development pace so that you should benefit
+from it as we do. Let&rsquo;s try using it once with
+<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">teracy-dev v0.4.2</a>, it&rsquo;s open source and
+totally free. You will love it as we do now for 3 years and counting. Let&rsquo;s together make it better
+and better and better.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/tags/teracy-dev/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Khi kỹ sư trở thành quản lý: Làm thế nào để trở thành lãnh đạo kỹ thuật giỏi]]></title>
+    <link href="http://blog.teracy.com/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi/"/>
+    <updated>2016-08-08T08:28:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/08/08/meeting-930x548.jpg" title="Leadership Meeting" ></p>
+
+<p style="text-align:center;"> <em>Ảnh Từ Rawpixel.com/Shutterstock</em></p>
+
+<p>Các quản lý kỹ thuật thường được thăng chức làm lãnh đạo dựa vào sự đánh giá, xếp hạng tốt. Đây được
+coi là phương án thực tế vì các quyết định kinh doanh giờ đây ngày càng phụ thuộc nhiều vào yếu tố
+công nghệ nền tảng. Các lãnh đạo công nghệ cần phải đánh giá các lựa chọn kỹ thuật, đưa ra những
+khuyến nghị phù hợp với các yêu cầu kinh doanh và phải trao đổi, làm rõ các quyết định đó với những
+người liên quan không phải là dân kỹ thuật. Nếu các quản lý công nghệ không hiểu công nghệ thật chắc
+thì rất khó để đưa ra những quyết định đúng đắn.</p>
+
+<p>Có một thách thức lớn là một kỹ sư giỏi không phải tự nhiên trở thành một lãnh đạo giỏi. Khả năng
+lãnh đạo bất kỳ ai ở cương vị nào không phải tự nhiên mà có. Lãnh đạo là kỹ năng phải được rèn luyện
+suốt cuộc đời.</p>
+
+<!-- more -->
+
+
+<p>Để giúp các quản lý kỹ thuật mới chuyển đổi từ vai trò nhân viên thành lãnh đạo, tôi thường làm việc
+với họ để phát triển một loạt các kỹ năng không liên quan gì đến kỹ thuật. Mặc dù không ai giống ai,
+tôi nhận thấy rằng các nguyên lý được vạch ra sau đây là nền tảng tốt cho những ai muốn trở thành một
+lãnh đạo công nghệ <em>hiệu quả</em> &ndash; một người có thể dẫn dắt đồng đội, triển khai thay đổi và liên tục
+gặt hái được nhiều thành công.</p>
+
+<h2>1. Vận dụng tư duy hướng kinh doanh và biết cảm thông</h2>
+
+<p>Khi còn là nhân viên, bạn xem xét công nghệ với con mắt thuần tuý của kỹ sư thì chấp nhận được. Bạn
+có nhiều thời gian để tập trung vào việc &ldquo;làm thế nào&rdquo; và không cần phải tập trung cho câu hỏi &ldquo;tại
+sao&rdquo;. Điều này có nghĩa là khi còn là nhân viên, bạn thoải mái lựa chọn công nghệ mà không phải tính
+đến sự ảnh hưởng của nó tới kinh doanh mà để cho cấp lãnh đạo tính các phương án khả thi thực tế. Tuy
+nhiên, khi bạn trở thành lãnh đạo, bạn không còn được xa xỉ như vậy nữa. Vì giờ bạn đã là quản lý,
+bạn phải đưa ra quyết định dựa trên những thực tế phức tạp ở thương trường, ví dụ như các ràng buộc
+tài chính, văn hoá của tổ chức, chính trị nơi công sở, nhược điểm của con người và các ràng buộc kết
+quả kinh doanh.</p>
+
+<p>Các nhà quản lý mới thường mắc sai lầm khi đưa ra các luận cứ cho những khởi xướng của mình dựa trên
+các điều kiện kỹ thuật chứ không phải điều kiện kinh doanh, và họ cảm thấy tuyệt vọng khi không nhận
+được các hỗ trợ đúng đắn, kịp thời. Họ kỳ vọng doanh nghiệp hiểu rõ khởi xướng của mình trên quan
+điểm kỹ thuật nhưng cuối cùng nhận ra rằng việc của họ là phải đặt các khuyến nghị của mình trên quan
+điểm kinh doanh.</p>
+
+<p>Cách tốt nhất để khắc phục sai lầm này là dành thời gian tìm hiểu các chỉ số kinh doanh mà doanh
+nghiệp quan tâm nhất và hiểu được những khó khăn gây ra cho những phòng ban khác. Để làm được điều
+này cần sự cảm thông &ndash; một kỹ năng không thể thiếu của một lãnh đạo hiệu quả. Các quản lý công nghệ
+nên trao đổi với các đồng nghiệp và lắng nghe các khó khăn, thách thức từ họ. Các quản lý cũng nên
+hiểu rõ các chỉ số kinh doanh chính và biết được những yếu tố nào thúc đẩy các chỉ số này. Họ cần
+phải vận dụng đến các kỹ năng phân tích, kỹ năng định lượng mà họ có khi còn là kỹ sư thuần tuý và
+áp dụng những kỹ năng này cho các vấn đề quản lý. Một khi họ làm được điều này, họ sẽ trở thành lãnh
+đạo kinh doanh thay vì đơn thuần chỉ là dân công nghệ, và họ có thể bắt đầu những cuộc trao đổi sâu
+sắc để xây dựng, phát triển doanh nghiệp.</p>
+
+<h2>2. Vận dụng tư duy hướng giải pháp</h2>
+
+<p>Một khía cạnh khác của khả năng lãnh đạo mà các quản lý mới thường gặp khó khăn là làm sao để hiểu
+cách tiếp cận các vấn đề nằm ngoài sự kiểm soát trực tiếp của mình. Các thay đổi trong tầm ảnh hưởng
+trực tiếp của quản lý có thể triển khai được ngay. Ví dụ, nếu một quản lý đảm bảo chất lượng (QA<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>)
+muốn sử dụng thêm Cucumber vào chạy kiểm thử tự động để khuyến khích phương pháp phát triển hướng
+hành vi (BDD<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>), thì người đó không cần phải lên lịch họp hành với các phòng ban khác để thực hiện
+việc này. Nhưng nếu một quản lý kỹ thuật muốn thay đổi cách quản lý dự án từ phương pháp Waterfall
+sang phương pháp Agile thì người đó sẽ cần rất nhiều thời gian làm việc với nhiều người nằm ngoài
+phòng ban của mình vì đây là thay đổi tổ chức rất lớn.</p>
+
+<p>Khi phải đối mặt với những vấn đề nằm ngoài tầm kiểm soát trực tiếp, những nhà quản lý mới thường
+đầu hàng quá sớm và đưa ra kết luận quá vội vàng: &ldquo;Tôi đã gửi email tới Tom trong nhóm Quản lý chương
+trình về việc áp dụng Scrum cho dự án tới, nhưng anh ta chẳng trả lời tôi. Rõ ràng là tổ chức ta chưa
+sẵn sàng để áp dụng phương pháp Agile.&rdquo; Trong những tình huống như vậy, khi các quản lý mới hấp tấp
+đưa ra kết luận của mình, thì chính họ đang trao vấn đề đó tới cấp quản lý cao hơn thay vì tự mình
+xử lý vấn đề. Điều này chỉ có thể chấp nhận được khi bạn còn là nhân viên bình thường chứ không thể
+chấp nhận được khi bạn đã là lãnh đạo.</p>
+
+<p>Là lãnh đạo, bạn cần có khả năng vượt qua các chướng ngại nằm ngoài tầm kiểm soát trực tiếp của mình.
+Điều này có nghĩa là bạn cần thuyết phục các quản lý của phòng ban khác đồng ý áp dụng quy trình mới
+theo đề xuất của bạn. Hoặc nếu bạn thuộc cấp điều hành thì bạn cần phải tự giải quyết các vấn đề nằm
+xa ngoài tầm kiểm soát của mình, ví dụ như đưa ra bản kế hoạch để tăng doanh thu trong thời kì suy
+thoái kinh tế. Chìa khoá để dẫn tới thành công là vận dụng tư duy hướng giải pháp.</p>
+
+<p>Tư duy hướng giải pháp là cách nhìn tập trung vào mục tiêu hơn là vấn đề. Khi bạn phát triển tư duy
+hướng giải pháp, bạn tập trung công sức của mình để giành được kết quả mong muốn và bạn không phung
+phí thời gian để phàn nàn về những rào cản bạn gặp phải &ndash; bạn chỉ cần tìm cách vượt qua chúng. Quản
+lý của bạn khi đó sẽ trở thành bạn đường để giúp bạn giành được mục tiêu chứ không phải là người
+giải quyết các vấn đề hộ bạn. Một lãnh đạo có tư duy hướng giải pháp đưa ra các giải pháp tiềm năng
+khi cần tham vấn lãnh đạo của mình, và người đó tận dụng kỹ năng chuyên môn cũng như tầm ảnh hưởng
+của mình trong tổ chức để theo đuổi và hoành thành mục đích của mình.</p>
+
+<h2>3. Xây dựng kết nối và lấy được niềm tin từ mọi người</h2>
+
+<p>Các công ty cần thiết phải phân chia nhân viên của mình vào các phòng ban theo cấu trúc phân cấp để
+dễ bề quản lý. Tuy nhiên thực tế cho thấy nhiều công ty phân chia khá tuỳ tiện. Các phòng ban tồn
+tại đơn giản chỉ là để giúp quản lý kinh doanh mà thôi. Có một thách thức là hầu hết các vấn đề kinh
+doanh cần sự quan tâm lớn lại hầu như không giải quyết tốt được trong các ranh giới được tổ chức lỏng
+lẻo mà chúng ta đã định ra &ndash; mà các vấn đề này nằm rải rác toàn bộ các phòng ban. Do đó, các lãnh đạo
+công nghệ hiệu quả cần thật tinh tường khi làm việc với nhiều phòng ban để triển khai thay đổi, và để
+làm được điều này cần sự kết nối chặt chẽ.</p>
+
+<p>Thuật ngữ &ldquo;kết nối&rdquo; gây ra nỗi sợ hãi cho không ít người &ndash; đặc biệt với dân công nghệ. Nhưng xây dựng
+kết nối của những đồng nghiệp tâm đầu ý hợp không có nghĩa là bạn phải có những cuộc hội thoại gượng
+ép ở giờ nghỉ hoặc phải liên tục trao đổi danh thiếp. Ngược lại, cách tốt nhất để xây dựng kết nối
+chỉ đơn giản hãy là chính mình. Tạo được niềm tin là rất cần thiết khi xây dựng các mối quan hệ, và
+một trong những cách để làm việc này là hãy thẳng thắn và chân thành.</p>
+
+<p>Có một cách hiệu quả để tạo lập các mối quan hệ đó là không chỉ tập trung cho công việc của mình mà
+hãy đi giúp đỡ những người khác trong tổ chức của mình. Tình nguyện giúp ai đó với những khởi xướng
+của họ, hay là cố gắng hết sức mình giúp đỡ ai đó khi họ cần. Điều này giúp bạn có cơ hội tương tác
+với những người nằm ngoài phòng ban của mình và nó sẽ giúp xây dựng niềm tin.</p>
+
+<p>Cũng đừng quên tham dự các sự kiện giao lưu của công ty và xem đây là cơ hội để gặp gỡ những người
+ngoài phòng ban của mình. Bạn không cần phải là người đi giao lưu với cái cách nói chuyện dẻo quẹo,
+ngon ngọt của dân tiếp thị ở những sự kiện này mà chỉ cần thử thách bản thân gặp một người mới mỗi
+lần là được. (Và cũng đừng sợ sệt khi giới thiệu mình với những người cấp cao hơn &ndash; họ cũng chỉ là
+những con người bình thường như bạn thôi). Thậm chí nếu bạn không biết nói gì khi giao lưu công ty
+thì hãy thân thiện với một đồng nghiệp ở sự kiện đó, điều này sẽ giúp bạn tiếp cận họ dễ hơn trong
+tương lai.</p>
+
+<p>Khi bạn bắt đầu xây dựng kết nối trong công ty, bạn sẽ thấy mạng lưới kết nối này cho bạn nhiều sức
+mạnh hơn. Khi bạn biết cần gọi cho ai để xử lý được công việc, họ biết bạn và tôn trọng bạn, khi đó
+bạn &ldquo;dời non lấp biển&rdquo; cũng được. Những khởi xướng liên quan nhiều phòng ban trở thành cơ hội tốt để
+được kết nối với các đồng nghiệp và giúp giải quyết được nhiều vấn đề lớn. Các thay đổi diễn ra thuận
+lợi hơn bởi vì bạn đã thiết lập được niềm tin và có thể nhanh chóng xử lý vấn đề luôn. Và khi đó nhu
+cầu tham vấn tới lãnh đạo của bạn sẽ giảm đi bởi vì bạn không cần phải nhờ họ giúp mỗi khi bạn cần
+làm việc với những người thuộc phòng ban khác.</p>
+
+<h2>4. Hiểu rằng mỗi người có những nhận thức khác nhau về mình</h2>
+
+<p>Khi bước đầu phát triển sự nghiệp, các kỹ sư chỉ tập trung củng cố và phát triển các kỹ năng kỹ
+thuật. Chúng ta được thăng tiến dựa trên các nhiệm vụ hữu hình và đo đếm được, ví dụ như học một
+ngôn ngữ lập trình mới hay làm chủ một công nghệ mới. Tuy nhiên một khi chúng ta chuyển sang làm
+quản lý, mọi thứ thay đổi hoàn toàn. Khi làm quản lý, thành công của chúng ta dựa trên phần lớn các
+đặc điểm vô hình, trừu tượng như kỹ năng làm việc nhóm, khả năng lãnh đạo và giao tiếp. Những kỹ
+năng này có đặc tính chủ quan, có nghĩa là sự tiến bộ của chúng ta khó cân đong đo đếm, mà phụ thuộc
+vào nhận thức của người khác về những cố gắng của mình. Đây là quả đắng mà hầu hết các quản lý kỹ
+thuật mới phải chấp nhận.</p>
+
+<p>Điều này có vẻ không công bằng, nhưng đây là cách thế giới vận hành. Khi nói đến khả năng lãnh đạo
+thì hiệu quả làm việc của bạn chủ yếu dựa vào nhận xét của các quản lý, của thành viên nhóm và các
+đồng nghiệp cho dù mục đích soạn thảo email, làm bài thuyết trình hay đưa ra các bình luận trong
+cuộc họp của bạn là gì đi nữa. Mọi người xung quanh đánh giá bạn thông qua từng hành động nhỏ nhất
+của bạn khi giao tiếp và họ có những kết luận riêng về những gì bạn nói. Họ cũng tiếp nhận thông tin
+về bạn từ người thứ ba, có nghĩa là dựa trên những đánh giá của người khác về những hành động của bạn.</p>
+
+<p>Các lãnh đạo thành công hiểu rằng mỗi người có những nhận thức khác nhau về mình, và họ không phung
+phí thời gian để phàn nàn về điều này. Thay vào đó, họ chủ động và làm thật rõ vấn đề khi giao tiếp
+và họ cố gắng gấp đôi khi mọi người nhận thức không đúng về các hành động của họ. Đây là lý do vì sao
+tôi làm việc với các kỹ năng giao tiếp với mọi quản lý khi báo cáo cho tôi. Chúng tôi thường phân
+tích email và trao đổi trực tiếp thêm ở cấp thấp nhất bởi vì từng hành động nhỏ trong giao tiếp đều
+hết sức quan trọng. Những điều đơn giản như ngôn ngữ cơ thể, cách ăn mặc, và giọng điệu là những nhân
+tố cực kỳ quan trọng để mọi người có cái nhìn đúng hơn về bạn. Và đây là điều rất khó để mọi người
+tự đánh giá bản thân mình trong những vấn đề này.</p>
+
+<h2>5. Tiếp nhận tư duy hướng vận hành</h2>
+
+<p>Khả năng thực hiện thay đổi để hoạt động lâu dài là một thành phần chủ chốt của lãnh đạo hiệu quả.
+Thật không may, hầu hết các quản lý mới tập trung quá nhiều vào việc triển khai các khởi xướng ban
+đầu của mình mà không xem xét làm thế nào để hỗ trợ chương trình đó lâu dài. Xây dựng tư duy hướng
+vận hành giúp bạn vượt qua lỗi này. Tư duy hướng vận hành là quan điểm xem xét các nhiệm vụ tiếp theo
+cần thực hiện để hỗ trợ toàn bộ vòng đời của một chương trình.</p>
+
+<p>Theo lẽ tự nhiên, các quản lý mới thường rất hào hứng ở giai đoạn đầu khi triển khai khởi xướng mới.
+Đây là khoảng thời gian tràn đầy nhiệt thành khi họ tập trung đưa khởi xướng của mình vào áp dụng
+thực tế bằng cách viết tài liệu mô tả ý tưởng, nâng cao hỗ trợ và triển khai các công cụ công nghệ
+liên quan. Đây là việc rất đáng khen vì nó đòi hỏi sự cố gắng cực kỳ lớn, tuy nhiên đây mới chỉ là
+khởi đầu. Giai đoạn tiếp theo được biết đến là giai đoạn &ldquo;thung lũng của sự tuyệt vọng&rdquo; khi mọi thứ
+vượt quá tầm kiểm soát. Luồng công việc có vẻ hoàn hảo trên bàn giấy lại không hoạt động tốt ngoài
+thực tế. Các thủ tục mới bị bỏ qua và mọi người bắt đầu chê bai các công cụ công nghệ mới. Và điều
+tồi tệ nhất là mọi người bắt đầu không còn tin tưởng vào bản thân khởi xướng này nữa.</p>
+
+<p>Đây là giai đoạn khó khăn cho các nhà quản lý mới. Họ thường phản ứng bằng cách giơ tay đầu hàng và
+đổ lỗi cho tổ chức: &ldquo;Rõ ràng công ty chưa sẵn sàng để thay đổi.&rdquo; Ngược lại, những nhà quản lý kinh
+nghiệm xem đây là giai đoạn bình thường &ndash; một phần tự nhiên của quá trình chuyển đổi tuân theo quy
+luật đường cong thay đổi. Họ biết rằng nếu họ tiếp tục kiên quyết theo đuổi mục tiêu đề ra, họ có
+thể xuyên thủng &ldquo;thung lũng của sự tuyệt vọng&rdquo; để thấy được những khởi xướng của mình đâm chồi ở
+phía bên kia thung lũng. Tư duy hướng vận hành giúp các nhà quản lý củng cố những khởi xướng khi giai
+đoạn hào hứng ban đầu mờ nhạt dần bằng cách tập trung vào các hỗ trợ lâu dài bao gồm:</p>
+
+<ul>
+<li><p>Tiếp nhận (Adoption): Gây dựng sự cảm thông từ người dùng cuối và phát triển các chiến lược để
+giúp họ dễ dàng tiếp nhận các quy trình và công cụ mới.</p></li>
+<li><p>Mở rộng (Scalability): Xác định các nút thắt cổ chai trong các thủ tục có thể gây cho chương trình
+không còn hoạt động khi áp dụng cho nhóm lớn hơn.</p></li>
+<li><p>Dư thừa (Redundancy): Đào tạo nhiều người cùng đảm nhận các vị trí chủ chốt để chẳng may nếu một
+ai đó đi nghỉ dưỡng hoặc nghỉ việc thì các khởi xướng vẫn vận hành bình thường.</p></li>
+<li><p>Đào tạo (Traning): Triển khai đào tạo để dạy mọi người về những khởi xướng mới.</p></li>
+<li><p>Hỗ trợ liên tục (Ongoing support): Tạo lập thủ tục cho mọi người sử dụng khi họ có câu hỏi hay gặp
+vấn đề gì. Thiết lập luồng hỗ trợ là đặc biệt cần thiết trong giai đoạn hai của đường cong thay đổi.</p></li>
+</ul>
+
+
+<h2>6. Đọc sách về cách quản lý</h2>
+
+<p>Vì xuất phát từ nền tảng kỹ thuật, chúng ta dành rất nhiều thời gian để đọc các tài liệu kỹ thuật.
+Có cảm giác chúng ta dành hầu hết cuộc đời mình đọc sách, blog, bài nghiên cứu, các hướng dẫn trực
+tuyến, các bài trên Stack Overflow và các cuộc trao đổi trên Hacker News. Đó là yêu cầu công việc và
+là điều chúng ta vẫn nên duy trì khi làm quản lý. Tuy nhiên, để trở thành lãnh đạo công nghệ giỏi,
+đọc tài liệu kỹ thuật là chưa đủ. Bạn còn phải động tới hàng đống thông tin ngoài kia về quản lý và
+lãnh đạo.</p>
+
+<p>Đây là danh sách các cuốn sách tôi khuyên đọc. Danh sách này không thể bao quát hết được mà được coi
+là điểm khởi đầu cho công việc quản lý. Những cuốn sách này có ảnh hưởng lớn nhất tới tôi khi làm
+quản lý.</p>
+
+<ul>
+<li><p>&ldquo;Good to Great&rdquo; bởi Jim Collins. Một cuốn sách vui và đầy cảm hứng nói về các phong cách lãnh đạo
+dẫn dắt kết quả tài chính tốt và lâu dài.</p></li>
+<li><p>&ldquo;First, Break All the Rules&rdquo; bởi Marcus Buckingham. Tranh luận rằng các quản lý thành công nhất
+đều tập trung vào tận dụng sức mạnh của nhân viên thay vì ám ảnh về những điểm yếu không thay đổi
+được.</p></li>
+<li><p>&ldquo;Lean In&rdquo; bởi Sheryl Sandberg. Một cuốn sách đột phá bởi COO nổi tiếng của Facebook về lãnh đạo và
+giới tính. Hơi chạnh lòng vì đây là một trong số những cuốn nổi tiếng ít ỏi được viết bởi phụ nữ.</p></li>
+<li><p>&ldquo;The Lean Startup&rdquo; (Khởi nghiệp tinh gọn) bởi Eric Ries. Đề cập cách tiếp cận hoàn toàn khác về
+quản lý sản phẩm bằng cách dựa trên sự học hỏi theo thời gian thực để quyết định ưu tiên các tính
+năng. Bạn cũng đừng quên đọc blog của Eric Ries. Ries là dân kỹ thuật &ldquo;chuẩn men&rdquo; và cũng là doanh
+nhân thực sự đột phá, điều này tạo nên các bài viết của anh rất sâu sắc và đọc thấy rất vui.</p></li>
+<li><p>&ldquo;You&rsquo;re in Charge, Now What?&rdquo; bởi Thomas Neff và James Citrin. Một cuốn kinh điển đề cập đến chiến
+lược gây dựng niềm tin và sự tự tin khi mới được đề bạt vào vị trí lãnh đạo. Phù hợp hoàn toàn cho
+các quản lý mới.</p></li>
+<li><p>&ldquo;Leading Change&rdquo; bởi John Kotter. Một cuốn kinh điển về cách triển khai thay đổi thành công trong
+tổ chức.</p></li>
+<li><p>&ldquo;The Truth About Leadership&rdquo; bởi James Kouzes và Barry Posner. Đây là cuốn sách xuất sắc dựa trên
+nghiên cứu về các nguyên lý chung của lãnh đạo. Chúng tôi sử dụng cuốn này ở công ty làm nền tảng
+cho chương trình đạo tạo quản lý.</p></li>
+<li><p>&ldquo;The Five Dysfunction of a Team&rdquo; bởi Patrick Lencioni. Một cuốn kinh điển về động lực nhóm. Cuốn
+sách khá ngắn gọn và thú vị.</p></li>
+<li><p>&ldquo;The Phoenix Project&rdquo; bởi Gene Kim, Kevin Behr và George Spafford. Một cuốn sách phải đọc dành cho
+những người làm DevOps (phát triển vận hành). Đây là cuốn sách viết theo dạng tiểu thuyết kinh doanh
+về cách áp dụng các nguyên lý sản xuất tinh gọn cho vận hành IT.</p></li>
+<li><p>&ldquo;Havard Business Review.&rdquo; HBR là tạp chí mà các nhà quản lý phải đọc. Nó luôn có các bài viết sâu
+sắc dựa trên các nghiên cứu về một loạt các chủ đề rộng khắp trong kinh doanh. Nó khá đắt nhưng đáng
+đồng tiền bát gạo.</p></li>
+</ul>
+
+
+<h2>7. Tiếp nhận thái độ tích cực</h2>
+
+<p>Khi làm lãnh đạo, mọi người coi bạn là đại điện để cảm nhận về tổ chức dựa trên ý thức và cả tiềm
+thức. Nếu bạn lạc quan và nhiệt thành thì những người quanh bạn sẽ có thể lạc quan và hạnh phúc.
+Nếu bạn tiêu cực và bi quan, đồng đội của bạn có thể sẽ cọc cằn khó tính và chán nản. Khi làm lãnh
+đạo dù bạn có thích hay không thì thái độ của bạn luôn có ảnh hưởng tới đồng đội và đồng nghiệp khá
+lớn. Do đó, phải thật chú ý đến cách ăn ở và không ngừng có thái độ lạc quan.</p>
+
+<p>Giờ điều quan trọng là phải phân biệt được ranh giới giữa lạc quan và lạc quan thái quá
+(Pollyannaism). Bạn có thể cởi mở và thành thật &ndash; thậm chí trong những thời điểm khó khăn &ndash; mà vẫn
+có thái độ tích cực về tương lai. Lạc quan không có nghĩa là phải cười gượng một cách giả tạo. Mà
+điều đó có nghĩa là dù ở tình huống xấu đến đâu đi chăng nữa, bạn vẫn có niềm tin vào bản thân và
+niềm tin sâu sắc vào sự hiệu quả trong khả năng lãnh đạo của mình. Bạn tin vào chính mình, bạn tin
+rằng bạn có thể tạo ra tương lai tốt hơn. Đó chính là sự tự tin mà mọi người tôn trọng và hướng tới.</p>
+
+<p>Lời khuyên của tôi xin gửi tới các lãnh đạo công nghệ là hãy biến đam mê công nghệ thành nguồn động
+lực tích cực. Chúng ta đang sống trong thời khắc công nghệ phát triển như vũ bão. Các công cụ, khuôn
+mẫu và áp dụng thực tế có sẵn ngày nay cho phép chúng ta làm được những việc phi thường mà cách đây
+chỉ vài năm thôi chúng ta khó mà làm nổi. Là dân kỹ thuật, đam mê công nghệ có lẽ là động lực thúc
+đẩy chúng ta tiến xa hơn trong sự nghiệp. Nếu chúng ta tìm được nguồn năng lượng đó và tiếp nhận các
+nguyên lý về lãnh đạo được bàn luận ở đây, ai mà biết được chúng ta có thể làm được những điều phi
+thường gì trong tương lai?</p>
+
+<p>Bài viết của Jake Bennett &ndash; CTO<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> của POP, một công ty kỹ thuật số ở Seattle.</p>
+
+<p>Bài dịch từ: <a href="http://venturebeat.com/2016/07/31/when-engineers-become-managers-how-to-be-a-great-technical-leader/">When engineers become managers: How to be a great technical leader</a></p>
+
+<h2>Xem thêm</h2>
+
+<ul>
+<li><a href="http://www.socialsynergetics.com/site/managing-change">http://www.socialsynergetics.com/site/managing-change</a></li>
+</ul>
+
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Quality Assurance: Đảm bảo chất lượng<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>Behavior Driven Development: Phát triển hướng hành vi<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>Chief Technology Officer: Giám đốc công nghệ<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Những lỗi khi áp dụng mẫu thiết kế trải nghiệm người dùng (UX design patterns)]]></title>
+    <link href="http://blog.teracy.com/2016/08/06/nhung-loi-khi-ap-dung-mau-thiet-ke-trai-nghiem-nguoi-dung-ux-design-patterns/"/>
+    <updated>2016-08-06T04:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/08/06/nhung-loi-khi-ap-dung-mau-thiet-ke-trai-nghiem-nguoi-dung-ux-design-patterns</id>
+    <content type="html"><![CDATA[<p>Nếu bạn là một nhà thiết kế có kinh nghiệm, bạn nên hiểu rằng trong  thiết kế giao diện người dùng <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> , việc lấy cảm hứng từ những sản phẩm của người khác không phải là ăn cắp ý tưởng mà là việc học hỏi những kinh nghiệm tốt nhất của những người đi trước, là sử dụng những mẫu thiết kế và làm theo các chỉ dẫn (guideline) nhằm đảm bảo sử dụng các kiểu mẫu quen thuộc và tạo nên các giao diện thực sự hữu ích cho người dùng.</p>
+
+<p>Một số người nói rằng việc cứ bám theo các quy tắc cứng nhắc và bắt chước người khác thì sẽ giết chết sự sáng tạo và rồi cuối cùng mọi ứng dụng sẽ có thiết kế giống nhau. Theo quan điểm của người thiết kế UX (trải nghiệm người dùng) tôi lại thấy một vấn đề khác. Việc quen áp dụng các cách khuyên dùng tốt nhất có thể khiến bạn tin rằng Google/Facebook/Instagram hay các ứng dụng khác luôn đúng, mục tiêu thiết kế của họ cũng giống của bạn nên bạn sẽ không bao giờ tự hỏi “có gì sai ở đây?!”. Để chứng minh điều này dưới đây là một số mẫu thiết kế (hoặc đã từng) được coi là những mẫu thiết kế tốt nhất nhưng rút cuộc nó lại không thực sự tốt như bạn nghĩ.</p>
+
+<!-- more -->
+
+
+<h3>1. Ẩn menu điều hướng <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></h3>
+
+<p>Ít nhất cũng có đến nửa triệu bài báo chủ yếu được viết bởi các designer tranh cãi về menu dạng hamburger (☰) Nếu bạn đã bỏ lỡ chúng thì hãy đọc <a href="http://techcrunch.com/2014/05/24/before-the-hamburger-button-kills-you/">ở đây</a> và <a href="http://deep.design/the-hamburger-menu/">ở đây</a>. Các bài viết ấy thường không bàn cãi về việc sử dụng biểu tượng hamburger mà đó là về việc có nên ẩn các menu điều hướng và hiển thị nó khi người dùng nhấn vào biểu tượng hamburger.
+Ban đầu thì việc ẩn hàng loạt menu điều hướng đằng sau nút hamburger này có vẻ như rất tiện lợi cho người thiết kế &ndash; bạn không phải lo lắng về việc màn hình bị chiếm diện tích bởi những menu cha con dài trên màn hình quá nhỏ của thiết bị di động, mọi thứ sẽ được ẩn một cách mặc định và chỉ hiện ra khi người dùng muốn.
+Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu điều hướng thường trực trên màn hình lại tăng khả năng tương tác giữa người dùng và ứng dụng, làm người dùng hài lòng hơn và thậm chí còn tăng doanh thu từ ứng dụng. Đó là lý do vì sao các ứng dụng lớn đang dần thay đồi bằng cách bỏ đi nút hamburger và quay lại hiển thị những tính năng hay được sử dụng ngay trên màn hình.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/youtube-nav-change.png" title="Menu điều hướng của Youtube" ></p>
+
+<p style="text-align:center;"> Sự thay đổi menu điều hướng của Youtube &ndash; Luke Wroblewski</p>
+
+<h3>2. Lạm dụng icon.</h3>
+
+<p>Khi thiết kế trên màn hình nhỏ đôi lúc bạn quá lạm dụng việc thay thế các nhãn bằng các icon. Bạn có thể có nhiều lý do để dùng icon như chúng chiếm ít không gian hơn, bạn không phải lo lắng về việc màn hình bị xô lệch khi được dịch sang ngôn ngữ khác hay với ý nghĩ rằng người dùng đã rất quen với icon này rồi.</p>
+
+<p>Với kiểu suy nghĩ như vậy các bảng thiết kế nhiều khi vô tình giấu đi các tính năng của chương trình đằng sau những icon khó hiểu hoặc đôi lúc mình cũng chẳng biết là cái gì nữa và dưới đây là một ví dụ:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/instagram-bad-icon.png" title="Icon khó hiểu của Instagram" ></p>
+
+<p style="text-align:center;"> Liệu bạn có đoán được icon này trong Instagram là để gửi tin nhắn không!</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/google-trans-bad-icon.png" title="Icon Khó hiểu trên Google Translate" ></p>
+
+<p style="text-align:center;"> Hay icon này trong Google Translate dùng để làm gì?</p>
+
+<p>Sẽ là sai lầm khi bạn nghĩ rằng người dùng đã quen với việc dùng những icon trừu tượng như thế này hay bá đạo hơn là nghĩ rằng họ sẽ tò mò mà bỏ thời gian ra tìm hiểu xem nó là cái gì.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/bloom-fm-bad-icon.png" title="Icon khó hiểu trong Bloom.fm" ></p>
+
+<p style="text-align:center;"> Một số icon của Bloom.fm mà thật mình cũng chẳng hiểu nó dùng để làm gì!</p>
+
+<p>Nếu bạn là người thiết kế một icon và bạn cảm thấy sản phẩm của mình cần nhãn để người khác có thể hiểu được thì sản phẩm của bạn thật sự có vấn đề, kể cả khi người dùng sẵn sàng thử để hiểu về nó.</p>
+
+<p>Điều này không có nghĩa là bạn không nên dùng icon, thật sự thì có rất nhiều icon mà người dùng đã quen thuộc và phần lớn những chức năng quen thuộc của một ứng dụng đều đã có icon tương ứng ( tìm kiếm, phát video, email, cài đặt&hellip; ). Tuy vậy vẫn có nhiều icon khá là mơ hồ đối với người dùng vì mỗi ứng dụng sẽ có hành vi khác nhau một chút trên cùng một chức năng (ví dụ như sẽ có chuyện gì xảy ra nếu ta nhấn vào nút trái tim nhỉ (yêu thích, đánh dấu) ??? ).</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/another-example-heart.png" title="đôi lúc thật khó để biết icon quen thuộc thật sự sẽ làm gì" ></p>
+
+<p>Với những tính năng không quen thuộc và phức tạp thì bạn nên sử dụng icon kèm theo nhãn đầy đủ, nhãn sẽ giúp tính năng của bạn rõ ràng hơn và icon sẽ giúp người dùng nhận dạng tính năng nhanh hơn và đem lại một chút cá tính cho ứng dụng của bạn.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/complicate-action-should-have-label.png"></p>
+
+<p style="text-align:center;"> Một ví dụ trong ứng dụng Pixelmator.</p>
+
+<h3>3. Chuyển hướng dựa vào cử chỉ <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></h3>
+
+<p>Khi Apple giới thiệu iPhone vào năm 2007, công nghệ cảm ứng đa điểm đã thu hút sự chú ý của ngưới dùng và họ thấy rằng không những có thể chạm và nhấn vào giao diện mà còn có thể phóng to, thu nhỏ và vuốt.</p>
+
+<p>Tương tác dùng cảm ứng đã trở nên quen thuộc hơn với người thiết kế giao diện và đã có nhiều ứng dụng được thử nghiệm sử dụng nhận dạng cử chỉ đa điểm để tương tác.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/clear-app-gestures.jpg"></p>
+
+<p style="text-align:center;"> Chuyển hướng dựa vào cử chỉ trong ứng dụng Clear.</p>
+
+<p>Cũng giống như trường hợp giấu điều hướng và lạm dụng các icon thay vì dùng nhãn văn bản, đôi khi các nhà thiết kế cũng bị cuốn vào việc sử dụng cử chỉ để tiết kiệm không gian màn hình ( Một khi không có biểu tượng nào thể hiện việc bạn có thể vuốt sang trái để xóa thì người dùng chẳng có cách nào để biết là nó tồn tại ). Và cũng như vấn đề về hamburger menu, tính năng nào bị giấu đi thì sẽ ít người dùng nó. Thêm nữa là phần lớn nhận dạng cử chỉ chưa được chuẩn hóa trên các ứng dụng khác nhau, đơn cử là ứng dụng email nổi tiếng cũng hành xử khá là khác nhau đối với việc bạn vuốt sang phải trên mỗi email.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/apple-mail-gestures.png" title="vuốt sang phải trên Apple mail" ></p>
+
+<p style="text-align:center;"> Với Apple mail vuốt sang phải sẽ hiện ra tùy chọn Đánh dấu chưa đọc.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/gmail-gestures.png" title="vuốt sang phải trên Gmail" ></p>
+
+<p style="text-align:center;"> Trong khi đó với ứng dụng Gmail thì vuốt sang phải sẽ là chuyển email sang mục lưu trữ.</p>
+
+<p>Vậy nên hãy nhớ rằng những tính năng sử dụng nhận dạng cử chỉ là tính năng ẩn và điều đó khiến cho người dùng mất nhiều công sức để ghi nhớ &ndash; có may mắn lắm thì bạn mới có thể dạy cho cả thế giới biết vuốt sang phải có nghĩa là gì.</p>
+
+<h3>4. Giới thiệu tính năng mới trực quan trên màn hình cho người dùng mới</h3>
+
+<p>Onboarding, đang là chủ đề nóng trong việc thiết kế giao diện. Tính năng này tự động chạy chỉ dùng một lần khi người dùng lần đầu tiên mở dụng dụng. Phần lớn tính năng này được dùng để giới thiệu và giải thích các tính năng của chương trình một cách trực quan trên màn hình:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/onboarding-overlay.png"></p>
+
+<p style="text-align:center;"> Một ví dụ về Onboarding</p>
+
+<p>Nhìn thì hay nhưng thật ra thì đây là một giải pháp khá tệ đấy. Bởi vì nhiều người đôi lúc sẽ bỏ qua phần giới thiệu của bạn, họ đang muốn sử dụng ứng dụng của bạn ngay cơ mà. Thậm chí nếu họ dành thời gian xem hướng dẫn của bạn thì họ cũng sẽ nhanh chóng quên mọi thứ ngay khi đóng cửa sổ hướng dẫn đó lại. (đặc biệt là với màn hình hướng dẫn có quá nhiều thông tin). Và cuối cùng là, nếu bạn phải giải thích giao diện của mình với người dùng thì điều đó đồng nghĩa rằng giao diện bạn đang có trên ứng dụng thật sự đang có vấn đề.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/ux-design-like-make-a-joke.jpg" title="Thiết kế giao diện giống như bạn đang kể truyện cười. Nếu bạn phải giải thích câu chuyện thì chẳng còn gì hay nữa." ></p>
+
+<p style="text-align:center;"> Việc thiết kế giao diện giống như bạn đang kể truyện cười. Nếu bạn phải giải thích câu chuyện thì chẳng còn gì hay nữa.</p>
+
+<p>Onboarding có thể được thiết kế theo nhiều cách khác nhau để trở nên hữu ích hơn đối với người dùng. Như với Slack, màn hình chào của họ tập trung việc giới thiệu khái quát về lợi ích mang lại hơn là giới thiệu chi tiết về các tính năng.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/slack-onboarding.png" title="Slack sử màn hình chào của họ tập trung việc giới thiệu khái quát về lợi ích mang lại hơn là giới thiệu chi tiết về các tính năng" ></p>
+
+<p>Duolingo thì biến Onboarding thành các bài học và cổ vũ người dùng học các bài học đấy. Hướng tiếp cận này cũng giúp người dùng quen dần và hiểu hơn các tính năng/ giá trị của ứng dụng.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/duolingo-onboarding.jpg" title="Duolingo thì biến Onboarding thành các bài học và cổ vũ người dùng học các bài học đấy" ></p>
+
+<p>Bạn còn nhớ vấn đề khác nhau giữa Mailbox và AppleMail khi dùng tính năng vuốt sang phải qua email? Đây là cách hướng dẫn người dùng mới về tính năng đó: Người dùng sẽ cần xem những cử chỉ đó được thực hiện như thế nào/ở đâu trước khi thực sự bắt đầu sử dụng ứng dụng:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/apple-mail-onboarding-tutor.png"></p>
+
+<p>Trước khi áp dụng rập khuôn sử dụng Onboarding bằng cách tạo một lớp trong suốt trên chính ứng dụng của mình để giới thiệu các tính năng và hướng dẫn cho người dùng mới, hãy nên dừng lại và thử nghĩ xem liệu người dùng nên được chào đón như thế nào cho hợp lý và bạn sẽ thấy có nhiều cách giải quyết khác hay hơn việc rập khuôn lại từ ứng dụng khác.</p>
+
+<h3>5. Sử dụng màn hình trống</h3>
+
+<p>Màn hình trống đôi lúc là một thứ dễ bị bỏ sót bởi các nhân viên thiết kế thiếu kinh nghiệm, tuy nhiên nó là một phần quan trong trong thiết kế ứng dụng của bạn.</p>
+
+<p>Đôi khi bạn nghĩ rằng trang báo lỗi hay màn mình trống là cơ hội tốt để thể hiện tính sáng tạo của mình nhưng thực ra lại không như vậy.</p>
+
+<p>Hãy xem ví dụ dưới đây của Google photos:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/gphoto-empty-state.png" title="Màn hình trống trên GPhoto" ></p>
+
+<p>Nhìn qua thì có vẻ ổn nhưng hãy thử nhìn lại màn hình bạn sẽ thấy có một số vấn đề ở đây:</p>
+
+<ul>
+<li><p>Tại sao lại có nút tìm kiếm trong khi người dùng chưa tạo cái gì cả?</p></li>
+<li><p>Tại sao hình ảnh chính trong màn hình này lại không có phản ứng gì khi tôi chạm vào?</p></li>
+<li><p>Gợi ý ở màn hình trên bảo rằng &ldquo;bạn có thể tạo nội dung bằng cách sử dụng nút + ở phía trên màn hình&rdquo; và điều đó thật là vụng về, bản thân cái gợi ý ở trên nên tự bao gồm nút để tạo nội dung luôn nhỉ?</p></li>
+</ul>
+
+
+<p>Và như thế màn hình trống này không làm cho việc sử dụng ứng dụng dễ dàng hơn, nó không giúp người dùng hiểu rõ hơn về ứng dụng của bạn.</p>
+
+<p>Màn hình trống sẽ làm mọi thứ dễ dàng hơn nếu nó thiết kế theo kiểu như dưới đây.</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2016/08/06/empty-state-good-example.png" title="Một ví dụ về màn hình trống tốt" ></p>
+
+<p>Đừng quên rằng màn hình trống (tương tự như các trang 404 trên web) không chỉ là nơi thể hiện khả năng sáng tạo và đặc tính thương hiệu mà còn có vai trò quan trọng hơn để thể hiện tính năng của chương trình. Vì vậy hãy làm cho màn hình trống trở nên trực quan hơn.</p>
+
+<h3>6. Hãy luôn tự hỏi mọi thứ</h3>
+
+<p>Những điều tôi chia sẽ ở đây không phải là để chỉ trích các mẫu thiết kế hay các thực nghiệm tốt nhất. Hãy nhớ rằng các mẫu thiết kế trên các ứng dụng nổi tiếng đôi lúc có đối tượng người dùng khác với ứng dụng mà bạn tạo và điều đó có nghĩa rằng không có chìa khóa vàng chung cho tất cả mọi thứ. Vì thế hay tự nghiên cứu để tạo nên một thiết kế riêng cho mình, mọi thứ cần phải được đo đếm và kiểm thử để rút ra cách giải quyết tốt nhất cho ứng dụng của mình.</p>
+
+<p>Lược dịch từ <a href="https://medium.com/@kollinz/misused-mobile-ux-patterns-84d2b6930570">Misused mobile UX patterns</a></p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>UI<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>Navigation menu<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>Gesture based navigation<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[8 nguyên tắc trong thiết kế bot]]></title>
+    <link href="http://blog.teracy.com/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot/"/>
+    <updated>2016-08-05T09:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/08/05/bot-design.png" title="Bot Design" ></p>
+
+<p>Thiết kế UI đàm thoại<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> thu hút được nhiều sự quan tâm nhưng để chúng phát huy được hiệu quả trong thực tế thì vẫn là một vấn đề chưa rõ ràng.</p>
+
+<p>Tuy nhiên những nguyên tắc thiết kế cơ bản có định hướng có thể giúp chúng ta thiết kế những thứ thật sự hữu dụng mà mọi người sẽ muốn dùng hàng ngày.</p>
+
+<p>Chúng ta không thiếu những bài viết về những UI đàm thoại trong tương lai, nhưng lại có quá ít các bài viết về tính thực tiễn khi thiết kế sự tương tác của các chatbot.</p>
+
+<p>Có vẻ như đây chính xác là những gì mà hiện tại chúng ta đang cần. Nỗ lực ban đầu khi thực hiện các chatbot đều thất bại, chủ yếu là do các chatbot phụ thuộc quá nhiều vào việc xử lý ngôn ngữ tự nhiên hoặc khả năng của A.I mà vẫn chưa làm
+được. Ngoài ra người ta cũng cố gắng loại bỏ những thứ không phù hợp trong mô hình mới này.</p>
+
+<p>Vì quá quan tâm đến công nghệ mới mà chúng ta quên đi nhân tố quan trọng nhất trong lĩnh vực này đó là con người &ndash; được cho là sẽ giao tiếp với bot.</p>
+
+<!-- more -->
+
+
+<p>Vậy chúng ta dự định thiết kế các bot như thế nào? Các bot có ích trong trường hợp nào? Nên thân thiện và đơn giản như Slackbot hay thông minh như Facebook M? Nên cho phép thoải mái nhập văn bản hay tạo ra các tùy chọn như IVR<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>? Đây là những câu hỏi không khó trả lời, nhưng thực tế chúng ta vẫn đang khám phá cách sử dụng phương tiện mới này để tạo ra những trải nghiệm thật tốt.</p>
+
+<p>Những tình huống này đòi hỏi các quan điểm thống nhất. Khi bạn làm việc trong lĩnh vực chatbot với nhiều quan điểm khác nhau thì bạn cần phải tuân theo các nguyên tắc thiết kế thật rõ ràng.</p>
+
+<p>(Bài viết này được đăng lần đầu trên Inside Intercom &ndash; trang web mà chúng tôi thường xuyên chia sẻ suy nghĩ của mình về thiết kế, startup và quản lý sản phẩm).</p>
+
+<h1>Các nguyên tắc thiết kế là gì?</h1>
+
+<p>Tất cả các sản phẩm tốt đều tuân theo các nguyên tắc có quan điểm rõ ràng và các nguyên tắc đó phải được đặt lên hàng đầu.</p>
+
+<p>Hiểu theo nghĩa đơn giản nhất thì các nguyên tắc thiết kế là tập hợp các quan điểm được cả nhóm ủng hộ. Các nguyên tắc phải rõ ràng, không mơ hồ và là tôn chỉ để mọi người hướng đến.</p>
+
+<p>Tạo ra các nguyên tắc thiết kế hay là cả một nghệ thuật. Nó không đơn thuần chỉ là những chân lý. Vì nếu như vậy, mọi người sẽ chỉ biết gật đầu, và chẳng giúp bạn được gì khi triển khai thực hiện.</p>
+
+<p>Ví dụ, &ldquo;chúng tôi không làm những thiết kế quá phức tạp&rdquo; là một nguyên tắc chán kinh khủng &ndash; Thực tế sẽ không ai tranh cãi điều ngược lại. Những chân lý như vậy không thể giúp định hướng khả thi cho các quyết định của bạn.</p>
+
+<p>Ngược lại, &ldquo;Chúng tôi thích sự đơn giản hơn là việc gì cũng muốn làm&rdquo; là một nguyên tắc thiết kế tuyệt vời. Chúng ta cũng có thể đưa ra một lập luận ngược với nguyên tắc trên đó là &ldquo;Chúng tôi bổ sung tính phức tạp để người dùng có thể tạo ra những thứ tuyệt vời hơn&rdquo;. Những nguyên tắc có quan điểm rõ ràng như vậy sẽ giúp bạn có được những quyết định thống nhất khi thiết kế.
+Với định hướng như vậy, hãy cùng đưa ra một số nguyên tắc giúp chúng ta tiến bộ khi thiết kế các UI đàm thoại.</p>
+
+<h1>Các nguyên tắc thiết kế bot</h1>
+
+<h2>1. Không nên giả lập là con người</h2>
+
+<p>Trò mồi chài người dùng có thể làm họ cảm thấy như mình đang bị lừa, hoặc là họ không hiểu hệ thống hoạt động như thế nào. Cả hai trường hợp này đều là những trải nghiệm người dùng không tốt. Điều đó có nghĩa là chúng ta không nên sử dụng các chỉ dẫn như &ldquo;đang đánh máy&rdquo; hay các trì hoãn giả tạo để có vẻ khiến cho bot mang nhân cách nhiều hơn. Thay vì đó, các thông điệp bot nên theo các kiểu cách khác nhau, và được dán nhãn rõ ràng để thể hiện rằng nó không phải là con người. Điều này cũng sẽ không ngăn cản chúng ta tạo ra cá tính cho bot.</p>
+
+<h2>2. Đơn giản hóa hết mức có thể</h2>
+
+<p>Các đàm thoại bot nên gắn với các chủ đề cụ thể và theo lộ trình đàm thoại tuyến tính, như vậy sẽ tránh được các đường rẽ nhánh phức tạp. Không nên tạo ra các A.I tự cảm nhận và chung chung. Tốt hơn là nên trình bày và giải thích những giới hạn của bot. Như vậy, các nhà thiết kế bot cũng sẽ không phải giải thích gì cho các trường hợp bị lỗi lừa bot và người dùng cũng sẽ không cảm thấy mệt mỏi với các thông điệp đàm thoại phức tạp.</p>
+
+<h2>3. Tôn trọng phương tiện chat</h2>
+
+<p>Lợi thế của các ứng dụng gửi tin nhắn thông minh đó là có thể loại bỏ rất nhiều ứng dụng, giao diện và làm giảm tính tương tác, thay vào đó là một UI chat đơn giản. Do đó, sẽ thật là vô nghĩa khi loanh quanh và vứt cả 1 ứng dụng vào trong một cuộc đàm thoại. Hãy giữ mọi thứ thật tự nhiên với ứng dụng đàm thoại. Mọi tương tác của bot là gọi và trả lời kèm theo các bình luận trong một luồng chat và người dùng sẽ phản hồi lại trong vùng trả lời. Các bot không thể thay đổi nội dung đàm thoại như con người. Cùng với đó, hãy sử dụng các quy ước: hiển thị một tấm thẻ được định dạng bắt mắt cho phép xem trước trang liên kết hơn là việc in ra một URL vô nghĩa trong phản hồi của bot.</p>
+
+<h2>4. Tối ưu cho người dùng cuối</h2>
+
+<p>Các bot nên được dùng để cải thiện trải nghiệm người dùng cuối chứ không chỉ là công cụ hỗ trợ tốt cho các đội chăm sóc khách hàng. Người thiết kế nên tự hỏi rằng: Con người có tốt hơn cho người dùng cuối không? Nếu câu trả lời là có thì bạn không nên sử dụng bot. Bot không nên làm thay những việc con người có thể làm tốt hơn, mà nên cải thiện những cái mà con người còn làm chậm chạp. Máy móc nên làm việc, con người thì nên suy nghĩ.</p>
+
+<h2>5. Sử dụng một cách tiết kiệm</h2>
+
+<p>Các tương tác của bot nên ngắn gọn và chính xác. Không nên có một cuộc trò chuyện kéo dài qua lại với bot, điều này sẽ làm mất thời gian của cả hai bên. Bất cứ khi nào cần quá 2 lần nhập là thấy nặng nề rồi.</p>
+
+<h2>6. Cung cấp đường thoát</h2>
+
+<p>Luôn luôn có lựa chọn dự phòng cho người dùng, cho phép họ bày tỏ ý định của mình như: &ldquo;Tôi muốn đợi và nói chuyện với một con người thực sự. Tôi không muốn tiếp tục nói chuyện với robot nữa.&rdquo;</p>
+
+<h2>7. Sử dụng đầu vào có cấu trúc khi có thể</h2>
+
+<p>Một cuộc đàm thoại mà càng có nhiều hướng đi khác nhau thì nguy cơ đi vào ngõ cụt càng lớn. Đừng đặt người dùng vào tình thế khiến họ phải đoán xem điều gì là đúng cần phải làm. Bàn phím mềm cho phép nhập một lượng ký tự nhất định và có thể tránh phải đánh máy nhiều. Ví dụ, thay vì yêu cầu người dùng cuối gõ các từ &ldquo;có&rdquo; hoặc &ldquo;không&rdquo;, hãy cho họ 2 nút tùy chọn. Hoặc xác nhận đầu vào có cấu trúc như địa chỉ email trước khi gửi. Bằng cách này, bạn có thể đưa ra được các phản hồi đúng mục đích và tránh phải xử lý các văn bản phức tạp mà đầu vào không đoán trước được.</p>
+
+<h2>8. Mọi người đều thấy được điểm giống nhau</h2>
+
+<p>Các bot không chỉ xuất hiện với người dùng cuối mà người thiết kế bot cũng cần phải ghi lại được các bối cảnh hội thoại &ndash; bot trả lời như thế nào và người dùng cuối phản hồi lại ra sao. Các thông điệp dài hoặc phổ biến của bot có thể hiện thị ở trạng thái đóng để quản trị viên quản lý dễ dàng hơn. Trường hợp ngoại lệ là các thông điệp bot mang tính riêng tư với quản trị viên thì cần hiển thị luôn.</p>
+
+<h1>Tuân thủ nhưng không bị giới hạn bởi các nguyên tắc</h1>
+
+<p>Điều quan trọng cần chú ý đó là những nguyên tắc trên chắc chắn sẽ luôn được phát triển, do khả năng mới về mặt công nghệ hoặc đơn giản là một số nguyên tắc hướng dẫn chưa đúng. Chúng ta nên chấp nhận cả hai thực tế trên.
+Tuy nhiên việc nắm bắt được các nguyên tắc trên sẽ làm cho mọi thứ trở lên dễ dàng hơn. Chúng ta đã có các nguyên tắc và giờ chỉ cần áp dụng chúng một cách có hệ thống và đồng nhất. Nếu không có các nguyên tắc này, bạn chỉ có thể thực hiện các ý tưởng của mình một cách ngẫu nhiên và hi vọng nó sẽ hiệu quả như mong muốn.</p>
+
+<p>Bài dịch từ <a href="https://medium.com/intercom-inside/8-principles-of-bot-design-51f03df1d84c#.hb10iooyq">8 principles of bot design</a></p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>conversational UI (user interface)<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>IVR (Interactive Voice Response) &ndash; tổng đài trả lời tự động<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[how to use django-celery-email on Heroku]]></title>
+    <link href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/"/>
+    <updated>2015-12-21T09:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2015/12/21/django_celery.png" title="Django Celery" ></p>
+
+<p>When I was asked to use a distributed task queue for emails on a Django project, I chose
+django-celery-email. However, during developing and testing, I faced some problems due to the lack
+of clear guide from django-celery-email, so I wrote this post as a step by step guide for anyone
+who wants use it with much ease. So let&rsquo;s get started!</p>
+
+<!-- more -->
+
+
+<h2>Project Setup</h2>
+
+<ul>
+<li><p>You need to setup local development environment with teracy-dev v0.4.2:
+<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">http://dev.teracy.org/docs/0.4.2/getting_started.html</a></p></li>
+<li><p>We&rsquo;re going to use <a href="https://github.com/teracyhq/django-boilerplate">https://github.com/teracyhq/django-boilerplate</a> v0.4.0 to develop Django
+applications:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant ssh
+</span><span class='line'>$ ws
+</span><span class='line'>$ cd personal
+</span><span class='line'>$ mkdir django-celery
+</span><span class='line'>$ cd django-celery
+</span><span class='line'>$ git init
+</span><span class='line'>$ git remote add djbp https://github.com/teracyhq/django-boilerplate
+</span><span class='line'>$ git fetch djbp
+</span><span class='line'>$ git merge djbp/v0.4.0</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>We need to create a virtual environment for the Django app and to install dependencies:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkvirtualenv django-celery
+</span><span class='line'>$ pip install -r requirements/dev.txt</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Set the required environment variables:</li>
+</ul>
+
+
+<p>By following <a href="http://12factor.net/config,">http://12factor.net/config,</a> we should <code>export</code> the required variables. For development
+convenience, .env file is supported and recommeded only for development mode. So let&rsquo;s create .env
+file at <code>django-celery/.env</code> with the following content:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ADMINS=(('&lt;your_name&gt;', '&lt;your_email&gt;'),)
+</span><span class='line'>DATABASE_URL=sqlite:///project/data/dj-celery.db</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>ADMINS</code> variable is used for testing emails, you should fill in your admins details.</p>
+
+<ul>
+<li>Run the Django application:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py migrate # migrate for the first time to create db schema creation and migration
+</span><span class='line'>$ ./manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(django-celery)vagrant@vagrant:~/workspace/personal/django-celery$ ./manage.py runserver 0.0.0.0:8000
+</span><span class='line'>Performing system checks...
+</span><span class='line'>
+</span><span class='line'>System check identified no issues (0 silenced).
+</span><span class='line'>December 01, 2015 - 13:09:11
+</span><span class='line'>Django version 1.8.7, using settings 'settings.project.dev'
+</span><span class='line'>Starting development server at http://0.0.0.0:8000/
+</span><span class='line'>Quit the server with CONTROL-C.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Open <a href="http://localhost:8000,">http://localhost:8000,</a> you should see the 404 error page and it&rsquo;s expected. We&rsquo;ll add
+functionalities for the application by next steps.</p>
+
+<h2>Heroku Deployment</h2>
+
+<p>Let&rsquo;s deploy the Django application on Heroku to apply continuous delivery philosophy.</p>
+
+<p>Make sure you have an account at <a href="https://heroku.com">https://heroku.com</a></p>
+
+<ul>
+<li>Install Heroku Toolbelt</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Login</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku login</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Create a Heroku application</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ws
+</span><span class='line'>$ cd personal/django-celery
+</span><span class='line'>$ heroku create &lt;your_app_name&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Configure</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config:set DJANGO_SETTINGS_MODULE=project.settings.prod
+</span><span class='line'>$ heroku config:set ADMINS="(('&lt;your_name&gt;', '&lt;your_email&gt;'),)"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Deploy</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push heroku master
+</span><span class='line'>$ heroku run python manage.py migrate</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After that, you should access your deployment app at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/</p>
+
+<p>I created <code>dj-celery</code> app name and it&rsquo;s availalbe at: <a href="https://dj-celery.herokuapp.com/">https://dj-celery.herokuapp.com/</a></p>
+
+<p>From now on, to update the deployment on Heroku, we just need to push new commits to the heroku
+repository.</p>
+
+<h2>django-userena Setup</h2>
+
+<p>To see how emails work with celery, let&rsquo;s add user management functionalities which should also send
+emails for confirming when signing up.</p>
+
+<p>There is already an application for that, it is: <code>django-userena</code>.</p>
+
+<ul>
+<li><p>Install:</p>
+
+<p>By following the installation guide at:
+<a href="http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena">http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena</a> and
+adapting to <code>django-boilerplate</code>.</p>
+
+<ul>
+<li><p>Add <code>django-userena&gt;=1.4.1,&lt;1.5.0</code> to <code>requirements/project/common.txt</code>, so we&rsquo;ll use 1.4.x
+versions of <code>django-userena</code> like I did at:
+<a href="https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c">https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c</a></p></li>
+<li><p>Install with: <code>$ pip install -r requirements/dev.txt --upgrade</code> (<code>upgrade</code> here means installing
+and upgrading any outdated packages)</p></li>
+</ul>
+</li>
+<li><p>Configure:</p>
+
+<p>By following the guide at:
+<a href="http://django-userena.readthedocs.org/en/latest/installation.html#required-settings">http://django-userena.readthedocs.org/en/latest/installation.html#required-settings</a> like I did
+at: <a href="https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9">https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9</a></p>
+
+<p>There is a migration issue that requires to create apps/userena_patch like I did at:
+<a href="https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580">https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580</a></p></li>
+<li><p><code>makemigrations</code> for the accounts app:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py makemigrations</span></code></pre></td></tr></table></div></figure>
+
+
+<p>  Commit the changes like I did at:
+  <a href="https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578">https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578</a></p>
+
+<ul>
+<li>Migrate and Run:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py migrate
+</span><span class='line'>$ ./manage.py check_permissions
+</span><span class='line'>$ ./manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see the page of <a href="http://localhost:8000/accounts/signup">http://localhost:8000/accounts/signup</a> now. Let&rsquo;s signup a user and you
+should see something similar on the console:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>MIME-Version: 1.0
+</span><span class='line'>Content-Type: text/plain; charset="utf-8"
+</span><span class='line'>Content-Transfer-Encoding: 7bit
+</span><span class='line'>Subject: Your signup at localhost.
+</span><span class='line'>From: webmaster@localhost
+</span><span class='line'>To: sample.user@gmail.com
+</span><span class='line'>Date: Mon, 21 Dec 2015 11:02:30 -0000
+</span><span class='line'>Message-ID: &lt;20151221110230.23463.80845@vagrant.vm&gt;
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>Dear hoatle,
+</span><span class='line'>
+</span><span class='line'>Thank you for signing up at localhost.
+</span><span class='line'>
+</span><span class='line'>To activate your account you should click on the link below:
+</span><span class='line'>
+</span><span class='line'>http://localhost:8000/accounts/activate/fe547230a3039c476a127408e9d824894d0a9064/
+</span><span class='line'>
+</span><span class='line'>Thanks for using our site!
+</span><span class='line'>
+</span><span class='line'>Sincerely,
+</span><span class='line'>localhost
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>-------------------------------------------------------------------------------</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>To deploy Heroku:</li>
+</ul>
+
+
+<p>Note: we need to set SITE_DOMAIN and SITE_NAME to match the created Heroku application.
+These variables are already configured by django-boilerplate by default on development mode.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config:set SITE_DOMAIN=&lt;your_app_name&gt;.herokuapp.com
+</span><span class='line'>$ heroku config:set SITE_NAME=&lt;your_site_name&gt;
+</span><span class='line'>$ git push heroku master
+</span><span class='line'>$ heroku run python manage.py migrate
+</span><span class='line'>$ heroku run python manage.py check_permissions</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should see the page of <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup now. However, don&rsquo;t
+try to signup on the Heroku app yet because we need to configure the email backend.</p>
+
+<h2>SMTP Email Backend Setup</h2>
+
+<p>By default, development mode uses console backend and production mode uses SMTP backend for emails.
+Let&rsquo;s use SMTP backend for both development mode on localhost and production mode on Heroku.</p>
+
+<p>For easier setup, let&rsquo;s use mailgun addon (free plan) from the Heroku app:
+<a href="https://elements.heroku.com/addons/mailgun">https://elements.heroku.com/addons/mailgun</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku addons:create mailgun:starter</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To see all available variables, use:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should see something similar to this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=== dj-celery Config Vars
+</span><span class='line'>ADMINS:                 (('&lt;your_name&gt;', '&lt;your_email&gt;'),)
+</span><span class='line'>DATABASE_URL:           postgres://erdidqkixwegwg:hGZztw2Oh3EmNWfD5IfTb3XcyO@ec2-107-21-224-11.compute-1.amazonaws.com:5432/dembq6s6m1mohq
+</span><span class='line'>DJANGO_SETTINGS_MODULE: project.settings.prod
+</span><span class='line'>MAILGUN_API_KEY:        key-9587e40f127a1fe8fbab10622be69169
+</span><span class='line'>MAILGUN_DOMAIN:         appb8c22c19f6654edeb3c25768d4674002.mailgun.org
+</span><span class='line'>MAILGUN_PUBLIC_KEY:     pubkey-51b28300a981d7f184bb55c4726742d8
+</span><span class='line'>MAILGUN_SMTP_LOGIN:     postmaster@appb8c22c19f6654edeb3c25768d4674002.mailgun.org
+</span><span class='line'>MAILGUN_SMTP_PASSWORD:  f1c39a13079d8db398073fc6717de59a
+</span><span class='line'>MAILGUN_SMTP_PORT:      587
+</span><span class='line'>MAILGUN_SMTP_SERVER:    smtp.mailgun.org
+</span><span class='line'>SITE_DOMAIN:            dj-celery.herokuapp.com
+</span><span class='line'>SITE_NAME:              dj-celery</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We see that <code>MAILGUN_XXX</code> variables are provided, we will use it on development
+mode by adding the following lines into the .env file from the config content of your app
+environment:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+</span><span class='line'>
+</span><span class='line'>MAILGUN_API_KEY=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_DOMAIN=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_PUBLIC_KEY=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_LOGIN=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_PASSWORD=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_PORT=&lt;your_app_environment_value&gt;
+</span><span class='line'>MAILGUN_SMTP_SERVER=&lt;your_app_environment_value&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Let&rsquo;s test if the email works:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py shell
+</span><span class='line'>
+</span><span class='line'>Python 2.7.6 (default, Apr 15 2015, 20:14:49) 
+</span><span class='line'>Type "copyright", "credits" or "license" for more information.
+</span><span class='line'>
+</span><span class='line'>IPython 4.0.1 -- An enhanced Interactive Python.
+</span><span class='line'>?         -&gt; Introduction and overview of IPython's features.
+</span><span class='line'>%quickref -&gt; Quick reference.
+</span><span class='line'>help      -&gt; Python's own help system.
+</span><span class='line'>object?   -&gt; Details about 'object', use 'object??' for extra details.
+</span><span class='line'>
+</span><span class='line'>In [1]: from django.core import mail
+</span><span class='line'>
+</span><span class='line'>In [2]: mail.mail_admins('test', 'test')
+</span><span class='line'>
+</span><span class='line'>In [3]: </span></code></pre></td></tr></table></div></figure>
+
+
+<p>You need to check your mailbox to see that a test email should be sent to you.</p>
+
+<p>Now you could signup and receive email at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup/</p>
+
+<h2>django-celery-email Setup</h2>
+
+<p>If could see that <code>mail.mail_admins</code> is blocked and waiting until the email sending is finished.
+To avoid these blocking, let&rsquo;s use Celery. Celery app is already setup by django-boilerplate at:
+<a href="https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613">https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613</a></p>
+
+<p>Let&rsquo;s just follow <a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a> to configure it like I did at:
+<a href="https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6">https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6</a></p>
+
+<p>and then:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ pip install -r requirements/dev.txt --upgrade</span></code></pre></td></tr></table></div></figure>
+
+
+<p>update EMAIL_BACKEND for .env file with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>EMAIL_BACKEND='djcelery_email.backends.CeleryEmailBackend'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>One important step is to enable Celery by using <a href="https://elements.heroku.com/addons/cloudamqp">https://elements.heroku.com/addons/cloudamqp</a></p>
+
+<p>To use cloudamqp heroku addon:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku addons:create cloudamqp:lemur</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should see <code>CLOUDAMQP_URL</code> environment variable by <code>$ heroku config</code></p>
+
+<p>Let&rsquo;s add that variable into the .env file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CLOUDAMQP_URL=&lt;your_app_environment_value&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The full .env file I created was at: <a href="https://gist.github.com/hoatle/7cb82d437213db4f373d">https://gist.github.com/hoatle/7cb82d437213db4f373d</a></p>
+
+<p>To start Celery app: <code>$ ./scripts/celery.sh</code>, and you should see the following content:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> -------------- celery@vagrant v3.1.19 (Cipater)
+</span><span class='line'>---- **** ----- 
+</span><span class='line'>--- * ***  * -- Linux-3.13.0-49-generic-x86_64-with-debian-wheezy-sid
+</span><span class='line'>-- * - **** --- 
+</span><span class='line'>- ** ---------- [config]
+</span><span class='line'>- ** ---------- .&gt; app:         Project:0x2f9a710
+</span><span class='line'>- ** ---------- .&gt; transport:   amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>- ** ---------- .&gt; results:     disabled
+</span><span class='line'>- *** --- * --- .&gt; concurrency: 2 (prefork)
+</span><span class='line'>-- ******* ---- 
+</span><span class='line'>--- ***** ----- [queues]
+</span><span class='line'> -------------- .&gt; celery           exchange=celery(direct) key=celery
+</span><span class='line'>                
+</span><span class='line'>
+</span><span class='line'>[tasks]
+</span><span class='line'>  . djcelery_email_send_multiple
+</span><span class='line'>
+</span><span class='line'>[2015-12-21 12:13:22,788: INFO/Beat] beat: Starting...
+</span><span class='line'>[2015-12-21 12:13:24,532: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>[2015-12-21 12:13:26,851: INFO/MainProcess] mingle: searching for neighbors
+</span><span class='line'>[2015-12-21 12:13:31,216: INFO/MainProcess] mingle: all alone
+</span><span class='line'>/home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+</span><span class='line'>  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+</span><span class='line'>
+</span><span class='line'>[2015-12-21 12:13:36,019: WARNING/MainProcess] /home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+</span><span class='line'>  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+</span><span class='line'>
+</span><span class='line'>[2015-12-21 12:13:36,023: WARNING/MainProcess] celery@vagrant ready.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After that, sending test email to admins should work without any blocking by opening a new terminal
+window:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant ssh
+</span><span class='line'>$ ws
+</span><span class='line'>$ cd personal/django-celery
+</span><span class='line'>$ workon django-celery
+</span><span class='line'>$ ./manage.py shell
+</span><span class='line'>
+</span><span class='line'>Python 2.7.6 (default, Apr 15 2015, 20:14:49) 
+</span><span class='line'>Type "copyright", "credits" or "license" for more information.
+</span><span class='line'>
+</span><span class='line'>IPython 4.0.1 -- An enhanced Interactive Python.
+</span><span class='line'>?         -&gt; Introduction and overview of IPython's features.
+</span><span class='line'>%quickref -&gt; Quick reference.
+</span><span class='line'>help      -&gt; Python's own help system.
+</span><span class='line'>object?   -&gt; Details about 'object', use 'object??' for extra details.
+</span><span class='line'>
+</span><span class='line'>In [1]: from django.core import mail
+</span><span class='line'>
+</span><span class='line'>In [2]: mail.mail_admins('test', 'test')</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it. We&rsquo;re done on development mode. Let&rsquo;s deploy on Heroku with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push heroku master
+</span><span class='line'>$ heroku ps:scale celery=1</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>$ heroku logs -p celery</code> to see the logs of celery, you should see something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>2015-12-21T12:30:35.946701+00:00 heroku[celery.1]: Starting process with command `scripts/celery.sh`
+</span><span class='line'>2015-12-21T12:30:37.616409+00:00 app[celery.1]: /app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env - it doesn't exist.
+</span><span class='line'>2015-12-21T12:30:37.616419+00:00 app[celery.1]:   warnings.warn("Not reading {0} - it doesn't exist.".format(dotenv))
+</span><span class='line'>2015-12-21T12:30:38.278350+00:00 app[celery.1]: [2015-12-21 12:30:38,278: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>2015-12-21T12:30:38.220898+00:00 app[celery.1]: [2015-12-21 12:30:38,220: WARNING/MainProcess] /app/.heroku/python/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+</span><span class='line'>2015-12-21T12:30:38.220902+00:00 app[celery.1]: Starting from version 3.2 Celery will refuse to accept pickle by default.
+</span><span class='line'>2015-12-21T12:30:38.220904+00:00 app[celery.1]: The pickle serializer is a security concern as it may give attackers
+</span><span class='line'>2015-12-21T12:30:38.220903+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220905+00:00 app[celery.1]: the ability to execute any command.  It's important to secure
+</span><span class='line'>2015-12-21T12:30:38.220908+00:00 app[celery.1]: the default choice.
+</span><span class='line'>2015-12-21T12:30:38.220907+00:00 app[celery.1]: that enabling pickle should require a deliberate action and not be
+</span><span class='line'>2015-12-21T12:30:38.220906+00:00 app[celery.1]: your broker from unauthorized access when using pickle, so we think
+</span><span class='line'>2015-12-21T12:30:38.220909+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220910+00:00 app[celery.1]: If you depend on pickle then you should set a setting to disable this
+</span><span class='line'>2015-12-21T12:30:38.220910+00:00 app[celery.1]: warning and to be sure that everything will continue working
+</span><span class='line'>2015-12-21T12:30:38.220914+00:00 app[celery.1]: You must only enable the serializers that you will actually use.
+</span><span class='line'>2015-12-21T12:30:38.220913+00:00 app[celery.1]:     CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+</span><span class='line'>2015-12-21T12:30:38.220912+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220915+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220913+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220915+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.220911+00:00 app[celery.1]: when you upgrade to Celery 3.2::
+</span><span class='line'>2015-12-21T12:30:38.220917+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.223101+00:00 app[celery.1]: ---- **** ----- 
+</span><span class='line'>2015-12-21T12:30:38.220916+00:00 app[celery.1]:   warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+</span><span class='line'>2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; app:         Project:0x7f590f5fad10
+</span><span class='line'>2015-12-21T12:30:38.223107+00:00 app[celery.1]: --- ***** ----- [queues]
+</span><span class='line'>2015-12-21T12:30:38.223111+00:00 app[celery.1]:   . djcelery_email_send_multiple
+</span><span class='line'>2015-12-21T12:30:38.223102+00:00 app[celery.1]: --- * ***  * -- Linux-3.13.0-66-generic-x86_64-with-debian-jessie-sid
+</span><span class='line'>2015-12-21T12:30:38.262153+00:00 app[celery.1]: [2015-12-21 12:30:38,261: INFO/Beat] beat: Starting...
+</span><span class='line'>2015-12-21T12:30:38.223098+00:00 app[celery.1]:  
+</span><span class='line'>2015-12-21T12:30:38.301313+00:00 app[celery.1]: [2015-12-21 12:30:38,301: INFO/MainProcess] mingle: searching for neighbors
+</span><span class='line'>2015-12-21T12:30:38.223105+00:00 app[celery.1]: - ** ---------- .&gt; results:     disabled
+</span><span class='line'>2015-12-21T12:30:38.223109+00:00 app[celery.1]:                 
+</span><span class='line'>2015-12-21T12:30:38.223100+00:00 app[celery.1]:  -------------- celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 v3.1.19 (Cipater)
+</span><span class='line'>2015-12-21T12:30:38.223102+00:00 app[celery.1]: -- * - **** --- 
+</span><span class='line'>2015-12-21T12:30:38.223106+00:00 app[celery.1]: - *** --- * --- .&gt; concurrency: 8 (prefork)
+</span><span class='line'>2015-12-21T12:30:38.223109+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:38.223103+00:00 app[celery.1]: - ** ---------- [config]
+</span><span class='line'>2015-12-21T12:30:38.223106+00:00 app[celery.1]: -- ******* ---- 
+</span><span class='line'>2015-12-21T12:30:38.223110+00:00 app[celery.1]: [tasks]
+</span><span class='line'>2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; transport:   amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
+</span><span class='line'>2015-12-21T12:30:38.223108+00:00 app[celery.1]:  -------------- .&gt; celery           exchange=celery(direct) key=celery
+</span><span class='line'>2015-12-21T12:30:38.223111+00:00 app[celery.1]: 
+</span><span class='line'>2015-12-21T12:30:39.322701+00:00 app[celery.1]: [2015-12-21 12:30:39,322: INFO/MainProcess] mingle: all alone
+</span><span class='line'>2015-12-21T12:30:39.352403+00:00 app[celery.1]: [2015-12-21 12:30:39,352: WARNING/MainProcess] celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 ready.
+</span><span class='line'>2015-12-21T12:30:36.537615+00:00 heroku[celery.1]: State changed from starting to up</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You could try sending test emails to admins with:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku run python manage.py shell
+</span><span class='line'>Running python manage.py shell on dj-celery... up, run.9412
+</span><span class='line'>/app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env - it doesn't exist.
+</span><span class='line'>  warnings.warn("Not reading {0} - it doesn't exist.".format(dotenv))
+</span><span class='line'>Python 2.7.10 (default, May 27 2015, 20:38:41) 
+</span><span class='line'>[GCC 4.8.2] on linux2
+</span><span class='line'>Type "help", "copyright", "credits" or "license" for more information.
+</span><span class='line'>(InteractiveConsole)
+</span><span class='line'>&gt;&gt;&gt; from django.core import mail
+</span><span class='line'>&gt;&gt;&gt; mail.mail_admins('test', 'test')</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it, email sending is not blocked anymore. The full project for this guide is located at:
+<a href="https://github.com/hoatle/django-celery">https://github.com/hoatle/django-celery</a></p>
+
+<h2>Remote Debugging Python Tip</h2>
+
+<p>This is a bonus if you need to remote debug Python applications. You could apply this for
+Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging">http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging</a></p>
+
+<h2>Summary</h2>
+
+<p>In this post, I&rsquo;ve guided you step by step to setup Celery as a distributed task queue for emails
+on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
+
+<p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
+<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x68;&#113;&#x40;&#116;&#101;&#x72;&#x61;&#99;&#121;&#46;&#x63;&#111;&#x6d;">&#104;&#113;&#64;&#x74;&#101;&#x72;&#x61;&#x63;&#121;&#46;&#99;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+
+<p>Happy Django developing!</p>
+
+<h2>References</h2>
+
+<ul>
+<li><a href="https://github.com/bread-and-pepper/django-userena">https://github.com/bread-and-pepper/django-userena</a></li>
+<li><a href="http://www.celeryproject.org/">http://www.celeryproject.org/</a></li>
+<li><a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[how to make JWT requests with httpie-jwt-auth plugin?]]></title>
+    <link href="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/"/>
+    <updated>2015-09-03T11:33:00+00:00</updated>
+    <id>http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin</id>
+    <content type="html"><![CDATA[<p>At Teracy, we embrace JWT (JSON Web Tokens)<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>  for REST APIs to make secure requests. Just for
+your information: &ldquo;JSON Web Tokens are an open, industry standard RFC 7519 method for representing
+claims securely between two parties&rdquo;.</p>
+
+<!-- more -->
+
+
+<p>We&rsquo;re using JWT for our REST APIs basing on the flask-boilerplate<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> project that are empowering
+our clients&#8217; web applications and our internal projects.</p>
+
+<p>And to test REST APIs, we&rsquo;re using a really simple powerful http client called httpie<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> .</p>
+
+<p>To make a JWT request with <code>httpie</code>, you need to use the following command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ http example.org Authorization:'Bearer jwt_token_here'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hower, typing <code>Authorization</code> with the exact value format is a bit hard and error-prone, that&rsquo;s the
+reason why we created <a href="https://github.com/teracyhq/httpie-jwt-auth">httpie-jwt-auth</a> plugin with the first v0.1.0 release. After installing
+<code>httpie-jwt-auth</code>, you could use this instead:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ http --auth-type=jwt --auth=jwt_token_here: example.org</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it. It&rsquo;s really easy to use for any JWT requests with <code>httpie</code>.</p>
+
+<p>Please note that colon character at the end of <code>jwt_token_here</code>, we&rsquo;re going to work on removing
+the redundant colon character with: <a href="https://github.com/teracyhq/httpie-jwt-auth/issues/3">https://github.com/teracyhq/httpie-jwt-auth/issues/3</a></p>
+
+<p>Hope that you&rsquo;ll like it and use it as much as we do.</p>
+
+<p>Happy developing and debugging!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://jwt.io/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://github.com/teracyhq/flask-boilerplate<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://github.com/jkbrzt/httpie<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Teracy happy birthday Slack bot]]></title>
+    <link href="http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot/"/>
+    <updated>2015-07-22T09:19:00+00:00</updated>
+    <id>http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/teracy_birthday_slack_bot.png" title="Teracy happy birthday Slack bot" ></p>
+
+<p>Getting everything automated is one of my daily tasks, such as running tests automatically each time
+there is a new commit, packaging products and sending them to customers, or deploying the
+staging/ production servers when a project manager releases a new version, and more.</p>
+
+<!-- more -->
+
+
+<p>Today my task is something quite different: Congrats team members on their birthdays automatically
+by the data got from Google calendar. After a little search, there are many automation solutions to
+do it: from commercial Zapier, IFFT to opensource like Huginn.
+I want something simple to use, maintenance-free, and free for small usage, so my last
+choice is Zapier. It has already had the recipe<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to read events from Google calendar and another
+action to interactive with Slack that will be easy to start (although the document of the recipe
+is not quite clear for a new user like me). Here is the recipe for Zapier:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/Zapier_recipe_config.png" title="Zapier recipe config" ></p>
+
+<p>With this recipe, Zapier will notify to the #_general slack channel with the message got from the
+calendar description at the time of the event start. To make thing more interesting, I want to
+attach a birthday cake image which has an employee name on it along with the message so I use PHP GD
+to show a dynamic birthday cake taking the employee name from the calendar title and add it to the
+image. It took me 30 minutes to get the birthday cake image which has space for the text, choose a
+font and add it to my script. Finally, uploading it to our server and here is the result:</p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/cake_sample.png" title="Birthday cake" ></p>
+
+<p>This PHP script<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> along with the Zapier recipe above makes the birthday reminder more interesting.
+What I&rsquo;m thinking now is some funny fortune teller texts which are added randomly to the cake, a
+lucky draw game for the team members to pick up their birthday gift and hopefully some online
+merchants will open their API for our script to bring the gift to our team members&#8217; homes.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>https://zapier.com/zapbook/google-calendar/slack/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>https://github.com/teracyhq/birthday-image<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.4.0 release]]></title>
+    <link href="http://blog.teracy.com/2015/05/22/teracy-dev-v0-4-0-release/"/>
+    <updated>2015-05-22T09:19:00+00:00</updated>
+    <id>http://blog.teracy.com/2015/05/22/teracy-dev-v0-4-0-release</id>
+    <content type="html"><![CDATA[<p>About 1 year 8 months ago we announced the <code>teracy-chef</code> v1.0.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> with a plan to extend
+it for <code>teracy-dev</code>. And today we&rsquo;re very happy to announce <code>teracy-dev</code> v4.0.0 release, a really
+important release we&rsquo;ve been waiting for after nearly 2 years of development. Why is it so
+important?</p>
+
+<!-- more -->
+
+
+<h2>Easy Setup And Time Saving</h2>
+
+<p>Traditionally, setting up a development environment takes a lot of time to install the required
+packages and it also requires skillful developers to do it. Now with <code>teracy-dev</code>, its mission
+is to be an <code>all in one development environment managed by Vagrant and provisioned by Chef</code>.
+It&rsquo;s easy and cheap to install the same development environment on all types of operating
+systems (Linux, Mac, Windows) by just following some simple steps with a clear guide<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
+
+<h2>All In One Development Environment</h2>
+
+<p>You want to work with:</p>
+
+<ul>
+<li>Python? here we go: <a href="http://dev.teracy.org/docs/0.4.0/python_dev_guide.html">http://dev.teracy.org/docs/0.4.0/python_dev_guide.html</a></li>
+<li>Node.js? here we go: <a href="http://dev.teracy.org/docs/0.4.0/nodejs_dev_guide.html">http://dev.teracy.org/docs/0.4.0/nodejs_dev_guide.html</a></li>
+<li>PHP? here we go: <a href="http://dev.teracy.org/docs/0.4.0/php_dev_guide.html">http://dev.teracy.org/docs/0.4.0/php_dev_guide.html</a></li>
+<li>Ruby? here we go: <a href="http://dev.teracy.org/docs/0.4.0/ruby_dev_guide.html">http://dev.teracy.org/docs/0.4.0/ruby_dev_guide.html</a></li>
+<li>MySQL? here we go: <a href="http://dev.teracy.org/docs/0.4.0/databases_guide.html#mysql">http://dev.teracy.org/docs/0.4.0/databases_guide.html#mysql</a></li>
+<li>Git?</li>
+<li>phpMyAdmin?</li>
+<li>&hellip;?</li>
+</ul>
+
+
+<p>All these components are already available when you setup the <code>teracy-dev</code> VM.</p>
+
+<p>If you want to have more, such as:</p>
+
+<ul>
+<li>Java</li>
+<li>PostgreSQL</li>
+<li>MongoDB</li>
+<li>&hellip;</li>
+</ul>
+
+
+<p>It&rsquo;s just a few minutes to configure and enable these components to use right away.</p>
+
+<p>We&rsquo;re using <code>teracy-dev</code> everyday for all our clients&#8217; projects and our internal projects with a
+wide range of technology stacks and <code>teracy-dev</code> makes our lives (trainees, QA engineers, designers,
+developers) easier to collaborate.</p>
+
+<h2>Customization</h2>
+
+<p>You could customize <code>teracy-dev</code> by overriding the default configuration on the
+<code>vagrant_config.json</code> file<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> such as:</p>
+
+<ul>
+<li>VM customization: networks, synced folders, memory, cpus, etc.</li>
+<li>Enable/ disable or use different versions of <code>Git</code>, <code>Node.js</code>, <code>Python</code>, <code>Ruby</code>, <code>Nginx</code>, <code>Apache</code>,
+<code>PHP</code>, <code>MySql</code>, <code>MongoDB</code>, <code>PostgreSQL</code>, <code>Java</code>, <code>PHPMyAdmin</code>, <code>codebox</code>.</li>
+</ul>
+
+
+<p>If you want to have more customization, please follow:
+<a href="http://dev.teracy.org/docs/0.4.0/teracy_dev_development.html">http://dev.teracy.org/docs/0.4.0/teracy_dev_development.html</a></p>
+
+<h2>How To Upgrade</h2>
+
+<p>We support seamless upgrade, these are the steps for upgrading if you&rsquo;re using <code>teracy-dev</code> v0.3.5:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd ~/teracy-dev
+</span><span class='line'>$ git pull
+</span><span class='line'>$ vagrant box update</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>teracy-dev</code> v0.4.0 introduced a breaking change of configuration for the VM&rsquo;s network<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>,
+so you need to adjust it on your <code>vagrant_config_override.js</code> if you&rsquo;re overriding it.</p>
+
+<p>Then:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant destroy
+</span><span class='line'>$ vagrant up</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And you&rsquo;re done.</p>
+
+<h2>What&rsquo;s Next?</h2>
+
+<p>We&rsquo;re going to back-port some stuff from <code>teracy-dev</code> to <code>teracy-chef</code> to make it modular so
+that everyone could leverage <code>teracy-chef</code> to setup their own development environment like we&rsquo;re
+doing for <code>teracy-dev</code> such as:</p>
+
+<ul>
+<li>LAMP stack only</li>
+<li>Java stack only</li>
+<li>Ruby stack only</li>
+<li>Node.js stack only</li>
+<li>Ruby stack only</li>
+</ul>
+
+
+<p>The possibilies are limitless for everyone to create their own baseboxes.</p>
+
+<p>By the next versions of <code>teracy-chef</code> and <code>teracy-dev</code>, we&rsquo;ll support provisioning the servers
+with <code>knife-solo</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>.</p>
+
+<p>And we&rsquo;ll also support many different types of operating systems for the base boxes, even with
+Windows base boxes.</p>
+
+<p>We can&rsquo;t wait to continue developing and releasing the next versions.</p>
+
+<h2>0.4.x Releases</h2>
+
+<p>This section will be used to announce v0.4.x releases and we&rsquo;re very happy to announce:</p>
+
+<ul>
+<li><p><code>teracy-dev</code> v0.4.1 release which fixes 2 bugs:</p>
+
+<ul>
+<li>[DEV-232] &ndash; mysql with php not work</li>
+<li>[DEV-233] &ndash; wrong default forwarded port for mysql</li>
+</ul>
+
+
+<p>Details: <a href="https://issues.teracy.org/secure/ReleaseNote.jspa?projectId=10400&amp;version=12200">https://issues.teracy.org/secure/ReleaseNote.jspa?projectId=10400&amp;version=12200</a></p></li>
+</ul>
+
+
+<h2>One More Thing&hellip;</h2>
+
+<p>If you want to get our support, consultant or to develop web applications, please drop us an
+email at: hq[at]teracy.com to collaborate and get your dreams come true!</p>
+
+<p>Or you could contact us via:</p>
+
+<ul>
+<li><a href="https://www.upwork.com/companies/Teracy_~01bea4242f6b165592">https://www.upwork.com/companies/Teracy_~01bea4242f6b165592</a></li>
+<li><a href="https://www.upwork.com/users/~01ae32490908995384">https://www.upwork.com/users/~01ae32490908995384</a></li>
+</ul>
+
+
+<p>In the meantime, enjoy <code>teracy-dev</code> for all your projects and hope that you will love using it as
+much as we do.</p>
+
+<p>Let&rsquo;s get started: <a href="http://dev.teracy.org/docs/0.4.0/getting_started.html">http://dev.teracy.org/docs/0.4.0/getting_started.html</a></p>
+
+<p>Happy developing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://dev.teracy.org/docs/getting_started.html<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://github.com/teracyhq/dev/blob/v0.4.0/vagrant_config.json<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>https://issues.teracy.org/browse/DEV-198<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p>http://matschaffer.github.io/knife-solo/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Free Teracy Wireframe UI kit for Sketch]]></title>
+    <link href="http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch/"/>
+    <updated>2014-12-08T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2014/12/cover.jpg"></p>
+
+<p>It’s always a good idea to begin with a wireframe when beginning a new web design or mobile app project.
+Wireframes can be a big time saver as they help both designers and developers come to an agreement on placement
+of major UI elements. The key is to get the layout nailed down so you don&rsquo;t have to change major layout when
+ detailed design elements are in place.</p>
+
+<!-- more -->
+
+
+<p>In our design process at Teracy, wireframing and mockups takes an important position. We have developed
+a wireframe kit to speedup the design process and use it in our daily design workflow. Today, we are excited
+ to share the version of our wireframe kit that we are using, which includes the most common UI elements
+in web projects. This is the second UI kit we share to <a href="http://www.bohemiancoding.com/sketch/">Sketch</a> community, you can also check out our first freebie <a href="https://github.com/teracy-official/bootflat-ui-kit.sketch">Bootflat UI kit for Sketch</a> shared not a long time ago.</p>
+
+<p>Here it is, hope it&rsquo;s useful for all Sketch lovers!</p>
+
+<p><a href="https://github.com/teracyhq/wireframe">Download the Teracy Wireframe kit for Sketch</a></p>
+
+<p><img class="center" src="http://blog.teracy.com/images/2014/12/ss2.jpg">
+<img class="center" src="http://blog.teracy.com/images/2014/12/ss1.jpg"></p>
+
+<p>Features:</p>
+
+<ul>
+<li>All UI Elements are Symbols.</li>
+<li>Symbols grouped by categories.</li>
+<li>UI elements for mobile devices will be added in the next version.</li>
+<li>Markups and annotations included.</li>
+<li>Over 140 icons included.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Free Bootflat UI kit for Sketch]]></title>
+    <link href="http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch/"/>
+    <updated>2014-10-08T00:00:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2014/10/cover.png"></p>
+
+<p><strong><em>Why Sketch?</em></strong></p>
+
+<p><a href="http://www.bohemiancoding.com/sketch/">Sketch</a> is a powerful tool designed entirely to do UI. It&rsquo;s a young graphic program when compared
+to Photoshop but we see its user base&rsquo;s growing strong. Centered around vector design, Sketch is
+getting plenty of buzz among UI designers as an alternative to Adobe&rsquo;s Creative Suite. With Sketch,
+designs come out pixel perfect and in vector format, a requirement for multiple screen sizes.</p>
+
+<!-- more -->
+
+
+<p>You may not believe how much time this application have saved us when designing UI. It&rsquo;s simple,
+fast and so connected to the way designers work. You definitely should give Sketch a try in your
+next project. There are already a lot of articles about how Sketch excels in designing UI. Here to
+name a few:</p>
+
+<ul>
+<li><a href="http://blog.mengto.com/sketch-vs-photoshop/">Sketch VS Photoshop</a></li>
+<li><a href="http://blog.mengto.com/photoshop-users-how-to-switch-to-sketch/">Photoshop Users: How To Switch To Sketch</a></li>
+<li><a href="https://medium.com/@jm_denis/discovering-sketch-25545f6cb161">Discovering Sketch</a></li>
+</ul>
+
+
+<p><strong><em>Bootflat UI Kit</em></strong></p>
+
+<p>At the beginning, Teracy planned to develop its own UI kit and framework based on bootstrap. It&rsquo;s a
+great experience but developing and maintaining the UI kit will take time. Clock&rsquo;s still ticking.
+We have to release one of our ambitious products by the end of this year.
+So, we&rsquo;ve come to decide on finding an open source framework that matches our flat designs.</p>
+
+<p>And we found <a href="http://bootflat.github.io/">Bootflat</a> &ndash; an open source Flat UI kit based on Twitter Bootstrap 3 framework. For
+designers, they offer a free PSD, including a set of beautiful and pure elements, which you can
+use to create startup projects, websites or iOS/Android Apps. This will save a lot of developing
+time.</p>
+
+<p>There&rsquo;s still one thing that&rsquo;s bugging us though. As our company starts switching to Sketch for UI
+design, this beautiful framework doesn&rsquo;t provide the .sketch file of elements, only .psd. So we
+think &ldquo;OK, why not create one? Sketch community might find it helpful and it&rsquo;s also good for
+creators of Bootflat.&rdquo;</p>
+
+<p>So here it is, hope it&rsquo;s useful for Sketch lovers!</p>
+
+<p><a href="https://github.com/teracy-official/bootflat-ui-kit.sketch">Download the Bootflat UI kit for Sketch</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First Team Building Activity Of Teracy In Da Nang City]]></title>
+    <link href="http://blog.teracy.com/2014/09/25/first-team-building-activity-of-teracy-in-da-nang-city/"/>
+    <updated>2014-09-25T10:39:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/09/25/first-team-building-activity-of-teracy-in-da-nang-city</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2014/09/teracy1.jpg"></p>
+
+<p>After a hard working year, the long-awaited day had arrived &ndash; Teracy&rsquo;s vacation for 4 days and 3 nights.
+This destination reaches the Central Vietnam &ndash; Da Nang, a beautiful and bustling city with the fresh
+atmosphere and taste of the sea.</p>
+
+<p>It was not simply a vacation but also a team building activity for Teracy. Although Teracy has just
+come into operation with relatively few members in the North &ndash; Central &ndash; South, this trip is even
+more meaningful for all Teraciers. It was the first time all the members met together to experience
+moments of fun, and relaxation side by side, so everyone was very excited :)</p>
+
+<!-- more -->
+
+
+<p>The journey should always have a good preparation to make sure to have a perfect trip. Just like the
+other times, I encountered many difficulties and took a lot of time in preparation for the trip.</p>
+
+<p>The most difficult thing was to find a place for travel. It seemed a simple job done, but quite hard
+for me when carrying out the plan. As the members of the Teracy live in different regions of the country,
+the destination must be convenient for travel, have many beautiful spots, be easy to hold team-building
+activities and suitable to the budget. After careful consideration, we decided to reach Da Nang, a
+Central beach full of sunshine and wind, and a young city. Da Nang is also the mid region of the
+country and be able to connect the members from three Vietnamese regions of North-Central and South.</p>
+
+<p>Next, I needed to book flight tickets for members and search for a hotel. The hotel should be center,
+comfortable, but at reasonable price.</p>
+
+<p>I also needed to find out specialties in Da Nang, what and where to eat, give the detailed schedule
+for the trip.</p>
+
+<p>Phew!  Everything was well done in the end. We were towards Da Nang together!</p>
+
+<p><strong>4 day 3 night journey begins!</strong></p>
+
+<p><strong>Day 1</strong></p>
+
+<p>When walking down the airport, just at dusk, I felt the taste of the sea, fresh air, cool
+peace of the city, unlike the crowded bustling scene, and hot summer in Hanoi. We
+arrived at the hotel at 6.30 pm, did check-in procedures, relaxed and chatted together.
+It was the first convergence of the Teraciers, (unfortunately, some members could not join) but we all
+felt so familiar and close. After moments of unceasing talk, all of us felt very hungry. To the coastal
+city, of course, the first dishes we chose were seafood. As planned, we tried the seafood in a pretty
+cool and clean coastal restaurant. The menu had wide variety of options, all look tasty. How I could
+find myself enjoy such delicious dishes in Hanoi. Until now, I still remember the fresh delicious
+favor of Tamarind crab, steamed prawn and crab on that day.</p>
+
+<p>After the meal, we walked along My Khe beach. The murmur of the wind and the waves was singing to
+welcome us. A soft sea breeze kissed our face and a salty warmth blew into our face, which dissipated
+all the tiredness of hard working days. The wind was still blowing and the waves were still crushing
+onto our bare feet, with the cheerful voices and laugh of people.</p>
+
+<p><strong>Day 2</strong></p>
+
+<p>Indeed, it was an unlucky day for us. After visiting Son Tra Peninsula in the morning, we took a nap
+until afternoon (I guess because we stayed up late playing cards last night). We went eating around
+3 pm (well, I actually didn&rsquo;t know if it was considered as lunch or dinner). As planned, we would go
+to play paint-ball after the meal. However, all of a sudden, it started to rain so we couldn&rsquo;t play.
+Instead, we had to switch to go swimming when the rain was over.</p>
+
+<p>In the evening, we went to eat veil. When telling the taxi-driver the address of a restaurant, he
+said it was so hard to find that new street name so I told him to take us to another restaurant. Unluckily,
+the restaurant was closed or moved to somewhere. In the end, we decided to eat &ldquo;Pork Rolls&rdquo; instead.
+After that, we were eager to go to play bowling for pleasure, however, we were disheartened by seeing
+the sign &ldquo;suspend operations to fix&rdquo;. Eventually, we turned to visit &ldquo;Sun-Wheel- the world&rsquo;s
+fourth-largest one&rdquo;.</p>
+
+<p>Linh Ung Pagoda &ndash; Son Tra peninsula <img class="center" src="http://blog.teracy.com/images/2014/09/teracy2.jpg"></p>
+
+<p><strong>Day 3</strong></p>
+
+<p>Fortunately, all activities took place as our schedule. In the morning, we played the
+challenge game &ldquo;waterfall slide&rdquo; to challenge ourselves with rushing water, along with stones having
+different sizes as obstacles to give us the sudden collision and to make the game more and more
+adventurous. It was really a funny and adventurous game.</p>
+
+<p>Prepare for sliding waterfall <img class="center" src="http://blog.teracy.com/images/2014/09/teracy3.jpg"></p>
+
+<p>After that, we went to enjoy the specialties here, such as, fried brook fish, boiled chicken, stocky
+wild boar meat and stir-fried wild vegetables with a little acrid, and strange taste. In the evening,
+we had real comfortable moments at &ldquo;Phuong Dong&rdquo; bar. This was our second option because we were not
+in proper clothes to come into &ldquo;Sky 36&rdquo;&ndash; our first option.</p>
+
+<p>Join the exciting atmosphere at Phuong Dong bar <img class="center" src="http://blog.teracy.com/images/2014/09/teracy4.jpg"></p>
+
+<p><strong>Day 4</strong></p>
+
+<p>In the morning we went to play paint-ball game. It was a quite interesting team game. We also wore as
+soldiers, looked very majestic. We had 6 people, divided into two teams. All were ready to fight!</p>
+
+<p>Prepare for playing paint-ball game <img class="center" src="http://blog.teracy.com/images/2014/09/teracy5.jpg"></p>
+
+<p>After the game, we returned to the hotel, relaxed, and checked out to visit Mr Phuong&rsquo;s house &ndash; a
+colleague who lives in Da Nang. It was the last night in Da Nang, we must take advantage of the worthful
+time to try other specialties of Da Nang, sat drinking coffee, and looking at the peaceful night
+city.</p>
+
+<p>The next morning, everyone got up early, packed up, went out for buying gifts for relatives and friends,
+and then went to the airport. Good bye Da Nang and colleagues who live in Da Nang and Saigon!
+Return to Hanoi after this trip, I miss Da Nang and my colleagues very much, miss the moments
+with Teracier together, miss the murmur of sea waves, white and smooth sands,
+the salty sea breeze, the memory of the pure and pristine morning, especially miss the people and the
+specialties of Da Nang.</p>
+
+<p>The trip was not as successful as expected, but it helped the members of Teracy become close and
+understand each other better. It really brought us the great moments.</p>
+
+<p>See all Tereciers next year &ndash; in the second team building activity of Teracy!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hoạt Động Team Building Đầu Tiên Của Teracy]]></title>
+    <link href="http://blog.teracy.com/2014/09/24/hoat-dong-team-building-dau-tien-cua-teracy/"/>
+    <updated>2014-09-24T15:46:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/09/24/hoat-dong-team-building-dau-tien-cua-teracy</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2014/09/teracy1.jpg"></p>
+
+<p>Sau một năm làm việc vất vả thì cái ngày mong đợi cũng đã đến &ndash; một chuyến nghỉ mát 4 ngày 3 đêm
+cùng Teracy. Chuyến đi lần này hướng về miền trung để đến với mảnh đất Đà Nẵng – một
+thành phố tươi trẻ, năng động với bầu không khí trong lành đậm hương vị của biển khơi.</p>
+
+<p>Đây không đơn giản chỉ là một kỳ nghỉ mát, đối với Teracy thì còn là một hoạt động team building. Do
+Teracy vừa mới đi vào hoạt động chưa lâu, số thành viên còn khá ít ở ba miền Bắc &ndash; Trung &ndash; Nam, nên
+chuyến đi này lại càng có ý nghĩa với tất cả các Teracier. Đây là lần đầu tiên tất cả các thành viên
+được gặp mặt nhau, cùng trải qua những giây phút vui chơi, nghỉ ngơi bên nhau&hellip;Vì thế mà ai cũng háo
+hức lắm :)</p>
+
+<!-- more -->
+
+
+<p>Hành trình nào cũng cần có sự chuẩn bị trước thật tốt để đảm bảo có một chuyến đi thật hoàn hảo. Cũng
+như các hành trình khác, tôi gặp rất nhiều khó khăn và mất rất nhiều thời gian trong công tác chuẩn bị.</p>
+
+<p>Khó khăn nhất là việc tìm điểm đến. Tưởng chừng công việc này đơn giản lắm, nhưng khi bắt tay
+vào lên kế hoạch lại hoàn toàn ko đơn giản chút nào. Vì các thành viên của Teracy thì sinh sống ở
+các miền khác nhau trong cả nước, do đó việc lựa chọn địa điểm làm sao phải thuận tiện cho việc
+đi lại, phù hợp với ngân sách, có các hoạt động team building, có những danh lam thắng cảnh nổi
+tiếng&hellip; Sau khi cân nhắc kỹ lưỡng, chúng tôi quyết định chọn Đà Nẵng, một bãi biển miền trung đầy
+nắng và gió, một thành phố trẻ. Đà Nẵng cũng là điểm giữa của đất nước và có thể kết nối các thành
+viên tại 3 miền Bắc Trung Nam.</p>
+
+<p>Tiếp theo là book vé máy bay cho các thành viên và tìm kiếm khách sạn. Tiêu chí chọn khách sạn
+của chúng tôi là phải thật sạch sẽ, tiện nghi, trung tâm những nơi sẽ đến thăm, giá cả hợp lý.
+Tôi cũng cần tìm xem ở Đà Nẵng có những đặc sản gì, đi ăn gì, ở đâu và lên lịch trình chi tiết cho
+chuyến đi nữa, cả đoàn sẽ đi thăm thắng cảnh nào, rồi sẽ chơi trò gì để tất cả mọi người đều có thể
+tham gia và thấy thật sảng khoái&hellip;</p>
+
+<p>Phù!!! cuối cùng thì mọi thứ cũng đã xong rồi. Chúng ta cùng tiến về Đà Nẵng nào!</p>
+
+<p><strong>Hành trình 4 ngày 3 đêm bắt đầu!</strong></p>
+
+<p><strong>Ngày đầu tiên:</strong></p>
+
+<p>Khi bước xuống sân bay, vừa lúc chiều tối, tôi đã cảm nhận được mùi vị của
+biển khơi, bầu không khí trong lành, mát mẻ, sự bình yên của thành phố, khác hẳn cảnh xô bồ đông
+đúc, nóng nực của mùa hè ở chốn Hà Thành. Đúng 18h30, chúng tôi đến khách sạn, làm thủ tục
+check-in, nghỉ ngơi và ngồi chuyện trò cùng tất cả các thành viên ở cả 3 miền. Lần đâu tiên hội tụ
+các Teracier, (rất tiếc là chưa đông đủ) nhưng tất cả đều cảm thấy thật thân quen và gần gũi. Sau phút
+giây gặp nhau chuyện trò không ngớt, những cái bụng bắt đầu sôi réo ầm ầm giục đi ăn tối rồi :).
+Đến với thành phố biển, tất nhiên món ăn đầu tiên chúng tôi chọn là hải sản. Như đã lên kế hoạch
+từ trước, chúng tôi vào một nhà hàng khá thoáng mát, sạch sẽ. Vừa ngồi vào bàn, một em nhân viên
+phục vụ đã chạy đến niềm nở tươi cười, bảo chúng tôi gọi món. Ực! Ực! Nhìn thực đơn đã thấy ngon
+lắm rồi. Ở Hà nội, làm gì kiếm được những món ngon, bổ, rẻ như thế này :) Lần lượt nào là cua rang me,
+tôm hấp, ghẹ luộc&hellip;. được mang lên. Ngon quá, giờ nghĩ lại vẫn còn thèm lắm :) Sau khi ăn uống no
+say rồi, cả đoàn cùng nhau đi dạo dọc bãi biển Mỹ Khê. Tiếng sóng rì rào của biển như đang ca hát
+chào gọi chúng tôi. Làn gió biển mát rượi, hơi mằn mặn phả nhẹ vào mặt xua tan tất cả mệt mỏi
+sau những ngày làm việc bận rộn. Gió cứ thổi, sóng cữ vỗ nhẹ vào những đôi chân trần, hòa quyện
+trong tiếng cười nói vui nhộn của mọi người&hellip;.</p>
+
+<p><strong>Ngày thứ 2:</strong></p>
+
+<p>Quả thực đó là ngày không may mắn. Buổi sáng sau khi đi bán đảo Sơn Trà về thì
+mọi người ngủ luôn đến chiều (chắc do tối qua thức khuya chơi bài), đến 15h giờ mới lục đục đi ăn
+(chẳng hiểu là ăn trưa hay ăn tối nữa).Theo kế hoạch, sau khi ăn xong chúng tôi sẽ đi bắn súng sơn
+nhưng bất ngờ trời lại đổ mưa nên không thể đi được (thế là kế hoạch đổ bể, đành chuyển sang đi tắm
+biển). Buổi tối chúng tôi đi ăn thịt bê, khi lên taxi bảo họ chở đến địa chỉ của quán thứ nhất họ bảo
+tên đường này mới nên khó tìm, đang thở phào vì có quán ăn dự phòng khác nhưng khi đến nơi thì
+giật mình vì quán đã chuyển sang địa điểm khác. Chúng tôi đành chuyển sang ăn Bánh Tráng Thịt
+Heo, ăn xong chúng tôi hí hửng bàn nhau đi chơi bowling để đổi gió đến nơi thì chán hẳn khi nhìn
+thấy tấm biển ”tạm ngưng hoạt động để sửa chữa”. Không đổi được gió nên chúng tôi quay lại đi
+“vòng quay mặt trời &ndash; vòng quay lớn thứ 4 trên thế giới”. May thay nó chưa bị đóng cửa.</p>
+
+<p> Chùa Linh Ứng &ndash; Bán đảo Sơn Trà <img class="center" src="http://blog.teracy.com/images/2014/09/teracy2.jpg"></p>
+
+<p><strong>Ngày thứ 3:</strong></p>
+
+<p> May sao mọi hoạt động diễn ra theo đúng kế hoạch. Buổi sáng chúng tôi đi vượt
+thác để thử sức mình trên những dòng nước chảy xiết, cùng với những chú đá đủ kích cỡ to nhỏ nằm
+nghênh ngang giữa đường như thể làm chướng ngại vật tạo cho chúng tôi những cú hích bất ngờ
+khiến trò chơi càng thêm phần mạo hiểm (trò chơi khá vui và thú vị mỗi tội sắc da có hơi chuyển
+màu một chút).</p>
+
+<p>Chuẩn bị vượt thác <img class="center" src="http://blog.teracy.com/images/2014/09/teracy3.jpg"></p>
+
+<p>Chơi xong chúng tôi đi thưởng thức những đặc sản nơi đây (với món cá suối rán
+giòn rụm, món gà rừng, lợn rừng thịt chắc nịch và món rau rừng xào có vị hơi chát chát khi ăn xong
+còn để lại một dư vị khó tả). Buổi tối chúng tôi có những giây phút thật sự thoải mái ở bar Phương
+Đông (đây là phương án 2 của chúng tôi vì không được vào bar Sky 36 do không mặc đúng trang
+phục).</p>
+
+<p>Hòa mình vào không khí sôi động tại bar Phương Đông<img class="center" src="http://blog.teracy.com/images/2014/09/teracy4.jpg"></p>
+
+<p><strong>Ngày thứ 4:</strong></p>
+
+<p>Buối sáng chúng tôi đi bắn súng sơn. Đây là trò chơi tập thể khá thú vị và còn được
+mặc bộ quần áo như các chú bộ đội ấy, nhìn oai ghê cơ. Chúng tôi có 6 người, chia ra làm 2 đội. Tất
+cả sẵn sàng chiến đấu nhé!</p>
+
+<p>Sẵn sàng ra trận bắn súng sơn <img class="center" src="http://blog.teracy.com/images/2014/09/teracy5.jpg"></p>
+
+<p>Sau khi &ldquo;ra trận&rdquo; về, chúng tôi trở về khách sạn, nghỉ ngơi, trả phòng rồi đến thăm nhà anh Phương &ndash;
+1 đồng nghiệp đang sống ở Đà Nẵng. Còn đêm cuối cùng ở Đà Nẵng thôi, cả hội đều phải tận dụng
+triệt để thời gian vàng bạc này để đi ăn các món đặc sản còn lại của Đà Nẵng và ngồi uống cafe,
+ngắm thành phố đêm yên bình&hellip;</p>
+
+<p>Sáng hôm sau mọi người đều dậy sớm, dọn đồ, tranh thủ đi mua quà cho người thân, rồi ra sân
+bay. Tạm biệt Đà Nẵng nhé, tạm biệt các đồng nghiệp đang sống ở Đà Nẵng và Sài Gòn nhé. Trở về
+Hà Nội sau chuyến đi này thấy nhớ Đà Nẵng ghê, nhớ các Terecier lắm, nhớ những phút giây cùng
+các bạn vui cười bên nhau, nhớ tiếng sóng biển rì rầm, bờ cát trắng mìn, nhớ làn gió mằn mặn của
+biển khơi, nhớ những buổi sáng trong lành tinh khôi, và đặc biệt là người dân Đà Nẵng cùng những
+món ăn độc đáo nơi đây&hellip;</p>
+
+<p>Mặc dù chuyến đi thực sự chưa thành công như mong đợi, nhưng nó đã giúp cho tập thể Teracy trở
+nên thân thiết, gắn bó, hiểu nhau hơn và thêm yêu quý nhau hơn.</p>
+
+<p>Hẹn gặp lại tất cả các Terecier năm sau nhá &ndash; trong hoạt động team building lần 2 của Teracy!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.3.0 release]]></title>
+    <link href="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/"/>
+    <updated>2014-07-17T03:39:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2014/07/binary_code.jpg"></p>
+
+<p>Creating an isolated consistent development with a predefined consistent workflow is always our
+goal of development, that is the reason why we create <a href="https://github.com/teracyhq/dev">teracy-dev</a>. It is a virtualbox virtual
+machine (VM) that is provisioned by <code>Chef</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and managed by <code>vagrant</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>. Today, we are very happy
+to announce <a href="https://github.com/teracyhq/dev">teracy-dev</a> v0.3.0 released  after more than a year of development and usage.</p>
+
+<!-- more -->
+
+
+<p>We have used <code>vagrant</code> and <code>Chef</code> to provision a common VM for all our developers.
+It saves a lot of time and is a very cheap operation to destroy and provision a new VM again in minutes
+with the exactly defined provisioned software packages.</p>
+
+<p>We are now using <code>Chef</code> to provision a VM with <code>nodejs</code>, <code>mysql</code>, <code>php</code>, <code>coldfusion</code> for a client to
+develop a wordpress, a coldfusion and a MVC client (using backone.js with Grunt build), and it works
+great.</p>
+
+<p>Normally, it takes several days for new developers to install every packages on
+their machines and they must follow instruction guide, but not anymore with <a href="https://github.com/teracyhq/dev">teracy-dev</a>.
+Every new developer just needs 2-3 hours to get the dev VM provisoned for the first time (to
+download the basebox thanks to <code>vagrant cloud</code>) and it just takes less than 1 minute to
+<code>$ vagrant destroy</code> and <code>$ vagrant up</code> later again &ndash; this is a very cheap operation.</p>
+
+<p><a href="https://github.com/teracyhq/dev">teracy-dev</a> is really a general-purpose development environment for all developers for all platforms
+(<code>nodejs</code>, <code>python</code>, <code>java</code>, <code>php</code>, <code>mysql</code>, <code>posgreSQL</code>, <code>mongodb</code>) built-in and you could extend
+more by using <code>Chef</code> to create more cookbooks or recipes for it.</p>
+
+<p>However, we still have performance problem with shared folders. It is still quite slow and
+painful on Windows host machine. We are going to fix this problem on the next version (v0.4.0).</p>
+
+<p><code>docker</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> is very promising and we&rsquo;d like to use it for our workflow at v0.4.0, too.</p>
+
+<p>Please stay tuned for our upcoming exciting release version.</p>
+
+<p>Have a nice day and happy coding!</p>
+
+<h2>Credit</h2>
+
+<ul>
+<li><a href="http://www.superbwallpapers.com/computers/binary-code-9004/">http://www.superbwallpapers.com/computers/binary-code-9004/</a></li>
+</ul>
+
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://www.getchef.com/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://www.vagrantup.com/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://www.docker.com/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cần chiến binh gia nhập đội phát triển]]></title>
+    <link href="http://blog.teracy.com/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien/"/>
+    <updated>2014-05-19T15:46:00+00:00</updated>
+    <id>http://blog.teracy.com/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2014/05/teracy_recruitment_poster.jpg"></p>
+
+<p>Sau gần một năm startup, Teracy cần tìm &ldquo;chiến binh&rdquo; gia nhập đội phát triển.</p>
+
+<p>Công việc sẽ là gia công phần mềm cho khách hàng, khách hàng hầu hết là các công ty Mỹ vì làm việc
+với họ rất tốt.</p>
+
+<p>Teracy có 2 mảng là gia công phần mềm và nghiên cứu phát triển, hiện tại tập trung phát triển mảng gia
+công phần mềm trước để lấy ngắn (nguồn lực, vốn) nuôi dài (nghiên cứu, phát triển).</p>
+
+<p>Về mảng nghiên cứu, phát triển bạn sẽ được tiếp cận dần dần, nhưng trước mắt bạn cần phải là chiến
+binh để gia công phần mềm trước đã.</p>
+
+<!-- more -->
+
+
+<h2>Tại sao lại là chiến binh?</h2>
+
+<ul>
+<li><p>Vì bạn phải chiến đấu, tất nhiên là chiến đấu với những yêu cầu khá trừu tượng của khách hàng để
+hoàn thành nhiệm vụ được giao (có sự trợ giúp và code review từ các đồng nghiệp)</p></li>
+<li><p>Vì bạn sẽ phải chịu rất nhiều áp lực</p></li>
+<li><p>Vì bạn không thể chọn làm những việc chỉ mình bạn thích, bạn cần làm cả những việc khách hàng yêu
+cầu</p></li>
+<li><p>Vì bạn sẽ phải làm nhiều việc khác nhau, cả sở trường lẫn sở đoản, sở đoản thì phải biến nó thành
+sở trường trong thời gian ngắn (học kỹ năng mới)</p></li>
+</ul>
+
+
+<h2>Bạn cần gì?</h2>
+
+<ul>
+<li><p>1 chiếc laptop có thể làm việc được, ưu tiên Mac, Linux.</p></li>
+<li><p>Có kết nối Internet</p></li>
+<li><p>Cầu tiến, không bao giờ ngừng học hỏi</p></li>
+<li><p>Có kỹ năng làm được việc (yêu cầu cụ thể bên dưới)</p></li>
+<li><p>Làm việc nhóm tốt (nhận việc từ xa, giao tiếp từ xa.v.v&hellip;)</p></li>
+</ul>
+
+
+<h2>Những kỹ năng cần thiết?</h2>
+
+<ul>
+<li><p>Làm khá tốt với JavaScript là yêu cầu bắt buộc (Nắm rõ OOP, Scope, Closure, etc.)</p></li>
+<li><p>Làm việc tốt với Git là yêu cầu bắt buộc (Bắt buộc sử dụng command line và biết sử dụng những lệnh
+sau <a href="http://dev.teracy.org/docs/most_used_git_commands.html">http://dev.teracy.org/docs/most_used_git_commands.html</a>)</p></li>
+<li><p>Tiếng Anh khá tốt là yêu cầu bắt buộc</p></li>
+<li><p>Biết 1 chút mà muốn làm việc với Python là một lợi thế</p></li>
+<li><p>Biết làm 1 chút HTML/CSS là một lợi thế</p></li>
+<li><p>Tự quản lý thời gian của mình, không bó buộc không gian, thời gian làm việc miễn hoành thành
+nhiệm vụ đã cam kết đúng thời hạn</p></li>
+<li><p>Khiến khách hàng luôn hài lòng là ưu tiên hàng đầu (&ldquo;deliver more than you can promise.&rdquo;)</p></li>
+</ul>
+
+
+<h2>Ví dụ những công việc cụ thể điển hình?</h2>
+
+<ul>
+<li><p>Viết chrome extension hiện chỉ số cổ phiếu thay đổi theo thời gian 1 giây (dữ liệu giả do bạn
+tạo và chạy ngẫu nhiên)</p></li>
+<li><p>Viết Notify component và notify service cho reactjs dùng twitter bootstrap alert component,
+viết trong 8h (với giả sử bạn chưa biết gì về reactjs)</p></li>
+<li><p>Có 2 nút &ldquo;Next&rdquo; và &ldquo;Previous&rdquo; cho Image Slider, bình thường click vào những nút này sẽ hiển thị
+ảnh tiếp theo hoặc trước đó. Yêu cầu là khi nhấn giữ chuột lâu các nút này thì các ảnh tự nhảy,
+càng nhấn giữ lâu thì ảnh nhảy càng nhanh. (làm trong vòng 12h để tích hợp vào backbone
+application hiện có)</p></li>
+<li><p>Dùng CollectionView của Chaplin để quản lý các views trong backbone application</p></li>
+<li><p>Fix failing tests of a Django application and improve it</p></li>
+<li><p>Xây dựng gulp build system cho ứng dụng web để compile reactjs (.jsx) thành (.js), đóng gói ứng
+dùng thành các bản phân phối cho chrome extension, web</p></li>
+<li><p>Convert code HTML/CSS hiện có đang viết rất dở, dùng jquery-ui, chuyển sang dùng twitter bootstrap</p></li>
+<li><p>2 way data-binding for backbone model and view</p></li>
+<li><p>Bạn có 2 iframe trong 1 trang web, làm thế nào để truyền lệnh từ iframe này qua iframe kia?</p></li>
+<li><p>Chọn 1 vùng hình chữ nhật trên 1 canvas và làm mở 1 phần được chọn đó.</p></li>
+<li><p>Hãy implement eyedropper cho 1 canvas element?</p></li>
+<li><p>Implement class <code>Settings</code> theo spec docs sau:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  /**
+</span><span class='line'>   * Settings class to support json deep model setting.
+</span><span class='line'>   *
+</span><span class='line'>   * For example:
+</span><span class='line'>   *
+</span><span class='line'>   * var settings = new Settings({
+</span><span class='line'>   *   env: 'dev',
+</span><span class='line'>   *   payment: {
+</span><span class='line'>   *     method: 'paypal'
+</span><span class='line'>   *   }
+</span><span class='line'>   * });
+</span><span class='line'>   *
+</span><span class='line'>   * var env = settings.get('env');
+</span><span class='line'>   * var paymentMethod = settings.get('payment.method');
+</span><span class='line'>   *
+</span><span class='line'>   * settings.set('payment', {
+</span><span class='line'>   *   method: 'stripe',
+</span><span class='line'>   *   activated: false
+</span><span class='line'>   * }, true);
+</span><span class='line'>   *
+</span><span class='line'>   * var paymentActivated = settings.get('payment.activated');
+</span><span class='line'>   *
+</span><span class='line'>   * key must be valid javascript identifier and does not contain ".".
+</span><span class='line'>   *
+</span><span class='line'>   * @constructor
+</span><span class='line'>   */
+</span><span class='line'>  function Settings() {
+</span><span class='line'>    //TODO: implement this
+</span><span class='line'>  }
+</span><span class='line'>
+</span><span class='line'>  //supported methods
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  /**
+</span><span class='line'>   * Gets setting by key, if the key does not exist:
+</span><span class='line'>   * + throw Error
+</span><span class='line'>   *
+</span><span class='line'>   * + If default def is provided and key does not exist, return def.
+</span><span class='line'>   *
+</span><span class='line'>   * @param key the specified key
+</span><span class='line'>   * @param def the default value if key is not found
+</span><span class='line'>   */
+</span><span class='line'>  Settings.prototype.get = function(key, def) {
+</span><span class='line'>    //TODO: implement this
+</span><span class='line'>  }
+</span><span class='line'>
+</span><span class='line'>  /**
+</span><span class='line'>   * Sets new key
+</span><span class='line'>   *
+</span><span class='line'>   * by default, does not allow overwrite existing key.
+</span><span class='line'>   *
+</span><span class='line'>   * if overwrite existing key without forcing, throw Error.
+</span><span class='line'>   *
+</span><span class='line'>   * @param key
+</span><span class='line'>   * @param value
+</span><span class='line'>   * @param force
+</span><span class='line'>   */
+</span><span class='line'>  Settings.prototype.set = function(key, value, force) {
+</span><span class='line'>    //TODO: implement this
+</span><span class='line'>  }
+</span><span class='line'>
+</span><span class='line'>  /**
+</span><span class='line'>   * Checks if a key is valid or not.
+</span><span class='line'>   *
+</span><span class='line'>   * key must be valid javascript identifier and does not contain "."
+</span><span class='line'>   *
+</span><span class='line'>   * @param key
+</span><span class='line'>   */
+</span><span class='line'>  Settings.prototype.isValidKey = function(key) {
+</span><span class='line'>    //TODO: implement this
+</span><span class='line'>  }</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Hãy implement <code>template</code> function theo spec docs sau:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/**
+</span><span class='line'> * Creates a compile template function to construct parsed string from string template and params object.
+</span><span class='line'> *
+</span><span class='line'> * var compileTemplate = template(strTemplate);
+</span><span class='line'> * var parsedString = compileTemplate(params, [strict]);
+</span><span class='line'> *
+</span><span class='line'> * params is required otherwise error will be thrown.
+</span><span class='line'> *
+</span><span class='line'> * By default, strict is true and if there is any missing params key for strTemplate then
+</span><span class='line'> * an error will be thrown.
+</span><span class='line'> *
+</span><span class='line'> * If params has unused keys in strTemplate, that keys will be ignored.
+</span><span class='line'> *
+</span><span class='line'> * If strict is false then parsedString will be returned with missing keys.
+</span><span class='line'> *
+</span><span class='line'> * Note: template key must match: \w+
+</span><span class='line'> *
+</span><span class='line'> * For example:
+</span><span class='line'> *
+</span><span class='line'> * var helloTemplate = template('Hello !'),
+</span><span class='line'> *     urlTemplate = template('//.json');
+</span><span class='line'> *
+</span><span class='line'> * var output = helloTemplate({name: 'World'}); // =&gt; Hello World!
+</span><span class='line'> *
+</span><span class='line'> * helloTemplate(); // =&gt; error is thrown
+</span><span class='line'> * helloTemplate({}); // =&gt; error is thrown
+</span><span class='line'> *
+</span><span class='line'> * var output2 = helloTemplate({}, false); // =&gt; Hello !
+</span><span class='line'> *
+</span><span class='line'> * var userUrl = urlTemplate({resource: 'users', id: 1}); // =&gt; /users/1.json
+</span><span class='line'> *
+</span><span class='line'> * var pricesTemplate = template('/prices?marketplace=&&num_results=&&since=', {
+</span><span class='line'> *   defaults: {
+</span><span class='line'> *     num_result: 80
+</span><span class='line'> *   },
+</span><span class='line'> *   processors: {
+</span><span class='line'> *     since: function(processedStr, paramValue, params) {
+</span><span class='line'> *       if (_.isUndefined(paramValue)) {
+</span><span class='line'> *         processedStr = processStr.replace('&&since=', '');
+</span><span class='line'> *       }
+</span><span class='line'> *       return processedStr;
+</span><span class='line'> *     }
+</span><span class='line'> *   }
+</span><span class='line'> * });
+</span><span class='line'> *
+</span><span class='line'> * pricesTemplate({marketplace: 'mtgox'}); =&gt; /prices/marketplace=mtgox&&num_results=80
+</span><span class='line'> *
+</span><span class='line'> * @param str the string template
+</span><span class='line'> * @param options the optional options
+</span><span class='line'> * @return a compiled template function
+</span><span class='line'> */
+</span><span class='line'>
+</span><span class='line'> function template(str, opts) {
+</span><span class='line'>  //TODO: implement this
+</span><span class='line'> }</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>v.v&hellip;</li>
+</ul>
+
+
+<h2>Bạn được những gì?</h2>
+
+<ul>
+<li><p>Lương cạnh tranh, nếu làm trung bình khá thì ít nhất 1 tháng bạn được trả $700/tháng (lương phụ
+thuộc vào khả năng của bạn)</p></li>
+<li><p>Có cơ hội góp vốn, cổ phần</p></li>
+<li><p>Rèn luyện bản thân vì đây là công việc không phải dành cho tất cả mọi người, chỉ dành cho những
+chiến binh và biết chiến đấu thật tốt</p></li>
+<li><p>Được tham gia làm việc nhóm với nhiều loại công việc thú vị khác nhau</p></li>
+<li><p>Có nhiều chế độ hỗ trợ thêm như: hỗ trợ bữa ăn (1 bữa với part-time, 2 bữa với full-time; hỗ trợ
+và khuyến khích các hoạt động thể thao; hỗ trợ làm từ xa&hellip;)</p></li>
+</ul>
+
+
+<h2>Bạn ứng tuyển thế nào?</h2>
+
+<p>Nhiều công việc thú vị, thử thách đang chờ bạn. Hãy liên lạc ngay với Teracy, mọi liên lạc hãy
+gửi về: <strong>hr at teracy dot com</strong> với:</p>
+
+<ul>
+<li><p>1 bản CV đầy đủ của bạn</p></li>
+<li><p>Bạn nghĩ gì về những công việc cụ thể điển hình trên?</p></li>
+</ul>
+
+
+<p>Cảm ơn bạn đã quan tâm!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.3.0 with heroku deployment support]]></title>
+    <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
+    <updated>2013-11-26T09:06:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/sphinx.png" title="Sphinx Doc Logo" ></p>
+
+<p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
+support for v0.3.0 release. This release introduces some breaking changes and you should know to
+upgrade successfully.</p>
+
+<!-- more -->
+
+
+<p><a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> is in active development phase and breaking changes are expected (you know,
+it&rsquo;s still v0.3.0).</p>
+
+<p>Simplicity is one of our <a href="http://dev.teracy.org/docs/intro.html#about-teracy">development philosophy</a>, and you could see it clearly with our following
+supported commands for <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>.</p>
+
+<h2>Supported Commands</h2>
+
+<p><strong>1. <code>$ make generate</code></strong></p>
+
+<p>For generating contents, alias for <code>$ make html</code></p>
+
+<p><strong>2. <code>$ make deploy</code></strong></p>
+
+<p>For short-cut deployment, it could be <code>$ make deploy_gh_pages</code>, <code>$ make deploy_rsync</code> or
+<code>$ make deploy_heroku</code> basing on the configuration of <code>DEPLOY_DEFAULT</code>.</p>
+
+<p><strong>3. <code>$ make gen_deploy</code></strong></p>
+
+<p>For short-cut generation and deployment: <code>$ make generate</code> and then <code>$ make deploy</code>.</p>
+
+<p>Basically, you just need to know 3 commands above after some settings (with a little configuration
+and setting up). Until now sphinx-deployment supports github pages<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment, rsync<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>
+deployment and heroku deployment.</p>
+
+<p>Before setting up, you need to install and configure <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> first, and then:</p>
+
+<p><strong>4. <code>$ make setup_gh_pages</code></strong></p>
+
+<p>For the first time only to create <code>$(DEPLOY_DIR)</code> to track <code>$(DEPLOY_BRANCH)</code>. This is used for
+github pages deployment.</p>
+
+<p><strong>5. <code>$ make setup_heroku</code></strong></p>
+
+<p>For the first time only to create <code>$(DEPLOY_DIR_HEROKU</code> to track the heroku repo&rsquo;s master branch.
+This is used for heroku deployment.</p>
+
+<p>After setting up, you could deploy the docs easily with:</p>
+
+<p><strong>6. <code>$ make deploy_gh_pages</code></strong></p>
+
+<p>For deploying with github pages only.</p>
+
+<p><strong>7. <code>$ make deploy_rsync</code></strong></p>
+
+<p>For deploying with rsync only.</p>
+
+<p><strong>8. <code>$ make deploy_heroku</code></strong></p>
+
+<p>For deploying with heroku only.</p>
+
+<p>That&rsquo;s it, very easy to use. This is the first ultimate simple sphinx docs deployment solution
+provided so far, we hope that you love it as much as we love developing and using it.</p>
+
+<h2>Migration</h2>
+
+<p>Are you using v0.2.0 and want to upgrade? Just install it normally with <code>spxd.sh</code> bash script and
+adjust a little the configuration with the following migration instruction:</p>
+
+<ul>
+<li>Migration (from v0.2.0 to v0.3.0)
+
+<ul>
+<li><code>REPO_URL</code> was changed to <code>REPO_URL_GITHUB</code></li>
+<li><code>DEPLOY_BRANCH</code> was changed to <code>DEPLOY_BRANCH_GITHUB</code></li>
+<li><code>$ make push</code> was changed to <code>$ make deploy_gh_pages</code></li>
+<li><code>$ make rsync</code> was changed to <code>$ make deploy_rsync</code></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>What&rsquo;s Next?</h2>
+
+<p>The next version we would like to introduce i18n feature and stabilize the project with improvements, bug fixes. Moreover,
+we&rsquo;re starting sphinx-live-view project for easier docs writing, too. Stay tuned for our
+upcoming exciting features and projects.</p>
+
+<p>Have a nice day and happy docs writing!</p>
+
+<p>P/S: Remember to head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> and read README for usage instruction.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://heroku.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>https://help.github.com/categories/20/articles<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I failed some plans and I need to try harder!]]></title>
+    <link href="http://blog.teracy.com/2013/09/26/i-failed-some-plans-and-i-need-to-try-harder/"/>
+    <updated>2013-09-26T07:48:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/26/i-failed-some-plans-and-i-need-to-try-harder</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2013/09/26/failed-job.jpg" title="Failed Job Image" ></p>
+
+<p>I know startup is hard, to be a leader is hard and I failed some plans. Let me tell you the story
+about the plans I failed.</p>
+
+<!-- more -->
+
+
+<p>I started Teracy with a team member from my ex-company where I worked as a team leader/ technical
+leader. We have some common passion about how to create a good home automation system. As working
+together before, we have some good understanding of how we work well together, so I decided to start
+Teracy with him as co-founders. I decided to spend all my savings to work full time and my co-founder
+works part-time.</p>
+
+<p>We were very excited, we have vision, we have mission and we have plans, too. To get to the defined
+mission, we have to have short-term plans and it&rsquo;s not hard. The hardest thing to me is to build a
+team, a dream team that we could work well together.</p>
+
+<p>When working on my ex-company, to find a suitable candidate to join the ex-team is hard. I
+interviewed many candidates, around 2-3 candidates per day for several months and only some could
+pass it to join our ex-team. I was stressed and did not want to interview anymore as all I wanted to
+do was to develop, not to interview.</p>
+
+<p>Recruiting to join the ex-team is hard, but recruiting to join our startup team is a lot harder as
+we do not have much money to pay, we are not known brand yet and we&rsquo;re very small. So we should find
+good designers as we&rsquo;re all developers now, and trainable students/ young employees to join our team.
+And that&rsquo;s the feasible plan we thought that it should work.</p>
+
+<p>To start with a good designer, I have a friend working as a designer from my ex-company. We&rsquo;re good
+at friendship, and she is a good designer to me. So I contacted and got her to join our startup team
+to work part-time (~7 hours/ week) and we paid for her work.</p>
+
+<p>And to start with trainable students/ young employees, we started to offer free training program
+for students to join, they will be trained to work with Python and web development. Several students
+joined; after a few training weeks, students dropped out gradually as my requirements and training
+program went bigger and bigger. It seemed that they lost interests and passion. After several pushes,
+I did not push anymore and I did not hear their feedback anymore, either. I failed to recruit any
+trainable students/ young employees. I could not pay and give any promise to them when they did not
+finish any task and the training program.</p>
+
+<p>Loosing some potential early employees from free training program was ok to me as it did not involve
+any emotional feeling, however, loosing a potential friend-designer employee did.</p>
+
+<p>We started with the brand logo first. I took us 2 months to get a good logo after many iterations.
+I really need a logo that is created by geometric shapes. She proposed some logos and there was a
+logo that is good enough for us. That logo was hard-drawing without geometric shapes principle so I
+requested to have it for the logo. It took her 2 weeks and no result was achieved, she said that
+design was not supposed to be like that and she could not do it so I re-created the logo from
+geometric shapes myself by taking her hard-drawing logo and that was the logo we&rsquo;re using now.</p>
+
+<p>I know that design needs creation and passion, and I think that design needs rules, too.
+To break the rules, designers have to explain it instead of saying that it&rsquo;s not the way design
+works or they have different way of design. I could see there are common rules and principles for
+design, and geometric shapes principle is one of them. We started to have different points of view
+and some conflicts, I thought that it was ok as long as we could achieve the results, we could work
+well together along the time when we understand the way we work better.</p>
+
+<p>So after the brand logo task, we moved on brand style guidelines. I proposed some well-known work
+from <a href="http://www.logodesignlove.com/brand-identity-style-guides">http://www.logodesignlove.com/brand-identity-style-guides</a> , especially from Adobe
+<a href="http://brandcenterdl.adobe.com/Corpmktg/Brandmktg/Campaign_Assets/guidelines/corporate/corporate_brand_guidelines.pdf">http://brandcenterdl.adobe.com/Corpmktg/Brandmktg/Campaign_Assets/guidelines/corporate/corporate_brand_guidelines.pdf</a>
+. I expected our brand guidelines should be somehow as much detailed as those. I proposed
+agile development workflow, every day after 1 hour of design work, she should send me any result for
+us to make adjustment. But she declined, she wanted to work on result-oriented workflow. So I said ok,
+as I try to make the workflow as flexible as possible. With result-oriented workflow, I had to wait
+every 2 weeks (~14 hours for designer work) to review and give feedback. This is very slow progress
+comparing with agile development. I gave feedback, commented, and she gradually lost passion, I had
+to push. It was bad development experience for us and after 2 months, we did not finish the brand
+style guidelines. We got worse iteration results. We failed to deliver it.</p>
+
+<p>That collaboration experience is bad for us, she lost passion and I lost patience. So I had to decide,
+a very touch decision I had to make. I really did not want to end up like this, especially when it was
+involved with friendship. It was really really hard but I had to anyway to pursuit the best opportunity
+for the defined mission. So today I said we should stop collaboration, it did not work as expected.
+The longer we worked, the worse result we would achieve. And that was sad, very sad.</p>
+
+<p>Friendship and work collaboration are separated to me. Good friendship with bad work collaboration is
+ok on friendship side, and bad friendship with good work collaboration is ok on work side, too. The
+reverse is not true. It&rsquo;s ideal to have good friendship and good work collaboration and I&rsquo;m still
+finding the ones who match this.</p>
+
+<p>I failed the two recruiting plans above due to my bad decisions and execution. I know that I will
+have to make more toucher decisions in the future. This is the first time that a touch decision
+involved so much emotional feelings. I feel very sorry for this bad collaboration experience.</p>
+
+<p>Well, life still goes on and I need to try harder anyway&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sphinx-deployment v0.2.0 release]]></title>
+    <link href="http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/"/>
+    <updated>2013-09-25T20:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/sphinx.png" title="Sphinx Doc Logo" ></p>
+
+<p>After v0.1.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with improvements and new
+features for v0.2.0 release.</p>
+
+<!-- more -->
+
+
+<p>This release version includes an improvement and a new feature.</p>
+
+<p>We improved <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> by removing the duplication of git initialize step when
+<code>$ make setup_gh_pages</code>, this will reduce the time for setting up github pages to some mili-seconds,
+so it could be considered as performance improvement.</p>
+
+<p>We also would like to introduce a new feature that supports <code>Rsync</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment out of the box.
+So by now, you could not only automatically deploy the <code>sphinx</code> docs project with Github Pages, but
+you could also automatically deploy it with <code>Rsync</code>.</p>
+
+<p><code>sphinx</code> deployment is never easy like this, please head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project, then read
+the introductions on <code>README</code> file and you&rsquo;re done.</p>
+
+<p>And what&rsquo;s next? For v0.3.0 release, we plan to support as many PaaS services as possible,
+the first one on the list is <code>heroku</code>. So stay tuned with our upcoming releases!</p>
+
+<p>Have a nice day and happy docs writing!</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

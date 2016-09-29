@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: django | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/django/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T11:17:28+00:00</updated>
+  <updated>2016-09-29T11:30:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/"/>
     <updated>2015-12-21T09:40:00+00:00</updated>
     <id>http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2015/12/21/django_celery.png Django Celery %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2015/12/21/django_celery.png" title="Django Celery" ></p>
 
 <p>When I was asked to use a distributed task queue for emails on a Django project, I chose
 django-celery-email. However, during developing and testing, I faced some problems due to the lack
@@ -225,9 +225,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x73;&#x61;&#109;&#112;&#108;&#x65;&#46;&#117;&#x73;&#101;&#114;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;">&#115;&#97;&#109;&#x70;&#108;&#x65;&#x2e;&#x75;&#115;&#101;&#114;&#x40;&#103;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;</a>
+To: <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#115;&#x61;&#109;&#x70;&#x6c;&#x65;&#46;&#x75;&#115;&#101;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#115;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#117;&#x73;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#109;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x32;&#x30;&#49;&#x35;&#x31;&#50;&#50;&#x31;&#49;&#x31;&#48;&#50;&#51;&#48;&#x2e;&#50;&#51;&#x34;&#54;&#x33;&#x2e;&#x38;&#x30;&#x38;&#x34;&#53;&#64;&#x76;&#x61;&#x67;&#114;&#97;&#110;&#x74;&#x2e;&#x76;&#x6d;">&#50;&#48;&#x31;&#x35;&#49;&#x32;&#x32;&#49;&#x31;&#49;&#x30;&#50;&#51;&#48;&#x2e;&#50;&#x33;&#52;&#x36;&#51;&#x2e;&#56;&#x30;&#56;&#52;&#x35;&#x40;&#x76;&#97;&#103;&#x72;&#97;&#x6e;&#116;&#46;&#x76;&#109;</a></p>
+Message-ID: <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#x32;&#x30;&#49;&#x35;&#x31;&#x32;&#x32;&#49;&#49;&#49;&#x30;&#x32;&#x33;&#x30;&#46;&#x32;&#x33;&#52;&#x36;&#x33;&#x2e;&#56;&#48;&#x38;&#x34;&#x35;&#x40;&#118;&#x61;&#103;&#x72;&#97;&#x6e;&#x74;&#46;&#x76;&#x6d;">&#x32;&#x30;&#x31;&#53;&#49;&#50;&#x32;&#49;&#49;&#49;&#x30;&#50;&#51;&#x30;&#46;&#50;&#x33;&#x34;&#x36;&#51;&#46;&#56;&#x30;&#x38;&#x34;&#53;&#64;&#118;&#97;&#x67;&#x72;&#x61;&#x6e;&#116;&#x2e;&#x76;&#x6d;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -526,7 +526,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x68;&#113;&#64;&#116;&#101;&#x72;&#97;&#x63;&#x79;&#x2e;&#99;&#x6f;&#109;">&#x68;&#x71;&#x40;&#x74;&#101;&#x72;&#97;&#99;&#x79;&#46;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#104;&#113;&#x40;&#x74;&#x65;&#114;&#x61;&#99;&#121;&#46;&#x63;&#x6f;&#109;">&#x68;&#113;&#64;&#x74;&#x65;&#114;&#97;&#99;&#x79;&#x2e;&#x63;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -546,7 +546,7 @@ on Django projects. It&rsquo;s very easy to set everything up thanks to the djan
     <link href="http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/"/>
     <updated>2013-09-14T21:29:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2013/09/14/html5-boilerplate.png HTML5 Boilerplate %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/14/html5-boilerplate.png" title="HTML5 Boilerplate" ></p>
 
 <p>It was planned that <a href="https://github.com/teracy-official/django-html5-boilerplate">teracy-django-html5-boilerplate</a> v0.2.0 would be released by Sep 20th, 2013 and we&rsquo;re very glad to announce
 v0.2.0 release 5 days earlier. This release includes many exciting changes.</p>
@@ -603,7 +603,7 @@ we&rsquo;re all working on.</p>
     <link href="http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release/"/>
     <updated>2013-09-07T14:11:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p>{% img center /images/2013/09/07/django-logo.png Django Logo %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/07/django-logo.png" title="Django Logo" ></p>
 
 <p>Today we&rsquo;re very glad to announce v0.1.0 release of <a href="https://github.com/teracy-official/django-boilerplate">django-boilerplate</a>. The project was started
 since May 26, 2013 and after many iterations and improvements, it&rsquo;s good enough to be shipped as
