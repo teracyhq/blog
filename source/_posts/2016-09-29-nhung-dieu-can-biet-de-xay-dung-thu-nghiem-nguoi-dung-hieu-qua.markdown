@@ -28,6 +28,8 @@ Thách thức lớn nhất trong thiết kế UX là thu hút được nhiều t
 Điều này đặt ra một thách thức với người chủ sở hữu sản phẩm và những người thiết kế UX làm sao thiết kế
 ra những ứng dụng thu hút được sự chú ý và tham gia của người dùng.
 
+<!-- more -->
+
 Tại sao thử nghiệm người dùng lại đặc biệt quan trọng như vậy
 ============================================================
 Một trong những cách rất hiệu quả để đảm bảo chuyển đổi và tham gia tốt hơn là thực hiện "thử nghiệm
