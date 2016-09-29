@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vi | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -14,11 +14,158 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Những điều cần biết để xây dựng thử nghiệm người dùng hiệu quả]]></title>
+    <link href="http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung--thu-nghiem-nguoi-dung-hieu-qua/"/>
+    <updated>2016-09-29T09:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung--thu-nghiem-nguoi-dung-hieu-qua</id>
+    <content type="html"><![CDATA[<p>{% img center /images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png Xây dựng thử nghiệm người dùng %}</p>
+
+<p>Gần đây số lượng các ứng dụng trong thị trường android và iOs đã vượt xa con số 8 triệu, ngoài ra còn
+có một con số không giới hạn các trang web và các ứng dụng web đang xuất hiện khắp nơi trên thế giới
+nữa. Với khối lượng khổng lồ các ứng dụng đó thì điều khan hiếm nhất là khoảng thời gian tập trung
+của người dùng cho mỗi ứng dụng.</p>
+
+<p>Thách thức lớn nhất trong thiết kế UX là thu hút được nhiều thời gian tập trung của người dùng.
+Điều này đặt ra một thách thức với người chủ sở hữu sản phẩm và những người thiết kế UX làm sao thiết kế
+ra những ứng dụng thu hút được sự chú ý và tham gia của người dùng.</p>
+
+<h1>Tại sao thử nghiệm người dùng lại đặc biệt quan trọng như vậy</h1>
+
+<p>Một trong những cách rất hiệu quả để đảm bảo chuyển đổi và tham gia tốt hơn là thực hiện &ldquo;thử nghiệm
+người dùng&rdquo; (Hay đúng hơn là thử nghiệm khả năng sử dụng). Đó là một cách khoa học để tìm ra những gì
+mà người dùng dễ dàng tìm thấy và những điều họ phải làm. Nghiên cứu về người dùng thường xuyên được
+thảo luận bởi rất nhiều lãnh đạo nhóm thiết kế bao gồm <a href="https://medium.com/@ideo">IDEO</a>,
+<a href="https://medium.com/@frogdesign">frog</a> và nhiều nhà thiết kế khác.</p>
+
+<p>Chúng tôi đã quan sát một số những đội ngũ hàng đầu thế giới có kinh nghiệm thiết kế phục vụ hàng triệu
+người dùng trên toàn cầu và đã rút ra được vài bài học nhanh chóng mà bạn có thể sử dụng trong nghiên
+cứu người dùng săp tới của mình:</p>
+
+<h1>1. Biết được bạn đang mong muốn gì</h1>
+
+<p>Thậm chí trước khi bạn nghĩ về thử nghiệm người dùng, bạn nên đặt ra cho mình một mục tiêu nào đó.
+Các cách xây dựng mục tiêu có thể sẽ khác nhau nếu như bạn đang giải quyết vấn đề về thiết kế của
+một ứng dụng hiện có hoặc khi bạn thẩm định một thiết kế hoàn toàn mới của một ứng dụng sắp được tung ra.</p>
+
+<ul>
+<li><strong>Đối với ứng dụng/trang web hiện có</strong>: Bạn có được những quan sát về các vấn đề thiết kế từ Google
+Analytics, Mixpanel. Giải pháp của vấn đề này đó là bạn là người dùng thử nghiệm trên những thách thức
+hiện tại trong khi khám phá các cách khác để cải thiện. Ví dụ: đối với ứng dụng thương mại điện tử,
+người dùng có thể thêm một số sản phẩm vào giỏ hàng, nhưng họ sẽ quay lại để xem chi tiết sản phẩm thay vì thanh toán.</li>
+</ul>
+
+
+<p>Đối với những ứng dụng hiện có, cải thiện kết quả kinh doanh chính là mục tiêu chính của thử nghiệm người dùng.</p>
+
+<p>Ví dụ, mục tiêu chính đối với ứng dụng hiện có trong ví dụ trên là chuyển từ giỏ hàng sang mục thanh toán.</p>
+
+<ul>
+<li><strong>Đối với ứng dụng/trang web sắp ra</strong>: với ứng dụng sắp được tung ra, bạn cần phải có giả thuyết thiết kế nhất định bao gồm: hướng dẫn thương hiệu, thành phần thiết kế&hellip; Ví dụ: với trường hợp ứng dụng âm nhạc, bạn đưa ra lựa chọn các tab cho các loại nhạc khác nhau thay vì dùng bộ lọc.
+Đối với ứng dụng sắp ra, mục tiêu chính có thể là xác nhận các giả thuyết thiết kế.</li>
+</ul>
+
+
+<p>Trong ví dụ của chúng tôi, chúng tôi muốn xác nhận liệu người dùng sẽ sử dụng các tuỳ chọn để tìm các loại âm nhạc thay vì sử dụng bộ lọc.
+<strong>Việc thiết lập mục tiêu ngay từ đầu khi kiểm thử sẽ giúp bạn có những câu hỏi đúng</strong>.</p>
+
+<h1>2. Tuyển chọn người dùng thử nghiệm cẩn thận</h1>
+
+<p>Khi bạn đã quyết định được mục tiêu thử nghiệm người dùng, bạn cần phải kiểm tra người dùng để thực hiện
+thử nghiệm người dùng. Khi một sản phẩm được xây dựng, bạn cũng đã có hồ sơ người dùng và bạn có một vài người dùng thực &ndash; những người muốn được xem các ứng dựng mới. Bạn có thể cùng họ thực hiện kiểm thử.</p>
+
+<p>Mặc dù rất dễ dàng để kiểm thử với người dùng hiện tại nhưng cũng thật cẩn thận để loại bỏ thành kiến từ những trải nghiệm của họ.</p>
+
+<p>Để giảm bớt thành kiến từ những kinh nghiệm sẵn có, bạn có thể muốn tạo một phiên bản đầy đủ các ứng dụng để làm cho toàn bộ trải nghiệm của họ tự nhiên hơn.</p>
+
+<p>Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.</p>
+
+<p>{% img center /images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg % Hồ sơ người dùng của airbnb}</p>
+
+<p>Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
+quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
+chọn người dùng mẫu cho thử nghiệm người dùng:
+&ndash; <strong>Liên quan</strong>: Ứng dụng của bạn có liên quan tới người dùng thử nghiệm không?
+&ndash; Tần suất sử dụng: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?
+&ndash; <strong>Nhân khẩu học</strong>: Sự khác biệt văn hoá là một yếu tố quan trọng đối với trải nghiệm của người dùng. Tập trung vào nơi ở, tuổi, giới tính khi lựa chọn người dùng mẫu.
+&ndash; <strong>Mức thu nhập</strong>: Những người dùng này có sẵn sàng trả tiền để sử dụng ứng dụng/dịch vụ của bạn không? Điều này bao gồm cả khả năng tài chính và thói quen mua sắm.</p>
+
+<p>Bạn còn nghĩ ra được ý tưởng nào nữa không? Hãy cho chúng tôi biết nhé.</p>
+
+<h1>3. Thời điểm nào thích hợp cho việc kiểm thử người dùng?</h1>
+
+<p>&ldquo;Tôi sẽ đợi tới giao diện cuối cùng để tiến hành kiểm thử người dùng&rdquo;. Chủ sở hữu sản phẩm chỉ tiến hành kiểm thử người dùng khi họ có được phiên bản cuối cùng. Đó không phải là một ý hay, bởi vì khi đó bạn sẽ phải lặp lại hầu hết thời gian và công sức đã bỏ ra.
+Lặp lại ngay khi có thể trong quy trình thiết kế để tiết kiệm thời gian và công sức.
+{% img center /images/2016/09/29/quy-trinh-thiet-ke.jpeg Quy trình thiết kế %}</p>
+
+<p>Những mong đợi trong các giai đoạn khác nhau của quy trình kiểm thử người dùng.
+&ndash; <strong>Từ ý tưởng đến phác hoạ bằng tay</strong>: Thảo luận các ý kiến trên giấy bút hoặc trên bảng trắng. Tập hợp các phác hoạ bằng tay vào CanvasFlip và mời người dùng nội bộ kiểm thử.
+&ndash; <strong>Từ phác họa bằng tay đến thiết kế khung sườn (wireframing)</strong>: Trong giai đoạn này, bạn gần như đã tạo được hình dáng phiên bản giao diện người dùng, xác định các icon và nhãn. Cách tốt nhất là giới thiệu chúng đến người dùng bên ngoài nhưng ở quy mô nhỏ.
+&ndash; <strong>Từ thiết kế khung sườn đến mockup ban đầu</strong>: Khi bạn xây dựng các mockup, bạn nên giới thiệu chúng đến người dùng để thu được các trải nghiệm ban đầu. Bạn tiếp tục sửa đổi và đưa ra bản giao diện người dùng cuối cùng trên cơ sở nhận xét của người dùng ở giai đoạn này.
+Hầu hết các nhóm nổi tiếng đều sử dụng công cụ phân tích UX như CanvasFlip để tạo ra dòng UX tương tác (nguyên mẫu) và tạo ra bộ phân tích UX như video người dùng, quy trình chuyển đổi hình phễu, và bản đồ nhiệt tương tác.</p>
+
+<h1>4. Mức độ tham gia của bạn như thế nào trong quá trình kiểm thử người dùng</h1>
+
+<p>Luôn có sự đánh đổi giữa việc tạo ra một ngữ cảnh kiểm thử theo giời gian thực và việc quan sát người dùng.
+Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức và đưa ra quyết định mang tính quyết đoán hơn so với bản năng.</p>
+
+<p>{% img center /images/2016/09/29/kiem-thu-tinh-kha-dung.png Kiểm thử tính khả dụng %}</p>
+
+<p>Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:
+&ndash; <strong>Kiểm duyệt tại chỗ</strong>: Trong giai đoạn này, bạn sẽ luôn ở cạnh người dùng, yêu cầu tiến hành các tác vụ, ra câu hỏi và quan sát phản ứng. Điều này sẽ có ích ở giai đoạn đầu phát triển thiết kế.
+&ndash; <strong>Kiểm duyệt từ xa</strong>: Trong giai đoạn này, bạn có thể kết nối qua Skype, Google Hangout, Zoom hoặc Go-to-Meeting&hellip; Bạn có thể yêu cầu nhiệm vụ thực hiện và quan sát phản ứng. Nói chung là giữ cho sự tương tác càng ít càng tốt. Điều này hữu dụng trong giai đoạn dựng khung và thiết kế mockup.
+&ndash; <strong>Không kiểm duyệt</strong>: đúng như tên của nó, một thử nghiệm người dùng không được kiểm duyệt được tiến hành mà gần như không có sự can thiệp nào. Người dùng được đưa cho một nguyên mẫu thiết kê (phototype) và yêu cầu chạy thử hoặc đưa ra một tác vụ để thực hiện. Ví dụ: Mua/tìm kiếm một item nào đó.</p>
+
+<h1>5. Cách phân tích kết quả thử nghiệm người dùng</h1>
+
+<p>Khi bạn tiến hành thử nghiệm người dùng bằng bản thiết kế hiện có, bạn thường thực thực hiện với phần dễ trước. Tiếp đến sẽ là những phần quan trọng và phức tạp hơn &ndash; để phân tích kết quả kiểm thử người dùng, tìm ra những thứ cần loại bỏ và xem xét mức độ ảnh hưởng của các kết quả đó đối với thiết kế hiện tại.</p>
+
+<p><strong>Phân tích kết quả thử nghiệm người dùng ở giai đoạn đầu</strong></p>
+
+<p>Giai đoạn đầu thường tiến hành thử nghiệm người dùng ở mức có kiểm soát. Kết quả thu được thường mang tính chủ quan, qua đó có thể hiểu được mong đợi và hành vi của người dùng và trên cơ sở đó để xây dụng thiết kế. Khi đã hiểu được các tính năng, các mẫu thiết kế, các lựa chọn điều hướng, sơ đồ icon, ưu iên về font chữ, nhãn, bạn có thể xây dựng khung cho toàn bộ quy trình thiết kế còn lại.</p>
+
+<p><strong>Phân tích kết quả thử nghiệm người dùng ở giai đoạn sau</strong></p>
+
+<p>Khi nghiên cứu kết quả thử nghiệm người dùng ở giai đoạn sau, bạn buộc phải tuân theo thuyết thiết kế đã xây dựng ở giai đoạn trước. Các thuyết đó theo dạng &ldquo;chuyển đổi theo dòng UX&rdquo; hoặc &ldquo;Thẩm định CTA&rdquo; trong các thiết kế màn hình. Ví dụ, bạn muốn biết có bao nhiêu người dùng đã bỏ đi khi đã chọn xong sản phẩm và đang chuẩn bị sang bước thanh toán. Hay có bao nhiêu người dùng đã click vào &ldquo;Login&rdquo; CTA so với phần còn lại của màn hình.</p>
+
+<p>Khi bạn hiểu được hành vi và mong đợi của người dùng, bạn sẽ có lựa chọn tốt hơn giữa thử nghiệm người dùng ở mức kiểm soát từ xa và không kiểm soát.</p>
+
+<p>Công cụ kiểm thử tính khả dụng từ xa như Canvasflip có thể cung cấp rất nhiều thông tin hữu ích.</p>
+
+<p><strong>Biết được người dùng sẽ bỏ UX-flow từ chỗ nào</strong>
+Trong kênh chuyển đổi trên (được tạo ra với CanvasFlip.com), bạn có thể thấy được sừ rời bỏ lớn tại vòng lặp thứ 1 trong màn hình &ldquo;Experiencies&rdquo;.</p>
+
+<p>{% img center /images/2016/09/29/quy-trinh-chuyen-doi-hinh-pheu.png Quy trình chuyển đổi hình phễu %}</p>
+
+<p><strong>Nơi người dùng tương tác nhiều nhất trong giao diện</strong></p>
+
+<p>Một bản đồ nhiệt tương tác về thử nghiệm người dùng được tạo ra bởi CanvasFlip.com giúp bạn biết được khu vực tương tác thường xuyên của người dùng trong giao diện người dùng.</p>
+
+<p>{% img center /images/2016/09/29/ban-do-nhiet-tuong-tac.png Bản đồ nhiệt tương tác %}</p>
+
+<p><strong>Phân tích hành trình của từng cá nhân người dùng</strong></p>
+
+<p>Với CanvasFlip.com, bạn có thể phân tích được những điều hướng của người dùng và thời gian người dùng ở lại mỗi màn hình.
+{% img center /images/2016/09/29/hanh-trinh-cua-nguoi-dung.png Hành trình của người dùng %}</p>
+
+<p><strong>Xem toàn bộ video phiên người dùng để phân tích và cải thiện hành vi người dùng</strong></p>
+
+<p>Bạn có thể ghi lại các điều hướng người dùng, sau đó tìm ra nơi người dùng gặp vấn đề và tìm cách cải thiện trải nghiệm người dùng.
+{% img center /images/2016/09/29/ghi-lai-dieu-huong-nguoi-dung.png Ghi lại điều hướng người dùng %}</p>
+
+<h1>Kết luận</h1>
+
+<p>Với nỗ lực nhằm tạo ra một trải nghiệm người dùng tuyệt vời, cần phải tiến hành thử nghiệm người dùng và để thực hiện thử nghiệm hiệu quả, bạn phải biết cần gì/ sửa đổi gì, lựa chọn nhóm người dùng càng hẹp càng tốt, kiểm thử ngay từ lúc đầu, và sử dụng những thông tin hữu ích để rút ra kết luận từ kết quả thử nghiệm người dùng.</p>
+
+<p>Bài dịch từ: <a href="https://blog.prototypr.io/everything-you-should-know-to-conduct-a-kickass-user-testing-89977e653123#.shhsbhhoy">Everything you should know to conduct a kickass user testing</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Cách xây dựng sản phẩm]]></title>
     <link href="http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham/"/>
     <updated>2016-09-01T16:56:00+00:00</updated>
     <id>http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/15/looking-glass.jpg" title="Looking Glass" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2016/09/15/looking-glass.jpg Looking Glass %}</p>
 
 <p style="text-align:center;"> <em>Ảnh của <a href="https://www.flickr.com/photos/corpz/5634268846/">Alex Kislow</a></em></p>
 
@@ -99,7 +246,7 @@ Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nh�
     <link href="http://blog.teracy.com/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi/"/>
     <updated>2016-08-08T08:28:00+00:00</updated>
     <id>http://blog.teracy.com/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/08/08/meeting-930x548.jpg" title="Leadership Meeting" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2016/08/08/meeting-930x548.jpg Leadership Meeting %}</p>
 
 <p style="text-align:center;"> <em>Ảnh Từ Rawpixel.com/Shutterstock</em></p>
 
@@ -395,7 +542,7 @@ thường gì trong tương lai?</p>
 Ban đầu thì việc ẩn hàng loạt menu điều hướng đằng sau nút hamburger này có vẻ như rất tiện lợi cho người thiết kế &ndash; bạn không phải lo lắng về việc màn hình bị chiếm diện tích bởi những menu cha con dài trên màn hình quá nhỏ của thiết bị di động, mọi thứ sẽ được ẩn một cách mặc định và chỉ hiện ra khi người dùng muốn.
 Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu điều hướng thường trực trên màn hình lại tăng khả năng tương tác giữa người dùng và ứng dụng, làm người dùng hài lòng hơn và thậm chí còn tăng doanh thu từ ứng dụng. Đó là lý do vì sao các ứng dụng lớn đang dần thay đồi bằng cách bỏ đi nút hamburger và quay lại hiển thị những tính năng hay được sử dụng ngay trên màn hình.</p>
 
-<p><img class="center" src="/images/2016/08/06/youtube-nav-change.png" title="Menu điều hướng của Youtube" ></p>
+<p>{% img center /images/2016/08/06/youtube-nav-change.png Menu điều hướng của Youtube %}</p>
 
 <p style="text-align:center;"> Sự thay đổi menu điều hướng của Youtube &ndash; Luke Wroblewski</p>
 
@@ -405,17 +552,17 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 
 <p>Với kiểu suy nghĩ như vậy các bảng thiết kế nhiều khi vô tình giấu đi các tính năng của chương trình đằng sau những icon khó hiểu hoặc đôi lúc mình cũng chẳng biết là cái gì nữa và dưới đây là một ví dụ:</p>
 
-<p><img class="center" src="/images/2016/08/06/instagram-bad-icon.png" title="Icon khó hiểu của Instagram" ></p>
+<p>{% img center /images/2016/08/06/instagram-bad-icon.png Icon khó hiểu của Instagram %}</p>
 
 <p style="text-align:center;"> Liệu bạn có đoán được icon này trong Instagram là để gửi tin nhắn không!</p>
 
-<p><img class="center" src="/images/2016/08/06/google-trans-bad-icon.png" title="Icon Khó hiểu trên Google Translate" ></p>
+<p>{% img center /images/2016/08/06/google-trans-bad-icon.png Icon Khó hiểu trên Google Translate %}</p>
 
 <p style="text-align:center;"> Hay icon này trong Google Translate dùng để làm gì?</p>
 
 <p>Sẽ là sai lầm khi bạn nghĩ rằng người dùng đã quen với việc dùng những icon trừu tượng như thế này hay bá đạo hơn là nghĩ rằng họ sẽ tò mò mà bỏ thời gian ra tìm hiểu xem nó là cái gì.</p>
 
-<p><img class="center" src="/images/2016/08/06/bloom-fm-bad-icon.png" title="Icon khó hiểu trong Bloom.fm" ></p>
+<p>{% img center /images/2016/08/06/bloom-fm-bad-icon.png Icon khó hiểu trong Bloom.fm %}</p>
 
 <p style="text-align:center;"> Một số icon của Bloom.fm mà thật mình cũng chẳng hiểu nó dùng để làm gì!</p>
 
@@ -423,11 +570,11 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 
 <p>Điều này không có nghĩa là bạn không nên dùng icon, thật sự thì có rất nhiều icon mà người dùng đã quen thuộc và phần lớn những chức năng quen thuộc của một ứng dụng đều đã có icon tương ứng ( tìm kiếm, phát video, email, cài đặt&hellip; ). Tuy vậy vẫn có nhiều icon khá là mơ hồ đối với người dùng vì mỗi ứng dụng sẽ có hành vi khác nhau một chút trên cùng một chức năng (ví dụ như sẽ có chuyện gì xảy ra nếu ta nhấn vào nút trái tim nhỉ (yêu thích, đánh dấu) ??? ).</p>
 
-<p><img class="center" src="/images/2016/08/06/another-example-heart.png" title="đôi lúc thật khó để biết icon quen thuộc thật sự sẽ làm gì" ></p>
+<p>{% img center /images/2016/08/06/another-example-heart.png đôi lúc thật khó để biết icon quen thuộc thật sự sẽ làm gì %}</p>
 
 <p>Với những tính năng không quen thuộc và phức tạp thì bạn nên sử dụng icon kèm theo nhãn đầy đủ, nhãn sẽ giúp tính năng của bạn rõ ràng hơn và icon sẽ giúp người dùng nhận dạng tính năng nhanh hơn và đem lại một chút cá tính cho ứng dụng của bạn.</p>
 
-<p><img class="center" src="/images/2016/08/06/complicate-action-should-have-label.png"></p>
+<p>{% img center /images/2016/08/06/complicate-action-should-have-label.png %}</p>
 
 <p style="text-align:center;"> Một ví dụ trong ứng dụng Pixelmator.</p>
 
@@ -437,17 +584,17 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 
 <p>Tương tác dùng cảm ứng đã trở nên quen thuộc hơn với người thiết kế giao diện và đã có nhiều ứng dụng được thử nghiệm sử dụng nhận dạng cử chỉ đa điểm để tương tác.</p>
 
-<p><img class="center" src="/images/2016/08/06/clear-app-gestures.jpg"></p>
+<p>{% img center /images/2016/08/06/clear-app-gestures.jpg %}</p>
 
 <p style="text-align:center;"> Chuyển hướng dựa vào cử chỉ trong ứng dụng Clear.</p>
 
 <p>Cũng giống như trường hợp giấu điều hướng và lạm dụng các icon thay vì dùng nhãn văn bản, đôi khi các nhà thiết kế cũng bị cuốn vào việc sử dụng cử chỉ để tiết kiệm không gian màn hình ( Một khi không có biểu tượng nào thể hiện việc bạn có thể vuốt sang trái để xóa thì người dùng chẳng có cách nào để biết là nó tồn tại ). Và cũng như vấn đề về hamburger menu, tính năng nào bị giấu đi thì sẽ ít người dùng nó. Thêm nữa là phần lớn nhận dạng cử chỉ chưa được chuẩn hóa trên các ứng dụng khác nhau, đơn cử là ứng dụng email nổi tiếng cũng hành xử khá là khác nhau đối với việc bạn vuốt sang phải trên mỗi email.</p>
 
-<p><img class="center" src="/images/2016/08/06/apple-mail-gestures.png" title="vuốt sang phải trên Apple mail" ></p>
+<p>{% img center /images/2016/08/06/apple-mail-gestures.png vuốt sang phải trên Apple mail %}</p>
 
 <p style="text-align:center;"> Với Apple mail vuốt sang phải sẽ hiện ra tùy chọn Đánh dấu chưa đọc.</p>
 
-<p><img class="center" src="/images/2016/08/06/gmail-gestures.png" title="vuốt sang phải trên Gmail" ></p>
+<p>{% img center /images/2016/08/06/gmail-gestures.png vuốt sang phải trên Gmail %}</p>
 
 <p style="text-align:center;"> Trong khi đó với ứng dụng Gmail thì vuốt sang phải sẽ là chuyển email sang mục lưu trữ.</p>
 
@@ -457,27 +604,27 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 
 <p>Onboarding, đang là chủ đề nóng trong việc thiết kế giao diện. Tính năng này tự động chạy chỉ dùng một lần khi người dùng lần đầu tiên mở dụng dụng. Phần lớn tính năng này được dùng để giới thiệu và giải thích các tính năng của chương trình một cách trực quan trên màn hình:</p>
 
-<p><img class="center" src="/images/2016/08/06/onboarding-overlay.png"></p>
+<p>{% img center /images/2016/08/06/onboarding-overlay.png %}</p>
 
 <p style="text-align:center;"> Một ví dụ về Onboarding</p>
 
 <p>Nhìn thì hay nhưng thật ra thì đây là một giải pháp khá tệ đấy. Bởi vì nhiều người đôi lúc sẽ bỏ qua phần giới thiệu của bạn, họ đang muốn sử dụng ứng dụng của bạn ngay cơ mà. Thậm chí nếu họ dành thời gian xem hướng dẫn của bạn thì họ cũng sẽ nhanh chóng quên mọi thứ ngay khi đóng cửa sổ hướng dẫn đó lại. (đặc biệt là với màn hình hướng dẫn có quá nhiều thông tin). Và cuối cùng là, nếu bạn phải giải thích giao diện của mình với người dùng thì điều đó đồng nghĩa rằng giao diện bạn đang có trên ứng dụng thật sự đang có vấn đề.</p>
 
-<p><img class="center" src="/images/2016/08/06/ux-design-like-make-a-joke.jpg" title="Thiết kế giao diện giống như bạn đang kể truyện cười. Nếu bạn phải giải thích câu chuyện thì chẳng còn gì hay nữa." ></p>
+<p>{% img center /images/2016/08/06/ux-design-like-make-a-joke.jpg Thiết kế giao diện giống như bạn đang kể truyện cười. Nếu bạn phải giải thích câu chuyện thì chẳng còn gì hay nữa. %}</p>
 
 <p style="text-align:center;"> Việc thiết kế giao diện giống như bạn đang kể truyện cười. Nếu bạn phải giải thích câu chuyện thì chẳng còn gì hay nữa.</p>
 
 <p>Onboarding có thể được thiết kế theo nhiều cách khác nhau để trở nên hữu ích hơn đối với người dùng. Như với Slack, màn hình chào của họ tập trung việc giới thiệu khái quát về lợi ích mang lại hơn là giới thiệu chi tiết về các tính năng.</p>
 
-<p><img class="center" src="/images/2016/08/06/slack-onboarding.png" title="Slack sử màn hình chào của họ tập trung việc giới thiệu khái quát về lợi ích mang lại hơn là giới thiệu chi tiết về các tính năng" ></p>
+<p>{% img center /images/2016/08/06/slack-onboarding.png Slack sử màn hình chào của họ tập trung việc giới thiệu khái quát về lợi ích mang lại hơn là giới thiệu chi tiết về các tính năng %}</p>
 
 <p>Duolingo thì biến Onboarding thành các bài học và cổ vũ người dùng học các bài học đấy. Hướng tiếp cận này cũng giúp người dùng quen dần và hiểu hơn các tính năng/ giá trị của ứng dụng.</p>
 
-<p><img class="center" src="/images/2016/08/06/duolingo-onboarding.jpg" title="Duolingo thì biến Onboarding thành các bài học và cổ vũ người dùng học các bài học đấy" ></p>
+<p>{% img center /images/2016/08/06/duolingo-onboarding.jpg Duolingo thì biến Onboarding thành các bài học và cổ vũ người dùng học các bài học đấy %}</p>
 
 <p>Bạn còn nhớ vấn đề khác nhau giữa Mailbox và AppleMail khi dùng tính năng vuốt sang phải qua email? Đây là cách hướng dẫn người dùng mới về tính năng đó: Người dùng sẽ cần xem những cử chỉ đó được thực hiện như thế nào/ở đâu trước khi thực sự bắt đầu sử dụng ứng dụng:</p>
 
-<p><img class="center" src="/images/2016/08/06/apple-mail-onboarding-tutor.png"></p>
+<p>{% img center /images/2016/08/06/apple-mail-onboarding-tutor.png %}</p>
 
 <p>Trước khi áp dụng rập khuôn sử dụng Onboarding bằng cách tạo một lớp trong suốt trên chính ứng dụng của mình để giới thiệu các tính năng và hướng dẫn cho người dùng mới, hãy nên dừng lại và thử nghĩ xem liệu người dùng nên được chào đón như thế nào cho hợp lý và bạn sẽ thấy có nhiều cách giải quyết khác hay hơn việc rập khuôn lại từ ứng dụng khác.</p>
 
@@ -489,7 +636,7 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 
 <p>Hãy xem ví dụ dưới đây của Google photos:</p>
 
-<p><img class="center" src="/images/2016/08/06/gphoto-empty-state.png" title="Màn hình trống trên GPhoto" ></p>
+<p>{% img center /images/2016/08/06/gphoto-empty-state.png Màn hình trống trên GPhoto %}</p>
 
 <p>Nhìn qua thì có vẻ ổn nhưng hãy thử nhìn lại màn hình bạn sẽ thấy có một số vấn đề ở đây:</p>
 
@@ -504,7 +651,7 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
 
 <p>Màn hình trống sẽ làm mọi thứ dễ dàng hơn nếu nó thiết kế theo kiểu như dưới đây.</p>
 
-<p><img class="center" src="/images/2016/08/06/empty-state-good-example.png" title="Một ví dụ về màn hình trống tốt" ></p>
+<p>{% img center /images/2016/08/06/empty-state-good-example.png Một ví dụ về màn hình trống tốt %}</p>
 
 <p>Đừng quên rằng màn hình trống (tương tự như các trang 404 trên web) không chỉ là nơi thể hiện khả năng sáng tạo và đặc tính thương hiệu mà còn có vai trò quan trọng hơn để thể hiện tính năng của chương trình. Vì vậy hãy làm cho màn hình trống trở nên trực quan hơn.</p>
 
@@ -533,7 +680,7 @@ Tuy nhiên các thực nghiệm lại chỉ ra rằng việc hiển thị menu �
     <link href="http://blog.teracy.com/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot/"/>
     <updated>2016-08-05T09:40:00+00:00</updated>
     <id>http://blog.teracy.com/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/08/05/bot-design.png" title="Bot Design" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2016/08/05/bot-design.png Bot Design %}</p>
 
 <p>Thiết kế UI đàm thoại<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> thu hút được nhiều sự quan tâm nhưng để chúng phát huy được hiệu quả trong thực tế thì vẫn là một vấn đề chưa rõ ràng.</p>
 
@@ -618,125 +765,6 @@ Tuy nhiên việc nắm bắt được các nguyên tắc trên sẽ làm cho m�
 </ol>
 </div>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hoạt Động Team Building Đầu Tiên Của Teracy]]></title>
-    <link href="http://blog.teracy.com/2014/09/24/hoat-dong-team-building-dau-tien-cua-teracy/"/>
-    <updated>2014-09-24T15:46:00+00:00</updated>
-    <id>http://blog.teracy.com/2014/09/24/hoat-dong-team-building-dau-tien-cua-teracy</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/09/teracy1.jpg"></p>
-
-<p>Sau một năm làm việc vất vả thì cái ngày mong đợi cũng đã đến &ndash; một chuyến nghỉ mát 4 ngày 3 đêm
-cùng Teracy. Chuyến đi lần này hướng về miền trung để đến với mảnh đất Đà Nẵng – một
-thành phố tươi trẻ, năng động với bầu không khí trong lành đậm hương vị của biển khơi.</p>
-
-<p>Đây không đơn giản chỉ là một kỳ nghỉ mát, đối với Teracy thì còn là một hoạt động team building. Do
-Teracy vừa mới đi vào hoạt động chưa lâu, số thành viên còn khá ít ở ba miền Bắc &ndash; Trung &ndash; Nam, nên
-chuyến đi này lại càng có ý nghĩa với tất cả các Teracier. Đây là lần đầu tiên tất cả các thành viên
-được gặp mặt nhau, cùng trải qua những giây phút vui chơi, nghỉ ngơi bên nhau&hellip;Vì thế mà ai cũng háo
-hức lắm :)</p>
-
-<!-- more -->
-
-
-<p>Hành trình nào cũng cần có sự chuẩn bị trước thật tốt để đảm bảo có một chuyến đi thật hoàn hảo. Cũng
-như các hành trình khác, tôi gặp rất nhiều khó khăn và mất rất nhiều thời gian trong công tác chuẩn bị.</p>
-
-<p>Khó khăn nhất là việc tìm điểm đến. Tưởng chừng công việc này đơn giản lắm, nhưng khi bắt tay
-vào lên kế hoạch lại hoàn toàn ko đơn giản chút nào. Vì các thành viên của Teracy thì sinh sống ở
-các miền khác nhau trong cả nước, do đó việc lựa chọn địa điểm làm sao phải thuận tiện cho việc
-đi lại, phù hợp với ngân sách, có các hoạt động team building, có những danh lam thắng cảnh nổi
-tiếng&hellip; Sau khi cân nhắc kỹ lưỡng, chúng tôi quyết định chọn Đà Nẵng, một bãi biển miền trung đầy
-nắng và gió, một thành phố trẻ. Đà Nẵng cũng là điểm giữa của đất nước và có thể kết nối các thành
-viên tại 3 miền Bắc Trung Nam.</p>
-
-<p>Tiếp theo là book vé máy bay cho các thành viên và tìm kiếm khách sạn. Tiêu chí chọn khách sạn
-của chúng tôi là phải thật sạch sẽ, tiện nghi, trung tâm những nơi sẽ đến thăm, giá cả hợp lý.
-Tôi cũng cần tìm xem ở Đà Nẵng có những đặc sản gì, đi ăn gì, ở đâu và lên lịch trình chi tiết cho
-chuyến đi nữa, cả đoàn sẽ đi thăm thắng cảnh nào, rồi sẽ chơi trò gì để tất cả mọi người đều có thể
-tham gia và thấy thật sảng khoái&hellip;</p>
-
-<p>Phù!!! cuối cùng thì mọi thứ cũng đã xong rồi. Chúng ta cùng tiến về Đà Nẵng nào!</p>
-
-<p><strong>Hành trình 4 ngày 3 đêm bắt đầu!</strong></p>
-
-<p><strong>Ngày đầu tiên:</strong></p>
-
-<p>Khi bước xuống sân bay, vừa lúc chiều tối, tôi đã cảm nhận được mùi vị của
-biển khơi, bầu không khí trong lành, mát mẻ, sự bình yên của thành phố, khác hẳn cảnh xô bồ đông
-đúc, nóng nực của mùa hè ở chốn Hà Thành. Đúng 18h30, chúng tôi đến khách sạn, làm thủ tục
-check-in, nghỉ ngơi và ngồi chuyện trò cùng tất cả các thành viên ở cả 3 miền. Lần đâu tiên hội tụ
-các Teracier, (rất tiếc là chưa đông đủ) nhưng tất cả đều cảm thấy thật thân quen và gần gũi. Sau phút
-giây gặp nhau chuyện trò không ngớt, những cái bụng bắt đầu sôi réo ầm ầm giục đi ăn tối rồi :).
-Đến với thành phố biển, tất nhiên món ăn đầu tiên chúng tôi chọn là hải sản. Như đã lên kế hoạch
-từ trước, chúng tôi vào một nhà hàng khá thoáng mát, sạch sẽ. Vừa ngồi vào bàn, một em nhân viên
-phục vụ đã chạy đến niềm nở tươi cười, bảo chúng tôi gọi món. Ực! Ực! Nhìn thực đơn đã thấy ngon
-lắm rồi. Ở Hà nội, làm gì kiếm được những món ngon, bổ, rẻ như thế này :) Lần lượt nào là cua rang me,
-tôm hấp, ghẹ luộc&hellip;. được mang lên. Ngon quá, giờ nghĩ lại vẫn còn thèm lắm :) Sau khi ăn uống no
-say rồi, cả đoàn cùng nhau đi dạo dọc bãi biển Mỹ Khê. Tiếng sóng rì rào của biển như đang ca hát
-chào gọi chúng tôi. Làn gió biển mát rượi, hơi mằn mặn phả nhẹ vào mặt xua tan tất cả mệt mỏi
-sau những ngày làm việc bận rộn. Gió cứ thổi, sóng cữ vỗ nhẹ vào những đôi chân trần, hòa quyện
-trong tiếng cười nói vui nhộn của mọi người&hellip;.</p>
-
-<p><strong>Ngày thứ 2:</strong></p>
-
-<p>Quả thực đó là ngày không may mắn. Buổi sáng sau khi đi bán đảo Sơn Trà về thì
-mọi người ngủ luôn đến chiều (chắc do tối qua thức khuya chơi bài), đến 15h giờ mới lục đục đi ăn
-(chẳng hiểu là ăn trưa hay ăn tối nữa).Theo kế hoạch, sau khi ăn xong chúng tôi sẽ đi bắn súng sơn
-nhưng bất ngờ trời lại đổ mưa nên không thể đi được (thế là kế hoạch đổ bể, đành chuyển sang đi tắm
-biển). Buổi tối chúng tôi đi ăn thịt bê, khi lên taxi bảo họ chở đến địa chỉ của quán thứ nhất họ bảo
-tên đường này mới nên khó tìm, đang thở phào vì có quán ăn dự phòng khác nhưng khi đến nơi thì
-giật mình vì quán đã chuyển sang địa điểm khác. Chúng tôi đành chuyển sang ăn Bánh Tráng Thịt
-Heo, ăn xong chúng tôi hí hửng bàn nhau đi chơi bowling để đổi gió đến nơi thì chán hẳn khi nhìn
-thấy tấm biển ”tạm ngưng hoạt động để sửa chữa”. Không đổi được gió nên chúng tôi quay lại đi
-“vòng quay mặt trời &ndash; vòng quay lớn thứ 4 trên thế giới”. May thay nó chưa bị đóng cửa.</p>
-
-<p> Chùa Linh Ứng &ndash; Bán đảo Sơn Trà <img class="center" src="/images/2014/09/teracy2.jpg"></p>
-
-<p><strong>Ngày thứ 3:</strong></p>
-
-<p> May sao mọi hoạt động diễn ra theo đúng kế hoạch. Buổi sáng chúng tôi đi vượt
-thác để thử sức mình trên những dòng nước chảy xiết, cùng với những chú đá đủ kích cỡ to nhỏ nằm
-nghênh ngang giữa đường như thể làm chướng ngại vật tạo cho chúng tôi những cú hích bất ngờ
-khiến trò chơi càng thêm phần mạo hiểm (trò chơi khá vui và thú vị mỗi tội sắc da có hơi chuyển
-màu một chút).</p>
-
-<p>Chuẩn bị vượt thác <img class="center" src="/images/2014/09/teracy3.jpg"></p>
-
-<p>Chơi xong chúng tôi đi thưởng thức những đặc sản nơi đây (với món cá suối rán
-giòn rụm, món gà rừng, lợn rừng thịt chắc nịch và món rau rừng xào có vị hơi chát chát khi ăn xong
-còn để lại một dư vị khó tả). Buổi tối chúng tôi có những giây phút thật sự thoải mái ở bar Phương
-Đông (đây là phương án 2 của chúng tôi vì không được vào bar Sky 36 do không mặc đúng trang
-phục).</p>
-
-<p>Hòa mình vào không khí sôi động tại bar Phương Đông<img class="center" src="/images/2014/09/teracy4.jpg"></p>
-
-<p><strong>Ngày thứ 4:</strong></p>
-
-<p>Buối sáng chúng tôi đi bắn súng sơn. Đây là trò chơi tập thể khá thú vị và còn được
-mặc bộ quần áo như các chú bộ đội ấy, nhìn oai ghê cơ. Chúng tôi có 6 người, chia ra làm 2 đội. Tất
-cả sẵn sàng chiến đấu nhé!</p>
-
-<p>Sẵn sàng ra trận bắn súng sơn <img class="center" src="/images/2014/09/teracy5.jpg"></p>
-
-<p>Sau khi &ldquo;ra trận&rdquo; về, chúng tôi trở về khách sạn, nghỉ ngơi, trả phòng rồi đến thăm nhà anh Phương &ndash;
-1 đồng nghiệp đang sống ở Đà Nẵng. Còn đêm cuối cùng ở Đà Nẵng thôi, cả hội đều phải tận dụng
-triệt để thời gian vàng bạc này để đi ăn các món đặc sản còn lại của Đà Nẵng và ngồi uống cafe,
-ngắm thành phố đêm yên bình&hellip;</p>
-
-<p>Sáng hôm sau mọi người đều dậy sớm, dọn đồ, tranh thủ đi mua quà cho người thân, rồi ra sân
-bay. Tạm biệt Đà Nẵng nhé, tạm biệt các đồng nghiệp đang sống ở Đà Nẵng và Sài Gòn nhé. Trở về
-Hà Nội sau chuyến đi này thấy nhớ Đà Nẵng ghê, nhớ các Terecier lắm, nhớ những phút giây cùng
-các bạn vui cười bên nhau, nhớ tiếng sóng biển rì rầm, bờ cát trắng mìn, nhớ làn gió mằn mặn của
-biển khơi, nhớ những buổi sáng trong lành tinh khôi, và đặc biệt là người dân Đà Nẵng cùng những
-món ăn độc đáo nơi đây&hellip;</p>
-
-<p>Mặc dù chuyến đi thực sự chưa thành công như mong đợi, nhưng nó đã giúp cho tập thể Teracy trở
-nên thân thiết, gắn bó, hiểu nhau hơn và thêm yêu quý nhau hơn.</p>
-
-<p>Hẹn gặp lại tất cả các Terecier năm sau nhá &ndash; trong hoạt động team building lần 2 của Teracy!</p>
 ]]></content>
   </entry>
   

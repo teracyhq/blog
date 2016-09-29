@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: devops | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/devops/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot/"/>
     <updated>2015-07-22T09:19:00+00:00</updated>
     <id>http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2015/07/22/teracy_birthday_slack_bot.png" title="Teracy happy birthday Slack bot" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2015/07/22/teracy_birthday_slack_bot.png Teracy happy birthday Slack bot %}</p>
 
 <p>Getting everything automated is one of my daily tasks, such as running tests automatically each time
 there is a new commit, packaging products and sending them to customers, or deploying the
@@ -35,7 +35,7 @@ choice is Zapier. It has already had the recipe<sup id="fnref:1"><a href="#fn:1"
 action to interactive with Slack that will be easy to start (although the document of the recipe
 is not quite clear for a new user like me). Here is the recipe for Zapier:</p>
 
-<p><img class="center" src="/images/2015/07/22/Zapier_recipe_config.png" title="Zapier recipe config" ></p>
+<p>{% img center /images/2015/07/22/Zapier_recipe_config.png Zapier recipe config %}</p>
 
 <p>With this recipe, Zapier will notify to the #_general slack channel with the message got from the
 calendar description at the time of the event start. To make thing more interesting, I want to
@@ -44,7 +44,7 @@ to show a dynamic birthday cake taking the employee name from the calendar title
 image. It took me 30 minutes to get the birthday cake image which has space for the text, choose a
 font and add it to my script. Finally, uploading it to our server and here is the result:</p>
 
-<p><img class="center" src="/images/2015/07/22/cake_sample.png" title="Birthday cake" ></p>
+<p>{% img center /images/2015/07/22/cake_sample.png Birthday cake %}</p>
 
 <p>This PHP script<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> along with the Zapier recipe above makes the birthday reminder more interesting.
 What I&rsquo;m thinking now is some funny fortune teller texts which are added randomly to the cake, a
@@ -240,7 +240,7 @@ much as we do.</p>
     <link href="http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/"/>
     <updated>2013-09-23T02:30:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/23/chef-logo.png" title="Chef Logo" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2013/09/23/chef-logo.png Chef Logo %}</p>
 
 <p>&ldquo;automation&rdquo; is one of the most important <code>Teracy development philosophies</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>
 is one small step for us to automate all our infrastructure services, development experience and

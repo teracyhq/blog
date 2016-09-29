@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: product | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/product/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham/"/>
     <updated>2016-09-01T16:56:00+00:00</updated>
     <id>http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/15/looking-glass.jpg" title="Looking Glass" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2016/09/15/looking-glass.jpg Looking Glass %}</p>
 
 <p style="text-align:center;"> <em>Ảnh của <a href="https://www.flickr.com/photos/corpz/5634268846/">Alex Kislow</a></em></p>
 

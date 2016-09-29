@@ -4,7 +4,7 @@
   <title><![CDATA[Category: en | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/en/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/"/>
     <updated>2016-09-22T12:44:00+00:00</updated>
     <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2016/09/22/angular-boilerplate.png angular-boilerplate %}</p>
 
 <p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
 getting started article from the Angular 2 official documentation. That&rsquo;s the reason why
@@ -206,7 +206,9 @@ We&rsquo;re using Chef to provision but we can use others to provision, too, for
 together with anyone who wants to work with software. And we envision teracy-dev with the following
 statement:</p>
 
-<p><blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote></p>
+<p>{% blockquote %}
+teracy-dev is the best universal development tool for everyone.
+{% endblockquote %}</p>
 
 <p>That&rsquo;s our vision for teracy-dev as the base development platform and we&rsquo;re going to make it true.
 Note that it should be used for everyone, even with our QA engineers, with our manual testers, with
@@ -247,7 +249,7 @@ and better and better.</p>
     <link href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/"/>
     <updated>2015-12-21T09:40:00+00:00</updated>
     <id>http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2015/12/21/django_celery.png" title="Django Celery" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2015/12/21/django_celery.png Django Celery %}</p>
 
 <p>When I was asked to use a distributed task queue for emails on a Django project, I chose
 django-celery-email. However, during developing and testing, I faced some problems due to the lack
@@ -454,9 +456,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#115;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#117;&#x73;&#101;&#x72;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#115;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#117;&#115;&#x65;&#114;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;</a>
+To: <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x73;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#x75;&#115;&#x65;&#114;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;">&#115;&#x61;&#109;&#x70;&#108;&#101;&#46;&#x75;&#x73;&#x65;&#x72;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x32;&#48;&#x31;&#53;&#49;&#50;&#x32;&#x31;&#x31;&#x31;&#48;&#x32;&#51;&#48;&#46;&#x32;&#51;&#x34;&#54;&#51;&#x2e;&#x38;&#48;&#x38;&#x34;&#53;&#64;&#118;&#97;&#x67;&#x72;&#97;&#110;&#116;&#46;&#118;&#109;">&#x32;&#48;&#x31;&#x35;&#49;&#x32;&#x32;&#49;&#x31;&#49;&#x30;&#50;&#x33;&#x30;&#x2e;&#50;&#x33;&#x34;&#x36;&#x33;&#x2e;&#56;&#48;&#x38;&#x34;&#53;&#x40;&#118;&#97;&#x67;&#114;&#x61;&#x6e;&#116;&#46;&#x76;&#x6d;</a></p>
+Message-ID: <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x32;&#x30;&#x31;&#x35;&#49;&#x32;&#50;&#x31;&#x31;&#x31;&#48;&#50;&#51;&#x30;&#46;&#x32;&#x33;&#x34;&#54;&#51;&#x2e;&#x38;&#x30;&#x38;&#x34;&#x35;&#64;&#x76;&#x61;&#103;&#114;&#97;&#x6e;&#x74;&#46;&#x76;&#109;">&#50;&#48;&#49;&#x35;&#x31;&#50;&#x32;&#49;&#x31;&#x31;&#48;&#50;&#x33;&#48;&#x2e;&#50;&#x33;&#52;&#x36;&#51;&#x2e;&#56;&#48;&#x38;&#52;&#53;&#64;&#x76;&#97;&#x67;&#114;&#x61;&#110;&#116;&#46;&#x76;&#109;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -755,7 +757,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#104;&#113;&#64;&#x74;&#x65;&#x72;&#97;&#99;&#x79;&#46;&#x63;&#x6f;&#109;">&#104;&#x71;&#64;&#116;&#x65;&#114;&#x61;&#x63;&#121;&#x2e;&#99;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#104;&#113;&#64;&#x74;&#x65;&#x72;&#97;&#99;&#121;&#46;&#x63;&#111;&#109;">&#x68;&#113;&#x40;&#116;&#101;&#114;&#97;&#99;&#121;&#x2e;&#99;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -829,7 +831,7 @@ the redundant colon character with: <a href="https://github.com/teracyhq/httpie-
     <link href="http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot/"/>
     <updated>2015-07-22T09:19:00+00:00</updated>
     <id>http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2015/07/22/teracy_birthday_slack_bot.png" title="Teracy happy birthday Slack bot" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2015/07/22/teracy_birthday_slack_bot.png Teracy happy birthday Slack bot %}</p>
 
 <p>Getting everything automated is one of my daily tasks, such as running tests automatically each time
 there is a new commit, packaging products and sending them to customers, or deploying the
@@ -846,7 +848,7 @@ choice is Zapier. It has already had the recipe<sup id="fnref:1"><a href="#fn:1"
 action to interactive with Slack that will be easy to start (although the document of the recipe
 is not quite clear for a new user like me). Here is the recipe for Zapier:</p>
 
-<p><img class="center" src="/images/2015/07/22/Zapier_recipe_config.png" title="Zapier recipe config" ></p>
+<p>{% img center /images/2015/07/22/Zapier_recipe_config.png Zapier recipe config %}</p>
 
 <p>With this recipe, Zapier will notify to the #_general slack channel with the message got from the
 calendar description at the time of the event start. To make thing more interesting, I want to
@@ -855,7 +857,7 @@ to show a dynamic birthday cake taking the employee name from the calendar title
 image. It took me 30 minutes to get the birthday cake image which has space for the text, choose a
 font and add it to my script. Finally, uploading it to our server and here is the result:</p>
 
-<p><img class="center" src="/images/2015/07/22/cake_sample.png" title="Birthday cake" ></p>
+<p>{% img center /images/2015/07/22/cake_sample.png Birthday cake %}</p>
 
 <p>This PHP script<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> along with the Zapier recipe above makes the birthday reminder more interesting.
 What I&rsquo;m thinking now is some funny fortune teller texts which are added randomly to the cake, a

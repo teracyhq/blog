@@ -4,7 +4,7 @@
   <title><![CDATA[Category: experience | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/experience/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2013/09/26/i-failed-some-plans-and-i-need-to-try-harder/"/>
     <updated>2013-09-26T07:48:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/26/i-failed-some-plans-and-i-need-to-try-harder</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/26/failed-job.jpg" title="Failed Job Image" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2013/09/26/failed-job.jpg Failed Job Image %}</p>
 
 <p>I know startup is hard, to be a leader is hard and I failed some plans. Let me tell you the story
 about the plans I failed.</p>

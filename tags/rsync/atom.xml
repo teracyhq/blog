@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: rsync | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/rsync/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
     <updated>2013-11-26T09:06:00+00:00</updated>
     <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/sphinx.png Sphinx Doc Logo %}</p>
 
 <p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
 support for v0.3.0 release. This release introduces some breaking changes and you should know to
@@ -130,7 +130,7 @@ upcoming exciting features and projects.</p>
     <link href="http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/"/>
     <updated>2013-09-25T20:56:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/sphinx.png Sphinx Doc Logo %}</p>
 
 <p>After v0.1.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with improvements and new
 features for v0.2.0 release.</p>

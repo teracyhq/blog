@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag: UX | Teracy's Blog]]></title>
-  <link href="http://blog.teracy.com/tags/ux/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: testing | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/testing/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
   <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>

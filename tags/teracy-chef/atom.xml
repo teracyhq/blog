@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: teracy-chef | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/teracy-chef/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -190,7 +190,7 @@ much as we do.</p>
     <link href="http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/"/>
     <updated>2013-09-23T02:30:00+00:00</updated>
     <id>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/23/chef-logo.png" title="Chef Logo" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2013/09/23/chef-logo.png Chef Logo %}</p>
 
 <p>&ldquo;automation&rdquo; is one of the most important <code>Teracy development philosophies</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>
 is one small step for us to automate all our infrastructure services, development experience and

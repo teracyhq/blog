@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Da Nang | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/da-nang/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2014/09/25/first-team-building-activity-of-teracy-in-da-nang-city/"/>
     <updated>2014-09-25T10:39:00+00:00</updated>
     <id>http://blog.teracy.com/2014/09/25/first-team-building-activity-of-teracy-in-da-nang-city</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/09/teracy1.jpg"></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2014/09/teracy1.jpg %}</p>
 
 <p>After a hard working year, the long-awaited day had arrived &ndash; Teracy&rsquo;s vacation for 4 days and 3 nights.
 This destination reaches the Central Vietnam &ndash; Da Nang, a beautiful and bustling city with the fresh
@@ -84,7 +84,7 @@ After that, we were eager to go to play bowling for pleasure, however, we were d
 the sign &ldquo;suspend operations to fix&rdquo;. Eventually, we turned to visit &ldquo;Sun-Wheel- the world&rsquo;s
 fourth-largest one&rdquo;.</p>
 
-<p>Linh Ung Pagoda &ndash; Son Tra peninsula <img class="center" src="/images/2014/09/teracy2.jpg"></p>
+<p>Linh Ung Pagoda &ndash; Son Tra peninsula {% img center /images/2014/09/teracy2.jpg %}</p>
 
 <p><strong>Day 3</strong></p>
 
@@ -93,21 +93,21 @@ challenge game &ldquo;waterfall slide&rdquo; to challenge ourselves with rushing
 different sizes as obstacles to give us the sudden collision and to make the game more and more
 adventurous. It was really a funny and adventurous game.</p>
 
-<p>Prepare for sliding waterfall <img class="center" src="/images/2014/09/teracy3.jpg"></p>
+<p>Prepare for sliding waterfall {% img center /images/2014/09/teracy3.jpg %}</p>
 
 <p>After that, we went to enjoy the specialties here, such as, fried brook fish, boiled chicken, stocky
 wild boar meat and stir-fried wild vegetables with a little acrid, and strange taste. In the evening,
 we had real comfortable moments at &ldquo;Phuong Dong&rdquo; bar. This was our second option because we were not
 in proper clothes to come into &ldquo;Sky 36&rdquo;&ndash; our first option.</p>
 
-<p>Join the exciting atmosphere at Phuong Dong bar <img class="center" src="/images/2014/09/teracy4.jpg"></p>
+<p>Join the exciting atmosphere at Phuong Dong bar {% img center /images/2014/09/teracy4.jpg %}</p>
 
 <p><strong>Day 4</strong></p>
 
 <p>In the morning we went to play paint-ball game. It was a quite interesting team game. We also wore as
 soldiers, looked very majestic. We had 6 people, divided into two teams. All were ready to fight!</p>
 
-<p>Prepare for playing paint-ball game <img class="center" src="/images/2014/09/teracy5.jpg"></p>
+<p>Prepare for playing paint-ball game {% img center /images/2014/09/teracy5.jpg %}</p>
 
 <p>After the game, we returned to the hotel, relaxed, and checked out to visit Mr Phuong&rsquo;s house &ndash; a
 colleague who lives in Da Nang. It was the last night in Da Nang, we must take advantage of the worthful

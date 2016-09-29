@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: virtualbox | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/virtualbox/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/"/>
     <updated>2014-07-17T03:39:00+00:00</updated>
     <id>http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/07/binary_code.jpg"></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2014/07/binary_code.jpg %}</p>
 
 <p>Creating an isolated consistent development with a predefined consistent workflow is always our
 goal of development, that is the reason why we create <a href="https://github.com/teracyhq/dev">teracy-dev</a>. It is a virtualbox virtual

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: vision | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/vision/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -55,7 +55,9 @@ We&rsquo;re using Chef to provision but we can use others to provision, too, for
 together with anyone who wants to work with software. And we envision teracy-dev with the following
 statement:</p>
 
-<p><blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote></p>
+<p>{% blockquote %}
+teracy-dev is the best universal development tool for everyone.
+{% endblockquote %}</p>
 
 <p>That&rsquo;s our vision for teracy-dev as the base development platform and we&rsquo;re going to make it true.
 Note that it should be used for everyone, even with our QA engineers, with our manual testers, with

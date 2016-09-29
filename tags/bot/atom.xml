@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: bot | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/bot/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-09-29T10:17:43+00:00</updated>
+  <updated>2016-09-29T11:17:28+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.teracy.com/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot/"/>
     <updated>2016-08-05T09:40:00+00:00</updated>
     <id>http://blog.teracy.com/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/08/05/bot-design.png" title="Bot Design" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/2016/08/05/bot-design.png Bot Design %}</p>
 
 <p>Thiết kế UI đàm thoại<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> thu hút được nhiều sự quan tâm nhưng để chúng phát huy được hiệu quả trong thực tế thì vẫn là một vấn đề chưa rõ ràng.</p>
 
