@@ -10,7 +10,7 @@ categories:
 tags:
     - "testing"
     - "design"
-    - "UX"
+    - "ux"
 cover: /images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png
 description: Những điều cần biết để xây dựng thử nghiệm người dùng hiệu quả
 keywords: user testing, design, UX, trải nghiệm người dùng, thiết kế
