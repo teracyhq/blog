@@ -10,7 +10,7 @@ categories:
 tags:
     - "design"
     - "ux"
-cover: /images/2016/10/02/x-books.jpeg
+cover: /images/2016/10/02/ux-books.jpeg
 description: Tập hợp những cuốn sách hay về UX mà bạn nên đọc
 keywords: design, 
 ---
