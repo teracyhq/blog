@@ -9,10 +9,10 @@ categories:
     - "trans"
 tags:
     - "design"
-    - "UX"
-cover: /images/2016/09/29/x-books.jpeg
+    - "ux"
+cover: /images/2016/10/02/x-books.jpeg
 description: Tập hợp những cuốn sách hay về UX mà bạn nên đọc
-keywords: design, UX
+keywords: design, 
 ---
 
 {% img center /images/2016/10/02/ux-books.jpeg Tập hợp những cuốn sách hay về UX %}
@@ -102,7 +102,8 @@ Tất cả các bài đọc dưới đây đều quan trọng, một số bài c
 Thật Hữu Ích Khi Đọc Nhiều
 ==========================
 Đọc sách chỉ là một phần tạo nguồn cảm hứng và học tập của tôi. Tôi cũng thường xuyên đọc các bài blog và báo. Tôi khuyên bạn hãy cập nhật các nguồn sau về tư duy lãnh đạo tuyệt vời:
-- [Peter Merholz](http://www.peterme.com/ )
+
+- [Peter Merholz](http://www.peterme.com/)
 - [The Year of the Looking Glass](https://medium.com/the-year-of-the-looking-glass), Julie Zhou
 - [Bokardo](http://bokardo.com/about/), Joshua Porter
 - [Information Architects](https://ia.net/know-how), Oliver Reichenstein
