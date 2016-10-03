@@ -12,7 +12,7 @@ tags:
     - "ux"
 cover: /images/2016/10/02/ux-books.jpeg
 description: Tập hợp những cuốn sách hay về UX mà bạn nên đọc
-keywords: design, 
+keywords: design, ux, User Research, Usability, Information Architecture, User-Interface Design, Interaction Design, Content Strategy, Experience Strategy
 ---
 
 {% img center /images/2016/10/02/ux-books.jpeg Tập hợp những cuốn sách hay về UX %}
@@ -23,7 +23,7 @@ Danh sách này rất rộng gồm những cuốn sách tiêu biểu về tư du
 
 Mỗi cuốn sách đều có ảnh hưởng đến quan điểm của tôi, tạo ấn tượng cho tôi và giúp tôi thăng tiến trong sự nghiệp của mình. Những cuốn sách này cũng đã hình thành nên người thiết kế là tôi hôm nay và tạo cảm hứng thiết kế cho tôi mai sau.
 
-Không có ngày nào tôi không tự suy nghĩ và áp dụng các ý tưởng từ những cuốn sách này cả. Tôi hy vọng rằng bạn cũng có thể tìm thấy giá trị như vậy nhờ những cuốn sách này.u
+Không có ngày nào tôi không tự suy nghĩ và áp dụng các ý tưởng từ những cuốn sách này cả. Tôi hy vọng rằng bạn cũng có thể tìm thấy giá trị như vậy nhờ những cuốn sách này.
 
 <!-- more -->
 
