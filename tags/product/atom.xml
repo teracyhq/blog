@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: product | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/product/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-10-04T08:27:20+00:00</updated>
+  <updated>2016-10-04T09:46:31+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -14,19 +14,19 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Cách tiếp cận nhanh để thẩm định sản phẩm (Phần 1)]]></title>
-    <link href="http://blog.teracy.com/2016/10/04/cach-tiep-can-nhanh-de-tham-dinh-san-pham-phan-1/"/>
+    <title type="html"><![CDATA[Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 1)]]></title>
+    <link href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/"/>
     <updated>2016-10-04T10:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/10/04/cach-tiep-can-nhanh-de-tham-dinh-san-pham-phan-1</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/04/tham-dinh-san-pham-nhanh.jpg" title="Thẩm định sản phẩm nhanh" ></p>
+    <id>http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
 
 <p>Một trong những rủi ro lớn nhất khi xây dựng sản phẩm đó là xây dựng những điều sai. Bạn sẽ mất hàng tháng trời (thậm chí hàng năm) để xây dựng sản phẩm đó, chỉ tới khi nhận ra bạn không thể hoàn thành sản phẩm.</p>
 
-<p>Tại <a href="https://hanno.co/">Hanno</a>, chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách &ldquo;Thẩm định nhanh&rdquo; (Lean Validation Playbook).</p>
+<p>Tại <a href="https://hanno.co/">Hanno</a>, chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách &ldquo;Thẩm định tinh gọn&rdquo; (Lean Validation Playbook).</p>
 
-<h2>TẠI SAO CHÚNG TA CẦN THẨM ĐỊNH NHANH</h2>
+<h2>TẠI SAO CHÚNG TA CẦN THẨM ĐỊNH TINH GỌN</h2>
 
-<p>Trong trường hợp này, thẩm định nhanh nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi động nhanh là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông &ldquo;<a href="https://theleanstartup.com/">Khởi đầu nhanh gọn</a>&rdquo;.</p>
+<p>Trong trường hợp này, thẩm định tinh gọn nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi nghiệp tinh gọn là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông &ldquo;<a href="https://theleanstartup.com/">Khởi nghiệp tinh gọn</a>&rdquo;.</p>
 
 <p>Trong phần hướng dẫn ngắn này, bạn sẽ học được cách thẩm định sự phù hợp của sản phẩm với thị trường, khảo sát người dùng và sản phẩm dùng thử. Mục đích để đảm bảo ý tưởng sản phẩm đó khả thi, điều này giúp tiết kiệm thời gian và tiền bạc của bạn.</p>
 
@@ -37,11 +37,11 @@
 
 <p>Bạn đã sẵn sang chưa? Chúng ta bắt đầu nhé.</p>
 
-<p><img class="center" src="/images/2016/10/04/tham-dinh-san-pham-nhanh.jpg" title="Thẩm định sản phẩm nhanh" ></p>
+<p><img class="center" src="/images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
 
 <h1>Quy Trình Tiến Hành </h1>
 
-<p>Quy trình thẩm định nhanh gồm có 4 bước riêng biệt. Chỉ khi bạn đã thực hiện tất cả 4 bước bạn mới có thể tự tin rằng ý tưởng sản phẩm đáng để phát triển.</p>
+<p>Quy trình thẩm định tinh gọn gồm có 4 bước riêng biệt. Chỉ khi bạn đã thực hiện tất cả 4 bước bạn mới có thể tự tin rằng ý tưởng sản phẩm đáng để phát triển.</p>
 
 <p><strong>1. Thẩm định vấn đề</strong></p>
 
@@ -65,9 +65,9 @@
 
 <p>Nếu ý tưởng đáp ứng cả bốn tiêu chí thẩm định thì bạn có thể thoải mái phát triển sản phẩm nếu bạn muốn. Nhưng bạn có thể cân nhắc kỹ hơn thay vì chọn phát triển sản phẩm luôn.</p>
 
-<p>Qua quá trình thẩm định nhanh gọn, bạn chắc chắn nhận được rất nhiều thông tin phản hồi từ người sử dụng. Với sự hiểu biết sâu sắc hơn, bạn sẽ nhận ra có cơ hội giải quyết tốt hơn. Trong trường hợp này, bạn sẽ thấy dễ dàng để tập trung vào sản phẩm.</p>
+<p>Qua quá trình thẩm định tinh gọn, bạn chắc chắn nhận được rất nhiều thông tin phản hồi từ người sử dụng. Với sự hiểu biết sâu sắc hơn, bạn sẽ nhận ra có cơ hội giải quyết tốt hơn. Trong trường hợp này, bạn sẽ thấy dễ dàng để tập trung vào sản phẩm.</p>
 
-<p>Nếu bạn làm theo cách này, bạn có thể lặp lại quá trình thẩm định nhanh với ý tưởng sản phẩm đã cải tiến.</p>
+<p>Nếu bạn làm theo cách này, bạn có thể lặp lại quá trình thẩm định tinh gọn với ý tưởng sản phẩm đã cải tiến.</p>
 
 <p>Dù bằng cách nào, bạn có thể tự tin rằng bạn đang có một ý tưởng tốt để phát triển sản phẩm.</p>
 
@@ -89,9 +89,9 @@
 
 <p>Dưới đây là một ví dụ từ Rob Walling, nhà sáng lập công cụ thư thương mại Drip:</p>
 
-<p>&ldquo;Tôi muốn tìm 10 người có thể sẵn sàng trả một số tiền nhất định để mua sản phẩm khi nó đã hoàn thiện. Điều này buộc tôi không phải chỉ suy nghĩ về tính năng, mà còn phải chắt lọc những ý tưởng để có được giá trị cốt lõi của nó: đây là lý do duy nhất một người nào đó sẽ sẵn sàng trả tiền cho tôi để mua sản phẩm. Tôi gửi email nói về giá trị cốt lõi ý tưởng của mình cho 17 người mà tôi biết hoặc ít nhất là có nghe nói họ gặp vấn đề tương tự. Bằng cách này, tôi không chỉ có khách hàng đầu tiên có thể cung cấp cho tôi thông tin phản hồi chi tiết về cách công cụ Drip hoạt động, mà tôi còn có được sử khởi đầu cho nền tảng doanh thu ban đầu để sử dụng phát triển sản phẩm.&rdquo;
-&ldquo;
-Nếu bạn có thể xây dựng một mối quan hệ tốt với những người sử dụng này và lưu giữ thông tin liên lạc của họ, họ thậm chí có thể sẵn sàng là năm khách hàng đầu tiên của bạn.</p>
+<p>&ldquo;Tôi muốn tìm 10 người có thể sẵn sàng trả một số tiền nhất định để mua sản phẩm khi nó đã hoàn thiện. Điều này buộc tôi không phải chỉ suy nghĩ về tính năng, mà còn phải chắt lọc những ý tưởng để có được giá trị cốt lõi của nó: đây là lý do duy nhất một người nào đó sẽ sẵn sàng trả tiền cho tôi để mua sản phẩm. Tôi gửi email nói về giá trị cốt lõi ý tưởng của mình cho 17 người mà tôi biết hoặc ít nhất là có nghe nói họ gặp vấn đề tương tự. Bằng cách này, tôi không chỉ có khách hàng đầu tiên có thể cung cấp cho tôi thông tin phản hồi chi tiết về cách công cụ Drip hoạt động, mà tôi còn có được sự khởi đầu cho nền tảng doanh thu ban đầu để sử dụng phát triển sản phẩm.&rdquo;</p>
+
+<p>Nếu bạn có thể xây dựng một mối quan hệ tốt với những người sử dụng này và lưu giữ thông tin liên lạc của họ, họ thậm chí có thể sẵn sàng là năm khách hàng đầu tiên của bạn.</p>
 
 <h2>PHƯƠNG PHÁP 2: PHỎNG VẤN NGƯỜI SỬ DỤNG</h2>
 
