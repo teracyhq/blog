@@ -10,12 +10,12 @@ categories:
 tags:
     - "product"
     - "validation"
-cover: /images/2016/10/04/thamdinhnhanh.jpg
+cover: /images/2016/10/04/tham-dinh-san-pham-nhanh.jpg
 description: Cách tiếp cận thẩm định sản phẩm giúp bạn xây dựng được sản phẩm đúng như mong muốn
-keywords: Product Strategy, Product Validation
+keywords: Product Strategy, Product Validation, chiến lược sản phẩm, thẩm định sản phẩm
 ---
 
-{% img center /images/2016/10/04/thamdinhnhanh.jpg Thẩm định sản phẩm nhanh %}
+{% img center /images/2016/10/04/tham-dinh-san-pham-nhanh.jpg Thẩm định sản phẩm nhanh %}
 
 Một trong những rủi ro lớn nhất khi xây dựng sản phẩm đó là xây dựng những điều sai. Bạn sẽ mất hàng tháng trời (thậm chí hàng năm) để xây dựng sản phẩm đó, chỉ tới khi nhận ra bạn không thể hoàn thành sản phẩm.
 
@@ -33,7 +33,7 @@ Cuối quá trình, bạn sẽ có thể tập trung vào việc xây dựng s�
 
 Bạn đã sẵn sang chưa? Chúng ta bắt đầu nhé.
 
-{% img center /images/2016/10/04/thamdinhnhanh.jpg Thẩm định sản phẩm nhanh %}
+{% img center /images/2016/10/04/tham-dinh-san-pham-nhanh.jpg Thẩm định sản phẩm nhanh %}
 
 Quy trình tiến hành 
 ==================
@@ -56,7 +56,7 @@ Vấn đề có thể tồn tại nhưng sản phẩm của bạn có thực s�
 Có thể thị trường có nhu cầu và sản phẩm của bạn rất tuyệt vời. Nhưng liệu mọi người có sẵn sằng trả tiền mua sản phẩm đó không?
 
 
-{% img center /images/2016/10/04/validationprocess.jpg Quy trình thẩm định sản phẩm  %}
+{% img center /images/2016/10/04/quy-trinh-tham-dinh-san-pham.jpg Quy trình thẩm định sản phẩm  %}
  
 ĐIỀU GÌ XẢY RA NẾU Ý TƯỞNG CỦA BẠN ĐÁP ỨNG TẤT CẢ BỐN TIÊU CHÍ TRÊN? 
 ============================================================
@@ -79,7 +79,7 @@ Những điều bạn thu được từ các cuộc phỏng vấn này sẽ giú
 Ba kỹ thuật được miêu tả dưới đây có thể dùng riêng biệt, nhưng chúng tạo thành một bộ các phương pháp có thể cung cấp một hình ảnh tốt hơn về vấn đề mà bạn đang cố gắng thẩm định.
 
 
-{% img center /images/2016/10/04/validateproblem.jpg Thẩm định vấn đề %}
+{% img center /images/2016/10/04/tham-dinh-van-de.jpg Thẩm định vấn đề %}
 
 PHƯƠNG PHÁP 1: TÌM NĂM NGƯỜI THAM GIA THỬ NGHIỆM
 ------------------------------------------------
