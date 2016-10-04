@@ -21,8 +21,8 @@ Một trong những rủi ro lớn nhất khi xây dựng sản phẩm đó là 
 
 Tại [Hanno](https://hanno.co/), chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách "Thẩm định nhanh" (Lean Validation Playbook).
 
-Tại Sao Chúng Ta Cần Thẩm Định Nhanh
-====================================
+TẠI SAO CHÚNG TA CẦN THẨM ĐỊNH NHANH
+------------------------------------
 Trong trường hợp này, thẩm định nhanh nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi động nhanh là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông "[Khởi đầu nhanh gọn](https://theleanstartup.com/)".
 
 Trong phần hướng dẫn ngắn này, bạn sẽ học được cách thẩm định sự phù hợp của sản phẩm với thị trường, khảo sát người dùng và sản phẩm dùng thử. Mục đích để đảm bảo ý tưởng sản phẩm đó khả thi, điều này giúp tiết kiệm thời gian và tiền bạc của bạn.
@@ -59,7 +59,8 @@ Có thể thị trường có nhu cầu và sản phẩm của bạn rất tuy�
 {% img center /images/2016/10/04/quy-trinh-tham-dinh-san-pham.jpg Quy trình thẩm định sản phẩm  %}
  
 ĐIỀU GÌ XẢY RA NẾU Ý TƯỞNG CỦA BẠN ĐÁP ỨNG TẤT CẢ BỐN TIÊU CHÍ TRÊN? 
-============================================================
+--------------------------------------------------------------------
+
 Nếu ý tưởng đáp ứng cả bốn tiêu chí thẩm định thì bạn có thể thoải mái phát triển sản phẩm nếu bạn muốn. Nhưng bạn có thể cân nhắc kỹ hơn thay vì chọn phát triển sản phẩm luôn.
 
 Qua quá trình thẩm định nhanh gọn, bạn chắc chắn nhận được rất nhiều thông tin phản hồi từ người sử dụng. Với sự hiểu biết sâu sắc hơn, bạn sẽ nhận ra có cơ hội giải quyết tốt hơn. Trong trường hợp này, bạn sẽ thấy dễ dàng để tập trung vào sản phẩm.
