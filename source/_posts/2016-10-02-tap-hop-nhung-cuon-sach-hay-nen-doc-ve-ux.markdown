@@ -59,7 +59,7 @@ Tất cả các bài đọc dưới đây đều quan trọng, một số bài c
 - [Designing Interfaces](http://amzn.com/1449379702), Jennifer Tidwell
 - [Handbook of Usability Testing: How to Plan, Design, and Conduct Effective Tests](http://amzn.com/0470185481), Jeffrey Rubin, Dana Chisnell
 - [Designing Interactions](http://mitpress.mit.edu/books/designing-interactions), Bill Moggridge
-- [The Visual Display of Quantitative Information AND Envisioning Information](http://amzn.com/0961392142), Edward R. Tufte
+- [The Visual Display of Quantitative Information](https://www.amazon.com/dp/0961392142) và [Envisioning Information](https://www.amazon.com/dp/0961392118), Edward R. Tufte
 - [A Project Guide to UX Design: For user experience designers in the field or in the making](http://amzn.com/0321815386), Russ Unger & Carolyn Chandler
 - [Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers](http://amzn.com/0596804172), Dave Gray, Sunni Brown, James Macanufo
 - [Mental Models: Aligning Design Strategy with Human Behavior](http://rosenfeldmedia.com/books/mental-models/), Indi Young
@@ -86,10 +86,10 @@ Tất cả các bài đọc dưới đây đều quan trọng, một số bài c
 - [Designing the User Interface: Strategies for Effective Human-Computer Interaction](http://amzn.com/0321537351), Ben Shneiderman, Catherine Plaisant, Maxine Cohen, Steven Jacobs
 - [This is Service Design Thinking: Basics, Tools, Cases](http://amzn.com/1118156307), Marc Stickdorn, Jakob Schneider
 - [Resonate: Present Visual Stories That Transform Audiences](http://amzn.com/0470632011), Nancy Duarte
-- [Metaskills: 5 Talents for the Robotic Age](), Marty Neumeier
-- [The Brand Gap: How to Bridge the Distance Between Business Strategy and Design](http://amzn.com/0321898672), Marty Neumeier
-- [Getting Real](https://gettingreal.37signals.com/) và [Rework](http://amzn.com/0307463745), 37 Signals, Jason Fried, David Heinemeier Hansson
-- [Glut: Mastering Information through the Ages](http://amzn.com/0801475090), Alex Wright
+- [Metaskills: 5 Talents for the Robotic Age](http://amzn.com/0321898672), Marty Neumeier
+- [The Brand Gap: How to Bridge the Distance Between Business Strategy and Design](https://www.amazon.com/dp/0321348109/ref=cm_sw_su_dp), Marty Neumeier
+- [Getting Real](https://gettingreal.37signals.com/) và [Rework](https://www.amazon.com/dp/0307463745), 37 Signals, Jason Fried, David Heinemeier Hansson
+- [Glut: Mastering Information through the Ages](https://www.amazon.com/dp/0801475090), Alex Wright
 - [The Humane Interface: New Directions for Designing Interactive Systems](http://amzn.com/0201379376), Jef Raskin
 - [Designing with Web Standards](http://amzn.com/0321616952), Jeffrey Zeldman, Ethan Marcotte
 - [Simple and Usable Web, Mobile, and Interaction Design](http://amzn.com/0321703545), Giles Colborne
@@ -112,7 +112,7 @@ Thật Hữu Ích Khi Đọc Nhiều
 - [Disambiguity](http://www.disambiguity.com/), Leisa Reichelt
 - [Form and Function](http://www.lukew.com/ff/), Luke Wroblewski
 - [Frank Chimero](http://frankchimero.com/)
-- [Aral Balkan](http://frankchimero.com/)
+- [Aral Balkan](https://aralbalkan.com/)
 - [David Cole](http://davidcole.me/)
 - [Seth Godin](http://sethgodin.typepad.com/)
 - [Scott Berkun](http://scottberkun.com/blog/)
