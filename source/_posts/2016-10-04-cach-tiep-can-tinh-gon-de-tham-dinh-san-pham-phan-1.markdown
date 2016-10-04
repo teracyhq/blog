@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cách tiếp cận nhanh để thẩm định sản phẩm (Phần 1)"
+title: "Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 1)"
 author: hanhle
 date: 2016-10-04 10:40
 comments: true
@@ -10,20 +10,20 @@ categories:
 tags:
     - "product"
     - "validation"
-cover: /images/2016/10/04/tham-dinh-san-pham-nhanh.jpg
-description: Cách tiếp cận thẩm định sản phẩm giúp bạn xây dựng được sản phẩm đúng như mong muốn
+cover: /images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg
+description: Cách tiếp cận tinh gọn để thẩm định sản phẩm giúp bạn xây dựng được sản phẩm đúng như mong muốn
 keywords: Product Strategy, Product Validation, chiến lược sản phẩm, thẩm định sản phẩm
 ---
 
-{% img center /images/2016/10/04/tham-dinh-san-pham-nhanh.jpg Thẩm định sản phẩm nhanh %}
+{% img center /images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg Thẩm định sản phẩm tinh gọn %}
 
 Một trong những rủi ro lớn nhất khi xây dựng sản phẩm đó là xây dựng những điều sai. Bạn sẽ mất hàng tháng trời (thậm chí hàng năm) để xây dựng sản phẩm đó, chỉ tới khi nhận ra bạn không thể hoàn thành sản phẩm.
 
-Tại [Hanno](https://hanno.co/), chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách "Thẩm định nhanh" (Lean Validation Playbook).
+Tại [Hanno](https://hanno.co/), chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách "Thẩm định tinh gọn" (Lean Validation Playbook).
 
-TẠI SAO CHÚNG TA CẦN THẨM ĐỊNH NHANH
-------------------------------------
-Trong trường hợp này, thẩm định nhanh nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi động nhanh là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông "[Khởi đầu nhanh gọn](https://theleanstartup.com/)".
+TẠI SAO CHÚNG TA CẦN THẨM ĐỊNH TINH GỌN
+---------------------------------------
+Trong trường hợp này, thẩm định tinh gọn nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi nghiệp tinh gọn là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông "[Khởi nghiệp tinh gọn](https://theleanstartup.com/)".
 
 Trong phần hướng dẫn ngắn này, bạn sẽ học được cách thẩm định sự phù hợp của sản phẩm với thị trường, khảo sát người dùng và sản phẩm dùng thử. Mục đích để đảm bảo ý tưởng sản phẩm đó khả thi, điều này giúp tiết kiệm thời gian và tiền bạc của bạn.
 
@@ -33,11 +33,11 @@ Cuối quá trình, bạn sẽ có thể tập trung vào việc xây dựng s�
 
 Bạn đã sẵn sang chưa? Chúng ta bắt đầu nhé.
 
-{% img center /images/2016/10/04/tham-dinh-san-pham-nhanh.jpg Thẩm định sản phẩm nhanh %}
+{% img center /images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg Thẩm định sản phẩm tinh gọn %}
 
 Quy Trình Tiến Hành 
 ==================
-Quy trình thẩm định nhanh gồm có 4 bước riêng biệt. Chỉ khi bạn đã thực hiện tất cả 4 bước bạn mới có thể tự tin rằng ý tưởng sản phẩm đáng để phát triển.
+Quy trình thẩm định tinh gọn gồm có 4 bước riêng biệt. Chỉ khi bạn đã thực hiện tất cả 4 bước bạn mới có thể tự tin rằng ý tưởng sản phẩm đáng để phát triển.
 
 **1. Thẩm định vấn đề**
 
@@ -63,9 +63,9 @@ Có thể thị trường có nhu cầu và sản phẩm của bạn rất tuy�
 
 Nếu ý tưởng đáp ứng cả bốn tiêu chí thẩm định thì bạn có thể thoải mái phát triển sản phẩm nếu bạn muốn. Nhưng bạn có thể cân nhắc kỹ hơn thay vì chọn phát triển sản phẩm luôn.
 
-Qua quá trình thẩm định nhanh gọn, bạn chắc chắn nhận được rất nhiều thông tin phản hồi từ người sử dụng. Với sự hiểu biết sâu sắc hơn, bạn sẽ nhận ra có cơ hội giải quyết tốt hơn. Trong trường hợp này, bạn sẽ thấy dễ dàng để tập trung vào sản phẩm.
+Qua quá trình thẩm định tinh gọn, bạn chắc chắn nhận được rất nhiều thông tin phản hồi từ người sử dụng. Với sự hiểu biết sâu sắc hơn, bạn sẽ nhận ra có cơ hội giải quyết tốt hơn. Trong trường hợp này, bạn sẽ thấy dễ dàng để tập trung vào sản phẩm.
 
-Nếu bạn làm theo cách này, bạn có thể lặp lại quá trình thẩm định nhanh với ý tưởng sản phẩm đã cải tiến.
+Nếu bạn làm theo cách này, bạn có thể lặp lại quá trình thẩm định tinh gọn với ý tưởng sản phẩm đã cải tiến.
 
 Dù bằng cách nào, bạn có thể tự tin rằng bạn đang có một ý tưởng tốt để phát triển sản phẩm.
 
@@ -88,8 +88,8 @@ Việc tìm được ít nhất 5 người nói rằng họ muốn sử dụng s
 
 Dưới đây là một ví dụ từ Rob Walling, nhà sáng lập công cụ thư thương mại Drip:
 
-"Tôi muốn tìm 10 người có thể sẵn sàng trả một số tiền nhất định để mua sản phẩm khi nó đã hoàn thiện. Điều này buộc tôi không phải chỉ suy nghĩ về tính năng, mà còn phải chắt lọc những ý tưởng để có được giá trị cốt lõi của nó: đây là lý do duy nhất một người nào đó sẽ sẵn sàng trả tiền cho tôi để mua sản phẩm. Tôi gửi email nói về giá trị cốt lõi ý tưởng của mình cho 17 người mà tôi biết hoặc ít nhất là có nghe nói họ gặp vấn đề tương tự. Bằng cách này, tôi không chỉ có khách hàng đầu tiên có thể cung cấp cho tôi thông tin phản hồi chi tiết về cách công cụ Drip hoạt động, mà tôi còn có được sử khởi đầu cho nền tảng doanh thu ban đầu để sử dụng phát triển sản phẩm."
-"
+"Tôi muốn tìm 10 người có thể sẵn sàng trả một số tiền nhất định để mua sản phẩm khi nó đã hoàn thiện. Điều này buộc tôi không phải chỉ suy nghĩ về tính năng, mà còn phải chắt lọc những ý tưởng để có được giá trị cốt lõi của nó: đây là lý do duy nhất một người nào đó sẽ sẵn sàng trả tiền cho tôi để mua sản phẩm. Tôi gửi email nói về giá trị cốt lõi ý tưởng của mình cho 17 người mà tôi biết hoặc ít nhất là có nghe nói họ gặp vấn đề tương tự. Bằng cách này, tôi không chỉ có khách hàng đầu tiên có thể cung cấp cho tôi thông tin phản hồi chi tiết về cách công cụ Drip hoạt động, mà tôi còn có được sự khởi đầu cho nền tảng doanh thu ban đầu để sử dụng phát triển sản phẩm."
+
 Nếu bạn có thể xây dựng một mối quan hệ tốt với những người sử dụng này và lưu giữ thông tin liên lạc của họ, họ thậm chí có thể sẵn sàng là năm khách hàng đầu tiên của bạn.
 
 PHƯƠNG PHÁP 2: PHỎNG VẤN NGƯỜI SỬ DỤNG
