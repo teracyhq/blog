@@ -86,7 +86,7 @@ PHƯƠNG PHÁP 1: TÌM NĂM NGƯỜI THAM GIA THỬ NGHIỆM
 ------------------------------------------------
 Việc tìm được ít nhất 5 người nói rằng họ muốn sử dụng sản phẩm giả thuyết của bạn là một dấu hiệu hợp lý chỉ ra rằng bạn có vấn đề rất đáng giải quyết. Trong khi điều này cũng không nhất thiết đảm bảo được vấn đề thực sự tồn tại hay giải pháp đề xuất của bạn là tốt hoặc đáng giá, nhưng đó là cách đơn giản nhất để bắt đầu thẩm định vấn đề của bạn.
 
-Dưới đây là một ví dụ từ Rob Walling, nhà sáng lập công cụ công cụ thư thương mại Drip:
+Dưới đây là một ví dụ từ Rob Walling, nhà sáng lập công cụ thư thương mại Drip:
 
 "Tôi muốn tìm 10 người có thể sẵn sàng trả một số tiền nhất định để mua sản phẩm khi nó đã hoàn thiện. Điều này buộc tôi không phải chỉ suy nghĩ về tính năng, mà còn phải chắt lọc những ý tưởng để có được giá trị cốt lõi của nó: đây là lý do duy nhất một người nào đó sẽ sẵn sàng trả tiền cho tôi để mua sản phẩm. Tôi gửi email nói về giá trị cốt lõi ý tưởng của mình cho 17 người mà tôi biết hoặc ít nhất là có nghe nói họ gặp vấn đề tương tự. Bằng cách này, tôi không chỉ có khách hàng đầu tiên có thể cung cấp cho tôi thông tin phản hồi chi tiết về cách công cụ Drip hoạt động, mà tôi còn có được sử khởi đầu cho nền tảng doanh thu ban đầu để sử dụng phát triển sản phẩm."
 "
