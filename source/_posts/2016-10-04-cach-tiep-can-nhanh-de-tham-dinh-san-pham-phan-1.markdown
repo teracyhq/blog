@@ -35,7 +35,7 @@ Bạn đã sẵn sang chưa? Chúng ta bắt đầu nhé.
 
 {% img center /images/2016/10/04/tham-dinh-san-pham-nhanh.jpg Thẩm định sản phẩm nhanh %}
 
-Quy trình tiến hành 
+Quy Trình Tiến Hành 
 ==================
 Quy trình thẩm định nhanh gồm có 4 bước riêng biệt. Chỉ khi bạn đã thực hiện tất cả 4 bước bạn mới có thể tự tin rằng ý tưởng sản phẩm đáng để phát triển.
 
@@ -68,7 +68,7 @@ Nếu bạn làm theo cách này, bạn có thể lặp lại quá trình thẩm
 
 Dù bằng cách nào, bạn có thể tự tin rằng bạn đang có một ý tưởng tốt để phát triển sản phẩm.
 
-Thẩm định vấn đề
+Thẩm Định Vấn Đề
 ===============
 Cho dù bạn có tự tin về ý tưởng sản phẩm như nào chăng nữa thì điều đầu tiên bạn cần là xác định liệu vấn đề đó có thực sự cần giải quyết. Để làm được điều này, lựa chọn tốt nhất của bạn là nói chuyện trực tiếp với người sử dụng tiềm năng. Trọng tâm ở đây là về việc đánh giá chất lượng các ý tưởng sản phẩm.
 
