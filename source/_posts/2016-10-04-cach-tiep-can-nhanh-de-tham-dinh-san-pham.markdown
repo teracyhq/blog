@@ -12,7 +12,7 @@ tags:
     - "validation"
 cover: /images/2016/10/04/thamdinhnhanh.jpg
 description: Cách tiếp cận thẩm định sản phẩm giúp bạn xây dựng được sản phẩm đúng như mong muốn
-keywords: design, ux, User Research, Usability, Information Architecture, User-Interface Design, Interaction Design, Content Strategy, Experience Strategy
+keywords: Product Strategy, Product Validation
 ---
 
 {% img center /images/2016/10/04/thamdinhnhanh.jpg Thẩm định sản phẩm nhanh %}
@@ -26,6 +26,8 @@ Tại Sao Chúng Ta Cần Thẩm Định Nhanh
 Trong trường hợp này, thẩm định nhanh nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi động nhanh là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông "[Khởi đầu nhanh gọn](https://theleanstartup.com/)".
 
 Trong phần hướng dẫn ngắn này, bạn sẽ học được cách thẩm định sự phù hợp của sản phẩm với thị trường, khảo sát người dùng và sản phẩm dùng thử. Mục đích để đảm bảo ý tưởng sản phẩm đó khả thi, điều này giúp tiết kiệm thời gian và tiền bạc của bạn.
+
+<!-- more -->
 
 Cuối quá trình, bạn sẽ có thể tập trung vào việc xây dựng sản phẩm và tự tin rằng bạn có cơ hội thành công cao hơn!
 
