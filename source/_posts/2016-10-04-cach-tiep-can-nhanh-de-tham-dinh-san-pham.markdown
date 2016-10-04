@@ -18,6 +18,7 @@ keywords: design, ux, User Research, Usability, Information Architecture, User-I
 {% img center /images/2016/10/04/thamdinhnhanh.jpg Thẩm định sản phẩm nhanh %}
 
 Một trong những rủi ro lớn nhất khi xây dựng sản phẩm đó là xây dựng những điều sai. Bạn sẽ mất hàng tháng trời (thậm chí hàng năm) để xây dựng sản phẩm đó, chỉ tới khi nhận ra bạn không thể hoàn thành sản phẩm.
+
 Tại [Hanno](https://hanno.co/), chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách "Thẩm định nhanh" (Lean Validation Playbook).
 
 Tại Sao Chúng Ta Cần Thẩm Định Nhanh
@@ -30,7 +31,7 @@ Cuối quá trình, bạn sẽ có thể tập trung vào việc xây dựng s�
 
 Bạn đã sẵn sang chưa? Chúng ta bắt đầu nhé.
 
-{% img center /images/2016/10/04/thamdinhnhanh.jpeg Thẩm định sản phẩm nhanh %}
+{% img center /images/2016/10/04/thamdinhnhanh.jpg Thẩm định sản phẩm nhanh %}
 
 Quy trình tiến hành 
 ==================
