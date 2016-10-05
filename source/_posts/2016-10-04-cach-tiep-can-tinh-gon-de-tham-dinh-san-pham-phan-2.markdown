@@ -17,6 +17,8 @@ keywords: Product Strategy, Product Validation, chiến lược sản phẩm, th
 
 {% img center /images/2016/10/04/tham-dinh-thi-truong.jpg Thẩm định thị trường %}
 
+Đây là phần tiếp theo của [Phần 1)](2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/).
+
 Thẩm Định Thị Trường
 ====================
 Một khi bạn đã nói chuyện với người sử dụng và thẩm định được vấn đề tồn tại, bạn cần phải chắc chắn thị trường đủ lớn để thực hiện ý tưởng của mình. Tìm hiểu người sử dụng sản phẩm của bạn sẽ đến từ đâu, và bao nhiêu doanh thu tiềm năng có trong các cơ hội thị trường?
@@ -112,5 +114,6 @@ Mục đích của việc thẩm định sản phẩm cho dù từ xa hay trực
 Một khi bạn bắt đầu thu thập thông tin phản hồi tích cực mạnh mẽ từ người dùng mục tiêu bằng cách kiểm tra các mẫu thử nghiệm, đó là thời gian để chuyển sang giai đoạn cuối cùng của quá trình thẩm định tinh gọn.
 
 (CÒN TIẾP)
+
 
 Dịch từ: [A lean apprroach to product validation](https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/)
