@@ -25,6 +25,8 @@ Một khi bạn đã nói chuyện với người sử dụng và thẩm định
 
 Bằng cách thu thập càng nhiều thông tin càng tốt về thị trường tiềm năng, bạn sẽ có thể dự toán khoa học về quy mô của đối tượng khách hàng mục tiêu và số lượng khách hàng bạn có thể có được. Bằng cách thu thập này cũng sẽ giúp bạn tìm ra một cấu trúc giá cả tương đối cho các sản phẩm, điều này sẽ có giá trị khi bạn bắt đầu thực hiện kế hoạch tài chính khác.
 
+<!-- more -->
+
 {% img center /images/2016/10/04/tham-dinh-thi-truong.jpg Thẩm định thị trường %}
 
 THỊ TRƯỜNG CẦN PHẢI LỚN NHƯ THẾ NÀO?
