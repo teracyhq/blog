@@ -17,7 +17,7 @@ keywords: Product Strategy, Product Validation, chiến lược sản phẩm, th
 
 {% img center /images/2016/10/04/tham-dinh-thi-truong.jpg Thẩm định thị trường %}
 
-Đây là phần tiếp theo của [Phần 1)](2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/).
+Đây là phần tiếp theo của [Phần 1](/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/).
 
 Thẩm Định Thị Trường
 ====================

@@ -120,6 +120,6 @@ TẠI SAO NHỮNG PHƯƠNG PHÁP NÀY QUAN TRỌNG?
 ----------------------------------------
 Bằng cách tập trung vào nghiên cứu người sử dụng, bạn có thể tránh được những sai lầm phổ biến như việc giả định các vấn đề bạn đang đối phó cũng là vấn đề của người khác gặp phải. Thông thường, chúng ta hay gặp những tình huống chẳng hạn như một nhà thiết kế nói rằng:"Tôi giả định là người dùng cuối, vì vậy sẽ là an toàn khi thiết kế một cái gì đó dựa trên nhu cầu của riêng tôi. Dù ý tưởng của tôi là gì đi nữa thì ý tưởng đó sẽ phù hợp với những khuôn mẫu cho những người dùng khác. "Hãy nhớ rằng bạn không phải là người dùng của bạn. Bởi vì bạn biết quá rõ các vấn đề của sản phẩm, những giải pháp dường như là hoàn hảo với bạn lại có thể là giải pháp tồi tệ đối với hầu hết người dùng. Giải quyết các vấn đề mà bạn đã xác định cũng có nghĩa rằng bạn đã dành thời gian đáng kể tìm hiểu các chủ đề và có thể hiểu nó sâu hơn so với người dùng bình thường. Quan điểm của bạn về vấn đề này ngay bây giờ chỉ là ý kiến chủ quan, hơn tất cả đó là lí do tại sao bạn cần sử dụng ý kiến từ người sử dụng, để đảm bảo bạn đang giải quyết vấn đề đó một cách thực tế chứ không phải chỉ là từ ý kiến chủ quan của bạn.
 
-(Mời bạn xem tiếp [phần 2](2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/))
+(Mời bạn xem tiếp [phần 2](/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/))
 
 Dịch từ: [A lean apprroach to product validation](https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/)
