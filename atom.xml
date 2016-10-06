@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-10-05T11:09:34+00:00</updated>
+  <updated>2016-10-06T00:59:34+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -20,7 +20,7 @@
     <id>http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2</id>
     <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/10/04/tham-dinh-thi-truong.jpg" title="Thẩm định thị trường" ></p>
 
-<p>Đây là phần tiếp theo của <a href="2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/">Phần 1)</a>.</p>
+<p>Đây là phần tiếp theo của <a href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/">Phần 1</a>.</p>
 
 <h1>Thẩm Định Thị Trường</h1>
 
@@ -250,7 +250,7 @@ Một khi bạn đã thực hiện thử nghiệm với vài người dùng đ�
 
 <p>Bằng cách tập trung vào nghiên cứu người sử dụng, bạn có thể tránh được những sai lầm phổ biến như việc giả định các vấn đề bạn đang đối phó cũng là vấn đề của người khác gặp phải. Thông thường, chúng ta hay gặp những tình huống chẳng hạn như một nhà thiết kế nói rằng:&ldquo;Tôi giả định là người dùng cuối, vì vậy sẽ là an toàn khi thiết kế một cái gì đó dựa trên nhu cầu của riêng tôi. Dù ý tưởng của tôi là gì đi nữa thì ý tưởng đó sẽ phù hợp với những khuôn mẫu cho những người dùng khác. &#8220;Hãy nhớ rằng bạn không phải là người dùng của bạn. Bởi vì bạn biết quá rõ các vấn đề của sản phẩm, những giải pháp dường như là hoàn hảo với bạn lại có thể là giải pháp tồi tệ đối với hầu hết người dùng. Giải quyết các vấn đề mà bạn đã xác định cũng có nghĩa rằng bạn đã dành thời gian đáng kể tìm hiểu các chủ đề và có thể hiểu nó sâu hơn so với người dùng bình thường. Quan điểm của bạn về vấn đề này ngay bây giờ chỉ là ý kiến chủ quan, hơn tất cả đó là lí do tại sao bạn cần sử dụng ý kiến từ người sử dụng, để đảm bảo bạn đang giải quyết vấn đề đó một cách thực tế chứ không phải chỉ là từ ý kiến chủ quan của bạn.</p>
 
-<p>(Mời bạn xem tiếp <a href="2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">phần 2</a>)</p>
+<p>(Mời bạn xem tiếp <a href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">phần 2</a>)</p>
 
 <p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
 ]]></content>
@@ -2096,7 +2096,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x68;&#x71;&#64;&#x74;&#x65;&#x72;&#x61;&#x63;&#x79;&#46;&#99;&#111;&#x6d;">&#104;&#x71;&#64;&#116;&#101;&#x72;&#x61;&#99;&#x79;&#x2e;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#104;&#113;&#x40;&#x74;&#101;&#x72;&#x61;&#x63;&#x79;&#x2e;&#x63;&#x6f;&#x6d;">&#x68;&#x71;&#64;&#116;&#101;&#114;&#97;&#x63;&#x79;&#46;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
