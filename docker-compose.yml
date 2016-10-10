@@ -1,0 +1,13 @@
+preview:
+  build: .
+  command: bash -c "rake preview"
+  ports:
+    - "4000:4000"
+  volumes:
+    - .:/teracyBlog
+run:
+  build: .
+  working_dir: /teracyBlog/public
+  command: bash -c "ruby -run -ehttpd . -p4000"
+  ports:
+    - "4000:4000"

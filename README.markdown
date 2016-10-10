@@ -23,6 +23,31 @@ $ cd personal
 $ git clone <your_forked_repository_here>
 ```
 
+How to run blog with docker
+---------------------------
+
+First you must have docker and docker-compose in your machine.
+
+Update your content and use this command to preview the blog.
+
+```
+$ docker-compose up preview
+```
+
+Now, keep that console and open http://localhost:4000 to see the blog, It'll auto rebuild when you make change on your content.
+
+To generate docker image which contain the full blog.
+
+```
+$ docker build . --tag teracyhq/teracy-blog
+```
+
+The image will be created under tag teracyhq/teracy-blog, you can run it anytime by exectue this command:
+
+```
+$ docker run -t -i --rm teracyhq/teracy-blog
+```
+
 How to run blog on teracy-dev vagrant box
 -----------------------------------------
 
