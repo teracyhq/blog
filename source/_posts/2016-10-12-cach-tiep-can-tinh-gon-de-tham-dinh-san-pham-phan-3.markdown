@@ -120,7 +120,7 @@ Thẩm Định Một Vài Ý Tưởng
 ==========================
 Bây giờ bạn đã biết làm thế nào để thẩm định một ý tưởng của sản phẩm, cũng hãy tìm hiểu xem làm thế nào chúng ta có thể khám phá một vài ý tưởng sản phẩm:
 
-{% img center /images/2016/10/12/tham-dinh-mot-so-y-tuong.jpeg Thẩm định sản phẩm tinh gọn %}
+{% img center /images/2016/10/12/tham-dinh-mot-so-y-tuong.jpg Thẩm định sản phẩm tinh gọn %}
 
 Hãy xem 6 ý tưởng của chúng tôi được chỉ ra như thế nào khi chúng tôi đưa chúng vào trong quy trình thẩm định tinh gọn:
 
