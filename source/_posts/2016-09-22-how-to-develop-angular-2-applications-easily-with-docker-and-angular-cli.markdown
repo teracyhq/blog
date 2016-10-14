@@ -161,7 +161,7 @@ You can follow the following tutorial to create a simple todo application: https
 - https://github.com/AngularClass/awesome-angular2
 - https://github.com/timjacobi/angular2-education
 
-If you need any consultancy or outsourcing, please contact us. We're eager to build world class web
+If you need any consultancy or outsourcing, don't hesitate to contact us. We're eager to build world class web
 applications for you!
 
 Happy developing!
