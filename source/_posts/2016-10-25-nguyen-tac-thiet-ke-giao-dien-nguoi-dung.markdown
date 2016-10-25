@@ -17,7 +17,7 @@ keywords: design, ux, User Interface, User Interface Design, principles
 
 {% img center /images/2016/10/25/principles.jpg Nguyên tắc thiết kế %}
 
-Thiết kế là không đơn giản chỉ là lắp ghép, xếp theo thứ tự hay thậm chí là sửa đổi.Thiết kế chính là hàm chứa giá trị và ý nghĩa, là sự minh hoạ, đơn giản hoá, làm sáng tỏ, chỉnh sửa, tạo giá trị, kịch tính, thuyết phục và thậm chí là lôi cuốn.
+Thiết kế không đơn giản chỉ là lắp ghép, xếp theo thứ tự hay thậm chí là sửa đổi. Thiết kế chính là hàm chứa giá trị và ý nghĩa, là sự minh hoạ, đơn giản hoá, làm sáng tỏ, chỉnh sửa, tạo giá trị, kịch tính, thuyết phục và thậm chí là lôi cuốn.
 
 01 Sự rõ ràng là điều quan trọng nhất
 ====================================
