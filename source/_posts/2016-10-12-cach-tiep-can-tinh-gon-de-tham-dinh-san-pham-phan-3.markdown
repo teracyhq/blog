@@ -15,7 +15,7 @@ description: Cách tiếp cận thẩm định sản phẩm tinh gọn giúp b�
 keywords: Product Strategy, Product Validation, chiến lược sản phẩm, thẩm định sản phẩm
 ---
 
-Đây là phần tiếp theo của [Phần 2](/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan2/).
+Đây là phần tiếp theo của [Phần 2](/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/) và là phần cuối cùng của bài viết "Cách tiếp cận tinh gọn để thẩm định sản phẩm".
 
 Thẩm Định Sự Sẵn Sàng Chi Trả Của Người Dùng
 ============================================
@@ -32,12 +32,12 @@ Trang web chỉ cần có 1 trang duy nhất là cũng đủ để xác nhận, 
 
 Nếu bạn là dân kỹ thuật, bạn có thể tự thiết kế và lập trình trang web của mình, nhưng tốt hơn hết là hãy sử dựng công cụ xây dựng trang web có sẵn mẫu.
 
+<!-- more -->
+
 Dưới đây là một vài lựa chọn tốt để bạn xây dựng trang web thẩm định:
 
 - [Squarespace](https://www.squarespace.com/) có một số thiết kế khá bắt mắt.
-
 - [Webflow](https://webflow.com/) cho phép rất nhiều tùy biến và phù hợp để thiết kế những trang web có 1 trang duy nhất. 
-
 - [QuickMVP](http://quickmvp.com/) là một bộ công cụ rất hữu ích giúp tạo các landing pages để thẩm định các ý tưởng và sản phẩm. Nó đơn giản hóa quy trình tạo landing page, thiết lập quảng cáo và thu thập các số liệu thống kê.
 
 Bạn chắc chắn muốn có một vài thành phần trong trang web đơn giản của bạn.
@@ -46,11 +46,8 @@ Bạn chắc chắn muốn có một vài thành phần trong trang web đơn gi
 - Làm nổi bật những lợi điểm bán hàng độc nhất
 - Giải quyết bất kỳ vấn đề quan trọng nào mà người dùng gặp phải trong quá trình kiểm thử. Nếu họ lo lắng về bảo mật, hiệu suất hay sự thoải mái thì hãy trình bày giải pháp của bạn với họ.
 - Hãy thu hút, lôi kéo người dùng đến khu vực kiểm tra và thanh toán trong trang web của bạn. Điều này cũng cần rõ ràng và dứt khoát, như là "Mua ngay chỉ với $99!".
-
 - Hãy đảm bảo rằng trang thanh toán có biểu mẫu thu thập email, do đó bạn có thể thu thập được địa chỉ của các khách hàng tiềm năng. [MailChimp](http://mailchimp.com/) là một lựa chọn tốt cho bạn.
-
 - Thay vì xác nhận đơn đặt hàng của người dùng, bạn nên phô ra trang "Sorry" giải thích với họ tại sao bạn tiến hành các thí nghiệm. Bằng cách này họ sẽ không bị kỳ vọng sai khi nhận sản phẩm.
-
 - Chạy phân tích trên trang web của bạn để theo dõi xem mọi người tương tác với trang web của bạn như thế nào. Bạn có thể dùng công cụ [Google Analytics](https://analytics.google.com/analytics/web/), nó rất đơn giản và miễn phí.
 
 Khi trang web thẩm định đi vào hoạt động, bạn sẽ cần thu hút nhiều người truy cập. Hãy cẩn trọng một chút khi làm điều này trong mạng lưới bạn bè và gia đình của bạn. Bạn đừng để rơi vào tình cảnh mọi người đưa ra phản hồi tích cực, đăng ký vào trang web của bạn chỉ vì họ biết bạn.
@@ -73,11 +70,8 @@ Trong một gian hàng online thực tế, tỷ lệ rời bỏ giỏ hàng kho�
 
 Để tìm hiếu kỹ vấn đề này hơn, chúng tôi gợi ý bạn những điều sau đây:
 
-- [A/B test](https://www.smashingmagazine.com/2010/06/the-ultimate-guide-to-a-b-testing/)
-    Thử nghiệm với các tiêu đề và nội dung khác nhau để xem chúng ảnh hưởng đến chuyển đổi như thế nào. Tuy nhiên, các phát hiện của bạn sẽ chỉ có ý nghĩa thống kê nếu như bạn hướng được hàng nghìn lượt truy cập vào trang web của bạn.
-
-- Nói chuyện với khách hàng
-    Khi bạn thu thập địa chỉ email của ai đó, bạn sẽ có thể gửi tin nhắn hoặc bản tin cho họ và giải thích sản phẩm của bạn đang tiến triển thế nào. Tuy nhiên, bạn cũng có thể tiếp cận trực tiếp với họ và hỏi họ một vài câu hỏi để hiểu nhu cầu và động cơ của họ.
+- **[A/B test](https://www.smashingmagazine.com/2010/06/the-ultimate-guide-to-a-b-testing/)**: Thử nghiệm với các tiêu đề và nội dung khác nhau để xem chúng ảnh hưởng đến chuyển đổi như thế nào. Tuy nhiên, các phát hiện của bạn sẽ chỉ có ý nghĩa thống kê nếu như bạn hướng được hàng nghìn lượt truy cập vào trang web của bạn.
+- **Nói chuyện với khách hàng**: Khi bạn thu thập địa chỉ email của ai đó, bạn sẽ có thể gửi tin nhắn hoặc bản tin cho họ và giải thích sản phẩm của bạn đang tiến triển thế nào. Tuy nhiên, bạn cũng có thể tiếp cận trực tiếp với họ và hỏi họ một vài câu hỏi để hiểu nhu cầu và động cơ của họ.
 
 BẮT ĐẦU DỊCH VỤ CHĂM SÓC KHÁCH HÀNG
 -----------------------------------
@@ -86,7 +80,7 @@ Nguyên tắc cơ bản của dịch vụ chăm sóc khách hàng là trước k
 Hãy xem một ví dụ khác từ thế giới thực. Giả sử chúng ta xây dựng [PingPong](https://hellopingpong.com/) để giúp người dùng thu thập thông tin phản hồi và thực hiện các cuộc phỏng vấn. Công nghệ phía sau sản phảm này thực sự không phức tạp chút nào, nhưng đòi hỏi phải đầu tư vào thiết kế và phát triển để tung ra một sản phẩm hiệu quả. Rất nhiều công việc cần làm để có một sản phẩm thành công, nhưng ở giai đoạn đầu này, chúng ta vẫn còn nhiều giả định chưa được thẩm định về việc người dùng thực sự muốn gì.
 
 
-{% img center /images/2016/10/04/pingpong.jpg Pingpong %}
+{% img center /images/2016/10/12/pingpong.png Pingpong %}
 
 
 Thay vì thực hiện tất cả mọi việc và xây dựng một dịch vụ mà người dùng có thể đăng ký trực tiếp và sử dụng, thì chúng ta sẽ  đi theo con đường chăm sóc khách hàng. Vì vậy, cách duy nhất đối với khách hàng trả tiền để đăng ký đó là ngay bây giờ chúng ta phải đồng ý với họ sẽ tự thực hiện đơn hàng của họ. Cuối cùng thì sản phẩm sẽ được tiếp nhận và thực hiện các việc này một cách tự động. Tất nhiên sẽ luôn luôn có rủi ro đó là dịch vụ hướng dẫn này sẽ không thể bao quát được hết các nhu cầu và bạn sẽ phải chuyển xuống cho khách hàng; đây là một vấn đề khác mà bạn cần giải quyết và đó là một vấn đề nghiêm trọng của bạn.
@@ -103,7 +97,7 @@ Kỹ thuật này có vẻ như hơi gây ra hiểu lầm chút. Nhưng miễn l
 
 Hãy xem [Check Maid](https://checkmaid.com/), dịch vụ trực tuyến để tìm kiếm và đặt dịch vụ lau dọn nhà cửa. Khi nhóm tạo trang web lần đầu, thực sự họ vẫn chưa đi vào kinh doanh. Người sáng lập Check Maid ông Alex Brola nói:
 
-"Chúng tôi thẩm định ý tưởng của mình mà không có lấy một nhân viên dọn dẹp vệ sinh nào cả. Chúng tôi đưa ra trang web, tạo một biểu mẫu đặt dịch vụ, số điện thoại và chạy một vài quảng cáo [trả tiền theo số lượt nhấp chuột] (pay-per-clicks) thông qua Google và Bing, và xem tỷ lệ chuyển đổi như thế nào để chúng tôi quyết định có thực sự cần những người người dọn vệ sinh hay không."
+*"Chúng tôi thẩm định ý tưởng của mình mà không có lấy một nhân viên dọn dẹp vệ sinh nào cả. Chúng tôi đưa ra trang web, tạo một biểu mẫu đặt dịch vụ, số điện thoại và chạy một vài quảng cáo [trả tiền theo số lượt nhấp chuột](pay-per-clicks) thông qua Google và Bing, và xem tỷ lệ chuyển đổi như thế nào để chúng tôi quyết định có thực sự cần những người người dọn vệ sinh hay không."*
 
 {% img center /images/2016/10/12/gia-lap-landing-page.png Gỉa lập landing page %}
 
@@ -144,7 +138,7 @@ Thậm chí nếu bạn đã thẩm định xong tất cả các vấn đề th�
 
 Mục tiêu của quy trình thẩm định tinh gọn là giảm chi phí và thời gian lập trình. Đó là cách tốt nhất để bạn luôn tập trung, để tối thiểu hóa chi phí và tối đa hóa cơ hội thành công khi sản phẩm của bạn được tung ra. 
 
-Nếu bạn muốn tìm hiểu thêm thông tin, bạn có thể đọc [Khởi nghiệp tinh gọn](http://theleanstartup.com/) (The Lean Startup) của Eric Reiss. Như tên cuốn sách đã gợi ý,"Thẩm định tinh gọn" thực sự ảnh hưởng lớn đến cách làm việc tinh gọn.
+Nếu bạn muốn tìm hiểu thêm thông tin, bạn có thể đọc [Khởi nghiệp tinh gọn](http://theleanstartup.com/) (The Lean Startup) của Eric Reiss. Như tên cuốn sách đã gợi ý, "Thẩm định tinh gọn" thực sự ảnh hưởng lớn đến cách làm việc tinh gọn.
 
 Bây giờ bạn đã thẩm định, bạn đã sẵn sàng để bắt đầu suy nghĩ về việc làm thế nào để biến sản phẩm thành hiện thực. Hãy bước nhanh lên, nhưng cũng hãy cẩn trọng nhé. Thường xuyên nói chuyện với người dùng của bạn và duy trì quy trình thật tinh gọn. Chúng tôi hi vọng bạn sẽ làm được những điều lớn lao trong tương lai.
 
