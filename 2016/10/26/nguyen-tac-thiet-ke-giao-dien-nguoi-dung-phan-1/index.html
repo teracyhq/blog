@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1) - Teracy's Blog</title>
+  
+  <meta name="author" content="ngocnguyen">
+
+  
+  <meta name="description" content="Những nguyên tắc thiết kế giao diện người dùng">
+  <meta name="keywords" content="design, ux, ui, User Interface, User Interface Design, principles, nguyên tắc, thiết kế, giao diện người dùng">
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1) - Teracy's Blog" />
+  <meta property="og:description" content="Những nguyên tắc thiết kế giao diện người dùng" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/2016/10/25/principles.jpg" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracyhq" />
+  <meta name="twitter:creator" content="@ngocnguyen" />
+  <meta name="twitter:title" content="Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1) - Teracy's Blog" />
+  <meta name="twitter:description" content="Những nguyên tắc thiết kế giao diện người dùng" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/2016/10/25/principles.jpg" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="/javascripts/libs/jquery.browser.min.js" type="text/javascript"></script>
+<script src="/javascripts/font.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news">News</a></li>
+  <li><a href="/categories/projects">Projects</a></li>
+  <li><a href="/categories/how-to">How-to</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2016-10-26T10:50:00+00:00" datetime="2016-10-26T10:50:00+00:00" pubdate data-updated="true">Oct 26<span>th</span>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p><img class="center" src="/images/2016/10/25/principles.jpg" title="Nguyên tắc thiết kế" ></p>
+
+<p>Thiết kế không đơn giản chỉ là lắp ghép, xếp theo thứ tự hay thậm chí là sửa đổi. Thiết kế chính là hàm chứa giá trị và ý nghĩa, là sự minh hoạ, đơn giản hoá, làm sáng tỏ, chỉnh sửa, tạo giá trị, kịch tính, thuyết phục và thậm chí là lôi cuốn.</p>
+
+<h1>01. Sự rõ ràng là điều quan trọng nhất</h1>
+
+<p>Sự rõ ràng là điều quan trọng đầu tiên và cũng là quan trọng nhất của bất kỳ một giao diện nào. Một giao diện được thiết kế hiệu quả đó là mọi người phải có thể nhận biết được nó là gì, biết được vì sao họ nên sử dụng nó, biết được giao diện giúp họ tương tác với những gì, dự đoán được điều gì sẽ xảy ra khi họ sử dụng nó và sau đó là tương tác với giao diện thành công. Một giao diện có thể có chứa sự bí ẩn hay chưa mang lại sự hài lòng cho người dùng, nhưng sẽ không có chỗ cho sự nhầm lẫn. Tính minh bạch đem đến niềm tin cho người dùng và làm người dùng muốn tiếp tục sử dụng trong tương lai. Trăm màn hình rõ ràng còn hơn một tổ hợp màn hình lộn xộn.</p>
+
+<!-- more -->
+
+
+<h1>02. Giao diện mang đến sự tương tác</h1>
+
+<p>Giao diện mang đến sự tương tác giữa con người và thế giới của chúng ta. Giao diện có thể giúp làm sáng tỏ, mở rộng và cho phép các mối liên hệ, mang chúng ta lại với nhau, kéo chúng ta xa nhau, quản lý kỳ vọng của chúng ta, và cho chúng ta tiếp cận với các dịch vụ. Hành động thiết kế giao diện không phải là Nghệ Thuật. Bản thân giao diện không phải là những công trình bất hủ. Giao diện có vai trò riêng và hiệu quả của giao diện có thể đo đếm được. Tuy nhiên, giao diện không chỉ là các tiện ích. Các giao diện tốt nhất có thể truyền cảm hứng, phát triển và tăng cường mối quan hệ của chúng ta với thế giới.</p>
+
+<h1>03. Giữ sự tập trung bằng mọi giá</h1>
+
+<p>Chúng ta đang sống trong một thế giới liên tục bị sao nhãng bởi nhiều mối quan tâm khác nhau. Thật khó để đọc trong yên bình mà không có bất cứ thứ gì làm chúng ta mất tập trung, và hướng sự chú ý của ta vào những điều khác. Tập trung là điều quý giá. Đừng thiết kế ứng dụng của bạn có những yếu tố làm xao nhãng người dùng&hellip; hãy nhớ tại sao màn hình tồn tại ở nơi đầu tiên. Nếu có ai đang đọc thì hãy để họ đọc xong đã trước khi phô bày quảng cáo (nếu bạn phải đưa quảng cáo vào). Đề cao sự tập trung không chỉ độc giả của bạn sẽ hạnh phúc hơn, mà kết quả của bạn cũng sẽ sẽ tốt hơn. Khi sử dụng là mục tiêu chính, sự tập trung là điều kiện tiên quyết. Hãy giữ gìn sự tập trung bằng mọi giá.</p>
+
+<h1>04. Giữ sự kiểm soát cho người dùng</h1>
+
+<p>Con người cảm thấy thoải mái nhất khi họ được kiểm soát bản thân và môi trường của họ. Phần mềm thiếu đầu tư làm mất đi sự thoải mái của người dùng bằng cách bắt người dùng chú ý vào các tương tác không có kế hoạch, làm người dùng bị nhầm lẫn và mang đến kết quả bất ngờ. Giữ cho người dùng trong kiểm soát bằng cách thường xuyên hiện lên tình trạng hệ thống, bằng cách mô tả nhân quả (nếu bạn làm điều này thì điều gì sẽ xảy ra) và cho họ hiểu rõ điều gì sẽ xảy ra với mỗi sự thay đổi. Đừng lo lắng về việc diễn tả quá rõ ràng&hellip; rõ ràng gần như là không bao giờ.</p>
+
+<h1>05. Thao tác trực tiếp là tốt nhất</h1>
+
+<p>Giao diện tốt nhất không phải là tất cả khi chúng ta có thể trực tiếp thao tác với các vật thể trong thế giới của chúng ta. Bởi vì điều này không phải luôn luôn khả thi, và các vật thể thì ngày càng chứa đựng thông tin nên chúng ta đã tạo ra các giao diện để có thể tương tác với chúng. Thật dễ dàng để thêm nhiều lớp hơn mức cần thiết vào một giao diện như tạo ra các nút nhấn, chrome, các đồ họa, các tùy chọn, sự ưu tiên, các cửa sổ, các file đính kèm, và mã lệnh khác, để chúng ta kết thúc thực hiện thao tác với các yếu tố của giao diện người dùng thay vì những gì quan trọng. Thay vào đó, cố gắng cho mục tiêu ban đầu là sự thao tác trực tiếp&hellip; thiết kế một giao diện với một dấu chân nhỏ nhất có thể, ghi nhận cử chỉ, điệu bộ của con người nhiều nhất có thể. Theo lý tưởng, giao diện quá nhẹ đến mức người dùng có cảm giác thao tác trực tiếp với vật thể trong sự tập trung của họ.</p>
+
+<h1>06. Một hành động chính cho mỗi màn hình</h1>
+
+<p>Mỗi màn hình mà chúng ta thiết kế nên hỗ trợ cho một hành động duy nhất có giá trị thực sự cho người sử dụng nó. Điều này làm cho màn hình dễ tìm hiểu hơn, dễ sử dụng hơn, và dễ dàng hơn khi thêm vào hoặc phát triển khi cần thiết. Màn hình hỗ trợ hai hay nhiều hành động chính thì sẽ nhanh chóng gây
+ra nhầm lẫn. Giống như một bài viết thì nên có một luận điểm rõ ràng và duy nhất, mỗi màn hình chúng ta thiết kế nên hỗ trợ cho một hành động rõ ràng và duy nhất đó là điều đúng đắn.</p>
+
+<h1>07. Đặt những hành động phụ ở vị trí thứ yếu</h1>
+
+<p>Những màn hình với một hành động chính duy nhất có thể có nhiều hành động phụ, nhưng chúng cần phải được giữ ở vị trí thứ yếu! Lý do bài viết của bạn tồn tại không phải là để mọi người có thể chia sẻ nó trên Twitter&hellip; nó tồn tại là để cho mọi người đọc và hiểu nó. Giữ những hành động phụ bằng cách làm cho chúng ít được nhìn thấy hơn hoặc hiển thị sau khi đã đạt được hành động chính.</p>
+
+<h1>08. Đưa ra bước tiếp theo tự nhiên</h1>
+
+<p>Có quá ít tương tác thì dễ dẫn đến kết thúc, vì vậy cần thiết kế bước tiếp theo cho mỗi tương tác của người dùng với giao diện của bạn một cách cẩn thận. Dự tính trước sự tương tác tiếp theo sẽ nên là gì và thiết kế để hỗ trợ nó. Giống như chúng ta mong muốn trong cuộc trò chuyện của con người với nhau, gợi mở cho sự tương tác tiếp sau đó. Đừng để một người bị treo, bị đơ vì họ đã làm những gì bạn muốn họ làm&hellip; đưa ra cho họ bước tiếp theo tự nhiên để giúp họ tiếp tục đạt được những mục tiêu tiếp theo của mình.</p>
+
+<h1>09. Vẻ bề ngoài theo sau hành vi </h1>
+
+<p>Con người thoải mái nhất với những điều mà hành xử theo cách chúng ta mong đợi. Những người khác, những con vật, đồ vật, phần mềm. Khi một ai đó hoặc một cái gì đó hành xử một cách nhất quán với sự mong đợi của chúng ta, chúng ta cảm thấy như chúng ta có một mối quan hệ tốt với họ. Để làm được điều này thì các thành phần được thiết kế nên trông giống như cách chúng vận hành. Hình thức theo sau chức năng. Trong thực tế điều này có nghĩa là mọi người có thể dự đoán một yếu tố giao diện sẽ vận hành như thế nào chỉ bằng cách nhìn nó. Nếu nó trông giống như một cái nút thì nó phải hoạt động như một cái nút. Đừng làm cho những điều cơ bản của sự tương tác trở nên ngộ nghĩnh&hellip; Hãy giữ sự sáng tạo của bạn cho những mối quan tâm bậc cao hơn.</p>
+
+<p>(CÒN TIẾP)</p>
+
+<p>Bài dịch từ <a href="http://bokardo.com/principles-of-user-interface-design/">Principles of User Interface Design</a></p>
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Wed Oct 26 09:20:10 2016</strong><br/>BLOG-76 | minor updates and fixes
+</li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2016-10-26-nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">ngocnguyen</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2016-10-26T10:50:00+00:00" datetime="2016-10-26T10:50:00+00:00" pubdate data-updated="true">Oct 26<span>th</span>, 2016</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/trans/'>trans</a>, <a class='category' href='/categories/vi/'>vi</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/design/'>design</a>, <a class='tag' href='/tags/ui/'>ui</a>, <a class='tag' href='/tags/ux/'>ux</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/" data-via="teracyhq" data-counturl="http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/" title="Previous Post: Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 2)">&laquo; Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 2)</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracyhq"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/">Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">Cách Tiếp Cận Tinh Gọn để Thẩm định Sản Phẩm (Phần 2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/">Cách Tiếp Cận Tinh Gọn để Thẩm định Sản Phẩm (Phần 1)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/10/02/tap-hop-nhung-cuon-sach-hay-nen-doc-ve-ux/">Tập Hợp Những Cuốn Sách Hay Nên đọc về UX</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/">Những điều Cần Biết để Xây Dựng Thử Nghiệm Người Dùng Hiệu Quả</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracyhq">@teracyhq</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracyhq',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/';
+        var disqus_url = 'http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
