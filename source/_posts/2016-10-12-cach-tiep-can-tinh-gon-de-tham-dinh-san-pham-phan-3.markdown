@@ -38,18 +38,18 @@ Dưới đây là một vài lựa chọn tốt để bạn xây dựng trang we
 
 - [Webflow](https://webflow.com/) cho phép rất nhiều tùy biến và phù hợp để thiết kế những trang web có 1 trang duy nhất. 
 
-- [QuickMVP](http://quickmvp.com/) là một bộ công cụ rất hữu ích để tạo các landing pages để thẩm định các ý tưởng và sản phẩm. Nó đơn giản hóa quy trình tạo landing page, thiết lập quảng cáo và thu thập các số liệu thống kê.
+- [QuickMVP](http://quickmvp.com/) là một bộ công cụ rất hữu ích giúp tạo các landing pages để thẩm định các ý tưởng và sản phẩm. Nó đơn giản hóa quy trình tạo landing page, thiết lập quảng cáo và thu thập các số liệu thống kê.
 
-Bạn chắc chắn muốn có một vài thành phần trong trang web đơn giản của ban.
+Bạn chắc chắn muốn có một vài thành phần trong trang web đơn giản của bạn.
 
-- Hãy giải thích một cách rõ ràng và chính xác sản phẩm của bạn làm gì.
-- Làm nổi bật những điểm bán sản phẩm
+- Hãy giải thích một cách rõ ràng và chính xác tính năng sản phẩm của bạn.
+- Làm nổi bật những lợi điểm bán hàng độc nhất
 - Giải quyết bất kỳ vấn đề quan trọng nào mà người dùng gặp phải trong quá trình kiểm thử. Nếu họ lo lắng về bảo mật, hiệu suất hay sự thoải mái thì hãy trình bày giải pháp của bạn với họ.
 - Hãy thu hút, lôi kéo người dùng đến khu vực kiểm tra và thanh toán trong trang web của bạn. Điều này cũng cần rõ ràng và dứt khoát, như là "Mua ngay chỉ với $99!".
 
 - Hãy đảm bảo rằng trang thanh toán có biểu mẫu thu thập email, do đó bạn có thể thu thập được địa chỉ của các khách hàng tiềm năng. [MailChimp](http://mailchimp.com/) là một lựa chọn tốt cho bạn.
 
-- Thay về xác nhận đơn đặt hàng của người dùng, bạn nên phô ra trang "Sorry" giải thích với họ tại sao bạn tiến hành các thí nghiệm. Bằng cách này họ sẽ không bị kỳ vọng sai khi nhận sản phẩm.
+- Thay vì xác nhận đơn đặt hàng của người dùng, bạn nên phô ra trang "Sorry" giải thích với họ tại sao bạn tiến hành các thí nghiệm. Bằng cách này họ sẽ không bị kỳ vọng sai khi nhận sản phẩm.
 
 - Chạy phân tích trên trang web của bạn để theo dõi xem mọi người tương tác với trang web của bạn như thế nào. Bạn có thể dùng công cụ [Google Analytics](https://analytics.google.com/analytics/web/), nó rất đơn giản và miễn phí.
 
@@ -57,7 +57,7 @@ Khi trang web thẩm định đi vào hoạt động, bạn sẽ cần thu hút 
 
 Kỹ thuật tốt nhất để mang đến lượng traffic chủ quan đến trang web của bạn đó là chi một ít tiền cho [Facebook Ads](https://www.facebook.com/business/products/ads) hoặc chiến dịch quảng cáo của [Google AdWords](https://www.google.com/adwords/?subid=vn-en-or-ot-aw-c-dyn-www.smashingmagazine.com!o2).
 
-Có thể bạn sẽ cần chi khoảng 100$ - 500$ cho vụ quảng cáo để có đủ người dùng truy nhập vào trang web của bạn để thẩm định. Chi phí này dường như cũng là khá tốn kém, đó cũng là lý do vì sao chúng tôi đê giai đoạn thẩm định này ở gần cuối bài. Hãy suy nghĩ kỹ theo cách này, 100$ - 500% là chi phí an toàn và ít rủi ro hơn so với chi tiêu hàng ngàn đô la xây dựng một trang web thực sự. Hơn nữa, nếu ý tưởng sản phẩm mạnh mẽ thì số tiền này cũng không bị lãng phí. Bạn sẽ xây dựng được một danh sách lớn những người dùng quan tâm đến sản phẩm của bạn - có thể là những người sẽ đăng ký cho sản phẩm khi nó thực sự ra mắt.
+Có thể bạn sẽ cần chi khoảng 100$ - 500$ cho vụ quảng cáo để có đủ người dùng truy nhập vào trang web của bạn để thẩm định. Chi phí này dường như cũng là khá tốn kém, đó cũng là lý do vì sao chúng tôi để giai đoạn thẩm định này ở gần cuối bài. Hãy suy nghĩ kỹ theo cách này, 100$ - 500% là chi phí an toàn và ít rủi ro hơn so với chi tiêu hàng ngàn đô la xây dựng một trang web thực sự. Hơn nữa, nếu ý tưởng sản phẩm mạnh mẽ thì số tiền này cũng không bị lãng phí. Bạn sẽ xây dựng được một danh sách lớn những người dùng quan tâm đến sản phẩm của bạn - có thể là những người sẽ đăng ký cho sản phẩm khi nó thực sự ra mắt.
 
 [Facebook](https://www.facebook.com/business) và [Google AdWords](https://www.google.com/adwords/?subid=vn-en-or-ot-aw-c-dyn-www.smashingmagazine.com!o2) có khả năng nhắm mục tiêu rất cao, cho phép bạn trình bày giải pháp của mình đến đúng đối tượng mà bạn muốn trong giai đoạn "Thẩm định vấn đề". Bạn cũng có thể tối ưu quảng cáo của mình bằng cách xem xét kỹ các dữ liệu từ những quảng cáo ban đầu như: số lần click, like và share và nơi người dùng tương tác với nó. Bắt đầu một chiến dịch quảng cáo trên Google AdWords hoặc Facebook thực sự rất đơn giản. Chúng tôi sẽ không chỉ ra các bước cài đặt quảng cáo này ở đây, bạn có thể tìm kiếm bằng Google để biết làm thế nào tạo một chiến dịch quảng cáo nhanh.
 
@@ -99,7 +99,7 @@ GIẢ LẬP LANDING PAGE
 ---------------------
 Cách tốt nhất để thẩm định mà không có sự tham gia của những người không thực sự muốn trả tiền mua sản phẩm của bạn đó là xây dựng một trang web tiếp thị giả mạo.
 
-Kỹ thuật này có vẻ như hơi gây ra hiểu lầm chút. Những miễn là bạn không lấy tiền của mọi người nếu như bạn không cung cấp gì cho họ, thường thì mọi người sẽ hiểu được động cơ của bạn.
+Kỹ thuật này có vẻ như hơi gây ra hiểu lầm chút. Nhưng miễn là bạn không lấy tiền của mọi người cho những gì mà bạn không cung cấp cho họ, thường thì mọi người sẽ hiểu được động cơ của bạn.
 
 Hãy xem [Check Maid](https://checkmaid.com/), dịch vụ trực tuyến để tìm kiếm và đặt dịch vụ lau dọn nhà cửa. Khi nhóm tạo trang web lần đầu, thực sự họ vẫn chưa đi vào kinh doanh. Người sáng lập Check Maid ông Alex Brola nói:
 
@@ -112,7 +112,7 @@ Việc thẩm định sự sẵn sàng chi trả bằng cách sử dụng landin
 
 Điều quan trọng là trình bày nội dung tiếp thị và hiển thị rõ ràng đường link "Đăng ký" hoặc "Mua ngay". Khi người dùng click vào đường link này, bạn sẽ hiển thị một thông điệp giải thích tại sao dịch vụ vẫn chưa hoạt động, và đề nghị họ nhập địa chỉ email của họ để nhận thông tin cập nhật khi sản phẩm được tung ra. Hơn nữa, ý tưởng tốt là sẽ có phần thưởng cho những người dùng đầu tiên bằng cách nói với họ rằng họ sẽ được giảm giá hoặc những phần thưởng khác dành cho những người ủng hộ đầu tiên.
 
-Chúng tôi khuyên bạn không nên đi đi xa hơn ngoài việc lưu trữ địa chỉ email của họ (để bạn có thể liên lạc với họ sau này) và có thể thông tin về khu vực họ ở nếu như có liên quan đến sản phẩm của bạn (để đánh giá nhu cầu sử dụng theo vùng). Hãy để họ biết được sản phẩm vẫn chưa được hoàn thành càng sớm càng tốt. Nhiều điều luật, đặc biệt là ở Châu Âu, cấm  quảng cáo gây hiểu lầm - thật cẩn thận để không thanh toán hay tiếc lộ thông tin các nhân nhạy cảm một cách nhầm lẫn. 
+Chúng tôi khuyên bạn không nên đi đi xa hơn ngoài việc lưu trữ địa chỉ email của họ (để bạn có thể liên lạc với họ sau này) và có thể thông tin về khu vực họ ở nếu như có liên quan đến sản phẩm của bạn (để đánh giá nhu cầu sử dụng theo vùng). Hãy để họ biết được sản phẩm vẫn chưa được hoàn thành càng sớm càng tốt. Nhiều điều luật, đặc biệt là ở Châu Âu, cấm  quảng cáo gây hiểu lầm - thật cẩn thận để không thanh toán hay tiết lộ thông tin cá nhân nhạy cảm một cách nhầm lẫn. 
 
 Nếu bạn muốn tránh một trang langding page giả lập, bạn có thể lựa chọn theo cách chăm sóc khách hàng, cách này về mặt đạo đức mà nói thì ít nhạy cảm hơn và thường là một giải pháp thay thế rất tốt.
 
@@ -125,7 +125,7 @@ Bây giờ bạn đã biết làm thế nào để thẩm định một ý tư�
 Hãy xem 6 ý tưởng của chúng tôi được chỉ ra như thế nào khi chúng tôi đưa chúng vào trong quy trình thẩm định tinh gọn:
 
 1. Ý tưởng này thất bại ngay từ đầu vì chúng tôi không thể thẩm định được vấn đề. 
-2. Ý tưởng này thẩm định được vấn đề nhưng không thể xây dựng được thị tường.
+2. Ý tưởng này thẩm định được vấn đề nhưng không thể xây dựng được thị trường.
 3. Ý tưởng này thất bại khi thẩm định vấn đề.
 4. Ý tưởng này thẩm định được vấn đề và thị trường nhưng nó lại không thể thẩm định được sản phẩm.
 5. Đây là một vấn đề xoay quanh ý tưởng 4. Có thể nguyên mẫu đầu tiên của chúng tôi bị thất bại, vì vậy chúng tôi quyết định xây một nguyên mẫu mới. Lần này chúng tôi có thể học hỏi được vài điều từ những sai lầm của mình và thực hiện bước tiếp cận khác. Ý tưởng này thẩm định được sản phẩm, nhưng lại thất bại khi thẩm định sự sẵn sàng trả tiền mua sản phẩm của người dùng.
@@ -142,9 +142,9 @@ Tiếp Theo Là Gì?
 
 Thậm chí nếu bạn đã thẩm định xong tất cả các vấn đề thì cũng không thể đảm bảo được rằng sản phẩm của bạn sẽ thành công. Quy trình thẩm định chỉ mới là bắt đầu thôi. Tuy nhiên nếu bạn thực hiện đầy đủ quy trình này và hoàn thành tất cả các giai đoạn, thì bạn đã có một vị thế tốt rồi đấy. 
 
-Mục tiêu của quy trình thẩm định nhanh là giảm chi phí và thời gian lập trình. Đó là cách tốt nhất để bạn luôn tập trung, để tối thiểu hóa chi phí và tối đa hóa cơ hội thành công khi sản phẩm của bạn được tung ra. 
+Mục tiêu của quy trình thẩm định tinh gọn là giảm chi phí và thời gian lập trình. Đó là cách tốt nhất để bạn luôn tập trung, để tối thiểu hóa chi phí và tối đa hóa cơ hội thành công khi sản phẩm của bạn được tung ra. 
 
-Nếu bạn muốn tìm hiểu thêm thông tin, bạn có thể đọc quyên [Khởi nghiệp tinh gọn](http://theleanstartup.com/) (The Lean Startup) của Eric Reiss. Như tên cuốn sách đã gợi ý,"Thẩm định tinh gọn" thực sự ảnh hưởng lớn đến cách làm việc tinh gọn.
+Nếu bạn muốn tìm hiểu thêm thông tin, bạn có thể đọc [Khởi nghiệp tinh gọn](http://theleanstartup.com/) (The Lean Startup) của Eric Reiss. Như tên cuốn sách đã gợi ý,"Thẩm định tinh gọn" thực sự ảnh hưởng lớn đến cách làm việc tinh gọn.
 
 Bây giờ bạn đã thẩm định, bạn đã sẵn sàng để bắt đầu suy nghĩ về việc làm thế nào để biến sản phẩm thành hiện thực. Hãy bước nhanh lên, nhưng cũng hãy cẩn trọng nhé. Thường xuyên nói chuyện với người dùng của bạn và duy trì quy trình thật tinh gọn. Chúng tôi hi vọng bạn sẽ làm được những điều lớn lao trong tương lai.
 
