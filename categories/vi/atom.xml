@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vi | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-10-26T09:22:40+00:00</updated>
+  <updated>2016-10-28T02:39:18+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -14,11 +14,158 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 3)]]></title>
+    <link href="http://blog.teracy.com/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/"/>
+    <updated>2016-10-28T10:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3</id>
+    <content type="html"><![CDATA[<p>Đây là phần tiếp theo của <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">Phần 2</a> và là phần cuối cùng của bài viết &ldquo;Cách tiếp cận tinh gọn để thẩm định sản phẩm&rdquo;.</p>
+
+<h1>Thẩm Định Sự Sẵn Sàng Chi Trả Của Người Dùng</h1>
+
+<p>Có rất nhiều cách để thẩm định sự sẵn sàng chi trả của người dùng, nhưng một trong những thách thức lớn nhất đó là chúng ta không thể hoàn toàn tin tưởng vào lời nói. Chúng ta đều biết những người nói &ldquo;Tất nhiên, tôi hoàn toàn muốn làm điều đó!&rdquo; nhưng sau đó họ không giữ lời đến thời điểm cam kết. Chúng ta muốn có được những khách hàng chi tiền sau khi họ nói càng nhiều càng tốt.</p>
+
+<p><img class="center" src="/images/2016/10/28/tham-dinh-su-san-sang-chi-tra.jpg" title="Thẩm định sự sẵn sàng chi trả" ></p>
+
+<h2>CÁCH XÂY DỰNG MỘT TRANG WEB THẨM ĐỊNH</h2>
+
+<p>Trang web chỉ cần có 1 trang duy nhất là cũng đủ để xác nhận, đặc biệt được coi là một bước đầu tiên. Nhưng nếu bạn muốn dần dần bổ sung thêm nhiều trang và nội dung để tăng tính chính xác và tìm hiểu thêm thì đó cũng là một lựa chọn.</p>
+
+<p>Nếu bạn là dân kỹ thuật, bạn có thể tự thiết kế và lập trình trang web của mình, nhưng tốt hơn hết là hãy sử dựng công cụ xây dựng trang web có sẵn mẫu.</p>
+
+<!-- more -->
+
+
+<p>Dưới đây là một vài lựa chọn tốt để bạn xây dựng trang web thẩm định:</p>
+
+<ul>
+<li><a href="https://www.squarespace.com/">Squarespace</a> có một số thiết kế khá bắt mắt.</li>
+<li><a href="https://webflow.com/">Webflow</a> cho phép rất nhiều tùy biến và phù hợp để thiết kế những trang web có 1 trang duy nhất.</li>
+<li><a href="http://quickmvp.com/">QuickMVP</a> là một bộ công cụ rất hữu ích giúp tạo các landing pages để thẩm định các ý tưởng và sản phẩm. Nó đơn giản hóa quy trình tạo landing page, thiết lập quảng cáo và thu thập các số liệu thống kê.</li>
+</ul>
+
+
+<p>Bạn chắc chắn muốn có một vài thành phần trong trang web đơn giản của bạn.</p>
+
+<ul>
+<li>Hãy giải thích một cách rõ ràng và chính xác tính năng sản phẩm của bạn.</li>
+<li>Làm nổi bật những lợi điểm bán hàng độc nhất</li>
+<li>Giải quyết bất kỳ vấn đề quan trọng nào mà người dùng gặp phải trong quá trình kiểm thử. Nếu họ lo lắng về bảo mật, hiệu suất hay sự thoải mái thì hãy trình bày giải pháp của bạn với họ.</li>
+<li>Hãy thu hút, lôi kéo người dùng đến khu vực kiểm tra và thanh toán trong trang web của bạn. Điều này cũng cần rõ ràng và dứt khoát, như là &ldquo;Mua ngay chỉ với $99!&rdquo;.</li>
+<li>Hãy đảm bảo rằng trang thanh toán có biểu mẫu thu thập email, do đó bạn có thể thu thập được địa chỉ của các khách hàng tiềm năng. <a href="http://mailchimp.com/">MailChimp</a> là một lựa chọn tốt cho bạn.</li>
+<li>Thay vì xác nhận đơn đặt hàng của người dùng, bạn nên phô ra trang &ldquo;Sorry&rdquo; giải thích với họ tại sao bạn tiến hành các thí nghiệm. Bằng cách này họ sẽ không bị kỳ vọng sai khi nhận sản phẩm.</li>
+<li>Chạy phân tích trên trang web của bạn để theo dõi xem mọi người tương tác với trang web của bạn như thế nào. Bạn có thể dùng công cụ <a href="https://analytics.google.com/analytics/web/">Google Analytics</a>, nó rất đơn giản và miễn phí.</li>
+</ul>
+
+
+<p>Khi trang web thẩm định đi vào hoạt động, bạn sẽ cần thu hút nhiều người truy cập. Hãy cẩn trọng một chút khi làm điều này trong mạng lưới bạn bè và gia đình của bạn. Bạn đừng để rơi vào tình cảnh mọi người đưa ra phản hồi tích cực, đăng ký vào trang web của bạn chỉ vì họ biết bạn.</p>
+
+<p>Kỹ thuật tốt nhất để mang đến lượng traffic chủ quan đến trang web của bạn đó là chi một ít tiền cho <a href="https://www.facebook.com/business/products/ads">Facebook Ads</a> hoặc chiến dịch quảng cáo của <a href="https://www.google.com/adwords/?subid=vn-en-or-ot-aw-c-dyn-www.smashingmagazine.com!o2">Google AdWords</a>.</p>
+
+<p>Có thể bạn sẽ cần chi khoảng 100$ &ndash; 500$ cho vụ quảng cáo để có đủ người dùng truy nhập vào trang web của bạn để thẩm định. Chi phí này dường như cũng là khá tốn kém, đó cũng là lý do vì sao chúng tôi để giai đoạn thẩm định này ở gần cuối bài. Hãy suy nghĩ kỹ theo cách này, 100$ &ndash; 500% là chi phí an toàn và ít rủi ro hơn so với chi tiêu hàng ngàn đô la xây dựng một trang web thực sự. Hơn nữa, nếu ý tưởng sản phẩm mạnh mẽ thì số tiền này cũng không bị lãng phí. Bạn sẽ xây dựng được một danh sách lớn những người dùng quan tâm đến sản phẩm của bạn &ndash; có thể là những người sẽ đăng ký cho sản phẩm khi nó thực sự ra mắt.</p>
+
+<p><a href="https://www.facebook.com/business">Facebook</a> và <a href="https://www.google.com/adwords/?subid=vn-en-or-ot-aw-c-dyn-www.smashingmagazine.com!o2">Google AdWords</a> có khả năng nhắm mục tiêu rất cao, cho phép bạn trình bày giải pháp của mình đến đúng đối tượng mà bạn muốn trong giai đoạn &ldquo;Thẩm định vấn đề&rdquo;. Bạn cũng có thể tối ưu quảng cáo của mình bằng cách xem xét kỹ các dữ liệu từ những quảng cáo ban đầu như: số lần click, like và share và nơi người dùng tương tác với nó. Bắt đầu một chiến dịch quảng cáo trên Google AdWords hoặc Facebook thực sự rất đơn giản. Chúng tôi sẽ không chỉ ra các bước cài đặt quảng cáo này ở đây, bạn có thể tìm kiếm bằng Google để biết làm thế nào tạo một chiến dịch quảng cáo nhanh.</p>
+
+<p>Chúng tôi khuyên bạn nên để ý đến một vài số liệu:</p>
+
+<ul>
+<li><a href="https://www.smashingmagazine.com/2009/05/optimizing-conversion-rates-its-all-about-usability/">Tỷ lệ chuyển đổi</a></li>
+<li>Có bao nhiêu khách đã cố gắng để mua được sản phẩm?</li>
+<li>Tổng số &ldquo;bán hàng&rdquo;</li>
+<li>Tìm hiểu xem doanh số bán hàng đến từ đâu (về mặt địa lý).</li>
+<li>Tỷ lệ bỏ giỏ hàng</li>
+</ul>
+
+
+<p>Trong một gian hàng online thực tế, tỷ lệ rời bỏ giỏ hàng khoảng 60 &ndash; 80% (<a href="http://baymard.com/lists/cart-abandonment-rate">trung bình là 68%</a>). Điều này có nghĩa là sẽ có 7 trong số 10 người đến phần kiểm tra thanh toán nhưng không hoàn tất việc thanh toán.</p>
+
+<p>Để tìm hiếu kỹ vấn đề này hơn, chúng tôi gợi ý bạn những điều sau đây:</p>
+
+<ul>
+<li><strong><a href="https://www.smashingmagazine.com/2010/06/the-ultimate-guide-to-a-b-testing/">A/B test</a></strong>: Thử nghiệm với các tiêu đề và nội dung khác nhau để xem chúng ảnh hưởng đến chuyển đổi như thế nào. Tuy nhiên, các phát hiện của bạn sẽ chỉ có ý nghĩa thống kê nếu như bạn hướng được hàng nghìn lượt truy cập vào trang web của bạn.</li>
+<li><strong>Nói chuyện với khách hàng</strong>: Khi bạn thu thập địa chỉ email của ai đó, bạn sẽ có thể gửi tin nhắn hoặc bản tin cho họ và giải thích sản phẩm của bạn đang tiến triển thế nào. Tuy nhiên, bạn cũng có thể tiếp cận trực tiếp với họ và hỏi họ một vài câu hỏi để hiểu nhu cầu và động cơ của họ.</li>
+</ul>
+
+
+<h2>BẮT ĐẦU DỊCH VỤ CHĂM SÓC KHÁCH HÀNG</h2>
+
+<p>Nguyên tắc cơ bản của dịch vụ chăm sóc khách hàng là trước khi thực sự xây dựng một phần mềm nào đó, bạn nên giả lập dịch vụ và tự thực hiện đặt đơn hàng.</p>
+
+<p>Hãy xem một ví dụ khác từ thế giới thực. Giả sử chúng ta xây dựng <a href="https://hellopingpong.com/">PingPong</a> để giúp người dùng thu thập thông tin phản hồi và thực hiện các cuộc phỏng vấn. Công nghệ phía sau sản phảm này thực sự không phức tạp chút nào, nhưng đòi hỏi phải đầu tư vào thiết kế và phát triển để tung ra một sản phẩm hiệu quả. Rất nhiều công việc cần làm để có một sản phẩm thành công, nhưng ở giai đoạn đầu này, chúng ta vẫn còn nhiều giả định chưa được thẩm định về việc người dùng thực sự muốn gì.</p>
+
+<p><img class="center" src="/images/2016/10/28/pingpong.png" title="Pingpong" ></p>
+
+<p>Thay vì thực hiện tất cả mọi việc và xây dựng một dịch vụ mà người dùng có thể đăng ký trực tiếp và sử dụng, thì chúng ta sẽ  đi theo con đường chăm sóc khách hàng. Vì vậy, cách duy nhất đối với khách hàng trả tiền để đăng ký đó là ngay bây giờ chúng ta phải đồng ý với họ sẽ tự thực hiện đơn hàng của họ. Cuối cùng thì sản phẩm sẽ được tiếp nhận và thực hiện các việc này một cách tự động. Tất nhiên sẽ luôn luôn có rủi ro đó là dịch vụ hướng dẫn này sẽ không thể bao quát được hết các nhu cầu và bạn sẽ phải chuyển xuống cho khách hàng; đây là một vấn đề khác mà bạn cần giải quyết và đó là một vấn đề nghiêm trọng của bạn.</p>
+
+<p>Điều này có thể giống như một cam kết về thời gian rất lớn, nhưng thực tế nó mang đến rất nhiều bài học quan trọng. Chúng tôi sẽ tự chạy dịch vụ ngay khi bắt đầu và xây dựng những mối quan hệ sâu sắc với một vài khách hàng đầu tiên của mình.  Bởi vì chúng tôi giao tiếp với họ nhiều, chúng tôi sẽ hỏi họ những câu hỏi liên quan đến nhu cầu và mong đợi của họ, sau đó sử dụng thông tin phản hồi của họ để tinh chỉnh mô hình kinh doanh của chúng tôi trước khi chúng tôi xây dựng một sản phẩm đầy đủ. Đây là một cách rất hay để thẩm định chính xác xem người dùng sẵn sàng chi trả cho cái gì và để tối đa hóa giá trị người dùng.</p>
+
+<p>Thêm nữa, thực hiện dịch vụ chăm sóc khách hàng có nghĩa là bạn sẽ có thể kiếm tiền ngay lập tức.</p>
+
+<h2>GIẢ LẬP LANDING PAGE</h2>
+
+<p>Cách tốt nhất để thẩm định mà không có sự tham gia của những người không thực sự muốn trả tiền mua sản phẩm của bạn đó là xây dựng một trang web tiếp thị giả mạo.</p>
+
+<p>Kỹ thuật này có vẻ như hơi gây ra hiểu lầm chút. Nhưng miễn là bạn không lấy tiền của mọi người cho những gì mà bạn không cung cấp cho họ, thường thì mọi người sẽ hiểu được động cơ của bạn.</p>
+
+<p>Hãy xem <a href="https://checkmaid.com/">Check Maid</a>, dịch vụ trực tuyến để tìm kiếm và đặt dịch vụ lau dọn nhà cửa. Khi nhóm tạo trang web lần đầu, thực sự họ vẫn chưa đi vào kinh doanh. Người sáng lập Check Maid ông Alex Brola nói:</p>
+
+<p><em>&ldquo;Chúng tôi thẩm định ý tưởng của mình mà không có lấy một nhân viên dọn dẹp vệ sinh nào cả. Chúng tôi đưa ra trang web, tạo một biểu mẫu đặt dịch vụ, số điện thoại và chạy một vài quảng cáo <a href="pay-per-clicks">trả tiền theo số lượt nhấp chuột</a> thông qua Google và Bing, và xem tỷ lệ chuyển đổi như thế nào để chúng tôi quyết định có thực sự cần những người người dọn vệ sinh hay không.&rdquo;</em></p>
+
+<p><img class="center" src="/images/2016/10/28/gia-lap-landing-page.png" title="Gỉa lập landing page" ></p>
+
+<p>Việc thẩm định sự sẵn sàng chi trả bằng cách sử dụng landing page giả lập sẽ thực sự là cái mà bạn phải quan tâm. Nếu bạn làm nó sai, bạn có thể phá hủy thương hiệu của bạn và làm cho người dùng vô cùng thất vọng.</p>
+
+<p>Điều quan trọng là trình bày nội dung tiếp thị và hiển thị rõ ràng đường link &ldquo;Đăng ký&rdquo; hoặc &ldquo;Mua ngay&rdquo;. Khi người dùng click vào đường link này, bạn sẽ hiển thị một thông điệp giải thích tại sao dịch vụ vẫn chưa hoạt động, và đề nghị họ nhập địa chỉ email của họ để nhận thông tin cập nhật khi sản phẩm được tung ra. Hơn nữa, ý tưởng tốt là sẽ có phần thưởng cho những người dùng đầu tiên bằng cách nói với họ rằng họ sẽ được giảm giá hoặc những phần thưởng khác dành cho những người ủng hộ đầu tiên.</p>
+
+<p>Chúng tôi khuyên bạn không nên đi đi xa hơn ngoài việc lưu trữ địa chỉ email của họ (để bạn có thể liên lạc với họ sau này) và có thể thông tin về khu vực họ ở nếu như có liên quan đến sản phẩm của bạn (để đánh giá nhu cầu sử dụng theo vùng). Hãy để họ biết được sản phẩm vẫn chưa được hoàn thành càng sớm càng tốt. Nhiều điều luật, đặc biệt là ở Châu Âu, cấm  quảng cáo gây hiểu lầm &ndash; thật cẩn thận để không thanh toán hay tiết lộ thông tin cá nhân nhạy cảm một cách nhầm lẫn.</p>
+
+<p>Nếu bạn muốn tránh một trang langding page giả lập, bạn có thể lựa chọn theo cách chăm sóc khách hàng, cách này về mặt đạo đức mà nói thì ít nhạy cảm hơn và thường là một giải pháp thay thế rất tốt.</p>
+
+<h1>Thẩm Định Một Vài Ý Tưởng</h1>
+
+<p>Bây giờ bạn đã biết làm thế nào để thẩm định một ý tưởng của sản phẩm, cũng hãy tìm hiểu xem làm thế nào chúng ta có thể khám phá một vài ý tưởng sản phẩm:</p>
+
+<p><img class="center" src="/images/2016/10/28/tham-dinh-mot-so-y-tuong.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
+
+<p>Hãy xem 6 ý tưởng của chúng tôi được chỉ ra như thế nào khi chúng tôi đưa chúng vào trong quy trình thẩm định tinh gọn:</p>
+
+<ol>
+<li>Ý tưởng này thất bại ngay từ đầu vì chúng tôi không thể thẩm định được vấn đề.</li>
+<li>Ý tưởng này thẩm định được vấn đề nhưng không thể xây dựng được thị trường.</li>
+<li>Ý tưởng này thất bại khi thẩm định vấn đề.</li>
+<li>Ý tưởng này thẩm định được vấn đề và thị trường nhưng nó lại không thể thẩm định được sản phẩm.</li>
+<li>Đây là một vấn đề xoay quanh ý tưởng 4. Có thể nguyên mẫu đầu tiên của chúng tôi bị thất bại, vì vậy chúng tôi quyết định xây một nguyên mẫu mới. Lần này chúng tôi có thể học hỏi được vài điều từ những sai lầm của mình và thực hiện bước tiếp cận khác. Ý tưởng này thẩm định được sản phẩm, nhưng lại thất bại khi thẩm định sự sẵn sàng trả tiền mua sản phẩm của người dùng.</li>
+<li>Ý tưởng cuối cùng là thẩm định cả 4 giai đoạn. Trong số những ý tưởng này thì đây là ý tưởng mà chúng ta cần tìm hiểu và phát triển xa hơn nữa.</li>
+</ol>
+
+
+<p>Bạn sẽ thấy, nhiều ý tưởng tuyệt vời của bạn bị thất bại ngay từ đầu trong quy trình này. Việc tìm ra vấn đề mà bạn cố gắng giải quyết đơn giản không phải là vấn đề của người dùng thực sự vô cùng phổ biến. Nhưng với sự kiên trì và lặp đi lặp lại, cuối cùng bạn sẽ có được ý tưởng sản phẩm được thẩm định.</p>
+
+<p>Bạn có thể chú ý thấy rằng tính khả thi thẩm định ở mỗi giai đoạn khá thấp. Bạn có thể cần phải tinh chỉnh lại ý tưởng ban đầu của mình để giải quyết vấn đề cấp bách hơn mà bạn mới phát hiện ra. Điều này cũng thật tuyệt. Thực tế bạn luôn được khuyến khích như thế. Sự linh hoạt và luôn suy nghĩ thông thoáng về việc điều chỉnh ý tưởng có thể được trả xứng đáng nếu như làm đúng. Và đó cũng là lý do vì sao quy trình thẩm định tinh gọn đẩy bạn đến thất bại sớm và nhanh chóng trước khi bạn bị gắn chặt với ý tưởng hay sản phẩm của mình.</p>
+
+<p>Lưu ý rằng các tiêu chí trên cùng với trình tự của chúng, tất cả đơn giản chỉ là hướng dẫn mang tính gợi ý. Mục tiêu cuối cùng là thật tinh gọn như có thể, và bạn sẽ đứng ở vị trí tốt nhất để quyêt định ý tưởng của mình có ý nghĩa gì.</p>
+
+<h1>Tiếp Theo Là Gì?</h1>
+
+<p>Thậm chí nếu bạn đã thẩm định xong tất cả các vấn đề thì cũng không thể đảm bảo được rằng sản phẩm của bạn sẽ thành công. Quy trình thẩm định chỉ mới là bắt đầu thôi. Tuy nhiên nếu bạn thực hiện đầy đủ quy trình này và hoàn thành tất cả các giai đoạn, thì bạn đã có một vị thế tốt rồi đấy.</p>
+
+<p>Mục tiêu của quy trình thẩm định tinh gọn là giảm chi phí và thời gian lập trình. Đó là cách tốt nhất để bạn luôn tập trung, để tối thiểu hóa chi phí và tối đa hóa cơ hội thành công khi sản phẩm của bạn được tung ra.</p>
+
+<p>Nếu bạn muốn tìm hiểu thêm thông tin, bạn có thể đọc <a href="http://theleanstartup.com/">Khởi nghiệp tinh gọn</a> (The Lean Startup) của Eric Reiss. Như tên cuốn sách đã gợi ý, &ldquo;Thẩm định tinh gọn&rdquo; thực sự ảnh hưởng lớn đến cách làm việc tinh gọn.</p>
+
+<p>Bây giờ bạn đã thẩm định, bạn đã sẵn sàng để bắt đầu suy nghĩ về việc làm thế nào để biến sản phẩm thành hiện thực. Hãy bước nhanh lên, nhưng cũng hãy cẩn trọng nhé. Thường xuyên nói chuyện với người dùng của bạn và duy trì quy trình thật tinh gọn. Chúng tôi hi vọng bạn sẽ làm được những điều lớn lao trong tương lai.</p>
+
+<p>Chúc bạn may mắn!</p>
+
+<p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)]]></title>
     <link href="http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/"/>
     <updated>2016-10-26T10:50:00+00:00</updated>
     <id>http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/25/principles.jpg" title="Nguyên tắc thiết kế" ></p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/26/principles.jpg" title="Nguyên tắc thiết kế" ></p>
 
 <p>Thiết kế không đơn giản chỉ là lắp ghép, xếp theo thứ tự hay thậm chí là sửa đổi. Thiết kế chính là hàm chứa giá trị và ý nghĩa, là sự minh hoạ, đơn giản hoá, làm sáng tỏ, chỉnh sửa, tạo giá trị, kịch tính, thuyết phục và thậm chí là lôi cuốn.</p>
 
@@ -191,7 +338,7 @@ Một khi bạn đã thực hiện thử nghiệm với vài người dùng đ�
 
 <p>Một khi bạn bắt đầu thu thập thông tin phản hồi tích cực mạnh mẽ từ người dùng mục tiêu bằng cách kiểm tra các mẫu thử nghiệm, đó là thời gian để chuyển sang giai đoạn cuối cùng của quá trình thẩm định tinh gọn.</p>
 
-<p>(CÒN TIẾP)</p>
+<p>(Mời bạn xem tiếp <a href="/2016/10/12/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/">Phần 3</a>))</p>
 
 <p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
 ]]></content>
@@ -440,171 +587,6 @@ Một khi bạn đã thực hiện thử nghiệm với vài người dùng đ�
 
 
 <p>Bài dịch từ <a href="https://medium.com/interactive-mind/the-only-ux-reading-list-ever-d420edb3f4ff#.m21ut2rer">The Only UX reading list ever</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Những điều cần biết để xây dựng thử nghiệm người dùng hiệu quả]]></title>
-    <link href="http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/"/>
-    <updated>2016-09-29T09:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/29/xay-dung-thu-nghiem-nguoi-dung.png" title="Xây dựng thử nghiệm người dùng" ></p>
-
-<p>Gần đây số lượng các ứng dụng trong thị trường android và iOs đã vượt xa con số 8 triệu, ngoài ra còn
-có một con số không giới hạn các trang web và các ứng dụng web đang xuất hiện khắp nơi trên thế giới
-nữa. Với khối lượng khổng lồ các ứng dụng đó thì điều khan hiếm nhất là khoảng thời gian tập trung
-của người dùng cho mỗi ứng dụng.</p>
-
-<p>Thách thức lớn nhất trong thiết kế UX là thu hút được nhiều thời gian tập trung của người dùng.
-Điều này đặt ra một thách thức với người chủ sở hữu sản phẩm và những người thiết kế UX làm sao thiết kế
-ra những ứng dụng thu hút được sự chú ý và tham gia của người dùng.</p>
-
-<!-- more -->
-
-
-<h1>Tại sao thử nghiệm người dùng lại đặc biệt quan trọng như vậy</h1>
-
-<p>Một trong những cách rất hiệu quả để đảm bảo chuyển đổi và tham gia tốt hơn là thực hiện &ldquo;thử nghiệm
-người dùng&rdquo; (Hay đúng hơn là thử nghiệm khả năng sử dụng). Đó là một cách khoa học để tìm ra những gì
-mà người dùng dễ dàng tìm thấy và những điều họ phải làm. Nghiên cứu về người dùng thường xuyên được
-thảo luận bởi rất nhiều lãnh đạo nhóm thiết kế bao gồm <a href="https://medium.com/@ideo">IDEO</a>,
-<a href="https://medium.com/@frogdesign">frog</a> và nhiều nhà thiết kế khác.</p>
-
-<p>Chúng tôi đã quan sát một số những đội ngũ hàng đầu thế giới có kinh nghiệm thiết kế phục vụ hàng triệu
-người dùng trên toàn cầu và đã rút ra được vài bài học nhanh chóng mà bạn có thể sử dụng trong nghiên
-cứu người dùng sắp tới của mình:</p>
-
-<h1>1. Biết được bạn đang mong muốn gì</h1>
-
-<p>Thậm chí trước khi bạn nghĩ về thử nghiệm người dùng, bạn nên đặt ra cho mình một mục tiêu nào đó.
-Các cách xây dựng mục tiêu có thể sẽ khác nhau nếu như bạn đang giải quyết vấn đề về thiết kế của
-một ứng dụng hiện có hoặc khi bạn thẩm định một thiết kế hoàn toàn mới của một ứng dụng sắp được tung ra.</p>
-
-<ul>
-<li><strong>Đối với ứng dụng/trang web hiện có</strong>: Bạn có được những quan sát về các vấn đề thiết kế từ Google
-Analytics, Mixpanel. Giải pháp của vấn đề này đó là bạn là người dùng thử nghiệm trên những thách thức
-hiện tại trong khi khám phá các cách khác để cải thiện. Ví dụ: đối với ứng dụng thương mại điện tử,
-người dùng có thể thêm một số sản phẩm vào giỏ hàng, nhưng họ sẽ quay lại để xem chi tiết sản phẩm thay vì thanh toán.</li>
-</ul>
-
-
-<p>Đối với những ứng dụng hiện có, cải thiện kết quả kinh doanh chính là mục tiêu chính của thử nghiệm người dùng.</p>
-
-<p>Ví dụ, mục tiêu chính đối với ứng dụng hiện có trong ví dụ trên là chuyển từ giỏ hàng sang mục thanh toán.</p>
-
-<ul>
-<li><strong>Đối với ứng dụng/trang web sắp ra</strong>: với ứng dụng sắp được tung ra, bạn cần phải có giả thuyết thiết kế nhất định bao gồm: hướng dẫn thương hiệu, thành phần thiết kế&hellip; Ví dụ: với trường hợp ứng dụng âm nhạc, bạn đưa ra lựa chọn các tab cho các loại nhạc khác nhau thay vì dùng bộ lọc.
-Đối với ứng dụng sắp ra, mục tiêu chính có thể là xác nhận các giả thuyết thiết kế.</li>
-</ul>
-
-
-<p>Trong ví dụ của chúng tôi, chúng tôi muốn xác nhận liệu người dùng sẽ sử dụng các tuỳ chọn để tìm các loại âm nhạc thay vì sử dụng bộ lọc.</p>
-
-<p><strong>Việc thiết lập mục tiêu ngay từ đầu khi kiểm thử sẽ giúp bạn có những câu hỏi đúng</strong>.</p>
-
-<h1>2. Tuyển chọn người dùng thử nghiệm cẩn thận</h1>
-
-<p>Khi bạn đã quyết định được mục tiêu thử nghiệm người dùng, bạn cần phải kiểm tra người dùng để thực hiện
-thử nghiệm người dùng. Khi một sản phẩm được xây dựng, bạn cũng đã có hồ sơ người dùng và bạn có một vài người dùng thực &ndash; những người muốn được xem các ứng dựng mới. Bạn có thể cùng họ thực hiện kiểm thử.</p>
-
-<p>Mặc dù rất dễ dàng để kiểm thử với người dùng hiện tại nhưng cũng thật cẩn thận để loại bỏ thành kiến từ những trải nghiệm của họ.</p>
-
-<p>Để giảm bớt thành kiến từ những kinh nghiệm sẵn có, bạn có thể muốn tạo một phiên bản đầy đủ các ứng dụng để làm cho toàn bộ trải nghiệm của họ tự nhiên hơn.</p>
-
-<p>Bạn có thể muốn vẽ minh hoạ liên quan mật thiết tới người dùng của bạn.</p>
-
-<p><img class="center" src="/images/2016/09/29/ho-so-nguoi-dung-cua-airbnb.jpeg" title="Hồ sơ người dùng của airbnb" ></p>
-
-<p>Tuy nhiên, trong trường hợp của một ứng dụng mới, bạn hiểu vấn đề bạn sẽ phải giải quyết và giải
-quyết cho ai. Hãy thu hẹp vấn đề càng nhỏ càng tốt. Dưới đây là một số câu hỏi mà bạn cần hỏi khi lựa
-chọn người dùng mẫu cho thử nghiệm người dùng:</p>
-
-<ul>
-<li><p><strong>Liên quan</strong>: Ứng dụng của bạn có liên quan tới người dùng thử nghiệm không?</p></li>
-<li><p><strong>Tần suất sử dụng</strong>: Người dùng này có thường xuyên sử dụng ứng dụng của bạn trong công việc mà người đó làm hay không?</p></li>
-<li><p><strong>Nhân khẩu học</strong>: Sự khác biệt văn hoá là một yếu tố quan trọng đối với trải nghiệm của người dùng. Tập trung vào nơi ở, tuổi, giới tính khi lựa chọn người dùng mẫu.</p></li>
-<li><p><strong>Mức thu nhập</strong>: Những người dùng này có sẵn sàng trả tiền để sử dụng ứng dụng/dịch vụ của bạn không? Điều này bao gồm cả khả năng tài chính và thói quen mua sắm.</p></li>
-</ul>
-
-
-<p>Bạn còn nghĩ ra được ý tưởng nào nữa không? Hãy cho chúng tôi biết nhé.</p>
-
-<h1>3. Thời điểm nào thích hợp cho việc kiểm thử người dùng?</h1>
-
-<p>&ldquo;Tôi sẽ đợi tới giao diện cuối cùng để tiến hành kiểm thử người dùng&rdquo;. Chủ sở hữu sản phẩm chỉ tiến hành kiểm thử người dùng khi họ có được phiên bản cuối cùng. Đó không phải là một ý hay, bởi vì khi đó bạn sẽ phải lặp lại hầu hết thời gian và công sức đã bỏ ra.
-Lặp lại ngay khi có thể trong quy trình thiết kế để tiết kiệm thời gian và công sức.
-<img class="center" src="/images/2016/09/29/quy-trinh-thiet-ke.jpeg" title="Quy trình thiết kế" ></p>
-
-<p>Những mong đợi trong các giai đoạn khác nhau của quy trình kiểm thử người dùng.</p>
-
-<ul>
-<li><p><strong>Từ ý tưởng đến phác hoạ bằng tay</strong>: Thảo luận các ý kiến trên giấy bút hoặc trên bảng trắng. Tập hợp các phác hoạ bằng tay vào CanvasFlip và mời người dùng nội bộ kiểm thử.</p></li>
-<li><p><strong>Từ phác họa bằng tay đến thiết kế khung sườn (wireframing)</strong>: Trong giai đoạn này, bạn gần như đã tạo được hình dáng phiên bản giao diện người dùng, xác định các icon và nhãn. Cách tốt nhất là giới thiệu chúng đến người dùng bên ngoài nhưng ở quy mô nhỏ.</p></li>
-<li><p><strong>Từ thiết kế khung sườn đến mockup ban đầu</strong>: Khi bạn xây dựng các mockup, bạn nên giới thiệu chúng đến người dùng để thu được các trải nghiệm ban đầu. Bạn tiếp tục sửa đổi và đưa ra bản giao diện người dùng cuối cùng trên cơ sở nhận xét của người dùng ở giai đoạn này.</p></li>
-</ul>
-
-
-<p>Hầu hết các nhóm nổi tiếng đều sử dụng công cụ phân tích UX như CanvasFlip để tạo ra dòng UX tương tác (nguyên mẫu) và tạo ra bộ phân tích UX như video người dùng, quy trình chuyển đổi hình phễu, và bản đồ nhiệt tương tác.</p>
-
-<h1>4. Mức độ tham gia của bạn như thế nào trong quá trình kiểm thử người dùng</h1>
-
-<p>Luôn có sự đánh đổi giữa việc tạo ra một ngữ cảnh kiểm thử theo giời gian thực và việc quan sát người dùng.
-Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức và đưa ra quyết định mang tính quyết đoán hơn so với bản năng.</p>
-
-<p><img class="center" src="/images/2016/09/29/kiem-thu-tinh-kha-dung.png" title="Kiểm thử tính khả dụng" ></p>
-
-<p>Trên cơ sở mức độ tham gia của người dùng, có thực hiện 3 cách kiểm thử người dùng:</p>
-
-<ul>
-<li><p><strong>Kiểm duyệt tại chỗ</strong>: Trong giai đoạn này, bạn sẽ luôn ở cạnh người dùng, yêu cầu tiến hành các tác vụ, ra câu hỏi và quan sát phản ứng. Điều này sẽ có ích ở giai đoạn đầu phát triển thiết kế.</p></li>
-<li><p><strong>Kiểm duyệt từ xa</strong>: Trong giai đoạn này, bạn có thể kết nối qua Skype, Google Hangout, Zoom hoặc Go-to-Meeting&hellip; Bạn có thể yêu cầu nhiệm vụ thực hiện và quan sát phản ứng. Nói chung là giữ cho sự tương tác càng ít càng tốt. Điều này hữu dụng trong giai đoạn dựng khung và thiết kế mockup.</p></li>
-<li><p><strong>Không kiểm duyệt</strong>: đúng như tên của nó, một thử nghiệm người dùng không được kiểm duyệt được tiến hành mà gần như không có sự can thiệp nào. Người dùng được đưa cho một nguyên mẫu thiết kế (phototype) và yêu cầu chạy thử hoặc đưa ra một tác vụ để thực hiện. Ví dụ: Mua/tìm kiếm một item nào đó.</p></li>
-</ul>
-
-
-<h1>5. Cách phân tích kết quả thử nghiệm người dùng</h1>
-
-<p>Khi bạn tiến hành thử nghiệm người dùng bằng bản thiết kế hiện có, bạn thường thực hiện với phần dễ trước. Tiếp đến sẽ là những phần quan trọng và phức tạp hơn &ndash; để phân tích kết quả kiểm thử người dùng, tìm ra những thứ cần loại bỏ và xem xét mức độ ảnh hưởng của các kết quả đó đối với thiết kế hiện tại.</p>
-
-<p><strong>Phân tích kết quả thử nghiệm người dùng ở giai đoạn đầu</strong></p>
-
-<p>Giai đoạn đầu thường tiến hành thử nghiệm người dùng ở mức có kiểm soát. Kết quả thu được thường mang tính chủ quan, qua đó có thể hiểu được mong đợi và hành vi của người dùng và trên cơ sở đó để xây dụng thiết kế. Khi đã hiểu được các tính năng, các mẫu thiết kế, các lựa chọn điều hướng, sơ đồ icon, ưu iên về font chữ, nhãn, bạn có thể xây dựng khung cho toàn bộ quy trình thiết kế còn lại.</p>
-
-<p><strong>Phân tích kết quả thử nghiệm người dùng ở giai đoạn sau</strong></p>
-
-<p>Khi nghiên cứu kết quả thử nghiệm người dùng ở giai đoạn sau, bạn buộc phải tuân theo thuyết thiết kế đã xây dựng ở giai đoạn trước. Các thuyết đó theo dạng &ldquo;chuyển đổi theo dòng UX&rdquo; hoặc &ldquo;Thẩm định CTA&rdquo; trong các thiết kế màn hình. Ví dụ, bạn muốn biết có bao nhiêu người dùng đã bỏ đi khi đã chọn xong sản phẩm và đang chuẩn bị sang bước thanh toán. Hay có bao nhiêu người dùng đã click vào &ldquo;Login&rdquo; CTA so với phần còn lại của màn hình.</p>
-
-<p>Khi bạn hiểu được hành vi và mong đợi của người dùng, bạn sẽ có lựa chọn tốt hơn giữa thử nghiệm người dùng ở mức kiểm soát từ xa và không kiểm soát.</p>
-
-<p>Công cụ kiểm thử tính khả dụng từ xa như Canvasflip có thể cung cấp rất nhiều thông tin hữu ích.</p>
-
-<p><strong>Biết được người dùng sẽ bỏ UX-flow từ chỗ nào</strong></p>
-
-<p>Trong kênh chuyển đổi trên (được tạo ra với CanvasFlip.com), bạn có thể thấy được sừ rời bỏ lớn tại vòng lặp thứ 1 trong màn hình &ldquo;Experiencies&rdquo;.</p>
-
-<p><img class="center" src="/images/2016/09/29/quy-trinh-chuyen-doi-hinh-pheu.png" title="Quy trình chuyển đổi hình phễu" ></p>
-
-<p><strong>Nơi người dùng tương tác nhiều nhất trong giao diện</strong></p>
-
-<p>Một bản đồ nhiệt tương tác về thử nghiệm người dùng được tạo ra bởi CanvasFlip.com giúp bạn biết được khu vực tương tác thường xuyên của người dùng trong giao diện người dùng.</p>
-
-<p><img class="center" src="/images/2016/09/29/ban-do-nhiet-tuong-tac.png" title="Bản đồ nhiệt tương tác" ></p>
-
-<p><strong>Phân tích hành trình của từng cá nhân người dùng</strong></p>
-
-<p>Với CanvasFlip.com, bạn có thể phân tích được những điều hướng của người dùng và thời gian người dùng ở lại mỗi màn hình.
-<img class="center" src="/images/2016/09/29/hanh-trinh-cua-nguoi-dung.png" title="Hành trình của người dùng" ></p>
-
-<p><strong>Xem toàn bộ video phiên người dùng để phân tích và cải thiện hành vi người dùng</strong></p>
-
-<p>Bạn có thể ghi lại các điều hướng người dùng, sau đó tìm ra nơi người dùng gặp vấn đề và tìm cách cải thiện trải nghiệm người dùng.
-<img class="center" src="/images/2016/09/29/ghi-lai-dieu-huong-nguoi-dung.png" title="Ghi lại điều hướng người dùng" ></p>
-
-<h1>Kết luận</h1>
-
-<p>Với nỗ lực nhằm tạo ra một trải nghiệm người dùng tuyệt vời, cần phải tiến hành thử nghiệm người dùng và để thực hiện thử nghiệm hiệu quả, bạn phải biết cần gì/ sửa đổi gì, lựa chọn nhóm người dùng càng hẹp càng tốt, kiểm thử ngay từ lúc đầu, và sử dụng những thông tin hữu ích để rút ra kết luận từ kết quả thử nghiệm người dùng.</p>
-
-<p>Bài dịch từ: <a href="https://blog.prototypr.io/everything-you-should-know-to-conduct-a-kickass-user-testing-89977e653123#.shhsbhhoy">Everything you should know to conduct a kickass user testing</a></p>
 ]]></content>
   </entry>
   
