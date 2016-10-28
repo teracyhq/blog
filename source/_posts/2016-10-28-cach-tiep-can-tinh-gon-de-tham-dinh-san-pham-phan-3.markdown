@@ -2,7 +2,7 @@
 layout: post
 title: "Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 3)"
 author: hoavu
-date: 2016-10-12 10:40
+date: 2016-10-28 10:40
 comments: true
 categories:
     - "vi"
@@ -10,7 +10,7 @@ categories:
 tags:
     - "product"
     - "validation"
-cover: /images/2016/10/12/tham-dinh-su-san-sang-chi-tra.jpg
+cover: /images/2016/10/28/tham-dinh-su-san-sang-chi-tra.jpg
 description: Cách tiếp cận thẩm định sản phẩm tinh gọn giúp bạn xây dựng được sản phẩm đúng như mong muốn
 keywords: Product Strategy, Product Validation, chiến lược sản phẩm, thẩm định sản phẩm
 ---
@@ -23,7 +23,7 @@ Thẩm Định Sự Sẵn Sàng Chi Trả Của Người Dùng
 Có rất nhiều cách để thẩm định sự sẵn sàng chi trả của người dùng, nhưng một trong những thách thức lớn nhất đó là chúng ta không thể hoàn toàn tin tưởng vào lời nói. Chúng ta đều biết những người nói "Tất nhiên, tôi hoàn toàn muốn làm điều đó!" nhưng sau đó họ không giữ lời đến thời điểm cam kết. Chúng ta muốn có được những khách hàng chi tiền sau khi họ nói càng nhiều càng tốt.
 
 
-{% img center /images/2016/10/12/tham-dinh-su-san-sang-chi-tra.jpg Thẩm định sự sẵn sàng chi trả %}
+{% img center /images/2016/10/28/tham-dinh-su-san-sang-chi-tra.jpg Thẩm định sự sẵn sàng chi trả %}
 
 
 CÁCH XÂY DỰNG MỘT TRANG WEB THẨM ĐỊNH
@@ -80,7 +80,7 @@ Nguyên tắc cơ bản của dịch vụ chăm sóc khách hàng là trước k
 Hãy xem một ví dụ khác từ thế giới thực. Giả sử chúng ta xây dựng [PingPong](https://hellopingpong.com/) để giúp người dùng thu thập thông tin phản hồi và thực hiện các cuộc phỏng vấn. Công nghệ phía sau sản phảm này thực sự không phức tạp chút nào, nhưng đòi hỏi phải đầu tư vào thiết kế và phát triển để tung ra một sản phẩm hiệu quả. Rất nhiều công việc cần làm để có một sản phẩm thành công, nhưng ở giai đoạn đầu này, chúng ta vẫn còn nhiều giả định chưa được thẩm định về việc người dùng thực sự muốn gì.
 
 
-{% img center /images/2016/10/12/pingpong.png Pingpong %}
+{% img center /images/2016/10/28/pingpong.png Pingpong %}
 
 
 Thay vì thực hiện tất cả mọi việc và xây dựng một dịch vụ mà người dùng có thể đăng ký trực tiếp và sử dụng, thì chúng ta sẽ  đi theo con đường chăm sóc khách hàng. Vì vậy, cách duy nhất đối với khách hàng trả tiền để đăng ký đó là ngay bây giờ chúng ta phải đồng ý với họ sẽ tự thực hiện đơn hàng của họ. Cuối cùng thì sản phẩm sẽ được tiếp nhận và thực hiện các việc này một cách tự động. Tất nhiên sẽ luôn luôn có rủi ro đó là dịch vụ hướng dẫn này sẽ không thể bao quát được hết các nhu cầu và bạn sẽ phải chuyển xuống cho khách hàng; đây là một vấn đề khác mà bạn cần giải quyết và đó là một vấn đề nghiêm trọng của bạn.
@@ -99,7 +99,7 @@ Hãy xem [Check Maid](https://checkmaid.com/), dịch vụ trực tuyến để 
 
 *"Chúng tôi thẩm định ý tưởng của mình mà không có lấy một nhân viên dọn dẹp vệ sinh nào cả. Chúng tôi đưa ra trang web, tạo một biểu mẫu đặt dịch vụ, số điện thoại và chạy một vài quảng cáo [trả tiền theo số lượt nhấp chuột](pay-per-clicks) thông qua Google và Bing, và xem tỷ lệ chuyển đổi như thế nào để chúng tôi quyết định có thực sự cần những người người dọn vệ sinh hay không."*
 
-{% img center /images/2016/10/12/gia-lap-landing-page.png Gỉa lập landing page %}
+{% img center /images/2016/10/28/gia-lap-landing-page.png Gỉa lập landing page %}
 
 
 Việc thẩm định sự sẵn sàng chi trả bằng cách sử dụng landing page giả lập sẽ thực sự là cái mà bạn phải quan tâm. Nếu bạn làm nó sai, bạn có thể phá hủy thương hiệu của bạn và làm cho người dùng vô cùng thất vọng.
@@ -114,7 +114,7 @@ Thẩm Định Một Vài Ý Tưởng
 ==========================
 Bây giờ bạn đã biết làm thế nào để thẩm định một ý tưởng của sản phẩm, cũng hãy tìm hiểu xem làm thế nào chúng ta có thể khám phá một vài ý tưởng sản phẩm:
 
-{% img center /images/2016/10/12/tham-dinh-mot-so-y-tuong.jpg Thẩm định sản phẩm tinh gọn %}
+{% img center /images/2016/10/28/tham-dinh-mot-so-y-tuong.jpg Thẩm định sản phẩm tinh gọn %}
 
 Hãy xem 6 ý tưởng của chúng tôi được chỉ ra như thế nào khi chúng tôi đưa chúng vào trong quy trình thẩm định tinh gọn:
 

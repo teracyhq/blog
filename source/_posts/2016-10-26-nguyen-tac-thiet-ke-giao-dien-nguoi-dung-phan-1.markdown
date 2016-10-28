@@ -11,12 +11,12 @@ tags:
     - "design"
     - "ux"
     - "ui"
-cover: /images/2016/10/25/principles.jpg
+cover: /images/2016/10/26/principles.jpg
 description: Những nguyên tắc thiết kế giao diện người dùng
 keywords: design, ux, ui, User Interface, User Interface Design, principles, nguyên tắc, thiết kế, giao diện người dùng
 ---
 
-{% img center /images/2016/10/25/principles.jpg Nguyên tắc thiết kế %}
+{% img center /images/2016/10/26/principles.jpg Nguyên tắc thiết kế %}
 
 Thiết kế không đơn giản chỉ là lắp ghép, xếp theo thứ tự hay thậm chí là sửa đổi. Thiết kế chính là hàm chứa giá trị và ý nghĩa, là sự minh hoạ, đơn giản hoá, làm sáng tỏ, chỉnh sửa, tạo giá trị, kịch tính, thuyết phục và thậm chí là lôi cuốn.
 
