@@ -115,7 +115,7 @@ Mục đích của việc thẩm định sản phẩm cho dù từ xa hay trực
 
 Một khi bạn bắt đầu thu thập thông tin phản hồi tích cực mạnh mẽ từ người dùng mục tiêu bằng cách kiểm tra các mẫu thử nghiệm, đó là thời gian để chuyển sang giai đoạn cuối cùng của quá trình thẩm định tinh gọn.
 
-(Mời bạn xem tiếp [Phần 3](/2016/10/12/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/)))
+(Mời bạn xem tiếp [Phần 3](/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/))
 
 
 Dịch từ: [A lean apprroach to product validation](https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/)
