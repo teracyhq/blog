@@ -337,6 +337,28 @@ You can update all of these steps however you need by adjusting:
 
 - https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml
 
+When CI checking, we build Docker images (both development and production images):
+
+- https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/
+
+- https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry
+
+You can see these CI system in action:
+
+- https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds
+- https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines
+
+Building on travis-ci is super fast and it's very slow on gitlab-ci. However, using gitlab is free
+for unlimited projects, it includes Docker registry for free, too.
+
+You can install gitlab on your server, it should be faster but you have to pay for the devops
+maintenance cost.
+
+If you could pay Docker Hub, Github and Travis-CI, it's super fast and convenient for development
+without the devops maintenance cost.
+
+Or even better, ping us for consulting :-).
+
 ## react-boilerplate Introduction
 
 `react-redux-universal-hot-example` is a good start, however, there are still many improvements that
