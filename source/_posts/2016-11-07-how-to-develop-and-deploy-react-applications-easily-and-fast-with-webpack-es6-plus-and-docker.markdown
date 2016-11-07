@@ -31,7 +31,7 @@ you a starter React boilerplate for faster development and deployment.
 
 <!-- more -->
 
-There is a good starter React boilerplate with the following outstanding batteries:
+There is a good starter React boilerplate with the following outstanding batteries included:
 
 - Universal rendering (both client and server side rendering from the same client side code)
 - Babel for ES6+ for writing modern JS syntax today
@@ -51,12 +51,19 @@ https://github.com/hoatle/react-redux-universal-hot-example then.
 {% img center /images/2016/11/07/react-prerequisites.gif React Project Prerequisites %}
 
 Make sure you have the following software installed:
+
 - git
 - docker
 - docker-compose
 
-Make sure that docker and docker-compose are available by checking `docker info` and
+Make sure that docker and docker-compose are available by checking `git version`, `docker info` and
 `docker-compose version` as following:
+
+
+```bash
+$ git version
+git version 2.10.2
+```
 
 ```bash
 $ docker info
@@ -315,7 +322,6 @@ productivity.
 We're going to deploy the Docker image. There are guides that you can follow:
 
 - Deploy on Heroku: https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md
-
 - Simple deployment with docker-compose: https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md
 
 There are many production best practices that we should improve for the starter project.
@@ -325,22 +331,18 @@ There are many production best practices that we should improve for the starter 
 By using CI and CD system like travis-ci and gitlab-ci, we could stick to the following process:
 
 - pull request (merge request) sent -> CI checks
-
 - code changes -> CI checks. CI is passed then CD starts
-
 - CD will deploy automatically, for example, to Heroku or other providers or your in-house data
 center
 
 You can update all of these steps however you need by adjusting:
 
 - https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml
-
 - https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml
 
 When CI checking, we build Docker images (both development and production images):
 
 - https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/
-
 - https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry
 
 You can see these CI system in action:
@@ -359,18 +361,15 @@ without the devops maintenance cost.
 
 Or even better, ping us for consulting :-).
 
-## react-boilerplate Introduction
+## react-boilerplate introduction
 
 `react-redux-universal-hot-example` is a good start, however, there are still many improvements that
 we'd like to add, for example:
 
 - better code and component organization convention. The Angular 2 convention is a really great
-inspiration for this
-
+  inspiration for this
 - update dependencies to latest versions
-
 - build the deployment Docker that should include runtime stuff only, not development stuff
-
 - server side code should be production ready and optimized
 
 And there are more to do. So we intent to create a better `react-redux-universal-hot-example` version,
@@ -391,11 +390,12 @@ and production deployment.
 
 You should learn more about React at:
 
+- http://exploringjs.com/es6/
+- https://github.com/veggiemonk/awesome-docker
 - https://github.com/enaqx/awesome-react
-
 - https://github.com/hoatle/react-redux-universal-hot-example#about
 
-Hopefully, this is a good start for React newbie to explore the whole new world of modern web application
-development.
+Hopefully, this is a good start for React newbie to explore the whole new world of modern web
+application development.
 
 Happy hacking!
