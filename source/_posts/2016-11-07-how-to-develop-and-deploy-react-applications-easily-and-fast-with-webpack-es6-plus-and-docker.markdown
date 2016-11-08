@@ -38,9 +38,9 @@ There is a good starter React boilerplate with the following outstanding batteri
 - Webpack for bundling, hot module reloading
 - Redux, Redux Dev Tools, redux-form, React Router
 - ESLint consistent style checking
-- unit testing
+- Unit testing
 - bootstrap and font-awesome
-- and many other cool things
+- And many other cool things
 
 However, the project is not active anymore, so we decided to fork and update it a bit to work with
 Docker easier and faster. Let's get started with
@@ -328,22 +328,30 @@ There are many production best practices that we should improve for the starter 
 
 ## CI (continuous integration) and CD (continuous delivery)
 
-By using CI and CD system like travis-ci and gitlab-ci, we could stick to the following process:
+By using CI and CD systems like travis-ci and gitlab-ci, we could stick to the following process:
 
-- pull request (merge request) sent -> CI checks
-- code changes -> CI checks. CI is passed then CD starts
+- Pull request (merge request) is sent -> CI checks.
+- Code changes -> CI checks.
+- CI checking is passed, then CD starts.
 - CD will deploy automatically, for example, to Heroku or other providers or your in-house data
-center
+  center.
 
 You can update all of these steps by adjusting the following files accordingly:
 
 - https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml
 - https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml
 
-When CI checking, we build Docker images (both development and production images):
+At the CI checking step, we build Docker images (both development and production images):
 
 - https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/
 - https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry
+
+The development images install all development stuff (excluding the source code) so that
+all the developers should have the same development environment as long as they're using the same
+development image.
+
+The production (distribution) images install and package all runtime stuff so that everyone could
+run the applications right away with the same runtime environment.
 
 You can see these CI systems in action:
 
@@ -366,16 +374,16 @@ Or even better, ping us for consulting :-).
 `react-redux-universal-hot-example` is a good start, however, there are still many improvements that
 we'd like to add, for example:
 
-- better code and component organization convention. The Angular 2 convention is a really great
+- Better code and component organization convention. The Angular 2 convention is a really great
   inspiration for this.
-- update dependencies to latest versions.
-- build the deployment Docker that should include runtime stuff only, not development stuff.
-- server side code should be production ready and optimized.
+- Update dependencies to latest versions.
+- Build the deployment Docker that should include runtime stuff only, not development stuff.
+- Server side code should be production ready and optimized.
 
 And there are more to do. So we intent to create a better `react-redux-universal-hot-example` version,
 we call it `react-boilerplate`.
 
-The project is here at: https://github.com/teracyhq/react-boilerplate . We'll announce v0.1.0 as soon
+The project is located at: https://github.com/teracyhq/react-boilerplate . We'll announce v0.1.0 as soon
 as possible when it's ready. So stay tuned! At present we should use `react-redux-universal-hot-example`.
 
 ## React application consulting and developing service
