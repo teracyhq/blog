@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: react-boilerplate | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/react-boilerplate/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2016-11-08T08:02:36+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker]]></title>
+    <link href="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/"/>
+    <updated>2016-11-07T07:18:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
+
+<p>React is an awesome library to work with, however, we must pick up other libraries to build up a
+robust application such as redux, redux-connect, server side rendering, redux-form, etc. After that,
+we must organize the application structure with best practices to develop and deploy it. Doing all
+these tasks requires some good experiences, so it&rsquo;s very difficult for a newbie. Good news is that there
+are many starter boilerplate projects out there for us to choose. And today we&rsquo;d like to introduce
+you a starter React boilerplate for faster development and deployment.</p>
+
+<!-- more -->
+
+
+<p>There is a good starter React boilerplate with the following outstanding batteries included:</p>
+
+<ul>
+<li>Universal rendering (both client and server side rendering from the same client side code)</li>
+<li>Babel for ES6+ for writing modern JS syntax today</li>
+<li>Webpack for bundling, hot module reloading</li>
+<li>Redux, Redux Dev Tools, redux-form, React Router</li>
+<li>ESLint consistent style checking</li>
+<li>unit testing</li>
+<li>bootstrap and font-awesome</li>
+<li>and many other cool things</li>
+</ul>
+
+
+<p>However, the project is not active anymore, so we decided to fork and update it a bit to work with
+Docker easier and faster. Let&rsquo;s get started with
+<a href="https://github.com/hoatle/react-redux-universal-hot-example">https://github.com/hoatle/react-redux-universal-hot-example</a> then.</p>
+
+<h2>Prerequisites</h2>
+
+<p><img class="center" src="/images/2016/11/07/react-prerequisites.gif" title="React Project Prerequisites" ></p>
+
+<p>Make sure you have the following softwares installed:</p>
+
+<ul>
+<li>git</li>
+<li>docker</li>
+<li>docker-compose</li>
+</ul>
+
+
+<p>Make sure that docker and docker-compose are available by checking <code>git version</code>, <code>docker info</code> and
+<code>docker-compose version</code> as following:</p>
+
+<p><code>bash
+$ git version
+git version 2.10.2
+</code></p>
+
+<p><code>bash
+$ docker info
+Containers: 9
+Running: 1
+Paused: 0
+Stopped: 8
+Images: 216
+Server Version: 1.12.1
+Storage Driver: aufs
+Root Dir: /var/lib/docker/aufs
+Backing Filesystem: extfs
+Dirs: 244
+Dirperm1 Supported: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+Volume: local
+Network: host bridge null overlay
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Security Options: seccomp
+Kernel Version: 4.4.20-moby
+Operating System: Alpine Linux v3.4
+OSType: linux
+Architecture: x86_64
+CPUs: 2
+Total Memory: 1.953 GiB
+Name: moby
+ID: W2PL:SOAQ:Y24X:VTFK:2Z3X:3CON:HWRK:7EMB:E2D4:EAPJ:NSKY:YHJ2
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): true
+File Descriptors: 20
+Goroutines: 34
+System Time: 2016-11-07T07:45:16.819335883Z
+EventsListeners: 1
+No Proxy: *.local, 169.254/16
+Username: hoatle
+Registry: https://index.docker.io/v1/
+Insecure Registries:
+127.0.0.0/8
+</code></p>
+
+<p><code>bash
+$ docker-compose version
+docker-compose version 1.8.0, build f3628c7
+docker-py version: 1.9.0
+CPython version: 2.7.9
+OpenSSL version: OpenSSL 1.0.2h 3 May 2016
+</code></p>
+
+<p>If you get the similar output, you&rsquo;re good to go to the next step.</p>
+
+<h2>Git clone the project</h2>
+
+<p><img class="center" src="/images/2016/11/07/react-clone.gif" title="React Project Git Clone" ></p>
+
+<p>We&rsquo;re developing a React application named: &ldquo;my-app&rdquo;. Let&rsquo;s clone the starter project first:</p>
+
+<p><code>bash
+$ mkdir -p ~/teracy-dev/workspace
+$ cd ~/teracy-dev/workspace
+$ git clone https://github.com/hoatle/react-redux-universal-hot-example.git my-app
+</code></p>
+
+<h2>Development</h2>
+
+<p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
+
+<p>Docker is really awesome to create an isolated consistent development and deployment environment and
+it&rsquo;s super fast, too. We&rsquo;re leveraging Docker and Docker workflow for all our projects at Teracy,
+both internal and outsourcing projects.
+After cloning the starter project, let&rsquo;s start developing with:</p>
+
+<p><code>bash
+$ cd ~/teracy-dev/workspace/my-app
+$ docker-compose pull &amp;&amp; docker-compose up
+</code></p>
+
+<p>If you get the following error output:</p>
+
+<p><code>bash
+ERROR: for dev Cannot start service dev: driver failed programming external connectivity on endpoint myapp_dev_1 (e2105083bdacaf5bb0684aa7a34ae0dc92b20cc748a31491368c7afa3e51da30): Error starting userland proxy: Bind for 0.0.0.0:3000 failed: port is already allocated
+ERROR: Encountered errors while bringing up the project.
+</code></p>
+
+<p>then make sure the port 3000 is available for &ldquo;my-app&rdquo; to use.</p>
+
+<p>If you get the following output:</p>
+
+<p><code>bash
+$ docker-compose pull &amp;&amp; docker-compose up
+Pulling dev (hoatle/react-redux-universal-hot-example:dev_latest)...
+dev_latest: Pulling from hoatle/react-redux-universal-hot-example
+43c265008fae: Already exists
+af36d2c7a148: Already exists
+143e9d501644: Already exists
+df720fc8e4f1: Already exists
+eae19baa28ff: Already exists
+9004de327d6a: Already exists
+753292cc4b91: Already exists
+21edf49ccd04: Pull complete
+5571a198d5e5: Pull complete
+12965aa2aa24: Pull complete
+cd5c00a0e311: Pull complete
+5b4a21012860: Pull complete
+Digest: sha256:947e1889ff53d65cd2e9dd3357d45cf8714504995564e0a7183a5ff13a605ac0
+Status: Downloaded newer image for hoatle/react-redux-universal-hot-example:dev_latest
+Creating myapp_dev_1
+Attaching to myapp_dev_1
+dev_1 | yarn install v0.16.1
+dev_1 | success Already up-to-date.
+dev_1 | Done in 0.31s.
+dev_1 | npm info it worked if it ends with ok
+dev_1 | npm info using npm@3.10.8
+dev_1 | npm info using node@v6.9.1
+dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~predev: numerologist-app@0.1.0-SNAPSHOT
+dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~dev: numerologist-app@0.1.0-SNAPSHOT
+dev_1 |
+dev_1 | &gt; numerologist-app@0.1.0-SNAPSHOT dev /opt/app
+dev_1 | &gt; concurrent --kill-others "npm run watch-client" "npm run start-dev" "npm run start-dev-api"
+dev_1 |
+dev_1 | Warning: "concurrent" command is deprecated, use "concurrently" instead.
+dev_1 |
+dev_1 | [1] npm
+dev_1 | [1] info it worked if it ends with ok
+dev_1 | [1] npm info using npm@3.10.8
+dev_1 | [1] npm info using node@v6.9.1
+dev_1 | [0] npm
+dev_1 | [0]
+dev_1 | [0] info
+dev_1 | [0]
+dev_1 | [0] it worked if it ends with
+dev_1 | [0] ok
+dev_1 | [0] npm
+dev_1 | [0]
+dev_1 | [0] info
+dev_1 | [0]
+dev_1 | [0] using
+dev_1 | [0] npm@3.10.8
+dev_1 | [0] npm
+dev_1 | [0]
+dev_1 | [0] info
+dev_1 | [0]
+dev_1 | [0] using node@v6.9.1
+dev_1 | [2] npm
+dev_1 | [2]
+dev_1 | [2] info
+dev_1 | [2]
+dev_1 | [2] it worked if it ends with
+dev_1 | [2] ok
+dev_1 | [2] npm
+dev_1 | [2]
+dev_1 | [2] info
+dev_1 | [2]
+dev_1 | [2] using
+dev_1 | [2] npm@3.10.8
+dev_1 | [2] npm
+dev_1 | [2]
+dev_1 | [2] info
+dev_1 | [2]
+dev_1 | [2] using
+dev_1 | [2] node@v6.9.1
+dev_1 | [1] npm
+dev_1 | [1]
+dev_1 | [1] info lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev: numerologist-app@0.1.0-SNAPSHOT
+dev_1 | [1] npm
+dev_1 | [1]
+dev_1 | [1] info
+dev_1 | [1]
+dev_1 | [1] lifecycle
+dev_1 | [1] numerologist-app@0.1.0-SNAPSHOT~start-dev: numerologist-app@0.1.0-SNAPSHOT
+dev_1 | [1]
+dev_1 | [1] &gt; numerologist-app@0.1.0-SNAPSHOT start-dev /opt/app
+dev_1 | [1] &gt; better-npm-run start-dev
+dev_1 | [1]
+dev_1 | [1] running better-npm-run in /opt/app
+dev_1 | [1] Executing script: start-dev
+dev_1 | [1]
+dev_1 | [1] to be executed: node ./bin/server.js
+dev_1 | [0] npm
+dev_1 | [0]
+dev_1 | [0] info
+dev_1 | [0]
+dev_1 | [0] lifecycle
+dev_1 | [0] numerologist-app@0.1.0-SNAPSHOT~prewatch-client: numerologist-app@0.1.0-SNAPSHOT
+dev_1 | [0] npm
+dev_1 | [0]
+dev_1 | [0] info
+dev_1 | [0]
+dev_1 | [0] lifecycle
+dev_1 | [0] numerologist-app@0.1.0-SNAPSHOT~watch-client: numerologist-app@0.1.0-SNAPSHOT
+dev_1 | [0]
+dev_1 | [0] &gt; numerologist-app@0.1.0-SNAPSHOT watch-client /opt/app
+dev_1 | [0] &gt; better-npm-run watch-client
+dev_1 | [0]
+dev_1 | [2] npm
+dev_1 | [2]
+dev_1 | [2] info
+dev_1 | [2] lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev-api: numerologist-app@0.1.0-SNAPSHOT
+dev_1 | [0] running better-npm-run in /opt/app
+dev_1 | [2] npm
+dev_1 | [2]
+dev_1 | [2] info
+dev_1 | [2] lifecycle
+dev_1 | [2] numerologist-app@0.1.0-SNAPSHOT~start-dev-api: numerologist-app@0.1.0-SNAPSHOT
+dev_1 | [2]
+dev_1 | [2] &gt; numerologist-app@0.1.0-SNAPSHOT start-dev-api /opt/app
+dev_1 | [2] &gt; better-npm-run start-dev-api
+dev_1 | [2]
+dev_1 | [0] Executing script: watch-client
+dev_1 | [0]
+dev_1 | [0] to be executed: node webpack/webpack-dev-server.js
+dev_1 | [2] running better-npm-run in /opt/app
+dev_1 | [2] Executing script: start-dev-api
+dev_1 | [2]
+dev_1 | [2] to be executed: node ./bin/api.js
+dev_1 | [0] ==&gt; 🚧 Webpack development server listening on port 3001
+dev_1 | [2] ----
+dev_1 | [2] ==&gt; 🌎 API is running on port 3030
+dev_1 | [2] ==&gt; 💻 Send requests to http://localhost:3030
+dev_1 | [1] ----
+dev_1 | [1] ==&gt; ✅ React Redux Example is running, talking to API server on 3030.
+dev_1 | [1] ==&gt; 💻 Open http://0.0.0.0:3000 in a browser to view the app.
+dev_1 | [0] Hash: 4bfaa3d4b9c381888d2a
+dev_1 | [0] Version: webpack 1.13.3
+dev_1 | [0] Time: 44424ms
+dev_1 | [0] Asset Size Chunks Chunk Names
+dev_1 | [0] af7ae505a9eed503f8b8e6982036873e.woff2 77.2 kB [emitted]
+dev_1 | [0] f4769f9bdb7466be65088239c12046d1.eot 20.1 kB [emitted]
+dev_1 | [0] fa2772327f55d8198301fdb8bcfc8158.woff 23.4 kB [emitted]
+dev_1 | [0] e18bbf611f2a2e43afc071aa2f4e1512.ttf 45.4 kB [emitted]
+dev_1 | [0] 89889688147bd7575d6327160d64e760.svg 109 kB [emitted]
+dev_1 | [0] 674f50d287a8c48dc19ba404d20fe713.eot 166 kB [emitted]
+dev_1 | [0] 448c34a56d699c29117adc64c43affeb.woff2 18 kB [emitted]
+dev_1 | [0] fee66e712a8a08eef5805a46892932ad.woff 98 kB [emitted]
+dev_1 | [0] b06871f281fee6b241d60582ae9369b9.ttf 166 kB [emitted]
+dev_1 | [0] 912ec66d7572ff821749319396470bde.svg 444 kB [emitted]
+dev_1 | [0] c29770d03d2e95e3ea5899d57c6cfeab.jpg 92.2 kB [emitted]
+dev_1 | [0] main-4bfaa3d4b9c381888d2a.js 9.61 MB 0 [emitted] main
+dev_1 | [0] webpack built 4bfaa3d4b9c381888d2a in 44424ms
+</code></p>
+
+<p>Then it&rsquo;s good to go, open <a href="http://localhost:3000">http://localhost:3000</a> to see the starter project home page.</p>
+
+<p>Try to make some changes to the source code, you should see the changes reflected immediately without
+any page reloading, this is called hot module reloading, a really awesome feature to boost development
+productivity.</p>
+
+<p><img class="center" src="/images/2016/11/07/react-instant-changes.gif" title="React Project Instant Changes" ></p>
+
+<h2>Deployment</h2>
+
+<p>We&rsquo;re going to deploy the Docker image. There are guides that you can follow:</p>
+
+<ul>
+<li>Deploy on Heroku: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md</a></li>
+<li>Simple deployment with docker-compose: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md</a></li>
+</ul>
+
+
+<p>There are many production best practices that we should improve for the starter project.</p>
+
+<h2>CI (continuous integration) and CD (continuous delivery)</h2>
+
+<p>By using CI and CD system like travis-ci and gitlab-ci, we could stick to the following process:</p>
+
+<ul>
+<li>pull request (merge request) sent &ndash;> CI checks</li>
+<li>code changes &ndash;> CI checks. CI is passed then CD starts</li>
+<li>CD will deploy automatically, for example, to Heroku or other providers or your in-house data
+center</li>
+</ul>
+
+
+<p>You can update all of these steps by adjusting the following files accordingly:</p>
+
+<ul>
+<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml</a></li>
+<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml</a></li>
+</ul>
+
+
+<p>When CI checking, we build Docker images (both development and production images):</p>
+
+<ul>
+<li><a href="https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/">https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/</a></li>
+<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry">https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry</a></li>
+</ul>
+
+
+<p>You can see these CI systems in action:</p>
+
+<ul>
+<li><a href="https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds">https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds</a></li>
+<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines">https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines</a></li>
+</ul>
+
+
+<p>Building on travis-ci is super fast and it&rsquo;s very slow on gitlab-ci. However, using gitlab is free
+for unlimited projects, it includes Docker registry for free, too.</p>
+
+<p>You can install gitlab on your server, it should be faster but you have to pay for the devops
+maintenance cost.</p>
+
+<p>If you could pay for Docker Hub, Github and Travis-CI, it&rsquo;s super fast and convenient for development
+without the devops maintenance cost.</p>
+
+<p>Or even better, ping us for consulting :&ndash;).</p>
+
+<h2>react-boilerplate introduction</h2>
+
+<p><code>react-redux-universal-hot-example</code> is a good start, however, there are still many improvements that
+we&rsquo;d like to add, for example:</p>
+
+<ul>
+<li>better code and component organization convention. The Angular 2 convention is a really great
+inspiration for this.</li>
+<li>update dependencies to latest versions.</li>
+<li>build the deployment Docker that should include runtime stuff only, not development stuff.</li>
+<li>server side code should be production ready and optimized.</li>
+</ul>
+
+
+<p>And there are more to do. So we intent to create a better <code>react-redux-universal-hot-example</code> version,
+we call it <code>react-boilerplate</code>.</p>
+
+<p>The project is here at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
+as possible when it&rsquo;s ready. So stay tuned! At present we should use <code>react-redux-universal-hot-example</code>.</p>
+
+<h2>React application consulting and developing service</h2>
+
+<p>We&rsquo;re offering React application consulting and developing service.</p>
+
+<p>If you want React development and production deployment help, don&rsquo;t hesitate to ping us. We&rsquo;re
+eager to help you to develop world-class React applications with better and better developer experience
+and production deployment.</p>
+
+<h2>Learn more</h2>
+
+<p>You should learn more about React at:</p>
+
+<ul>
+<li><a href="http://exploringjs.com/es6/">http://exploringjs.com/es6/</a></li>
+<li><a href="https://github.com/veggiemonk/awesome-docker">https://github.com/veggiemonk/awesome-docker</a></li>
+<li><a href="https://github.com/enaqx/awesome-react">https://github.com/enaqx/awesome-react</a></li>
+<li><a href="https://github.com/hoatle/react-redux-universal-hot-example#about">https://github.com/hoatle/react-redux-universal-hot-example#about</a></li>
+</ul>
+
+
+<p>Hopefully, this is a good start for React newbies to explore the whole new world of modern web
+application development.</p>
+
+<p>Happy hacking!</p>
+]]></content>
+  </entry>
+  
+</feed>

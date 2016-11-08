@@ -1,0 +1,1018 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker - Teracy's Blog</title>
+  
+  <meta name="author" content="Teracy">
+
+  
+  <meta name="description" content="How to develop and deploy React applications easily and fast with Webpack, ES6+, and Docker">
+  <meta name="keywords" content="develop, deploy, React, applications, easily, fast, Webpack, ES6+, Docker, react-boilerplate">
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker - Teracy's Blog" />
+  <meta property="og:description" content="How to develop and deploy React applications easily and fast with Webpack, ES6+, and Docker" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/2016/11/07/react-development.gif" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracyhq" />
+  <meta name="twitter:creator" content="@teracyhq" />
+  <meta name="twitter:title" content="How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker - Teracy's Blog" />
+  <meta name="twitter:description" content="How to develop and deploy React applications easily and fast with Webpack, ES6+, and Docker" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/2016/11/07/react-development.gif" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="/javascripts/libs/jquery.browser.min.js" type="text/javascript"></script>
+<script src="/javascripts/font.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news">News</a></li>
+  <li><a href="/categories/projects">Projects</a></li>
+  <li><a href="/categories/how-to">How-to</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">How to Develop and Deploy React Applications Easily and Fast With Webpack, ES6+ and Docker</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2016-11-07T07:18:00+00:00" datetime="2016-11-07T07:18:00+00:00" pubdate data-updated="true">Nov 7<span>th</span>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
+
+<p>React is an awesome library to work with, however, we must pick up other libraries to build up a
+robust application such as redux, redux-connect, server side rendering, redux-form, etc. After that,
+we must organize the application structure with best practices to develop and deploy it. Doing all
+these tasks requires some good experiences, so it&rsquo;s very difficult for a newbie. Good news is that there
+are many starter boilerplate projects out there for us to choose. And today we&rsquo;d like to introduce
+you a starter React boilerplate for faster development and deployment.</p>
+
+<!-- more -->
+
+
+<p>There is a good starter React boilerplate with the following outstanding batteries included:</p>
+
+<ul>
+<li>Universal rendering (both client and server side rendering from the same client side code)</li>
+<li>Babel for ES6+ for writing modern JS syntax today</li>
+<li>Webpack for bundling, hot module reloading</li>
+<li>Redux, Redux Dev Tools, redux-form, React Router</li>
+<li>ESLint consistent style checking</li>
+<li>unit testing</li>
+<li>bootstrap and font-awesome</li>
+<li>and many other cool things</li>
+</ul>
+
+
+<p>However, the project is not active anymore, so we decided to fork and update it a bit to work with
+Docker easier and faster. Let&rsquo;s get started with
+<a href="https://github.com/hoatle/react-redux-universal-hot-example">https://github.com/hoatle/react-redux-universal-hot-example</a> then.</p>
+
+<h2>Prerequisites</h2>
+
+<p><img class="center" src="/images/2016/11/07/react-prerequisites.gif" title="React Project Prerequisites" ></p>
+
+<p>Make sure you have the following softwares installed:</p>
+
+<ul>
+<li>git</li>
+<li>docker</li>
+<li>docker-compose</li>
+</ul>
+
+
+<p>Make sure that docker and docker-compose are available by checking <code>git version</code>, <code>docker info</code> and
+<code>docker-compose version</code> as following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git version
+</span><span class='line'>git version 2.10.2
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>docker info
+</span><span class='line'>Containers: 9
+</span><span class='line'>Running: 1
+</span><span class='line'>Paused: 0
+</span><span class='line'>Stopped: 8
+</span><span class='line'>Images: 216
+</span><span class='line'>Server Version: 1.12.1
+</span><span class='line'>Storage Driver: aufs
+</span><span class='line'>Root Dir: /var/lib/docker/aufs
+</span><span class='line'>Backing Filesystem: extfs
+</span><span class='line'>Dirs: 244
+</span><span class='line'>Dirperm1 Supported: <span class="nb">true</span>
+</span><span class='line'>Logging Driver: json-file
+</span><span class='line'>Cgroup Driver: cgroupfs
+</span><span class='line'>Plugins:
+</span><span class='line'>Volume: <span class="nb">local</span>
+</span><span class='line'>Network: host bridge null overlay
+</span><span class='line'>Swarm: inactive
+</span><span class='line'>Runtimes: runc
+</span><span class='line'>Default Runtime: runc
+</span><span class='line'>Security Options: seccomp
+</span><span class='line'>Kernel Version: 4.4.20-moby
+</span><span class='line'>Operating System: Alpine Linux v3.4
+</span><span class='line'>OSType: linux
+</span><span class='line'>Architecture: x86_64
+</span><span class='line'>CPUs: 2
+</span><span class='line'>Total Memory: 1.953 GiB
+</span><span class='line'>Name: moby
+</span><span class='line'>ID: W2PL:SOAQ:Y24X:VTFK:2Z3X:3CON:HWRK:7EMB:E2D4:EAPJ:NSKY:YHJ2
+</span><span class='line'>Docker Root Dir: /var/lib/docker
+</span><span class='line'>Debug Mode <span class="o">(</span>client<span class="o">)</span>: <span class="nb">false</span>
+</span><span class='line'>Debug Mode <span class="o">(</span>server<span class="o">)</span>: <span class="nb">true</span>
+</span><span class='line'>File Descriptors: 20
+</span><span class='line'>Goroutines: 34
+</span><span class='line'>System Time: 2016-11-07T07:45:16.819335883Z
+</span><span class='line'>EventsListeners: 1
+</span><span class='line'>No Proxy: *.local, 169.254/16
+</span><span class='line'>Username: hoatle
+</span><span class='line'>Registry: https://index.docker.io/v1/
+</span><span class='line'>Insecure Registries:
+</span><span class='line'>127.0.0.0/8
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>docker-compose version
+</span><span class='line'>docker-compose version 1.8.0, build f3628c7
+</span><span class='line'>docker-py version: 1.9.0
+</span><span class='line'>CPython version: 2.7.9
+</span><span class='line'>OpenSSL version: OpenSSL 1.0.2h 3 May 2016
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you get the similar output, you&rsquo;re good to go to the next step.</p>
+
+<h2>Git clone the project</h2>
+
+<p><img class="center" src="/images/2016/11/07/react-clone.gif" title="React Project Git Clone" ></p>
+
+<p>We&rsquo;re developing a React application named: &ldquo;my-app&rdquo;. Let&rsquo;s clone the starter project first:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir -p ~/teracy-dev/workspace
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd</span> ~/teracy-dev/workspace
+</span><span class='line'><span class="nv">$ </span>git clone https://github.com/hoatle/react-redux-universal-hot-example.git my-app
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Development</h2>
+
+<p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
+
+<p>Docker is really awesome to create an isolated consistent development and deployment environment and
+it&rsquo;s super fast, too. We&rsquo;re leveraging Docker and Docker workflow for all our projects at Teracy,
+both internal and outsourcing projects.
+After cloning the starter project, let&rsquo;s start developing with:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> ~/teracy-dev/workspace/my-app
+</span><span class='line'><span class="nv">$ </span>docker-compose pull <span class="o">&amp;&amp;</span> docker-compose up
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you get the following error output:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ERROR: <span class="k">for </span>dev Cannot start service dev: driver failed programming external connectivity on endpoint myapp_dev_1 <span class="o">(</span>e2105083bdacaf5bb0684aa7a34ae0dc92b20cc748a31491368c7afa3e51da30<span class="o">)</span>: Error starting userland proxy: Bind <span class="k">for </span>0.0.0.0:3000 failed: port is already allocated
+</span><span class='line'>ERROR: Encountered errors <span class="k">while </span>bringing up the project.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then make sure the port 3000 is available for &ldquo;my-app&rdquo; to use.</p>
+
+<p>If you get the following output:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+<span class='line-number'>146</span>
+<span class='line-number'>147</span>
+<span class='line-number'>148</span>
+<span class='line-number'>149</span>
+<span class='line-number'>150</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>docker-compose pull <span class="o">&amp;&amp;</span> docker-compose up
+</span><span class='line'>Pulling dev <span class="o">(</span>hoatle/react-redux-universal-hot-example:dev_latest<span class="o">)</span>...
+</span><span class='line'>dev_latest: Pulling from hoatle/react-redux-universal-hot-example
+</span><span class='line'>43c265008fae: Already exists
+</span><span class='line'>af36d2c7a148: Already exists
+</span><span class='line'>143e9d501644: Already exists
+</span><span class='line'>df720fc8e4f1: Already exists
+</span><span class='line'>eae19baa28ff: Already exists
+</span><span class='line'>9004de327d6a: Already exists
+</span><span class='line'>753292cc4b91: Already exists
+</span><span class='line'>21edf49ccd04: Pull <span class="nb">complete</span>
+</span><span class='line'>5571a198d5e5: Pull <span class="nb">complete</span>
+</span><span class='line'>12965aa2aa24: Pull <span class="nb">complete</span>
+</span><span class='line'>cd5c00a0e311: Pull <span class="nb">complete</span>
+</span><span class='line'>5b4a21012860: Pull <span class="nb">complete</span>
+</span><span class='line'>Digest: sha256:947e1889ff53d65cd2e9dd3357d45cf8714504995564e0a7183a5ff13a605ac0
+</span><span class='line'>Status: Downloaded newer image <span class="k">for </span>hoatle/react-redux-universal-hot-example:dev_latest
+</span><span class='line'>Creating myapp_dev_1
+</span><span class='line'>Attaching to myapp_dev_1
+</span><span class='line'>dev_1 | yarn install v0.16.1
+</span><span class='line'>dev_1 | success Already up-to-date.
+</span><span class='line'>dev_1 | Done in 0.31s.
+</span><span class='line'>dev_1 | npm info it worked <span class="k">if </span>it ends with ok
+</span><span class='line'>dev_1 | npm info using npm@3.10.8
+</span><span class='line'>dev_1 | npm info using node@v6.9.1
+</span><span class='line'>dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~predev: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~dev: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 |
+</span><span class='line'>dev_1 | &gt; numerologist-app@0.1.0-SNAPSHOT dev /opt/app
+</span><span class='line'>dev_1 | &gt; concurrent --kill-others <span class="s2">&quot;npm run watch-client&quot;</span> <span class="s2">&quot;npm run start-dev&quot;</span> <span class="s2">&quot;npm run start-dev-api&quot;</span>
+</span><span class='line'>dev_1 |
+</span><span class='line'>dev_1 | Warning: <span class="s2">&quot;concurrent&quot;</span> <span class="nb">command </span>is deprecated, use <span class="s2">&quot;concurrently&quot;</span> instead.
+</span><span class='line'>dev_1 |
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> info it worked <span class="k">if </span>it ends with ok
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> npm info using npm@3.10.8
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> npm info using node@v6.9.1
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> it worked <span class="k">if </span>it ends with
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> ok
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> using
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> npm@3.10.8
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> using node@v6.9.1
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> it worked <span class="k">if </span>it ends with
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> ok
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> using
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> npm@3.10.8
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> using
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> node@v6.9.1
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> info lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> lifecycle
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> numerologist-app@0.1.0-SNAPSHOT~start-dev: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> &gt; numerologist-app@0.1.0-SNAPSHOT start-dev /opt/app
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> &gt; better-npm-run start-dev
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> running better-npm-run in /opt/app
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> Executing script: start-dev
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> to be executed: node ./bin/server.js
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> lifecycle
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> numerologist-app@0.1.0-SNAPSHOT~prewatch-client: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> lifecycle
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> numerologist-app@0.1.0-SNAPSHOT~watch-client: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> &gt; numerologist-app@0.1.0-SNAPSHOT watch-client /opt/app
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> &gt; better-npm-run watch-client
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev-api: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> running better-npm-run in /opt/app
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> npm
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> info
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> lifecycle
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> numerologist-app@0.1.0-SNAPSHOT~start-dev-api: numerologist-app@0.1.0-SNAPSHOT
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> &gt; numerologist-app@0.1.0-SNAPSHOT start-dev-api /opt/app
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> &gt; better-npm-run start-dev-api
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> Executing script: watch-client
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> to be executed: node webpack/webpack-dev-server.js
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> running better-npm-run in /opt/app
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> Executing script: start-dev-api
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> to be executed: node ./bin/api.js
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> <span class="o">==</span>&gt; 🚧 Webpack development server listening on port 3001
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> ----
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> <span class="o">==</span>&gt; 🌎 API is running on port 3030
+</span><span class='line'>dev_1 | <span class="o">[</span>2<span class="o">]</span> <span class="o">==</span>&gt; 💻 Send requests to http://localhost:3030
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> ----
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> <span class="o">==</span>&gt; ✅ React Redux Example is running, talking to API server on 3030.
+</span><span class='line'>dev_1 | <span class="o">[</span>1<span class="o">]</span> <span class="o">==</span>&gt; 💻 Open http://0.0.0.0:3000 in a browser to view the app.
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> Hash: 4bfaa3d4b9c381888d2a
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> Version: webpack 1.13.3
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> Time: 44424ms
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> Asset Size Chunks Chunk Names
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> af7ae505a9eed503f8b8e6982036873e.woff2 77.2 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> f4769f9bdb7466be65088239c12046d1.eot 20.1 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> fa2772327f55d8198301fdb8bcfc8158.woff 23.4 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> e18bbf611f2a2e43afc071aa2f4e1512.ttf 45.4 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> 89889688147bd7575d6327160d64e760.svg 109 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> 674f50d287a8c48dc19ba404d20fe713.eot 166 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> 448c34a56d699c29117adc64c43affeb.woff2 18 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> fee66e712a8a08eef5805a46892932ad.woff 98 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> b06871f281fee6b241d60582ae9369b9.ttf 166 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> 912ec66d7572ff821749319396470bde.svg 444 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> c29770d03d2e95e3ea5899d57c6cfeab.jpg 92.2 kB <span class="o">[</span>emitted<span class="o">]</span>
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> main-4bfaa3d4b9c381888d2a.js 9.61 MB 0 <span class="o">[</span>emitted<span class="o">]</span> main
+</span><span class='line'>dev_1 | <span class="o">[</span>0<span class="o">]</span> webpack built 4bfaa3d4b9c381888d2a in 44424ms
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then it&rsquo;s good to go, open <a href="http://localhost:3000">http://localhost:3000</a> to see the starter project home page.</p>
+
+<p>Try to make some changes to the source code, you should see the changes reflected immediately without
+any page reloading, this is called hot module reloading, a really awesome feature to boost development
+productivity.</p>
+
+<p><img class="center" src="/images/2016/11/07/react-instant-changes.gif" title="React Project Instant Changes" ></p>
+
+<h2>Deployment</h2>
+
+<p>We&rsquo;re going to deploy the Docker image. There are guides that you can follow:</p>
+
+<ul>
+<li>Deploy on Heroku: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md</a></li>
+<li>Simple deployment with docker-compose: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md</a></li>
+</ul>
+
+
+<p>There are many production best practices that we should improve for the starter project.</p>
+
+<h2>CI (continuous integration) and CD (continuous delivery)</h2>
+
+<p>By using CI and CD system like travis-ci and gitlab-ci, we could stick to the following process:</p>
+
+<ul>
+<li>pull request (merge request) sent &ndash;> CI checks</li>
+<li>code changes &ndash;> CI checks. CI is passed then CD starts</li>
+<li>CD will deploy automatically, for example, to Heroku or other providers or your in-house data
+center</li>
+</ul>
+
+
+<p>You can update all of these steps by adjusting the following files accordingly:</p>
+
+<ul>
+<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml</a></li>
+<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml</a></li>
+</ul>
+
+
+<p>When CI checking, we build Docker images (both development and production images):</p>
+
+<ul>
+<li><a href="https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/">https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/</a></li>
+<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry">https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry</a></li>
+</ul>
+
+
+<p>You can see these CI systems in action:</p>
+
+<ul>
+<li><a href="https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds">https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds</a></li>
+<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines">https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines</a></li>
+</ul>
+
+
+<p>Building on travis-ci is super fast and it&rsquo;s very slow on gitlab-ci. However, using gitlab is free
+for unlimited projects, it includes Docker registry for free, too.</p>
+
+<p>You can install gitlab on your server, it should be faster but you have to pay for the devops
+maintenance cost.</p>
+
+<p>If you could pay for Docker Hub, Github and Travis-CI, it&rsquo;s super fast and convenient for development
+without the devops maintenance cost.</p>
+
+<p>Or even better, ping us for consulting :&ndash;).</p>
+
+<h2>react-boilerplate introduction</h2>
+
+<p><code>react-redux-universal-hot-example</code> is a good start, however, there are still many improvements that
+we&rsquo;d like to add, for example:</p>
+
+<ul>
+<li>better code and component organization convention. The Angular 2 convention is a really great
+inspiration for this.</li>
+<li>update dependencies to latest versions.</li>
+<li>build the deployment Docker that should include runtime stuff only, not development stuff.</li>
+<li>server side code should be production ready and optimized.</li>
+</ul>
+
+
+<p>And there are more to do. So we intent to create a better <code>react-redux-universal-hot-example</code> version,
+we call it <code>react-boilerplate</code>.</p>
+
+<p>The project is here at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
+as possible when it&rsquo;s ready. So stay tuned! At present we should use <code>react-redux-universal-hot-example</code>.</p>
+
+<h2>React application consulting and developing service</h2>
+
+<p>We&rsquo;re offering React application consulting and developing service.</p>
+
+<p>If you want React development and production deployment help, don&rsquo;t hesitate to ping us. We&rsquo;re
+eager to help you to develop world-class React applications with better and better developer experience
+and production deployment.</p>
+
+<h2>Learn more</h2>
+
+<p>You should learn more about React at:</p>
+
+<ul>
+<li><a href="http://exploringjs.com/es6/">http://exploringjs.com/es6/</a></li>
+<li><a href="https://github.com/veggiemonk/awesome-docker">https://github.com/veggiemonk/awesome-docker</a></li>
+<li><a href="https://github.com/enaqx/awesome-react">https://github.com/enaqx/awesome-react</a></li>
+<li><a href="https://github.com/hoatle/react-redux-universal-hot-example#about">https://github.com/hoatle/react-redux-universal-hot-example#about</a></li>
+</ul>
+
+
+<p>Hopefully, this is a good start for React newbies to explore the whole new world of modern web
+application development.</p>
+
+<p>Happy hacking!</p>
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Tue Nov 8 07:58:07 2016</strong><br/>BLOG-79 | apply reviews
+</li><li><strong>Mon Nov 7 16:01:01 2016</strong><br/>BLOG-79 | minor updates for the content
+</li><li><strong>Mon Nov 7 11:03:12 2016</strong><br/>BLOG-79 | add more content for CI, CD section
+</li><li><strong>Mon Nov 7 10:26:08 2016</strong><br/>BLOG-79 | How to develop and deploy React easily and fast with Webpack, ES6 (Babel) and Docker
+</li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2016-11-07-how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">Teracy</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2016-11-07T07:18:00+00:00" datetime="2016-11-07T07:18:00+00:00" pubdate data-updated="true">Nov 7<span>th</span>, 2016</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/en/'>en</a>, <a class='category' href='/categories/how-to/'>how-to</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/devops/'>devops</a>, <a class='tag' href='/tags/docker/'>docker</a>, <a class='tag' href='/tags/es6/'>es6</a>, <a class='tag' href='/tags/react/'>react</a>, <a class='tag' href='/tags/react-boilerplate/'>react-boilerplate</a>, <a class='tag' href='/tags/webpack/'>webpack</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/" data-via="teracyhq" data-counturl="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/" title="Previous Post: Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 3)">&laquo; Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 3)</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracyhq"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/">How to Develop and Deploy React Applications Easily and Fast With Webpack, ES6+ and Docker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/">Cách Tiếp Cận Tinh Gọn để Thẩm định Sản Phẩm (Phần 3)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/">Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">Cách Tiếp Cận Tinh Gọn để Thẩm định Sản Phẩm (Phần 2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/">Cách Tiếp Cận Tinh Gọn để Thẩm định Sản Phẩm (Phần 1)</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracyhq">@teracyhq</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracyhq',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/';
+        var disqus_url = 'http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
