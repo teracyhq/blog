@@ -2,222 +2,222 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://blog.teracy.com/2013/08/02/teracy-hello-world/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/08/05/how-to-add-facebook-like-box-to-octopress/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/08/06/a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/08/07/keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/08/08/multiple-github-custom-domains/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/08/09/automatic-sphinx-docs-deployment-with-sphinx-deployment/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/08/12/manage-software-dependency-with-semantic-versioning/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/08/17/introduce-development-management-tools/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/08/20/teracy-django-html5-boilerplate-v0-1-0-release/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/09/06/octopress-cc-license-chooser-plugin-v0-1-0-release/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/09/07/django-boilerplate-v0-1-0-release/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/09/14/teracy-django-html5-boilerplate-v0-2-0-release/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/09/20/octopress-semantic-v0-1-0-release/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2013/09/26/i-failed-some-plans-and-i-need-to-try-harder/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2014/05/19/can-chien-binh-gia-nhap-doi-phat-trien/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2014/09/24/hoat-dong-team-building-dau-tien-cua-teracy/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2014/09/25/first-team-building-activity-of-teracy-in-da-nang-city/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2015/05/22/teracy-dev-v0-4-0-release/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2016/08/05/8-nguyen-tac-trong-thiet-ket-bot/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/08/06/nhung-loi-khi-ap-dung-mau-thiet-ke-trai-nghiem-nguoi-dung-ux-design-patterns/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/08/08/khi-ky-su-tro-thanh-quan-ly-lam-the-nao-de-tro-thanh-lanh-dao-ky-thuat-gioi/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2016/08/19/teracy-dev-vision/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/09/29/nhung-dieu-can-biet-de-xay-dung-thu-nghiem-nguoi-dung-hieu-qua/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/2016/10/02/tap-hop-nhung-cuon-sach-hay-nen-doc-ve-ux/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/
         </loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/archives/</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
     <url>
         <loc>http://blog.teracy.com/robots.txt</loc>
-        <lastmod>2016-11-08T08:02:12+00:00</lastmod>
+        <lastmod>2016-11-08T08:29:29+00:00</lastmod>
     </url>
 </urlset>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: react | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/react/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-11-08T08:02:36+00:00</updated>
+  <updated>2016-11-08T08:29:54+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -38,9 +38,9 @@ you a starter React boilerplate for faster development and deployment.</p>
 <li>Webpack for bundling, hot module reloading</li>
 <li>Redux, Redux Dev Tools, redux-form, React Router</li>
 <li>ESLint consistent style checking</li>
-<li>unit testing</li>
+<li>Unit testing</li>
 <li>bootstrap and font-awesome</li>
-<li>and many other cool things</li>
+<li>And many other cool things</li>
 </ul>
 
 
@@ -335,13 +335,14 @@ productivity.</p>
 
 <h2>CI (continuous integration) and CD (continuous delivery)</h2>
 
-<p>By using CI and CD system like travis-ci and gitlab-ci, we could stick to the following process:</p>
+<p>By using CI and CD systems like travis-ci and gitlab-ci, we could stick to the following process:</p>
 
 <ul>
-<li>pull request (merge request) sent &ndash;> CI checks</li>
-<li>code changes &ndash;> CI checks. CI is passed then CD starts</li>
+<li>Pull request (merge request) is sent &ndash;> CI checks.</li>
+<li>Code changes &ndash;> CI checks.</li>
+<li>CI checking is passed, then CD starts.</li>
 <li>CD will deploy automatically, for example, to Heroku or other providers or your in-house data
-center</li>
+center.</li>
 </ul>
 
 
@@ -353,13 +354,20 @@ center</li>
 </ul>
 
 
-<p>When CI checking, we build Docker images (both development and production images):</p>
+<p>At the CI checking step, we build Docker images (both development and production images):</p>
 
 <ul>
 <li><a href="https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/">https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/</a></li>
 <li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry">https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry</a></li>
 </ul>
 
+
+<p>The development images install all development stuff (excluding the source code) so that
+all the developers should have the same development environment as long as they&rsquo;re using the same
+development image.</p>
+
+<p>The production (distribution) images install and package all runtime stuff so that everyone could
+run the applications right away with the same runtime environment.</p>
 
 <p>You can see these CI systems in action:</p>
 
@@ -386,18 +394,18 @@ without the devops maintenance cost.</p>
 we&rsquo;d like to add, for example:</p>
 
 <ul>
-<li>better code and component organization convention. The Angular 2 convention is a really great
+<li>Better code and component organization convention. The Angular 2 convention is a really great
 inspiration for this.</li>
-<li>update dependencies to latest versions.</li>
-<li>build the deployment Docker that should include runtime stuff only, not development stuff.</li>
-<li>server side code should be production ready and optimized.</li>
+<li>Update dependencies to latest versions.</li>
+<li>Build the deployment Docker that should include runtime stuff only, not development stuff.</li>
+<li>Server side code should be production ready and optimized.</li>
 </ul>
 
 
 <p>And there are more to do. So we intent to create a better <code>react-redux-universal-hot-example</code> version,
 we call it <code>react-boilerplate</code>.</p>
 
-<p>The project is here at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
+<p>The project is located at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
 as possible when it&rsquo;s ready. So stay tuned! At present we should use <code>react-redux-universal-hot-example</code>.</p>
 
 <h2>React application consulting and developing service</h2>

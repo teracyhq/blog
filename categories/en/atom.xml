@@ -4,7 +4,7 @@
   <title><![CDATA[Category: en | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/en/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-11-08T08:02:36+00:00</updated>
+  <updated>2016-11-08T08:29:54+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -38,9 +38,9 @@ you a starter React boilerplate for faster development and deployment.</p>
 <li>Webpack for bundling, hot module reloading</li>
 <li>Redux, Redux Dev Tools, redux-form, React Router</li>
 <li>ESLint consistent style checking</li>
-<li>unit testing</li>
+<li>Unit testing</li>
 <li>bootstrap and font-awesome</li>
-<li>and many other cool things</li>
+<li>And many other cool things</li>
 </ul>
 
 
@@ -335,13 +335,14 @@ productivity.</p>
 
 <h2>CI (continuous integration) and CD (continuous delivery)</h2>
 
-<p>By using CI and CD system like travis-ci and gitlab-ci, we could stick to the following process:</p>
+<p>By using CI and CD systems like travis-ci and gitlab-ci, we could stick to the following process:</p>
 
 <ul>
-<li>pull request (merge request) sent &ndash;> CI checks</li>
-<li>code changes &ndash;> CI checks. CI is passed then CD starts</li>
+<li>Pull request (merge request) is sent &ndash;> CI checks.</li>
+<li>Code changes &ndash;> CI checks.</li>
+<li>CI checking is passed, then CD starts.</li>
 <li>CD will deploy automatically, for example, to Heroku or other providers or your in-house data
-center</li>
+center.</li>
 </ul>
 
 
@@ -353,13 +354,20 @@ center</li>
 </ul>
 
 
-<p>When CI checking, we build Docker images (both development and production images):</p>
+<p>At the CI checking step, we build Docker images (both development and production images):</p>
 
 <ul>
 <li><a href="https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/">https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/</a></li>
 <li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry">https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry</a></li>
 </ul>
 
+
+<p>The development images install all development stuff (excluding the source code) so that
+all the developers should have the same development environment as long as they&rsquo;re using the same
+development image.</p>
+
+<p>The production (distribution) images install and package all runtime stuff so that everyone could
+run the applications right away with the same runtime environment.</p>
 
 <p>You can see these CI systems in action:</p>
 
@@ -386,18 +394,18 @@ without the devops maintenance cost.</p>
 we&rsquo;d like to add, for example:</p>
 
 <ul>
-<li>better code and component organization convention. The Angular 2 convention is a really great
+<li>Better code and component organization convention. The Angular 2 convention is a really great
 inspiration for this.</li>
-<li>update dependencies to latest versions.</li>
-<li>build the deployment Docker that should include runtime stuff only, not development stuff.</li>
-<li>server side code should be production ready and optimized.</li>
+<li>Update dependencies to latest versions.</li>
+<li>Build the deployment Docker that should include runtime stuff only, not development stuff.</li>
+<li>Server side code should be production ready and optimized.</li>
 </ul>
 
 
 <p>And there are more to do. So we intent to create a better <code>react-redux-universal-hot-example</code> version,
 we call it <code>react-boilerplate</code>.</p>
 
-<p>The project is here at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
+<p>The project is located at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
 as possible when it&rsquo;s ready. So stay tuned! At present we should use <code>react-redux-universal-hot-example</code>.</p>
 
 <h2>React application consulting and developing service</h2>
@@ -868,9 +876,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x73;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#117;&#x73;&#101;&#x72;&#64;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;">&#115;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x75;&#x73;&#101;&#114;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#111;&#x6d;</a>
+To: <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#117;&#x73;&#101;&#114;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#115;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#117;&#x73;&#101;&#x72;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x32;&#48;&#x31;&#53;&#x31;&#x32;&#x32;&#x31;&#49;&#x31;&#48;&#50;&#x33;&#48;&#46;&#50;&#51;&#52;&#54;&#51;&#x2e;&#56;&#48;&#56;&#x34;&#x35;&#x40;&#118;&#x61;&#103;&#x72;&#x61;&#x6e;&#116;&#x2e;&#118;&#x6d;">&#50;&#48;&#49;&#53;&#49;&#50;&#x32;&#x31;&#49;&#49;&#x30;&#50;&#51;&#x30;&#x2e;&#50;&#x33;&#52;&#54;&#51;&#x2e;&#56;&#x30;&#56;&#x34;&#53;&#x40;&#x76;&#x61;&#x67;&#114;&#97;&#x6e;&#116;&#46;&#118;&#109;</a></p>
+Message-ID: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#50;&#x30;&#49;&#53;&#x31;&#x32;&#50;&#49;&#x31;&#49;&#48;&#50;&#51;&#x30;&#46;&#x32;&#x33;&#52;&#x36;&#x33;&#x2e;&#x38;&#48;&#x38;&#52;&#53;&#x40;&#x76;&#97;&#103;&#x72;&#97;&#110;&#x74;&#x2e;&#x76;&#x6d;">&#x32;&#x30;&#49;&#x35;&#x31;&#50;&#50;&#49;&#49;&#x31;&#48;&#50;&#51;&#x30;&#46;&#50;&#x33;&#x34;&#54;&#51;&#46;&#56;&#48;&#x38;&#x34;&#x35;&#x40;&#x76;&#97;&#103;&#114;&#x61;&#x6e;&#116;&#46;&#118;&#109;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -1169,7 +1177,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#113;&#64;&#116;&#101;&#114;&#97;&#99;&#121;&#x2e;&#99;&#x6f;&#109;">&#x68;&#113;&#x40;&#116;&#101;&#x72;&#97;&#x63;&#x79;&#46;&#x63;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#104;&#x71;&#64;&#x74;&#101;&#x72;&#x61;&#x63;&#x79;&#46;&#99;&#111;&#x6d;">&#x68;&#x71;&#x40;&#x74;&#x65;&#114;&#97;&#x63;&#121;&#46;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
