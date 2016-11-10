@@ -4,6 +4,7 @@ preview:
     - LANG=en_US.UTF-8
     - LANGUAGE=en_US.UTF-8
     - LC_ALL=en_US.UTF-8
+  working_dir: /teracyBlog
   command: bash -c "rake generate && rake preview"
   ports:
     - "4000:4000"
@@ -15,6 +16,7 @@ run:
     - LANG=en_US.UTF-8
     - LANGUAGE=en_US.UTF-8
     - LC_ALL=en_US.UTF-8
+  working_dir: /teracyBlog
   command: bash -c "rake generate && cd /teracyBlog/public && ruby -run -ehttpd . -p4000"
   ports:
     - "4000:4000"
