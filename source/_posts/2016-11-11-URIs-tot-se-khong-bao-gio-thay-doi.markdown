@@ -2,7 +2,7 @@
 layout: post
 title: "URIs tốt sẽ không bao giờ thay đổi"
 author: phuonglm
-date: 2016-10-31 11:33
+date: 2016-11-11 11:33
 comments: true
 categories:
     - "vi"
@@ -11,13 +11,13 @@ tags:
     - "organization"
     - "management"
     - "document"
-cover: /images/2016/10/31/broken.jpg
+cover: /images/2016/11/11/broken.jpg
 keywords: organization, management, document, URL rewrite
 
-description: Một số sai lầm trong việc thiết kế và duy trì các URI trong các sản phầm/tài liệu của bạn.
+description: Một số sai lầm trong việc thiết kế và duy trì các URI trong các sản phẩm/tài liệu của bạn.
 published: true
 ---
-{% img center /images/2016/10/31/broken.jpg Việc thay đổi cấu trúc URI thường đem lại trải nghiệm không tốt cho người dùng. %}
+{% img center /images/2016/11/11/broken.jpg Việc thay đổi cấu trúc URI thường đem lại trải nghiệm không tốt cho người dùng. %}
 Theo bạn URIs (đường dẫn) thế nào là tốt? Những URIs nào sẽ bị thay đổi theo thời gian? Đường dẫn không tự thay đổi chỉ có con người khiến nó thay đổi.
 Theo lý thuyết thì không có lý do gì để mọi người thay đổi URI (hoặc là ngừng duy trì các tài liệu), nhưng thực tế thì lại có muôn vàn lý do mà dưới đây là một vài ví dụ.
 <!-- more -->
