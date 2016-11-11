@@ -4,7 +4,7 @@
   <title><![CDATA[Category: trans | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/trans/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-11-10T03:49:18+00:00</updated>
+  <updated>2016-11-11T13:05:47+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,112 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[URIs tốt sẽ không bao giờ thay đổi]]></title>
+    <link href="http://blog.teracy.com/2016/11/11/URIs-tot-se-khong-bao-gio-thay-doi/"/>
+    <updated>2016-11-11T11:33:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/11/11/URIs-tot-se-khong-bao-gio-thay-doi</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/11/11/broken.jpg" title="Việc thay đổi cấu trúc URI thường đem lại trải nghiệm không tốt cho người dùng." >
+Theo bạn URIs (đường dẫn) thế nào là tốt? Những URIs nào sẽ bị thay đổi theo thời gian? Đường dẫn không tự thay đổi chỉ có con người khiến nó thay đổi.
+Theo lý thuyết thì không có lý do gì để mọi người thay đổi URI (hoặc là ngừng duy trì các tài liệu), nhưng thực tế thì lại có muôn vàn lý do mà dưới đây là một vài ví dụ.</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><strong>Chúng tôi sắp xếp lại nội dung trang web để đem lại trải nghiệm tốt hơn.</strong></p>
+
+<p>Có phải như bạn cảm thấy không thể duy trì URIs cũ như hiện tại? Nếu vậy, bạn đã chọn quy tắc đặt URI thật tệ. Hãy suy nghĩ về những URI mới để bạn có thể giữ chúng tồn tại sau khi thiết kế lại lần tới nhé.</p></li>
+<li><p><strong>Chúng tôi có quá nhiều tài liệu đến mức không thể nào kiểm tra được cái nào đã cũ, cái nào là bí mật và hợp lệ và vì vậy chúng tôi nghĩ tốt hơn hết là thay đổi toàn bộ URIs để cấp phát lại từ đầu.</strong></p>
+
+<p>Hmm, có lẽ tôi có thể đồng cảm với việc này &ndash; W3C đã từng trải qua thời kỳ như vậy khi mà chúng tôi đã phải sàng lọc cẩn thận quyền truy cập của từng tại liệu trước khi cho phép nó được truy cập rộng rãi. Cách giải quyết là mọi tài liệu cần được hoạch định trước &ndash; hãy quy ước rõ và lưu trữ các thông tin của tài liệu đại loại như tài liệu được phân phối như thế nào, ngày tạo tài liệu và khi nào tài liệu đấy hết hiệu lực.</p></li>
+<li><p><strong>Uhm, chúng tôi thấy rằng chúng tôi phải chuyển các file đến thư mục khác.</strong></p>
+
+<p>Đây là một trong những lý do vụng về nhất. Có vẻ có nhiều người không biết rằng các máy chủ Web đều cho phép bạn tùy chỉnh rất linh hoạt mối quan hệ giữa đường dẫn và file thực tế được sử dụng trên hệ thống. Hãy nghĩ rằng URI là một tập các tên trừu tượng, được sắp xếp một cách gọn gàng sau đó hãy gán nó vào những file/ứng dụng cụ thể trong hệ thống của bạn và sau đó hãy cấu hình máy chủ web một tẹo để thể hiện việc gán ghép đấy.
+John không còn duy trì tài liệu này nữa, giờ thì chỉ Jane làm thôi.
+Hãy nghĩ lại đi, tại sao tên của John lại nằm trên URI? Nó nằm trong thư mục của John nên phải có John trên URI à?</p></li>
+<li><p><strong>Trước đây tôi dùng CGI script còn giờ thì chúng tôi chuyển sang dùng một chương trình khác.</strong></p>
+
+<p>Việc bạn cứ phải chạy theo cấu trúc URI của một kiểu chương trình/Framework này và rồi sau đó thay đổi nó chỉ vì bạn sử dụng một chương trình khác nghe thật là điên rồ. Ngoài ra việc bạn không cấu hình lại được URI cho phần mềm đấy còn để lộ thông tin về cách thức hoạt động của máy chủ của bạn cho người khác thấy (kiểu như bạn dùng máy chủ kiểu gì, phần mềm nào) và điều đó cũng hơi nguy hiểm đấy. Tóm lại là rất bất hợp lý nếu bạn thay đổi cơ chế hoạt động và tất cả các đường dẫn đều phải thay đổi dù nội dung của bạn không thay đổi gì.</p>
+
+<p>Lấy ví dụ cho điều này là trang thông tin khoa học quốc gia (Hoa kỳ).</p>
+
+<p>  <a href="http://www.nsf.gov/cgi-bin/pubsys/browser/odbrowse.pl">http://www.nsf.gov/cgi-bin/pubsys/browser/odbrowse.pl</a></p>
+
+<p>Đây là trang tìm kiếm tài liệu của trang thông tin khoa học, rõ ràng đây không có vẻ là URI được thiết kế cho việc tồn tại trong&hellip; vài năm! &ldquo;cgi&rdquo;, &ldquo;oldbrowse&rdquo; và &ldquo;.pl&rdquo; đã để lộ cách thức làm việc của cơ chế bên dưới. Tuy nhiên URI của kết quả tìm kiếm của trang thông tin khoa học quốc gia thì ổn hơn rất nhiều.</p>
+
+<p>  <a href="http://www.nsf.gov/pubs/1998/nsf9814/nsf9814.htm">http://www.nsf.gov/pubs/1998/nsf9814/nsf9814.htm</a></p>
+
+<p>Với phần đầu là &ldquo;pubs/1998&rdquo; cho ta gợi ý để biết rằng đó là tài liệu cũ từ năm 1998, cho dù thêm 100 năm nữa vào năm 2098 tài liệu thì có thể khác nhưng URI dạng này vẫn sẽ hợp lệ và NSF cho dù vẫn lưu trữ tài liệu cũ thì vẫn sẽ không phải lúng túng về URI này.</p></li>
+<li><p><strong>Tôi không nghĩ rằng URLs sẽ phải cố định &ndash; chỉ có URNs mới cần cố định.</strong></p>
+
+<p>Đây có lẽ là một trong những tác dụng phụ tồi tệ nhất của các thảo luận URN. Một số người dường như nghĩ rằng các không gian tên có thể được kéo dài ra và rằng chúng có thể làm cho các link lỏng lẻo như họ muốn, và khi đó &ldquo;URN sẽ xử lý được hết những điều này&rdquo;. Nếu bạn là một trong những người này thì tôi đã làm bạn vỡ mộng mất rồi.</p>
+
+<p>Hầu hết các chương trình URN mà tôi thấy nó giống như ID tác giả theo sau hoặc là ngày hoặc là một chuỗi ký tự bất kỳ mà bạn chọn, hoặc đơn giản chỉ là một chuỗi ký tự. Cái này trông giống như một HTTP URI. Nói cách khác, nếu bạn nghĩ tổ chức của bạn sẽ có thể tạo ra các URN tồn tại mãi mãi, rồi chứng minh điều đó bằng cách tạo ra ngay các URN và sử dụng chúng thay cho các HTTP URI. Sẽ Không có vấn đề gì về HTTP làm cho URI của bạn không ổn định cả, vì đó là tổ chức của bạn mà. Hãy thực hiện một cơ sở dữ liệu để ánh xạ được URN tài liệu vào trong tên file hiện tại, và cho phép máy chủ trang web của bạn sử dụng nó để lấy được các tập tin.
+Nếu bạn đã hiểu được điều này, và trừ khi bạn có tiền, thời gian và các địa chỉ liên hệ để thực hiện thiết kế phần mềm, thì khi đó bạn có thể đưa ra một số lý dó sau:</p></li>
+<li><p><strong>Chúng tôi muốn điều đó nhưng chúng tôi không có công cụ.</strong></p>
+
+<p>Tôi có thể hiểu và hoàn toàn đồng ý về lý do này. Bạn cần phải làm gì để máy chủ web luôn sử dụng một URI cố định và trả về đúng dữ liệu cho dù bạn có sử dụng hệ thống nào, lưu trữ ra sao tại bất kỳ thời điểm nào. Liệu bạn có cho rằng bạn có thể lưu URI ngay trong chính bản thân tài liệu như là một cách để đối chiếu và liên tục cập nhập cơ sở dữ liệu để khiến URI luôn đúng. Bạn sẽ muốn lưu trữ mối quan hệ giữa các phiên bản khác nhau và bản dịch của tài liệu đó. Ngoài ra bạn còn cần lữu trữ thông tin checksum để đảm bảo tính toàn vẹn của dữ liệu theo thời gian. Và như bạn thấy đấy, máy chủ web về cơ bản không phải là công cụ có thể cung cấp những điều đấy cho bạn. Khi bạn tạo một tài liệu mới, trình soạn thảo sẽ hỏi bạn URI thay vì nói cho bạn biết URI như thế nào.</p>
+
+<p>Bạn cũng cẩn có thể thay đổi được một vài thứ như ai là chủ sở hữu của tài liệu, quyền truy câp ra sao&hellip; mà không phải thay đổi gì về URI.</p>
+
+<p>Tại W3C chúng tôi sử dụng Jigedit (máy chủ Jigsaw dùng để chỉnh sửa tài liệu) để hỗ trợ việc theo dõi các phiên bản của tài liệu và chúng tôi đang thử nghiệm với các công cụ để tạo tài liệu. Nếu bạn là người viết công cụ, máy chủ thì hãy nhớ nhé.</p></li>
+</ul>
+
+
+<h1>Tại sao tôi phải quan tâm</h1>
+
+<p>  Khi bạn thay đổi URI trang web của bạn, bạn sẽ không bao giờ biết được ai vẫn đang giữ URI cũ và khi một ai đó click vào URI nhưng nó không tồn tại thì thường họ sẽ mất niềm tin vào trang web đấy. Thiệt hại sẽ là hiển nhiên khi để người sử dụng phàn nàn về những đường link như thế.</p>
+
+<h1>Vậy tôi phải bằt đầu từ đâu? Thiết kế URIs?</h1>
+
+<p>  Nếu bạn muốn URI của bạn sẽ vẫn đúng đắn sau 2 năm hay 200 năm tới, thì hãy suy nghĩ về nó thật kỹ. URIs thay đổi khi một vài thông tin trong bản thân nó thay đổi. Thiết kế URI như thế nào thật sự là rất quan trọng. Và việc đầu tiên là hay loại bỏ bớt các thông tin không cần thiết ra khỏi URI.</p>
+
+<p>  Ngày khởi tạo của tài liệu là một tham số sẽ không bao giờ thay đổi và nó rất hữu ích cho việc phân loại truy nhập từ hệ thống mới hay hệ thống cũ. Về cơ bản đấy là khởi đầu tốt cho một thiết kế URI ổn định.</p>
+
+<p>  Có một ngoại lệ ở đây chính là URI dùng cho &ldquo;mới nhất&rdquo; hay trang &ldquo;nhất&rdquo;, ví dụ như URI ở dưới đây:</p>
+
+<p>  <a href="http://www.pathfinder.com/money/moneydaily/latest/">http://www.pathfinder.com/money/moneydaily/latest/</a></p>
+
+<ul>
+<li><p><strong>Cái gì nên bỏ ra khỏi URI</strong></p>
+
+<p>Hmm, ngoại trừ ngày tháng thì những phần khác chỉ tổ khiến mọi thứ rắc rối hơn thôi. Ví dụ:</p>
+
+<ul>
+<li><strong>Sử dụng tên tác giả</strong> &ndash; tác giả có thể thay đổi theo từng phiên bản của tài liệu, chỉ cần tác giả thay đổi thì URI của tài liệu xem như là đã không đúng nữa.</li>
+<li><strong>Dùng tiêu đề của tài liệu</strong> &ndash; Ban đầu thì có vẻ tốt nhưng dần dần nó sẽ bị thay đổi rất nhanh khi tài liệu được cập nhật.</li>
+<li><strong>Trạng thái của tài liệu</strong> &ndash; trạng thái của tài liệu không nên được thiết lập trong URI, URI của tài liệu mới nhất cần được cố định bất chấp tài liệu có trạng thái như thế nào đi nữa.</li>
+<li><strong>Thông tin truy nhập</strong> &ndash; Tại W3C, chúng tôi chia quyền truy cập trang web thành 3 mục chính, nội dung dành cho chúng tôi, nội dung dành cho các thành viên và những nội dung công cộng. Ban đầu sử dụng URI riêng cho từng quyền truy nhập có vẻ ổn nhưng khi chúng tôi chuyển tài liệu từ quyền truy nhập này sang truy nhập khác thì link cũ sẽ không còn tồn tại và gây nên lỗi.</li>
+<li><strong>Đuôi của file truy nhập</strong> &ndash; Đây là lỗi thường gặp &ldquo;.cgi&rdquo; &ldquo;.html&rdquo; là những thứ sẽ thay đổi theo thời gian. Bạn có chắc là bạn sẽ vẫn dùng html hay cgi hay php trong 20 năm tới? Thay vì sử dụng tên file và đuôi của nó trực tiếp thì bạn có thể sử dụng các biện pháp như: Sử dụng database để lưu trữ file, dùng mod rewrite để thay đổi cấu trúc URL tự động, sử dụng mod_spelling của Apache để tự động điền đuôi file, sửa lỗi chính tả&hellip;</li>
+<li><strong>Đường dẫn chỉ ổ đĩa</strong> &ndash; !!? à vâng, nhưng tôi đã từng thấy rồi đấy thưa các bạn.</li>
+</ul>
+
+
+<p>Một URI đơn giản và tốt có thể ở dạng như sau:</p>
+
+<p><a href="http://www.w3.org/1998/12/01/chairs">http://www.w3.org/1998/12/01/chairs</a></p></li>
+<li><p><strong>Phân loại tài liệu theo từng đề mục:</strong></p>
+
+<p>Đây là một con dao 2 lưỡi mà đôi khi rất khó để tránh khỏi. Thường thì việc sử dụng đề mục trong URI khi bạn phân loại tài liệu dựa vào đặc tính tài liệu mà bạn đang làm việc. Các đặc tính sẽ dần thay đổi theo thời gian, ở W3C chúng tôi đang muốn đổi &ldquo;MarkUp&rdquo; thành &ldquo;Markup&rdquo; và rồi chúng tôi lại đổi thành &ldquo;HTML&rdquo;, bạn thấy đấy, các khái niệm sẽ dần thay đổi theo thời gian. Ví dụ như liệu sau này chúng ta có còn sử dụng &ldquo;Stylesheet&rdquo;, liệu có còn khái niệm &ldquo;Lịch sử truy nhập&rdquo; trong trình duyệt nữa không!?</p>
+
+<p>Vận hành và quản lý trang web của một tổ chức là rất khó, mà thật ra tổ chức cái gì cũng vậy. Giải pháp trung hạn của bạn có thể sẽ trở thành trở ngại lớn trong dài hạn.</p>
+
+<p>Thêm vấn đề nữa của việc phân loại này là mỗi người sẽ có cách phân loại riêng của mình, sự liên kết giữa các khái niệm là không cố định theo từng cá nhân và nó sẽ tiềm ẩn nguy cơ rất lớn khi bạn phân loại theo mô hình cây như vậy. Tóm lại, nếu bạn phân loại theo chủ đề trong URI nghĩa là bạn đang sử dụng một kiểu phân loại như vậy và việc phân loại này sẽ bị thay đổi trong tương lai và điều đó sẽ khiến URI bị hỏng.</p></li>
+<li><p><strong>Đừng quên cả việc thiết kế tên miền nữa nhé</strong></p>
+
+<p>Những lưu ý về URI ở trên không chỉ giới hạn trong phần địa chỉ mà còn trong cả tên miền. Nếu bạn có máy chủ riêng cho những thứ của bạn, hãy nhớ việc phân chia sử dụng subdomain sẽ tiềm ẩn nguy cơ khiến nhiều URI không còn tồn tại trong tương lai. Nhiều quản trị hệ thống cảm thấy thoải mái hơn khi phân chia mọi thứ theo domain con như kiểu &ldquo;cgi.pathfinder.com&rdquo;, &ldquo;lists.w3.org&rdquo; nhưng hãy cẩn trọng và suy nghĩ thật kỹ khi sử dụng nhiều hơn một tên miền cho trang web của bạn. Vận dụng khéo léo việc tạo ra các trang chuyển hướng sẽ giúp bạn quản lý tốt hơn.</p>
+
+<h1>Kết luận</h1>
+
+<p>Thiết kế và sử dụng URIs nhất quán trong 2, 20 hay thậm chí 200 năm chắc chắn là không đơn giản. Tuy nhiên vì các đồng chí quản trị cứ hay đưa ra những quyết định khiến cho họ lâm vào rắc rối trong tương lai. Thường thì do họ sử dụng những công cụ có sẵn và công cụ đấy lại có tầm nhìn quá ngắn hạn và bản thân họ cũng không thấy được những vấn đề lớn trong tương lai khi các URI của họ bị thay đổi. Thông điệp ở đây là, hay cố gắng thiết kế URI làm sao cho dù mọi thứ thay đổi (công nghệ, hệ thống, con người, các tham số, thuộc tính) thì URI của bạn vẫn luôn cố định và tất nhiên là truy cập được :).</p></li>
+</ul>
+
+
+<p> Lược dịch từ: <a href="https://www.w3.org/Provider/Style/URI.html">Cool URIs don&rsquo;t change</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 3)]]></title>
@@ -455,138 +561,6 @@ Một khi bạn đã thực hiện thử nghiệm với vài người dùng đ�
 <p>(Mời bạn xem tiếp <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">phần 2</a>)</p>
 
 <p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tập hợp những cuốn sách hay nên đọc về UX]]></title>
-    <link href="http://blog.teracy.com/2016/10/02/tap-hop-nhung-cuon-sach-hay-nen-doc-ve-ux/"/>
-    <updated>2016-10-02T16:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/10/02/tap-hop-nhung-cuon-sach-hay-nen-doc-ve-ux</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/02/ux-books.jpeg" title="Tập hợp những cuốn sách hay về UX" ></p>
-
-<p>Đây là danh sách đọc dành cho bất cứ ai muốn học hoặc tìm hiểu sâu hơn về các lĩnh vực nghiên cứu người dùng, khả năng sử dụng, kiến trúc thông tin, thiết kế giao diện người dùng, thiết kế tương tác, chiến lược nội dung hoặc chiến lược kinh nghiệm.</p>
-
-<p>Danh sách này rất rộng gồm những cuốn sách tiêu biểu về tư duy thiết kế, quy trình, phương pháp, nguyên tắc và các cách làm tốt nhất. Trong danh sách này có nhiều cuốn sách đã có cách đây hơn 20 năm, tuy nhiên nó vẫn phù hợp với hiện nay.</p>
-
-<p>Mỗi cuốn sách đều có ảnh hưởng đến quan điểm của tôi, tạo ấn tượng cho tôi và giúp tôi thăng tiến trong sự nghiệp của mình. Những cuốn sách này cũng đã hình thành nên người thiết kế là tôi hôm nay và tạo cảm hứng thiết kế cho tôi mai sau.</p>
-
-<p>Không có ngày nào tôi không tự suy nghĩ và áp dụng các ý tưởng từ những cuốn sách này cả. Tôi hy vọng rằng bạn cũng có thể tìm thấy giá trị như vậy nhờ những cuốn sách này.</p>
-
-<!-- more -->
-
-
-<h1>Top Mười Cuốn Sách Của Tôi</h1>
-
-<ol>
-<li><a href="http://amzn.com/0465050654">The Design of Everyday Things</a>, Donald Norman</li>
-<li><a href="http://amzn.com/1118766571">About Face: The Essentials of Interaction Design</a>, Alan Cooper</li>
-<li><a href="http://amzn.com/0321683684">The Elements of User Experience: User-Centered Design for the Web and Beyond</a>, Jesse James Garrett</li>
-<li><a href="http://amzn.com/0596516835">Subject To Change: Creating Great Products &amp; Services for an Uncertain World</a>, Peter Merholz, Todd Wilkens, Brandon Schauer, David Verba</li>
-<li><a href="http://uxmastery.com/practical-ia/">A Practical Guide to Information Architecture</a>, Donna Spencer</li>
-<li><a href="http://amzn.com/0321712463">Communicating Design: Developing Web Site Documentation for Design and Planning</a>, Dan M. Brown</li>
-<li><a href="http://amzn.com/0321918630">Designing Together: The collaboration and conflict management handbook for creative professionals</a>, Dan M. Brown</li>
-<li><a href="http://amzn.com/0321725522">Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences</a>, Stephen Anderson</li>
-<li><a href="http://amzn.com/0321767535">100 Things Every Designer Needs to Know About People</a>, Susan Weinschenk</li>
-<li><a href="http://shapeofdesignbook.com/">The Shape of Design</a>, Frank Chimero</li>
-</ol>
-
-
-<h1>50 Cuốn Sách Cần Phải Đọc Về Tư Duy, Phương Pháp, Nguyên Tắc, Và Các Cách Làm Tốt Nhất</h1>
-
-<p>Tôi thấy rất hữu ích khi lựa chọn nên đọc cái gì dựa trên những gì có liên quan vào thời điểm nào đó. Khi bạn nghĩ và làm, việc áp dụng những gì bạn đang đọc là một cách tuyệt vời để củng cố các khái niệm, phản ánh và học hỏi.</p>
-
-<p>Tất cả các bài đọc dưới đây đều quan trọng, một số bài cũ và một số bài mới, không theo một thứ tự đặc biệt nào cả.</p>
-
-<ul>
-<li><a href="http://amzn.com/0596516258">Designing Web Interfaces: Principles and Patterns for Rich Interactions</a>, Bill Scott, Theresa Neil</li>
-<li><a href="http://amzn.com/0262134721">The Laws of Simplicity (Simplicity: Design, Technology, Business, Life)</a>, John Maeda</li>
-<li><a href="http://amzn.com/1491911689">Information Architecture for the World Wide Web: Designing for the Web and Beyond, Peter Morville, Louis Rosenfeld</a>, Jorge Arango</li>
-<li><a href="http://amzn.com/0123740371">Sketching User Experiences: Getting the Design Right and the Right Design</a>, Bill Buxton</li>
-<li><a href="http://amzn.com/1625274793">Well Designed: How to Use Empathy to Create Products People Love</a>, Jon Kolko</li>
-<li><a href="http://amzn.com/0123809304">Thoughts on Interaction Design</a> của Jon Kolko</li>
-<li><a href="http://amzn.com/1477800670">Manage Your Day-to-Day: Build Your Routine, Find Your Focus, and Sharpen Your Creative Mind</a>, Jocelyn K. Glei, 99u</li>
-<li><a href="http://amzn.com/1591843162">Linchpin: Are You Indispensable?</a>, Seth Godin</li>
-<li><a href="http://amzn.com/0321965515">Don’t Make Me Think</a> và <a href="http://amzn.com/0321657292">Rocket Surgery Made Easy</a>, Steve Krug</li>
-<li><a href="http://amzn.com/1449379702">Designing Interfaces</a>, Jennifer Tidwell</li>
-<li><a href="http://amzn.com/0470185481">Handbook of Usability Testing: How to Plan, Design, and Conduct Effective Tests</a>, Jeffrey Rubin, Dana Chisnell</li>
-<li><a href="http://mitpress.mit.edu/books/designing-interactions">Designing Interactions</a>, Bill Moggridge</li>
-<li><a href="https://www.amazon.com/dp/0961392142">The Visual Display of Quantitative Information</a> và <a href="https://www.amazon.com/dp/0961392118">Envisioning Information</a>, Edward R. Tufte</li>
-<li><a href="http://amzn.com/0321815386">A Project Guide to UX Design: For user experience designers in the field or in the making</a>, Russ Unger &amp; Carolyn Chandler</li>
-<li><a href="http://amzn.com/0596804172">Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers</a>, Dave Gray, Sunni Brown, James Macanufo</li>
-<li><a href="http://rosenfeldmedia.com/books/mental-models/">Mental Models: Aligning Design Strategy with Human Behavior</a>, Indi Young</li>
-<li><a href="http://rosenfeldmedia.com/books/practical-empathy/">Practical Empathy: For Collaboration and Creativity in Your Work</a>, Indi Young</li>
-<li><a href="http://rosenfeldmedia.com/books/interviewing-users/">Interviewing Users: How to Uncover Compelling Insights</a>, Steve Portigal</li>
-<li><a href="http://rosenfeldmedia.com/books/the-mobile-frontier/">The Mobile Frontier: A Guide for Designing Mobile Experiences</a>, Rachel Hinman</li>
-<li><a href="http://rosenfeldmedia.com/books/design-is-the-problem/">Design Is the Problem: The Future of Design Must be Sustainable</a>, Nathan Shedroff</li>
-<li><a href="http://rosenfeldmedia.com/books/the-user-experience-team-of-one/">The User Experience Team of One: A Research and Design Survival Guide</a>, Leah Buley</li>
-<li><a href="http://rosenfeldmedia.com/books/prototyping/">Prototyping: A Practitioner’s Guide</a>, Todd Zaki Warfel</li>
-<li><a href="http://amzn.com/0321552342">Making Meaning: How Successful Businesses Deliver Meaningful Customer Experiences</a>, Steve Diller, Nathan Shedroff, Darrel Rhea</li>
-<li><a href="http://amzn.com/0321808304">Content Strategy for the Web</a> của các tác giả Kristina Halvorson, Melissa Rach</li>
-<li><a href="http://abookapart.com/products/responsive-web-design">Responsive Web Design</a>, Ethan Marcotte</li>
-<li><a href="http://abookapart.com/products/just-enough-research">Just Enough Research</a>, Erika Hall</li>
-<li><a href="http://abookapart.com/products/design-is-a-job">Design Is A Job</a>, Mike Monteiro</li>
-<li><a href="http://abookapart.com/products/designing-for-emotion">Designing for Emotion</a>, Aaron Walter</li>
-<li><a href="http://amzn.com/0124157815">Measuring the User Experience: Collecting, Analyzing, and Presenting Usability Metrics</a> của tác giả William Albert, Thomas Tullis</li>
-<li><a href="http://amzn.com/1600617972">Creative Workshop: 80 Challenges to Sharpen Your Design Skills</a>, David Sherwin</li>
-<li><a href="http://amzn.com/0123859301">Letting Go of The Words: Writing Web Content that Works</a>, Janice (Ginny) Redish</li>
-<li><a href="http://amzn.com/0321749855">Designing the Obvious: A Common Sense Approach to Web Application Design</a>, Robert Hoekman Jr</li>
-<li><a href="http://amzn.com/0321535081">Designing the Moment: Web Interface Design Concepts in Action</a>, Robert Hoekman Jr</li>
-<li><a href="http://www.amazon.com/Designing-Social-Voices-That-Matter/dp/0321534921/">Designing for the Social Web</a>, Joshua Porter</li>
-<li><a href="http://amzn.com/0321719905">Undercover User Experience Design</a>, Cennydd Bowles, James Box</li>
-<li><a href="http://amzn.com/0321929039">Product Design for the Web: Principles of Designing and Releasing Web Products</a>, Randy Hunt</li>
-<li><a href="http://amzn.com/0321537351">Designing the User Interface: Strategies for Effective Human-Computer Interaction</a>, Ben Shneiderman, Catherine Plaisant, Maxine Cohen, Steven Jacobs</li>
-<li><a href="http://amzn.com/1118156307">This is Service Design Thinking: Basics, Tools, Cases</a>, Marc Stickdorn, Jakob Schneider</li>
-<li><a href="http://amzn.com/0470632011">Resonate: Present Visual Stories That Transform Audiences</a>, Nancy Duarte</li>
-<li><a href="http://amzn.com/0321898672">Metaskills: 5 Talents for the Robotic Age</a>, Marty Neumeier</li>
-<li><a href="https://www.amazon.com/dp/0321348109/ref=cm_sw_su_dp">The Brand Gap: How to Bridge the Distance Between Business Strategy and Design</a>, Marty Neumeier</li>
-<li><a href="https://gettingreal.37signals.com/">Getting Real</a> và <a href="https://www.amazon.com/dp/0307463745">Rework</a>, 37 Signals, Jason Fried, David Heinemeier Hansson</li>
-<li><a href="https://www.amazon.com/dp/0801475090">Glut: Mastering Information through the Ages</a>, Alex Wright</li>
-<li><a href="http://amzn.com/0201379376">The Humane Interface: New Directions for Designing Interactive Systems</a>, Jef Raskin</li>
-<li><a href="http://amzn.com/0321616952">Designing with Web Standards</a>, Jeffrey Zeldman, Ethan Marcotte</li>
-<li><a href="http://amzn.com/0321703545">Simple and Usable Web, Mobile, and Interaction Design</a>, Giles Colborne</li>
-<li><a href="http://amzn.com/0596802277">Search Patterns: Design for Discovery</a>, Peter Morville, Jeffery Callender</li>
-<li><a href="http://amzn.com/0465051367">Emotional Design: Why We Love (or Hate) Everyday Things</a>, Don Norman</li>
-<li><a href="http://amzn.com/0321603605">Neuro Web Design: What Makes Them Click?</a>, Susan Weinschenk</li>
-<li><a href="http://amzn.com/0470229101">Designing for the Digital Age: How to Create Human-Centered Products and Services</a>, Kim Goodwin</li>
-<li><a href="http://rosenfeldmedia.com/books/a-web-for-everyone/">A Web For Everyone, Sarah Horton</a>, Whitney Quesenbery</li>
-</ul>
-
-
-<h1>Thật Hữu Ích Khi Đọc Nhiều</h1>
-
-<p>Đọc sách chỉ là một phần tạo nguồn cảm hứng và học tập của tôi. Tôi cũng thường xuyên đọc các bài blog và báo. Tôi khuyên bạn hãy cập nhật các nguồn sau về tư duy lãnh đạo tuyệt vời:</p>
-
-<ul>
-<li><a href="http://www.peterme.com/">Peter Merholz</a></li>
-<li><a href="https://medium.com/the-year-of-the-looking-glass">The Year of the Looking Glass</a>, Julie Zhou</li>
-<li><a href="http://bokardo.com/about/">Bokardo</a>, Joshua Porter</li>
-<li><a href="https://ia.net/know-how">Information Architects</a>, Oliver Reichenstein</li>
-<li><a href="http://feltpresence.com/">Felt Presence</a>, Ryan Singer</li>
-<li><a href="http://whitneyhess.com/blog/">Whitney Hess</a></li>
-<li><a href="http://www.disambiguity.com/">Disambiguity</a>, Leisa Reichelt</li>
-<li><a href="http://www.lukew.com/ff/">Form and Function</a>, Luke Wroblewski</li>
-<li><a href="http://frankchimero.com/">Frank Chimero</a></li>
-<li><a href="https://aralbalkan.com/">Aral Balkan</a></li>
-<li><a href="http://davidcole.me/">David Cole</a></li>
-<li><a href="http://sethgodin.typepad.com/">Seth Godin</a></li>
-<li><a href="http://scottberkun.com/blog/">Scott Berkun</a></li>
-<li><a href="http://blog.intercom.io/">Intercom</a></li>
-<li><a href="https://library.gv.com/tagged/design">Google Ventures Design Library</a></li>
-<li><a href="http://www.adaptivepath.com/ideas/">Adaptive Path</a></li>
-<li><a href="http://boxesandarrows.com/">Boxes and Arrows</a></li>
-<li><a href="http://www.uxmatters.com/">UXmatters</a></li>
-<li><a href="http://www.uie.com/brainsparks/">UIE Brainsparks</a></li>
-<li><a href="http://uxmag.com/">UX Magazine</a></li>
-<li><a href="http://www.uxbooth.com/">UX Booth</a></li>
-<li><a href="http://alistapart.com/">A List Apart</a></li>
-<li><a href="http://www.smashingmagazine.com/">Smashing Magazine</a></li>
-<li><a href="https://signalvnoise.com/">Signal vs. Noise</a>, Basecamp</li>
-<li><a href="http://52weeksofux.com/">52 Weeks of UX</a></li>
-</ul>
-
-
-<p>Bài dịch từ <a href="https://medium.com/interactive-mind/the-only-ux-reading-list-ever-d420edb3f4ff#.m21ut2rer">The Only UX reading list ever</a></p>
 ]]></content>
   </entry>
   
