@@ -69,6 +69,22 @@ make changes on your content.
 
 3.2. How to run blog with Docker in prod mode
 
+From distributed Docker image:
+
+```
+$ docker run -p 8080:80 teracy/blog
+```
+
+or with docker-compose and from docker-compose.prod.yml file:
+
+```
+$ docker-compose -f docker-compose.prod.yml up
+```
+
+Then open http://localhost:8080 to see static blog site served by nginx.
+
+3.3. How to build the prod Docker image
+
 First, use teracy/blog:dev_latest image to generate static content:
 
 ```
@@ -78,10 +94,8 @@ $ docker run -it --rm -v $(pwd):/opt/app teracy/blog:dev_latest
 And then:
 
 ```
-$ docker-compose -f docker-compose.prod.yml up
+$ docker-compose -f docker-compose.prod.yml build
 ```
-
-Open http://localhost:8080 to see the static site served by nginx.
 
 
 4. Learn more at http://octopress.org/docs/
