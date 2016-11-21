@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker"
-author: 
+author: hoatle
 date: 2016-11-07 07:18
 comments: true
 categories:

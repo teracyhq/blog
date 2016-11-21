@@ -8,6 +8,7 @@ categories:
     - "vi"
     - "trans"
 tags:
+    - "uri"
     - "organization"
     - "management"
     - "document"
