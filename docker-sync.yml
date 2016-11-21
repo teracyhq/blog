@@ -1,0 +1,10 @@
+options:
+  compose-dev-file-path: 'docker-compose-mac.yml'
+
+syncs:
+  app-sync:
+    src: '.'
+    dest: '/opt/app'
+    sync_user: 'app'
+    sync_group: 'app'
+    sync_host_port: 10872

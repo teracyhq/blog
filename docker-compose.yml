@@ -1,24 +1,13 @@
-preview:
-  build: .
-  environment:
-    - LANG=en_US.UTF-8
-    - LANGUAGE=en_US.UTF-8
-    - LC_ALL=en_US.UTF-8
-  working_dir: /teracyBlog
-  command: bash -c "rake generate && rake preview"
-  ports:
-    - "4000:4000"
-  volumes:
-    - .:/teracyBlog
-run:
-  build: .
-  environment:
-    - LANG=en_US.UTF-8
-    - LANGUAGE=en_US.UTF-8
-    - LC_ALL=en_US.UTF-8
-  working_dir: /teracyBlog
-  command: bash -c "rake generate && cd /teracyBlog/public && ruby -run -ehttpd . -p4000"
-  ports:
-    - "4000:4000"
-  volumes:
-    - .:/teracyBlog
+version: "2"
+
+services:
+  teracy-blog-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    image: teracy/blog:dev_latest
+    command: bash -c "rake generate && rake preview"
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/opt/app

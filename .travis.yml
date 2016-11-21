@@ -1,7 +1,21 @@
+sudo: required
+language: ruby
+services:
+- docker
 branches:
   only:
-  - master
-language: ruby
+    - master
+env:
+  matrix:
+  - DOCKER_FILE=Dockerfile-dev IMAGE_TAG_PREFIX=dev_
+  - DOCKER_FILE=Dockerfile     IMAGE_TAG_PREFIX=
+  global:
+  - CI_BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+  - CI_REGISTRY_IMAGE=teracy/blog
+  - GH_REPO="teracyhq/blog"
+  - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
+  - secure: ZqfHU9aTGK5qkC/BmFubk0UUn/yQG8G2dzP/jJ4HSndRi5ZJm4w/HHfIo0rxUKSVfzdru1u7hMHv6dE0eYvU5875V5/A83tEP5ruJAPtj5zu3MG9V/zsBIrkIjQK7h+WeNdOrSpKD3oZJJzMJ40irC4CepXQSPPS2edWRw/c0Go=
+  - secure: IS6jNckNd/+MeFMdM3Mw834r6ExO68WEo+sPl9O6QUwcL4Gef4ARSYB9CWWrRtOyfInSyEekJiV+fve+pcO03Iiz4Wqs3/EnPgPqV+WGego2d0cxBZv4e7DYrD02/PYCAc6sO+U4XcPj53XwCy9sHdRDfUzBWrE90WgVAjBii0s=
 rvm:
 - 1.9.3
 before_script:
@@ -10,13 +24,20 @@ before_script:
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 - bundle exec rake setup_github_pages[$REPO_URL]
 - git checkout -- _config.yml
-script: bundle exec rake generate
+- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH;
+  fi`
+- export CONTAINER_IMAGE=$CI_REGISTRY_IMAGE:$IMAGE_TAG_PREFIX$TAG
+script:
+- if [ "$DOCKER_FILE" == "Dockerfile" ]; then bundle exec rake generate; fi
+- docker build -f $DOCKER_FILE --build-arg CI_BUILD_ID=$TRAVIS_BUILD_ID --build-arg
+  CI_BUILD_REF=$TRAVIS_COMMIT --build-arg CI_BUILD_REF_NAME=$TRAVIS_BRANCH --build-arg
+  CI_BUILD_TIME=$CI_BUILD_TIME --build-arg CI_REGISTRY_IMAGE=$CI_REGISTRY_IMAGE --build-arg
+  CI_PROJECT_NAME=$TRAVIS_REPO_SLUG --pull -t $CONTAINER_IMAGE .
 after_script:
-- bundle exec rake deploy
-env:
-  global:
-  - GH_REPO="teracyhq/blog"
-  - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
+- if [ "$DOCKER_FILE" == "Dockerfile" ]; then bundle exec rake deploy; fi
+after_success:
+- docker login -u=$DOCKER_USERNAME -p=$DOCKER_PASSWORD
+- docker push $CONTAINER_IMAGE
 notifications:
   slack:
     on_pull_requests: false

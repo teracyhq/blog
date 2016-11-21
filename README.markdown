@@ -15,96 +15,76 @@ clone it into your personal workspace.
 
 1. Fork this repository into your github account
 
-2. Clone your forked repository into your `workspace/personal` directory:
+2. Clone your forked repository into your `~/teracy-dev/workspace/` directory:
 
 ``` bash
-$ ws
-$ cd personal
-$ git clone <your_forked_repository_here>
+$ mkdir -p ~/teracy-dev/workspace/
+$ cd ~/teracy-dev/workspace/
+$ git clone <your_forked_repository_here> teracy-blog
+$ cd teracy-blog
 ```
 
-How to run blog with docker
----------------------------
+3. Run with Docker
+
+3.1. How to run blog with Docker in dev mode
 
 First you must have docker and docker-compose in your machine.
 
-Update your content and use this command to preview the blog.
+Update your content and use the follow commands to generate and preview the blog.
+
+**On Linux**
 
 ```
-$ docker-compose up preview
+$ docker-compose up
 ```
 
-Now, keep that console and open http://localhost:4000 to see the blog, It'll auto rebuild when you make change on your content.
+**On Mac**
 
-To generate docker image which contain the full blog.
-
-```
-$ docker build . --tag teracyhq/teracy-blog
-```
-
-The image will be created under tag teracyhq/teracy-blog, you can run it anytime by exectue this command:
+Install docker-sync:
 
 ```
-$ docker run -t -i --rm teracyhq/teracy-blog
+$ gem install docker-sync
+$ brew install fswatch
+$ brew install rsync
 ```
 
-How to run blog on teracy-dev vagrant box
------------------------------------------
-
-1. Setup dev VM like this: http://dev.teracy.org/docs/getting_started.html
-
-2. Install dependency, clone this repository and preview
-
-After `$ vagrant ssh`:
-
-2.1. Install with `bundle`
-
-Installs this for the first time only
+Start docker-sync with:
 
 ```
-$ ws
-$ git clone <repo_url>
-$ cd personal/blog
-$ bundle install
+$ docker-sync start
 ```
 
-2.2. Preview blog
+Open a new terminal window with:
 
 ```
-$ ws
-$ cd personal/blog
-$ rake preview
+$ docker-compose -f docker-compose.yml -f docker-compose-mac.yml up
 ```
 
-You should see something like this:
+**On Windows**
+TODO(hoatle): check and work on this
+
+
+Now, keep that console and open http://localhost:4000 to see the blog, It'll auto rebuild when you 
+make changes on your content.
+
+3.2. How to run blog with Docker in prod mode
+
+First, use teracy/blog:dev_latest image to generate static content:
 
 ```
-Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
-[2014-12-10 10:31:54] INFO  WEBrick 1.3.1
-[2014-12-10 10:31:54] INFO  ruby 1.9.3 (2012-04-20) [i686-linux]
-[2014-12-10 10:31:54] INFO  WEBrick::HTTPServer#start: pid=20200 port=4000
-Configuration from /home/vagrant/workspace/personal/spec-int/_config.yml
-Auto-regenerating enabled: source -> public
-[2013-11-04 10:31:56] regeneration: 186 files changed
->>> Change detected at 10:31:58 to: screen.scss
-identical public/stylesheets/screen.css
-
-Dear developers making use of FSSM in your projects,
-FSSM is essentially dead at this point. Further development will
-be taking place in the new shared guard/listen project. Please
-let us know if you need help transitioning! ^_^b
-- Travis Tilley
-
->>> Compass is polling for changes. Press Ctrl-C to Stop.
+$ docker run -it --rm -v $(pwd):/opt/app teracy/blog:dev_latest
 ```
 
-Now, open http://localhost:4000 to see the blog.
+And then:
 
-Note that sometimes the content was cached, you need to stop the preview (Cmd/Ctrl + c) then
-`$ rake generate` and `$ rake preview` again.
+```
+$ docker-compose -f docker-compose.prod.yml up
+```
 
-3. Learn more at http://octopress.org/docs/
+Open http://localhost:8080 to see the static site served by nginx.
 
+
+4. Learn more at http://octopress.org/docs/
 
 Blog post structure guide
 -------------------------
