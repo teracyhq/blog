@@ -1,22 +1,24 @@
 ---
 layout: post
 title: "Tư duy thiết kế: Cẩm nang cho sự đổi mới (Phần 1)"
-author: Hạnh Lê
+author: hanhle
 date: 2016-11-22 10:18
 comments: true
 categories:
-    - "vn"
+    - "vi"
+    - "trans"
 
 tags:
-    - "design"
+    - "design thinking"
     - "ux"
+    - "design"
 cover: /images/2016/11/22/tu-duy-thiet-ke.jpeg
 description: Làm thế nào để tạo ra những sản phẩm đổi mới, sáng tạo?
 keywords: Design, ux, Design Thinking, Innovation, Adobe Xd, tư duy thiết kế, đổi mới
 published: true
 ---
 
-{% img center /images/2016/11/22/tu-duy-thiet-ke.jpeg Tư duy thiết kế %)
+{% img center /images/2016/11/22/tu-duy-thiet-ke.jpeg Tư duy thiết kế %}
 
 Liệu có một công thức nào để tạo ra các sản phẩm sáng tạo hay không? Kinh nghiệm hay là dịch vụ? Tôi
 không nói về cải tiến gia tăng mà đang nói về sự đổi mới đột phá.
@@ -25,12 +27,12 @@ không nói về cải tiến gia tăng mà đang nói về sự đổi mới đ
 Nếu bạn có nghi ngờ thì cũng là điều dễ hiểu, tôi cũng đã từng hoài nghi khi tôi bắt đầu nghiên cứu
 của mình về khoa học đằng sau đổi mới cách đây nhiều năm. Sự thật về sự đổi mới là tất cả đều phụ
 thuộc yếu tố con người. Cuối cùng, chúng ta là những người tạo ra những đổi mới cho mọi người. Là 
-một trong những nhà quản lý sản phẩm làm việc trên [http://www.adobe.com/products/experience-design.html](Adobe Experience Design)(Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
-tôi rất yêu thích, sử dụng, [http://designthinkingnow.com/#/about/english](giảng dạy), và học hỏi
-mỗi ngày tại nơi làm việc, và trong cuộc sống.
-
+một trong những nhà quản lý sản phẩm làm việc trên [Adobe Experience Design](http://www.adobe.com/products/experience-design.html)(Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
+tôi rất yêu thích, sử dụng, [giảng dạy](http://designthinkingnow.com/#/about/english), và học
+hỏi mỗi ngày tại nơi làm việc, và trong cuộc sống.
 
 <!-- more -->
+
 Khi bạn đọc bài viết này, tôi khuyến khích bạn áp dụng phương pháp "Growth Mindset" và để tâm trí
 của bạn tiếp thu những quan điểm mới. Carol Dweck, tác giả của Mindset: Tâm lý mới của thành công,
 mô tả "Growth Mindset" là nỗ lực cộng với việc học bằng sự phát triển và thành công. Điều này có
@@ -39,12 +41,12 @@ nghĩa là nếu bạn đặt nỗ lực đúng chỗ và học từ những sai
 
 Quá trình tư duy thiết kế
 ========================
-Quá trình hay phương pháp này đã được phát triển bởi [https://www.ideo.org/](IDEO ) và được giảng
-dạy tại: [http://dschool.stanford.edu/](Viện Thiết kế tại Đại học Stanford). Phương pháp liên quan
+Quá trình hay phương pháp này đã được phát triển bởi [IDEO](https://www.ideo.org/) và được giảng
+dạy tại: [Viện Thiết kế tại Đại học Stanford](http://dschool.stanford.edu/). Phương pháp liên quan
 đến sự hợp tác lớn và lặp đi lặp lại thường xuyên. Phương pháp có năm giai đoạn rất rõ ràng: Thông
 cảm, Xác Định, Tưởng Tượng, Nguyên Mẫu và Thử Nghiệm.
 
-{% img center /images/2016/11/22/qua-trinh-tu-duy-thiet-ke.jpeg Quá trình tư duy thiết kế %)
+{% img center /images/2016/11/22/qua-trinh-tu-duy-thiet-ke.jpeg Quá trình tư duy thiết kế %}
 
 
 Mục tiêu cuối cùng của quá trình này là tạo ra một sản phẩm, dịch vụ, hoặc kinh nghiệm mà người ta
@@ -55,10 +57,10 @@ hoặc thuận tiện xây dựng về công nghệ (tính khả thi).
 Điều quan trọng là hãy tập trung vào một giai đoạn tại một thời điểm và lặp lại nhanh.
 
 Để mô tả từng giai đoạn của quá trình tư duy thiết kế, chúng ta hãy sử dụng Adobe XD như một ví dụ.
-Như mô tả của [https://twitter.com/vincent_hardy](Vincent Hardy, Giám đốc Kỹ thuật của Adobe ) trong
+Như mô tả của [Vincent Hardy, Giám đốc Kỹ thuật của Adobe](https://twitter.com/vincent_hardy) trong
 bài viết của mình về xác định beta, đội Adobe XD của chúng tôi có một lịch trình phát hành rất tích
 cực, trong đó cứ 2 tuần sẽ có một bản build trước khi phát hành, và hàng tháng sẽ có các bản phát
-hành công khai. Chúng tôi duy trì một [https://adobexd.uservoice.com/](trang web UserVoice) nơi mà người
+hành công khai. Chúng tôi duy trì một [trang web UserVoice](https://adobexd.uservoice.com/) nơi mà người
 sử dụng có thể sắp xếp các lỗi và đề xuất tính năng mới, trong đó cung cấp cho chúng tôi cơ hội để
 học hỏi nhanh, xác nhận, ưu tiên, và thay đổi bất cứ khi nào cần thiết.
 
@@ -98,8 +100,7 @@ còn tiến hành phỏng vấn ở các bộ phận khác trên thế giới. T
 xem xét và giải quyết những thách thức khác nhau. Điều quan trọng là tham gia buổi phỏng vấn trong
 vai trò trung lập. Ngay cả khi bạn nghĩ rằng bạn biết câu trả lời, hãy hỏi tại sao.
 
-{% img center /images/2016/11/22/phong-van-khach-hang.jpeg Các nhà quản lý sản phẩm Adobe XD phỏng
-    vấn khách hàng ở Châu Âu  %)
+{% img center /images/2016/11/22/phong-van-khach-hang.jpeg Các nhà quản lý sản phẩm Adobe XD phỏng vấn khách hàng ở Châu Âu %}
 
 Có một chương trình khung thú vị do Sakichi Toyoda phát triển đã được sử dụng tại Toyota trong suốt
 thời kì phát triển các phương pháp sản xuất của mình. Phương pháp này chỉ ra rằng nếu bạn hỏi
@@ -115,12 +116,12 @@ mạnh mẽ mà có thể cung cấp cho bạn rất nhiều thông tin có giá
 gì đang thịnh hành với thanh thiếu niên, thử hỏi họ những gì họ sẽ mua với $ 150.
 
 Kể chuyện và tìm kiếm những câu chuyện trong cuộc phỏng vấn là một cách tốt để thiết lập mối quan hệ
-và kết nối. Mới đây [https://itunes.apple.com/us/podcast/human-tech/id1097159316?mt=2](Human Tech)
+và kết nối. Mới đây [Human Tech](https://itunes.apple.com/us/podcast/human-tech/id1097159316?mt=2)
 đã trình bày một nghiên cứu đo hoạt động não trong các câu chuyện. Nghiên cứu cho thấy rằng trong
 thời gian đỉnh cao của một câu chuyện, hoạt động não của người nghe cũng tương tự và liên hệ chặt
 chẽ với hoạt động não của người kể chuyện - tạo ra sự kết nối thực sự giữa hai người.
 
-{% img center /images/2016/11/22/quy-trinh-phong-van.jpeg Quy trình phỏng vấn %)
+{% img center /images/2016/11/22/quy-trinh-phong-van.jpeg Quy trình phỏng vấn %}
 
 
 Khi bạn hỏi một câu hỏi, hãy dành thời gian để người dùng của bạn được suy nghĩ. Im lặng cũng có thể
@@ -143,7 +144,7 @@ cần phải phỏng vấn người sử dụng giỏ mua hàng, cũng phỏng v
 sử dụng xe như một phương tiện di chuyển xung quanh hoặc thu thập vật liệu tái chế - thì đó là một
 người sử dụng đặc biệt. Người dùng đó sẽ cung cấp cho bạn những hiểu biết quan trọng.
 
-{% img center /images/2016/11/22/phong-van-nguoi-dung-dac-biet.jpeg Phỏng vấn người dùng đặc biệt %) 
+{% img center /images/2016/11/22/phong-van-nguoi-dung-dac-biet.jpeg Phỏng vấn người dùng đặc biệt %}
 
 **2) Quan sát**
 
@@ -159,17 +160,15 @@ và những người thiết kế trong nhóm XD. Rất nhanh chóng, chúng tô
 phải giải quyết tốt hơn, và chúng tôi đã làm việc để giải quyết những vấn đề này.
 
 
-{% img center /images/2016/11/22/kinh-nghiem-Adobe-xd.jpeg kinh nghiệm-athon của Adobe XD ở San Francisco
- %) 
+{% img center /images/2016/11/22/kinh-nghiem-Adobe-xd.jpeg kinh nghiệm-athon của Adobe XD ở San Francisco %}
 
 Chúng tôi tin rằng điều quan trọng là các thành viên ở các lĩnh vực khác nhau trong đội Adobe XD
 (thiết kế, kỹ thuật và quản lý sản phẩm) được tiếp xúc với thông tin phản hồi từ khách hàng trực
-tuyến của chúng tôi từ [https://adobexd.uservoice.com/](Uservoice) và
-[https://twitter.com/adobexd](Twitter), tại các hội nghị, các cuộc họp mặt, và các cuộc tiếp xúc
+tuyến của chúng tôi từ [Uservoice](https://adobexd.uservoice.com/) và
+[Twitter)](https://twitter.com/adobexd), tại các hội nghị, các cuộc họp mặt, và các cuộc tiếp xúc
 khách hàng để tất cả các khía cạnh của sản phẩm đều đáp ứng được yêu cầu của khách hàng.
 
-{% img center /images/2016/11/22/doi-Adobe-voi-khach-hang.jpeg Đội Adobe XD với khách hàng tại Adobe
-MAX 2015 %)
+{% img center /images/2016/11/22/doi-Adobe-voi-khach-hang.jpeg Đội Adobe XD với khách hàng tại Adobe MAX 2015 %}
 
 **3) Kinh nghiệm**
 
@@ -191,7 +190,7 @@ ta cảm nhận.
 Trong giai đoạn Đồng cảm, bạn có thể sử dụng một số công cụ mạnh mẽ, chẳng hạn như công cụ Empathy Maps,
 với công cụ này bạn có thể liệt kê những gì một người nói + làm (rõ ràng) và suy nghĩ + cảm giác (ẩn).
 
-{% img center /images/2016/11/22/giai-doan-dong-cam.jpeg Giai đoạn đồng cảm %)
+{% img center /images/2016/11/22/giai-doan-dong-cam.jpeg Giai đoạn đồng cảm %}
 
 Sau khi giải nén dữ liệu từ các cuộc phỏng vấn, quan sát, và / hoặc kinh nghiệm, bạn có thể tách các 
 nhu cầu rõ ràng (nói và làm) từ những nhu cầu ẩn (suy nghĩ và cảm nhận). Sau đó là nơi bạn có thể tìm
@@ -251,5 +250,4 @@ như chúng tôi chỉ đơn giản gọi nó là Adobe XD.
 
 (CÒN TIẾP)
 
-Dịch từ: [https://medium.com/@demianborba/design-thinking-a-manual-for-innovation-e0576b34eff6#.9ae4fd5dk](Design
-thinking: A manual for innovation)
+Dịch từ: [Design thinking: A manual for innovation](https://medium.com/@demianborba/design-thinking-a-manual-for-innovation-e0576b34eff6#.9ae4fd5dk)
