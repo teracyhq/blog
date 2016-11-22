@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vi | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-11-21T16:44:07+00:00</updated>
+  <updated>2016-11-22T11:09:18+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,236 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tư duy thiết kế: Cẩm nang cho sự đổi mới (Phần 1)]]></title>
+    <link href="http://blog.teracy.com/2016/11/22/tu-duy-thiet-ke-cam-nang-cho-su-doi-moi-phan-1/"/>
+    <updated>2016-11-22T10:18:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/11/22/tu-duy-thiet-ke-cam-nang-cho-su-doi-moi-phan-1</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/11/22/tu-duy-thiet-ke.jpeg" title="Tư duy thiết kế" ></p>
+
+<p>Liệu có một công thức nào để tạo ra các sản phẩm sáng tạo hay không? Trải nghiệm hay là dịch vụ? Tôi
+không nói về cải tiến gia tăng mà đang nói về sự đổi mới đột phá.</p>
+
+<p>Nếu bạn có nghi ngờ thì cũng là điều dễ hiểu, tôi cũng đã từng hoài nghi khi tôi bắt đầu nghiên cứu
+của mình về khoa học đằng sau đổi mới cách đây nhiều năm. Sự thật về sự đổi mới là tất cả đều phụ
+thuộc yếu tố con người. Cuối cùng, chúng ta là những người tạo ra những đổi mới cho mọi người. Là
+một trong những nhà quản lý sản phẩm làm việc trên <a href="http://www.adobe.com/products/experience-design.html">Adobe Experience Design</a> (Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
+tôi rất yêu thích, sử dụng, <a href="http://designthinkingnow.com/#/about/english">giảng dạy</a>, và học
+hỏi mỗi ngày tại nơi làm việc, và trong cuộc sống.</p>
+
+<!-- more -->
+
+
+<p>Khi bạn đọc bài viết này, tôi khuyến khích bạn áp dụng phương pháp &ldquo;tư duy cầu tiến&rdquo; (growth mindset)
+và để tâm trí của bạn tiếp thu những quan điểm mới. Carol Dweck, tác giả của cuốn &ldquo;Tư duy: Tâm lý học
+mới của sự thành công&rdquo; (Mindset: The New Psychology of Success), mô tả &ldquo;tư duy cầu tiến&rdquo; là nỗ lực
+cộng với việc học bằng sự phát triển và thành công. Điều này có nghĩa là nếu bạn đặt nỗ lực đúng chỗ
+và học từ những sai lầm của bạn, bạn sẽ thành công.</p>
+
+<h1>Quá trình tư duy thiết kế</h1>
+
+<p>Quá trình hay phương pháp này đã được phát triển bởi <a href="https://www.ideo.org/">IDEO</a> và được giảng
+dạy tại: <a href="http://dschool.stanford.edu/">Viện Thiết kế tại Đại học Stanford</a>. Phương pháp liên quan
+đến sự hợp tác lớn và lặp đi lặp lại thường xuyên. Phương pháp có năm giai đoạn rất rõ ràng: Thông
+Cảm, Xác Định, Tưởng Tượng, Nguyên Mẫu và Thử Nghiệm.</p>
+
+<p><img class="center" src="/images/2016/11/22/qua-trinh-tu-duy-thiet-ke.jpeg" title="Quá trình tư duy thiết kế" ></p>
+
+<p>Mục tiêu cuối cùng của quá trình này là tạo ra một sản phẩm, dịch vụ, hoặc trải nghiệm mà người ta
+muốn (sự mong muốn), có tiềm năng thực sự để trở thành hữu dụng (tính khả năng), và có thể dễ dàng
+hoặc thuận tiện xây dựng về công nghệ (tính khả thi).</p>
+
+<p>Điều quan trọng là hãy tập trung vào một giai đoạn tại một thời điểm và lặp lại nhanh.</p>
+
+<p>Để mô tả từng giai đoạn của quá trình tư duy thiết kế, chúng ta hãy sử dụng Adobe XD làm ví dụ.
+Như mô tả của <a href="https://twitter.com/vincent_hardy">Vincent Hardy, Giám đốc Kỹ thuật của Adobe</a> trong
+bài viết của mình về xác định beta, đội Adobe XD của chúng tôi có một lịch trình phát hành rất tích
+cực, trong đó cứ 2 tuần sẽ có một bản build trước khi phát hành, và hàng tháng sẽ có các bản phát
+hành công khai. Chúng tôi duy trì một <a href="https://adobexd.uservoice.com/">trang web UserVoice</a> nơi mà người
+sử dụng có thể sắp xếp các lỗi và đề xuất tính năng mới, trong đó cung cấp cho chúng tôi cơ hội để
+học hỏi nhanh, xác nhận, ưu tiên, và thay đổi bất cứ khi nào cần thiết.</p>
+
+<p>Chúng tôi có một đội ngũ chuyên dụng và đa ngành, bao gồm những nhà thiết kế &ldquo;hình chữ T&rdquo; (T-shaped),
+các kỹ sư, quản lý lập trình, nhân viên marketing và các nhà quản lý sản phẩm giống như tôi.</p>
+
+<p>Một người &ldquo;hình chữ T&rdquo; là một người rất giỏi ở một lĩnh vực nào đó, nhưng cũng có thể đảm nhận các
+vai trò khác nhau trong nhóm, đòi hỏi người đó phải luôn luôn thích tìm hiểu và đặc biệt có sự đồng cảm.</p>
+
+<p><strong>Tất cả mọi thứ trong thiết kế tư duy bắt đầu từ một thách thức thiết kế</strong></p>
+
+<p>Thách thức thiết kế của chúng tôi trước khi Adobe XD được tạo ra là:</p>
+
+<p><em>&ldquo;Photoshop và Illustrator không phải được thiết kế ban đầu cho những thách thức UX của hiện tại.&rdquo;</em></p>
+
+<p>Điều thú vị trong quá trình tư duy  thiết kế của chúng tôi chính là, trước khi chúng tôi bắt đầu nghĩ
+về những ý tưởng để &ldquo;giải quyết&rdquo; vấn đề này, chúng tôi ra ngoài và nói chuyện với mọi người.</p>
+
+<h1>Giai đoạn một: Đồng cảm</h1>
+
+<p>Đồng cảm là khả năng đặt mình vào vị trí của người khác để bắt đầu &ldquo;nhìn thấy&rdquo; những thứ thông qua đôi
+mắt của người khác.</p>
+
+<p>Có 3 cách để xây dựng sự đồng cảm: 1) các cuộc phỏng vấn, 2) quan sát và 3) trải nghiệm.</p>
+
+<p><strong>1) Phỏng vấn</strong></p>
+
+<p>Chúng tôi thường xuyên có các cuộc họp khách hàng, nơi chúng tôi khảo sát quy trình công việc hiện
+tại, tìm hiểu suy nghĩ của mỗi nhà thiết kế về môi trường mà họ làm việc, các điểm chưa hài lòng, kỳ
+vọng và các vấn đề khác. Các cuộc phỏng vấn của chúng tôi không chỉ giới hạn tại Hoa Kỳ mà chúng tôi
+còn tiến hành phỏng vấn ở các bộ phận khác trên thế giới. Thật hấp dẫn khi chứng kiến cách mọi người
+xem xét và giải quyết những thách thức khác nhau. Điều quan trọng là tham gia buổi phỏng vấn trong
+vai trò trung lập. Ngay cả khi bạn nghĩ rằng bạn biết câu trả lời, hãy hỏi tại sao.</p>
+
+<p><img class="center" src="/images/2016/11/22/phong-van-khach-hang.jpeg" title="Các nhà quản lý sản phẩm Adobe XD phỏng vấn khách hàng ở Châu Âu" ></p>
+
+<p>Có một chương trình khung thú vị do Sakichi Toyoda phát triển đã được sử dụng tại Toyota trong suốt
+thời kì phát triển các phương pháp sản xuất của mình. Phương pháp này chỉ ra rằng nếu bạn hỏi
+&ldquo;Tại sao?&rdquo;  5 lần, bạn có thể tiếp cận được nguyên nhân của bất kỳ vấn đề. Điều đó giống như bạn là
+một đứa trẻ tò mò luôn háo hức muốn biết tại sao mọi thứ lại như vậy.</p>
+
+<p>Chiến lược tốt để thực hiện các cuộc phỏng vấn là thiết lập mối quan hệ, kết nối mạnh mẽ với người
+được phỏng vấn, thay vì tác động đến câu trả lời. Đừng bao giờ hỏi, <em>&ldquo;Điều này là tốt, phải không?&rdquo;</em>
+Thay vào đó, hãy hỏi <em>&ldquo;Bạn nghĩ gì về điều này?&rdquo;</em> Thậm chí hãy hỏi câu hay hơn, <em>&ldquo;Hãy kể cho tôi một
+câu chuyện mà bạn đã gặp trở ngại khi làm việc với X.&rdquo;</em> Tìm kiếm qua câu chuyện là một kỹ thuật rất
+mạnh mẽ mà có thể cung cấp cho bạn rất nhiều thông tin có giá trị. Ví dụ, nếu bạn cần phải hiểu những
+gì đang thịnh hành với thanh thiếu niên, thử hỏi họ những gì họ sẽ mua với $150.</p>
+
+<p>Kể chuyện và tìm kiếm những câu chuyện trong cuộc phỏng vấn là một cách tốt để thiết lập mối quan hệ
+và kết nối. Mới đây <a href="https://itunes.apple.com/us/podcast/human-tech/id1097159316?mt=2">Human Tech</a>
+đã trình bày một nghiên cứu đo hoạt động não trong các câu chuyện. Nghiên cứu cho thấy rằng trong
+thời gian đỉnh cao của một câu chuyện, hoạt động não của người nghe cũng tương tự và liên hệ chặt
+chẽ với hoạt động não của người kể chuyện &ndash; tạo ra sự kết nối thực sự giữa hai người.</p>
+
+<p><img class="center" src="/images/2016/11/22/quy-trinh-phong-van.jpeg" title="Quy trình phỏng vấn" ></p>
+
+<p>Khi bạn hỏi một câu hỏi, hãy dành thời gian để người dùng của bạn được suy nghĩ. Im lặng cũng có thể
+chấp nhận! Thậm chí ngay cả khi im lặng có vẻ kì cục, nhưng tuyệt đối không được gián đoạn hoặc gây ảnh
+hưởng đến người được phỏng vấn.</p>
+
+<p>Nhìn chung, quá trình thiết kế tư duy thiên vể chất lượng hơn số lượng. Điều này có nghĩa là có thể
+ít người hơn trong cuộc phỏng vấn của bạn, nhưng hãy lựa chọn những người mà bạn nghĩ rằng có thể
+đại diện cho người dùng khác nhau của sản phẩm hoặc dịch vụ của bạn. Chúng tôi đang tìm kiếm những
+hiểu biết sâu sắc, không phải đơn thuần chỉ là sự thật.</p>
+
+<p>Tôi thấy cái nhìn sâu sắc cũng chính là một cái nhìn hiểu biết sâu sắc về một cái gì đó. Điều đó
+giống như là các nơ-ron thần kinh của bạn đang chờ bạn xác định và kích hoạt các phần thông tin khi
+kết nối với nhau, làm cho có ý nghĩa. Đó là khoảnh khắc bạn đột nhiên &ldquo;khám phá ra&rdquo;.</p>
+
+<p>Khái niệm của người sử dụng đặc biệt cũng có thể đem lại lợi ích nghiên cứu cho bạn. Ví dụ, nếu bạn
+cần phải phỏng vấn người sử dụng giỏ mua hàng, cũng phỏng vấn một người đàn ông vô gia cư, người đó
+sử dụng xe như một phương tiện di chuyển xung quanh hoặc thu thập vật liệu tái chế &ndash; thì đó là một
+người sử dụng đặc biệt. Người dùng đó sẽ cung cấp cho bạn những hiểu biết quan trọng.</p>
+
+<p><img class="center" src="/images/2016/11/22/phong-van-nguoi-dung-dac-biet.jpeg" title="Phỏng vấn người dùng đặc biệt" ></p>
+
+<p><strong>2) Quan sát</strong></p>
+
+<p>Hãy giao nhiệm vụ cho người dùng của bạn và chỉ cần ngồi quan sát. Nếu bạn hỏi, &ldquo;Anh có gặp vấn đề
+gì khi mua những thứ từ Amazon?&rdquo; có thể bạn sẽ nhận được câu trả lời, &ldquo;Không vấn đề gì cả, rất dễ
+dàng để mua những thứ đó.&rdquo; Nhưng nếu bạn quan sát một người sử dụng nó từ phía sau họ, bạn sẽ thấy
+các vấn đề khi họ mua hàng.</p>
+
+<p>Gần đây, tại Adobe, chúng tôi tổ chức hội thảo trải nghiệm (experience-athon) nội bộ lần đầu tiên, ở đây chúng tôi
+đã giao cho người thiết kế Adobe một nhiệm vụ và chỉ đứng nhìn. Có sự tham dự của các kỹ sư sản phẩm
+và những người thiết kế trong nhóm XD. Rất nhanh chóng, chúng tôi đã xác định được nhiều vấn đề cần
+phải giải quyết tốt hơn, và chúng tôi đã làm việc để giải quyết những vấn đề này.</p>
+
+<p><img class="center" src="/images/2016/11/22/kinh-nghiem-Adobe-xd.jpeg" title="hội thảo trải nghiệm của Adobe XD ở San Francisco" ></p>
+
+<p>Chúng tôi tin rằng điều quan trọng là các thành viên ở các lĩnh vực khác nhau trong đội Adobe XD
+(thiết kế, kỹ thuật và giám đốc sản phẩm) được tiếp xúc với thông tin phản hồi từ khách hàng trực
+tuyến của chúng tôi từ <a href="https://adobexd.uservoice.com/">Uservoice</a> và
+<a href="https://twitter.com/adobexd">Twitter)</a>, tại các hội nghị, các cuộc họp mặt, và các cuộc tiếp xúc
+khách hàng để tất cả các khía cạnh của sản phẩm đều đáp ứng được yêu cầu của khách hàng.</p>
+
+<p><img class="center" src="/images/2016/11/22/doi-Adobe-voi-khach-hang.jpeg" title="Đội Adobe XD với khách hàng tại Adobe MAX 2015" ></p>
+
+<p><strong>3) Trải nghiệm</strong></p>
+
+<p>Hãy sử dụng những gì khách hàng của bạn sử dụng. Đó có thể là sản phẩm của bạn, hoặc có thể là của
+một đối thủ cạnh tranh. Điều này sẽ giúp bạn trực tiếp trải nghiệm những điều khó chịu hay cảm giác
+vui sướng khi sử dụng sản phẩm.</p>
+
+<p>Tôi kiểm tra tất cả các thiết kế và các công cụ tạo mẫu mà tôi có thể. Không chỉ để xây dựng mô hình
+tinh thần mới, mà còn để xác định, giống như một nhà nhân chủng học, rằng liệu một người sử dụng gợi ý
+một tính năng nào đó đó có bị ảnh hưởng trực tiếp bởi một công cụ hay dịch vụ hiện có. Áp dụng tư
+duy mới và tránh mô hình tinh thần hiện có có lẽ một trong những điều khó thực hiện nhất.</p>
+
+<p>Thực tế thú vị: nhà thiết kế và giám đốc sản phẩm của Adobe sử dụng Adobe XD để thiết kế Adobe XD
+&ndash; đó là một kiểu ứng dụng! Điều này cũng cho chúng ta cơ hội cảm nhận những gì người dùng của chúng
+ta cảm nhận.</p>
+
+<p>Trong giai đoạn Đồng cảm, bạn có thể sử dụng một số công cụ mạnh mẽ, chẳng hạn như công cụ Empathy Maps,
+với công cụ này bạn có thể liệt kê những gì một người nói + làm (rõ ràng) và suy nghĩ + cảm giác (ẩn).</p>
+
+<p><img class="center" src="/images/2016/11/22/giai-doan-dong-cam.jpeg" title="Giai đoạn đồng cảm" ></p>
+
+<p>Sau khi giải nén dữ liệu từ các cuộc phỏng vấn, quan sát, và / hoặc trải nghiệm, bạn có thể tách các
+nhu cầu rõ ràng (nói và làm) từ những nhu cầu ẩn (suy nghĩ và cảm nhận). Sau đó là nơi bạn có thể tìm
+thấy những hiểu biết sâu sắc.</p>
+
+<h1>Giai đoạn hai: Xác định</h1>
+
+<p>Sau khi đã xây dựng sự đồng cảm, đến lúc cần xem xét lại thách thức thiết kế ban đầu và tái xác định
+các vấn đề.</p>
+
+<p>Để xác định, hoặc tái xác định vấn đề hoặc thách thức, một quan điểm (PoV) công thức có thể tính như
+sau: PoV = tính cách + nhu cầu + cái nhìn sâu sắc.</p>
+
+<p>Ví dụ:</p>
+
+<p><em>&ldquo;Sam, một nhà thiết kế cao cấp yêu thích việc làm hài lòng người sử dụng với các thiết kế giải quyết
+các vấn đề thực tế và nhìn đẹp, cần thiết kế, tạo mẫu và xác nhận nhanh hơn, bởi vì anh ta cảm thấy
+đang lãng phí quá nhiều thời gian vào các bước lặp đi lặp lại. Toàn bộ chuyển từ công cụ đến công cụ
+đều không thành công!&rdquo;</em>"</p>
+
+<p>Nhu cầu là những cảm xúc và chiều sâu. Cái nhìn sâu sắc là những điều bất ngờ, kết quả phỏng vấn,
+quan sát, mâu thuẫn đều có thể được sử dụng trong các giải pháp.</p>
+
+<p>Khi bạn sử dụng phương pháp đặt con người làm trung tâm của việc tìm kiếm cho một nhu cầu thực sự,
+bạn có một lợi thế cạnh tranh.</p>
+
+<p>Tôi thích cụm từ, &ldquo;Tư Duy Thiết Kế là việc tìm hiểu nhu cầu nhiều hơn việc giải quyết vấn đề.&rdquo; Vì vậy,
+cần có một công cụ tìm hiểu nhu cầu!</p>
+
+<p>Sau khi chúng tôi đã trải qua quá trình đồng cảm với Adobe XD, chúng tôi đã xác định được một vài
+điều quan trọng:</p>
+
+<ul>
+<li><p>Khi Photoshop và Illustrator ban đầu được tạo ra, các nhà thiết kế đã không phải đối mặt với những
+thách thức UX giống như những thách thức mà họ phải đối mặt ngày hôm nay.</p></li>
+<li><p>Có những công cụ khác nhau giải quyết các phần khác nhau của vấn đề. Có những công cụ thiết kế cho
+độ chính xác thấp (kiến trúc thông tin và wireframes), các công cụ thiết kế cho độ chính xác cao, và
+các công cụ chuyên biệt cho tạo mẫu, vv. Người dùng phải chuyển từ công cụ này sang công cụ khác để
+thiết kế, tạo mẫu, và xác nhận.</p></li>
+<li><p>Có rất nhiều sự bất đồng trong quá trình đồng cảm, đặc biệt là sau khi thử nghiệm một nguyên mẫu,
+khi sự thay đổi là cần thiết. Và sự xung đột giới hạn sự sáng tạo. Chúng tôi thấy rằng các nhà thiết
+kế đi nhanh hơn và thích khám phá các lựa chọn khác nhau, lặp lại và tiến nhanh.</p></li>
+<li><p>Hầu hết các công cụ được sử dụng bởi các nhà thiết kế phải chịu ảnh hưởng từ việc mất kiểm soát
+phạm vi dự án, xây dựng các tính năng phía trên các tính năng khác, không duy trì một cái nhìn toàn
+diện, có lỗi và đôi khi chậm.</p></li>
+</ul>
+
+
+<p>Vì vậy chúng ta rất dễ dàng có thể xác định một số trụ cột XD:</p>
+
+<ul>
+<li><p>Thiết kế với tốc độ của tư tưởng</p></li>
+<li><p>Hiệu suất và chất lượng</p></li>
+<li><p>Quy trình công việc có ý nghĩa</p></li>
+<li><p>Giao diện theo ngữ cảnh</p></li>
+</ul>
+
+
+<p>Với ý tưởng đó, chúng tôi đã bắt đầu với những điều sẽ trở thành Thiết kế Trải nghiệm Adobe, hoặc
+như chúng tôi chỉ đơn giản gọi nó là Adobe XD.</p>
+
+<p>(CÒN TIẾP)</p>
+
+<p>Dịch từ: <a href="https://medium.com/@demianborba/design-thinking-a-manual-for-innovation-e0576b34eff6#.9ae4fd5dk">Design thinking: A manual for innovation</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[URIs tốt sẽ không bao giờ thay đổi]]></title>
@@ -445,120 +675,6 @@ Một khi bạn đã thực hiện thử nghiệm với vài người dùng đ�
 <p>Một khi bạn bắt đầu thu thập thông tin phản hồi tích cực mạnh mẽ từ người dùng mục tiêu bằng cách kiểm tra các mẫu thử nghiệm, đó là thời gian để chuyển sang giai đoạn cuối cùng của quá trình thẩm định tinh gọn.</p>
 
 <p>(Mời bạn xem tiếp <a href="/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/">Phần 3</a>)</p>
-
-<p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 1)]]></title>
-    <link href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/"/>
-    <updated>2016-10-04T10:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
-
-<p>Một trong những rủi ro lớn nhất khi xây dựng sản phẩm đó là xây dựng những điều sai. Bạn sẽ mất hàng tháng trời (thậm chí hàng năm) để xây dựng sản phẩm đó, chỉ tới khi nhận ra bạn không thể hoàn thành sản phẩm.</p>
-
-<p>Tại <a href="https://hanno.co/">Hanno</a>, chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách &ldquo;Thẩm định tinh gọn&rdquo; (Lean Validation Playbook).</p>
-
-<h2>TẠI SAO CHÚNG TA CẦN THẨM ĐỊNH TINH GỌN</h2>
-
-<p>Trong trường hợp này, thẩm định tinh gọn nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi nghiệp tinh gọn là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông &ldquo;<a href="https://theleanstartup.com/">Khởi nghiệp tinh gọn</a>&rdquo;.</p>
-
-<p>Trong phần hướng dẫn ngắn này, bạn sẽ học được cách thẩm định sự phù hợp của sản phẩm với thị trường, khảo sát người dùng và sản phẩm dùng thử. Mục đích để đảm bảo ý tưởng sản phẩm đó khả thi, điều này giúp tiết kiệm thời gian và tiền bạc của bạn.</p>
-
-<!-- more -->
-
-
-<p>Cuối quá trình, bạn sẽ có thể tập trung vào việc xây dựng sản phẩm và tự tin rằng bạn có cơ hội thành công cao hơn!</p>
-
-<p>Bạn đã sẵn sang chưa? Chúng ta bắt đầu nhé.</p>
-
-<p><img class="center" src="/images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
-
-<h1>Quy Trình Tiến Hành </h1>
-
-<p>Quy trình thẩm định tinh gọn gồm có 4 bước riêng biệt. Chỉ khi bạn đã thực hiện tất cả 4 bước bạn mới có thể tự tin rằng ý tưởng sản phẩm đáng để phát triển.</p>
-
-<p><strong>1. Thẩm định vấn đề</strong></p>
-
-<p>Vấn đề gặp phải có đáng để xử lí không? Nếu người dùng không nghĩ đây là vần đề chính thì bạn có thể không cần đưa ra giải pháp.</p>
-
-<p><strong>2. Đánh giá thị trường</strong></p>
-
-<p>Một số người dùng có thể đồng ý rằng đây là vấn đề đáng để xử lí. Nhưng liệu có đủ để sản phẩm của bạn có chỗ đứng trên thị trường?</p>
-
-<p><strong>3. Thẩm định sản phẩm</strong></p>
-
-<p>Vấn đề có thể tồn tại nhưng sản phẩm của bạn có thực sự xử lí được vấn đề đó?</p>
-
-<p><strong>4. Thẩm định sự sẵn lòng chi trả</strong></p>
-
-<p>Có thể thị trường có nhu cầu và sản phẩm của bạn rất tuyệt vời. Nhưng liệu mọi người có sẵn sằng trả tiền mua sản phẩm đó không?</p>
-
-<p><img class="center" src="/images/2016/10/04/quy-trinh-tham-dinh-san-pham.jpg" title="Quy trình thẩm định sản phẩm" ></p>
-
-<h2>ĐIỀU GÌ XẢY RA NẾU Ý TƯỞNG CỦA BẠN ĐÁP ỨNG TẤT CẢ BỐN TIÊU CHÍ TRÊN? </h2>
-
-<p>Nếu ý tưởng đáp ứng cả bốn tiêu chí thẩm định thì bạn có thể thoải mái phát triển sản phẩm nếu bạn muốn. Nhưng bạn có thể cân nhắc kỹ hơn thay vì chọn phát triển sản phẩm luôn.</p>
-
-<p>Qua quá trình thẩm định tinh gọn, bạn chắc chắn nhận được rất nhiều thông tin phản hồi từ người sử dụng. Với sự hiểu biết sâu sắc hơn, bạn sẽ nhận ra có cơ hội giải quyết tốt hơn. Trong trường hợp này, bạn sẽ thấy dễ dàng để tập trung vào sản phẩm.</p>
-
-<p>Nếu bạn làm theo cách này, bạn có thể lặp lại quá trình thẩm định tinh gọn với ý tưởng sản phẩm đã cải tiến.</p>
-
-<p>Dù bằng cách nào, bạn có thể tự tin rằng bạn đang có một ý tưởng tốt để phát triển sản phẩm.</p>
-
-<h1>Thẩm Định Vấn Đề</h1>
-
-<p>Cho dù bạn có tự tin về ý tưởng sản phẩm như nào chăng nữa thì điều đầu tiên bạn cần là xác định liệu vấn đề đó có thực sự cần giải quyết. Để làm được điều này, lựa chọn tốt nhất của bạn là nói chuyện trực tiếp với người sử dụng tiềm năng. Trọng tâm ở đây là về việc đánh giá chất lượng các ý tưởng sản phẩm.</p>
-
-<p>Đầu tiên, chúng ta bắt đầu với một số lượng nhỏ người dùng đại diện phù hợp và xác định xem vấn đề đó họ có gặp phải không. Sau đó chúng ta <a href="https://leanstack.com/pivot-before-productmarket-fit-optimize-after/">tối ưu hóa và xác định</a> vấn đề này với nhiều người dùng hơn và ở quy mô lớn hơn.</p>
-
-<p>Những điều bạn thu được từ các cuộc phỏng vấn này sẽ giúp bạn tự tin để thúc đẩy ý tưởng của mình tiến xa hơn. Hoặc nó cũng sẽ cho bạn thấy rằng bạn cần phải đào sâu ý tưởng khi bạn tìm hiểu thêm những vấn đề cơ bản thực sự.</p>
-
-<p>Ba kỹ thuật được miêu tả dưới đây có thể dùng riêng biệt, nhưng chúng tạo thành một bộ các phương pháp có thể cung cấp một hình ảnh tốt hơn về vấn đề mà bạn đang cố gắng thẩm định.</p>
-
-<p><img class="center" src="/images/2016/10/04/tham-dinh-van-de.jpg" title="Thẩm định vấn đề" ></p>
-
-<h2>PHƯƠNG PHÁP 1: TÌM NĂM NGƯỜI THAM GIA THỬ NGHIỆM</h2>
-
-<p>Việc tìm được ít nhất 5 người nói rằng họ muốn sử dụng sản phẩm giả thuyết của bạn là một dấu hiệu hợp lý chỉ ra rằng bạn có vấn đề rất đáng giải quyết. Trong khi điều này cũng không nhất thiết đảm bảo được vấn đề thực sự tồn tại hay giải pháp đề xuất của bạn là tốt hoặc đáng giá, nhưng đó là cách đơn giản nhất để bắt đầu thẩm định vấn đề của bạn.</p>
-
-<p>Dưới đây là một ví dụ từ Rob Walling, nhà sáng lập công cụ thư thương mại Drip:</p>
-
-<p>&ldquo;Tôi muốn tìm 10 người có thể sẵn sàng trả một số tiền nhất định để mua sản phẩm khi nó đã hoàn thiện. Điều này buộc tôi không phải chỉ suy nghĩ về tính năng, mà còn phải chắt lọc những ý tưởng để có được giá trị cốt lõi của nó: đây là lý do duy nhất một người nào đó sẽ sẵn sàng trả tiền cho tôi để mua sản phẩm. Tôi gửi email nói về giá trị cốt lõi ý tưởng của mình cho 17 người mà tôi biết hoặc ít nhất là có nghe nói họ gặp vấn đề tương tự. Bằng cách này, tôi không chỉ có khách hàng đầu tiên có thể cung cấp cho tôi thông tin phản hồi chi tiết về cách công cụ Drip hoạt động, mà tôi còn có được sự khởi đầu cho nền tảng doanh thu ban đầu để sử dụng phát triển sản phẩm.&rdquo;</p>
-
-<p>Nếu bạn có thể xây dựng một mối quan hệ tốt với những người sử dụng này và lưu giữ thông tin liên lạc của họ, họ thậm chí có thể sẵn sàng là năm khách hàng đầu tiên của bạn.</p>
-
-<h2>PHƯƠNG PHÁP 2: PHỎNG VẤN NGƯỜI SỬ DỤNG</h2>
-
-<p>Bằng cách ngồi xuống và nói chuyện với người dùng, bạn sẽ có thể hiểu nhiều hơn về vấn đề của bạn và người dùng của bạn. Trọng tâm ở đây là để hiểu những động cơ và nhu cầu của mỗi người dùng tiềm năng mà bạn nói chuyện và sử dụng thông tin phản hồi để cải thiện sản phẩm.</p>
-
-<p>Lý tưởng nhất, bạn sẽ muốn có cả một người phỏng vấn và một ngưới quan sát có trong buổi phỏng vấn. Trong khi người phỏng vấn trao đổi với người sử dụng, người quan sát sẽ ghi chép.</p>
-
-<p>Một số hoạt động tốt cho một cuộc phỏng vấn hiệu quả bao gồm việc khuyến khích người tham gia chia sẻ kinh nghiệm trong quá khứ cũng như nhu cầu và thách thức hiện tại của họ. Hỏi người tham gia đã cố gắng như nào để giải quyết vấn đề cụ thể này trong quá khứ và kết quả đạt được. Nói về điều này theo quan điểm cá nhân cho phép người tham gia biểu lộ cảm xúc, điều này cung cấp cho bạn cái nhìn sâu sắc hơn về động cơ người dùng và giúp bạn đồng cảm với nhu cầu của họ.</p>
-
-<p>Ngoài ra, tránh hỏi người được phỏng vấn muốn điều gì. Thật khó cho người được phỏng vấn chia sẻ chính xác họ muốn gì. Sẽ dễ dàng hơn để người được phỏng vấn nói với bạn những gì họ đang cố gắng để đạt được và bạn có thể hỏi về động cơ của họ sau cuộc phỏng vấn này. Có được những thông tin này cho phép bạn đánh giá liệu ý tưởng sản phẩm của bạn có giải quyết được nhu cầu cụ thể đó không hay liệu bạn cần phải sửa đổi ý tưởng một chút để giải quyết được vấn đề cấp bách hơn.</p>
-
-<p>Một vấn đề nữa trong phỏng vấn người dùng đó là các câu hỏi mang tính hướng dẫn, gợi ý. Đây là những câu hỏi được đặt ra với những giả định của người phỏng vấn, có thể dẫn đến kết quả sai. Hãy giữ các câu hỏi khách quan và kết thúc mở &ndash; kiểu như, &ldquo;Ấn tượng của bạn khi sử dụng tính năng X là gì?&rdquo; thay vì &ldquo;Mức độ dễ dàng để sử dụng tính năng X để điều hướng ra sao?&rdquo;. Chúng tôi đã biên soạn  <a href="https://logbook.hanno.co/7-best-practises-for-better-user-interviews/">những chỉ dẫn hữu ích hơn</a> để thực hiện tốt nhất cho các cuộc phỏng vấn người sử dụng.</p>
-
-<h2>PHƯƠNG PHÁP 3: NGHIÊN CỨU VỀ BẢN NGÃ</h2>
-
-<p>Bản ngã thường được mô tả như là quá trình khám phá điều chưa biết. Trong nghiên cứu bản ngã, bạn sẽ đóng vai trò của nhà thám hiểm dũng cảm và đi du lịch để khám phá môi trường làm việc cũng như môi trường sống thực tế của người dùng. Đây là hình thức nghiên cứu rất tốt để quan sát và tìm hiểu về hành vi (Bạn làm gì?), động lực (Tại sao bạn làm điều đó?) và nhận thức (Làm thế nào để bạn nghĩ về những gì bạn cần và những gì bạn làm?).</p>
-
-<p>Phương pháp này đưa ra cái nhìn sâu sắc vào bối cảnh, có thể là khó khăn để có được kết quả, song là phương pháp kiểm tra chính thức. Tìm hiểu về bối cảnh này giúp chúng ta hiểu những ảnh hưởng đến kinh nghiệm người dùng, đặc biệt là bên ngoài điều kiện phòng thí nghiệm, cuộc phỏng vấn và kiểm tra được giám sát.</p>
-
-<p>Chìa khóa ở đây là để phát hiện và nắm bắt được khoảnh khắc trong khi khám phá những động cơ thúc đẩy của người sử dụng.</p>
-
-<p>Hãy tưởng tượng rằng bạn đang xây dựng một sản phẩm để cải thiện phong thái làm việc của nhân viên văn phòng. Nghiên cứu môi trường tự nhiên sẽ là một công cụ có giá trị, thậm chí còn giá trị hơn so với các cuộc phỏng vấn người sử dụng. Bạn sẽ tự đặt mục tiêu cho mình là đến tận các văn phòng để quan sát người dùng, và xem liệu vấn đề còn tồn tại hay không. Bạn cũng có thể tới quan sát một loạt các cơ quan khác nhau, văn phòng khởi nghiệp, không gian làm việc nhóm, cũng như các văn phòng lớn điển hình.</p>
-
-<p>Tiến hành nghiên cứu môi trường tự nhiên sẽ giúp bạn xem liệu vấn đề có tồn tại và thậm chí có thể phát hiện ra những vấn đề mới để bạn có thể đào sâu các ý tưởng. Nghiên cứu môi trường tự nhiên là một lĩnh vực phức tạp mà có thể đi xa hơn những gì chúng tôi đã đề cập đến cho đến nay. Hãy tìm hiểu kỹ hơn về phương pháp này bằng cách đọc thêm về nó tại <a href="https://en.wikipedia.org/wiki/Ethnography">đây</a>.</p>
-
-<h2>TẠI SAO NHỮNG PHƯƠNG PHÁP NÀY QUAN TRỌNG?</h2>
-
-<p>Bằng cách tập trung vào nghiên cứu người sử dụng, bạn có thể tránh được những sai lầm phổ biến như việc giả định các vấn đề bạn đang đối phó cũng là vấn đề của người khác gặp phải. Thông thường, chúng ta hay gặp những tình huống chẳng hạn như một nhà thiết kế nói rằng:&ldquo;Tôi giả định là người dùng cuối, vì vậy sẽ là an toàn khi thiết kế một cái gì đó dựa trên nhu cầu của riêng tôi. Dù ý tưởng của tôi là gì đi nữa thì ý tưởng đó sẽ phù hợp với những khuôn mẫu cho những người dùng khác. "Hãy nhớ rằng bạn không phải là người dùng của bạn. Bởi vì bạn biết quá rõ các vấn đề của sản phẩm, những giải pháp dường như là hoàn hảo với bạn lại có thể là giải pháp tồi tệ đối với hầu hết người dùng. Giải quyết các vấn đề mà bạn đã xác định cũng có nghĩa rằng bạn đã dành thời gian đáng kể tìm hiểu các chủ đề và có thể hiểu nó sâu hơn so với người dùng bình thường. Quan điểm của bạn về vấn đề này ngay bây giờ chỉ là ý kiến chủ quan, hơn tất cả đó là lí do tại sao bạn cần sử dụng ý kiến từ người sử dụng, để đảm bảo bạn đang giải quyết vấn đề đó một cách thực tế chứ không phải chỉ là từ ý kiến chủ quan của bạn.</p>
-
-<p>(Mời bạn xem tiếp <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">phần 2</a>)</p>
 
 <p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
 ]]></content>
