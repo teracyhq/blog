@@ -27,7 +27,7 @@ không nói về cải tiến gia tăng mà đang nói về sự đổi mới đ
 Nếu bạn có nghi ngờ thì cũng là điều dễ hiểu, tôi cũng đã từng hoài nghi khi tôi bắt đầu nghiên cứu
 của mình về khoa học đằng sau đổi mới cách đây nhiều năm. Sự thật về sự đổi mới là tất cả đều phụ
 thuộc yếu tố con người. Cuối cùng, chúng ta là những người tạo ra những đổi mới cho mọi người. Là 
-một trong những nhà quản lý sản phẩm làm việc trên [Adobe Experience Design](http://www.adobe.com/products/experience-design.html)(Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
+một trong những nhà quản lý sản phẩm làm việc trên [Adobe Experience Design](http://www.adobe.com/products/experience-design.html) (Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
 tôi rất yêu thích, sử dụng, [giảng dạy](http://designthinkingnow.com/#/about/english), và học
 hỏi mỗi ngày tại nơi làm việc, và trong cuộc sống.
 
@@ -113,7 +113,7 @@ Chiến lược tốt để thực hiện các cuộc phỏng vấn là thiết 
 Thay vào đó, hãy hỏi *"Bạn nghĩ gì về điều này?"* Thậm chí hãy hỏi câu hay hơn, *"Hãy kể cho tôi một
 câu chuyện mà bạn đã gặp trở ngại khi làm việc với X."* Tìm kiếm qua câu chuyện là một kỹ thuật rất
 mạnh mẽ mà có thể cung cấp cho bạn rất nhiều thông tin có giá trị.Ví dụ, nếu bạn cần phải hiểu những
-gì đang thịnh hành với thanh thiếu niên, thử hỏi họ những gì họ sẽ mua với $ 150.
+gì đang thịnh hành với thanh thiếu niên, thử hỏi họ những gì họ sẽ mua với $150.
 
 Kể chuyện và tìm kiếm những câu chuyện trong cuộc phỏng vấn là một cách tốt để thiết lập mối quan hệ
 và kết nối. Mới đây [Human Tech](https://itunes.apple.com/us/podcast/human-tech/id1097159316?mt=2)
@@ -240,6 +240,7 @@ phạm vi dự án, xây dựng các tính năng phía trên các tính năng kh
 diện, có lỗi và đôi khi chậm.
 
 Vì vậy chúng ta rất dễ dàng có thể xác định một số trụ cột XD:
+
 - Thiết kế với tốc độ của tư tưởng
 - Hiệu suất và chất lượng
 - Quy trình công việc có ý nghĩa
