@@ -1,11 +1,9 @@
-teracy-official-blog
-====================
+# teracy-blog
 
 Teracy's official blog at http://blog.teracy.com
 
 
-How to start
-------------
+## How to start
 
 Follow the instruction here at
 http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-and-teracy-dev/
@@ -13,32 +11,31 @@ http://blog.teracy.com/2013/08/03/how-to-start-blogging-easily-with-octopress-an
 Instead of cloning `octopress` repository, fork this repository into your github account and
 clone it into your personal workspace.
 
-1. Fork this repository into your github account
+### 1. Fork this repository into your github account
 
-2. Clone your forked repository into your `~/teracy-dev/workspace/` directory:
+### 2. Clone your forked repository into your `~/teracy-dev/workspace/` directory:
 
-``` bash
-$ mkdir -p ~/teracy-dev/workspace/
-$ cd ~/teracy-dev/workspace/
-$ git clone <your_forked_repository_here> teracy-blog
-$ cd teracy-blog
-```
+  ``` bash
+  $ mkdir -p ~/teracy-dev/workspace/
+  $ cd ~/teracy-dev/workspace/
+  $ git clone <your_forked_repository_here> teracy-blog
+  $ cd teracy-blog
+  ```
+### 3. Run with Docker
 
-3. Run with Docker
-
-3.1. How to run blog with Docker in dev mode
+#### 3.1. How to run blog with Docker in dev mode
 
 First you must have docker and docker-compose in your machine.
 
 Update your content and use the follow commands to generate and preview the blog.
 
-**On Linux**
+##### On Linux
 
 ```
 $ docker-compose up
 ```
 
-**On Mac**
+##### On Mac
 
 Install docker-sync:
 
@@ -113,14 +110,14 @@ teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-
 teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-08-multiple-github-custom-domains.markdown
 ```
 
-**On Windows**
+##### On Windows
 TODO(hoatle): check and work on this
 
 
 Now, keep that console and open http://localhost:4000 to see the blog, It'll auto rebuild when you 
 make changes on your content.
 
-3.2. How to run blog with Docker in prod mode
+#### 3.2. How to run blog with Docker in prod mode
 
 From distributed Docker image:
 
@@ -136,7 +133,7 @@ $ docker-compose -f docker-compose.prod.yml up
 
 Then open http://localhost:8080 to see static blog site served by nginx.
 
-3.3. How to build the prod Docker image
+#### 3.3. How to build the prod Docker image
 
 First, use teracy/blog:dev_latest image to generate static content:
 
@@ -151,10 +148,9 @@ $ docker-compose -f docker-compose.prod.yml build
 ```
 
 
-4. Learn more at http://octopress.org/docs/
+### 4. Learn more at http://octopress.org/docs/
 
-Blog post structure guide
--------------------------
+## Blog post structure guide
 
 ```
 The hook part: some introduction text to get interest from others to click.
