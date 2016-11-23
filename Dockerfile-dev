@@ -1,0 +1,38 @@
+FROM ruby:1.9.3
+
+LABEL authors="phuonglm <phuonglm@teracy.com>, hoatle <hoatle@teracy.com>"
+
+RUN useradd --user-group --create-home --shell /bin/false app && mkdir -p /opt/app
+
+ENV HOME=/home/app TERM=xterm APP=/opt/app
+
+# add more arguments from CI to the image so that `$ env` should reveal more info
+ARG CI_BUILD_ID
+ARG CI_BUILD_REF
+ARG CI_REGISTRY_IMAGE
+ARG CI_PROJECT_NAME
+ARG CI_BUILD_REF_NAME
+ARG CI_BUILD_TIME
+
+ENV CI_BUILD_ID=$CI_BUILD_ID CI_BUILD_REF=$CI_BUILD_REF CI_REGISTRY_IMAGE=$CI_REGISTRY_IMAGE \
+    CI_PROJECT_NAME=$CI_PROJECT_NAME CI_BUILD_REF_NAME=$CI_BUILD_REF_NAME CI_BUILD_TIME=$CI_BUILD_TIME
+
+RUN apt-get update -qq && apt-get install -y build-essential libxml2-dev libxslt1-dev locales \
+    && dpkg-reconfigure -f noninteractive locales && apt-get autoremove -y \
+    && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
+    && echo "en_US.UTF-8 UTF-8" > /etc/default/locale && locale-gen
+
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
+
+ADD Gemfile* $APP/
+
+RUN chown -R app $APP && chgrp -R app $APP \
+    && chown -R app /usr/local
+
+WORKDIR $APP
+
+USER app
+
+RUN bundle install
+
+CMD rake generate

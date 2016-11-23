@@ -44,7 +44,7 @@ module Jekyll
 
       if full_path == nil
         puts '========= revision plugin::post_or_page =========='
-        puts post_or_page
+        puts post_or_page['title']
         puts "full_path is nil"
         return ''
       end
