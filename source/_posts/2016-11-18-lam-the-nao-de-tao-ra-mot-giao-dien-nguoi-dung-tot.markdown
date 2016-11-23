@@ -97,7 +97,7 @@ Khi khách hàng di chuyển theo dòng chảy sản phẩm, họ cũng sẽ di 
 
 Một ứng dụng nhắn tin sử dụng UI Stack. Mỗi màn hình chuyển đổi mượt mà với nhau.
 
-Bạn có thể tới ngay với ví dụ sử dụng UI Stack nếu bạn muốn: [Ví dụ giả định](#vi-du-gia-dinh)
+Bạn có thể tới ngay với ví dụ sử dụng UI Stack nếu bạn muốn: [Một ví dụ giả định](#mot-vi-du-gia-dinh)
 
 Hãy tới với 1 bài ôn tập ngắn về lịch sử internet nhé, vào năm 2004, Basecamp, 1 công ty trước đây được biết đến với tên 37signals, đã viết ra 1 bài viết đột phá (đối với tôi) với cái tên "[The Three State Solution](https://gettingreal.37signals.com/ch09_Three_State_Solution.php) (Giải pháp cho ba trạng thái).", có chỉ ra rằng với mỗi màn hình nên cân nhắc có 3 trạng thái: "bình thường, trống và lỗi", và nó đã làm tôi thay đổi suy nghĩ về thiết kế web mãi mãi.
 
@@ -105,7 +105,7 @@ Nhưng mọi thứ của internet đều thay đổi. Đầu tiên là về cu�
 
 Với những điều trên, hãy nói về trạng thái đầu tiên. Trạng thái lý tưởng.
 
-### **Trạng thái lý tưởng**
+### <a id="trang-thai-ly-tuong"></a>Trạng thái lý tưởng
 
 Đây là trạng thái đầu tiên mà tôi tạo ra, vì nó là cái mà mọi người thường thấy nhất. Như tên, nó là hiện thân cao nhất về tiềm năng sản phẩm của bạn - khi sản phẩm của bạn đang cung cấp tối đa giá trị và cực kì hữu dụng, nội dung có thể áp dụng. Nó sẽ là nền tảng cho các trạng thái khác. Hãy nghĩ nó như là tinh hoa, thứ đẹp nhất của 1 tờ quảng cáo hay là hình chụp ứng dụng  trên cửa hàng ứng dụng điện thoại.
 
@@ -124,7 +124,7 @@ Hãy xem 1 vài ví dụ sau đây để làm rõ hơn nếu bạn vẫn chưa h
 {% img center /images/2016/11/18/2.tinder.jpg Tinder là ứng dụng có các trạng thái lý tưởng tốt nhất trên thị trường. %}
 
 
-### **Trạng thái trống**
+### <a id="trang-thai-trong"></a>Trạng thái trống
  
 
 Trạng thái trống thật ra không chỉ giới hạn ở 1 màn hình. Nó cung cấp cho người dùng 1 ấn tượng đầu tiên khi bạn giới thiệu họ cho sản phẩm của bạn - để kích thích họ hành động, khiến họ thấy hứng thú, và cho họ nhớ về giá trị của sản phẩm mang lại.
@@ -140,7 +140,7 @@ Các dấu hiệu chỉ dẫn - hay các màn ảnh hướng dẫn, theo ý ki�
 
 Hãy tìm hiểu sâu hơn về trạng thái lần đầu sử dụng dưới đây.
 
-#### **Lần đầu sử dụng / nhập môn**
+#### Lần đầu sử dụng / nhập môn
 
  
 
@@ -180,7 +180,7 @@ Sau đây là 1 vài trạng thái trống lần đầu sử dụng mà tôi th�
 
 Bộ môn nhập môn và các trạng thái sử dụng lần đầu là 1 chủ để đủ lớn cho 1 cuốn sách. Và nó cũng tình cờ có 1 cái, nếu bạn muốn đọc thì tôi khuyến khích cuốn *[The Elements of User Onboardin*g](https://www.useronboard.com/training/) của Samuel Hulick.
 
-#### **Người dùng xoá dữ liệu**
+#### Người dùng xoá dữ liệu
 
  Loại thứ 2 trong trạng thái trống là trường hợp khi người dùng chủ động xoá dữ liệu khỏi màn hình. Ví dụ như là khi người dùng hoàn thành hết tất cả các công việc trong danh sách các công việc cần làm, đọc tất cả các thông báo, thu hồi tất cả email hay hoàn thành tải tất cả các bài nhạc.
 
@@ -194,7 +194,7 @@ Khách hàng mà có xoá, làm sạch dữ liệu là người mà có tương 
 
 {% img center /images/2016/11/18/image_9.jpg Hình minh hoạ khi hộp tin nhắn rỗng trên iOS6. %}
 
-#### **Không có kết quả nào**
+#### Không có kết quả nào
 
 Trong nhiều trường hợp khi khách hàng đang lướt hay tìm kiếm 1 mẩu thông tin nào đó trong sản phẩm của bạn, sẽ có trường hợp họ không tìm thấy gì, cái ngữ cảnh này là những cơ hội tuyệt vời để suy luận về việc khách hàng của bạn có ý định tìm cái gì để có thể đưa ra những gợi ý thông minh.
 
@@ -208,7 +208,7 @@ Cách làm của Amazon là các ví dụ tốt nhất tôi từng thấy trong 
 
 Bài học là: ở trạng thái này đừng không cho khách hàng cái gì cả, cho họ thứ gì đó chấp nhận được và gợi ý con đường thay thế.
 
-### **Trạng thái lỗi**
+### <a id="trang-thai-loi"></a>Trạng thái lỗi
 
  
 
@@ -224,7 +224,7 @@ Lời khuyên này có thể được thấy rõ nhất với 1 vài trang vị 
 
 {% img center /images/2016/11/18/image_13.jpg %}
 
-#### **Vậy thì nên làm thế nào?**
+#### Vậy thì nên làm thế nào?
 
  
 Có 1 vài thông điệp lỗi chúng ta có thể làm theo, có thể thêm 1 sự hài hước vào.
@@ -247,7 +247,7 @@ Tất nhiên, nếu khách hàng của bạn là các nhà khoa học tiên ti�
 
 Trạng thái lỗi thường hay được bắt gặp, và là trạng thái ít mong muốn nhất. Nhưng tôi xin hứa rằng nếu bạn quan tâm với nó như là với 2 trạng thái trước, thì sản phẩm của bạn sẽ chắc chắn vui vẻ để sử dụng hơn, và sẽ hữu ích hơn vì bạn đã nghĩ qua các trường hợp mà người dùng sẽ bị lỗi và đã xử lý nó rồi.
 
-### **Trạng thái thành phần**
+### <a id="trang-thai-thanh-phan"></a>Trạng thái thành phần
 
 Sự khác biệt giữa trạng thái lỗi và trạng thái lý tưởng như đêm và ngày vậy. Vậy thì màn hình sẽ trông như thế nào khi chỉ có 1 hàng dữ liệu? Vài tấm hình? Một hồ sơ chưa hoàn chỉnh?
 
@@ -268,7 +268,7 @@ Sau đây là 1 vài ví dụ của trạng thái thành phần:
 {% img center /images/2016/11/18/image_15.jpg Dropbox cho bạn biết bạn gần như thế nào để đạt được dụng lượng lưu trữ cộng thêm, đây là sức hút chính cho người dùng của Dropbox, tôi chắc chắn như vậy. Dropbox không chỉ cho bạn thấy còn bao nhiêu bước nữa để hoàn thành, mà những bước này còn có tác dụng bên lề là làm cho người dùng thấy giá trị hơn thông qua học và hành. %}
 
 
-### **Trạng thái tải**
+### <a id="trang-thai-tai"></a>Trạng thái tải
 
 Trạng thái này rất dễ dễ nhìn vào, rất nhiều người thiết kế sản phẩm thêm nó vào như là phần sau cùng, nhưng nó là 1 gánh nặng thật sự để thiết lập được như mong đợi. Khi ứng dụng đang tải dữ liệu, đợi kết nối internet hay chuyển qua màn hình khác, bạn phải dành sự quan tâm đặc biệt về việc làm sao để thể hiện nó. Việc này bao gồm như là tải chiếm toàn bộ trang, tải 1 phần nội dung hay là tải 1 dòng, thường được sử dụng như là người dùng tìm kiếm tên tài khoản có sẵn trong 1 ô dữ liệu nào đó.
 
@@ -283,7 +283,7 @@ Và anh ta nhận ra rằng:
 
 "Với sự cho ra mắt cái chỉ số tải trang này, chúng ta đã làm mọi người xem cái đồng hồ, và kết quả là thời gian trôi chậm hơn cũng như ứng dụng vậy, chúng ta đã tập trung vô cái chỉ số mà không phải là tiến trình. Và rõ ràng rằng bạn đang tiến tới mục tiêu của mình chứ không phải là ngồi đợi."
 
-#### **Các khung màn hình**
+#### Các khung màn hình
 
 Sự nhận thức này đã dẫn tới 1 cái sáng tạo mà anh ta gọi là "Các khung màn hình". Nó là 1 kĩ thuật đang được sử dụng ở Pinerest và Facebook với các phiên bản web và điện thoại của họ.
 
@@ -298,7 +298,7 @@ Với Pinterest, khi thực hiện cái khái niệm này đã thêm 1 thay đ�
 
 Facebook sáng tạo ra 1 kĩ thuật tương tự, được sử dụng trong ứng dụng Paper và sau này là trong bản web của họ. Kết hợp với cái mà họ gọi là "hiệu ứng chiếu sáng", nó sẽ hiển thị màn hình khung được chau chuốt với hình dạng giống với nội dung và có hiệu ứng như là chiếu sáng vậy.
 
-#### **Cho là thành công với các hành động lạc quan**
+#### Cho là thành công với các hành động lạc quan
 
 {% img center /images/2016/11/18/image_20.jpg %}
 
@@ -333,7 +333,7 @@ Và cũng không nên quên cơ chế để gửi lại tin khi xảy ra lỗi, 
 
 Và cuối cùng là trạng thái lý tưởng là khi những tin nhắn kếp hợp thành 1 cuộc trò chuyện.
 
-## Một ví dụ giả định
+## <a id="mot-vi-du-gia-dinh"></a>Một ví dụ giả định
 
 Hãy cho rằng Marty và Doc vừa mới cho nhau số điện thoại và Marty muốn gửi tin cho Doc về thứ mà anh ta vừa chứng kiến ở siêu thị Twin Pines.
 
@@ -341,24 +341,24 @@ Bởi vì không có tin nhắn nào trước đó, chúng ta có cơ hội đ�
 
 Nhưng điều gì sẽ xảy ra với trạng thái này khi 1 tin nhắn đã được gửi đi? Chúng ta phải dần dần xoá bỏ trạng thái trống và chuyển đổi sang trạng thái thành phần: trong trường hợp này, là khi Marty chỉ gửi đi 1 tin nhắn.
 
-{% video /images/2016/11/18/1.empty-to-partial.mov %}
+{% video /images/2016/11/18/1.empty-to-partial.mov 500 888 true %}
 
 
 Hãy tới phần tiếp theo khi Doc trả lời, anh ấy cũng gửi lại 1 tin - nhưng chưa xong, anh ta đang gửi lại tiếp, cho nên mới có cái chỉ số đang gõ phím, 1 hình thái khác của trạng thái tải.
 
-{% video /images/2016/11/18/2.message-incoming.mov %}
+{% video /images/2016/11/18/2.message-incoming.mov 500 888 true %}
 
 
 Khi mà đã gõ xong, thì tin nhắn được gửi đi, chúng ta chuyển chỉ số đang gõ phím ra và thay vào là cái tin nhắn mới này, đẩy các tin còn lại ra chỗ khác.
 
 Chuyện gì sẽ xảy ra khi Marty muốn trả lời lại? Đầu tiên, chúng ta phải cho trạng thái nhận thức là đã có tin nhắn trong ô nhập rồi - để ý nút "Send" chuyển từ màu xám (không cho phép) sang xanh (cho phép). Rồi sau đó khi gửi tin đi thì 1 trạng thái tải khác xảy ra cho tiến tình gửi này. Chúng ta làm tin nhắn mờ đi trong lúc này vì tin chưa được gửi tới nơi - cho đến khi nó hiện chữ “delivered" thì lúc đó mới thành công.
 
-{% video /images/2016/11/18/3.message-send.mov %}
+{% video /images/2016/11/18/3.message-send.mov 500 888 true %}
 
 
 Nếu tin nhắn không gửi đi thành công thì sẽ thế nào? Đây chính là trạng thái lỗi, dấu hiệu màu đỏ thay thế cho vòng xay đang tải, và tin nhắn này là đang ở trạng thái "gửi không được". Ấn lại vào tin nhắn chưa được gửi này thì nó sẽ thử gửi lại, và nó đã thành công và nhận được chỉ thị đã được gửi.
 
-{% video /images/2016/11/18/4.error-recovery.mov %}
+{% video /images/2016/11/18/4.error-recovery.mov 500 888 true %}
 
 
 ## Ở thế giới thực tế...
@@ -376,4 +376,7 @@ Cuối cùng thì, việc hiện thực những trạng thái này yêu cầu 1 
 * Hãy làm những trạng thái tải là 1 phần nỗ lực trong lúc tạo mẫu của bạn. Nó là 1 phần trong trải nghiệm sản phẩm và không nên để đến cuối mới làm. Hãy kết hợp các kỹ thuật để tìm các những cách tạo cảm giác, và nếu có thể, hiệu suất tốt hơn.
 
 * Bỏ thời gian nghĩ tới các trường hợp ngoài lề mà có thể tạo ra lỗi. Bạn sẽ xử lý nó như thế nào? Phản ứng thân thiện nhất của khách hàng mà bạn sẽ nhận được là gì? Có giá cả / lợi ích đánh đổi với nhau ở đây, nhưng ít nhất hãy xử lý những lỗi đau đớn nhất và nổ lực hết mức để bảo vệ dữ liệu cho khách hàng.
+
+
+Bài được dịch từ [How to fix a bad user interface](http://scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack)
 
