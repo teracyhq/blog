@@ -2,9 +2,6 @@ sudo: required
 language: ruby
 services:
 - docker
-branches:
-  only:
-    - master
 env:
   matrix:
   - DOCKER_FILE=Dockerfile-dev IMAGE_TAG_PREFIX=dev_
@@ -24,8 +21,9 @@ before_script:
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 - bundle exec rake setup_github_pages[$REPO_URL]
 - git checkout -- _config.yml
-- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH;
-  fi`
+# we have convention of branches named: tasks/xxx;features/xxx but Docker tag does not allow / character
+# => replace / with - to make a valid Docker image tag
+- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH | sed -e 's/[\/]/-/g'; fi`
 - export CONTAINER_IMAGE=$CI_REGISTRY_IMAGE:$IMAGE_TAG_PREFIX$TAG
 script:
 - if [ "$DOCKER_FILE" == "Dockerfile" ]; then bundle exec rake generate; fi
