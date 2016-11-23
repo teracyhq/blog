@@ -32,7 +32,7 @@ Update your content and use the follow commands to generate and preview the blog
 ##### On Linux
 
 ```
-$ docker-compose up
+$ docker-compose pull && docker-compose up
 ```
 
 ##### On Mac
@@ -90,7 +90,7 @@ Status: Downloaded newer image for eugenmayer/rsync:latest
 Open a new terminal window with:
 
 ```
-$ docker-compose -f docker-compose.yml -f docker-compose-mac.yml up
+$ docker-compose pull && docker-compose -f docker-compose.yml -f docker-compose-mac.yml up
 ```
 
 And you should see something like:
@@ -128,7 +128,7 @@ $ docker run -p 8080:80 teracy/blog
 or with docker-compose and from docker-compose.prod.yml file:
 
 ```
-$ docker-compose -f docker-compose.prod.yml up
+$ docker-compose -f docker-compose.prod.yml pull && docker-compose -f docker-compose.prod.yml up
 ```
 
 Then open http://localhost:8080 to see static blog site served by nginx.
