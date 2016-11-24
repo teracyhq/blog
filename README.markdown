@@ -80,10 +80,11 @@ e110a4a17941: Pull complete
 0bef35c3f080: Pull complete
 Digest: sha256:45a147c180162ffe7f9415ee01076eb4a368c86cc09db381a612c473871628e7
 Status: Downloaded newer image for eugenmayer/rsync:latest
-          ok  Synced /Users/phuonglm/Projects/teracy/dev/workspace/personal/teracy-official-blog
+          ok  Synced /Users/hoatle/teracy-dev/workspace/teracy-blog
      success  Rsync server started
-          ok  Synced /Users/phuonglm/Projects/teracy/dev/workspace/personal/teracy-official-blog
-     success  Starting to watch /Users/phuonglm/Projects/teracy/dev/workspace/personal/teracy-official-blog - Press CTRL-C to stop
+          ok  Synced /Users/hoatle/teracy-dev/workspace/teracy-blog
+     success  Starting to watch /Users/hoatle/teracy-dev/workspace/teracy-blog - Press CTRL-C to stop
+
 ```
 
 
@@ -96,18 +97,14 @@ $ docker-compose pull && docker-compose -f docker-compose.yml -f docker-compose-
 And you should see something like:
 
 ```
-Starting teracyblog_teracy-blog-dev_1
-Attaching to teracyblog_teracy-blog-dev_1
-teracy-blog-dev_1  | ## Generating Site with Jekyll
-teracy-blog-dev_1  | identical source/stylesheets/screen.css 
-teracy-blog-dev_1  | Configuration from /opt/app/_config.yml
-teracy-blog-dev_1  | Building site: source -> public
-teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-02-teracy-hello-world.markdown
-teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-03-how-to-start-blogging-easily-with-octopress-and-teracy-dev.markdown
-teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-05-how-to-add-facebook-like-box-to-octopress.markdown
-teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-06-a-separated-django-application-with-unit-tests-coding-convention-checking-and-coverage-report.markdown
-teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-07-keep-manage-share-top-secret-resources-with-git-encrypt-and-gitolite.markdown
-teracy-blog-dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-08-multiple-github-custom-domains.markdown
+Creating teracyblog_dev_1
+Attaching to teracyblog_dev_1
+dev_1  | ## Generating Site with Jekyll
+dev_1  | identical source/stylesheets/screen.css 
+dev_1  | Configuration from /opt/app/_config.yml
+dev_1  | Building site: source -> public
+dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-02-teracy-hello-world.markdown
+dev_1  | revision plugin::full_path: /opt/app/source/_posts/2013-08-03-how-to-start-blogging-easily-with-octopress-and-teracy-dev.markdown
 ```
 
 ##### On Windows
@@ -116,6 +113,28 @@ TODO(hoatle): check and work on this
 
 Now, keep that console and open http://localhost:4000 to see the blog, It'll auto rebuild when you 
 make changes on your content.
+
+Tip:
+
+- How to generate content faster when previewing instead of waiting:
+
+  Open a new terminal window:
+
+  ```
+  $ cd teracy-blog
+  $ docker-compose exec dev rake generate
+  ```
+
+- How to access into the container ssh session:
+
+  Open a new terminal window:
+
+  ```
+  $ cd teracy-blog
+  $ docker-compose exec dev /bin/bash
+  app@a4e5c4766cd3:/opt/app$
+  ```
+
 
 #### 3.2. How to run blog with Docker in prod mode
 

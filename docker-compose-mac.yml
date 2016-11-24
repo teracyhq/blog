@@ -1,10 +1,10 @@
 version: "2"
 
 services:
-  teracy-blog-dev:
+  dev:
     volumes:
-      - app-sync:/opt/app:rw
+      - teracy-blog-sync:/opt/app:rw
 
 volumes:
-  app-sync:
+  teracy-blog-sync:
     external: true

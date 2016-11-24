@@ -2,7 +2,7 @@ options:
   compose-dev-file-path: 'docker-compose-mac.yml'
 
 syncs:
-  app-sync:
+  teracy-blog-sync:
     src: '.'
     dest: '/opt/app'
     sync_user: 'app'

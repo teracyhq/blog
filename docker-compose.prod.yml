@@ -1,7 +1,7 @@
 version: "2"
 
 services:
-  teracy-blog-prod:
+  prod:
     build: .
     image: teracy/blog:latest
     ports:
