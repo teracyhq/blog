@@ -8,11 +8,9 @@ env:
   - DOCKER_FILE=Dockerfile     IMAGE_TAG_PREFIX=
   global:
   - CI_BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-  - CI_REGISTRY_IMAGE=teracy/blog
+  - CI_REGISTRY_IMAGE=$DOCKER_IMAGE
   - GH_REPO="teracyhq/blog"
   - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
-  - secure: FPx9HmXB0i7RQlcU/e79rr9rxjZt3YKgm0JsWK4j8zhI/fLTxGaVsMHpHSXJAkB9gH1kb6if4NoKHoASZQG+aq9r6Asl/oTE5J4+XVoR9GuJjy3bsgR15xiC21ap7KHmignh8z7T50l2bCB+TgwJ+c6pie95b7TuHQ+hO9nqnzU=
-  - secure: NUPmjt3kmzJ9diuQ8JKGBBwn9Unu7ByVc0yYaqumqqWCRYLxfScyaZvCLXJSZTwnzbV9jWPlq4sO8IXwJDTidwTjCL2d8QMboUNij8W2Shv1SIktm7+9+EMolJUwftkeQvbBJ+vNbW03pO65fuKpTaJfangMP3R7GOU54ARQJ2k=
 rvm:
 - 1.9.3
 before_script:

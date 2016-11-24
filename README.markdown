@@ -157,7 +157,7 @@ Then open http://localhost:8080 to see static blog site served by nginx.
 First, use teracy/blog:dev_latest image to generate static content:
 
 ```
-$ docker run -it --rm -v $(pwd):/opt/app teracy/blog:dev_latest
+$ docker run --rm -v $(pwd):/opt/app teracy/blog:dev_latest
 ```
 
 And then:
@@ -166,8 +166,29 @@ And then:
 $ docker-compose -f docker-compose.prod.yml build
 ```
 
+### 4. travis-ci configuration
 
-### 4. Learn more at http://octopress.org/docs/
+- Register your account at https://hub.docker.com
+- Register your account at travis-ci.org
+- Enable teracy-blog repository on travis-ci (for example: https://travis-ci.org/hoatle/teracy-blog)
+- Fill in the following environment variables settings for teracy-blog travis-ci project by
+  following: https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings
+  + DOCKER_IMAGE (for example: hoatle/teracy-blog => https://hub.docker.com/r/hoatle/teracy-blog/)
+  + DOCKER_USERNAME (fill in your Docker username)
+  + DOCKER_PASSWORD (fill in your Docker password)
+
+And you're done. After each travis-ci build, new Docker images are pushed, we can review the work
+by running the Docker images instead of fetching git code and build it on local ourselves.
+
+To run a Docker image for reviewing, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`:
+
+```
+$ docker run --rm -p 8888:80 hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub
+```
+
+And open http://localhost:8888 to review the changes.
+
+### 5. Learn more at http://octopress.org/docs/
 
 ## Blog post structure guide
 
