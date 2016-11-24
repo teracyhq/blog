@@ -22,13 +22,13 @@ published: true
 {% img center /images/2016/11/22/tu-duy-thiet-ke.jpeg Tư duy thiết kế %}
 
 Liệu có một công thức nào để tạo ra các sản phẩm sáng tạo hay không? Trải nghiệm hay là dịch vụ? Tôi
-không nói về cải tiến gia tăng mà đang nói về sự đổi mới đột phá.
+đang không nói đến việc cải tiến dần dần một cách thuần túy mà là một sự đổi mới mang tính đột phá.
 
 
 Nếu bạn có nghi ngờ thì cũng là điều dễ hiểu, tôi cũng đã từng hoài nghi khi tôi bắt đầu nghiên cứu
 của mình về khoa học đằng sau đổi mới cách đây nhiều năm. Sự thật về sự đổi mới là tất cả đều phụ
 thuộc yếu tố con người. Cuối cùng, chúng ta là những người tạo ra những đổi mới cho mọi người. Là 
-một trong những nhà quản lý sản phẩm làm việc trên [Adobe Experience Design](http://www.adobe.com/products/experience-design.html) (Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
+một trong những giám đốc sản phẩm làm việc trên [Adobe Experience Design](http://www.adobe.com/products/experience-design.html) (Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
 tôi rất yêu thích, sử dụng, [giảng dạy](http://designthinkingnow.com/#/about/english), và học
 hỏi mỗi ngày tại nơi làm việc, và trong cuộc sống.
 
@@ -67,12 +67,13 @@ hành công khai. Chúng tôi duy trì một [trang web UserVoice](https://adobe
 sử dụng có thể sắp xếp các lỗi và đề xuất tính năng mới, trong đó cung cấp cho chúng tôi cơ hội để
 học hỏi nhanh, xác nhận, ưu tiên, và thay đổi bất cứ khi nào cần thiết.
 
-Chúng tôi có một đội ngũ chuyên dụng và đa ngành, bao gồm những nhà thiết kế "hình chữ T" (T-shaped),
-các kỹ sư, quản lý lập trình, nhân viên marketing và các nhà quản lý sản phẩm giống như tôi.
+Chúng tôi có một đội ngũ có nhiều kỹ năng và chuyên môn sâu (T-shaped) bao gồm các nhà thiết kế,
+các kỹ sư, quản lý lập trình, nhân viên marketing và các giám đốc sản phẩm giống như tôi.
 
 
-Một người "hình chữ T" là một người rất giỏi ở một lĩnh vực nào đó, nhưng cũng có thể đảm nhận các
-vai trò khác nhau trong nhóm, đòi hỏi người đó phải luôn luôn thích tìm hiểu và đặc biệt có sự đồng cảm.
+Một người có nhiều kỹ năng và chuyên môn sâu "T-shaped" là một người rất giỏi ở một lĩnh vực nào đó,
+nhưng cũng có thể đảm nhận các vai trò khác nhau trong nhóm, đòi hỏi người đó phải luôn luôn thích
+tìm hiểu và đặc biệt có sự thấu hiểu.
 
 
 **Tất cả mọi thứ trong thiết kế tư duy bắt đầu từ một thách thức thiết kế**
