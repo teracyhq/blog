@@ -4,7 +4,7 @@ LABEL authors="phuonglm <phuonglm@teracy.com>, hoatle <hoatle@teracy.com>"
 
 RUN useradd --user-group --create-home --shell /bin/false app && mkdir -p /opt/app
 
-ENV HOME=/home/app TERM=xterm APP=/opt/app
+ENV HOME=/home/app TERM=xterm-256color APP=/opt/app
 
 # add more arguments from CI to the image so that `$ env` should reveal more info
 ARG CI_BUILD_ID
