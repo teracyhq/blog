@@ -70,6 +70,6 @@ Có quá ít tương tác thì dễ dẫn đến kết thúc, vì vậy cần th
 
 Con người thoải mái nhất với những điều mà hành xử theo cách chúng ta mong đợi. Những người khác, những con vật, đồ vật, phần mềm. Khi một ai đó hoặc một cái gì đó hành xử một cách nhất quán với sự mong đợi của chúng ta, chúng ta cảm thấy như chúng ta có một mối quan hệ tốt với họ. Để làm được điều này thì các thành phần được thiết kế nên trông giống như cách chúng vận hành. Hình thức theo sau chức năng. Trong thực tế điều này có nghĩa là mọi người có thể dự đoán một yếu tố giao diện sẽ vận hành như thế nào chỉ bằng cách nhìn nó. Nếu nó trông giống như một cái nút thì nó phải hoạt động như một cái nút. Đừng làm cho những điều cơ bản của sự tương tác trở nên ngộ nghĩnh... Hãy giữ sự sáng tạo của bạn cho những mối quan tâm bậc cao hơn. 
 
-(CÒN TIẾP)
+(Mời các bạn xem tiếp [Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 2)](/2016/12/06/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-2/))
 
 Bài dịch từ [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/)
