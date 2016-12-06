@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vi | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-11-27T03:32:01+00:00</updated>
+  <updated>2016-12-06T08:39:58+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 2)]]></title>
+    <link href="http://blog.teracy.com/2016/12/06/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-2/"/>
+    <updated>2016-12-06T10:50:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/12/06/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-2</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/26/principles.jpg" title="Nguyên tắc thiết kế" ></p>
+
+<p>Đây là phần tiếp theo của <a href="/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/">Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)</a></p>
+
+<h1>10. Vấn đề nhất quán</h1>
+
+<p>Tiếp theo nguyên tắc trên, các yếu tố của màn hình không nên xuất hiện nhất quán với nhau, trừ khi chúng vận hành giống nhau. Những yếu tố có hành vi giống nhau thì nên trông giống nhau. Tuy nhiên điều này cũng quan trọng đối với thành phần khác nhau thì xuất hiện khác nhau. Khi nỗ lực để  làm cho nhất quán, các nhà thiết kế học việc thường làm mờ đi sự khác nhau quan trọng bằng cách sử dụng biện pháp trực quan giống nhau (thường là để sử dụng lại mã nguồn) trong khi  việc sử dụng các biện pháp trực quan khác nhau thì phù hợp hơn.</p>
+
+<!-- more -->
+
+
+<h1>11. Những phân cấp trực quan mạnh hoạt động tốt nhất</h1>
+
+<p>Một hệ thống phân cấp trực quan mạnh được thực hiện khi có thứ tự xem rõ ràng các yếu tố trực quan trên màn hình. Đó là khi người sử dụng xem các mặt hàng giống nhau theo thứ tự giống nhau trong mỗi lần xem. Phân cấp trực quan yếu cung cấp ít manh mối về nơi để người dùng nên nhìn vào và cuối cùng là cảm giác lộn xộn và khó hiểu. Trong môi trường đầy biến động, rất khó để duy trì một hệ thống phân cấp trực quan mạnh bởi vì trọng lượng hình ảnh là tương đối: khi tất cả mọi thứ màu đậm thì sẽ không có gì là nổi bật nữa. Nếu một yếu tố trực quan nặng đơn lẻ được thêm vào một màn hình, người thiết kế có thể cần phải thiết lập lại các trọng lượng hình ảnh của tất cả các yếu tố để đạt được hệ thống phân cấp mạnh một lần nữa. Hầu hết mọi người không chú ý đến hệ thống phân cấp trực quan nhưng nó là một trong những cách dễ nhất để củng cố (hoặc làm suy yếu) một thiết kế.</p>
+
+<h1>12. Sự tổ chức thông minh làm giảm tải trọng nhận thức (Cognitive load)</h1>
+
+<p><em>“Cognitive load mô tả gánh nặng của con người về trí nhớ ngắn hạn khi phải làm các nhiệm vụ phức tạp.”</em></p>
+
+<p>Như John Maeda đã nói trong cuốn sách Simplicity (Sự đơn giản) của ông, sự tổ chức các yếu tố màn hình một cách thông minh có thể làm cho những thứ số nhiều xuất hiện như là số ít. Điều này giúp mọi người hiểu giao diện của bạn dễ dàng hơn và nhanh hơn, bởi vì bạn đã mô tả các mối quan hệ vốn có của nội dung trong thiết kế của bạn. Nhóm tập hợp lại với nhau như là các yếu tố, thể hiện mối quan hệ tự nhiên qua vị trí và sự định hướng. Bằng việc tổ chức một cách thông minh, bạn sẽ làm cho nội dung ít tải trọng nhận thức (Cognitive load) hơn đối với người sử dụng&hellip; những người mà không phải suy nghĩ về việc các yếu tố có liên quan như thế nào bởi vì bạn đã làm điều đó cho họ. Đừng buộc người sử dụng phải tìm những điều này&hellip; mà hãy cho họ thấy bằng cách thiết kế những mối quan hệ đó trong màn hình của bạn.</p>
+
+<h1>13. Đừng xác định mà hãy làm nổi bật với màu sắc</h1>
+
+<p>Màu sắc của những vật thể thay đổi bởi vì ánh sáng thay đổi. Chúng ta sẽ thấy một cái cây được phác thảo vào ban ngày khác với lúc hoàng hôn. Như trong thế giới tự nhiên, nơi mà màu sắc là một thứ có rất nhiều sắc thái, màu sắc không nên xác định nhiều trong một giao diện. Nó có thể hỗ trợ, được sử dụng để làm nổi bật, được sử dụng để hướng dẫn sự chú ý, nhưng không nên  là sự khác biệt duy nhất của sự vật. Đối với trường hợp phải đọc lâu hoặc nhiều giờ sử dụng màn hình mở rộng, hãy sử dụng màu sắc nhẹ nhàng hoặc làm tối màu nền, giữ màu sắc tươi sáng hơn cho màu nhấn của bạn. Tất nhiên cũng cần có thời gian cho màu nền sôi động nữa, chỉ cần chắc chắn rằng nó phù hợp với khán giả của bạn.</p>
+
+<h1>14. Sự tiết lộ dần dần</h1>
+
+<p>Chỉ hiển thị những gì cần thiết trên mỗi màn hình. Nếu mọi người đang thực hiện một lựa chọn, hãy hiển thị đầy đủ thông tin để cho phép họ lựa chọn, sau đó đi vào chi tiết trên màn hình tiếp theo. Tránh việc giải thích quá mức hoặc hiển thị tất cả cùng một lúc. Khi có thể, hãy hoãn các quyết định lại ở màn hình tiếp theo bằng việc tiết lộ thông tin khi cần thiết. Điều này sẽ giữ cho những tương tác của bạn trở nên rõ ràng hơn.</p>
+
+<h1>15. Trợ giúp tức thời</h1>
+
+<p>Trong các giao diện lý tưởng, việc trợ giúp là không cần thiết vì giao diện có thể nắm bắt và sử dụng được. Bước dưới đây, thực tế, là một bước mà trong đó sự trợ giúp là trực tiếp và theo ngữ cảnh, chỉ có sẵn vào thời gian và địa điểm cần thiết, được giấu đi ở tất cả các thời điểm khác. Việc yêu cầu mọi người đến giúp đỡ và tìm câu trả lời cho câu hỏi của họ đặt ra cho họ nhiệm vụ phải biết những gì họ cần. Thay vì xây dựng ở nơi cần trợ giúp&hellip; chỉ cần đảm bảo rằng nó không còn liên quan đến những người đã biết làm thế nào để sử dụng giao diện của bạn.</p>
+
+<h1>16. Một điểm rất quan trọng: trạng thái số không</h1>
+
+<p>Trải nghiệm đầu tiên với một giao diện vô cùng quan trọng, nhưng các nhà thiết kế lại thường bỏ qua điều này. Để giúp người dùng của chúng ta tốt nhất trong việc đạt được tốc độ với thiết kế của chúng ta, thì thiết kế ở trạng thái số không là tốt nhất, trạng thái mà tại đó chưa có gì xảy ra. Trạng thái này không phải là một khung trống&hellip; Nó sẽ đưa ra những chỉ đạo và hướng dẫn để đạt được tốc độ. Phần lớn sự cọ sát của các tương tác là trong bối cảnh ban đầu&hellip; Một khi người ta hiểu các quy tắc mà họ có thì khả năng thành công sẽ cao hơn nhiều.</p>
+
+<h1>17. Thiết kế lớn là vô hình</h1>
+
+<p>Một tính chất kỳ lạ của thiết kế lớn là nó thường không được chú ý bởi những người sử dụng nó. Lý do cho điều này là nếu thiết kế thành công người sử dụng có thể tập trung vào những mục tiêu của riêng mình chứ không phải là giao diện&hellip; khi họ hoàn thành mục tiêu của họ, họ sẽ hài lòng và không cần phải suy nghĩ về tình hình. Là một nhà thiết kế, điều này có thể là khó khăn bởi vì chúng ta nhận được ít lời tán thưởng khi các thiết kế của chúng ta tốt. Nhưng các nhà thiết kế lớn thường hài lòng với thiết kế được sử dụng tốt&hellip; và biết rằng người sử dụng hài lòng thường im lặng.</p>
+
+<h1>18. Xây dựng trên những lĩnh vực thiết kế khác</h1>
+
+<p>Thiết kế đồ họa hình ảnh, kiểu chữ (typography), copywriting, kiến ​​trúc thông tin và sự hiển thị&hellip; tất cả những lĩnh vực này là một phần của thiết kế giao diện. Chúng có thể được đề cập đến hoặc được chuyên môn môn hoá. Không nên lún vào những cuộc nội chiến hoặc coi thường những lĩnh vực khác: hãy thu thập những điều hữu ích từ những lĩnh vực khác cho công việc của bạn và tiếp tục sử dụng chúng. Ghi nhớ cả những hiểu biết từ những lĩnh vực dường như không liên quan&hellip; những gì chúng ta có thể học được từ việc xuất bản, viết mã, đóng sách, trượt ván, chữa cháy, karate?</p>
+
+<h1>19. Những giao diện tồn tại để được sử dụng</h1>
+
+<p>Như trong hầu hết các lĩnh vực thiết kế, thiết kế giao diện thành công khi mọi người đang sử dụng những gì bạn đã thiết kế. Giống như một chiếc ghế xinh đẹp mà không thoải mái để ngồi vào thì thiết kế là thất bại khi mọi người không lựa chọn sử dụng nó. Do đó, thiết kế giao diện có thể được xem như là tạo ra một môi trường sử dụng giống như tạo ra một vật có giá trị sử dụng. Giao diện để thoả mãn cái tôi người thiết kế là chưa đủ: nó phải được sử dụng!</p>
+
+<p>(HẾT!)</p>
+
+<p>Bài dịch từ <a href="http://bokardo.com/principles-of-user-interface-design/">Principles of User Interface Design</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tư duy thiết kế: Cẩm nang cho sự đổi mới (Phần 1)]]></title>
@@ -546,138 +606,9 @@ ra nhầm lẫn. Giống như một bài viết thì nên có một luận đi�
 
 <p>Con người thoải mái nhất với những điều mà hành xử theo cách chúng ta mong đợi. Những người khác, những con vật, đồ vật, phần mềm. Khi một ai đó hoặc một cái gì đó hành xử một cách nhất quán với sự mong đợi của chúng ta, chúng ta cảm thấy như chúng ta có một mối quan hệ tốt với họ. Để làm được điều này thì các thành phần được thiết kế nên trông giống như cách chúng vận hành. Hình thức theo sau chức năng. Trong thực tế điều này có nghĩa là mọi người có thể dự đoán một yếu tố giao diện sẽ vận hành như thế nào chỉ bằng cách nhìn nó. Nếu nó trông giống như một cái nút thì nó phải hoạt động như một cái nút. Đừng làm cho những điều cơ bản của sự tương tác trở nên ngộ nghĩnh&hellip; Hãy giữ sự sáng tạo của bạn cho những mối quan tâm bậc cao hơn.</p>
 
-<p>(CÒN TIẾP)</p>
+<p>(Mời các bạn xem tiếp <a href="/2016/12/06/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-2/">Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 2)</a>)</p>
 
 <p>Bài dịch từ <a href="http://bokardo.com/principles-of-user-interface-design/">Principles of User Interface Design</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 2)]]></title>
-    <link href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/"/>
-    <updated>2016-10-04T10:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/04/tham-dinh-thi-truong.jpg" title="Thẩm định thị trường" ></p>
-
-<p>Đây là phần tiếp theo của <a href="/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/">Phần 1</a>.</p>
-
-<h1>Thẩm Định Thị Trường</h1>
-
-<p>Một khi bạn đã nói chuyện với người sử dụng và thẩm định được vấn đề tồn tại, bạn cần phải chắc chắn thị trường đủ lớn để thực hiện ý tưởng của mình. Tìm hiểu người sử dụng sản phẩm của bạn sẽ đến từ đâu, và bao nhiêu doanh thu tiềm năng có trong các cơ hội thị trường?</p>
-
-<p>Bằng cách thu thập càng nhiều thông tin càng tốt về thị trường tiềm năng, bạn sẽ có thể dự toán khoa học về quy mô của đối tượng khách hàng mục tiêu và số lượng khách hàng bạn có thể có được. Bằng cách thu thập này cũng sẽ giúp bạn tìm ra một cấu trúc giá cả tương đối cho các sản phẩm, điều này sẽ có giá trị khi bạn bắt đầu thực hiện kế hoạch tài chính khác.</p>
-
-<!-- more -->
-
-
-<p><img class="center" src="/images/2016/10/04/tham-dinh-thi-truong.jpg" title="Thẩm định thị trường" ></p>
-
-<h2>THỊ TRƯỜNG CẦN PHẢI LỚN NHƯ THẾ NÀO?</h2>
-
-<p>Nếu như bạn chỉ cần sản phẩm có doanh thu chỉ vài nghìn đô một tháng thì thị trưởng nhỏ cũng có thể đáp ứng được. Nhưng nếu bạn có tham vọng lớn và muốn doanh thu từ sản phẩm hàng tỷ đô la và trở thành nhà khởi nghiệp lớn mạnh tiếp theo, thì bạn sẽ cần phải đảm bảo tồn tại một thị trường lớn.</p>
-
-<h2>&ldquo;NHƯNG TÔI SẼ TẠO RA THỊ TRƯỜNG CỦA RIÊNG TÔI!&rdquo; </h2>
-
-<p>Điều đó là thật, đôi khi một sản phẩm thật sự sáng tạo sẽ tạo ra một thị trường hoàn toàn mới. Trước khi Whole Foods tồn tại, thị trường thực phẩm hữu cơ nhỏ hơn rất nhiều. Uber đã tạo ra một dịch vụ vận chuyển hoàn toàn mới theo yêu cầu bằng cách kết nối công nghệ và những người có ô tô.
-Nếu thị trường có thể tạo ra, thì hãy thật cẩn thận về giả định rằng ý tưởng của riêng bạn sẽ có được một số phận tương tự. Nhìn sâu để hiểu và dự đoán thị trường. Tóm lại, để sản phẩm của bạn thành công, cuối cùng bạn sẽ phải tìm một thị trường cho sản phẩm. Hãy tiến hành một cách thận trọng!</p>
-
-<p>Dưới đây là một vài công cụ bạn có thể sử dụng để thẩm định thị trường cho sản phẩm của bạn:</p>
-
-<ul>
-<li><p><a href="https://www.google.com/trends/">Google Trends</a> cho phép bạn so sánh số lượng tương đối các thuật ngữ tìm kiếm. Công cụ  này cho bạn biết nhu cầu đối với từng giai đoạn đã thay đổi trong 12 tháng qua.</p></li>
-<li><p>Google AdWords' <a href="https://adwords.google.com/KeywordPlanner">Keyword Planner</a> tiết lộ lượt tìm kiếm trung bình hàng tháng cho một từ khóa nhất định. Công cụ này cũng cung cấp cho bạn một ước tính đối với đối thủ cạnh tranh và giá thầu đề nghị. Sử dụng dữ liệu này, bạn có thể ước tính được bạn sẽ kéo được bao nhiêu traffic đến trang web của bạn bằng cách sử dụng quảng cáo trả tiền của Google Adwords hoặc thông qua những kết quả hiện thị ngay trên đầu của công cụ tìm kiếm.</p></li>
-</ul>
-
-
-<p> <strong>Nghiên cứu kĩ đối thủ cạnh tranh</strong> cho phép bạn hiểu đối thủ cạnh tranh trong tương lai của bạn cũng đang cố gắng để giải quyết một vấn đề tương tự. Nếu bạn đang tập trung vào một thị trường nhỏ, chỉ việc tìm kiếm một đối thủ cạnh tranh là đủ. Nhưng nếu bạn đang tập trung vào một thị trường lớn hơn, bạn cần tìm kiếm thêm ít nhất ba đối thủ. Bên cạnh đó tìm kiếm đối thủ cạnh tranh trực tiếp, tìm kiếm những đối thủ cung cấp các sản phẩm và giải pháp tương tự. Sau đó, tìm hiểu càng nhiều càng tốt về đối thủ. Nghiên cứu hồ sơ của đối thủ, đọc blog và tìm kiếm thông tin của đối thủ trên các phương tiện truyền thông. Tìm hiểu về quy mô của đối thủ, phương pháp định giá, khả năng tài chính và tính năng sản phẩm.</p>
-
-<ul>
-<li><a href="https://moz.com/">Moz</a> có thể chạy kiểm tra nội dung trên các trang web đối thủ cạnh tranh giúp bạn biết đối thủ được xếp hạng như thế nào qua các từ khóa và phần nội dung nào của họ thủ được chia sẻ rộng rãi nhất. Tất cả điều này sẽ là thông tin có giá trị.</li>
-</ul>
-
-
-<h2>&ldquo;NẾU TÔI KHÔNG THỂ TÌM ĐƯỢC ĐỐI THỦ CẠNH TRANH NÀO?&rdquo;</h2>
-
-<p>Nếu bạn không thể tìm thấy bất kỳ đối thủ cạnh tranh nào, thì rất có thể bạn đã hoặc là bị bỏ sót điều gì đó trong nghiên cứu của bạn hoặc bạn đang nghiên cứu trên một vấn đề mà không thực sự tồn tại. Tuy nhiên, có thể có ngoại lệ nếu bạn đang bắt đầu một doanh nghiệp rất nhỏ, doanh nghiệp của bạn có cơ hội không có đối thủ nào.</p>
-
-<p>Một lĩnh vực khác cần xem xét khi tiến hành phân tích đối thủ cạnh tranh là các công ty có thể cố gắng để phát triển một cách nhanh chóng sản phẩm hoặc lĩnh vực dịch vụ mới khi mà tính thị trường của họ phát sinh tính cạnh tranh. Trong khi vấn đề này chưa phải là mối quan tâm cấp bách, thì bạn hãy bỏ tiền ra và nhanh chóng xác định xem ai sẽ là người tiếp theo cung cấp sản phẩm tương tự như của bạn vì vậy bạn mới có thể giành chiến thắng trên thị trường. Điều này sẽ giúp bạn chuẩn bị và đưa ra một kế hoạch để xử lý các tình huống phát sinh.</p>
-
-<p>Khi bạn đã thẩm định được thị trường, bạn sẽ sẵn sàng chuyển sang phần thú vị: thẩm định sản phẩm.</p>
-
-<h2>Thẩm Định Sản Phẩm</h2>
-
-<p>Chỉ có một cách để đảm bảo sản phẩm của bạn giải quyết được vấn đề bạn đang tập trung là: bắt tay vào nghiên cứu và xây dựng một nguyên mẫu.</p>
-
-<p>Nó không quan trọng nếu bạn không có nhiều kinh nghiệm về kỹ thuật, bạn <a href="https://m.hanno.co/the-last-thing-you-need-is-a-programmer-4f082ae16ec1#.spc8srnj8">không cần một kỹ sư xây dựng một nguyên mẫu tuyệt vời</a>. Thay vì chọn các kỹ thuật tạo mẫu đắt tiền và tốn thời gian, hãy giữ cho mọi thứ mạch lạc dễ hiểu.</p>
-
-<p>Một khi bạn đã xây dựng nguyên mẫu, bạn sẽ bắt đầu thử nghiệm với người sử dụng để thu thập thông tin phản hồi và học hỏi từ người dùng càng nhiều càng tốt.</p>
-
-<p><img class="center" src="/images/2016/10/04/tham-dinh-san-pham.jpg" title="Thẩm định sản phẩm nhanh" ></p>
-
-<h1>1. XÂY DỰNG NGUYÊN MẪU</h1>
-
-<p>Ngay cả khi mục tiêu cuối cùng của bạn là xây dựng một trang web hoặc ứng dụng ưa thích, bạn không thực sự cần phải viết bất kỳ mã nào để xác nhận ý tưởng.</p>
-
-<p>Khi bạn xây dựng mẫu, hãy thật sáng tạo! Xác định chính xác giá trị cốt lõi sản phẩm của bạn, và nghĩ ra cách để kiểm tra xem nó hoạt động theo cách đơn giản nhất có thể.</p>
-
-<p>Giả sử ý tưởng sản phẩm của bạn là một loại thiết bị phần cứng và thiết bị phần mềm mới để giúp người dùng khiếm thị di chuyển trong nhà của họ. Định vị và bộ cảm biến độ gần sẽ xác định vị trí của người dùng, và một vành đai rung sẽ nói cho họ biết hướng đi mà họ cần để di chuyển trong nhà. Xây dựng một phiên bản thực tế của sản phẩm này sẽ rất tốn kém và tốn thời gian.</p>
-
-<p>Hãy nghĩ đơn giản! Bạn có thể lập kế hoạch và chế tạo thử nghiệm ý tưởng trong 30 phút, mà không thực sự cần người dùng khiếm thị để thử nghiệm. Trong một thí nghiệm mẫu, chúng tôi đã thử nghiệm với một mẫu sản phẩm rất đơn giản: Chúng tôi bịt mắt một trong những thành viên trong nhóm của chúng tôi và mô phỏng sản phẩm bằng cách tác động trên eo của anh ta để mô phỏng những rung động của dây đai. Đó là một thiết lập vô cùng đơn giản, cho phép chúng tôi thực hiện các thử nghiệm cơ bản ban đầu của một ý tưởng sản phẩm và nhận được thông tin phản hồi ngay lập tức.</p>
-
-<p><img class="center" src="/images/2016/10/04/xay-dung-nguyen-mau.jpg" title="Xây dựng nguyên mẫu" ></p>
-
-<p>Nếu bạn hoàn toàn không quen thuộc với nguyên mẫu, và muốn tìm hiểu thêm trước khi bắt tay vào làm, hãy tham khảo các nguồn này:</p>
-
-<ul>
-<li>“<a href="https://www.smashingmagazine.com/2016/05/content-first-prototyping/">Content-First Prototyping</a>,” Andy Fitzgerald</li>
-<li>“<a href="https://www.smashingmagazine.com/2014/10/the-skeptics-guide-to-low-fidelity-prototyping/">The Skeptic’s Guide to Low-Fidelity Prototyping</a>,” Laura Busche</li>
-<li>“<a href="https://www.smashingmagazine.com/2014/09/prototyping-for-better-products-stronger-teams-and-happier-clients/">Prototyping for Better Products, Stronger Teams and Happier Clients</a>,” Scott Hurff</li>
-</ul>
-
-
-<h2>2.THỬ NGHIỆM NGUYÊN MẪU VỚI NGƯỜI SỬ DỤNG</h2>
-
-<p>Thử nghiệm này có thể khiến bạn e dè, đặc biệt nếu trước đây bạn chưa thực hiện. Phải tìm kiếm người dùng ở đâu và chạy thử nghiệm với người dùng như thế nào buộc bạn phải &ldquo;công khai&rdquo; ý tưởng sản phẩm của bạn. Điều này khó khăn hơn nhiều so với làm việc trên bàn với ý tưởng giả định.
-Một khi bạn đã thực hiện thử nghiệm với vài người dùng đầu tiên, bạn sẽ bắt đầu thấy quá trình thử nghiệm hoạt động như thế nào, không chỉ là khởi nguồn của việc hiểu vấn đề sâu sắc mà còn mang lại rất nhiều niềm vui.</p>
-
-<h2>PHƯƠNG PHÁP THỬ NGHIỆM NGƯỜI DÙNG GẦN</h2>
-
-<p>Việc tìm những người xung quanh bạn và để họ thành đối tượng thử nghiệm là một điểm khởi đầu tuyệt vời. Lý tưởng nhất là tìm được người dùng trong đối tượng mục tiêu của bạn &ndash; những người thực sự bị khiếm thị. Tuy nhiên, trong giai đoạn sớm của thử nghiệm, bạn có thể nhận được thông tin phản hồi hữu ích chỉ cần bằng cách thử nghiệm trên những người xung quanh bạn và chạy thử nghiệm đơn giản, như chúng ta đã thử nghiệm với những người khiếm thị.</p>
-
-<p>Một khi bạn tìm hiểu thêm từ những thử nghiệm người dùng gần và có khả năng mô phỏng sản phẩm của bạn, xem xét đến các thông tin phản hồi bạn thu thập, bạn có thể tiếp tục thử nghiệm trên người sử dụng mục tiêu của bạn.</p>
-
-<h2>THỬ NGHIỆM NGƯỜI DỤNG TỪ XA</h2>
-
-<p>Nếu bạn không thể tìm thấy các đối tượng thử nghiệm hoàn hảo từ cộng đồng địa phương của bạn, có rất nhiều cách tuyệt vời để thử nghiệm với người dùng từ xa. Dưới đây là một vài công cụ để giúp bạn chạy thử nghiệm từ xa:</p>
-
-<ul>
-<li><a href="http://usertesting.com/">UserTesting</a></li>
-</ul>
-
-
-<p>Thử nghiệm tự động, &ldquo;không kiểm duyệt&rdquo; thay thế cho phỏng vấn người dùng bằng cách ghi lại trải nghiệm của người dùng trên màn hình khi họ sử dụng sản phẩm của bạn.</p>
-
-<ul>
-<li><a href="https://usabilityhub.com/">UsabilityHub</a></li>
-</ul>
-
-
-<p>Đây là cách nhanh chóng và tương đối rẻ để có được những hiểu biết và phản ứng từ một số người sử dụng về nguyên mẫu của bạn.</p>
-
-<ul>
-<li><a href="http://hellopingpong.com/">PingPong</a></li>
-</ul>
-
-
-<p>Là công cụ để lên lịch trình phỏng vấn bằng Skype với người dùng từ xa.</p>
-
-<p>Mục đích của việc thẩm định sản phẩm cho dù từ xa hay trực tiếp là để đảm bảo rằng sản phẩm của bạn giúp giải quyết đúng vấn đề một cách hiệu quả nhất. Có nhiều khả năng bạn sẽ quản lý để làm điều này một cách hoàn hảo vào khoảng thời gian đầu &ndash; nhưng điều đó hoàn toàn tốt đẹp! Việc lặp đi lặp lại, chỉnh sửa và đào sâu là một phần tự nhiên của quá trình thẩm định sản phẩm và là một trong những lý do tại sao tạo mẫu là một kỹ thuật có giá trị như vậy.</p>
-
-<p>Một khi bạn bắt đầu thu thập thông tin phản hồi tích cực mạnh mẽ từ người dùng mục tiêu bằng cách kiểm tra các mẫu thử nghiệm, đó là thời gian để chuyển sang giai đoạn cuối cùng của quá trình thẩm định tinh gọn.</p>
-
-<p>(Mời bạn xem tiếp <a href="/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/">Phần 3</a>)</p>
-
-<p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
 ]]></content>
   </entry>
   
