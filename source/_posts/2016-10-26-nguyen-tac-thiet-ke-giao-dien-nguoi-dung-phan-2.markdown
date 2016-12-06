@@ -18,7 +18,7 @@ keywords: design, ux, ui, User Interface, User Interface Design, principles, ngu
 
 {% img center /images/2016/10/26/principles.jpg Nguyên tắc thiết kế %}
 
-Đây là phần tiếp theo của chủ đề [Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)](/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/)
+Đây là phần tiếp theo của [Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)](/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/)
 
 10. Vấn đề nhất quán
 ===================
@@ -35,7 +35,7 @@ Một hệ thống phân cấp trực quan mạnh được thực hiện khi có
 =======================================================================
 *“Cognitive load mô tả gánh nặng của con người về trí nhớ ngắn hạn khi phải làm các nhiệm vụ phức tạp.”*
 
-Như John Maeda đã nói trong cuốn sách Simplicity (Sự đơn giản) của ông, sự tổ chức các yếu tố màn hình một cách thông minh có thể làm cho những thứ số nhiều xuất hiện như là số ít. Điều này giúp mọi người hiểu giao diện của bạn dễ dàng hơn và nhanh hơn, bởi vì bạn đã mô tả các mối quan hệ vốn có của nội dung trong thiết kế của bạn. Nhóm tập hợp lại với nhau như là các yếu tố, thể hiện mối quan hệ tự nhiên qua vị trí và sự định hướng. Bằng việc tổ chức một cách thông minh, bạn sẽ làm cho nội dung ít tải trọng nhận thức (Cognitive load) hơn đối với người sử dụng ... những người mà không phải suy nghĩ về việc các yếu tố có liên quan như thế nào bởi vì bạn đã làm điều đó cho họ. Đừng buộc người sử dụng phải  tìm những điều này ... mà hãy cho họ thấy bằng cách thiết kế những mối quan hệ đó vào màn hình của bạn. 
+Như John Maeda đã nói trong cuốn sách Simplicity (Sự đơn giản) của ông, sự tổ chức các yếu tố màn hình một cách thông minh có thể làm cho những thứ số nhiều xuất hiện như là số ít. Điều này giúp mọi người hiểu giao diện của bạn dễ dàng hơn và nhanh hơn, bởi vì bạn đã mô tả các mối quan hệ vốn có của nội dung trong thiết kế của bạn. Nhóm tập hợp lại với nhau như là các yếu tố, thể hiện mối quan hệ tự nhiên qua vị trí và sự định hướng. Bằng việc tổ chức một cách thông minh, bạn sẽ làm cho nội dung ít tải trọng nhận thức (Cognitive load) hơn đối với người sử dụng... những người mà không phải suy nghĩ về việc các yếu tố có liên quan như thế nào bởi vì bạn đã làm điều đó cho họ. Đừng buộc người sử dụng phải tìm những điều này... mà hãy cho họ thấy bằng cách thiết kế những mối quan hệ đó trong màn hình của bạn. 
 
 
 13. Đừng xác định mà hãy làm nổi bật với màu sắc
@@ -55,17 +55,17 @@ Trong các giao diện lý tưởng, việc trợ giúp là không cần thiết
 
 16. Một điểm rất quan trọng: trạng thái số không
 ================================================
-Trải nghiệm đầu tiên với một giao diện vô cùng quan trọng, nhưng các nhà thiết kế lại thường bỏ qua điều này. Để giúp người dùng của chúng ta tốt nhất trong việc đạt được tốc độ với thiết kế của chúng ta, thì thiết kế ở trạng thái số không là tốt nhất, trạng thái mà tại đó chưa có gì xảy ra. Trạng thái này không phải là một khung trống ... nó sẽ đưa ra những chỉ đạo và hướng dẫn để đạt được tốc độ. Phần lớn sự cọ sát của các tương tác là trong bối cảnh ban đầu ... một khi người ta hiểu các quy tắc mà họ có thì khả năng thành công sẽ cao hơn nhiều. 
+Trải nghiệm đầu tiên với một giao diện vô cùng quan trọng, nhưng các nhà thiết kế lại thường bỏ qua điều này. Để giúp người dùng của chúng ta tốt nhất trong việc đạt được tốc độ với thiết kế của chúng ta, thì thiết kế ở trạng thái số không là tốt nhất, trạng thái mà tại đó chưa có gì xảy ra. Trạng thái này không phải là một khung trống... Nó sẽ đưa ra những chỉ đạo và hướng dẫn để đạt được tốc độ. Phần lớn sự cọ sát của các tương tác là trong bối cảnh ban đầu... Một khi người ta hiểu các quy tắc mà họ có thì khả năng thành công sẽ cao hơn nhiều. 
 
 
 17. Thiết kế lớn là vô hình
 ===========================
-Một tính chất kỳ lạ của thiết kế lớn là nó thường không được chú ý bởi những người sử dụng nó. Lý do cho điều này là nếu thiết kế thành công người sử dụng có thể tập trung vào những mục tiêu của riêng mình chứ không phải là giao diện ... khi họ hoàn thành mục tiêu của họ, họ sẽ hài lòng và không cần phải suy nghĩ về tình hình. Là một nhà thiết kế điều này có thể là khó khăn... bởi vì chúng ta nhận được ít lời tán thưởng khi các thiết kế của chúng ta tốt. Nhưng các nhà thiết kế lớn hài lòng với một thiết kế cũng được sử dụng tốt ... và biết rằng người sử dụng hài lòng thường im lặng. 
+Một tính chất kỳ lạ của thiết kế lớn là nó thường không được chú ý bởi những người sử dụng nó. Lý do cho điều này là nếu thiết kế thành công người sử dụng có thể tập trung vào những mục tiêu của riêng mình chứ không phải là giao diện... khi họ hoàn thành mục tiêu của họ, họ sẽ hài lòng và không cần phải suy nghĩ về tình hình. Là một nhà thiết kế, điều này có thể là khó khăn bởi vì chúng ta nhận được ít lời tán thưởng khi các thiết kế của chúng ta tốt. Nhưng các nhà thiết kế lớn thường hài lòng với thiết kế được sử dụng tốt... và biết rằng người sử dụng hài lòng thường im lặng. 
 
 
 18. Xây dựng trên những lĩnh vực thiết kế khác
 =============================================
-Thiết kế đồ họa hình ảnh, kiểu chữ (typography), copywriting, kiến ​​trúc thông tin và sự hiển thị ... tất cả những lĩnh vực này là một phần của thiết kế giao diện. Chúng có thể được đề cập đến hoặc được chuyên môn môn hoá. Không nên lún vào những cuộc nội chiến hoặc coi thường những lĩnh vực khác: hãy thu thập từ chúng những khía cạnh hữu ích cho công việc của bạn và tiếp tục sử dụng chúng. Ghi nhớ cả những hiểu biết từ những lĩnh vực dường như không liên quan... những gì chúng ta có thể học được từ việc xuất bản, viết mã, đóng sách, trượt ván, chữa cháy, karate? 
+Thiết kế đồ họa hình ảnh, kiểu chữ (typography), copywriting, kiến ​​trúc thông tin và sự hiển thị... tất cả những lĩnh vực này là một phần của thiết kế giao diện. Chúng có thể được đề cập đến hoặc được chuyên môn môn hoá. Không nên lún vào những cuộc nội chiến hoặc coi thường những lĩnh vực khác: hãy thu thập những điều hữu ích từ những lĩnh vực khác cho công việc của bạn và tiếp tục sử dụng chúng. Ghi nhớ cả những hiểu biết từ những lĩnh vực dường như không liên quan... những gì chúng ta có thể học được từ việc xuất bản, viết mã, đóng sách, trượt ván, chữa cháy, karate? 
 
 
 19. Những giao diện tồn tại để được sử dụng
@@ -73,5 +73,6 @@ Thiết kế đồ họa hình ảnh, kiểu chữ (typography), copywriting, ki
 Như trong hầu hết các lĩnh vực thiết kế, thiết kế giao diện thành công khi mọi người đang sử dụng những gì bạn đã thiết kế. Giống như một chiếc ghế xinh đẹp mà không thoải mái để ngồi vào thì thiết kế là thất bại khi mọi người không lựa chọn sử dụng nó. Do đó, thiết kế giao diện có thể được xem như là tạo ra một môi trường sử dụng giống như tạo ra một vật có giá trị sử dụng. Giao diện để thoả mãn cái tôi người thiết kế là chưa đủ: nó phải được sử dụng!
 
 
-(Hết!)
+(HẾT!)
+
 Bài dịch từ [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/)
