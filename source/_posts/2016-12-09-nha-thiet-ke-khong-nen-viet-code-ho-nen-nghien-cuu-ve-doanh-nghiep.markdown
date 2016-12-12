@@ -8,7 +8,7 @@ categories:
     - "vi"
     - "trans"
 tags:
-    - "desisgner"
+    - "designer"
     - "bussiness"
     - "principles"
 cover: /images/2016/12/09/desinger-shouldnt-code.jpg
@@ -28,15 +28,15 @@ Thay vì xem các nhà thiết kế là những người cần phải có thì h
  Hiện tại chúng ta đang ở đâu
  ============================
 
- Có rất nhiều thiết kế đã bắt đầu suy nghĩ nghiêm túc về việc quyết định của họ ảnh hưởng đến công ty ra sao. Nói chung, sự tập trung của chúng ta vào phân tích và nghiên cứu người dùng cũng đã giúp rất nhiều trong việc mang đến niềm tin lớn hơn cho tiếng nói của người thiết kế.  Chúng ta cũng đã thấy nhiều ví dụ tuyệt vời của các công ty  đầu về thiết kế và các nhà thiết kế ảnh hưởng đến cốt lõi của các doanh nghiệp lớn như Airbnb, Pocket, Facebook, Google, Slack, và vô số công ty khác nữa.
+ Có rất nhiều nhà thiết kế đã bắt đầu suy nghĩ nghiêm túc về việc quyết định của họ ảnh hưởng đến công ty ra sao. Nói chung, sự tập trung của chúng ta vào phân tích và nghiên cứu người dùng cũng đã giúp rất nhiều trong việc mang đến niềm tin lớn hơn cho tiếng nói của người thiết kế. Chúng ta cũng đã thấy nhiều ví dụ tuyệt vời của các công ty hàng đầu về thiết kế và các nhà thiết kế ảnh hưởng đến cốt lõi của các doanh nghiệp lớn như Airbnb, Pocket, Facebook, Google, Slack, và vô số công ty khác nữa.
 
- Tôi cho rằng nhưng công ty này thành công như hiện nay bởi vì họ có những người thiết kế tập trung vào việc doanh nghiệp họ cần gì hơn là tập trung vào việc mỗi điểm ảnh sẽ trông hoàn hảo như thế nào.
+ Tôi cho rằng những công ty này thành công như hiện nay bởi vì họ có những người thiết kế tập trung vào việc doanh nghiệp họ cần gì hơn là tập trung vào việc mỗi điểm ảnh sẽ trông hoàn hảo như thế nào.
 
  Chuyển đổi sự tập trung của chúng ta
  ====================================
 Vậy chúng ta nên bắt đầu tư duy về việc ảnh hưởng của thiết kế tới doanh nghiệp như thế nào?
 
-Có thể là nên ra ngoài và học thạc sĩ quản trị kinh doanh (MBA). (Tất cả những designers mà tôi biết đều đã làm điều này và đang tích cực đóng góp vào giá trị cốt lõi của doanh nghiệp). Nhưng thậm chí có thể làm những điều đơn giản hơn. Có thể là nói chuyện với đội kinh doanh để hiểu thị trường trông thế nào. Có thể là nói chuyện với đội vận chuyển và thực hiện để hiểu tại sao các đơn hàng thường bị chậm một ngày. Có thể đọc qua việc lên kế hoạch cho quý 1 và tìm ra những sáng kiến quan trọng cho những quý không có gì làm ngoài việc tái cúc trúc file css. Có thể cần phải tham gia một lớp học buổi tối về kinh kế. Hay có lẽ chỉ cần dành thời gian buổi tối để tìm kiếm trên google về cách gây quỹ và cách bảng giá trị vốn hoá (Cap table ) hoạt động như thế nào thay vì làm thế nào để sử dụng các plugin phác học mới nhất.
+Có thể là nên ra ngoài và học thạc sĩ quản trị kinh doanh (MBA). (Tất cả những designers mà tôi biết đều đã làm điều này và đang tích cực đóng góp vào giá trị cốt lõi của doanh nghiệp). Nhưng thậm chí có thể làm những điều đơn giản hơn. Có thể là nói chuyện với đội kinh doanh để tìm hiểu tình hình thị trường. Có thể là nói chuyện với đội vận chuyển và thực hiện để hiểu tại sao các đơn hàng thường bị chậm một ngày. Có thể đọc qua việc lên kế hoạch cho quý 1 và tìm ra những sáng kiến quan trọng cho những quý không có gì làm ngoài việc tái cấu trúc file css. Có thể cần phải tham gia một lớp học buổi tối về kinh tế. Hay có lẽ chỉ cần dành thời gian buổi tối để tìm kiếm trên google về cách gây quỹ và cách bảng giá trị vốn hoá (Cap table) hoạt động như thế nào thay vì làm thế nào để sử dụng các plugin phác họ mới nhất.
 
  Có thể chúng ta nên dành thời gian để tìm hiểu về các nguyên tắc kinh doanh - làm thế nào để lựa chọn mô hình kinh doanh, làm thế nào để quản lý nhóm, làm thế nào để tiến hành phân tích cạnh tranh, làm thế nào để thực hiện dự án...
 
@@ -44,6 +44,6 @@ Có thể là nên ra ngoài và học thạc sĩ quản trị kinh doanh (MBA).
 
  Tương lai
  =========
- Tôi không nói chúng ta nên bắt đầu vận chuyển những trải nghiệm thiết kế kém. Chúng ta phải tiếp tục phát triển và tập trung vào công việc của mình.  Nếu chúng ta không làm vậy thì sẽ chẳng có ai làm nữa. Nhưng cũng hãy bắt đầu hiểu doanh nghiệp chúng ta đang làm việc và chúng cần gì để phát triển. Nếu chúng ta có thể làm điều đó, chúng ta sẽ tiếp tục đạt được nhiều ảnh hưởng hơn và sẽ tiếp tục tạo ra những sản phẩm có sự ảnh hưởng lớn hơn - cho cả công ty của chúng ta và cho cả những người dùng nó.
+ Tôi không nói chúng ta nên bắt đầu vận chuyển những trải nghiệm thiết kế kém. Chúng ta phải tiếp tục phát triển và tập trung vào công việc của mình.  Nếu chúng ta không làm vậy thì sẽ chẳng có ai làm nữa. Nhưng cũng hãy bắt đầu hiểu doanh nghiệp chúng ta đang làm việc và chúng cần gì để phát triển. Nếu chúng ta có thể làm điều đó, chúng ta sẽ tiếp tục đạt được nhiều ảnh hưởng hơn và sẽ tiếp tục tạo ra những sản phẩm có sự ảnh hưởng lớn hơn - cho cả công ty của chúng ta và cho cả những người dùng sản phẩm.
 
  Dịch từ: [Desiger shouldn't code. They should study business](https://medium.com/@joshuantaylor/designers-shouldn-t-code-they-should-study-business-dc3e7e203d39#.cp5ipre7v)
