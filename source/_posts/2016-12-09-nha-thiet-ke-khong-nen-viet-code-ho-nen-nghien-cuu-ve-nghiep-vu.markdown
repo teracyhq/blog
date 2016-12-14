@@ -2,7 +2,7 @@
 layout: post
 title: "Nhà thiết kế không nên viết code. Họ nên nghiên cứu về nghiệp vụ."
 author: hoavu
-date: 2016-12-28 10:40
+date: 2016-12-09 10:40
 comments: true
 categories:
     - "vi"
@@ -15,9 +15,9 @@ cover: /images/2016/12/09/desinger-should-not-code.jpg
 description: Những người thiết kế không nên viết code mà cần phải tập trung nghiên cứu về nghiệp vụ.
 keywords: bussiness, designer, bussiness principle, thiết kế, doanh nghiệp
 ---
-{% img center /images/2016/12/09/desinger-should-not-code.jpg các designer không nên viết code, nên tập trung nghiên cứu nghiệp vụ %}
+{% img center /images/2016/12/09/desinger-should-not-code.jpg các nhà thiết kế không nên viết code, nên tập trung nghiên cứu nghiệp vụ %}
 
-Ngày nay càng ngày càng có nhiều công ty tìm kiếm các lãnh đạo thiết kế giỏi. Họ được biết rằng công ty của họ cần tập trung nhiều hơn vào tư duy thiết kế và quan tâm đến việc áp dụng các nguyên tắc thiết kế trung tâm hơn nữa. Tuy nhiên, khi những công ty này nói chuyện với các nhà thiết kế, họ nghe về các kỹ năng - về sự nhất quán thương hiệu, và thiết kế bóng bảy, những người thiết kế có thể viết code, hướng dẫn phong cách, tạo mẫu và thử nghiệm - là công việc của người thiết kế. 
+Ngày nay càng ngày càng có nhiều công ty tìm kiếm các lãnh đạo thiết kế giỏi. Họ được biết rằng công ty của họ cần tập trung nhiều hơn vào tư duy thiết kế và quan tâm đến việc áp dụng các nguyên tắc thiết kế tập trung hơn nữa. Tuy nhiên, khi những công ty này nói chuyện với các nhà thiết kế, họ nghe về các kỹ năng - về sự nhất quán thương hiệu, và thiết kế bóng bảy, những người thiết kế có thể viết code, hướng dẫn phong cách, tạo mẫu và thử nghiệm - là công việc của người thiết kế.
 
 Tất cả những điều này đều rất tốt - thậm chí là bắt buộc. Nhưng với chúng ta, để hiểu một cách đúng đắn, cách tốt nhất để xây dựng doanh nghiệp là chúng ta phải tập trung vào cái làm cho doanh nghiệp thành công. Nói chung, trước tiên chúng ta phải hiểu nghiệp vụ đã. Sau đó, chúng ta sẽ hiểu hơn công việc ở đâu là quan trọng (và cần thực thi ở đâu).
 
@@ -36,7 +36,7 @@ Chuyển đổi sự tập trung của chúng ta
 ====================================
 Vậy chúng ta nên bắt đầu tư duy về việc ảnh hưởng của thiết kế tới kinh doanh như thế nào?
 
-Có thể là nên ra ngoài và học quản trị kinh doanh (MBA). (Tất cả những designers mà tôi biết đều đã làm điều này và đang tích cực đóng góp vào giá trị cốt lõi của doanh nghiệp). Nhưng thậm chí có thể làm những điều đơn giản hơn. Có thể là nói chuyện với đội kinh doanh để tìm hiểu tình hình thị trường. Có thể là nói chuyện với đội vận chuyển và thực hiện để hiểu tại sao các đơn hàng thường bị chậm một ngày. Có thể đọc qua việc lên kế hoạch cho quý 1 và tìm ra những sáng kiến quan trọng cho những quý không có gì làm ngoài việc tái cấu trúc file css. Có thể cần phải tham gia một lớp học buổi tối về kinh tế. Hay có lẽ chỉ cần dành thời gian buổi tối để tìm kiếm trên google về cách gây quỹ và cách bảng giá trị vốn hoá (Cap table) hoạt động như thế nào thay vì làm thế nào để sử dụng các plugin phác họa mới nhất.
+Có thể là nên ra ngoài và học quản trị kinh doanh (MBA). (Tất cả những nhà thiết kế mà tôi biết đều đã làm điều này và đang tích cực đóng góp vào giá trị cốt lõi của doanh nghiệp). Nhưng thậm chí có thể làm những điều đơn giản hơn. Có thể là nói chuyện với đội kinh doanh để tìm hiểu tình hình thị trường. Có thể là nói chuyện với đội vận chuyển và thực hiện để hiểu tại sao các đơn hàng thường bị chậm một ngày. Có thể đọc qua việc lên kế hoạch cho quý 1 và tìm ra những sáng kiến quan trọng cho những quý không có gì làm ngoài việc tái cấu trúc file css. Có thể cần phải tham gia một lớp học buổi tối về kinh tế. Hay có lẽ chỉ cần dành thời gian buổi tối để tìm kiếm trên google về cách gây quỹ và cách bảng giá trị vốn hoá (Cap table) hoạt động như thế nào thay vì làm thế nào để sử dụng các plugin phác họa mới nhất.
 
 Có thể chúng ta nên dành thời gian để tìm hiểu về các nguyên tắc kinh doanh - làm thế nào để lựa chọn mô hình kinh doanh, làm thế nào để quản lý nhóm, làm thế nào để tiến hành phân tích cạnh tranh, làm thế nào để thực hiện dự án...
 
