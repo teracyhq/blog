@@ -11,11 +11,11 @@ tags:
     - "designer"
     - "bussiness"
     - "principles"
-cover: /images/2016/12/09/desinger-should-not-code.jpg
+cover: /images/2016/12/09/designer-should-not-code.jpg
 description: Những người thiết kế không nên viết code mà cần phải tập trung nghiên cứu về nghiệp vụ.
 keywords: bussiness, designer, bussiness principle, thiết kế, doanh nghiệp
 ---
-{% img center /images/2016/12/09/desinger-should-not-code.jpg các nhà thiết kế không nên viết code, nên tập trung nghiên cứu nghiệp vụ %}
+{% img center /images/2016/12/09/designer-should-not-code.jpg các nhà thiết kế không nên viết code, nên tập trung nghiên cứu nghiệp vụ %}
 
 Ngày nay càng ngày càng có nhiều công ty tìm kiếm các lãnh đạo thiết kế giỏi. Họ được biết rằng công ty của họ cần tập trung nhiều hơn vào tư duy thiết kế và quan tâm đến việc áp dụng các nguyên tắc thiết kế tập trung hơn nữa. Tuy nhiên, khi những công ty này nói chuyện với các nhà thiết kế, họ nghe về các kỹ năng - về sự nhất quán thương hiệu, và thiết kế bóng bảy, những người thiết kế có thể viết code, hướng dẫn phong cách, tạo mẫu và thử nghiệm - là công việc của người thiết kế.
 
