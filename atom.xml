@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-06T08:39:58+00:00</updated>
+  <updated>2016-12-14T07:21:12+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Nhà thiết kế không nên viết code. Họ nên nghiên cứu về nghiệp vụ.]]></title>
+    <link href="http://blog.teracy.com/2016/12/09/nha-thiet-ke-khong-nen-viet-code-ho-nen-nghien-cuu-ve-nghiep-vu/"/>
+    <updated>2016-12-09T10:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/12/09/nha-thiet-ke-khong-nen-viet-code-ho-nen-nghien-cuu-ve-nghiep-vu</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/12/09/desinger-should-not-code.jpg" title="các nhà thiết kế không nên viết code, nên tập trung nghiên cứu nghiệp vụ" ></p>
+
+<p>Ngày nay càng ngày càng có nhiều công ty tìm kiếm các lãnh đạo thiết kế giỏi. Họ được biết rằng công ty của họ cần tập trung nhiều hơn vào tư duy thiết kế và quan tâm đến việc áp dụng các nguyên tắc thiết kế tập trung hơn nữa. Tuy nhiên, khi những công ty này nói chuyện với các nhà thiết kế, họ nghe về các kỹ năng &ndash; về sự nhất quán thương hiệu, và thiết kế bóng bảy, những người thiết kế có thể viết code, hướng dẫn phong cách, tạo mẫu và thử nghiệm &ndash; là công việc của người thiết kế.</p>
+
+<p>Tất cả những điều này đều rất tốt &ndash; thậm chí là bắt buộc. Nhưng với chúng ta, để hiểu một cách đúng đắn, cách tốt nhất để xây dựng doanh nghiệp là chúng ta phải tập trung vào cái làm cho doanh nghiệp thành công. Nói chung, trước tiên chúng ta phải hiểu nghiệp vụ đã. Sau đó, chúng ta sẽ hiểu hơn công việc ở đâu là quan trọng (và cần thực thi ở đâu).</p>
+
+<!-- more -->
+
+
+<p>Thay vì xem các nhà thiết kế là những người cần phải có thì hãy giải thích mục tiêu nghiệp vụ quan trọng với họ theo những cách cơ bản nhất. Tôi nghĩ những gợi ý của chúng ta về thiết kế sẽ có trọng lượng hơn nếu chúng ta có thể có những cuộc trao đổi sâu sắc, và sẽ có thể đưa ra những gợi ý đáng giá về các nguyên tắc nghiệp vụ cốt lõi.</p>
+
+<h1>Hiện tại chúng ta đang ở đâu</h1>
+
+<p>Có rất nhiều nhà thiết kế đã bắt đầu suy nghĩ nghiêm túc về việc quyết định của họ ảnh hưởng đến công ty ra sao. Nói chung, sự tập trung của chúng ta vào phân tích và nghiên cứu người dùng cũng đã giúp rất nhiều trong việc mang đến niềm tin lớn hơn cho tiếng nói của người thiết kế. Chúng ta cũng đã thấy nhiều ví dụ tuyệt vời của các công ty hàng đầu về thiết kế và các nhà thiết kế ảnh hưởng đến cốt lõi của các doanh nghiệp lớn như Airbnb, Pocket, Facebook, Google, Slack, và vô số công ty khác nữa.</p>
+
+<p>Tôi cho rằng những công ty này thành công như hiện nay bởi vì họ có những người thiết kế tập trung vào nghiệp vụ mà công ty cần hơn là tập trung vào việc mỗi điểm ảnh sẽ trông hoàn hảo như thế nào.</p>
+
+<h1>Chuyển đổi sự tập trung của chúng ta</h1>
+
+<p>Vậy chúng ta nên bắt đầu tư duy về việc ảnh hưởng của thiết kế tới kinh doanh như thế nào?</p>
+
+<p>Có thể là nên ra ngoài và học quản trị kinh doanh (MBA). (Tất cả những nhà thiết kế mà tôi biết đều đã làm điều này và đang tích cực đóng góp vào giá trị cốt lõi của doanh nghiệp). Nhưng thậm chí có thể làm những điều đơn giản hơn. Có thể là nói chuyện với đội kinh doanh để tìm hiểu tình hình thị trường. Có thể là nói chuyện với đội vận chuyển và thực hiện để hiểu tại sao các đơn hàng thường bị chậm một ngày. Có thể đọc qua việc lên kế hoạch cho quý 1 và tìm ra những sáng kiến quan trọng cho những quý không có gì làm ngoài việc tái cấu trúc file css. Có thể cần phải tham gia một lớp học buổi tối về kinh tế. Hay có lẽ chỉ cần dành thời gian buổi tối để tìm kiếm trên google về cách gây quỹ và cách bảng giá trị vốn hoá (Cap table) hoạt động như thế nào thay vì làm thế nào để sử dụng các plugin phác họa mới nhất.</p>
+
+<p>Có thể chúng ta nên dành thời gian để tìm hiểu về các nguyên tắc kinh doanh &ndash; làm thế nào để lựa chọn mô hình kinh doanh, làm thế nào để quản lý nhóm, làm thế nào để tiến hành phân tích cạnh tranh, làm thế nào để thực hiện dự án&hellip;</p>
+
+<p>Có thể chúng ta nên cố gắng tìm hiểu những vấn đề mà CEO hay VP gặp phải và cố gắng sử dụng thiết kế để giúp họ giải quyết vấn đề của họ? Có lẽ chúng ta nên cố gắng tìm ra những vấn đề làm họ thức dậy vào ban đêm và giúp họ giải quyết vấn đề đó &ndash; thay vì giải quyết vấn đề của chúng ta.</p>
+
+<h1>Tương lai</h1>
+
+<p>Tôi muốn nói rằng chúng ta không nên chuyển giao những trải nghiệm thiết kế nghèo nàn. Chúng ta phải tiếp tục phát triển và tập trung vào tay nghề của mình. Nếu chúng ta không làm vậy thì chúng ta sẽ bị thụt lùi. Nhưng cũng hãy bắt đầu hiểu doanh nghiệp chúng ta đang làm việc và chúng cần gì để phát triển. Nếu chúng ta có thể làm điều đó, chúng ta sẽ tiếp tục đạt được nhiều ảnh hưởng hơn và sẽ tiếp tục tạo ra những sản phẩm có sự ảnh hưởng lớn hơn &ndash; cho cả công ty của chúng ta và cho cả những người dùng sản phẩm.</p>
+
+<p>Dịch từ: <a href="https://medium.com/@joshuantaylor/designers-shouldn-t-code-they-should-study-business-dc3e7e203d39#.cp5ipre7v">Desiger shouldn&rsquo;t code. They should study business</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 2)]]></title>
@@ -3326,7 +3366,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#104;&#x71;&#64;&#116;&#x65;&#x72;&#97;&#99;&#121;&#46;&#99;&#x6f;&#x6d;">&#104;&#x71;&#64;&#116;&#101;&#114;&#x61;&#x63;&#121;&#x2e;&#99;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#104;&#113;&#64;&#116;&#x65;&#114;&#97;&#99;&#x79;&#x2e;&#99;&#x6f;&#109;">&#104;&#113;&#x40;&#x74;&#101;&#x72;&#x61;&#99;&#121;&#x2e;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -3439,181 +3479,6 @@ merchants will open their API for our script to bring the gift to our team membe
 <p>https://zapier.com/zapbook/google-calendar/slack/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
 <li id="fn:2">
 <p>https://github.com/teracyhq/birthday-image<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev v0.4.0 release]]></title>
-    <link href="http://blog.teracy.com/2015/05/22/teracy-dev-v0-4-0-release/"/>
-    <updated>2015-05-22T09:19:00+00:00</updated>
-    <id>http://blog.teracy.com/2015/05/22/teracy-dev-v0-4-0-release</id>
-    <content type="html"><![CDATA[<p>About 1 year 8 months ago we announced the <code>teracy-chef</code> v1.0.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> with a plan to extend
-it for <code>teracy-dev</code>. And today we&rsquo;re very happy to announce <code>teracy-dev</code> v4.0.0 release, a really
-important release we&rsquo;ve been waiting for after nearly 2 years of development. Why is it so
-important?</p>
-
-<!-- more -->
-
-
-<h2>Easy Setup And Time Saving</h2>
-
-<p>Traditionally, setting up a development environment takes a lot of time to install the required
-packages and it also requires skillful developers to do it. Now with <code>teracy-dev</code>, its mission
-is to be an <code>all in one development environment managed by Vagrant and provisioned by Chef</code>.
-It&rsquo;s easy and cheap to install the same development environment on all types of operating
-systems (Linux, Mac, Windows) by just following some simple steps with a clear guide<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
-
-<h2>All In One Development Environment</h2>
-
-<p>You want to work with:</p>
-
-<ul>
-<li>Python? here we go: <a href="http://dev.teracy.org/docs/0.4.0/python_dev_guide.html">http://dev.teracy.org/docs/0.4.0/python_dev_guide.html</a></li>
-<li>Node.js? here we go: <a href="http://dev.teracy.org/docs/0.4.0/nodejs_dev_guide.html">http://dev.teracy.org/docs/0.4.0/nodejs_dev_guide.html</a></li>
-<li>PHP? here we go: <a href="http://dev.teracy.org/docs/0.4.0/php_dev_guide.html">http://dev.teracy.org/docs/0.4.0/php_dev_guide.html</a></li>
-<li>Ruby? here we go: <a href="http://dev.teracy.org/docs/0.4.0/ruby_dev_guide.html">http://dev.teracy.org/docs/0.4.0/ruby_dev_guide.html</a></li>
-<li>MySQL? here we go: <a href="http://dev.teracy.org/docs/0.4.0/databases_guide.html#mysql">http://dev.teracy.org/docs/0.4.0/databases_guide.html#mysql</a></li>
-<li>Git?</li>
-<li>phpMyAdmin?</li>
-<li>&hellip;?</li>
-</ul>
-
-
-<p>All these components are already available when you setup the <code>teracy-dev</code> VM.</p>
-
-<p>If you want to have more, such as:</p>
-
-<ul>
-<li>Java</li>
-<li>PostgreSQL</li>
-<li>MongoDB</li>
-<li>&hellip;</li>
-</ul>
-
-
-<p>It&rsquo;s just a few minutes to configure and enable these components to use right away.</p>
-
-<p>We&rsquo;re using <code>teracy-dev</code> everyday for all our clients&#8217; projects and our internal projects with a
-wide range of technology stacks and <code>teracy-dev</code> makes our lives (trainees, QA engineers, designers,
-developers) easier to collaborate.</p>
-
-<h2>Customization</h2>
-
-<p>You could customize <code>teracy-dev</code> by overriding the default configuration on the
-<code>vagrant_config.json</code> file<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> such as:</p>
-
-<ul>
-<li>VM customization: networks, synced folders, memory, cpus, etc.</li>
-<li>Enable/ disable or use different versions of <code>Git</code>, <code>Node.js</code>, <code>Python</code>, <code>Ruby</code>, <code>Nginx</code>, <code>Apache</code>,
-<code>PHP</code>, <code>MySql</code>, <code>MongoDB</code>, <code>PostgreSQL</code>, <code>Java</code>, <code>PHPMyAdmin</code>, <code>codebox</code>.</li>
-</ul>
-
-
-<p>If you want to have more customization, please follow:
-<a href="http://dev.teracy.org/docs/0.4.0/teracy_dev_development.html">http://dev.teracy.org/docs/0.4.0/teracy_dev_development.html</a></p>
-
-<h2>How To Upgrade</h2>
-
-<p>We support seamless upgrade, these are the steps for upgrading if you&rsquo;re using <code>teracy-dev</code> v0.3.5:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd ~/teracy-dev
-</span><span class='line'>$ git pull
-</span><span class='line'>$ vagrant box update</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>teracy-dev</code> v0.4.0 introduced a breaking change of configuration for the VM&rsquo;s network<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>,
-so you need to adjust it on your <code>vagrant_config_override.js</code> if you&rsquo;re overriding it.</p>
-
-<p>Then:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant destroy
-</span><span class='line'>$ vagrant up</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And you&rsquo;re done.</p>
-
-<h2>What&rsquo;s Next?</h2>
-
-<p>We&rsquo;re going to back-port some stuff from <code>teracy-dev</code> to <code>teracy-chef</code> to make it modular so
-that everyone could leverage <code>teracy-chef</code> to setup their own development environment like we&rsquo;re
-doing for <code>teracy-dev</code> such as:</p>
-
-<ul>
-<li>LAMP stack only</li>
-<li>Java stack only</li>
-<li>Ruby stack only</li>
-<li>Node.js stack only</li>
-<li>Ruby stack only</li>
-</ul>
-
-
-<p>The possibilies are limitless for everyone to create their own baseboxes.</p>
-
-<p>By the next versions of <code>teracy-chef</code> and <code>teracy-dev</code>, we&rsquo;ll support provisioning the servers
-with <code>knife-solo</code><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>.</p>
-
-<p>And we&rsquo;ll also support many different types of operating systems for the base boxes, even with
-Windows base boxes.</p>
-
-<p>We can&rsquo;t wait to continue developing and releasing the next versions.</p>
-
-<h2>0.4.x Releases</h2>
-
-<p>This section will be used to announce v0.4.x releases and we&rsquo;re very happy to announce:</p>
-
-<ul>
-<li><p><code>teracy-dev</code> v0.4.1 release which fixes 2 bugs:</p>
-
-<ul>
-<li>[DEV-232] &ndash; mysql with php not work</li>
-<li>[DEV-233] &ndash; wrong default forwarded port for mysql</li>
-</ul>
-
-
-<p>Details: <a href="https://issues.teracy.org/secure/ReleaseNote.jspa?projectId=10400&amp;version=12200">https://issues.teracy.org/secure/ReleaseNote.jspa?projectId=10400&amp;version=12200</a></p></li>
-</ul>
-
-
-<h2>One More Thing&hellip;</h2>
-
-<p>If you want to get our support, consultant or to develop web applications, please drop us an
-email at: hq[at]teracy.com to collaborate and get your dreams come true!</p>
-
-<p>Or you could contact us via:</p>
-
-<ul>
-<li><a href="https://www.upwork.com/companies/Teracy_~01bea4242f6b165592">https://www.upwork.com/companies/Teracy_~01bea4242f6b165592</a></li>
-<li><a href="https://www.upwork.com/users/~01ae32490908995384">https://www.upwork.com/users/~01ae32490908995384</a></li>
-</ul>
-
-
-<p>In the meantime, enjoy <code>teracy-dev</code> for all your projects and hope that you will love using it as
-much as we do.</p>
-
-<p>Let&rsquo;s get started: <a href="http://dev.teracy.org/docs/0.4.0/getting_started.html">http://dev.teracy.org/docs/0.4.0/getting_started.html</a></p>
-
-<p>Happy developing!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://dev.teracy.org/docs/getting_started.html<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://github.com/teracyhq/dev/blob/v0.4.0/vagrant_config.json<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>https://issues.teracy.org/browse/DEV-198<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-<li id="fn:5">
-<p>http://matschaffer.github.io/knife-solo/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

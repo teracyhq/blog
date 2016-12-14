@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vi | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-06T08:39:58+00:00</updated>
+  <updated>2016-12-14T07:21:12+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Nhà thiết kế không nên viết code. Họ nên nghiên cứu về nghiệp vụ.]]></title>
+    <link href="http://blog.teracy.com/2016/12/09/nha-thiet-ke-khong-nen-viet-code-ho-nen-nghien-cuu-ve-nghiep-vu/"/>
+    <updated>2016-12-09T10:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/12/09/nha-thiet-ke-khong-nen-viet-code-ho-nen-nghien-cuu-ve-nghiep-vu</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/12/09/desinger-should-not-code.jpg" title="các nhà thiết kế không nên viết code, nên tập trung nghiên cứu nghiệp vụ" ></p>
+
+<p>Ngày nay càng ngày càng có nhiều công ty tìm kiếm các lãnh đạo thiết kế giỏi. Họ được biết rằng công ty của họ cần tập trung nhiều hơn vào tư duy thiết kế và quan tâm đến việc áp dụng các nguyên tắc thiết kế tập trung hơn nữa. Tuy nhiên, khi những công ty này nói chuyện với các nhà thiết kế, họ nghe về các kỹ năng &ndash; về sự nhất quán thương hiệu, và thiết kế bóng bảy, những người thiết kế có thể viết code, hướng dẫn phong cách, tạo mẫu và thử nghiệm &ndash; là công việc của người thiết kế.</p>
+
+<p>Tất cả những điều này đều rất tốt &ndash; thậm chí là bắt buộc. Nhưng với chúng ta, để hiểu một cách đúng đắn, cách tốt nhất để xây dựng doanh nghiệp là chúng ta phải tập trung vào cái làm cho doanh nghiệp thành công. Nói chung, trước tiên chúng ta phải hiểu nghiệp vụ đã. Sau đó, chúng ta sẽ hiểu hơn công việc ở đâu là quan trọng (và cần thực thi ở đâu).</p>
+
+<!-- more -->
+
+
+<p>Thay vì xem các nhà thiết kế là những người cần phải có thì hãy giải thích mục tiêu nghiệp vụ quan trọng với họ theo những cách cơ bản nhất. Tôi nghĩ những gợi ý của chúng ta về thiết kế sẽ có trọng lượng hơn nếu chúng ta có thể có những cuộc trao đổi sâu sắc, và sẽ có thể đưa ra những gợi ý đáng giá về các nguyên tắc nghiệp vụ cốt lõi.</p>
+
+<h1>Hiện tại chúng ta đang ở đâu</h1>
+
+<p>Có rất nhiều nhà thiết kế đã bắt đầu suy nghĩ nghiêm túc về việc quyết định của họ ảnh hưởng đến công ty ra sao. Nói chung, sự tập trung của chúng ta vào phân tích và nghiên cứu người dùng cũng đã giúp rất nhiều trong việc mang đến niềm tin lớn hơn cho tiếng nói của người thiết kế. Chúng ta cũng đã thấy nhiều ví dụ tuyệt vời của các công ty hàng đầu về thiết kế và các nhà thiết kế ảnh hưởng đến cốt lõi của các doanh nghiệp lớn như Airbnb, Pocket, Facebook, Google, Slack, và vô số công ty khác nữa.</p>
+
+<p>Tôi cho rằng những công ty này thành công như hiện nay bởi vì họ có những người thiết kế tập trung vào nghiệp vụ mà công ty cần hơn là tập trung vào việc mỗi điểm ảnh sẽ trông hoàn hảo như thế nào.</p>
+
+<h1>Chuyển đổi sự tập trung của chúng ta</h1>
+
+<p>Vậy chúng ta nên bắt đầu tư duy về việc ảnh hưởng của thiết kế tới kinh doanh như thế nào?</p>
+
+<p>Có thể là nên ra ngoài và học quản trị kinh doanh (MBA). (Tất cả những nhà thiết kế mà tôi biết đều đã làm điều này và đang tích cực đóng góp vào giá trị cốt lõi của doanh nghiệp). Nhưng thậm chí có thể làm những điều đơn giản hơn. Có thể là nói chuyện với đội kinh doanh để tìm hiểu tình hình thị trường. Có thể là nói chuyện với đội vận chuyển và thực hiện để hiểu tại sao các đơn hàng thường bị chậm một ngày. Có thể đọc qua việc lên kế hoạch cho quý 1 và tìm ra những sáng kiến quan trọng cho những quý không có gì làm ngoài việc tái cấu trúc file css. Có thể cần phải tham gia một lớp học buổi tối về kinh tế. Hay có lẽ chỉ cần dành thời gian buổi tối để tìm kiếm trên google về cách gây quỹ và cách bảng giá trị vốn hoá (Cap table) hoạt động như thế nào thay vì làm thế nào để sử dụng các plugin phác họa mới nhất.</p>
+
+<p>Có thể chúng ta nên dành thời gian để tìm hiểu về các nguyên tắc kinh doanh &ndash; làm thế nào để lựa chọn mô hình kinh doanh, làm thế nào để quản lý nhóm, làm thế nào để tiến hành phân tích cạnh tranh, làm thế nào để thực hiện dự án&hellip;</p>
+
+<p>Có thể chúng ta nên cố gắng tìm hiểu những vấn đề mà CEO hay VP gặp phải và cố gắng sử dụng thiết kế để giúp họ giải quyết vấn đề của họ? Có lẽ chúng ta nên cố gắng tìm ra những vấn đề làm họ thức dậy vào ban đêm và giúp họ giải quyết vấn đề đó &ndash; thay vì giải quyết vấn đề của chúng ta.</p>
+
+<h1>Tương lai</h1>
+
+<p>Tôi muốn nói rằng chúng ta không nên chuyển giao những trải nghiệm thiết kế nghèo nàn. Chúng ta phải tiếp tục phát triển và tập trung vào tay nghề của mình. Nếu chúng ta không làm vậy thì chúng ta sẽ bị thụt lùi. Nhưng cũng hãy bắt đầu hiểu doanh nghiệp chúng ta đang làm việc và chúng cần gì để phát triển. Nếu chúng ta có thể làm điều đó, chúng ta sẽ tiếp tục đạt được nhiều ảnh hưởng hơn và sẽ tiếp tục tạo ra những sản phẩm có sự ảnh hưởng lớn hơn &ndash; cho cả công ty của chúng ta và cho cả những người dùng sản phẩm.</p>
+
+<p>Dịch từ: <a href="https://medium.com/@joshuantaylor/designers-shouldn-t-code-they-should-study-business-dc3e7e203d39#.cp5ipre7v">Desiger shouldn&rsquo;t code. They should study business</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 2)]]></title>
@@ -554,61 +594,6 @@ Nếu bạn đã hiểu được điều này, và trừ khi bạn có tiền, t
 <p>Chúc bạn may mắn!</p>
 
 <p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 1)]]></title>
-    <link href="http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1/"/>
-    <updated>2016-10-26T10:50:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/10/26/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-1</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/10/26/principles.jpg" title="Nguyên tắc thiết kế" ></p>
-
-<p>Thiết kế không đơn giản chỉ là lắp ghép, xếp theo thứ tự hay thậm chí là sửa đổi. Thiết kế chính là hàm chứa giá trị và ý nghĩa, là sự minh hoạ, đơn giản hoá, làm sáng tỏ, chỉnh sửa, tạo giá trị, kịch tính, thuyết phục và thậm chí là lôi cuốn.</p>
-
-<h1>01. Sự rõ ràng là điều quan trọng nhất</h1>
-
-<p>Sự rõ ràng là điều quan trọng đầu tiên và cũng là quan trọng nhất của bất kỳ một giao diện nào. Một giao diện được thiết kế hiệu quả đó là mọi người phải có thể nhận biết được nó là gì, biết được vì sao họ nên sử dụng nó, biết được giao diện giúp họ tương tác với những gì, dự đoán được điều gì sẽ xảy ra khi họ sử dụng nó và sau đó là tương tác với giao diện thành công. Một giao diện có thể có chứa sự bí ẩn hay chưa mang lại sự hài lòng cho người dùng, nhưng sẽ không có chỗ cho sự nhầm lẫn. Tính minh bạch đem đến niềm tin cho người dùng và làm người dùng muốn tiếp tục sử dụng trong tương lai. Trăm màn hình rõ ràng còn hơn một tổ hợp màn hình lộn xộn.</p>
-
-<!-- more -->
-
-
-<h1>02. Giao diện mang đến sự tương tác</h1>
-
-<p>Giao diện mang đến sự tương tác giữa con người và thế giới của chúng ta. Giao diện có thể giúp làm sáng tỏ, mở rộng và cho phép các mối liên hệ, mang chúng ta lại với nhau, kéo chúng ta xa nhau, quản lý kỳ vọng của chúng ta, và cho chúng ta tiếp cận với các dịch vụ. Hành động thiết kế giao diện không phải là Nghệ Thuật. Bản thân giao diện không phải là những công trình bất hủ. Giao diện có vai trò riêng và hiệu quả của giao diện có thể đo đếm được. Tuy nhiên, giao diện không chỉ là các tiện ích. Các giao diện tốt nhất có thể truyền cảm hứng, phát triển và tăng cường mối quan hệ của chúng ta với thế giới.</p>
-
-<h1>03. Giữ sự tập trung bằng mọi giá</h1>
-
-<p>Chúng ta đang sống trong một thế giới liên tục bị sao nhãng bởi nhiều mối quan tâm khác nhau. Thật khó để đọc trong yên bình mà không có bất cứ thứ gì làm chúng ta mất tập trung, và hướng sự chú ý của ta vào những điều khác. Tập trung là điều quý giá. Đừng thiết kế ứng dụng của bạn có những yếu tố làm xao nhãng người dùng&hellip; hãy nhớ tại sao màn hình tồn tại ở nơi đầu tiên. Nếu có ai đang đọc thì hãy để họ đọc xong đã trước khi phô bày quảng cáo (nếu bạn phải đưa quảng cáo vào). Đề cao sự tập trung không chỉ độc giả của bạn sẽ hạnh phúc hơn, mà kết quả của bạn cũng sẽ sẽ tốt hơn. Khi sử dụng là mục tiêu chính, sự tập trung là điều kiện tiên quyết. Hãy giữ gìn sự tập trung bằng mọi giá.</p>
-
-<h1>04. Giữ sự kiểm soát cho người dùng</h1>
-
-<p>Con người cảm thấy thoải mái nhất khi họ được kiểm soát bản thân và môi trường của họ. Phần mềm thiếu đầu tư làm mất đi sự thoải mái của người dùng bằng cách bắt người dùng chú ý vào các tương tác không có kế hoạch, làm người dùng bị nhầm lẫn và mang đến kết quả bất ngờ. Giữ cho người dùng trong kiểm soát bằng cách thường xuyên hiện lên tình trạng hệ thống, bằng cách mô tả nhân quả (nếu bạn làm điều này thì điều gì sẽ xảy ra) và cho họ hiểu rõ điều gì sẽ xảy ra với mỗi sự thay đổi. Đừng lo lắng về việc diễn tả quá rõ ràng&hellip; rõ ràng gần như là không bao giờ.</p>
-
-<h1>05. Thao tác trực tiếp là tốt nhất</h1>
-
-<p>Giao diện tốt nhất không phải là tất cả khi chúng ta có thể trực tiếp thao tác với các vật thể trong thế giới của chúng ta. Bởi vì điều này không phải luôn luôn khả thi, và các vật thể thì ngày càng chứa đựng thông tin nên chúng ta đã tạo ra các giao diện để có thể tương tác với chúng. Thật dễ dàng để thêm nhiều lớp hơn mức cần thiết vào một giao diện như tạo ra các nút nhấn, chrome, các đồ họa, các tùy chọn, sự ưu tiên, các cửa sổ, các file đính kèm, và mã lệnh khác, để chúng ta kết thúc thực hiện thao tác với các yếu tố của giao diện người dùng thay vì những gì quan trọng. Thay vào đó, cố gắng cho mục tiêu ban đầu là sự thao tác trực tiếp&hellip; thiết kế một giao diện với một dấu chân nhỏ nhất có thể, ghi nhận cử chỉ, điệu bộ của con người nhiều nhất có thể. Theo lý tưởng, giao diện quá nhẹ đến mức người dùng có cảm giác thao tác trực tiếp với vật thể trong sự tập trung của họ.</p>
-
-<h1>06. Một hành động chính cho mỗi màn hình</h1>
-
-<p>Mỗi màn hình mà chúng ta thiết kế nên hỗ trợ cho một hành động duy nhất có giá trị thực sự cho người sử dụng nó. Điều này làm cho màn hình dễ tìm hiểu hơn, dễ sử dụng hơn, và dễ dàng hơn khi thêm vào hoặc phát triển khi cần thiết. Màn hình hỗ trợ hai hay nhiều hành động chính thì sẽ nhanh chóng gây
-ra nhầm lẫn. Giống như một bài viết thì nên có một luận điểm rõ ràng và duy nhất, mỗi màn hình chúng ta thiết kế nên hỗ trợ cho một hành động rõ ràng và duy nhất đó là điều đúng đắn.</p>
-
-<h1>07. Đặt những hành động phụ ở vị trí thứ yếu</h1>
-
-<p>Những màn hình với một hành động chính duy nhất có thể có nhiều hành động phụ, nhưng chúng cần phải được giữ ở vị trí thứ yếu! Lý do bài viết của bạn tồn tại không phải là để mọi người có thể chia sẻ nó trên Twitter&hellip; nó tồn tại là để cho mọi người đọc và hiểu nó. Giữ những hành động phụ bằng cách làm cho chúng ít được nhìn thấy hơn hoặc hiển thị sau khi đã đạt được hành động chính.</p>
-
-<h1>08. Đưa ra bước tiếp theo tự nhiên</h1>
-
-<p>Có quá ít tương tác thì dễ dẫn đến kết thúc, vì vậy cần thiết kế bước tiếp theo cho mỗi tương tác của người dùng với giao diện của bạn một cách cẩn thận. Dự tính trước sự tương tác tiếp theo sẽ nên là gì và thiết kế để hỗ trợ nó. Giống như chúng ta mong muốn trong cuộc trò chuyện của con người với nhau, gợi mở cho sự tương tác tiếp sau đó. Đừng để một người bị treo, bị đơ vì họ đã làm những gì bạn muốn họ làm&hellip; đưa ra cho họ bước tiếp theo tự nhiên để giúp họ tiếp tục đạt được những mục tiêu tiếp theo của mình.</p>
-
-<h1>09. Vẻ bề ngoài theo sau hành vi </h1>
-
-<p>Con người thoải mái nhất với những điều mà hành xử theo cách chúng ta mong đợi. Những người khác, những con vật, đồ vật, phần mềm. Khi một ai đó hoặc một cái gì đó hành xử một cách nhất quán với sự mong đợi của chúng ta, chúng ta cảm thấy như chúng ta có một mối quan hệ tốt với họ. Để làm được điều này thì các thành phần được thiết kế nên trông giống như cách chúng vận hành. Hình thức theo sau chức năng. Trong thực tế điều này có nghĩa là mọi người có thể dự đoán một yếu tố giao diện sẽ vận hành như thế nào chỉ bằng cách nhìn nó. Nếu nó trông giống như một cái nút thì nó phải hoạt động như một cái nút. Đừng làm cho những điều cơ bản của sự tương tác trở nên ngộ nghĩnh&hellip; Hãy giữ sự sáng tạo của bạn cho những mối quan tâm bậc cao hơn.</p>
-
-<p>(Mời các bạn xem tiếp <a href="/2016/12/06/nguyen-tac-thiet-ke-giao-dien-nguoi-dung-phan-2/">Nguyên Tắc Thiết Kế Giao Diện Người Dùng (Phần 2)</a>)</p>
-
-<p>Bài dịch từ <a href="http://bokardo.com/principles-of-user-interface-design/">Principles of User Interface Design</a></p>
 ]]></content>
   </entry>
   
