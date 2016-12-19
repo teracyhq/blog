@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-19T10:04:11+00:00</updated>
+  <updated>2016-12-19T18:16:47+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -21,7 +21,14 @@
     <content type="html"><![CDATA[<p>Docker is great to work with, it solves a lot of problems on development, distribution, and production
 deployment.</p>
 
-<p>Why Docker?  You can find the answer here: <a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></p>
+<p>Why Docker?  You can find the answer here:</p>
+
+<ul>
+<li><a href="http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/">http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/</a></li>
+<li><a href="http://thenewstack.io/hypervisors-container-era/">http://thenewstack.io/hypervisors-container-era/</a></li>
+<li><a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></li>
+</ul>
+
 
 <p>Docker works great on Linux, however, it&rsquo;s very challenging to make it work universal and consistent on
 Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from

@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-19T10:04:11+00:00</updated>
+  <updated>2016-12-19T18:16:47+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -21,7 +21,14 @@
     <content type="html"><![CDATA[<p>Docker is great to work with, it solves a lot of problems on development, distribution, and production
 deployment.</p>
 
-<p>Why Docker?  You can find the answer here: <a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></p>
+<p>Why Docker?  You can find the answer here:</p>
+
+<ul>
+<li><a href="http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/">http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/</a></li>
+<li><a href="http://thenewstack.io/hypervisors-container-era/">http://thenewstack.io/hypervisors-container-era/</a></li>
+<li><a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></li>
+</ul>
+
 
 <p>Docker works great on Linux, however, it&rsquo;s very challenging to make it work universal and consistent on
 Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from
@@ -3567,7 +3574,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x68;&#113;&#64;&#x74;&#101;&#x72;&#x61;&#x63;&#x79;&#46;&#99;&#x6f;&#x6d;">&#x68;&#113;&#64;&#116;&#x65;&#x72;&#x61;&#x63;&#121;&#46;&#x63;&#x6f;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#104;&#x71;&#64;&#116;&#x65;&#x72;&#97;&#x63;&#x79;&#x2e;&#99;&#111;&#109;">&#104;&#113;&#x40;&#x74;&#x65;&#114;&#x61;&#99;&#x79;&#46;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
