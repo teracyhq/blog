@@ -90,17 +90,23 @@ Let's have some comparisons between `teracy-dev` and other solutions:
 
    Criteria                         | teracy-dev | docker-osx-dev | Docker Toolbox | Docker native app
 ------------------------------------|------------|----------------|----------------|-------------------
-same workflow on Linux, Mac, Windows|    ✅      |       ❌       |     ❌        |       ✅          
+same workflow on Linux, Mac, Windows|    ✅      |       ❌       |     ❌        |       ❌          
 native speed on mounted volumes     |    ✅      |       ✅       |     ❌        |       ❌          
 2-way file sync                     |    ✅      |       ❌       |     ✅        |       ✅          
 file watching (inotify)             |    ✅      |       ✅       |     ❌        |       ✅          
 open source                         |    ✅      |       ✅       |     ✅        |       ❌          
 customization                       |    ✅      |       🚫       |     🚫        |       ❌          
 
+✅: fully support
+
+❌: no or partial support
+
+🚫: can be achieved but not encouraged
 
 Let me explain the criteria:
 
-- "same workflow on Linux, Mac, Windows": the usage should be the same on Mac, Linux, Windows
+- "same workflow on Linux, Mac, Windows": the usage should be the same on Mac, Linux, Windows.
+  Docker native app only supports >= Windows 10, that's why it's marked as ❌.
 
 - "native speed on mounted volumes": the speed should be as fast and native as on Linux
 
