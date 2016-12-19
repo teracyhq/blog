@@ -4,7 +4,7 @@
   <title><![CDATA[Category: en | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/en/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-14T07:40:23+00:00</updated>
+  <updated>2016-12-19T07:51:31+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,200 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev - the only truly universal productive development platform with Docker on macOS, Linux and Windows]]></title>
+    <link href="http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/"/>
+    <updated>2016-12-20T11:13:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows</id>
+    <content type="html"><![CDATA[<p>Docker is great to work with, it solves a lot of problems on development, distribution, and production
+deployment.</p>
+
+<p>Why Docker?  You can find the answer here: <a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></p>
+
+<p>Docker works great on Linux, however, it&rsquo;s very challenging to make it work universal and consistent on
+Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from
+Docker community, too. However, we haven&rsquo;t achieved that stage yet (until <code>teracy-dev</code>).</p>
+
+<!-- more -->
+
+
+<p>These are some of the problems that Docker community has to deal with on Mac and Windows:</p>
+
+<ul>
+<li><p>No consistent universal development environment and workflow on Linux, Windows, Mac. This is a very
+important factor for team collaboration so that anyone from any OS platforms could collaborate and help
+each other with no differences in the development environment.</p></li>
+<li><p>Mounted volumes on VirtualBox use vboxsf, which is extremely slow. This is true for Boot2Docker and
+Vagrant default file sync mechanism on Virtualbox.</p></li>
+<li><p>Native Docker applications offered by Docker:</p>
+
+<ul>
+<li>Slow on Mac: <a href="https://github.com/docker/for-mac/issues/77">https://github.com/docker/for-mac/issues/77</a></li>
+<li>Only recent latest versions of Window 10 (&ldquo;Build 10586 or later&rdquo;) are supported</li>
+<li>Slow on Windows: <a href="https://github.com/docker/for-win/issues/188">https://github.com/docker/for-win/issues/188</a></li>
+</ul>
+</li>
+<li><p>File watching is broken on VirtualBox since vboxsf does not trigger the inotify file watching
+mechanism. <code>nodemon</code>, hello?</p></li>
+</ul>
+
+
+<p>There are a lot of Docker community projects trying to solve those problems:</p>
+
+<ul>
+<li><a href="https://github.com/brikis98/docker-osx-dev">https://github.com/brikis98/docker-osx-dev</a></li>
+<li><a href="https://github.com/blinkreaction/boot2docker-vagrant">https://github.com/blinkreaction/boot2docker-vagrant</a></li>
+<li><a href="https://github.com/codekitchen/dinghy">https://github.com/codekitchen/dinghy</a></li>
+<li><a href="https://github.com/leighmcculloch/docker-unison">https://github.com/leighmcculloch/docker-unison</a></li>
+<li><a href="https://github.com/gansbrest/hodor">https://github.com/gansbrest/hodor</a></li>
+<li><a href="https://github.com/adlogix/docker-machine-nfs">https://github.com/adlogix/docker-machine-nfs</a></li>
+<li>others&hellip;</li>
+</ul>
+
+
+<p>However, those existing projects do not really resolve all the problems or do not reflect
+our vision for a productive development platform.</p>
+
+<p>You can check out our <a href="/2016/08/19/teracy-dev-vision/">vision for teracy-dev</a> for such the
+productive development platform.</p>
+
+<p>That is the reason why we created <code>teracy-dev</code>. We&rsquo;ve been using and loving it for more than 3 years
+and counting.</p>
+
+<p><code>teracy-dev</code> reflects our vision for a truly universal productive development platform that anyone can
+use to develop software easily. It&rsquo;s very easy to customize any OS that you can use
+for your VM. It brings development and production environment closer and closer.</p>
+
+<p>It is very important for a distributed team like us to work with everyone from different teams all
+over the world on different projects with different stacks and <code>teracy-dev</code> helps us a lot.</p>
+
+<p>Moreover, <code>teracy-dev</code> is not tightly coupled with anything, you&rsquo;re free to choose anything to build
+up your development VM machine. You can choose different OS platforms, choose different software packages to
+be automatically installed with the help of different configuration management tools. It&rsquo;s up
+to you to choose anything other than default settings.</p>
+
+<p>With default settings, <code>teracy-dev</code> chooses Ubuntu as the base OS with <code>docker</code> and <code>docker-compose</code>
+installed to start developing software with Docker right away after <code>$ vagrant up</code>.</p>
+
+<p>teracy-dev v0.5.0 is leveraging Docker for development as we believe in the future of containers
+and Docker.</p>
+
+<p>Let&rsquo;s have some comparisons between <code>teracy-dev</code> and other solutions:</p>
+
+<table>
+<thead>
+<tr>
+<th>   Criteria                         </th>
+<th> teracy-dev </th>
+<th> docker-osx-dev </th>
+<th> Docker Toolbox </th>
+<th> Docker native app</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>same workflow on Linux, Mac, Windows</td>
+<td>    ✅      </td>
+<td>       ❌       </td>
+<td>     ❌        </td>
+<td>       ✅          </td>
+</tr>
+<tr>
+<td>native speed on mounted volumes     </td>
+<td>    ✅      </td>
+<td>       ✅       </td>
+<td>     ❌        </td>
+<td>       ❌          </td>
+</tr>
+<tr>
+<td>2-way file sync                     </td>
+<td>    ✅      </td>
+<td>       ❌       </td>
+<td>     ✅        </td>
+<td>       ✅          </td>
+</tr>
+<tr>
+<td>file watching (inotify)             </td>
+<td>    ✅      </td>
+<td>       ✅       </td>
+<td>     ❌        </td>
+<td>       ✅          </td>
+</tr>
+<tr>
+<td>open source                         </td>
+<td>    ✅      </td>
+<td>       ✅       </td>
+<td>     ✅        </td>
+<td>       ❌          </td>
+</tr>
+<tr>
+<td>customization                       </td>
+<td>    ✅      </td>
+<td>       🚫       </td>
+<td>     🚫        </td>
+<td>       ❌          </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Let me explain the criteria:</p>
+
+<ul>
+<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows</p></li>
+<li><p>&ldquo;native speed on mounted volumes&rdquo;: the speed should be as fast and native as on Linux</p></li>
+<li><p>&ldquo;2-way file sync&rdquo;: for syncing back and forth on mounted volumes, this is mandatory for development</p></li>
+<li><p>&ldquo;file watching (inotify)&rdquo;: for auto reload when files change</p></li>
+<li><p>&ldquo;customization&rdquo;: you have full control and are encouraged to change anything that you want to
+suit your need, no hidden stuff, no lock-in and can still upgrade seamlessly.</p></li>
+</ul>
+
+
+<p>Let&rsquo;s see what the same workflow means when developing a simple hello world <code>nodejs</code> application
+from scratch with teracy-dev by watching the following videos:</p>
+
+<p>On Linux (Ubuntu):</p>
+
+<iframe width="100%" height="630" src="https://www.youtube.com/embed/ze8p9imprgk" frameborder="0" allowfullscreen></iframe>
+
+
+<p>On Windows:</p>
+
+<iframe width="100%" height="630" src="https://www.youtube.com/embed/2200zvxIdAs" frameborder="0" allowfullscreen></iframe>
+
+
+<p>On macOS:</p>
+
+<iframe width="100%" height="630" src="https://www.youtube.com/embed/XF-FQQKG8PA" frameborder="0" allowfullscreen></iframe>
+
+
+<p>They all contain the same steps, that&rsquo;s the meaning of the &ldquo;same workflow&rdquo;.</p>
+
+<p><code>teracy-dev</code> is not perfect, though. There are some improvements that we&rsquo;d like to address.</p>
+
+<p>The first thing we&rsquo;d like to improve is to reduce the setup time. It takes time (around 20-30 mins)
+to download the vagrant box (Ubuntu 16.04) for the first time. This is for the first time only, however.
+After the first time, you can destroy and provision the same VM within some minutes. We could use
+some other smaller boxes (for example, boot2docker base box) but we&rsquo;d like to stick to the most popular
+Linux OS that is widely used in production. We try to make development and production environment as
+close as possible. This is by default, you can choose different base boxes as you wish.</p>
+
+<p><code>teracy-dev</code> v0.5.0 is under preview stage, we need to add more documentation and get more community
+feedback.</p>
+
+<p><code>teracy-dev</code> is created to give back to open source community as we learn and get a lot from our amazing
+open source community.</p>
+
+<p>And we need you, please try and let us know your feedback and we&rsquo;ll together fix any problems.</p>
+
+<p>You should get started with <code>teracy-dev</code> here: <a href="http://dev.teracy.org/docs/develop/getting_started.html">http://dev.teracy.org/docs/develop/getting_started.html</a></p>
+
+<p>In summary, <code>teracy-dev</code> brings <code>Docker</code> closer to <code>Vagrant</code> = love.</p>
+
+<p>Thank you and happy hacking with <a href="https://github.com/teracyhq/dev">teracy-dev</a>!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker]]></title>
@@ -876,9 +1070,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x73;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#x75;&#115;&#x65;&#x72;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#115;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#117;&#115;&#101;&#x72;&#x40;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;</a>
+To: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#117;&#115;&#101;&#114;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#115;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#117;&#x73;&#x65;&#114;&#64;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#50;&#48;&#x31;&#53;&#x31;&#50;&#50;&#49;&#x31;&#x31;&#48;&#50;&#x33;&#x30;&#x2e;&#50;&#x33;&#x34;&#x36;&#51;&#46;&#x38;&#48;&#56;&#52;&#x35;&#x40;&#118;&#97;&#103;&#x72;&#97;&#110;&#116;&#46;&#x76;&#109;">&#50;&#x30;&#49;&#53;&#x31;&#50;&#x32;&#49;&#x31;&#x31;&#48;&#50;&#x33;&#48;&#46;&#50;&#51;&#52;&#54;&#x33;&#x2e;&#56;&#48;&#x38;&#x34;&#53;&#x40;&#118;&#x61;&#103;&#114;&#x61;&#110;&#116;&#x2e;&#x76;&#109;</a></p>
+Message-ID: <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#50;&#x30;&#49;&#53;&#x31;&#x32;&#50;&#49;&#49;&#x31;&#48;&#x32;&#x33;&#x30;&#x2e;&#50;&#51;&#x34;&#x36;&#x33;&#46;&#56;&#48;&#56;&#x34;&#x35;&#x40;&#x76;&#x61;&#x67;&#x72;&#x61;&#110;&#116;&#x2e;&#x76;&#x6d;">&#50;&#x30;&#x31;&#x35;&#49;&#50;&#50;&#x31;&#x31;&#x31;&#x30;&#50;&#51;&#48;&#x2e;&#x32;&#51;&#x34;&#54;&#x33;&#x2e;&#x38;&#48;&#56;&#x34;&#53;&#64;&#x76;&#x61;&#x67;&#114;&#x61;&#x6e;&#x74;&#x2e;&#x76;&#x6d;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -1177,7 +1371,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#104;&#x71;&#x40;&#116;&#x65;&#114;&#x61;&#99;&#121;&#x2e;&#x63;&#111;&#109;">&#104;&#113;&#x40;&#x74;&#101;&#114;&#x61;&#x63;&#121;&#46;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x68;&#113;&#64;&#x74;&#x65;&#114;&#97;&#99;&#121;&#46;&#99;&#x6f;&#109;">&#104;&#113;&#64;&#116;&#101;&#x72;&#x61;&#x63;&#121;&#46;&#99;&#111;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -1188,60 +1382,6 @@ on Django projects. It&rsquo;s very easy to set everything up thanks to the djan
 <li><a href="http://www.celeryproject.org/">http://www.celeryproject.org/</a></li>
 <li><a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a></li>
 </ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[how to make JWT requests with httpie-jwt-auth plugin?]]></title>
-    <link href="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/"/>
-    <updated>2015-09-03T11:33:00+00:00</updated>
-    <id>http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin</id>
-    <content type="html"><![CDATA[<p>At Teracy, we embrace JWT (JSON Web Tokens)<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>  for REST APIs to make secure requests. Just for
-your information: &ldquo;JSON Web Tokens are an open, industry standard RFC 7519 method for representing
-claims securely between two parties&rdquo;.</p>
-
-<!-- more -->
-
-
-<p>We&rsquo;re using JWT for our REST APIs basing on the flask-boilerplate<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> project that are empowering
-our clients' web applications and our internal projects.</p>
-
-<p>And to test REST APIs, we&rsquo;re using a really simple powerful http client called httpie<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> .</p>
-
-<p>To make a JWT request with <code>httpie</code>, you need to use the following command:</p>
-
-<p><code>
-$ http example.org Authorization:'Bearer jwt_token_here'
-</code></p>
-
-<p>Hower, typing <code>Authorization</code> with the exact value format is a bit hard and error-prone, that&rsquo;s the
-reason why we created <a href="https://github.com/teracyhq/httpie-jwt-auth">httpie-jwt-auth</a> plugin with the first v0.1.0 release. After installing
-<code>httpie-jwt-auth</code>, you could use this instead:</p>
-
-<p><code>
-$ http --auth-type=jwt --auth=jwt_token_here: example.org
-</code></p>
-
-<p>That&rsquo;s it. It&rsquo;s really easy to use for any JWT requests with <code>httpie</code>.</p>
-
-<p>Please note that colon character at the end of <code>jwt_token_here</code>, we&rsquo;re going to work on removing
-the redundant colon character with: <a href="https://github.com/teracyhq/httpie-jwt-auth/issues/3">https://github.com/teracyhq/httpie-jwt-auth/issues/3</a></p>
-
-<p>Hope that you&rsquo;ll like it and use it as much as we do.</p>
-
-<p>Happy developing and debugging!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://jwt.io/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://github.com/teracyhq/flask-boilerplate<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://github.com/jkbrzt/httpie<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
 
 ]]></content>
   </entry>

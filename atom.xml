@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-14T07:40:23+00:00</updated>
+  <updated>2016-12-19T07:51:31+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,200 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev - the only truly universal productive development platform with Docker on macOS, Linux and Windows]]></title>
+    <link href="http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/"/>
+    <updated>2016-12-20T11:13:00+00:00</updated>
+    <id>http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows</id>
+    <content type="html"><![CDATA[<p>Docker is great to work with, it solves a lot of problems on development, distribution, and production
+deployment.</p>
+
+<p>Why Docker?  You can find the answer here: <a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></p>
+
+<p>Docker works great on Linux, however, it&rsquo;s very challenging to make it work universal and consistent on
+Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from
+Docker community, too. However, we haven&rsquo;t achieved that stage yet (until <code>teracy-dev</code>).</p>
+
+<!-- more -->
+
+
+<p>These are some of the problems that Docker community has to deal with on Mac and Windows:</p>
+
+<ul>
+<li><p>No consistent universal development environment and workflow on Linux, Windows, Mac. This is a very
+important factor for team collaboration so that anyone from any OS platforms could collaborate and help
+each other with no differences in the development environment.</p></li>
+<li><p>Mounted volumes on VirtualBox use vboxsf, which is extremely slow. This is true for Boot2Docker and
+Vagrant default file sync mechanism on Virtualbox.</p></li>
+<li><p>Native Docker applications offered by Docker:</p>
+
+<ul>
+<li>Slow on Mac: <a href="https://github.com/docker/for-mac/issues/77">https://github.com/docker/for-mac/issues/77</a></li>
+<li>Only recent latest versions of Window 10 (&ldquo;Build 10586 or later&rdquo;) are supported</li>
+<li>Slow on Windows: <a href="https://github.com/docker/for-win/issues/188">https://github.com/docker/for-win/issues/188</a></li>
+</ul>
+</li>
+<li><p>File watching is broken on VirtualBox since vboxsf does not trigger the inotify file watching
+mechanism. <code>nodemon</code>, hello?</p></li>
+</ul>
+
+
+<p>There are a lot of Docker community projects trying to solve those problems:</p>
+
+<ul>
+<li><a href="https://github.com/brikis98/docker-osx-dev">https://github.com/brikis98/docker-osx-dev</a></li>
+<li><a href="https://github.com/blinkreaction/boot2docker-vagrant">https://github.com/blinkreaction/boot2docker-vagrant</a></li>
+<li><a href="https://github.com/codekitchen/dinghy">https://github.com/codekitchen/dinghy</a></li>
+<li><a href="https://github.com/leighmcculloch/docker-unison">https://github.com/leighmcculloch/docker-unison</a></li>
+<li><a href="https://github.com/gansbrest/hodor">https://github.com/gansbrest/hodor</a></li>
+<li><a href="https://github.com/adlogix/docker-machine-nfs">https://github.com/adlogix/docker-machine-nfs</a></li>
+<li>others&hellip;</li>
+</ul>
+
+
+<p>However, those existing projects do not really resolve all the problems or do not reflect
+our vision for a productive development platform.</p>
+
+<p>You can check out our <a href="http://blog.teracy.com/2016/08/19/teracy-dev-vision/">vision for teracy-dev</a> for such the
+productive development platform.</p>
+
+<p>That is the reason why we created <code>teracy-dev</code>. We&rsquo;ve been using and loving it for more than 3 years
+and counting.</p>
+
+<p><code>teracy-dev</code> reflects our vision for a truly universal productive development platform that anyone can
+use to develop software easily. It&rsquo;s very easy to customize any OS that you can use
+for your VM. It brings development and production environment closer and closer.</p>
+
+<p>It is very important for a distributed team like us to work with everyone from different teams all
+over the world on different projects with different stacks and <code>teracy-dev</code> helps us a lot.</p>
+
+<p>Moreover, <code>teracy-dev</code> is not tightly coupled with anything, you&rsquo;re free to choose anything to build
+up your development VM machine. You can choose different OS platforms, choose different software packages to
+be automatically installed with the help of different configuration management tools. It&rsquo;s up
+to you to choose anything other than default settings.</p>
+
+<p>With default settings, <code>teracy-dev</code> chooses Ubuntu as the base OS with <code>docker</code> and <code>docker-compose</code>
+installed to start developing software with Docker right away after <code>$ vagrant up</code>.</p>
+
+<p>teracy-dev v0.5.0 is leveraging Docker for development as we believe in the future of containers
+and Docker.</p>
+
+<p>Let&rsquo;s have some comparisons between <code>teracy-dev</code> and other solutions:</p>
+
+<table>
+<thead>
+<tr>
+<th>   Criteria                         </th>
+<th> teracy-dev </th>
+<th> docker-osx-dev </th>
+<th> Docker Toolbox </th>
+<th> Docker native app</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>same workflow on Linux, Mac, Windows</td>
+<td>    ✅      </td>
+<td>       ❌       </td>
+<td>     ❌        </td>
+<td>       ✅          </td>
+</tr>
+<tr>
+<td>native speed on mounted volumes     </td>
+<td>    ✅      </td>
+<td>       ✅       </td>
+<td>     ❌        </td>
+<td>       ❌          </td>
+</tr>
+<tr>
+<td>2-way file sync                     </td>
+<td>    ✅      </td>
+<td>       ❌       </td>
+<td>     ✅        </td>
+<td>       ✅          </td>
+</tr>
+<tr>
+<td>file watching (inotify)             </td>
+<td>    ✅      </td>
+<td>       ✅       </td>
+<td>     ❌        </td>
+<td>       ✅          </td>
+</tr>
+<tr>
+<td>open source                         </td>
+<td>    ✅      </td>
+<td>       ✅       </td>
+<td>     ✅        </td>
+<td>       ❌          </td>
+</tr>
+<tr>
+<td>customization                       </td>
+<td>    ✅      </td>
+<td>       🚫       </td>
+<td>     🚫        </td>
+<td>       ❌          </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Let me explain the criteria:</p>
+
+<ul>
+<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows</p></li>
+<li><p>&ldquo;native speed on mounted volumes&rdquo;: the speed should be as fast and native as on Linux</p></li>
+<li><p>&ldquo;2-way file sync&rdquo;: for syncing back and forth on mounted volumes, this is mandatory for development</p></li>
+<li><p>&ldquo;file watching (inotify)&rdquo;: for auto reload when files change</p></li>
+<li><p>&ldquo;customization&rdquo;: you have full control and are encouraged to change anything that you want to
+suit your need, no hidden stuff, no lock-in and can still upgrade seamlessly.</p></li>
+</ul>
+
+
+<p>Let&rsquo;s see what the same workflow means when developing a simple hello world <code>nodejs</code> application
+from scratch with teracy-dev by watching the following videos:</p>
+
+<p>On Linux (Ubuntu):</p>
+
+<iframe width="100%" height="630" src="https://www.youtube.com/embed/ze8p9imprgk" frameborder="0" allowfullscreen></iframe>
+
+
+<p>On Windows:</p>
+
+<iframe width="100%" height="630" src="https://www.youtube.com/embed/2200zvxIdAs" frameborder="0" allowfullscreen></iframe>
+
+
+<p>On macOS:</p>
+
+<iframe width="100%" height="630" src="https://www.youtube.com/embed/XF-FQQKG8PA" frameborder="0" allowfullscreen></iframe>
+
+
+<p>They all contain the same steps, that&rsquo;s the meaning of the &ldquo;same workflow&rdquo;.</p>
+
+<p><code>teracy-dev</code> is not perfect, though. There are some improvements that we&rsquo;d like to address.</p>
+
+<p>The first thing we&rsquo;d like to improve is to reduce the setup time. It takes time (around 20-30 mins)
+to download the vagrant box (Ubuntu 16.04) for the first time. This is for the first time only, however.
+After the first time, you can destroy and provision the same VM within some minutes. We could use
+some other smaller boxes (for example, boot2docker base box) but we&rsquo;d like to stick to the most popular
+Linux OS that is widely used in production. We try to make development and production environment as
+close as possible. This is by default, you can choose different base boxes as you wish.</p>
+
+<p><code>teracy-dev</code> v0.5.0 is under preview stage, we need to add more documentation and get more community
+feedback.</p>
+
+<p><code>teracy-dev</code> is created to give back to open source community as we learn and get a lot from our amazing
+open source community.</p>
+
+<p>And we need you, please try and let us know your feedback and we&rsquo;ll together fix any problems.</p>
+
+<p>You should get started with <code>teracy-dev</code> here: <a href="http://dev.teracy.org/docs/develop/getting_started.html">http://dev.teracy.org/docs/develop/getting_started.html</a></p>
+
+<p>In summary, <code>teracy-dev</code> brings <code>Docker</code> closer to <code>Vagrant</code> = love.</p>
+
+<p>Thank you and happy hacking with <a href="https://github.com/teracyhq/dev">teracy-dev</a>!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Nhà thiết kế không nên viết code. Họ nên nghiên cứu về nghiệp vụ.]]></title>
@@ -3366,7 +3560,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#104;&#x71;&#64;&#116;&#101;&#114;&#x61;&#x63;&#x79;&#46;&#x63;&#x6f;&#x6d;">&#104;&#x71;&#x40;&#x74;&#x65;&#114;&#97;&#99;&#x79;&#46;&#99;&#111;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#x68;&#113;&#64;&#x74;&#101;&#114;&#x61;&#99;&#121;&#x2e;&#x63;&#x6f;&#109;">&#x68;&#113;&#64;&#x74;&#x65;&#114;&#x61;&#x63;&#x79;&#x2e;&#99;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
@@ -3429,56 +3623,6 @@ the redundant colon character with: <a href="https://github.com/teracyhq/httpie-
 <p>https://github.com/teracyhq/flask-boilerplate<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>https://github.com/jkbrzt/httpie<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Teracy happy birthday Slack bot]]></title>
-    <link href="http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot/"/>
-    <updated>2015-07-22T09:19:00+00:00</updated>
-    <id>http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/teracy_birthday_slack_bot.png" title="Teracy happy birthday Slack bot" ></p>
-
-<p>Getting everything automated is one of my daily tasks, such as running tests automatically each time
-there is a new commit, packaging products and sending them to customers, or deploying the
-staging/ production servers when a project manager releases a new version, and more.</p>
-
-<!-- more -->
-
-
-<p>Today my task is something quite different: Congrats team members on their birthdays automatically
-by the data got from Google calendar. After a little search, there are many automation solutions to
-do it: from commercial Zapier, IFFT to opensource like Huginn.
-I want something simple to use, maintenance-free, and free for small usage, so my last
-choice is Zapier. It has already had the recipe<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to read events from Google calendar and another
-action to interactive with Slack that will be easy to start (although the document of the recipe
-is not quite clear for a new user like me). Here is the recipe for Zapier:</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/Zapier_recipe_config.png" title="Zapier recipe config" ></p>
-
-<p>With this recipe, Zapier will notify to the #_general slack channel with the message got from the
-calendar description at the time of the event start. To make thing more interesting, I want to
-attach a birthday cake image which has an employee name on it along with the message so I use PHP GD
-to show a dynamic birthday cake taking the employee name from the calendar title and add it to the
-image. It took me 30 minutes to get the birthday cake image which has space for the text, choose a
-font and add it to my script. Finally, uploading it to our server and here is the result:</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2015/07/22/cake_sample.png" title="Birthday cake" ></p>
-
-<p>This PHP script<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> along with the Zapier recipe above makes the birthday reminder more interesting.
-What I&rsquo;m thinking now is some funny fortune teller texts which are added randomly to the cake, a
-lucky draw game for the team members to pick up their birthday gift and hopefully some online
-merchants will open their API for our script to bring the gift to our team members&#8217; homes.</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>https://zapier.com/zapbook/google-calendar/slack/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://github.com/teracyhq/birthday-image<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
