@@ -40,7 +40,7 @@ These are some of the problems that Docker community has to deal with on Mac and
 
 - Native Docker applications offered by Docker:
   + Slow on Mac: https://github.com/docker/for-mac/issues/77
-  + Window 10 with recent latest build only is supported
+  + Only recent latest versions of Window 10 ("Build 10586 or later") are supported
   + Slow on Windows: https://github.com/docker/for-win/issues/188
 
 
@@ -58,10 +58,10 @@ There are a lot of Docker community projects trying to solve those problems:
 - https://github.com/adlogix/docker-machine-nfs
 - others...
 
-However, those existing projects that do not really resolve all the problems or do not reflect
+However, those existing projects do not really resolve all the problems or do not reflect
 our vision for a productive development platform.
 
-You could check out our [vision for teracy-dev](/2016/08/19/teracy-dev-vision/) for such the
+You can check out our [vision for teracy-dev](/2016/08/19/teracy-dev-vision/) for such the
 productive development platform.
 
 That is the reason why we created `teracy-dev`. We've been using and loving it for more than 3 years
@@ -109,7 +109,7 @@ Let me explain the criteria:
 - "file watching (inotify)": for auto reload when files change
 
 - "customization": you have full control and are encouraged to change anything that you want to
-  suite your need, no hidden stuff, no lock-in and can still upgrade seamlessly.
+  suit your need, no hidden stuff, no lock-in and can still upgrade seamlessly.
 
 Let's see what the same workflow means when developing a simple hello world `nodejs` application
 from scratch with teracy-dev by watching the following videos:
@@ -126,7 +126,7 @@ On macOS:
 
 <iframe width="100%" height="630" src="https://www.youtube.com/embed/XF-FQQKG8PA" frameborder="0" allowfullscreen></iframe>
 
-They all contain the same steps, that's what "same workflow" means.
+They all contain the same steps, that's the meaning of the "same workflow".
 
 
 `teracy-dev` is not perfect, though. There are some improvements that we'd like to address.
@@ -134,7 +134,7 @@ They all contain the same steps, that's what "same workflow" means.
 The first thing we'd like to improve is to reduce the setup time. It takes time (around 20-30 mins)
 to download the vagrant box (Ubuntu 16.04) for the first time. This is for the first time only, however.
 After the first time, you can destroy and provision the same VM within some minutes. We could use
-some other smaller boxes (boot2docker base box, for example) but we'd like to stick to the most popular
+some other smaller boxes (for example, boot2docker base box) but we'd like to stick to the most popular
 Linux OS that is widely used in production. We try to make development and production environment as
 close as possible. This is by default, you can choose different base boxes as you wish.
 
@@ -151,4 +151,4 @@ You should get started with `teracy-dev` here: http://dev.teracy.org/docs/develo
 
 In summary, `teracy-dev` brings `Docker` closer to `Vagrant` = love.
 
-Thank you and happy hacking with `teracy-dev`!
+Thank you and happy hacking with [teracy-dev](https://github.com/teracyhq/dev)!
