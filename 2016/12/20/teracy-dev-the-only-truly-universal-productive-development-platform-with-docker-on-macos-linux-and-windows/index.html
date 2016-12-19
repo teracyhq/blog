@@ -232,7 +232,7 @@ and Docker.</p>
 <td>    ✅      </td>
 <td>       ❌       </td>
 <td>     ❌        </td>
-<td>       ✅          </td>
+<td>       ❌          </td>
 </tr>
 <tr>
 <td>native speed on mounted volumes     </td>
@@ -273,10 +273,17 @@ and Docker.</p>
 </table>
 
 
+<p>✅: fully support</p>
+
+<p>❌: no or partial support</p>
+
+<p>🚫: can be achieved but not encouraged</p>
+
 <p>Let me explain the criteria:</p>
 
 <ul>
-<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows</p></li>
+<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows.
+Docker native app only supports >= Windows 10, that&rsquo;s why it&rsquo;s marked as ❌.</p></li>
 <li><p>&ldquo;native speed on mounted volumes&rdquo;: the speed should be as fast and native as on Linux</p></li>
 <li><p>&ldquo;2-way file sync&rdquo;: for syncing back and forth on mounted volumes, this is mandatory for development</p></li>
 <li><p>&ldquo;file watching (inotify)&rdquo;: for auto reload when files change</p></li>
@@ -335,7 +342,8 @@ open source community.</p>
       <div class="revision">
     <hr/>
     <p><strong>Latest Change Log:</strong></p>
-    <ul><li><strong>Mon Dec 19 07:43:44 2016</strong><br/>BLOG-103 | apply comments
+    <ul><li><strong>Mon Dec 19 09:49:23 2016</strong><br/>BLOG-103 | correct, improve the content: comparisons table
+</li><li><strong>Mon Dec 19 07:43:44 2016</strong><br/>BLOG-103 | apply comments
 </li><li><strong>Sun Dec 18 21:48:46 2016</strong><br/>BLOG-103 | teracy-dev - the only truly universal productive development platform with Docker on macOS, Linux and Windows
 </li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2016-12-20-teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows.markdown target=_blank>View all changes on Github</a>
     <hr/>

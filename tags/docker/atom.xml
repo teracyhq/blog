@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: docker | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/docker/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-19T07:51:31+00:00</updated>
+  <updated>2016-12-19T09:52:21+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -109,7 +109,7 @@ and Docker.</p>
 <td>    ✅      </td>
 <td>       ❌       </td>
 <td>     ❌        </td>
-<td>       ✅          </td>
+<td>       ❌          </td>
 </tr>
 <tr>
 <td>native speed on mounted volumes     </td>
@@ -150,10 +150,17 @@ and Docker.</p>
 </table>
 
 
+<p>✅: fully support</p>
+
+<p>❌: no or partial support</p>
+
+<p>🚫: can be achieved but not encouraged</p>
+
 <p>Let me explain the criteria:</p>
 
 <ul>
-<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows</p></li>
+<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows.
+Docker native app only supports >= Windows 10, that&rsquo;s why it&rsquo;s marked as ❌.</p></li>
 <li><p>&ldquo;native speed on mounted volumes&rdquo;: the speed should be as fast and native as on Linux</p></li>
 <li><p>&ldquo;2-way file sync&rdquo;: for syncing back and forth on mounted volumes, this is mandatory for development</p></li>
 <li><p>&ldquo;file watching (inotify)&rdquo;: for auto reload when files change</p></li>
