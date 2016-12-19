@@ -21,7 +21,11 @@ published: true
 Docker is great to work with, it solves a lot of problems on development, distribution, and production
 deployment.
 
-Why Docker?  You can find the answer here: https://blog.codeship.com/why-docker/
+Why Docker?  You can find the answer here:
+
+- http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/
+- http://thenewstack.io/hypervisors-container-era/
+- https://blog.codeship.com/why-docker/
 
 Docker works great on Linux, however, it's very challenging to make it work universal and consistent on
 Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from
