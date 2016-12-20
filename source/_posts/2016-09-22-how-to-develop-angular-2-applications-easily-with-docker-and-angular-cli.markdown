@@ -35,6 +35,9 @@ Docker is installed on your machine and you could follow the instructions below.
 0. Prerequisites
 ----------------
 
+- You should set up Docker and docker-compose with teracy-dev first:
+[teracy-dev - the only truly universal productive development platform with Docker on macOS, Linux and Windows!](/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/)
+
 - Make sure the latest `Docker` and `docker-compose` is installed on your machine. If not, follow
 https://docs.docker.com/docker-for-mac/ or https://docs.docker.com/engine/installation/linux/ or
 https://docs.docker.com/docker-for-windows/ to install them.
