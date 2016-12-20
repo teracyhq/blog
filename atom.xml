@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2016-12-19T18:16:47+00:00</updated>
+  <updated>2016-12-20T15:49:18+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -2054,6 +2054,8 @@ Docker is installed on your machine and you could follow the instructions below.
 <h2>0. Prerequisites</h2>
 
 <ul>
+<li><p>You should set up Docker and docker-compose with teracy-dev first:
+<a href="http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">teracy-dev &ndash; the only truly universal productive development platform with Docker on macOS, Linux and Windows!</a></p></li>
 <li><p>Make sure the latest <code>Docker</code> and <code>docker-compose</code> is installed on your machine. If not, follow
 <a href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a> or <a href="https://docs.docker.com/engine/installation/linux/">https://docs.docker.com/engine/installation/linux/</a> or
 <a href="https://docs.docker.com/docker-for-windows/">https://docs.docker.com/docker-for-windows/</a> to install them.</p></li>
@@ -3574,7 +3576,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#104;&#x71;&#64;&#116;&#x65;&#x72;&#97;&#x63;&#x79;&#x2e;&#99;&#111;&#109;">&#104;&#113;&#x40;&#x74;&#x65;&#114;&#x61;&#99;&#x79;&#46;&#x63;&#x6f;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#104;&#113;&#x40;&#x74;&#x65;&#x72;&#97;&#x63;&#x79;&#46;&#x63;&#111;&#x6d;">&#x68;&#113;&#x40;&#x74;&#101;&#114;&#x61;&#99;&#121;&#x2e;&#x63;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
