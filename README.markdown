@@ -20,7 +20,7 @@ Teracy's official blog at http://blog.teracy.com
 
 - Start:
 
-  Open the first terminal window and let the file watching running:
+  Open the first terminal window and let the file watching keep running:
 
   ```bash
   $ vagrant up
@@ -41,7 +41,7 @@ Teracy's official blog at http://blog.teracy.com
 
 - Update new changes:
 
-  Save new changes and:
+  Update new changes, save the changes, and run the command below:
 
   ```bash
   $ docker-compose exec dev rake generate
@@ -91,7 +91,7 @@ Then open \<vm_ip_address>:8080 to see static blog site served by nginx.
 
 ## How to build the prod Docker image
 
-First, use teracy/blog:dev_latest image to generate static content:
+First, use the teracy/blog:dev_latest image to generate static content:
 
 ```
 $ docker run --rm -v $(pwd):/opt/app teracy/blog:dev_latest
