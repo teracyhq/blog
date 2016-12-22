@@ -49,6 +49,7 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
   ```bash
   $ docker-compose logs -f
   ```
+Press Ctrl + c to stop following reviewing the logs.
 
 - Update new changes:
 
@@ -68,7 +69,7 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
   ```
 
 
-## How to review other work and PRs (pull requests)
+## How to review others' work and PRs (pull requests)
 
 
 To review work and PRs submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run a Docker image:
@@ -79,7 +80,7 @@ $ docker run --rm -p 8888:80 hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub
 
 And open \<vm_ip_address>:8888 to review the changes on local
 
-Press Ctrl + c to exit the logs.
+Press Ctrl + c to stop reviewing (stop docker run)
 
 
 ## How to run in prod mode
