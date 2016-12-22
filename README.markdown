@@ -14,6 +14,7 @@ Teracy's official blog at http://blog.teracy.com
   ```bash
   $ cd ~/teracy-dev/workspace/
   $ git clone <your_forked_repository_here> teracy-blog
+  $ cd teracy-blog
   $ git remote add upstream git@github.com:teracyhq/blog.git
   ```
 Note: You need to fetch the latest changes of `teracy-blog` before going to the next step. Please see the details at http://dev.teracy.org/docs/develop/workflow.html.
@@ -25,14 +26,14 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
   Open the first terminal window and let the file watching keep running:
 
   ```bash
-  $ cd teracy-dev
+  $ cd ~/teracy-dev
   $ vagrant up
   ```
 
   Open the second terminal window:
 
   ```bash
-  $ cd teracy-dev
+  $ cd ~/teracy-dev
   $ vagrant ssh
   $ ws
   $ cd teracy-blog
@@ -46,7 +47,7 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
   Need to make sure the blog build completed before previewing it. Use the command below:
 
   ```bash
-  $ docker-compose logs
+  $ docker-compose logs -f
   ```
 
 - Update new changes:
@@ -67,10 +68,10 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
   ```
 
 
-## How to review a PR
+## How to review other work and PRs (pull requests)
 
 
-To review a PR submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run a Docker image:
+To review other work and PRs submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run a Docker image:
 
 ```
 $ docker run --rm -p 8888:80 hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub
@@ -78,7 +79,7 @@ $ docker run --rm -p 8888:80 hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub
 
 And open \<vm_ip_address>:8888 to review the changes on local
 
-Press Ctrl + c to stop reviewing.
+Press Ctrl + c to exit the logs.
 
 
 ## How to run in prod mode
@@ -122,10 +123,12 @@ Here are things you need to do:
 - Register your account at travis-ci.org
 - Enable teracy-blog repository on travis-ci (for example: https://travis-ci.org/hoatle/teracy-blog)
 - Fill in the following environment variables settings for teracy-blog travis-ci project by
-  following: https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings
-  + DOCKER_IMAGE (for example: hoatle/teracy-blog => https://hub.docker.com/r/hoatle/teracy-blog/)
-  + DOCKER_USERNAME (fill in your Docker username)
-  + DOCKER_PASSWORD (fill in your Docker password)
+  following: https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings.
+  In the *Name* and *Value* fields, please add the info below correlatively: 
+
+  + Fill in "DOCKER_IMAGE" into the *Name* field, and your repo link from https://hub.docker.com into the *Value*, for example, hoatle/teracy-blog  (from https://hub.docker.com/r/hoatle/teracy-blog/)
+  + Fill in "DOCKER_USERNAME" into the *Name* field and your Docker username into the *Value*  field
+  + Fill in "DOCKER_PASSWORD" into the *Name* field and your Docker password into the *Value* field
 
 And you're done!
 
