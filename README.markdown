@@ -14,7 +14,9 @@ Teracy's official blog at http://blog.teracy.com
   ```bash
   $ cd ~/teracy-dev/workspace/
   $ git clone <your_forked_repository_here> teracy-blog
+  $ git remote add upstream git@github.com:teracyhq/blog.git
   ```
+Note: You need to fetch the latest changes of `teracy-blog` before going to the next step. Please see the details at http://dev.teracy.org/docs/develop/workflow.html.
 
 ## How to work in dev mode
 
@@ -23,12 +25,14 @@ Teracy's official blog at http://blog.teracy.com
   Open the first terminal window and let the file watching keep running:
 
   ```bash
+  $ cd teracy-dev
   $ vagrant up
   ```
 
   Open the second terminal window:
 
   ```bash
+  $ cd teracy-dev
   $ vagrant ssh
   $ ws
   $ cd teracy-blog
@@ -38,6 +42,12 @@ Teracy's official blog at http://blog.teracy.com
   Open the third terminal window to identity the \<vm_ip_address>, follow: http://dev.teracy.org/docs/develop/basic_usage.html#ip-address
 
   Open \<vm_ip_address>:4000 to preview on local.
+
+  Need to make sure the blog build completed before previewing it. Use the command below:
+
+  ```bash
+  $ docker-compose logs
+  ```
 
 - Update new changes:
 
@@ -57,23 +67,23 @@ Teracy's official blog at http://blog.teracy.com
   ```
 
 
-## How to review
+## How to review a PR
 
 
-To run a Docker image for reviewing, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`:
+To review a PR submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run a Docker image:
 
 ```
 $ docker run --rm -p 8888:80 hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub
 ```
 
-And open http://localhost:8888 to review the changes.
+And open \<vm_ip_address>:8888 to review the changes on local
 
-Cmd + c (on Mac) or Ctrl + c (on Linux, Windows) to stop reviewing.
+Press Ctrl + c to stop reviewing.
 
 
 ## How to run in prod mode
 
-From official distributed Docker image:
+Run in the prod mode from official distributed Docker image:
 
 ```
 $ docker pull teracy/blog
@@ -86,7 +96,7 @@ or with docker-compose and from docker-compose.prod.yml file:
 $ docker-compose -f docker-compose.prod.yml pull && docker-compose -f docker-compose.prod.yml up
 ```
 
-Then open \<vm_ip_address>:8080 to see static blog site served by nginx.
+Then open \<vm_ip_address>:8080 to see the static blog site served by nginx.
 
 
 ## How to build the prod Docker image
@@ -104,6 +114,9 @@ $ docker-compose -f docker-compose.prod.yml build
 ```
 
 ## travis-ci configuration
+You just need to configure travis-ci only one time. After each travis-ci build, new Docker images are pushed, we can review your work (PR) by running the Docker images instead of fetching git code and build it on local ourselves.
+
+Here are things you need to do:
 
 - Register your account at https://hub.docker.com
 - Register your account at travis-ci.org
@@ -114,8 +127,7 @@ $ docker-compose -f docker-compose.prod.yml build
   + DOCKER_USERNAME (fill in your Docker username)
   + DOCKER_PASSWORD (fill in your Docker password)
 
-And you're done. After each travis-ci build, new Docker images are pushed, we can review the work
-by running the Docker images instead of fetching git code and build it on local ourselves.
+And you're done!
 
 ## Tips:
 
