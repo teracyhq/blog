@@ -71,7 +71,7 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
 ## How to review other work and PRs (pull requests)
 
 
-To review other work and PRs submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run a Docker image:
+To review work and PRs submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run a Docker image:
 
 ```
 $ docker run --rm -p 8888:80 hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub
@@ -126,7 +126,7 @@ Here are things you need to do:
   following: https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings.
   In the *Name* and *Value* fields, please add the info below correlatively: 
 
-  + Fill in "DOCKER_IMAGE" into the *Name* field, and your repo link from https://hub.docker.com into the *Value*, for example, hoatle/teracy-blog  (from https://hub.docker.com/r/hoatle/teracy-blog/)
+  + Fill in "DOCKER_IMAGE" into the *Name* field, and your repo from https://hub.docker.com into the *Value*, for example, "hoatle/teracy-blog"  (from https://hub.docker.com/r/hoatle/teracy-blog/)
   + Fill in "DOCKER_USERNAME" into the *Name* field and your Docker username into the *Value*  field
   + Fill in "DOCKER_PASSWORD" into the *Name* field and your Docker password into the *Value* field
 
