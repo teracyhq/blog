@@ -261,6 +261,6 @@ Vì vậy chúng ta rất dễ dàng có thể xác định một số trụ c�
 Với ý tưởng đó, chúng tôi đã bắt đầu với những điều sẽ trở thành Thiết kế Trải nghiệm Adobe, hoặc
 như chúng tôi chỉ đơn giản gọi nó là Adobe XD.
 
-(CÒN TIẾP)
+([PHẦN 2](/2017/01/04/tu-duy-thiet-ke-cam-nang-cho-su-doi-moi-phan-2/))
 
 Dịch từ: [Design thinking: A manual for innovation](https://medium.com/@demianborba/design-thinking-a-manual-for-innovation-e0576b34eff6#.9ae4fd5dk)
