@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-01-05T07:18:17+00:00</updated>
+  <updated>2017-02-06T02:28:20+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,187 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Nguyên tắc thiết kế sản phẩm]]></title>
+    <link href="http://blog.teracy.com/2017/02/05/nguyen-tac-thiet-ke-san-pham/"/>
+    <updated>2017-02-05T10:18:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/02/05/nguyen-tac-thiet-ke-san-pham</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2017/02/05/nguyen-tac-thiet-ke-san-pham.png" title="Nguyên tắc thiết kế sản phẩm" >
+&ldquo;<em>Các chi tiết không chỉ là chi tiết. Nó tạo nên thiết kế.</em>&rdquo; &ndash; Charles Eames</p>
+
+<h1>01. Tính hữu dụng là nhiệm vụ</h1>
+
+<p>Nếu sản phẩm của bạn không hữu dụng, nếu con người không tìm được cách sử dụng sản phẩm đó, như vậy
+thiết kế của sản phẩm đã thất bại. Sản phẩm của bạn phải giúp con người tạo ra những điều có giá trị
+trong cuộc sống của họ. Giá trị này thông qua việc sử dụng có thể trở nên thiết thực (Đồng hồ Timex
+của tôi có thể báo thời gian), có thể là giá trị xã hội (Đồng hồ Rolex của tôi gây ấn tượng với bạn
+bè tôi), hoặc giá trị về cảm xúc (đồng hồ của tôi là món quà từ vợ/chồng của tôi). Vòng đời sử dụng
+của sản phẩm bao gồm khả năng biết về tính hữu dụng của sản phẩm, một trải nghiệm tốt khi lần đầu tiên
+sử dụng sản phẩm, khả năng sử dụng sản phẩm và thành công theo thời gian.</p>
+
+<!-- more -->
+
+
+<h1>02. Trải nghiệm chính là sản phẩm</h1>
+
+<p>Khi bạn có sản phẩm thì sẽ có trải nghiệm của người sử dụng sản phẩm đó. Thật dễ dàng để thấy được
+sự khác biệt từ xa, nhưng đối với người sử dụng sản phẩm của bạn, các sản phẩm luôn giống nhau. Mọi
+tương tác đều là vấn đề và trở thành môt phần trải nghiệm sản phẩm. iPod nguyên bản chính là một ví dụ
+kinh điển: trải nghiệm của iPod bao gồm mọi thứ từ việc cầm iPod lên và cảm nhận trọng lượng của thiết
+bị cho đến việc tìm kiếm nhạc với nút điều khiển hình tròn, đến việc đồng bộ với máy tính của bạn và
+việc mua nhạc từ cửa hàng iTunes. Tất cả những tương tác này cùng nhau tạo nên toàn bộ trải nghiệm
+sản phẩm và cuối cùng đó là những gì mà khách hàng đã mua.</p>
+
+<h1>03. Giải quyết các vấn đề còn tồn tại</h1>
+
+<p>Khi chúng ta nỗ lực tạo ra những sản phẩm thay đổi thế giới, chúng ta thường tạo ra một vài thứ mà
+trên thế giới chưa bao giờ nhìn thấy. Nhưng việc đổi mới sản phẩm không phải là về sản phẩm mới sẽ giải
+quyết vấn đề mới. Đổi mới sản phẩm là sản phẩm mới sẽ giải quyết các vấn đề đang tồn tại tốt hơn các
+sản phẩm hiện nay đang làm. Lấy Google Search, Netflix và Facebook làm ví dụ. Những dịch vụ phổ biến
+này đơn giản là giải quyết các vấn đề đang tồn tại tốt hơn so với chúng trước đây.</p>
+
+<h1>04. Tìm kiếm sự đầu tư</h1>
+
+<p>Các tính năng của sản phẩm tốt nhất là các tính năng sẽ được sử dụng. Cách thức tốt nhất để dự đoán
+liệu một tính năng sẽ được sử dụng đó là đã có người đầu tư vào lĩnh  vực đó. Đã có ai đầu tư
+tiền bạc, thời gian, hay công sức để giải quyết vấn đề này chưa? Đây là các chỉ số cho thấy vấn đề
+đáng được giải quyết. Nếu mọi người nói họ có một vấn đề nhưng lại không đầu tư để giải quyết vấn đề
+đó. Như vậy, vấn đề đó không thực sự nằm trong top danh sách ưu tiên của họ. Vì vậy hãy tìm kiếm
+đầu tư hiện tại trước khi bổ sung một sản phẩm hoặc tính năng mới.</p>
+
+<h1>05. Các tính năng mẫu của công cụ thực</h1>
+
+<p>Một cách để bạn có thể chắc chắn có người đang đầu tư vào vấn đề đó là tìm kiếm công cụ để sử dụng. Các
+công cụ là đối tượng của thế giới thực mà con người sử dụng để hoàn thành một công việc. Hãy suy nghĩ
+đến những ghi chú được dính xung quanh màn hình máy tính. Các công cụ thường xuyên bị va đập, giống
+như việc đặt băng dính trong lên Iphone để bảo vệ màn hình hoặc một bảng tính Excel giúp tổ chức thông
+tin. Khi bạn trải qua một công cụ và coi công cụ đó như vàng và đề nghị chủ sở hữu công cụ đó nói cho
+bạn biết tất cả thông tin về công cụ đó, công cụ đó trực tiếp chuyển thành các tính năng hữu ích.</p>
+
+<h1>06. Làm cho phù hợp và hoàn thành vấn đề</h1>
+
+<p>Chúng ta xây dựng được niềm tin với người dùng khi một vấn đề nào đó có vẻ đúng, khi các giao diện đã
+được đánh bóng tới độ chính xác từng pixel, khi việc viết quảng cáo là hoàn toàn rõ ràng, khi các thương
+hiệu trở nên chuyên nghiệp. Thông điệp ngầm là “những người dùng này thực sự quan tâm đến việc họ sẽ
+làm gì&hellip;chỉ cần chú ý chi tiết thôi&#8221;. Khi đó họ sẽ mang thêm cơ hội thành công cho sản phẩm của chúng ta.</p>
+
+<h1>07. Chất lượng của phát hành tạo lên kỳ vọng</h1>
+
+<p>Việc phát hành thiết lập nên kỳ vọng. Điều này trở thành phổ biến để phát hành sản phẩm một cách nhanh
+nhất có thể và sau đó lặp lại dựa trên những phản hồi từ người dùng. Điều này rất đáng khen ngợi; Không có sự
+thay thế cho việc sử dụng thực tế. Nhưng dù bạn phát hành cái gì đi nữa, cũng cần đảm bảo rằng đó
+là sự nỗ lực hết mình của bạn. Nếu tất cả những phát hành của bạn mới hoàn thành được 80% dù đó là
+cái mà mọi người mong đợi. Mỗi lần như vậy, kỳ vọng của họ cũng sẽ giảm dần mỗi lần phát hành vì niềm
+tin của họ suy yếu dần. Tuy nhiên nếu mỗi sản phẩm trong số các sản phẩm phát hành của bạn, bất kể là
+sản phẩm đó nhỏ như thế nào nhưng có chất lượng cao nhất, nhưng những người sử dụng sản phẩm của bạn
+sẽ biết rằng sản phẩm đó rất đáng để họ bỏ thời gian để chú ý. Thậm chí, họ còn rất háo hức mong chờ
+sản phẩm đó.</p>
+
+<h1>08. Phát hành sản phẩm càng nhỏ thì sản phẩm càng tốt</h1>
+
+<p>Hiện tại, thật dễ dàng để xây dựng các tính năng. Công cụ phát triển đã bổ sung thêm các tính năng
+nhanh hơn so với trước đây. Tuy nhiên, phạm vi tính năng luôn luôn là vấn đề cũ. Mọi tính năng mà bạn
+bổ sung là bất đồng trong giao diện và là một gánh nặng bổ sung. Tuy nhiên, nếu sản phẩm của bạn thực
+sự được tập trung và không cố gắng thực hiện nhiều hơn và bạn sẽ nói không đối với nhiều tính năng
+hơn là bạn nói có.</p>
+
+<h1>09. 10% cuối cùng của sản phẩm là khó làm nhất</h1>
+
+<p>Sự khác nhau giữa một sản phẩm tốt và lý tưởng là ở 10% cuối cùng. Mọi người đều có 90% giống nhau&hellip;
+các tính năng cốt lõi giống nhau, giá và cốt truyện tương tự nhau. Nhưng 10% cuối cùng là sự khác biệt
+thực sự. Đây là phần để phân biệt bạn với những đối thủ cạnh tranh của bạn. Đó là máu, mồ hôi và nước
+mắt để làm chi tiết sản phẩm. Và điều này có thể lấy đi 50% thời gian của bạn. Tuy nhiên, thời gian
+không phải là cái mà bạn sẽ đo đếm. Bạn sẽ đo đếm sự khác biệt giữa tốt và lý tưởng.</p>
+
+<h1>10. Biết rõ đối thủ cạnh tranh của bạn là ai</h1>
+
+<p>Email và Excel là 2 đối thủ phần mềm lớn nhất của nhau từ trước đến giờ: mọi người sử dụng hai phần
+mềm này để làm mọi thứ. Chúng tôi chưa nghĩ về việc coi hai phần mềm này là đối thủ cạnh tranh vì
+chúng không cạnh tranh trực tiếp để thay thế. Thật dễ dàng để làm theo các phân tích đặc điểm của
+sản phẩm tạo ra trong mỗi ngành công nghiệp. Nhưng các đặc điểm này hiếm khi bao quát đầy đủ lĩnh
+vực cạnh tranh. Do đó tìm kiếm các đối thủ cạnh tranh gián tiếp thường nguy hiểm như việc tìm các
+đối thủ cạnh tranh trực tiếp. Ví dụ, điện thoại có máy ảnh là một đối thủ cạnh tranh gián tiếp nhưng
+là đối thủ “chết người” với máy ảnh kỹ thuật số và máy quay video cầm tay. Bạn cần phải biết ai là
+đối thủ cạnh tranh trực tiếp và gián tiếp của bạn để tạo ra sự đổi mới thực sự của sản phẩm.</p>
+
+<h1>11. Sử dụng thực tế và mong muốn</h1>
+
+<p>Thường xuyên có sự khác nhau giữa việc bạn muốn mọi người sử dụng sản phẩm của bạn để làm gì và thực
+tế nó được sử dụng để làm gì. Đừng lầm lẫn giữa hai việc này. Hãy trung thực về cách mọi người sử dụng
+sản phẩm của bạn. Trong một vài trường hợp, sản phẩm sẽ không phải là cái bạn dự định làm. Đây là
+điều đáng lưu ý. Mặt khác, người sử dụng sản phẩm không đúng cách vì họ không học sử dụng đúng cách
+và cần đến sự trợ giúp. Kịch bản tệ nhất là khi mọi người đang sử dụng một sản phẩm không đúng cách mà
+lại không có sự trợ giúp của bạn &ndash; một nhà thiết kế hiểu biết.</p>
+
+<h1>12. Giá trị cá nhân đi trước giá trị xã hội</h1>
+
+<p>Thật dễ dàng để mong chờ giá trị xã hội của phần mềm. Ooh, nếu chúng ta xây dựng đúng giá trị thì khi
+đó mọi người sẽ chia sẻ với bạn bè của họ! Tuy nhiên mọi người hiếm khi sử dụng phần mềm chỉ đơn thuần
+vì nó mang tính xã hội. Họ sử dụng phần mềm vì phần mềm đó trước hết cung cấp một vài giá trị cá nhân
+mà họ có thể sử dụng chúng mà không cần sự tham gia của người khác. (Điều này có thể bao gồm những
+giá trị khác nhưng hành động chia sẻ thường chỉ đứng ở vị trí thứ hai).</p>
+
+<h1>13. Người sử dụng không phải là nhà thiết kế sản phẩm</h1>
+
+<p>Người sử dụng luôn có những ý kiến bất tận về sản phẩm của bạn, nhưng họ không phải là nhà thiết kế.
+Bạn mới là người thiết kế. “Khi mọi người nói với bạn cái gì sai hoặc không hoạt động với họ, hầu như
+họ luôn luôn đúng. Khi họ nói với bạn một cách chính xác những gì họ nghĩ
+là sai và làm thế nào để giải quyết chúng, họ hầu như luôn luôn sai.” Câu trích dẫn này của Neil
+Gaiman là đúng về những người rất có ý thức nhận biết một vấn đề tồn tại nhưng không biết cách giải
+quyết vấn đề đó (nếu họ biết cách giải quyết vấn đề, họ đã không có vấn đề gì!) Vì vậy, đừng vội bỏ
+qua vấn đề một cách nhanh chóng, hãy chắc chắn rằng bạn đã đào sâu hơn để hiểu vấn đề một cách cơ bản,
+điều này có vẻ như không liên quan. Một nhà thiết kế mù quáng đi theo ý tưởng của những người sử dụng
+sẽ nhanh chóng mất đi khả năng tự báo cáo một cách chính xác. Đừng khó chịu với người dùng về vấn đề này.
+Đây là bản chất của người sử dụng.</p>
+
+<h1>14. Hành vi mà bạn đã nhìn thấy là hành vi để bạn thiết kế</h1>
+
+<p>Bất kể bạn lên kế hoạch như thế nào, mọi người thường cư xử theo các cách thức không thể dự kiến trước.
+Đừng bỏ qua hành vi, chấp nhận hành vi mà bạn nhìn thấy là hành vi để bạn thiết kế dù điều đó là cố ý
+hay không. Nếu có một vài thứ mà bạn không thể lên kế hoạch, việc đương nhiên mà bạn cần làm là tập
+trung hơn vào những tương tác cốt lõi, làm cho các tương tác càng chặt chẽ càng tốt để tập trung vào
+các nỗ lực của người sử dụng.</p>
+
+<h1>15. Sản phẩm lý tưởng được tập trung vào một vấn đề duy nhất</h1>
+
+<p>Thông thường mọi người thường sáng tạo sản phẩm với hy vọng hấp dẫn tất cả mọi người. Nhưng sản phẩm
+tốt nhất là sản phẩm hấp dẫn theo cách đặc biệt cho những người đang cố gắng làm một điều gì đó đặc
+biệt… họ là chuyên gia trong một vấn đề cụ thể. Đó là trực giác ngược lại để tập trung vào thị trường
+nhỏ nhưng hành trình đến thị trường lớn sẽ bắt đầu từ đây.</p>
+
+<h1>16. Sản phẩm đột phá giống như đồ chơi</h1>
+
+<p>Các sản phẩm đột phá thường bắt đầu trông giống như một món đồ chơi. Các sản phẩm không có vẻ nhiều,
+nhưng cái mà các sản phẩm có là một ngưỡng nhiều hữu dụng hơn theo cách nào đó so với những sản phẩm
+hiện tại. Có thể các sản phẩm rẻ hơn, dễ sử dụng hơn hoặc có tính chất cộng tác hơn. Điều này có vẻ
+không có sự đánh bóng hay sự trưởng thành hoặc cơ sở khách hàng lớn hơn và
+vì vậy sản phẩm xuất hiện giống một món đồ chơi. Và khía cạnh khiêm tốn này chính xác là lý do tại
+sao thường quá muộn khi người thiết kế nhận ra rằng sản phẩm này được mọi người quan tâm.</p>
+
+<h1>17. Việc định vị sản phẩm là rất quan trọng</h1>
+
+<p>Cách mọi người nghĩ về sản phẩm của bạn là vô cùng quan trọng để họ chấp nhận và sử dụng sản phẩm.
+Cách mà bạn định vị sản phẩm của mình, cách mà bạn nói về sản phẩm, mô tả sản phẩm, so sánh sản phẩm
+đó với các sản phẩm khác, cho mọi người một khuôn khổ để hiểu về sản phẩm và làm thế nào có thể sử
+dụng chúng. Bạn có thể định vị sản phẩm như là một mục sản phẩm mới hoặc như một sự cải tiến trong
+các hạng mục hiện có. Điều này thường tạo cảm giác định vị sản phẩm dựa trên hạng mục hiện có… mọi
+người thường tìm hiểu bằng cách so sánh với các sản phẩm khác mà họ  đã biết.</p>
+
+<h1>18. Sản phẩm phù hợp với thị trường là khi mọi người bán hàng hộ bạn</h1>
+
+<p>Sản phẩm phù hợp với thị trường (Product market fit) là một thuật ngữ vui, nhưng ở đây chính là cách
+thức cụ thể để nghĩ về
+sản phẩm. Khi mọi người hiểu và sử dụng sản phẩm của bạn đủ để họ công nhận giá trị của nó đã là một
+thắng lợi lớn. Nhưng khi họ bắt đầu chia sẻ các trải nghiệm tích cực của họ với những người khác,
+khi bạn có thể tái tạo trải nghiệm đó với người sử dụng mới đã được nghe những trải nghiệm từ những
+người dùng hiện tại, như vậy bạn đã có được sản phẩm phù hợp với thị trường. Và
+khi điều này xảy ra thì một số điều kì diệu cũng xảy ra. Điều bất ngờ đó là khách hàng của bạn sẽ trở thành
+người bán hàng cho bạn.</p>
+
+<p>Dịch từ: <a href="http://bokardo.com/principles-of-product-design/">Principles of Product Design</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tư duy thiết kế: Cẩm nang cho sự đổi mới (Phần 2)]]></title>
@@ -2970,722 +3151,6 @@ Tuy nhiên việc nắm bắt được các nguyên tắc trên sẽ làm cho m�
 <p>IVR (Interactive Voice Response) &ndash; tổng đài trả lời tự động<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[how to use django-celery-email on Heroku]]></title>
-    <link href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/"/>
-    <updated>2015-12-21T09:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2015/12/21/django_celery.png" title="Django Celery" ></p>
-
-<p>When I was asked to use a distributed task queue for emails on a Django project, I chose
-django-celery-email. However, during developing and testing, I faced some problems due to the lack
-of clear guide from django-celery-email, so I wrote this post as a step by step guide for anyone
-who wants use it with much ease. So let&rsquo;s get started!</p>
-
-<!-- more -->
-
-
-<h2>Project Setup</h2>
-
-<ul>
-<li><p>You need to setup local development environment with teracy-dev v0.4.2:
-<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">http://dev.teracy.org/docs/0.4.2/getting_started.html</a></p></li>
-<li><p>We&rsquo;re going to use <a href="https://github.com/teracyhq/django-boilerplate">https://github.com/teracyhq/django-boilerplate</a> v0.4.0 to develop Django
-applications:</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant ssh
-</span><span class='line'>$ ws
-</span><span class='line'>$ cd personal
-</span><span class='line'>$ mkdir django-celery
-</span><span class='line'>$ cd django-celery
-</span><span class='line'>$ git init
-</span><span class='line'>$ git remote add djbp https://github.com/teracyhq/django-boilerplate
-</span><span class='line'>$ git fetch djbp
-</span><span class='line'>$ git merge djbp/v0.4.0</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>We need to create a virtual environment for the Django app and to install dependencies:</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkvirtualenv django-celery
-</span><span class='line'>$ pip install -r requirements/dev.txt</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Set the required environment variables:</li>
-</ul>
-
-
-<p>By following <a href="http://12factor.net/config,">http://12factor.net/config,</a> we should <code>export</code> the required variables. For development
-convenience, .env file is supported and recommeded only for development mode. So let&rsquo;s create .env
-file at <code>django-celery/.env</code> with the following content:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ADMINS=(('&lt;your_name&gt;', '&lt;your_email&gt;'),)
-</span><span class='line'>DATABASE_URL=sqlite:///project/data/dj-celery.db</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>ADMINS</code> variable is used for testing emails, you should fill in your admins details.</p>
-
-<ul>
-<li>Run the Django application:</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py migrate # migrate for the first time to create db schema creation and migration
-</span><span class='line'>$ ./manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You should see something like this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(django-celery)vagrant@vagrant:~/workspace/personal/django-celery$ ./manage.py runserver 0.0.0.0:8000
-</span><span class='line'>Performing system checks...
-</span><span class='line'>
-</span><span class='line'>System check identified no issues (0 silenced).
-</span><span class='line'>December 01, 2015 - 13:09:11
-</span><span class='line'>Django version 1.8.7, using settings 'settings.project.dev'
-</span><span class='line'>Starting development server at http://0.0.0.0:8000/
-</span><span class='line'>Quit the server with CONTROL-C.</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Open <a href="http://localhost:8000,">http://localhost:8000,</a> you should see the 404 error page and it&rsquo;s expected. We&rsquo;ll add
-functionalities for the application by next steps.</p>
-
-<h2>Heroku Deployment</h2>
-
-<p>Let&rsquo;s deploy the Django application on Heroku to apply continuous delivery philosophy.</p>
-
-<p>Make sure you have an account at <a href="https://heroku.com">https://heroku.com</a></p>
-
-<ul>
-<li>Install Heroku Toolbelt</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Login</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku login</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Create a Heroku application</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ws
-</span><span class='line'>$ cd personal/django-celery
-</span><span class='line'>$ heroku create &lt;your_app_name&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Configure</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config:set DJANGO_SETTINGS_MODULE=project.settings.prod
-</span><span class='line'>$ heroku config:set ADMINS="(('&lt;your_name&gt;', '&lt;your_email&gt;'),)"</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Deploy</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push heroku master
-</span><span class='line'>$ heroku run python manage.py migrate</span></code></pre></td></tr></table></div></figure>
-
-
-<p>After that, you should access your deployment app at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/</p>
-
-<p>I created <code>dj-celery</code> app name and it&rsquo;s availalbe at: <a href="https://dj-celery.herokuapp.com/">https://dj-celery.herokuapp.com/</a></p>
-
-<p>From now on, to update the deployment on Heroku, we just need to push new commits to the heroku
-repository.</p>
-
-<h2>django-userena Setup</h2>
-
-<p>To see how emails work with celery, let&rsquo;s add user management functionalities which should also send
-emails for confirming when signing up.</p>
-
-<p>There is already an application for that, it is: <code>django-userena</code>.</p>
-
-<ul>
-<li><p>Install:</p>
-
-<p>By following the installation guide at:
-<a href="http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena">http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena</a> and
-adapting to <code>django-boilerplate</code>.</p>
-
-<ul>
-<li><p>Add <code>django-userena&gt;=1.4.1,&lt;1.5.0</code> to <code>requirements/project/common.txt</code>, so we&rsquo;ll use 1.4.x
-versions of <code>django-userena</code> like I did at:
-<a href="https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c">https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c</a></p></li>
-<li><p>Install with: <code>$ pip install -r requirements/dev.txt --upgrade</code> (<code>upgrade</code> here means installing
-and upgrading any outdated packages)</p></li>
-</ul>
-</li>
-<li><p>Configure:</p>
-
-<p>By following the guide at:
-<a href="http://django-userena.readthedocs.org/en/latest/installation.html#required-settings">http://django-userena.readthedocs.org/en/latest/installation.html#required-settings</a> like I did
-at: <a href="https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9">https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9</a></p>
-
-<p>There is a migration issue that requires to create apps/userena_patch like I did at:
-<a href="https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580">https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580</a></p></li>
-<li><p><code>makemigrations</code> for the accounts app:</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py makemigrations</span></code></pre></td></tr></table></div></figure>
-
-
-<p>  Commit the changes like I did at:
-  <a href="https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578">https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578</a></p>
-
-<ul>
-<li>Migrate and Run:</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py migrate
-</span><span class='line'>$ ./manage.py check_permissions
-</span><span class='line'>$ ./manage.py runserver 0.0.0.0:8000</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You should see the page of <a href="http://localhost:8000/accounts/signup">http://localhost:8000/accounts/signup</a> now. Let&rsquo;s signup a user and you
-should see something similar on the console:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>MIME-Version: 1.0
-</span><span class='line'>Content-Type: text/plain; charset="utf-8"
-</span><span class='line'>Content-Transfer-Encoding: 7bit
-</span><span class='line'>Subject: Your signup at localhost.
-</span><span class='line'>From: webmaster@localhost
-</span><span class='line'>To: sample.user@gmail.com
-</span><span class='line'>Date: Mon, 21 Dec 2015 11:02:30 -0000
-</span><span class='line'>Message-ID: &lt;20151221110230.23463.80845@vagrant.vm&gt;
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>Dear hoatle,
-</span><span class='line'>
-</span><span class='line'>Thank you for signing up at localhost.
-</span><span class='line'>
-</span><span class='line'>To activate your account you should click on the link below:
-</span><span class='line'>
-</span><span class='line'>http://localhost:8000/accounts/activate/fe547230a3039c476a127408e9d824894d0a9064/
-</span><span class='line'>
-</span><span class='line'>Thanks for using our site!
-</span><span class='line'>
-</span><span class='line'>Sincerely,
-</span><span class='line'>localhost
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>-------------------------------------------------------------------------------</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>To deploy Heroku:</li>
-</ul>
-
-
-<p>Note: we need to set SITE_DOMAIN and SITE_NAME to match the created Heroku application.
-These variables are already configured by django-boilerplate by default on development mode.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config:set SITE_DOMAIN=&lt;your_app_name&gt;.herokuapp.com
-</span><span class='line'>$ heroku config:set SITE_NAME=&lt;your_site_name&gt;
-</span><span class='line'>$ git push heroku master
-</span><span class='line'>$ heroku run python manage.py migrate
-</span><span class='line'>$ heroku run python manage.py check_permissions</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You should see the page of <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup now. However, don&rsquo;t
-try to signup on the Heroku app yet because we need to configure the email backend.</p>
-
-<h2>SMTP Email Backend Setup</h2>
-
-<p>By default, development mode uses console backend and production mode uses SMTP backend for emails.
-Let&rsquo;s use SMTP backend for both development mode on localhost and production mode on Heroku.</p>
-
-<p>For easier setup, let&rsquo;s use mailgun addon (free plan) from the Heroku app:
-<a href="https://elements.heroku.com/addons/mailgun">https://elements.heroku.com/addons/mailgun</a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku addons:create mailgun:starter</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To see all available variables, use:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku config</span></code></pre></td></tr></table></div></figure>
-
-
-<p>and you should see something similar to this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>=== dj-celery Config Vars
-</span><span class='line'>ADMINS:                 (('&lt;your_name&gt;', '&lt;your_email&gt;'),)
-</span><span class='line'>DATABASE_URL:           postgres://erdidqkixwegwg:hGZztw2Oh3EmNWfD5IfTb3XcyO@ec2-107-21-224-11.compute-1.amazonaws.com:5432/dembq6s6m1mohq
-</span><span class='line'>DJANGO_SETTINGS_MODULE: project.settings.prod
-</span><span class='line'>MAILGUN_API_KEY:        key-9587e40f127a1fe8fbab10622be69169
-</span><span class='line'>MAILGUN_DOMAIN:         appb8c22c19f6654edeb3c25768d4674002.mailgun.org
-</span><span class='line'>MAILGUN_PUBLIC_KEY:     pubkey-51b28300a981d7f184bb55c4726742d8
-</span><span class='line'>MAILGUN_SMTP_LOGIN:     postmaster@appb8c22c19f6654edeb3c25768d4674002.mailgun.org
-</span><span class='line'>MAILGUN_SMTP_PASSWORD:  f1c39a13079d8db398073fc6717de59a
-</span><span class='line'>MAILGUN_SMTP_PORT:      587
-</span><span class='line'>MAILGUN_SMTP_SERVER:    smtp.mailgun.org
-</span><span class='line'>SITE_DOMAIN:            dj-celery.herokuapp.com
-</span><span class='line'>SITE_NAME:              dj-celery</span></code></pre></td></tr></table></div></figure>
-
-
-<p>We see that <code>MAILGUN_XXX</code> variables are provided, we will use it on development
-mode by adding the following lines into the .env file from the config content of your app
-environment:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-</span><span class='line'>
-</span><span class='line'>MAILGUN_API_KEY=&lt;your_app_environment_value&gt;
-</span><span class='line'>MAILGUN_DOMAIN=&lt;your_app_environment_value&gt;
-</span><span class='line'>MAILGUN_PUBLIC_KEY=&lt;your_app_environment_value&gt;
-</span><span class='line'>MAILGUN_SMTP_LOGIN=&lt;your_app_environment_value&gt;
-</span><span class='line'>MAILGUN_SMTP_PASSWORD=&lt;your_app_environment_value&gt;
-</span><span class='line'>MAILGUN_SMTP_PORT=&lt;your_app_environment_value&gt;
-</span><span class='line'>MAILGUN_SMTP_SERVER=&lt;your_app_environment_value&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Let&rsquo;s test if the email works:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./manage.py shell
-</span><span class='line'>
-</span><span class='line'>Python 2.7.6 (default, Apr 15 2015, 20:14:49) 
-</span><span class='line'>Type "copyright", "credits" or "license" for more information.
-</span><span class='line'>
-</span><span class='line'>IPython 4.0.1 -- An enhanced Interactive Python.
-</span><span class='line'>?         -&gt; Introduction and overview of IPython's features.
-</span><span class='line'>%quickref -&gt; Quick reference.
-</span><span class='line'>help      -&gt; Python's own help system.
-</span><span class='line'>object?   -&gt; Details about 'object', use 'object??' for extra details.
-</span><span class='line'>
-</span><span class='line'>In [1]: from django.core import mail
-</span><span class='line'>
-</span><span class='line'>In [2]: mail.mail_admins('test', 'test')
-</span><span class='line'>
-</span><span class='line'>In [3]: </span></code></pre></td></tr></table></div></figure>
-
-
-<p>You need to check your mailbox to see that a test email should be sent to you.</p>
-
-<p>Now you could signup and receive email at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup/</p>
-
-<h2>django-celery-email Setup</h2>
-
-<p>If could see that <code>mail.mail_admins</code> is blocked and waiting until the email sending is finished.
-To avoid these blocking, let&rsquo;s use Celery. Celery app is already setup by django-boilerplate at:
-<a href="https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613">https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613</a></p>
-
-<p>Let&rsquo;s just follow <a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a> to configure it like I did at:
-<a href="https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6">https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6</a></p>
-
-<p>and then:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ pip install -r requirements/dev.txt --upgrade</span></code></pre></td></tr></table></div></figure>
-
-
-<p>update EMAIL_BACKEND for .env file with:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>EMAIL_BACKEND='djcelery_email.backends.CeleryEmailBackend'</span></code></pre></td></tr></table></div></figure>
-
-
-<p>One important step is to enable Celery by using <a href="https://elements.heroku.com/addons/cloudamqp">https://elements.heroku.com/addons/cloudamqp</a></p>
-
-<p>To use cloudamqp heroku addon:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku addons:create cloudamqp:lemur</span></code></pre></td></tr></table></div></figure>
-
-
-<p>and you should see <code>CLOUDAMQP_URL</code> environment variable by <code>$ heroku config</code></p>
-
-<p>Let&rsquo;s add that variable into the .env file:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>CLOUDAMQP_URL=&lt;your_app_environment_value&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The full .env file I created was at: <a href="https://gist.github.com/hoatle/7cb82d437213db4f373d">https://gist.github.com/hoatle/7cb82d437213db4f373d</a></p>
-
-<p>To start Celery app: <code>$ ./scripts/celery.sh</code>, and you should see the following content:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> -------------- celery@vagrant v3.1.19 (Cipater)
-</span><span class='line'>---- **** ----- 
-</span><span class='line'>--- * ***  * -- Linux-3.13.0-49-generic-x86_64-with-debian-wheezy-sid
-</span><span class='line'>-- * - **** --- 
-</span><span class='line'>- ** ---------- [config]
-</span><span class='line'>- ** ---------- .&gt; app:         Project:0x2f9a710
-</span><span class='line'>- ** ---------- .&gt; transport:   amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-</span><span class='line'>- ** ---------- .&gt; results:     disabled
-</span><span class='line'>- *** --- * --- .&gt; concurrency: 2 (prefork)
-</span><span class='line'>-- ******* ---- 
-</span><span class='line'>--- ***** ----- [queues]
-</span><span class='line'> -------------- .&gt; celery           exchange=celery(direct) key=celery
-</span><span class='line'>                
-</span><span class='line'>
-</span><span class='line'>[tasks]
-</span><span class='line'>  . djcelery_email_send_multiple
-</span><span class='line'>
-</span><span class='line'>[2015-12-21 12:13:22,788: INFO/Beat] beat: Starting...
-</span><span class='line'>[2015-12-21 12:13:24,532: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-</span><span class='line'>[2015-12-21 12:13:26,851: INFO/MainProcess] mingle: searching for neighbors
-</span><span class='line'>[2015-12-21 12:13:31,216: INFO/MainProcess] mingle: all alone
-</span><span class='line'>/home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
-</span><span class='line'>  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
-</span><span class='line'>
-</span><span class='line'>[2015-12-21 12:13:36,019: WARNING/MainProcess] /home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
-</span><span class='line'>  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
-</span><span class='line'>
-</span><span class='line'>[2015-12-21 12:13:36,023: WARNING/MainProcess] celery@vagrant ready.</span></code></pre></td></tr></table></div></figure>
-
-
-<p>After that, sending test email to admins should work without any blocking by opening a new terminal
-window:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant ssh
-</span><span class='line'>$ ws
-</span><span class='line'>$ cd personal/django-celery
-</span><span class='line'>$ workon django-celery
-</span><span class='line'>$ ./manage.py shell
-</span><span class='line'>
-</span><span class='line'>Python 2.7.6 (default, Apr 15 2015, 20:14:49) 
-</span><span class='line'>Type "copyright", "credits" or "license" for more information.
-</span><span class='line'>
-</span><span class='line'>IPython 4.0.1 -- An enhanced Interactive Python.
-</span><span class='line'>?         -&gt; Introduction and overview of IPython's features.
-</span><span class='line'>%quickref -&gt; Quick reference.
-</span><span class='line'>help      -&gt; Python's own help system.
-</span><span class='line'>object?   -&gt; Details about 'object', use 'object??' for extra details.
-</span><span class='line'>
-</span><span class='line'>In [1]: from django.core import mail
-</span><span class='line'>
-</span><span class='line'>In [2]: mail.mail_admins('test', 'test')</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&rsquo;s it. We&rsquo;re done on development mode. Let&rsquo;s deploy on Heroku with:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push heroku master
-</span><span class='line'>$ heroku ps:scale celery=1</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>$ heroku logs -p celery</code> to see the logs of celery, you should see something like this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>2015-12-21T12:30:35.946701+00:00 heroku[celery.1]: Starting process with command `scripts/celery.sh`
-</span><span class='line'>2015-12-21T12:30:37.616409+00:00 app[celery.1]: /app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env - it doesn't exist.
-</span><span class='line'>2015-12-21T12:30:37.616419+00:00 app[celery.1]:   warnings.warn("Not reading {0} - it doesn't exist.".format(dotenv))
-</span><span class='line'>2015-12-21T12:30:38.278350+00:00 app[celery.1]: [2015-12-21 12:30:38,278: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-</span><span class='line'>2015-12-21T12:30:38.220898+00:00 app[celery.1]: [2015-12-21 12:30:38,220: WARNING/MainProcess] /app/.heroku/python/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
-</span><span class='line'>2015-12-21T12:30:38.220902+00:00 app[celery.1]: Starting from version 3.2 Celery will refuse to accept pickle by default.
-</span><span class='line'>2015-12-21T12:30:38.220904+00:00 app[celery.1]: The pickle serializer is a security concern as it may give attackers
-</span><span class='line'>2015-12-21T12:30:38.220903+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.220905+00:00 app[celery.1]: the ability to execute any command.  It's important to secure
-</span><span class='line'>2015-12-21T12:30:38.220908+00:00 app[celery.1]: the default choice.
-</span><span class='line'>2015-12-21T12:30:38.220907+00:00 app[celery.1]: that enabling pickle should require a deliberate action and not be
-</span><span class='line'>2015-12-21T12:30:38.220906+00:00 app[celery.1]: your broker from unauthorized access when using pickle, so we think
-</span><span class='line'>2015-12-21T12:30:38.220909+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.220910+00:00 app[celery.1]: If you depend on pickle then you should set a setting to disable this
-</span><span class='line'>2015-12-21T12:30:38.220910+00:00 app[celery.1]: warning and to be sure that everything will continue working
-</span><span class='line'>2015-12-21T12:30:38.220914+00:00 app[celery.1]: You must only enable the serializers that you will actually use.
-</span><span class='line'>2015-12-21T12:30:38.220913+00:00 app[celery.1]:     CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
-</span><span class='line'>2015-12-21T12:30:38.220912+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.220915+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.220913+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.220915+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.220911+00:00 app[celery.1]: when you upgrade to Celery 3.2::
-</span><span class='line'>2015-12-21T12:30:38.220917+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.223101+00:00 app[celery.1]: ---- **** ----- 
-</span><span class='line'>2015-12-21T12:30:38.220916+00:00 app[celery.1]:   warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
-</span><span class='line'>2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; app:         Project:0x7f590f5fad10
-</span><span class='line'>2015-12-21T12:30:38.223107+00:00 app[celery.1]: --- ***** ----- [queues]
-</span><span class='line'>2015-12-21T12:30:38.223111+00:00 app[celery.1]:   . djcelery_email_send_multiple
-</span><span class='line'>2015-12-21T12:30:38.223102+00:00 app[celery.1]: --- * ***  * -- Linux-3.13.0-66-generic-x86_64-with-debian-jessie-sid
-</span><span class='line'>2015-12-21T12:30:38.262153+00:00 app[celery.1]: [2015-12-21 12:30:38,261: INFO/Beat] beat: Starting...
-</span><span class='line'>2015-12-21T12:30:38.223098+00:00 app[celery.1]:  
-</span><span class='line'>2015-12-21T12:30:38.301313+00:00 app[celery.1]: [2015-12-21 12:30:38,301: INFO/MainProcess] mingle: searching for neighbors
-</span><span class='line'>2015-12-21T12:30:38.223105+00:00 app[celery.1]: - ** ---------- .&gt; results:     disabled
-</span><span class='line'>2015-12-21T12:30:38.223109+00:00 app[celery.1]:                 
-</span><span class='line'>2015-12-21T12:30:38.223100+00:00 app[celery.1]:  -------------- celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 v3.1.19 (Cipater)
-</span><span class='line'>2015-12-21T12:30:38.223102+00:00 app[celery.1]: -- * - **** --- 
-</span><span class='line'>2015-12-21T12:30:38.223106+00:00 app[celery.1]: - *** --- * --- .&gt; concurrency: 8 (prefork)
-</span><span class='line'>2015-12-21T12:30:38.223109+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:38.223103+00:00 app[celery.1]: - ** ---------- [config]
-</span><span class='line'>2015-12-21T12:30:38.223106+00:00 app[celery.1]: -- ******* ---- 
-</span><span class='line'>2015-12-21T12:30:38.223110+00:00 app[celery.1]: [tasks]
-</span><span class='line'>2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; transport:   amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-</span><span class='line'>2015-12-21T12:30:38.223108+00:00 app[celery.1]:  -------------- .&gt; celery           exchange=celery(direct) key=celery
-</span><span class='line'>2015-12-21T12:30:38.223111+00:00 app[celery.1]: 
-</span><span class='line'>2015-12-21T12:30:39.322701+00:00 app[celery.1]: [2015-12-21 12:30:39,322: INFO/MainProcess] mingle: all alone
-</span><span class='line'>2015-12-21T12:30:39.352403+00:00 app[celery.1]: [2015-12-21 12:30:39,352: WARNING/MainProcess] celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 ready.
-</span><span class='line'>2015-12-21T12:30:36.537615+00:00 heroku[celery.1]: State changed from starting to up</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You could try sending test emails to admins with:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku run python manage.py shell
-</span><span class='line'>Running python manage.py shell on dj-celery... up, run.9412
-</span><span class='line'>/app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env - it doesn't exist.
-</span><span class='line'>  warnings.warn("Not reading {0} - it doesn't exist.".format(dotenv))
-</span><span class='line'>Python 2.7.10 (default, May 27 2015, 20:38:41) 
-</span><span class='line'>[GCC 4.8.2] on linux2
-</span><span class='line'>Type "help", "copyright", "credits" or "license" for more information.
-</span><span class='line'>(InteractiveConsole)
-</span><span class='line'>&gt;&gt;&gt; from django.core import mail
-</span><span class='line'>&gt;&gt;&gt; mail.mail_admins('test', 'test')</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&rsquo;s it, email sending is not blocked anymore. The full project for this guide is located at:
-<a href="https://github.com/hoatle/django-celery">https://github.com/hoatle/django-celery</a></p>
-
-<h2>Remote Debugging Python Tip</h2>
-
-<p>This is a bonus if you need to remote debug Python applications. You could apply this for
-Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging">http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging</a></p>
-
-<h2>Summary</h2>
-
-<p>In this post, I&rsquo;ve guided you step by step to setup Celery as a distributed task queue for emails
-on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
-
-<p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#104;&#113;&#64;&#x74;&#101;&#114;&#x61;&#x63;&#x79;&#46;&#x63;&#x6f;&#109;">&#x68;&#113;&#x40;&#x74;&#x65;&#x72;&#97;&#x63;&#121;&#46;&#x63;&#111;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
-
-<p>Happy Django developing!</p>
-
-<h2>References</h2>
-
-<ul>
-<li><a href="https://github.com/bread-and-pepper/django-userena">https://github.com/bread-and-pepper/django-userena</a></li>
-<li><a href="http://www.celeryproject.org/">http://www.celeryproject.org/</a></li>
-<li><a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a></li>
-</ul>
 
 ]]></content>
   </entry>
