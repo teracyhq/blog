@@ -138,7 +138,7 @@ và cần đến sự trợ giúp. Kịch bản tệ nhất là khi mọi ngư�
 lại không có sự trợ giúp của bạn - một nhà thiết kế hiểu biết. 
 
 
-12. Giá trị cá nhân đi trước gia trị xã hội
+12. Giá trị cá nhân đi trước giá trị xã hội
 ===========================================
 Thật dễ dàng để mong chờ giá trị xã hội của phần mềm. Ooh, nếu chúng ta xây dựng đúng giá trị thì khi
 đó mọi người sẽ chia sẻ với bạn bè của họ! Tuy nhiên mọi người hiếm khi sử dụng phần mềm chỉ đơn thuần
@@ -181,7 +181,7 @@ nhỏ nhưng hành trình đến thị trường lớn sẽ bắt đầu từ đ
 16. Sản phẩm đột phá giống như đồ chơi
 ======================================
 Các sản phẩm đột phá thường bắt đầu trông giống như một món đồ chơi. Các sản phẩm không có vẻ nhiều,
-nhưng cái mà các sản phẩn có là một ngưỡng nhiều hữu dụng hơn theo cách nào đó so với những sản phẩm
+nhưng cái mà các sản phẩm có là một ngưỡng nhiều hữu dụng hơn theo cách nào đó so với những sản phẩm
 hiện tại. Có thể các sản phẩm rẻ hơn, dễ sử dụng hơn hoặc có tính chất cộng tác hơn. Điều này có vẻ
 không có sự đánh bóng hay sự trưởng thành hoặc cơ sở khách hàng lớn hơn và
 vì vậy sản phẩm xuất hiện giống một món đồ chơi. Và khía cạnh khiêm tốn này chính xác là lý do tại
