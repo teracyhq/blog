@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: vm | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/vm/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-02-06T02:28:20+00:00</updated>
+  <updated>2017-02-15T02:51:31+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.5.0-b1 release]]></title>
+    <link href="http://blog.teracy.com/2017/02/14/teracy-dev-v0-5-0-b1-release/"/>
+    <updated>2017-02-14T12:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/02/14/teracy-dev-v0-5-0-b1-release</id>
+    <content type="html"><![CDATA[<p>We&rsquo;re very happy to announce our so long awaiting major release of teracy-dev, the v0.5.0-b1 release
+that introduces lots of features and changes, high performance with Docker workflow as the default.</p>
+
+<!-- more -->
+
+
+<h2>v0.5.0-b1</h2>
+
+<p>This is the beta 1 release of v0.5.0, what does it mean? By following the
+<a href="http://dev.teracy.org/docs/semantic_versioning.html">semantic versioning guide</a>, it means:</p>
+
+<p><blockquote><p>features completed, only minor bugs are expected. Avoid refactoring here, just fix bugs</p></blockquote></p>
+
+<p>This v0.5.0-b1 release is tested with all our projects and our clients' projects, so we can guarantee
+that the release has a very high quality and stability that you can use it for everyday projects.</p>
+
+<p>We&rsquo;re still lacking lots of documentation guides for users to explore and leverage all the supported
+features more easily.</p>
+
+<h2>Changes</h2>
+
+<p>This major release includes lots of features and improvements:</p>
+
+<ul>
+<li>high performance on Windows, especially file syncing</li>
+<li>Docker workflow out of the box, can use any versions of docker, docker-compose</li>
+<li>support all type of provisioners configurations</li>
+<li>use public_network by default</li>
+<li>config override the object within array</li>
+<li>Vagrantfile-ext support</li>
+<li>use rsync as the default sync mechanism (with the support from vagrant-gatling-rsync and
+vagrant-rsync-back plugins)</li>
+<li>reverse proxy support with /etc/hosts update for auto domain management</li>
+<li>auto vagrant plugins installation support</li>
+</ul>
+
+
+<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>We&rsquo;re working hard to add more documentations and guides. We&rsquo;ll fix bugs if any.</p>
+
+<p>After v0.5.0 final is release, we&rsquo;ll take on the next major release v0.6.0 that follow our
+<a href="/2016/08/19/teracy-dev-vision/">teracy-dev&rsquo;s vision</a>:</p>
+
+<p><blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote></p>
+
+<p>We&rsquo;ll take all the feedback from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
+
+<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-b1</a> for your everyday
+projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
+<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.4.0 release]]></title>
