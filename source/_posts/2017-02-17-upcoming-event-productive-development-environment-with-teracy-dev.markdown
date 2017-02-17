@@ -17,9 +17,10 @@ description: OpenTour's first event about productive development environment wit
 keywords: teracy-dev, OpenTour, Teracy, development environment
 published: true
 ---
+{% img center /images/2017/02/17/opentour01-productive-development-environment-teracy-dev.jpg Productive development environment with teracy-dev %}
 
 We are very execited about a upcoming event with the topic "Productive development environment with teracy-dev"
-presented by Hoat Le who is Co-founders, CEO of Teracy. The event will be hold on Thursday, February
+presented by Hoat Le, Co-founders, and CEO of Teracy. The event will be hold on Thursday, February
 23 at 6:30 PM - 9:30 PM at Toong Hoang Dao Thuy (25T2 Hoang Dao Thuy, Ha Noi) by Docker Hanoi. This is
 the first event in the series of OpenTour's activities. 
 
@@ -57,9 +58,8 @@ in the world, and through shared activities and promoting.
 
     + Questions and Answers
 
-Join us! To have more details and register to join
-the even, please see the details at https://www.facebook.com/events/979555312146106/. We are very happy
-for your presence at this event.
+Join us! To have more details and register to join the even, please see the details at https://www.facebook.com/events/979555312146106/.
+We are very happy for your presence at this event.
 
 
 
