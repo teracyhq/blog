@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: teracy-dev | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/teracy-dev/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-02-15T02:51:31+00:00</updated>
+  <updated>2017-02-17T07:59:06+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Upcoming event: Productive development environment with teracy-dev]]></title>
+    <link href="http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev/"/>
+    <updated>2017-02-17T09:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/02/17/opentour01-productive-development-environment-teracy-dev.jpg" title="Productive development environment with teracy-dev" ></p>
+
+<p>We are very excited about an upcoming event with the topic &ldquo;Productive development environment with teracy-dev&rdquo;
+presented by Hoat Le, Co-founder, and CEO of Teracy. The event will be held on Thursday, February
+23 at 6:30 PM &ndash; 9:30 PM at Toong Hoang Dao Thuy (25T2 Hoang Dao Thuy, Ha Noi). This is
+the first event in the series of OpenTour&rsquo;s activities.</p>
+
+<p>OpenTour is started from the idea of ​​collaboration, and help each other of three open source communities in
+Vietnam, including OpenCPS, Vietnam OpenStack, and Docker Hanoi. OpenTour is a series of activities
+and events aiming at building Vietnamese FOSS ecosystem, building a network of FOSS experts to promote
+the use, application and development of FOSS in Vietnam, especially for ​​ICT enterprises
+and training institutions, on the base of absorbing ideas and activity patterns of the FOSS community
+in the world, and through shared activities and promoting.</p>
+
+<!-- more -->
+
+
+<p><strong>Agenda</strong>:</p>
+
+<ul>
+<li><p>Introduce about OpenTour</p></li>
+<li><p>teracy-dev: <a href="/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">the only truly universal productive development platform with Docker on macOS, Linux, and Windows for developers</a>.</p>
+
+<ul>
+<li><p>Introduce about teracy-dev</p></li>
+<li><p>The existing problems that many developers are struggling:</p>
+
+<ul>
+<li><p>The problems when there was no Docker yet</p></li>
+<li><p>The problems when there was no teracy-dev yet</p></li>
+<li><p>The approaches and solutions for these problems with teracy-dev</p></li>
+<li><p>The 4-year story of teracy-dev</p></li>
+<li><p>The Docker workflow with teracy-dev</p></li>
+</ul>
+</li>
+<li><p>teracy-dev demo with the real projects</p></li>
+<li><p>Questions and Answers</p></li>
+</ul>
+</li>
+</ul>
+
+
+<p>Join us! To have more details and register to join the event, please see the details at <a href="https://www.facebook.com/events/979555312146106/.">https://www.facebook.com/events/979555312146106/.</a>
+It&rsquo;s our honor to have your presence at this event. See you there!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-b1 release]]></title>
@@ -530,69 +582,6 @@ much as we do.</p>
 <p>https://issues.teracy.org/browse/DEV-198<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
 <li id="fn:5">
 <p>http://matschaffer.github.io/knife-solo/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev v0.3.0 release]]></title>
-    <link href="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/"/>
-    <updated>2014-07-17T03:39:00+00:00</updated>
-    <id>http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/07/binary_code.jpg"></p>
-
-<p>Creating an isolated consistent development with a predefined consistent workflow is always our
-goal of development, that is the reason why we create <a href="https://github.com/teracyhq/dev">teracy-dev</a>. It is a virtualbox virtual
-machine (VM) that is provisioned by <code>Chef</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and managed by <code>vagrant</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>. Today, we are very happy
-to announce <a href="https://github.com/teracyhq/dev">teracy-dev</a> v0.3.0 released  after more than a year of development and usage.</p>
-
-<!-- more -->
-
-
-<p>We have used <code>vagrant</code> and <code>Chef</code> to provision a common VM for all our developers.
-It saves a lot of time and is a very cheap operation to destroy and provision a new VM again in minutes
-with the exactly defined provisioned software packages.</p>
-
-<p>We are now using <code>Chef</code> to provision a VM with <code>nodejs</code>, <code>mysql</code>, <code>php</code>, <code>coldfusion</code> for a client to
-develop a wordpress, a coldfusion and a MVC client (using backone.js with Grunt build), and it works
-great.</p>
-
-<p>Normally, it takes several days for new developers to install every packages on
-their machines and they must follow instruction guide, but not anymore with <a href="https://github.com/teracyhq/dev">teracy-dev</a>.
-Every new developer just needs 2-3 hours to get the dev VM provisoned for the first time (to
-download the basebox thanks to <code>vagrant cloud</code>) and it just takes less than 1 minute to
-<code>$ vagrant destroy</code> and <code>$ vagrant up</code> later again &ndash; this is a very cheap operation.</p>
-
-<p><a href="https://github.com/teracyhq/dev">teracy-dev</a> is really a general-purpose development environment for all developers for all platforms
-(<code>nodejs</code>, <code>python</code>, <code>java</code>, <code>php</code>, <code>mysql</code>, <code>posgreSQL</code>, <code>mongodb</code>) built-in and you could extend
-more by using <code>Chef</code> to create more cookbooks or recipes for it.</p>
-
-<p>However, we still have performance problem with shared folders. It is still quite slow and
-painful on Windows host machine. We are going to fix this problem on the next version (v0.4.0).</p>
-
-<p><code>docker</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> is very promising and we&rsquo;d like to use it for our workflow at v0.4.0, too.</p>
-
-<p>Please stay tuned for our upcoming exciting release version.</p>
-
-<p>Have a nice day and happy coding!</p>
-
-<h2>Credit</h2>
-
-<ul>
-<li><a href="http://www.superbwallpapers.com/computers/binary-code-9004/">http://www.superbwallpapers.com/computers/binary-code-9004/</a></li>
-</ul>
-
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://www.getchef.com/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://www.vagrantup.com/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://www.docker.com/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

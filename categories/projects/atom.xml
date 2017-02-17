@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-02-15T02:51:31+00:00</updated>
+  <updated>2017-02-17T07:59:06+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Upcoming event: Productive development environment with teracy-dev]]></title>
+    <link href="http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev/"/>
+    <updated>2017-02-17T09:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/02/17/opentour01-productive-development-environment-teracy-dev.jpg" title="Productive development environment with teracy-dev" ></p>
+
+<p>We are very excited about an upcoming event with the topic &ldquo;Productive development environment with teracy-dev&rdquo;
+presented by Hoat Le, Co-founder, and CEO of Teracy. The event will be held on Thursday, February
+23 at 6:30 PM &ndash; 9:30 PM at Toong Hoang Dao Thuy (25T2 Hoang Dao Thuy, Ha Noi). This is
+the first event in the series of OpenTour&rsquo;s activities.</p>
+
+<p>OpenTour is started from the idea of ​​collaboration, and help each other of three open source communities in
+Vietnam, including OpenCPS, Vietnam OpenStack, and Docker Hanoi. OpenTour is a series of activities
+and events aiming at building Vietnamese FOSS ecosystem, building a network of FOSS experts to promote
+the use, application and development of FOSS in Vietnam, especially for ​​ICT enterprises
+and training institutions, on the base of absorbing ideas and activity patterns of the FOSS community
+in the world, and through shared activities and promoting.</p>
+
+<!-- more -->
+
+
+<p><strong>Agenda</strong>:</p>
+
+<ul>
+<li><p>Introduce about OpenTour</p></li>
+<li><p>teracy-dev: <a href="/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">the only truly universal productive development platform with Docker on macOS, Linux, and Windows for developers</a>.</p>
+
+<ul>
+<li><p>Introduce about teracy-dev</p></li>
+<li><p>The existing problems that many developers are struggling:</p>
+
+<ul>
+<li><p>The problems when there was no Docker yet</p></li>
+<li><p>The problems when there was no teracy-dev yet</p></li>
+<li><p>The approaches and solutions for these problems with teracy-dev</p></li>
+<li><p>The 4-year story of teracy-dev</p></li>
+<li><p>The Docker workflow with teracy-dev</p></li>
+</ul>
+</li>
+<li><p>teracy-dev demo with the real projects</p></li>
+<li><p>Questions and Answers</p></li>
+</ul>
+</li>
+</ul>
+
+
+<p>Join us! To have more details and register to join the event, please see the details at <a href="https://www.facebook.com/events/979555312146106/.">https://www.facebook.com/events/979555312146106/.</a>
+It&rsquo;s our honor to have your presence at this event. See you there!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-b1 release]]></title>
@@ -412,56 +464,6 @@ the redundant colon character with: <a href="https://github.com/teracyhq/httpie-
 <p>https://github.com/teracyhq/flask-boilerplate<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>https://github.com/jkbrzt/httpie<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Teracy happy birthday Slack bot]]></title>
-    <link href="http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot/"/>
-    <updated>2015-07-22T09:19:00+00:00</updated>
-    <id>http://blog.teracy.com/2015/07/22/teracy-birthday-slack-bot</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2015/07/22/teracy_birthday_slack_bot.png" title="Teracy happy birthday Slack bot" ></p>
-
-<p>Getting everything automated is one of my daily tasks, such as running tests automatically each time
-there is a new commit, packaging products and sending them to customers, or deploying the
-staging/ production servers when a project manager releases a new version, and more.</p>
-
-<!-- more -->
-
-
-<p>Today my task is something quite different: Congrats team members on their birthdays automatically
-by the data got from Google calendar. After a little search, there are many automation solutions to
-do it: from commercial Zapier, IFFT to opensource like Huginn.
-I want something simple to use, maintenance-free, and free for small usage, so my last
-choice is Zapier. It has already had the recipe<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to read events from Google calendar and another
-action to interactive with Slack that will be easy to start (although the document of the recipe
-is not quite clear for a new user like me). Here is the recipe for Zapier:</p>
-
-<p><img class="center" src="/images/2015/07/22/Zapier_recipe_config.png" title="Zapier recipe config" ></p>
-
-<p>With this recipe, Zapier will notify to the #_general slack channel with the message got from the
-calendar description at the time of the event start. To make thing more interesting, I want to
-attach a birthday cake image which has an employee name on it along with the message so I use PHP GD
-to show a dynamic birthday cake taking the employee name from the calendar title and add it to the
-image. It took me 30 minutes to get the birthday cake image which has space for the text, choose a
-font and add it to my script. Finally, uploading it to our server and here is the result:</p>
-
-<p><img class="center" src="/images/2015/07/22/cake_sample.png" title="Birthday cake" ></p>
-
-<p>This PHP script<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> along with the Zapier recipe above makes the birthday reminder more interesting.
-What I&rsquo;m thinking now is some funny fortune teller texts which are added randomly to the cake, a
-lucky draw game for the team members to pick up their birthday gift and hopefully some online
-merchants will open their API for our script to bring the gift to our team members' homes.</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>https://zapier.com/zapbook/google-calendar/slack/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://github.com/teracyhq/birthday-image<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

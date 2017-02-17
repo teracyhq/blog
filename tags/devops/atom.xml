@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: devops | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/devops/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-02-15T02:51:31+00:00</updated>
+  <updated>2017-02-17T07:59:06+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Upcoming event: Productive development environment with teracy-dev]]></title>
+    <link href="http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev/"/>
+    <updated>2017-02-17T09:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/02/17/opentour01-productive-development-environment-teracy-dev.jpg" title="Productive development environment with teracy-dev" ></p>
+
+<p>We are very excited about an upcoming event with the topic &ldquo;Productive development environment with teracy-dev&rdquo;
+presented by Hoat Le, Co-founder, and CEO of Teracy. The event will be held on Thursday, February
+23 at 6:30 PM &ndash; 9:30 PM at Toong Hoang Dao Thuy (25T2 Hoang Dao Thuy, Ha Noi). This is
+the first event in the series of OpenTour&rsquo;s activities.</p>
+
+<p>OpenTour is started from the idea of ​​collaboration, and help each other of three open source communities in
+Vietnam, including OpenCPS, Vietnam OpenStack, and Docker Hanoi. OpenTour is a series of activities
+and events aiming at building Vietnamese FOSS ecosystem, building a network of FOSS experts to promote
+the use, application and development of FOSS in Vietnam, especially for ​​ICT enterprises
+and training institutions, on the base of absorbing ideas and activity patterns of the FOSS community
+in the world, and through shared activities and promoting.</p>
+
+<!-- more -->
+
+
+<p><strong>Agenda</strong>:</p>
+
+<ul>
+<li><p>Introduce about OpenTour</p></li>
+<li><p>teracy-dev: <a href="/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">the only truly universal productive development platform with Docker on macOS, Linux, and Windows for developers</a>.</p>
+
+<ul>
+<li><p>Introduce about teracy-dev</p></li>
+<li><p>The existing problems that many developers are struggling:</p>
+
+<ul>
+<li><p>The problems when there was no Docker yet</p></li>
+<li><p>The problems when there was no teracy-dev yet</p></li>
+<li><p>The approaches and solutions for these problems with teracy-dev</p></li>
+<li><p>The 4-year story of teracy-dev</p></li>
+<li><p>The Docker workflow with teracy-dev</p></li>
+</ul>
+</li>
+<li><p>teracy-dev demo with the real projects</p></li>
+<li><p>Questions and Answers</p></li>
+</ul>
+</li>
+</ul>
+
+
+<p>Join us! To have more details and register to join the event, please see the details at <a href="https://www.facebook.com/events/979555312146106/.">https://www.facebook.com/events/979555312146106/.</a>
+It&rsquo;s our honor to have your presence at this event. See you there!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-b1 release]]></title>
@@ -716,51 +768,6 @@ much as we do.</p>
 <p>https://issues.teracy.org/browse/DEV-198<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
 <li id="fn:5">
 <p>http://matschaffer.github.io/knife-solo/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-chef v0.1.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/"/>
-    <updated>2013-09-23T02:30:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/23/chef-logo.png" title="Chef Logo" ></p>
-
-<p>&ldquo;automation&rdquo; is one of the most important <code>Teracy development philosophies</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>
-is one small step for us to automate all our infrastructure services, development experience and
-other services later.</p>
-
-<p>Today we&rsquo;re very happy to announce v0.1.0 release of <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>.</p>
-
-<!-- more -->
-
-
-<p><a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a> is a &ldquo;base common project that other chef-specific projects should extend.&rdquo;
-It includes all common stuff (rake tasks, project layout management, etc.) that is easy to use
-right away. Moreover, it includes test-driven development with <code>Chef</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> thanks to
-<code>Chef best practices</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>.</p>
-
-<p>By using this base common project, we&rsquo;re going to extend it for <code>teracy-dev</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> to improve it to
-a next level.</p>
-
-<p>We hope that this could be useful to you as it is to us. There are many rooms for its improvements,
-though.</p>
-
-<p>Have a nice day and happy hacking!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://dev.teracy.org/docs/develop/intro.html#about-teracy<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://www.opscode.com/chef/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>http://neverstopbuilding.net/chef-best-practices-a-series/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>https://github.com/teracy-official/dev<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
