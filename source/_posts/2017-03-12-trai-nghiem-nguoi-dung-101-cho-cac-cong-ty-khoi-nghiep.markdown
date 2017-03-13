@@ -195,7 +195,7 @@ c. Các bước tiếp theo khả dĩ nhất mà người dùng sẽ thực hi�
 
 d. Chúng ta có thể giúp đỡ / hướng dẫn người dùng thực hiện bước dự tính tiếp theo bằng cách nào?
 
-e.  Người dùng đang ở đâu và sẽ được gì sau khi hoàn thành nhiệm ṿ này?
+e.  Người dùng đang ở đâu và sẽ được gì sau khi hoàn thành nhiệm vụ này?
 
 
 Dịch từ: [UX 101 for startups
