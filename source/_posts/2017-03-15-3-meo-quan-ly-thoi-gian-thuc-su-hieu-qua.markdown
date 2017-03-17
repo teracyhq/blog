@@ -29,6 +29,8 @@ Việc quản lý thời gian có thể là rất khó khăn. Những điều kh
 
 Còn có điều gì mà chúng ta có thể làm nữa nhỉ? Tất cả chúng ta có 24 giờ trong 1 ngày, chúng ta thực sự phải sử dụng thời gian của chúng ta như thế nào để đạt hiệu quả hơn?
 
+<!-- more -->
+
 Và điều quan trọng nhất, chúng ta có thể quản lý thời gian của chúng ta như thế nào để sống vui vẻ hơn, khỏe mạnh hơn, làm những việc mà chúng ta biết là quan trọng và vẫn tiếp tục xử lý những trách nhiệm cấp bách?
 
 Tôi đang tìm câu trả lời đó giống như bạn vậy, nhưng theo kinh nghiệm của tôi có 3 mẹo quản lý thời gian thực sự hiệu quả trong cuộc sống thực và sẽ giúp bạn cải thiện được sức khỏe và năng suất.
