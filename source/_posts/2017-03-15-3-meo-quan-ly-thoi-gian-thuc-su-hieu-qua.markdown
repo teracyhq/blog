@@ -25,13 +25,13 @@ Việc quản lý thời gian có thể là rất khó khăn. Những điều kh
 
 - Không, bạn sẽ không chết vì bị stress hôm nay, nhưng nếu bạn không tìm cách vượt qua nó sớm thì bạn cũng có thể sẽ bị chết vì stress thôi.
 
-- Không, ăn những thực phẩm chưa qua chế biến là không cần thiết để bạn có thể sống sót ngay bây giờ, nhưng sẽ giúp bạn làm giảm nguy cơ bị ung thư và bệnh tật.
+- Không, ăn những thực phẩm sạch chưa qua công nghệ chế biến là không cần thiết để bạn có thể sống sót ngay bây giờ, nhưng sẽ giúp bạn làm giảm nguy cơ bị ung thư và bệnh tật.
 
 Còn có điều gì mà chúng ta có thể làm nữa nhỉ? Tất cả chúng ta có 24 giờ trong 1 ngày, chúng ta thực sự phải sử dụng thời gian của chúng ta như thế nào để đạt hiệu quả hơn?
 
 Và điều quan trọng nhất, chúng ta có thể quản lý thời gian của chúng ta như thế nào để sống vui vẻ hơn, khỏe mạnh hơn, làm những việc mà chúng ta biết là quan trọng và vẫn tiếp tục xử lý những trách nhiệm cấp bách?
 
-Tôi đang đấu tranh với câu trả lời đó giống như bạn vậy, nhưng theo kinh nghiệm của tôi có 3 mẹo quản lý thời gian thực sự hiệu quả trong cuộc sống thực và sẽ giúp bạn cải thiện được sức khỏe và năng suất.
+Tôi đang tìm câu trả lời đó giống như bạn vậy, nhưng theo kinh nghiệm của tôi có 3 mẹo quản lý thời gian thực sự hiệu quả trong cuộc sống thực và sẽ giúp bạn cải thiện được sức khỏe và năng suất.
 
 1. Bằng mọi giá hãy loại bỏ "công việc nửa vời"
 ==============================================
@@ -76,6 +76,8 @@ Tuy nhiên, đối với bài tập ngày qua ngày, bám lịch nói dễ hơn 
 
 Để đối phó với những điều bận tâm phát sinh và vượt qua trở ngại dễ bị tác động, tôi đã thực hiện một sự thay đổi nhỏ về cách tiếp cận lịch của mình. Mục tiêu của tôi là xây dựng lịch trước, thay vì tầm mức, trái với thông lệ. 
 
+Ví dụ, giả sử hôm nay bạn dậy và dự kiến buổi chiều sẽ chạy 3 dặm. Tuy nhiên trong ngày hôm đó lịch trình của bạn bị xáo trộn và thời gian bắt đầu khó mà thực hiện được. Bây giờ bạn chỉ có 20 phút để chạy thôi.
+
 Lúc này bạn có 2 lựa chọn: 
 
 Lựa chọn đầu tiên là nói "tôi không đủ thời gian để tập hôm nay" và bỏ khoảng thời gian đó vào việc khác. Đó là cách trước đây tôi thường thực hiện. 
@@ -84,7 +86,7 @@ Lựa chọn thứ hai là, giảm tầm mức, nhưng vẫn theo lịch. Thay v
 
 Hàng ngày, tác động của việc thực hiện 5 lượt chạy nhanh không lớn, đặc biệt khi bạn đã lên kế hoạch chạy 3 dặm. Nhưng tác động luỹ kế của việc bám lịch sẽ rất lớn. Bất kể hoàn cảnh nào, mức độ bài tập ra sao, bạn đều biết rằng sẽ phải thực hiện bài tập của ngày hôm nay. Đó là cách mà mục tiêu nhỏ bé của ngày hôm nay có thể trở thành thói quen trong cả cuộc đời. 
 
-Hãy hoàn thành những thứ của ngày hôm nay, thậm chí tầm mức của nó nhỏ dự kiến.
+Hãy hoàn thành những thứ của ngày hôm nay, thậm chí tầm mức của nó nhỏ hơn dự kiến.
 
 Những mẹo quản lý thời gian thực sự hiệu quả
 ============================================
