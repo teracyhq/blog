@@ -21,14 +21,39 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
 
 ## How to work in dev mode
 
+- Make sure your `vagrant_config_override.json` has the following config:
+
+```
+{
+  "provisioners": [{
+    "_id": "0",
+    "json": {
+      "teracy-dev": {
+        "proxy": {
+          "container": {
+            "enabled": true
+          }
+        }
+      }
+    }
+  }],
+  "plugins": [{
+    "_id": "2",
+    "options": {
+      "aliases": [ // should add to the existing aliases if any
+        "dev.blog.teracy.dev", "review.blog.teracy.dev", "blog.teracy.dev"
+      ]
+    }
+  }]
+}
+```
+
+- `$ vagrant reload --provision` and `$ vagrant hostmanager` to make sure everything is updated.
+
 - Start:
 
-  Open the first terminal window and let the file watching keep running:
+  Keep the first terminal window and let the file watching keep running.
 
-  ```bash
-  $ cd ~/teracy-dev
-  $ vagrant up
-  ```
 
   Open the second terminal window:
 
@@ -37,19 +62,18 @@ Note: You need to fetch the latest changes of `teracy-blog` before going to the 
   $ vagrant ssh
   $ ws
   $ cd teracy-blog
-  $ docker-compose pull && docker-compose up -d
+  $ docker-compose pull && docker-compose up -d dev
   ```
 
-  Open the third terminal window to identity the \<vm_ip_address>, follow: http://dev.teracy.org/docs/develop/basic_usage.html#ip-address
-
-  Open \<vm_ip_address>:4000 to preview on local.
+  Open dev.blog.teracy.dev to preview on local.
 
   Need to make sure the blog build completed before previewing it. Use the command below:
 
   ```bash
   $ docker-compose logs -f
   ```
-Press Ctrl + c to stop following reviewing the logs.
+
+  Press Ctrl + c to stop following reviewing the logs.
 
 - Update new changes:
 
@@ -65,20 +89,23 @@ Press Ctrl + c to stop following reviewing the logs.
 - Stop working:
 
   ```bash
-  $ docker-compose stop
+  $ docker-compose stop && docker-compose rm -f
   ```
 
 
 ## How to review others' work and PRs (pull requests)
 
 
-To review work and PRs submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run a Docker image:
+To review work and PRs submitted by others, for example, with `hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub`, run the following command:
 
 ```
-$ docker run --rm -p 8888:80 hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub
+$ docker-compose stop review && docker-compose rm -f review
+$ export DOCKER_IMAGE_REVIEW=hoatle/teracy-blog:tasks-BLOG-101-travis-docker-hub && \
+  docker-compose pull review && \
+  docker-compose up review
 ```
 
-And open \<vm_ip_address>:8888 to review the changes on local
+And open review.blog.teracy.dev to review the changes on local dev.
 
 Press Ctrl + c to stop reviewing (stop docker run)
 
@@ -88,17 +115,10 @@ Press Ctrl + c to stop reviewing (stop docker run)
 Run in the prod mode from official distributed Docker image:
 
 ```
-$ docker pull teracy/blog
-$ docker run -p 8080:80 teracy/blog
+$ docker-compose pull && docker-compose up -d prod
 ```
 
-or with docker-compose and from docker-compose.prod.yml file:
-
-```
-$ docker-compose -f docker-compose.prod.yml pull && docker-compose -f docker-compose.prod.yml up
-```
-
-Then open \<vm_ip_address>:8080 to see the static blog site served by nginx.
+Then open blog.teracy.dev to see the static blog site served by nginx.
 
 
 ## How to build the prod Docker image
@@ -106,16 +126,17 @@ Then open \<vm_ip_address>:8080 to see the static blog site served by nginx.
 First, use the teracy/blog:dev_latest image to generate static content:
 
 ```
-$ docker run --rm -v $(pwd):/opt/app teracy/blog:dev_latest
+$ docker-compose run --rm dev
 ```
 
 And then:
 
 ```
-$ docker-compose -f docker-compose.prod.yml build
+$ docker-compose build prod
 ```
 
 ## travis-ci configuration
+
 You just need to configure travis-ci only one time. After each travis-ci build, new Docker images are pushed, we can review your work (PR) by running the Docker images instead of fetching git code and build it on local ourselves.
 
 Here are things you need to do:
