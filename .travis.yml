@@ -2,38 +2,53 @@ language: ruby
 services:
 - docker
 env:
-  matrix:
-  - DOCKER_FILE=Dockerfile-dev IMAGE_TAG_PREFIX=dev_
-  - DOCKER_FILE=Dockerfile     IMAGE_TAG_PREFIX=
   global:
-  - CI_BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-  - CI_REGISTRY_IMAGE=$DOCKER_IMAGE
-  - GH_REPO="teracyhq/blog"
-  - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
+    - DOCKER_COMPOSE_VERSION=1.11.2
+    - CI_BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    - CI_BUILD_ID=$TRAVIS_BUILD_ID
+    - CI_BUILD_REF=$TRAVIS_COMMIT
+    - CI_BUILD_REF_NAME=$TRAVIS_BRANCH
+    - CI_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
+    - CI_BUILDER=travis-ci
+    - CI_PROJECT_NAME=$TRAVIS_REPO_SLUG
+    - GH_REPO=teracyhq/blog
+    - secure: ll0qKyaIMGw5Fw+CXNKUE5Afy9zNdQimJHLoyNKi8TzIBFgwyARq/IrTllxA+NTdSWoIGnfV1HHtEbpwbaYlwA+/HxbxGqTza995N8V1llEfp0m1E63dh3qfbKcvJ9Xhg6502VMeXyTYPKAK4nAl2FW4BVhwIrCOTfN1U4oseu8=
 rvm:
-- 1.9.3
-before_script:
+- 1.9.3 # legacy
+before_install:
+# install the latest docker and docker-compose versions
+- sudo apt-get remove docker docker-engine
+- sudo curl -sSL https://get.docker.com/ | sh
+- sudo rm /usr/local/bin/docker-compose
+- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+- chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
+- docker --version
+- docker-compose --version
+# legacy stuff
+- bundle install
 - git config --global user.name "Teracy Bot"
 - git config --global user.email "teracy.com@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 - bundle exec rake setup_github_pages[$REPO_URL]
 - git checkout -- _config.yml
-# we have convention of branches named: tasks/xxx;features/xxx but Docker tag does not allow / character
-# => replace / with - to make a valid Docker image tag
-- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH | sed -e 's/[\/]/-/g'; fi`
-- export CONTAINER_IMAGE=$CI_REGISTRY_IMAGE:$IMAGE_TAG_PREFIX$TAG
+before_script:
+- export CI_REGISTRY_IMAGE=$DOCKER_USER/$DOCKER_REPO
+- |
+  if [[ "$TRAVIS_BRANCH" != "master" ]]; then
+    export IMG_TAG_AFFIX=`echo "${TRAVIS_BRANCH}" | sed -e 's/[\/]/-/g' | sed -e 's/[\#]//g'`
+  else
+    export IMG_TAG_AFFIX=latest
+  fi
+- export DOCKER_IMAGE_DEV=$CI_REGISTRY_IMAGE:dev_$IMG_TAG_AFFIX
+- export DOCKER_IMAGE_PROD=$CI_REGISTRY_IMAGE:$IMG_TAG_AFFIX
 script:
-- if [ "$DOCKER_FILE" == "Dockerfile" ]; then bundle exec rake generate; fi
-- docker build -f $DOCKER_FILE --build-arg CI_BUILD_ID=$TRAVIS_BUILD_ID --build-arg
-  CI_BUILD_REF=$TRAVIS_COMMIT --build-arg CI_BUILD_REF_NAME=$TRAVIS_BRANCH --build-arg
-  CI_BUILD_TIME=$CI_BUILD_TIME --build-arg CI_REGISTRY_IMAGE=$CI_REGISTRY_IMAGE --build-arg
-  CI_PROJECT_NAME=$TRAVIS_REPO_SLUG --pull -t $CONTAINER_IMAGE .
+- docker-compose build dev
+- docker-compose run --rm dev rake generate
+- docker-compose build prod
 after_script:
-- if [ "$DOCKER_FILE" == "Dockerfile" ]; then bundle exec rake deploy; fi
+- bundle exec rake deploy
 after_success:
 - docker login -u=$DOCKER_USERNAME -p=$DOCKER_PASSWORD
-- docker push $CONTAINER_IMAGE
-notifications:
-  slack:
-    on_pull_requests: false
-    secure: KTgEd5QGsr2HIwSQRkwryoyQZqL1d/D/EysniwUgRO89MP3sGu/6rC6FVXFHI3//s7rm8MWCoX+USfQffp9JtipxD95LRsGCF+0s51M1RF76wfW65IJJe+OFOB0r99lZmjk2oOI7dxy+BJ288+Cnz6jzmPm/jHxlS9/MPktwUKg=
+- docker image push $DOCKER_IMAGE_DEV
+- docker image push $DOCKER_IMAGE_PROD

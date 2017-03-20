@@ -148,9 +148,12 @@ Here are things you need to do:
   following: https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings.
   In the *Name* and *Value* fields, please add the info below correlatively: 
 
-  + Fill in "DOCKER_IMAGE" into the *Name* field, and your repo from https://hub.docker.com into the *Value*, for example, "hoatle/teracy-blog"  (from https://hub.docker.com/r/hoatle/teracy-blog/)
-  + Fill in "DOCKER_USERNAME" into the *Name* field and your Docker username into the *Value*  field
-  + Fill in "DOCKER_PASSWORD" into the *Name* field and your Docker password into the *Value* field
+  + Fill in "DOCKER_USER" into the *Name* field and your Docker username or organization into the *Value* field.
+    For example: teracy, hoatle or hoavt.
+  + Fill in "DOCKER_REPO" into the *Name* field and your Docker image repo name into the *Value* field.
+    For example: "teracy-blog"
+  + Fill in "DOCKER_USERNAME" into the *Name* field and your Docker username into the *Value* field.
+  + Fill in "DOCKER_PASSWORD" into the *Name* field and your Docker password into the *Value* field.
 
 And you're done!
 
