@@ -1,13 +1,80 @@
-version: "2"
+version: "3"
 
 services:
+
   dev:
+    container_name: teracy-blog_dev
     build:
       context: .
       dockerfile: Dockerfile-dev
-    image: teracy/blog:dev_latest
+      args:
+        CI_BUILD_ID: ${CI_BUILD_ID}
+        CI_BUILD_REF: ${CI_BUILD_REF}
+        CI_BUILD_REF_NAME: ${CI_BUILD_REF_NAME}
+        CI_BUILD_TIME: ${CI_BUILD_TIME}
+        CI_REGISTRY_IMAGE: ${CI_REGISTRY_IMAGE}
+        CI_PROJECT_NAME: ${CI_PROJECT_NAME}
+        CI_BUILD_NUMBER: ${CI_BUILD_NUMBER}
+        CI_BUILDER: ${CI_BUILDER}
+    image: ${DOCKER_IMAGE_DEV:-teracy/blog:dev_latest}
+    environment:
+      - VIRTUAL_HOST=dev.blog.teracy.dev
+      # TODO(hoatle): need to remove this to support https by default
+      - HTTPS_METHOD=noredirect
     command: bash -c "rake generate && rake preview"
     ports:
-      - "4000:4000"
+      - 4000
     volumes:
       - .:/opt/app
+    # to get this work with https://github.com/jwilder/nginx-proxy
+    # related: https://github.com/jwilder/nginx-proxy/issues/305
+    network_mode: bridge
+
+
+  prod:
+    container_name: teracy-blog_prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CI_BUILD_ID: ${CI_BUILD_ID}
+        CI_BUILD_REF: ${CI_BUILD_REF}
+        CI_BUILD_REF_NAME: ${CI_BUILD_REF_NAME}
+        CI_BUILD_TIME: ${CI_BUILD_TIME}
+        CI_REGISTRY_IMAGE: ${CI_REGISTRY_IMAGE}
+        CI_PROJECT_NAME: ${CI_PROJECT_NAME}
+        CI_BUILD_NUMBER: ${CI_BUILD_NUMBER}
+        CI_BUILDER: ${CI_BUILDER}
+    image: ${DOCKER_IMAGE_PROD:-teracy/blog:latest}
+    environment:
+      - VIRTUAL_HOST=blog.teracy.dev
+      - HTTPS_METHOD=noredirect
+    ports:
+      - 80
+    # to get this work with https://github.com/jwilder/nginx-proxy
+    # related: https://github.com/jwilder/nginx-proxy/issues/305
+    network_mode: bridge
+
+  review:
+    container_name: teracy-blog_review
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CI_BUILD_ID: ${CI_BUILD_ID}
+        CI_BUILD_REF: ${CI_BUILD_REF}
+        CI_BUILD_REF_NAME: ${CI_BUILD_REF_NAME}
+        CI_BUILD_TIME: ${CI_BUILD_TIME}
+        CI_REGISTRY_IMAGE: ${CI_REGISTRY_IMAGE}
+        CI_PROJECT_NAME: ${CI_PROJECT_NAME}
+        CI_BUILD_NUMBER: ${CI_BUILD_NUMBER}
+        CI_BUILDER: ${CI_BUILDER}
+    image: ${DOCKER_IMAGE_REVIEW:-teracy/blog:latest}
+    environment:
+      - VIRTUAL_HOST=review.blog.teracy.dev
+      - HTTPS_METHOD=noredirect
+    ports:
+      - 80
+    # to get this work with https://github.com/jwilder/nginx-proxy
+    # related: https://github.com/jwilder/nginx-proxy/issues/305
+    network_mode: bridge
