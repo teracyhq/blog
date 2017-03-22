@@ -23,7 +23,7 @@ published: true
 
 **Note:**
 
-This post is outdated, please follow [How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate](/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/)
+This post is outdated, please follow the [How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate](/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/)
 blog post instead.
 
 -------

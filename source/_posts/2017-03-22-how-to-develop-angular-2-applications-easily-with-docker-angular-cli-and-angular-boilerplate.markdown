@@ -37,9 +37,9 @@ Received Feedbacks
 
 We received some outstanding feedbacks and questions about:
 
-- Problems when running Docker images after pulling the built Docker images
-- How to build prod Docker image and run it
-- How to get `npm` packages into the `node_modules` to work within your IDE, editor
+- Problems when running Docker images after pulling the built Docker images.
+- How to build prod Docker image and run it.
+- How to get `npm` packages into the `node_modules` to work within your IDE, editor.
 
 And in this blog post, we're going to solve all of them and even with more best practices.
 
@@ -83,23 +83,23 @@ Best practices
 By looking into the `angular-boilerplate` or `angular-hello-world`, you can see the following best
 practices:
 
-- we should build the production Docker image for production deployment
+- We should build the production Docker image for production deployment.
 
-- we should work on dev mode on local dev
+- We should work on dev mode on local dev.
 
-- we should work on prod mode on local dev
+- We should work on prod mode on local dev.
 
-- we should review others' work on local dev
+- We should review others' work on local dev.
 
-- we should use alias domains instead of fixed ports to avoid conflicts
+- We should use alias domains instead of fixed ports to avoid conflicts.
 
-- we should generate `node_modules` to work on the npm packages safely within your IDE
+- We should generate `node_modules` to work on the npm packages safely within your IDE.
 
-- we should use `yarn` instead `npm` as the node package manager
+- We should use `yarn` instead `npm` as the node package manager.
 
-- we should test both dev and prod modes on local dev
+- We should test both dev and prod modes on local dev.
 
-- we should test both http and https modes on local dev 
+- We should test both http and https modes on local dev.
 
 All the instruction should be updated in the README file, please follow there to apply for your
 project: https://github.com/acme101/angular-hello-world/blob/develop/README.md
@@ -114,4 +114,4 @@ we should do so that everyone can follow easily and we can support each other wi
 Hopefully, this will help you a lot with your Angular projects and any other projects that you can
 apply similarly.
 
-Happy hacking and don't forget to let us know your feedbacks and questions by commenting!
+Happy hacking and don't forget to let us know your feedbacks and questions by leaving your comments!
