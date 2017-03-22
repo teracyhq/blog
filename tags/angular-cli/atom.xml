@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: angular-cli | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/angular-cli/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-03-21T05:21:07+00:00</updated>
+  <updated>2017-03-22T08:41:53+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -14,11 +14,109 @@
 
   
   <entry>
+    <title type="html"><![CDATA[How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate]]></title>
+    <link href="http://blog.teracy.com/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/"/>
+    <updated>2017-03-22T18:16:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/03/22/acme101-angular-hello-world.gif" title="Acme 101 angular-hello-world" ></p>
+
+<p>About six months ago we published
+<a href="/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/">How to Develop Angular 2 Applications Easily With Docker and Angular-cli</a> which received a lot of
+Angular community feedbacks and questions.</p>
+
+<p>6 months has passed and we&rsquo;d like to share more best practices to develop Angular applications with
+Docker after working on it for a while.</p>
+
+<!-- more -->
+
+
+<h2>Received Feedbacks</h2>
+
+<p>We received some outstanding feedbacks and questions about:</p>
+
+<ul>
+<li>Problems when running Docker images after pulling the built Docker images.</li>
+<li>How to build prod Docker image and run it.</li>
+<li>How to get <code>npm</code> packages into the <code>node_modules</code> to work within your IDE, editor.</li>
+</ul>
+
+
+<p>And in this blog post, we&rsquo;re going to solve all of them and even with more best practices.</p>
+
+<h2>angular-boilerplate</h2>
+
+<p>Setting up Angular projects with Docker to get it work properly is not easy. Luckily, we&rsquo;ve done
+all the heavy lifting for you with the <code>angular-boilerplate</code> project.</p>
+
+<p><code>angular-boilerplate</code> was created as a seed project that can be used to generate any new Angular
+projects having Docker and CI/CD system support.</p>
+
+<p>To generate a new Angular project, you can check out the README.md file to follow.</p>
+
+<h2>angular-hello-world</h2>
+
+<p>In this section, I&rsquo;ll introduce you the best way to set up a development environment and you can apply
+it for all your projects, not just Angular projects. After some first required steps to set up
+<code>acme-dev</code>, after <code>$ vagrant up</code>, you can start coding immediately, you don&rsquo;t have to learn the set
+up steps at first, but defer it later.</p>
+
+<p>Suppose that we&rsquo;re in Acme organization and we need to work on the <code>angular-hello-world</code> project.</p>
+
+<p>Let&rsquo;s follow the README file here: <a href="https://github.com/acme101/angular-hello-world">https://github.com/acme101/angular-hello-world</a></p>
+
+<p>It tells us to follow <a href="https://github.com/acme101/dev-setup/blob/master/README.md">https://github.com/acme101/dev-setup/blob/master/README.md</a></p>
+
+<p>By setting up <code>acme-dev</code>, we can use it for all types of projects with different stacks with the same
+set up workflow, it means that we can save a lot of time and effort to add more and more projects.</p>
+
+<p>Re-using and scaling boots productivity and cost savings.</p>
+
+<h2>Best practices</h2>
+
+<p>By looking into the <code>angular-boilerplate</code> or <code>angular-hello-world</code>, you can see the following best
+practices:</p>
+
+<ul>
+<li><p>We should build the production Docker image for production deployment.</p></li>
+<li><p>We should work on dev mode on local dev.</p></li>
+<li><p>We should work on prod mode on local dev.</p></li>
+<li><p>We should review others' work on local dev.</p></li>
+<li><p>We should use alias domains instead of fixed ports to avoid conflicts.</p></li>
+<li><p>We should generate <code>node_modules</code> to work on the npm packages safely within your IDE.</p></li>
+<li><p>We should use <code>yarn</code> instead <code>npm</code> as the node package manager.</p></li>
+<li><p>We should test both dev and prod modes on local dev.</p></li>
+<li><p>We should test both http and https modes on local dev.</p></li>
+</ul>
+
+
+<p>All the instruction should be updated in the README file, please follow there to apply for your
+project: <a href="https://github.com/acme101/angular-hello-world/blob/develop/README.md">https://github.com/acme101/angular-hello-world/blob/develop/README.md</a></p>
+
+<h2>Summary</h2>
+
+<p>All the heavy lifting and best practices are documented into the corresponding projects, that&rsquo;s how
+we should do so that everyone can follow easily and we can support each other with ease, too.</p>
+
+<p>Hopefully, this will help you a lot with your Angular projects and any other projects that you can
+apply similarly.</p>
+
+<p>Happy hacking and don&rsquo;t forget to let us know your feedbacks and questions by leaving your comments!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How to develop Angular 2 applications easily with Docker and angular-cli]]></title>
     <link href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/"/>
     <updated>2016-09-22T12:44:00+00:00</updated>
     <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
     <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
+
+<p><strong>Note:</strong></p>
+
+<p>This post is outdated, please follow the <a href="/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/">How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate</a>
+blog post instead.</p>
+
+<hr />
 
 <p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
 getting started article from the Angular 2 official documentation. That&rsquo;s the reason why

@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-03-21T05:21:07+00:00</updated>
+  <updated>2017-03-22T08:41:53+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate]]></title>
+    <link href="http://blog.teracy.com/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/"/>
+    <updated>2017-03-22T18:16:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2017/03/22/acme101-angular-hello-world.gif" title="Acme 101 angular-hello-world" ></p>
+
+<p>About six months ago we published
+<a href="http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/">How to Develop Angular 2 Applications Easily With Docker and Angular-cli</a> which received a lot of
+Angular community feedbacks and questions.</p>
+
+<p>6 months has passed and we&rsquo;d like to share more best practices to develop Angular applications with
+Docker after working on it for a while.</p>
+
+<!-- more -->
+
+
+<h2>Received Feedbacks</h2>
+
+<p>We received some outstanding feedbacks and questions about:</p>
+
+<ul>
+<li>Problems when running Docker images after pulling the built Docker images.</li>
+<li>How to build prod Docker image and run it.</li>
+<li>How to get <code>npm</code> packages into the <code>node_modules</code> to work within your IDE, editor.</li>
+</ul>
+
+
+<p>And in this blog post, we&rsquo;re going to solve all of them and even with more best practices.</p>
+
+<h2>angular-boilerplate</h2>
+
+<p>Setting up Angular projects with Docker to get it work properly is not easy. Luckily, we&rsquo;ve done
+all the heavy lifting for you with the <code>angular-boilerplate</code> project.</p>
+
+<p><code>angular-boilerplate</code> was created as a seed project that can be used to generate any new Angular
+projects having Docker and CI/CD system support.</p>
+
+<p>To generate a new Angular project, you can check out the README.md file to follow.</p>
+
+<h2>angular-hello-world</h2>
+
+<p>In this section, I&rsquo;ll introduce you the best way to set up a development environment and you can apply
+it for all your projects, not just Angular projects. After some first required steps to set up
+<code>acme-dev</code>, after <code>$ vagrant up</code>, you can start coding immediately, you don&rsquo;t have to learn the set
+up steps at first, but defer it later.</p>
+
+<p>Suppose that we&rsquo;re in Acme organization and we need to work on the <code>angular-hello-world</code> project.</p>
+
+<p>Let&rsquo;s follow the README file here: <a href="https://github.com/acme101/angular-hello-world">https://github.com/acme101/angular-hello-world</a></p>
+
+<p>It tells us to follow <a href="https://github.com/acme101/dev-setup/blob/master/README.md">https://github.com/acme101/dev-setup/blob/master/README.md</a></p>
+
+<p>By setting up <code>acme-dev</code>, we can use it for all types of projects with different stacks with the same
+set up workflow, it means that we can save a lot of time and effort to add more and more projects.</p>
+
+<p>Re-using and scaling boots productivity and cost savings.</p>
+
+<h2>Best practices</h2>
+
+<p>By looking into the <code>angular-boilerplate</code> or <code>angular-hello-world</code>, you can see the following best
+practices:</p>
+
+<ul>
+<li><p>We should build the production Docker image for production deployment.</p></li>
+<li><p>We should work on dev mode on local dev.</p></li>
+<li><p>We should work on prod mode on local dev.</p></li>
+<li><p>We should review others&#8217; work on local dev.</p></li>
+<li><p>We should use alias domains instead of fixed ports to avoid conflicts.</p></li>
+<li><p>We should generate <code>node_modules</code> to work on the npm packages safely within your IDE.</p></li>
+<li><p>We should use <code>yarn</code> instead <code>npm</code> as the node package manager.</p></li>
+<li><p>We should test both dev and prod modes on local dev.</p></li>
+<li><p>We should test both http and https modes on local dev.</p></li>
+</ul>
+
+
+<p>All the instruction should be updated in the README file, please follow there to apply for your
+project: <a href="https://github.com/acme101/angular-hello-world/blob/develop/README.md">https://github.com/acme101/angular-hello-world/blob/develop/README.md</a></p>
+
+<h2>Summary</h2>
+
+<p>All the heavy lifting and best practices are documented into the corresponding projects, that&rsquo;s how
+we should do so that everyone can follow easily and we can support each other with ease, too.</p>
+
+<p>Hopefully, this will help you a lot with your Angular projects and any other projects that you can
+apply similarly.</p>
+
+<p>Happy hacking and don&rsquo;t forget to let us know your feedbacks and questions by leaving your comments!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[3 mẹo quản lý thời gian thực sự hiệu quả]]></title>
@@ -2728,6 +2819,13 @@ Khi bạn quan sát người dùng chặt chẽ,họ sẽ càng có ý thức v�
     <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
     <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
 
+<p><strong>Note:</strong></p>
+
+<p>This post is outdated, please follow the <a href="http://blog.teracy.com/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/">How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate</a>
+blog post instead.</p>
+
+<hr />
+
 <p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
 getting started article from the Angular 2 official documentation. That&rsquo;s the reason why
 <a href="https://cli.angular.io/">angular-cli</a> is created to ease the pain. <code>angular-cli</code> is a great CLI
@@ -2873,87 +2971,6 @@ and <code>angular-cli</code> by using <code>docker-angular-cli</code>.</p>
 applications for you!</p>
 
 <p>Happy developing!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cách xây dựng sản phẩm]]></title>
-    <link href="http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham/"/>
-    <updated>2016-09-01T16:56:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/09/01/cach-xay-dung-san-pham</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/09/15/looking-glass.jpg" title="Looking Glass" ></p>
-
-<p style="text-align:center;"> <em>Ảnh của <a href="https://www.flickr.com/photos/corpz/5634268846/">Alex Kislow</a></em></p>
-
-<p>Tôi vừa có dịp trình bày tại <a href="http://thenextweb.com/conference/europe/#gref">TNW Europe</a> về <a href="https://www.youtube.com/watch?v=IIm289_YMIE&amp;index=9&amp;list=PL3_sP0zWUT12Wi7nYBoejXjOA8srrTJgi">framework mà chúng tôi sử dụng tại Facebook để giúp chúng tôi tập trung vào tiến trình phát triển sản phẩm của mình</a>. Việc này đã giúp tôi suy nghĩ rất nhiều về những bài học mà bao năm qua tôi đã học được về việc cần có gì để có thể xây dựng được những sản phẩm tuyệt vời.
-Danh sách sau đây chưa hoàn thành hoặc không chắc chắn là đúng, nếu mà có 1 danh sách hoàn hảo các bước cần làm (Bước<em> 1: Bắt đầu. </em>Bước<em> 2: ??? </em>Bước<em> 3: Thu tiền!</em>), thì có lẽ chúng tôi đã chi một khoản tiền cho nó xong rồi ngồi chờ xem các sản phẩm mới tuyệt vời đua nhau nở rộ như là vườn hoa tháng 5 rồi.
-Cuộc du hành mới được 1% thôi, hãy cứ theo dõi và học hỏi nhé.</p>
-
-<!-- more -->
-
-
-<h4><strong>Tổng quát</strong></h4>
-
-<ol>
-<li><p>Sản phẩm có thành công vì nó giải quyết được vấn đề cho mọi người. Nghe thì rất căn bản, nhưng mà là thứ quan trọng duy nhất cần phải được hiểu để có thể xây dựng được sản phẩm chất lượng.</p></li>
-<li><p>Bước đầu tiên khi làm cái gì đó mới là bạn phải hiểu được vấn đề cần phải giải quyết và giải quyết cho ai. Điều này khá rõ ràng và cần được làm rõ trước khi bạn nghĩ tới giải pháp nào.</p></li>
-<li><p>Hãy tự hỏi bản thân &ldquo;Tại sao vấn đề này đáng được giải quyết?&rdquo;.</p></li>
-<li><p>Nếu đối tượng bạn nhắm tới là 1 nhóm nhỏ xác định nào đó (bạn có thể nằm trong nhóm này), thì bạn có thể dựa vào trực giác của mình để tự đưa ra quyết định xây dựng sản phẩm nó như thế nào. Nếu không, thì bạn phải dựa vào các dữ liệu đã nghiên cứu để tạo quyết định cho mình.</p></li>
-<li><p>Nếu bạn là người sáng lập (start-up founder), thì con đường sẽ dễ dàng hơn nếu bạn đi theo hướng giải quyết vấn đề cho một nhóm đối tượng khách hàng nào đó, sau đó sẽ mở rộng đối tượng khách hàng sau khi đã có một vài kết quả ban đầu.</p></li>
-<li><p>Cái vấn đề mà bạn đang muốn giải quyết cần phải dễ dàng trao đổi, giao tiếp trong 1 vài câu ngắn gọn và được ủng hộ từ một ai đó trong nhóm đối tượng khách hàng của bạn, nếu không thì hãy cho nó là cái vấn đề nguy hiểm cần được quan tâm (<a href="http://www.urbandictionary.com/define.php?term=red%20flag">red flag</a>).</p></li>
-</ol>
-
-
-<h4><strong>Thực hiện</strong></h4>
-
-<ol>
-<li><p>Thực hiện tốt là có 1 cái kết luận đáng tin trong thời gian ngắn nhất có thể.</p></li>
-<li><p>Thực hiện không tốt là khi bạn thử làm cái gì đó, nó thất bại và:</p>
-
-<ol>
-<li><p>Bạn không rút ra được bài học nào để có thể áp dụng vào các dự án tương lai (vì bạn không biết tại sao nó thất bại)</p></li>
-<li><p>Bạn mất 1 năm để học được 1 bài học nào đó trong khi con đường thông minh hơn chỉ mất bạn 3 tháng.</p></li>
-</ol>
-</li>
-<li><p>Vấn đề chủ yếu phân cách giữa 1 đội thành công và không thành công là không phải họ làm những việc có thất bại hay không (chuyện tất yếu sẽ xảy ra), mà là họ thực hiện nó kiên định như thế nào.</p></li>
-<li><p>Khi truy tìm giải pháp cho 1 vấn đề nào đó, hãy đào rộng trước khi đào sâu. Thu thập ý kiến (Brainstorm) để tìm ra 10, 20, 50 giải pháp cho cái vấn đề đó trước khi chọn giải pháp tốt nhất. 5 ý tưởng đầu tiên sẽ là cái tất nhiên, sáng tạo sẽ xảy ra khi bạn đào sâu hơn vào ý tưởng 11, 20 hay 50.</p></li>
-<li><p>Nếu bạn đang thuyết trình 1 bản kế hoạch sản phẩm và ai đó có hỏi &ldquo;Bạn có bao giờ thử giải pháp X thay cho cái này chưa?&rdquo; và câu trả lời của bạn là “Không&#8221; thì đó chính là cái dấu hiệu nguy hiểm <a href="http://www.urbandictionary.com/define.php?term=red%20flag">red flag</a> của quá trình khai thác ý tưởng và nó chưa đủ nghiêm ngặt.</p></li>
-<li><p>Sử dụng kinh nghiệm đã trải qua để giúp bạn thu hẹp các ý tưởng tốt nhất. (Ví dụ như lựa chọn N ý tưởng của các thành viên trong nhóm, rồi phác thảo nó ra và cho mọi người xem rồi xem phản ứng của họ).</p></li>
-<li><p>Khi bạn đã tìm được một giải pháp hãy đặt giả thuyết và tự hỏi điều gì sẽ xảy ra nếu bạn xây dựng theo cách như thế này? (ví dụ: &ldquo;Vấn đề mà chúng ta muốn xử lý đó là đảm bảo mọi công dân của thành phố biết được mỗi tuần sẽ có sự kiện nào đó xảy ra. Vậy thì giả thuyết sẽ là: chúng ta có thể thông báo cho X% công dân thông qua e-mail&rdquo;).</p></li>
-<li><p>Bạn phải tìm được cách để rút ngắn công việc rà soát các giả thuyết của mình. Bạn có thể thực hiện nó với một ai đó bất kỳ và xem liệu họ có thể hiểu mình đang nói gì? Bạn có thể thu thập ý kiến khách hàng và xem có đủ lượng người có hứng thú với ý tưởng của mình hay không? Bạn có thể làm nhanh 1 sản phẩm để minh hoạ và sẽ cho bạn 1 kết quả rõ ràng cho dù nó chưa hoàn thiện?</p></li>
-<li><p>Một khi bạn đã tìm được 1 giả thuyết hợp lý và rõ ràng, đừng cứ phải thử nghiệm nó ngay và luôn (vì có thể bạn tìm được 1 cách nào đó nhanh hơn), thay vào đó, hãy phân tách, hãy rà soát xem sản phẩm sẽ như thế nào khi nó được trau chuốt và thêm những tính năng mới, kiểm thử trường hợp khác nhau mà sản phẩm cần phải đạt được.</p></li>
-<li><p>Nếu dự án bạn đang làm nó lớn và có rất nhiều sự thay đổi khác nhau, hãy xem mình có thể chia nó ra nhiều cột mốc nhỏ và độc lập và có thể kiểm thử được. Đừng để mình rơi vào trường hợp khi mà bạn thực hiện 5 thay đổi và có một phần thay đổi gây ra sản phẩm bị lỗi, khi đó bạn không thể biết lỗi bị gây ra bởi phần nào.</p></li>
-<li><p>Tuỳ sản phẩm mà hãy xem xét và nhìn lại chúng, dù là thất bại hay thành công. Từ sản phẩm đó học được bài học gì? Đồng đội có học được gì hay không? Tương lai bạn có cần làm gì khác hơn? Sau đó hãy chia sẻ với tất cả người khác.</p></li>
-</ol>
-
-
-<h4><strong>Đo lường thành quả</strong></h4>
-
-<ol>
-<li><p>Làm thế nào để đo lường được thành công đối với kết quả lâu dài là điều rất quan trọng vì đó là cái mà mọi người mong đợi. Hãy chắc chắn thực hiện điều này vào đúng thời điểm (thậm chí còn quan trọng hơn cả việc bạn nghĩ &ldquo;Làm sao để làm được việc này?&rdquo;).</p></li>
-<li><p>Hãy xác định các số liệu được cho là thành công cho sản phẩm trước khi chúng được tung ra. Nếu không, sau khi đã có kết quả sản phẩm và bạn cố gắng giải thích các kết quả đó sẽ làm cho việc đánh giá thành công của sản phẩm không còn khách quan nữa.</p></li>
-<li><p>Với mỗi số liệu đạt được, hãy tạo ra 1 số liệu đối nghịch nào đó mà dựa vào đó có thể cho thấy sự việc này không phải là ngẫu nhiên mà ra (Ví dụ: Sản phẩm bán ra nhiều hơn là do chất lượng của sản phẩm đó tốt hơn)</p></li>
-<li><p>Nếu có số liệu nào đó thay đổi đột ngột, dù tốt hay xấu, hãy đặt câu hỏi &ldquo;Tại sao?&rdquo; trước khi lập kế hoạch để thúc đẩy hay giảm thiểu kết quả đó khi bạn chưa hiểu vì sao nó lại như thế.</p></li>
-<li><p>Hãy sử dụng công nghệ quả bóng thủy tinh (Crystal Ball) &ndash; phần mềm phân tích rủi ro để lựa chọn các cách đánh giá đúng sự thành công của sản phẩm. Hãy tự hỏi mình &ldquo;Nếu tôi có thể biết được tất cả về việc mọi người sử dụng sản phẩm của tôi ra sao, thì tôi muốn biết những gì về nó mà có thể biết được nó thành công hay không?&rdquo; Dựa vào câu trả lời đó rồi nhìn lại các số liệu thống kê gần với câu trả lời đó nhất.</p></li>
-<li><p>Mục tiêu luôn luôn phải đi đôi với thông tin bạn tin tưởng nhất. Nếu bạn đang làm việc để đạt được 1 mục tiêu đã xác định nào đó, và rồi trong quá trình làm phát hiện những thông tin mới mẻ khiến bạn thay đổi cách suy nghĩ, hãy tự hỏi mình có nên điều chỉnh mục tiêu của mình hay không dựa trên luồng thông tin mới này.</p></li>
-<li><p>Nếu bạn làm việc trong 1 đội nhóm nào đó nhưng mà bạn không đồng ý hay không hiểu gì về các đo lường thành quả của đội mình, hãy lên tiếng ngay và luôn, sớm còn hơn muộn khi mà mọi việc đã đâu vào đó.</p></li>
-<li><p>Nếu bạn hay dính vào việc tranh cãi với các thành viên trong đội nhóm của mình về việc hướng đi cho sản phẩm, có thể lý do chính là do sự không hợp ý, không đồng tình về sự đo lường thành quả của nhau, hãy lên tiếng dựa trên 1 sự đề nghị nào đó hợp lý hơn.</p></li>
-<li><p>Nếu bạn đang cố để tìm ra liệu sản phẩm của mình có hợp với thị trường hay không (so với việc cố gắng tối ưu hóa hoặc mở rộng), có lẽ bạn nên đặt mục tiêu vào việc giữ lại khách hàng, tự đặt câu hỏi &ldquo;có bao nhiêu người sử dụng sản phẩm của mình và thấy đủ tốt và quay lại dùng tiếp?&rdquo; thay vì hỏi rằng có bao nhiêu khách hàng.</p></li>
-</ol>
-
-
-<h4><strong>Đội nhóm cơ động</strong></h4>
-
-<ol>
-<li><p>Đừng nghĩ về vai trò của bạn (bạn là designer thì cần làm gì? bạn là kĩ sư thì cần làm gì?) mà hãy nghĩ rằng &ldquo;Tôi có thể làm gì tốt nhất để có thể giúp đội của mình thành công?&rdquo;</p></li>
-<li><p>Các team ưu tiên tìm hiểu, giải quyết vấn đề có khả năng thành công cao hơn so với các team ưu tiên vào giải pháp. Bởi vì vấn đề cần giải quyết có tạo động lực, còn giải pháp thì có sẵn.</p></li>
-<li><p>Cuối cùng thì mọi người luôn có 1 ý tưởng giống nhau đó là xây dựng 1 cái gì đó tuyệt vời.</p></li>
-<li><p>Biết người biết ta, biết mình giỏi về cái gì, biết đồng đội giỏi về cái gì, rồi phân chia trách nhiệm cho mỗi người.</p></li>
-<li><p>Một team tốt và tồn tại lâu dài cần phải giao tiếp tốt, mỗi thành viên cần phải cảm thấy rằng họ có thể thể hiện cảm nghĩ, sự nhìn nhận của mình, cho dù nó có hơi trái ngược, nhiều luồng ý kiến đa dạng là cách để đạt được kết quả tốt nhất. Cho nên đừng sợ hãi thể hiện ý kiến của mình, đừng sợ hãi lặp đi lặp lại ý kiến đó nếu những người khác chưa hiểu bạn muốn gì, hãy khuyến khích và cố gắng để đồng đội cảm thấy làm điều đó là an toàn.</p></li>
-</ol>
-
-
-<p>Bài dịch từ: <a href="https://medium.com/the-year-of-the-looking-glass/building-products-91aa93bea4bb#.kd7eag413">Building Products</a></p>
 ]]></content>
   </entry>
   

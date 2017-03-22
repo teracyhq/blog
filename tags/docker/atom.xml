@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: docker | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/docker/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-03-21T05:21:07+00:00</updated>
+  <updated>2017-03-22T08:41:53+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate]]></title>
+    <link href="http://blog.teracy.com/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/"/>
+    <updated>2017-03-22T18:16:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/03/22/acme101-angular-hello-world.gif" title="Acme 101 angular-hello-world" ></p>
+
+<p>About six months ago we published
+<a href="/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/">How to Develop Angular 2 Applications Easily With Docker and Angular-cli</a> which received a lot of
+Angular community feedbacks and questions.</p>
+
+<p>6 months has passed and we&rsquo;d like to share more best practices to develop Angular applications with
+Docker after working on it for a while.</p>
+
+<!-- more -->
+
+
+<h2>Received Feedbacks</h2>
+
+<p>We received some outstanding feedbacks and questions about:</p>
+
+<ul>
+<li>Problems when running Docker images after pulling the built Docker images.</li>
+<li>How to build prod Docker image and run it.</li>
+<li>How to get <code>npm</code> packages into the <code>node_modules</code> to work within your IDE, editor.</li>
+</ul>
+
+
+<p>And in this blog post, we&rsquo;re going to solve all of them and even with more best practices.</p>
+
+<h2>angular-boilerplate</h2>
+
+<p>Setting up Angular projects with Docker to get it work properly is not easy. Luckily, we&rsquo;ve done
+all the heavy lifting for you with the <code>angular-boilerplate</code> project.</p>
+
+<p><code>angular-boilerplate</code> was created as a seed project that can be used to generate any new Angular
+projects having Docker and CI/CD system support.</p>
+
+<p>To generate a new Angular project, you can check out the README.md file to follow.</p>
+
+<h2>angular-hello-world</h2>
+
+<p>In this section, I&rsquo;ll introduce you the best way to set up a development environment and you can apply
+it for all your projects, not just Angular projects. After some first required steps to set up
+<code>acme-dev</code>, after <code>$ vagrant up</code>, you can start coding immediately, you don&rsquo;t have to learn the set
+up steps at first, but defer it later.</p>
+
+<p>Suppose that we&rsquo;re in Acme organization and we need to work on the <code>angular-hello-world</code> project.</p>
+
+<p>Let&rsquo;s follow the README file here: <a href="https://github.com/acme101/angular-hello-world">https://github.com/acme101/angular-hello-world</a></p>
+
+<p>It tells us to follow <a href="https://github.com/acme101/dev-setup/blob/master/README.md">https://github.com/acme101/dev-setup/blob/master/README.md</a></p>
+
+<p>By setting up <code>acme-dev</code>, we can use it for all types of projects with different stacks with the same
+set up workflow, it means that we can save a lot of time and effort to add more and more projects.</p>
+
+<p>Re-using and scaling boots productivity and cost savings.</p>
+
+<h2>Best practices</h2>
+
+<p>By looking into the <code>angular-boilerplate</code> or <code>angular-hello-world</code>, you can see the following best
+practices:</p>
+
+<ul>
+<li><p>We should build the production Docker image for production deployment.</p></li>
+<li><p>We should work on dev mode on local dev.</p></li>
+<li><p>We should work on prod mode on local dev.</p></li>
+<li><p>We should review others' work on local dev.</p></li>
+<li><p>We should use alias domains instead of fixed ports to avoid conflicts.</p></li>
+<li><p>We should generate <code>node_modules</code> to work on the npm packages safely within your IDE.</p></li>
+<li><p>We should use <code>yarn</code> instead <code>npm</code> as the node package manager.</p></li>
+<li><p>We should test both dev and prod modes on local dev.</p></li>
+<li><p>We should test both http and https modes on local dev.</p></li>
+</ul>
+
+
+<p>All the instruction should be updated in the README file, please follow there to apply for your
+project: <a href="https://github.com/acme101/angular-hello-world/blob/develop/README.md">https://github.com/acme101/angular-hello-world/blob/develop/README.md</a></p>
+
+<h2>Summary</h2>
+
+<p>All the heavy lifting and best practices are documented into the corresponding projects, that&rsquo;s how
+we should do so that everyone can follow easily and we can support each other with ease, too.</p>
+
+<p>Hopefully, this will help you a lot with your Angular projects and any other projects that you can
+apply similarly.</p>
+
+<p>Happy hacking and don&rsquo;t forget to let us know your feedbacks and questions by leaving your comments!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-b1 release]]></title>
@@ -715,6 +806,13 @@ application development.</p>
     <id>http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli</id>
     <content type="html"><![CDATA[<p><img class="center" src="/images/2016/09/22/angular-boilerplate.png" title="angular-boilerplate" ></p>
 
+<p><strong>Note:</strong></p>
+
+<p>This post is outdated, please follow the <a href="/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/">How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate</a>
+blog post instead.</p>
+
+<hr />
+
 <p>Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
 getting started article from the Angular 2 official documentation. That&rsquo;s the reason why
 <a href="https://cli.angular.io/">angular-cli</a> is created to ease the pain. <code>angular-cli</code> is a great CLI
@@ -856,69 +954,6 @@ and <code>angular-cli</code> by using <code>docker-angular-cli</code>.</p>
 applications for you!</p>
 
 <p>Happy developing!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev v0.3.0 release]]></title>
-    <link href="http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release/"/>
-    <updated>2014-07-17T03:39:00+00:00</updated>
-    <id>http://blog.teracy.com/2014/07/17/teracy-dev-v0-3-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/07/binary_code.jpg"></p>
-
-<p>Creating an isolated consistent development with a predefined consistent workflow is always our
-goal of development, that is the reason why we create <a href="https://github.com/teracyhq/dev">teracy-dev</a>. It is a virtualbox virtual
-machine (VM) that is provisioned by <code>Chef</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and managed by <code>vagrant</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>. Today, we are very happy
-to announce <a href="https://github.com/teracyhq/dev">teracy-dev</a> v0.3.0 released  after more than a year of development and usage.</p>
-
-<!-- more -->
-
-
-<p>We have used <code>vagrant</code> and <code>Chef</code> to provision a common VM for all our developers.
-It saves a lot of time and is a very cheap operation to destroy and provision a new VM again in minutes
-with the exactly defined provisioned software packages.</p>
-
-<p>We are now using <code>Chef</code> to provision a VM with <code>nodejs</code>, <code>mysql</code>, <code>php</code>, <code>coldfusion</code> for a client to
-develop a wordpress, a coldfusion and a MVC client (using backone.js with Grunt build), and it works
-great.</p>
-
-<p>Normally, it takes several days for new developers to install every packages on
-their machines and they must follow instruction guide, but not anymore with <a href="https://github.com/teracyhq/dev">teracy-dev</a>.
-Every new developer just needs 2-3 hours to get the dev VM provisoned for the first time (to
-download the basebox thanks to <code>vagrant cloud</code>) and it just takes less than 1 minute to
-<code>$ vagrant destroy</code> and <code>$ vagrant up</code> later again &ndash; this is a very cheap operation.</p>
-
-<p><a href="https://github.com/teracyhq/dev">teracy-dev</a> is really a general-purpose development environment for all developers for all platforms
-(<code>nodejs</code>, <code>python</code>, <code>java</code>, <code>php</code>, <code>mysql</code>, <code>posgreSQL</code>, <code>mongodb</code>) built-in and you could extend
-more by using <code>Chef</code> to create more cookbooks or recipes for it.</p>
-
-<p>However, we still have performance problem with shared folders. It is still quite slow and
-painful on Windows host machine. We are going to fix this problem on the next version (v0.4.0).</p>
-
-<p><code>docker</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> is very promising and we&rsquo;d like to use it for our workflow at v0.4.0, too.</p>
-
-<p>Please stay tuned for our upcoming exciting release version.</p>
-
-<p>Have a nice day and happy coding!</p>
-
-<h2>Credit</h2>
-
-<ul>
-<li><a href="http://www.superbwallpapers.com/computers/binary-code-9004/">http://www.superbwallpapers.com/computers/binary-code-9004/</a></li>
-</ul>
-
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://www.getchef.com/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://www.vagrantup.com/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://www.docker.com/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
 ]]></content>
   </entry>
   
