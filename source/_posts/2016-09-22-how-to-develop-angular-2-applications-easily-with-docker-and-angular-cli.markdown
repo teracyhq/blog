@@ -20,6 +20,14 @@ published: true
 ---
 {% img center /images/2016/09/22/angular-boilerplate.png angular-boilerplate %}
 
+
+**Note:**
+
+This post is outdated, please follow the [How to develop Angular 2+ applications easily with Docker, angular-cli and angular-boilerplate](/2017/03/22/how-to-develop-angular-2-applications-easily-with-docker-angular-cli-and-angular-boilerplate/)
+blog post instead.
+
+-------
+
 Everyone who is new to Angular 2 usually has many difficulties to get started with it, even with the
 getting started article from the Angular 2 official documentation. That's the reason why
 [angular-cli](https://cli.angular.io/) is created to ease the pain. `angular-cli` is a great CLI
