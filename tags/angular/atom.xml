@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: angular | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/angular/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-03-22T08:41:53+00:00</updated>
+  <updated>2017-03-23T02:13:33+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -51,7 +51,8 @@ all the heavy lifting for you with the <code>angular-boilerplate</code> project.
 <p><code>angular-boilerplate</code> was created as a seed project that can be used to generate any new Angular
 projects having Docker and CI/CD system support.</p>
 
-<p>To generate a new Angular project, you can check out the README.md file to follow.</p>
+<p>To generate a new Angular project, you can check out the
+<a href="https://github.com/teracyhq/angular-boilerplate/blob/master/README.md">README.md</a> file to follow.</p>
 
 <h2>angular-hello-world</h2>
 
