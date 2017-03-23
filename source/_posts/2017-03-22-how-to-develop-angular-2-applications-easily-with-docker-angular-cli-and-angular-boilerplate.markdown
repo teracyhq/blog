@@ -53,7 +53,8 @@ all the heavy lifting for you with the `angular-boilerplate` project.
 `angular-boilerplate` was created as a seed project that can be used to generate any new Angular
 projects having Docker and CI/CD system support.
 
-To generate a new Angular project, you can check out the README.md file to follow.
+To generate a new Angular project, you can check out the
+[README.md](https://github.com/teracyhq/angular-boilerplate/blob/master/README.md) file to follow.
 
 
 
