@@ -26,7 +26,7 @@ About six months ago we published
 [How to Develop Angular 2 Applications Easily With Docker and Angular-cli](/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/) which received a lot of
 Angular community feedbacks and questions.
 
-6 months has passed and we'd like to share more best practices to develop Angular applications with
+Six months has passed and we'd like to share more best practices to develop Angular applications with
 Docker after working on it for a while.
 
 <!-- more -->
