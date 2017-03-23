@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: teracy-dev | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/teracy-dev/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-03-23T02:13:33+00:00</updated>
+  <updated>2017-03-23T02:36:57+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -24,7 +24,7 @@
 <a href="/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/">How to Develop Angular 2 Applications Easily With Docker and Angular-cli</a> which received a lot of
 Angular community feedbacks and questions.</p>
 
-<p>6 months has passed and we&rsquo;d like to share more best practices to develop Angular applications with
+<p>Six months has passed and we&rsquo;d like to share more best practices to develop Angular applications with
 Docker after working on it for a while.</p>
 
 <!-- more -->
