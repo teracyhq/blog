@@ -74,4 +74,4 @@ Một người huấn luyện hoặc cố vấn tốt sẽ khích lệ, giúp b�
 Bạn phải tự chăm sóc lấy mình cả thể xác lẫn tinh thần. Nếu không, bạn sẽ không làm gì tốt được.
 
 
-
+Bản gốc: [10 Time-Management Tips for Busy Executives](www.inc.com/ariana-ayu/10-time-management-tips-for-busy-executives.html)
