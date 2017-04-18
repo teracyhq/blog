@@ -2,21 +2,22 @@
 layout: post
 title: "Vì sao ngắt kết nối internet sẽ giúp bạn tập trung hơn vào công việc?"
 author: hoavt
-date: 2016-08-06 04:40
+date: 2017-04-17 04:40
 comments: true
 categories:
     - "vi"
     - "trans"
 tags:
+    - time management
     - "internet"
     - "work"
-cover: /images/2017/04/17/ybat-tat-internet.jpeg
-description: Internet giúp bạn có thế giới trong tầm tay, nhưng lại làm bạn bị xao nhãng trong công việc.
-Hãy ngắt kết nối internet để cải thiện sự tập trung và năng suất lao động của bạn nhé.
-keywords: Internet, Focus, Productivity, năng suất, sự tập trung,
+cover: /images/2017/04/17/bat-tat-internet.jpeg
+description: Ngắt kết nối internet giúp bạn cải thiện sự tập trung và năng suất lao động như thế nào?
+keywords: Internet, Focus, Productivity, năng suất, sự tập trung
 published: true
 ---
-{% img center /images/2017/04/17/ybat-tat-internet.jpeg Bật hay tắt internet? %}
+
+{% img center /images/2017/04/17/bat-tat-internet.jpeg Bật hay tắt internet? %}
 
 Cuộc sống năm 2016 thật là tuyệt vời. Dù ở nhà hay ra ngoài thì các bạn vẫn luôn luôn được kết nối internet.
 
@@ -41,9 +42,9 @@ có một video, 1 tập phim, bài báo, trò chơi tiếp theo lôi cuốn b�
 
 Thế là cũng đủ hấp dẫn rồi, hầu như những người mà đọc những kiểu bài báo này đều biết rằng mất tập trung
 là rất tệ. Và trong những năm gần đây, có một số lượng lớn các bài báo và các sách nghiên cứu đã nói
-về ảnh hưởng xấu của việc xao nhãng.
+về ảnh hưởng xấu của việc xao lãng.
 
-Đặc biệt, [nghiên cứu của Gloria Mark và các đồng tác giả đã chỉ ra rằng](https://www.ics.uci.edu/~gmark/chi08-mark.pdf) xao nhẵng có mối liên quan với
+Đặc biệt, [nghiên cứu của Gloria Mark và các đồng tác giả đã chỉ ra rằng](https://www.ics.uci.edu/~gmark/chi08-mark.pdf) xao lãng có mối liên quan với
 mức độ căng thẳng hơn, sự thất vọng cao hơn, áp lực thời gian và nỗ lực. 
 
 Làm việc tập trung là rất khó. Chúng ta luôn bị phân tâm.
@@ -58,21 +59,22 @@ trong quá khứ. "Tôi sẽ không lãng phí thời gian lướt web nữa". �
 bằng cách tạo ra 1 hệ thống](http://dariusforoux.com/sciencebehindprocrastination/). Một trong những phần quan trọng nhất của hệ thống đó là:
 
 **HÃY NGẮT KẾT NỐI INTERNET**
+
 Và chỉ có duy nhất 1 lý do để làm điều đó: có quá nhiều cái gì đó thì lại là 1 điều xấu, thậm chí có
 quá nhiều điều tốt cũng thế.
 
 - Tập thể dục quá nhiều? Bạn sẽ bị quá sức.
 
-- Được yêu thương quá nhiều? Bạn sẽ trấn áp mọi người.
+- Được yêu thương quá nhiều? Bạn sẽ lấn át mọi người.
 
-- Làm việc quá nhiều? Bạn sẽ bị cháy.
+- Làm việc quá nhiều? Bạn sẽ bị kiệt sức.
 
 - Ăn quá nhiều? Bạn sẽ bị béo phì.
 
 - Quá nhiều nước? Bạn sẽ bị chết. 
 
 Vậy tại sao bạn phải sử dụng internet quá nhiều như thế? Tôi đã tự hỏi chính mình điều này cách đây 2 năm.
-Tôi đã không có câu trả lời. Vì vậy tôi đã nghĩ, tôi làm mọi thứ trong tầm kiểm duyệt của mình, tại sao 
+Tôi đã không có câu trả lời. Vì tôi đã nghĩ, tôi làm mọi thứ trong tầm kiểm duyệt của mình, tại sao 
 lại không có internet?
 
 Chẳng bao lâu tôi phát hiện ra rằng không hề có sự kiểm duyệt với việc sử dụng internet. Nó giống như
@@ -82,20 +84,20 @@ bạn lại cảm thấy hối tiếc vì đã làm thế.
 Và điều này tương tự như việc sử dụng internet. Nó quá hấp dẫn, thoả mãn sự tò mò của bạn và có ở mọi
 nơi. Do vậy mà bạn đi khắp nơi cùng với nó, YouTube, Whatsapp, Facebook, Snapchat...
 
-Tôi đang cố loại bỏ mọi thứ làm mình xao nhãng. Tuy nhiên, tôi cũng không muốn sống như một kẻ ẩn dật,
+Tôi đang cố loại bỏ mọi thứ làm mình xao lãng. Tuy nhiên, tôi cũng không muốn sống như một kẻ ẩn dật,
 vì vậy tôi phải tìm ra một nền tảng hợp lý có hiệu quả.
 
 Tôi đã tìm thấy rằng một tinh chỉnh đơn giản trong thái độ của tôi đối với internet đã làm được thủ thuật đó.
 
-**Tôi chuyển từ "Luôn luôn kết nối" thành "Luôn luôn ngắt kết nối".
+**Tôi chuyển từ "Luôn luôn kết nối" thành "Luôn luôn ngắt kết nối".**
 
 Thực tế, nó hoạt động như thế này:
 
 - Trên điện thoại của mình, wifi và dữ liệu di động thường xuyên bị tắt. Tôi chỉ bật khi nào mình cần.
 
-- Trên máy tính, tôi sử dụng 1 ứng dụng gọi là SelfControl (chỉ dành cho máy Mac) trong suốt thời gian
-tôi làm việc (nếu bạn dùng Windows thì hãy thử FocusMe).  Ứng dụng này chặn các trang web làm bạn bị 
-phân tán. Ưu điểm là những ứng mà tôi cần như Evernote, DayOne, Office365 vẫn kết nối vì thế tôi có
+- Trên máy tính, tôi sử dụng 1 ứng dụng gọi là [SelfControl](https://selfcontrolapp.com/) (chỉ dành cho máy Mac) trong suốt thời gian
+tôi làm việc (nếu bạn dùng Windows thì hãy thử [FocusMe](https://focusme.com/)).  Ứng dụng này chặn các trang web làm bạn bị 
+phân tán. Ưu điểm là những ứng dụng mà tôi cần như Evernote, DayOne, Office365 vẫn kết nối vì thế tôi có
 thể lưu trữ công việc của mình trong cloud.
 
 **"Luôn luôn kết nối" không phải là điều tốt cho sự tập trung và năng suất của bạn**
@@ -121,14 +123,14 @@ Bạn có thể tưởng tượng được không? Bạn đang ở trên giườ
 rất vui vì tôi đã xem quá nhiều bản biên dịch FAIL trên YouTube".
 
 Chắc chắn là bạn sẽ không nhìn lại thời gian đó. Có thể bạn sẽ nhớ lại thời gian bạn ở bên gia đình
-và bạn bè bạn, hay những kỷ niệm khi bạn đi du lịch, hay sự vui thích trong công việc của mình.
+và bạn bè của bạn, hay những kỷ niệm khi bạn đi du lịch, hay sự vui thích trong công việc của mình.
 
-Vì vậy hãy ngắt kết nối internet đi. Nó không mang lại cho bạn điều gì ngoài sự xao nhãng.
+Vì vậy hãy ngắt kết nối internet đi. Nó không mang lại cho bạn điều gì ngoài sự xao ãng.
 
-Và sau khi đọc bài báo snafy, bạn hãy ngắt kết nối internet đi nhé. 
+Và sau khi đọc bài báo này, bạn hãy ngắt kết nối internet đi nhé.
 
 Bạn sẽ có một số triệu chứng cai nghiện giống như lấy điện thoại khoảng 100 lần, hoặc ấn nút F trên
-bàn phím để mở Facebook mọi lúc. Nhưng tôi hứa với bạn điều này: Ngắt kết nối sẽ giúp bạn làm nhiều hơn
+bàn phím để mở Facebook mọi lúc. Nhưng tôi hứa với bạn điều này: Ngắt kết nối sẽ giúp bạn làm được nhiều hơn
 và đó chính là cuộc sống mà bạn hướng tới.
 
 Dịch từ: [Why Disconnecting From The Internet Improves Your Focus](https://medium.com/the-mission/why-disconnecting-from-the-internet-improves-your-focus-167a824c3bb5#.7gqqh9ow6)
