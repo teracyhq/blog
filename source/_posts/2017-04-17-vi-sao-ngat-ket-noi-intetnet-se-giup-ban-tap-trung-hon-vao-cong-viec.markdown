@@ -52,7 +52,7 @@ Làm việc tập trung là rất khó. Chúng ta luôn bị phân tâm.
 Và đó không phải là lỗi của bạn. Hầu hết các công nghệ đều tác động vào bản năng căn bản và khoá bạn lại,
 biến bạn thành người tiêu dùng.
 
-Vì vậy, đừng nghĩ về việc chống đối lại internet hay công nghệ. Tôi cá lá bạn cũng dã từng thử làm như thế 
+Vì vậy, đừng nghĩ về việc chống đối lại internet hay công nghệ. Tôi cá là bạn cũng đã từng thử làm như thế
 trong quá khứ. "Tôi sẽ không bao giờ lướt web vô thức hàng giờ liền nữa". Đúng thế!
 
 Điều gì sẽ mang lại hiệu quả đây? Gần đây, [tôi đã viết về việc làm thế nào để đánh bại sự trì hoãn
@@ -97,7 +97,7 @@ Thực tế, nó hoạt động như thế này:
 - Trên máy tính, tôi sử dụng 1 ứng dụng gọi là [SelfControl](https://selfcontrolapp.com/) (chỉ dành cho máy Mac) trong suốt thời gian
 tôi làm việc (nếu bạn dùng Windows thì hãy thử [FocusMe](https://focusme.com/)).  Ứng dụng này chặn các trang web làm bạn bị 
 phân tán. Ưu điểm là những ứng dụng mà tôi cần như Evernote, DayOne, Office365 vẫn kết nối vì thế tôi có
-thể lưu trữ công việc của mình trên đám mây.
+thể lưu trữ công việc của mình trên các dịch vụ đám mây.
 
 **"Luôn luôn kết nối" không phải là điều tốt cho sự tập trung và năng suất của bạn**
 
@@ -128,7 +128,7 @@ Vì vậy hãy ngắt kết nối internet đi. Nó không mang lại cho bạn 
 
 Và sau khi đọc bài viết này, bạn hãy ngắt kết nối internet đi nhé.
 
-Bạn sẽ có một số triệu chứng cai nghiện giống như lấy điện thoại khoảng 100 lần, hoặc ấn nút F trên
+Bạn sẽ có một số triệu chứng cai nghiện giống như cầm điện thoại lên khoảng 100 lần, hoặc ấn nút F trên
 bàn phím để mở Facebook mọi lúc. Nhưng tôi hứa với bạn điều này: Ngắt kết nối sẽ giúp bạn làm được nhiều hơn
 và đó chính là cuộc sống mà bạn hướng tới.
 
