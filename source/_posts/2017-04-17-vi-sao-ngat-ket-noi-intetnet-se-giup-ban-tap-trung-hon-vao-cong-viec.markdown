@@ -21,26 +21,26 @@ published: true
 
 Cuộc sống năm 2016 thật là tuyệt vời. Dù ở nhà hay ra ngoài thì các bạn vẫn luôn luôn được kết nối internet.
 
-Chỉ với chiếc điện thoại thông minh là bạn đã có cả thế giới trong tâm tay rồi. Dường như điều đó thật
+Chỉ với chiếc điện thoại thông minh là bạn đã có cả thế giới trong tầm tay rồi. Dường như điều đó thật
 tuyệt vời phải không? Nhưng thực tế lại không đúng như vậy.
 
-Hầu hết mọi người đang không sử dụng công nghệ mà là bị công nghệ sử dụng.
+Hầu hết mọi người đang không sử dụng công nghệ mà bị công nghệ sử dụng.
 
 Các ứng dụng, trò chơi, video, các bài báo, quảng cáo hay các chương trình TV đều được thiết kế để thu
-hút sự chú ý của bạn.  Vì vậy nếu như bạn không biết đến chúng thì bạn đã không lãng phí vô khối thời gian
-mỗi tuần. Bạn tập trung vào tất cả mọi nơi nhưng sự tập trung đó lại không dùng đúng nơi.
+hút sự chú ý của bạn. Do đó bạn đã lãng phí không biết bao nhiêu thời gian mỗi tuần mà không hề hay biết.
+Bạn tập trung vào tất cả mọi nơi nhưng sự tập trung đó lại không dừng đúng nơi.
 
 <!-- more -->
 
 
 Bạn có nghĩ vì sao Netflix bắt đầu mỗi tập phim trong 3, 2, 1 giây không? Khi điều đó xảy ra, bạn nghĩ:
-"Xem thêm một tập nữa."
+"Mặc kệ, xem thêm cái này đã."
 
-Điều này cũng tương tự với YouTube. Bạn có nghĩ vì sao những gợi ý của nó lại hay như thế không? Bạn bị
+Điều này cũng tương tự với YouTube. Bạn có nghĩ vì sao những gợi ý của nó lại tốt như thế không? Bạn bị
 đắm chìm vào trong những ràng buộc đó và điều này cũng áp dụng cho tất cả các nội dung. Sẽ luôn luôn
 có một video, 1 tập phim, bài báo, trò chơi tiếp theo lôi cuốn bạn.
 
-Thế là cũng đủ hấp dẫn rồi, hầu như những người mà đọc những kiểu bài báo này đều biết rằng mất tập trung
+Lạ kỳ rằng, hầu như những người mà đọc những thể loại báo kiểu này đều biết rằng mất tập trung
 là rất tệ. Và trong những năm gần đây, có một số lượng lớn các bài báo và các sách nghiên cứu đã nói
 về ảnh hưởng xấu của việc xao lãng.
 
@@ -49,35 +49,34 @@ mức độ căng thẳng hơn, sự thất vọng cao hơn, áp lực thời gi
 
 Làm việc tập trung là rất khó. Chúng ta luôn bị phân tâm.
 =========================================================
-Và đó không phải là lỗi của bạn. Hầu hết các công nghệ đều chạm vào não thằn lằn của bạn và khoá bạn lại,
+Và đó không phải là lỗi của bạn. Hầu hết các công nghệ đều tác động vào bản năng căn bản và khoá bạn lại,
 biến bạn thành người tiêu dùng.
 
 Vì vậy, đừng nghĩ về việc chống đối lại internet hay công nghệ. Tôi cá lá bạn cũng dã từng thử làm như thế 
-trong quá khứ. "Tôi sẽ không lãng phí thời gian lướt web nữa". Đúng thế!
+trong quá khứ. "Tôi sẽ không bao giờ lướt web vô thức hàng giờ liền nữa". Đúng thế!
 
 Điều gì sẽ mang lại hiệu quả đây? Gần đây, [tôi đã viết về việc làm thế nào để đánh bại sự trì hoãn
 bằng cách tạo ra 1 hệ thống](http://dariusforoux.com/sciencebehindprocrastination/). Một trong những phần quan trọng nhất của hệ thống đó là:
 
 **HÃY NGẮT KẾT NỐI INTERNET**
 
-Và chỉ có duy nhất 1 lý do để làm điều đó: có quá nhiều cái gì đó thì lại là 1 điều xấu, thậm chí có
-quá nhiều điều tốt cũng thế.
+Và chỉ có duy nhất 1 lý do để làm điều đó: cái gì nhiều quá cũng không tốt, kể cả nhiều thứ tốt cũng thế.
 
-- Tập thể dục quá nhiều? Bạn sẽ bị quá sức.
+- Luyện tập quá nhiều? Cơ thể sẽ bị quá tải.
 
-- Được yêu thương quá nhiều? Bạn sẽ lấn át mọi người.
+- Yêu quá nhiều? Bạn sẽ làm người khác ngột ngạt.
 
 - Làm việc quá nhiều? Bạn sẽ bị kiệt sức.
 
 - Ăn quá nhiều? Bạn sẽ bị béo phì.
 
-- Quá nhiều nước? Bạn sẽ bị chết. 
+- Quá nhiều nước? Bạn sẽ bị chết đuối.
 
 Vậy tại sao bạn phải sử dụng internet quá nhiều như thế? Tôi đã tự hỏi chính mình điều này cách đây 2 năm.
 Tôi đã không có câu trả lời. Vì tôi đã nghĩ, tôi làm mọi thứ trong tầm kiểm duyệt của mình, tại sao 
 lại không có internet?
 
-Chẳng bao lâu tôi phát hiện ra rằng không hề có sự kiểm duyệt với việc sử dụng internet. Nó giống như
+Tôi sớm phát hiện ra rằng không hề có sự kiểm duyệt với việc sử dụng internet. Nó giống như
 một bữa tiệc tự chọn vậy. Bạn đã no, nhưng bạn vẫn tiếp tục ăn. Và sau khi bạn đã nhồi nhét bản thân mình,
 bạn lại cảm thấy hối tiếc vì đã làm thế.
 
@@ -98,7 +97,7 @@ Thực tế, nó hoạt động như thế này:
 - Trên máy tính, tôi sử dụng 1 ứng dụng gọi là [SelfControl](https://selfcontrolapp.com/) (chỉ dành cho máy Mac) trong suốt thời gian
 tôi làm việc (nếu bạn dùng Windows thì hãy thử [FocusMe](https://focusme.com/)).  Ứng dụng này chặn các trang web làm bạn bị 
 phân tán. Ưu điểm là những ứng dụng mà tôi cần như Evernote, DayOne, Office365 vẫn kết nối vì thế tôi có
-thể lưu trữ công việc của mình trong cloud.
+thể lưu trữ công việc của mình trên đám mây.
 
 **"Luôn luôn kết nối" không phải là điều tốt cho sự tập trung và năng suất của bạn**
 
@@ -119,15 +118,15 @@ Vào cuối ngày, internet chỉ là một công cụ. Tuy nhiên, một số n
 mọi thứ. Nhưng tôi khá tự tin rằng, nhiều năm tới tôi sẽ không cần nhìn lại và hối tiếc vì đã không dành
 đủ thời gian cho internet.
 
-Bạn có thể tưởng tượng được không? Bạn đang ở trên giường bệnh và bạn nói với gia đình mình rằng: "Tôi
-rất vui vì tôi đã xem quá nhiều bản biên dịch FAIL trên YouTube".
+Bạn có thể tưởng tượng được không? Bạn đang hấp hối trên giường bệnh và bạn nói với gia đình mình rằng: "Tôi
+rất vui vì đã được xem quá nhiều FAIL Complilation trên YouTube".
 
 Chắc chắn là bạn sẽ không nhìn lại thời gian đó. Có thể bạn sẽ nhớ lại thời gian bạn ở bên gia đình
 và bạn bè của bạn, hay những kỷ niệm khi bạn đi du lịch, hay sự vui thích trong công việc của mình.
 
-Vì vậy hãy ngắt kết nối internet đi. Nó không mang lại cho bạn điều gì ngoài sự xao ãng.
+Vì vậy hãy ngắt kết nối internet đi. Nó không mang lại cho bạn điều gì ngoài sự xao lãng.
 
-Và sau khi đọc bài báo này, bạn hãy ngắt kết nối internet đi nhé.
+Và sau khi đọc bài viết này, bạn hãy ngắt kết nối internet đi nhé.
 
 Bạn sẽ có một số triệu chứng cai nghiện giống như lấy điện thoại khoảng 100 lần, hoặc ấn nút F trên
 bàn phím để mở Facebook mọi lúc. Nhưng tôi hứa với bạn điều này: Ngắt kết nối sẽ giúp bạn làm được nhiều hơn
