@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: heroku | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/heroku/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-03-23T02:36:57+00:00</updated>
+  <updated>2017-04-20T08:56:49+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -225,9 +225,9 @@ Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
 Content-Transfer-Encoding: 7bit
 Subject: Your signup at localhost.
 From: webmaster@localhost
-To: <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#x73;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#117;&#115;&#x65;&#x72;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#115;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#117;&#115;&#101;&#x72;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#x6f;&#x6d;</a>
+To: <a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#58;&#115;&#97;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#x75;&#x73;&#x65;&#114;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x73;&#x61;&#x6d;&#112;&#108;&#101;&#46;&#117;&#115;&#x65;&#114;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;</a>
 Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#50;&#x30;&#49;&#53;&#x31;&#x32;&#x32;&#49;&#49;&#x31;&#48;&#50;&#x33;&#x30;&#46;&#x32;&#51;&#52;&#x36;&#51;&#46;&#x38;&#x30;&#x38;&#x34;&#x35;&#x40;&#118;&#97;&#103;&#x72;&#97;&#x6e;&#x74;&#x2e;&#x76;&#x6d;">&#50;&#x30;&#x31;&#x35;&#x31;&#50;&#50;&#49;&#49;&#49;&#48;&#50;&#x33;&#48;&#46;&#x32;&#x33;&#x34;&#54;&#51;&#x2e;&#56;&#x30;&#x38;&#x34;&#x35;&#64;&#x76;&#97;&#x67;&#114;&#x61;&#110;&#x74;&#46;&#x76;&#x6d;</a></p>
+Message-ID: <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x32;&#x30;&#x31;&#53;&#49;&#50;&#50;&#49;&#49;&#x31;&#48;&#x32;&#51;&#x30;&#x2e;&#50;&#x33;&#x34;&#x36;&#x33;&#46;&#x38;&#48;&#56;&#52;&#53;&#64;&#118;&#97;&#x67;&#x72;&#x61;&#110;&#116;&#46;&#x76;&#x6d;">&#50;&#x30;&#x31;&#x35;&#49;&#50;&#x32;&#x31;&#49;&#x31;&#48;&#x32;&#51;&#48;&#46;&#50;&#51;&#52;&#54;&#x33;&#46;&#56;&#x30;&#x38;&#x34;&#x35;&#64;&#118;&#x61;&#x67;&#x72;&#x61;&#110;&#116;&#x2e;&#118;&#x6d;</a></p>
 
 <p>Dear hoatle,</p>
 
@@ -526,7 +526,7 @@ Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_gui
 on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
 
 <p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x68;&#x71;&#x40;&#116;&#x65;&#x72;&#x61;&#99;&#121;&#46;&#x63;&#x6f;&#x6d;">&#x68;&#113;&#64;&#x74;&#101;&#x72;&#x61;&#99;&#x79;&#x2e;&#x63;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
+<a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#104;&#113;&#64;&#116;&#101;&#114;&#x61;&#99;&#x79;&#x2e;&#99;&#111;&#109;">&#104;&#113;&#x40;&#x74;&#x65;&#114;&#x61;&#99;&#x79;&#46;&#x63;&#111;&#x6d;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
 
 <p>Happy Django developing!</p>
 
