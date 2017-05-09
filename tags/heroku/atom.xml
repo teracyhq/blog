@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag: heroku | Teracy's Blog]]></title>
+  <title><![CDATA[Tag: Heroku | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/heroku/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-05-04T05:03:29+00:00</updated>
+  <updated>2017-05-09T08:38:25+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -14,685 +14,246 @@
 
   
   <entry>
-    <title type="html"><![CDATA[how to use django-celery-email on Heroku]]></title>
-    <link href="http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku/"/>
-    <updated>2015-12-21T09:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2015/12/21/how-to-use-django-celery-email-on-heroku</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2015/12/21/django_celery.png" title="Django Celery" ></p>
+    <title type="html"><![CDATA[How to set up CI/CD system for Next.js with Docker on gitlab-ci, travis-ci, Heroku and Kubernetes]]></title>
+    <link href="http://blog.teracy.com/2017/05/09/how-to-set-up-ci-cd-system-for-next.js-with-docker-on-gitlab-ci-travis-ci-heroku-and-kubernetes/"/>
+    <updated>2017-05-09T01:14:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/05/09/how-to-set-up-ci-cd-system-for-next.js-with-docker-on-gitlab-ci-travis-ci-heroku-and-kubernetes</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/05/09/nextjs-hello-world-travis-ci.png" title="travis-ci builds" ></p>
 
-<p>When I was asked to use a distributed task queue for emails on a Django project, I chose
-django-celery-email. However, during developing and testing, I faced some problems due to the lack
-of clear guide from django-celery-email, so I wrote this post as a step by step guide for anyone
-who wants use it with much ease. So let&rsquo;s get started!</p>
+<p>Setting up a CI/CD (continuous integration/continuous delivery) system for Docker applications to be
+deployed on staging and production environment with scalability and high availability is not hard.
+It took a while to get it done properly, and today I will show you how to set up that system properly
+with a Next.js application as an example. You can apply the same process for all other kinds of
+Docker applications. So let&rsquo;s get started.</p>
 
 <!-- more -->
 
 
-<h2>Project Setup</h2>
+<h1>Prerequisites</h1>
+
+<p>Newcomers to Docker ecosystem can enjoy this tutorial.</p>
+
+<p>Experienced ones to Docker ecosystem can review this for your approach and suggest what we can do for
+a better approach.</p>
+
+<p>If you know these systems below, that&rsquo;s great and easier to follow this tutorial:</p>
 
 <ul>
-<li><p>You need to setup local development environment with teracy-dev v0.4.2:
-<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">http://dev.teracy.org/docs/0.4.2/getting_started.html</a></p></li>
-<li><p>We&rsquo;re going to use <a href="https://github.com/teracyhq/django-boilerplate">https://github.com/teracyhq/django-boilerplate</a> v0.4.0 to develop Django
-applications:</p></li>
+<li>Docker</li>
+<li>gitlab-ci, travis-ci as CI/CD system</li>
+<li>Heroku as a PaaS (Platform as a Service)</li>
+<li>Kubernetes (Production-Grade Container Scheduling and Management)</li>
+<li>Helm (The Kubernetes Package Manager)</li>
 </ul>
 
+
+<h1>Getting Started</h1>
+
+<p>First, you need to have Docker installed on your system. To make it easier for all platforms (Linux,
+macOS, Windows), we&rsquo;re going to use <code>teracy-dev</code> for local dev environment.</p>
+
+<p>To know why <code>teracy-dev</code>, see the blog <a href="/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">Teracy-dev &ndash; the Only Truly Universal Productive Development Platform With Docker on macOS, Linux and Windows</a>.</p>
+
+<p>You&rsquo;re not required to use teracy-dev, however, using it should help you follow this tutorial more easily.</p>
+
+<p>We&rsquo;re going to use <a href="https://github.com/acme101/nextjs-hello-world">https://github.com/acme101/nextjs-hello-world</a> as an example project.</p>
+
+<p><code>acme101</code> is a sample github organization which has all the best practices from <code>teracy-dev</code> applied
+for organizations, follow it and you can&rsquo;t get lost.</p>
+
+<p><code>nextjs-hello-world</code> is the simplest seed code for Next.js applications with Docker workflow, CI/CD system:</p>
+
+<ul>
+<li><p>CI/CD with gitlab-ci: <a href="https://gitlab.com/acme101/nextjs-hello-world/pipelines">https://gitlab.com/acme101/nextjs-hello-world/pipelines</a></p></li>
+<li><p>CI/CD with travis-ci: <a href="https://travis-ci.org/acme101/nextjs-hello-world/builds">https://travis-ci.org/acme101/nextjs-hello-world/builds</a></p></li>
+<li><p>Auto deployment to Heroku: <a href="https://acme-nextjs-staging.herokuapp.com/">https://acme-nextjs-staging.herokuapp.com/</a></p></li>
+<li><p>Auto deployment to GKE (Kubernetes) with terapp.com (A record domain): <a href="https://acme-nextjs-staging.terapp.com/">https://acme-nextjs-staging.terapp.com/</a></p></li>
+</ul>
+
+
+<p>To set up the project on local development:</p>
+
+<ul>
+<li><p>Follow: <a href="https://github.com/acme101/dev-setup/blob/master/README.md">https://github.com/acme101/dev-setup/blob/master/README.md</a></p></li>
+<li><p>Check out the repo into the <code>acme-dev/workspace</code> directory</p></li>
+</ul>
+
+
+<p>That&rsquo;s it, you&rsquo;re ready to work on the local dev environment.</p>
+
+<h1>Local Dev Environment</h1>
+
+<p>Our development philosophy is this: everything can and should be done on local development with
+consistent behaviors between all developers and production deployments.</p>
+
+<p>And Docker helps us with that to create a consistent build-time and run-time environment for all.</p>
+
+<p>Usually, there are 3 modes on local dev for our workflow:</p>
+
+<ul>
+<li><p>Dev Mode: developers work on this for new changes, this usually contains development dependencies.</p></li>
+<li><p>Prod Mode: developers need to make sure that production Docker image should work on local dev.
+This production Docker image, which is different from the one from dev mode, will contain only
+the production dependencies, and the runtime environment only.</p>
+
+<p>If developers can only make it work on dev mode, prod mode can break. If prod mode breaks, developers can
+check and fix it on local dev. This is really conveninent and time saving.</p></li>
+<li><p>Prod Review Mode: we should review the work from others and this mode help us for faster reviewing
+process. Basically, everyone&rsquo;s work branch will have the corresponding production Docker image that
+we can review it right away on our local dev environment. We don&rsquo;t have to checkout the codes to start
+reviewing.</p>
+
+<p>This is helpful for us to set up CI/CD system for reviewing process later: when a pull request is sent,
+the CI/CD system should deploy it right away for QA to validate, for example.</p></li>
+</ul>
+
+
+<p>The following is the more details about how to use these modes:</p>
+
+<h2>Dev Mode</h2>
+
+<p>To run dev mode on the current source code.</p>
 
 <p><code>
 $ vagrant ssh
 $ ws
-$ cd personal
-$ mkdir django-celery
-$ cd django-celery
-$ git init
-$ git remote add djbp https://github.com/teracyhq/django-boilerplate
-$ git fetch djbp
-$ git merge djbp/v0.4.0
+$ cd nextjs-hello-world
+$ docker-compose up -d dev &amp;&amp; docker-compose logs -f dev
 </code></p>
 
-<ul>
-<li>We need to create a virtual environment for the Django app and to install dependencies:</li>
-</ul>
+<p>Open dev.nextjs.acme.dev (http + https modes) to check it out.</p>
 
+<h2>Prod Mode</h2>
+
+<p>To run prod mode on the current source code.</p>
 
 <p><code>
-$ mkvirtualenv django-celery
-$ pip install -r requirements/dev.txt
+$ docker-compose run --rm dev yarn run build &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.prod.yml build prod &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d prod
 </code></p>
 
-<ul>
-<li>Set the required environment variables:</li>
-</ul>
-
-
-<p>By following <a href="http://12factor.net/config,">http://12factor.net/config,</a> we should <code>export</code> the required variables. For development
-convenience, .env file is supported and recommeded only for development mode. So let&rsquo;s create .env
-file at <code>django-celery/.env</code> with the following content:</p>
+<p>We usually scale at least 2 or more containers, so please scale it on local dev too to make sure scaling should work:</p>
 
 <p><code>
-ADMINS=(('&lt;your_name&gt;', '&lt;your_email&gt;'),)
-DATABASE_URL=sqlite:///project/data/dj-celery.db
+$ docker-compose -f docker-compose.yml -f docker-compose.prod.yml scale prod=2
 </code></p>
 
-<p><code>ADMINS</code> variable is used for testing emails, you should fill in your admins details.</p>
+<p>Open nextjs.acme.dev (http + https modes) to check it out.</p>
 
-<ul>
-<li>Run the Django application:</li>
-</ul>
-
+<p>Don&rsquo;t forget to remove the container after checking out for cleaning up:</p>
 
 <p><code>
-$ ./manage.py migrate # migrate for the first time to create db schema creation and migration
-$ ./manage.py runserver 0.0.0.0:8000
+$ docker-compose -f docker-compose.yml -f docker-compose.prod.yml stop prod &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.prod.yml rm -f prod
 </code></p>
 
-<p>You should see something like this:</p>
+<h2>Prod Review Mode</h2>
 
-<p>```
-(django-celery)vagrant@vagrant:~/workspace/personal/django-celery$ ./manage.py runserver 0.0.0.0:8000
-Performing system checks&hellip;</p>
+<p>To review prod mode from different built Docker image.</p>
 
-<p>System check identified no issues (0 silenced).
-December 01, 2015 &ndash; 13:09:11
-Django version 1.8.7, using settings &lsquo;settings.project.dev&rsquo;
-Starting development server at <a href="http://0.0.0.0:8000/">http://0.0.0.0:8000/</a>
-Quit the server with CONTROL-C.
-```</p>
+<p>For example, I need to review the <code>hoatle/nextjs-hello-world:features-1-something</code> Docker image
+from @hoatle.</p>
 
-<p>Open <a href="http://localhost:8000,">http://localhost:8000,</a> you should see the 404 error page and it&rsquo;s expected. We&rsquo;ll add
-functionalities for the application by next steps.</p>
+<p><code>
+$ export DOCKER_IMAGE_REVIEW=hoatle/nextjs-hello-world:features-1-something &amp;&amp; \
+docker-compose -f docker-compose.yml -f docker-compose.review.yml pull review &amp;&amp; \
+docker-compose -f docker-compose.yml -f docker-compose.review.yml up -d review
+</code></p>
+
+<p>We usually scale at least 2 or more containers, so please scale it on local dev too to make sure scaling should work:</p>
+
+<p><code>
+$ docker-compose -f docker-compose.yml -f docker-compose.review.yml scale review=2
+</code></p>
+
+<p>Open review.nextjs.acme.dev (http + https modes) to check it out.</p>
+
+<p>Don&rsquo;t forget to remove the containers after checking out for cleaning up:</p>
+
+<p><code>
+$ docker-compose -f docker-compose.yml -f docker-compose.review.yml stop review &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.review.yml rm -f review
+</code></p>
+
+<p>That&rsquo;s how we, developers, usually work on local development. And to streamline the work, we need
+to deploy the applications on production system.</p>
+
+<p>The <code>docker-compose</code> commands above are rather long, maybe you can create bash files to run more easily,
+for example, <code>$ dev.sh start</code>, <code>$ dev.sh stop</code>, <code>$ prod.sh build</code>, <code>$ prod.sh start</code>, <code>$ prod.sh stop</code>,
+<code>$ review.sh start &lt;image_for_review&gt;</code> and <code>$ review.sh stop</code>.</p>
+
+<h1>Production System</h1>
+
+<p>We build Docker images for deploying so we can leverage any system that accept Docker image.</p>
+
+<p>In this tutorial, we use Heroku and Kubernetes, but you can choose whatever system that Docker is supported.</p>
+
+<p>Heroku is very easy to be used, just push the Docker image and it should work.</p>
+
+<p>Kubernetes (K8s) and Helm is easy to work with, it&rsquo;s mature and it gives us more control over everything.
+I recommend using Kubernetes for production system to automate it all.</p>
 
 <h2>Heroku Deployment</h2>
 
-<p>Let&rsquo;s deploy the Django application on Heroku to apply continuous delivery philosophy.</p>
+<p>You can follow <a href="https://devcenter.heroku.com/articles/container-registry-and-runtime">https://devcenter.heroku.com/articles/container-registry-and-runtime</a> to deploy your
+Docker image to Heroku.</p>
 
-<p>Make sure you have an account at <a href="https://heroku.com">https://heroku.com</a></p>
+<h2>K8s Deployment</h2>
 
-<ul>
-<li>Install Heroku Toolbelt</li>
-</ul>
+<p>You can use Google Container Engine (GKE) to deploy K8s applications. Using Helm as the K8s package
+manager is more easier and convenient.</p>
 
+<p>I created the Helm chart for this application here:
+<a href="https://github.com/acme101/nextjs-hello-world/tree/develop/helm-charts/nextjs-hello-world">https://github.com/acme101/nextjs-hello-world/tree/develop/helm-charts/nextjs-hello-world</a></p>
 
-<p><code>
-$ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-</code></p>
-
-<ul>
-<li>Login</li>
-</ul>
-
+<p>We can install it right away:</p>
 
 <p><code>
-$ heroku login
+$ helm install halm-charts/nextjs-hello-world
 </code></p>
 
-<ul>
-<li>Create a Heroku application</li>
-</ul>
+<h1>CI/CD Systems</h1>
 
+<p>To automate all the development integration and production deployment, we use CI/CD systems. You can
+use any CI/CD systems available. In this sample project, I set up for gitlab-ci and travis-ci, they
+share the same steps and these steps can be applied to any other CI/CD systems.</p>
 
-<p><code>
-$ ws
-$ cd personal/django-celery
-$ heroku create &lt;your_app_name&gt;
-</code></p>
+<p>A typical CI/CD system will need to:</p>
 
 <ul>
-<li>Configure</li>
-</ul>
-
-
-<p><code>
-$ heroku config:set DJANGO_SETTINGS_MODULE=project.settings.prod
-$ heroku config:set ADMINS="(('&lt;your_name&gt;', '&lt;your_email&gt;'),)"
-</code></p>
+<li><p>check for new changes</p>
 
 <ul>
-<li>Deploy</li>
-</ul>
-
-
-<p><code>
-$ git push heroku master
-$ heroku run python manage.py migrate
-</code></p>
-
-<p>After that, you should access your deployment app at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/</p>
-
-<p>I created <code>dj-celery</code> app name and it&rsquo;s availalbe at: <a href="https://dj-celery.herokuapp.com/">https://dj-celery.herokuapp.com/</a></p>
-
-<p>From now on, to update the deployment on Heroku, we just need to push new commits to the heroku
-repository.</p>
-
-<h2>django-userena Setup</h2>
-
-<p>To see how emails work with celery, let&rsquo;s add user management functionalities which should also send
-emails for confirming when signing up.</p>
-
-<p>There is already an application for that, it is: <code>django-userena</code>.</p>
-
-<ul>
-<li><p>Install:</p>
-
-<p>By following the installation guide at:
-<a href="http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena">http://django-userena.readthedocs.org/en/latest/installation.html#installing-django-userena</a> and
-adapting to <code>django-boilerplate</code>.</p>
-
-<ul>
-<li><p>Add <code>django-userena&gt;=1.4.1,&lt;1.5.0</code> to <code>requirements/project/common.txt</code>, so we&rsquo;ll use 1.4.x
-versions of <code>django-userena</code> like I did at:
-<a href="https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c">https://github.com/hoatle/django-celery/commit/f153b2940aa1d3432f77fe5e5c5f219775ac071c</a></p></li>
-<li><p>Install with: <code>$ pip install -r requirements/dev.txt --upgrade</code> (<code>upgrade</code> here means installing
-and upgrading any outdated packages)</p></li>
+<li>code style</li>
+<li>security</li>
+<li>all kinds of tests</li>
 </ul>
 </li>
-<li><p>Configure:</p>
-
-<p>By following the guide at:
-<a href="http://django-userena.readthedocs.org/en/latest/installation.html#required-settings">http://django-userena.readthedocs.org/en/latest/installation.html#required-settings</a> like I did
-at: <a href="https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9">https://github.com/hoatle/django-celery/commit/bd566a86ff654b69463be649e561800782cd91c9</a></p>
-
-<p>There is a migration issue that requires to create apps/userena_patch like I did at:
-<a href="https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580">https://github.com/hoatle/django-celery/commit/5ef6393aa64a9064aefe399cc07d64e492b2d580</a></p></li>
-<li><p><code>makemigrations</code> for the accounts app:</p></li>
+<li><p>when checks passes, build the production Docker image and push to the Docker registry</p></li>
+<li><p>take the production Docker image and deploy it to the production systems</p></li>
+<li><p>everyone enjoys the new changes!</p></li>
 </ul>
 
 
-<p><code>
-$ ./manage.py makemigrations
-</code></p>
+<p>The CI/CD system should work on any forked repo, too.</p>
 
-<p>  Commit the changes like I did at:
-  <a href="https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578">https://github.com/hoatle/django-celery/commit/d306ed4a25b1494a0955f08a8a7aa598fa30b578</a></p>
+<p>And to get it work, we need to provide the some environment variables settings. To know more about
+some of these variables, please follow:</p>
 
 <ul>
-<li>Migrate and Run:</li>
+<li><p>How to deploy on Heroku: <a href="https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-heroku.md">https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-heroku.md</a></p></li>
+<li><p>How to deploy on GCP: <a href="https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-gcp.md">https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-gcp.md</a></p></li>
 </ul>
 
 
-<p><code>
-$ ./manage.py migrate
-$ ./manage.py check_permissions
-$ ./manage.py runserver 0.0.0.0:8000
-</code></p>
+<h1>Sum up</h1>
 
-<p>You should see the page of <a href="http://localhost:8000/accounts/signup">http://localhost:8000/accounts/signup</a> now. Let&rsquo;s signup a user and you
-should see something similar on the console:</p>
+<p>In this tutorial, I&rsquo;ve introduced the development philosophy and workflow that we apply for all our
+projects at Teracy and our clients' projects. I hope that it could be helpful to others to boost
+your productivity with software development.</p>
 
-<p>```
-MIME-Version: 1.0
-Content-Type: text/plain; charset=&ldquo;utf-8&rdquo;
-Content-Transfer-Encoding: 7bit
-Subject: Your signup at localhost.
-From: webmaster@localhost
-To: <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x73;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x75;&#115;&#101;&#x72;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#109;">&#115;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#x75;&#115;&#x65;&#114;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a>
-Date: Mon, 21 Dec 2015 11:02:30 -0000
-Message-ID: <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x32;&#48;&#49;&#x35;&#49;&#x32;&#50;&#49;&#x31;&#49;&#x30;&#50;&#51;&#x30;&#x2e;&#50;&#51;&#x34;&#x36;&#51;&#46;&#x38;&#x30;&#x38;&#52;&#x35;&#x40;&#118;&#x61;&#103;&#x72;&#97;&#110;&#x74;&#x2e;&#x76;&#x6d;">&#x32;&#x30;&#49;&#53;&#49;&#50;&#50;&#x31;&#x31;&#49;&#x30;&#50;&#x33;&#x30;&#x2e;&#x32;&#51;&#52;&#x36;&#51;&#x2e;&#x38;&#x30;&#x38;&#x34;&#x35;&#64;&#118;&#97;&#x67;&#x72;&#97;&#110;&#116;&#46;&#118;&#109;</a></p>
-
-<p>Dear hoatle,</p>
-
-<p>Thank you for signing up at localhost.</p>
-
-<p>To activate your account you should click on the link below:</p>
-
-<p><a href="http://localhost:8000/accounts/activate/fe547230a3039c476a127408e9d824894d0a9064/">http://localhost:8000/accounts/activate/fe547230a3039c476a127408e9d824894d0a9064/</a></p>
-
-<p>Thanks for using our site!</p>
-
-<p>Sincerely,
-localhost</p>
-
-<hr />
-
-<p>```</p>
-
-<ul>
-<li>To deploy Heroku:</li>
-</ul>
-
-
-<p>Note: we need to set SITE_DOMAIN and SITE_NAME to match the created Heroku application.
-These variables are already configured by django-boilerplate by default on development mode.</p>
-
-<p><code>
-$ heroku config:set SITE_DOMAIN=&lt;your_app_name&gt;.herokuapp.com
-$ heroku config:set SITE_NAME=&lt;your_site_name&gt;
-$ git push heroku master
-$ heroku run python manage.py migrate
-$ heroku run python manage.py check_permissions
-</code></p>
-
-<p>You should see the page of <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup now. However, don&rsquo;t
-try to signup on the Heroku app yet because we need to configure the email backend.</p>
-
-<h2>SMTP Email Backend Setup</h2>
-
-<p>By default, development mode uses console backend and production mode uses SMTP backend for emails.
-Let&rsquo;s use SMTP backend for both development mode on localhost and production mode on Heroku.</p>
-
-<p>For easier setup, let&rsquo;s use mailgun addon (free plan) from the Heroku app:
-<a href="https://elements.heroku.com/addons/mailgun">https://elements.heroku.com/addons/mailgun</a></p>
-
-<p><code>
-$ heroku addons:create mailgun:starter
-</code></p>
-
-<p>To see all available variables, use:</p>
-
-<p><code>
-$ heroku config
-</code></p>
-
-<p>and you should see something similar to this:</p>
-
-<p><code>
-=== dj-celery Config Vars
-ADMINS:                 (('&lt;your_name&gt;', '&lt;your_email&gt;'),)
-DATABASE_URL:           postgres://erdidqkixwegwg:hGZztw2Oh3EmNWfD5IfTb3XcyO@ec2-107-21-224-11.compute-1.amazonaws.com:5432/dembq6s6m1mohq
-DJANGO_SETTINGS_MODULE: project.settings.prod
-MAILGUN_API_KEY:        key-9587e40f127a1fe8fbab10622be69169
-MAILGUN_DOMAIN:         appb8c22c19f6654edeb3c25768d4674002.mailgun.org
-MAILGUN_PUBLIC_KEY:     pubkey-51b28300a981d7f184bb55c4726742d8
-MAILGUN_SMTP_LOGIN:     postmaster@appb8c22c19f6654edeb3c25768d4674002.mailgun.org
-MAILGUN_SMTP_PASSWORD:  f1c39a13079d8db398073fc6717de59a
-MAILGUN_SMTP_PORT:      587
-MAILGUN_SMTP_SERVER:    smtp.mailgun.org
-SITE_DOMAIN:            dj-celery.herokuapp.com
-SITE_NAME:              dj-celery
-</code></p>
-
-<p>We see that <code>MAILGUN_XXX</code> variables are provided, we will use it on development
-mode by adding the following lines into the .env file from the config content of your app
-environment:</p>
-
-<p>```
-EMAIL_BACKEND=&lsquo;django.core.mail.backends.smtp.EmailBackend&rsquo;</p>
-
-<p>MAILGUN_API_KEY=&lt;your_app_environment_value>
-MAILGUN_DOMAIN=&lt;your_app_environment_value>
-MAILGUN_PUBLIC_KEY=&lt;your_app_environment_value>
-MAILGUN_SMTP_LOGIN=&lt;your_app_environment_value>
-MAILGUN_SMTP_PASSWORD=&lt;your_app_environment_value>
-MAILGUN_SMTP_PORT=&lt;your_app_environment_value>
-MAILGUN_SMTP_SERVER=&lt;your_app_environment_value>
-```</p>
-
-<p>Let&rsquo;s test if the email works:</p>
-
-<p>```
-$ ./manage.py shell</p>
-
-<p>Python 2.7.6 (default, Apr 15 2015, 20:14:49)
-Type &ldquo;copyright&rdquo;, &ldquo;credits&rdquo; or &ldquo;license&rdquo; for more information.</p>
-
-<p>IPython 4.0.1 &mdash; An enhanced Interactive Python.
-?         &ndash;> Introduction and overview of IPython&rsquo;s features.
-%quickref &ndash;> Quick reference.
-help      &ndash;> Python&rsquo;s own help system.
-object?   &ndash;> Details about &lsquo;object&rsquo;, use &lsquo;object??&rsquo; for extra details.</p>
-
-<p>In [1]: from django.core import mail</p>
-
-<p>In [2]: mail.mail_admins(&lsquo;test&rsquo;, &lsquo;test&rsquo;)</p>
-
-<p>In [3]:
-```</p>
-
-<p>You need to check your mailbox to see that a test email should be sent to you.</p>
-
-<p>Now you could signup and receive email at: <a href="https://">https://</a>&lt;your_app_name>.herokuapp.com/accounts/signup/</p>
-
-<h2>django-celery-email Setup</h2>
-
-<p>If could see that <code>mail.mail_admins</code> is blocked and waiting until the email sending is finished.
-To avoid these blocking, let&rsquo;s use Celery. Celery app is already setup by django-boilerplate at:
-<a href="https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613">https://github.com/teracyhq/django-boilerplate/commit/7ea4306ae295d38ae35610b0882db1ea81a5d613</a></p>
-
-<p>Let&rsquo;s just follow <a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a> to configure it like I did at:
-<a href="https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6">https://github.com/hoatle/django-celery/commit/96575fe6fdb746a3f5a8526bbf236864c6880fb6</a></p>
-
-<p>and then:</p>
-
-<p><code>
-$ pip install -r requirements/dev.txt --upgrade
-</code></p>
-
-<p>update EMAIL_BACKEND for .env file with:</p>
-
-<p><code>
-EMAIL_BACKEND='djcelery_email.backends.CeleryEmailBackend'
-</code></p>
-
-<p>One important step is to enable Celery by using <a href="https://elements.heroku.com/addons/cloudamqp">https://elements.heroku.com/addons/cloudamqp</a></p>
-
-<p>To use cloudamqp heroku addon:</p>
-
-<p><code>
-$ heroku addons:create cloudamqp:lemur
-</code></p>
-
-<p>and you should see <code>CLOUDAMQP_URL</code> environment variable by <code>$ heroku config</code></p>
-
-<p>Let&rsquo;s add that variable into the .env file:</p>
-
-<p><code>
-CLOUDAMQP_URL=&lt;your_app_environment_value&gt;
-</code></p>
-
-<p>The full .env file I created was at: <a href="https://gist.github.com/hoatle/7cb82d437213db4f373d">https://gist.github.com/hoatle/7cb82d437213db4f373d</a></p>
-
-<p>To start Celery app: <code>$ ./scripts/celery.sh</code>, and you should see the following content:</p>
-
-<p>```
- &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; celery@vagrant v3.1.19 (Cipater)
-&mdash;&mdash; <em><strong><em> &mdash;&mdash;&ndash;
-&mdash;&ndash; * </em></strong>  * &mdash; Linux-3.13.0-49-generic-x86_64-with-debian-wheezy-sid
-&mdash; * &ndash; </em><em><strong> &mdash;&ndash;
-&ndash; </strong> &mdash;&mdash;&mdash;&mdash;&mdash; [config]
-&ndash; <strong> &mdash;&mdash;&mdash;&mdash;&mdash; .> app:         Project:0x2f9a710
-&ndash; </strong> &mdash;&mdash;&mdash;&mdash;&mdash; .> transport:   amqp://ssnipivn:<strong>@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-&ndash; </strong> &mdash;&mdash;&mdash;&mdash;&mdash; .> results:     disabled
-&ndash; </em><strong> &mdash;&ndash; * &mdash;&ndash; .> concurrency: 2 (prefork)
-&mdash; </strong><strong><strong><em> &mdash;&mdash;
-&mdash;&ndash; </em></strong></strong> &mdash;&mdash;&ndash; [queues]
- &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; .> celery           exchange=celery(direct) key=celery</p>
-
-<p>[tasks]
-  . djcelery_email_send_multiple</p>
-
-<p>[2015-12-21 12:13:22,788: INFO/Beat] beat: Starting&hellip;
-[2015-12-21 12:13:24,532: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-[2015-12-21 12:13:26,851: INFO/MainProcess] mingle: searching for neighbors
-[2015-12-21 12:13:31,216: INFO/MainProcess] mingle: all alone
-/home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
-  warnings.warn(&lsquo;Using settings.DEBUG leads to a memory leak, never &rsquo;</p>
-
-<p>[2015-12-21 12:13:36,019: WARNING/MainProcess] /home/vagrant/.virtualenvs/django-celery/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
-  warnings.warn(&lsquo;Using settings.DEBUG leads to a memory leak, never &rsquo;</p>
-
-<p>[2015-12-21 12:13:36,023: WARNING/MainProcess] celery@vagrant ready.
-```</p>
-
-<p>After that, sending test email to admins should work without any blocking by opening a new terminal
-window:</p>
-
-<p>```
-$ vagrant ssh
-$ ws
-$ cd personal/django-celery
-$ workon django-celery
-$ ./manage.py shell</p>
-
-<p>Python 2.7.6 (default, Apr 15 2015, 20:14:49)
-Type &ldquo;copyright&rdquo;, &ldquo;credits&rdquo; or &ldquo;license&rdquo; for more information.</p>
-
-<p>IPython 4.0.1 &mdash; An enhanced Interactive Python.
-?         &ndash;> Introduction and overview of IPython&rsquo;s features.
-%quickref &ndash;> Quick reference.
-help      &ndash;> Python&rsquo;s own help system.
-object?   &ndash;> Details about &lsquo;object&rsquo;, use &lsquo;object??&rsquo; for extra details.</p>
-
-<p>In [1]: from django.core import mail</p>
-
-<p>In [2]: mail.mail_admins(&lsquo;test&rsquo;, &lsquo;test&rsquo;)
-```</p>
-
-<p>That&rsquo;s it. We&rsquo;re done on development mode. Let&rsquo;s deploy on Heroku with:</p>
-
-<p><code>
-$ git push heroku master
-$ heroku ps:scale celery=1
-</code></p>
-
-<p><code>$ heroku logs -p celery</code> to see the logs of celery, you should see something like this:</p>
-
-<p><code>
-2015-12-21T12:30:35.946701+00:00 heroku[celery.1]: Starting process with command `scripts/celery.sh`
-2015-12-21T12:30:37.616409+00:00 app[celery.1]: /app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env - it doesn't exist.
-2015-12-21T12:30:37.616419+00:00 app[celery.1]:   warnings.warn("Not reading {0} - it doesn't exist.".format(dotenv))
-2015-12-21T12:30:38.278350+00:00 app[celery.1]: [2015-12-21 12:30:38,278: INFO/MainProcess] Connected to amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-2015-12-21T12:30:38.220898+00:00 app[celery.1]: [2015-12-21 12:30:38,220: WARNING/MainProcess] /app/.heroku/python/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning:
-2015-12-21T12:30:38.220902+00:00 app[celery.1]: Starting from version 3.2 Celery will refuse to accept pickle by default.
-2015-12-21T12:30:38.220904+00:00 app[celery.1]: The pickle serializer is a security concern as it may give attackers
-2015-12-21T12:30:38.220903+00:00 app[celery.1]:
-2015-12-21T12:30:38.220905+00:00 app[celery.1]: the ability to execute any command.  It's important to secure
-2015-12-21T12:30:38.220908+00:00 app[celery.1]: the default choice.
-2015-12-21T12:30:38.220907+00:00 app[celery.1]: that enabling pickle should require a deliberate action and not be
-2015-12-21T12:30:38.220906+00:00 app[celery.1]: your broker from unauthorized access when using pickle, so we think
-2015-12-21T12:30:38.220909+00:00 app[celery.1]:
-2015-12-21T12:30:38.220910+00:00 app[celery.1]: If you depend on pickle then you should set a setting to disable this
-2015-12-21T12:30:38.220910+00:00 app[celery.1]: warning and to be sure that everything will continue working
-2015-12-21T12:30:38.220914+00:00 app[celery.1]: You must only enable the serializers that you will actually use.
-2015-12-21T12:30:38.220913+00:00 app[celery.1]:     CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
-2015-12-21T12:30:38.220912+00:00 app[celery.1]:
-2015-12-21T12:30:38.220915+00:00 app[celery.1]:
-2015-12-21T12:30:38.220913+00:00 app[celery.1]:
-2015-12-21T12:30:38.220915+00:00 app[celery.1]:
-2015-12-21T12:30:38.220911+00:00 app[celery.1]: when you upgrade to Celery 3.2::
-2015-12-21T12:30:38.220917+00:00 app[celery.1]:
-2015-12-21T12:30:38.223101+00:00 app[celery.1]: ---- **** -----
-2015-12-21T12:30:38.220916+00:00 app[celery.1]:   warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
-2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; app:         Project:0x7f590f5fad10
-2015-12-21T12:30:38.223107+00:00 app[celery.1]: --- ***** ----- [queues]
-2015-12-21T12:30:38.223111+00:00 app[celery.1]:   . djcelery_email_send_multiple
-2015-12-21T12:30:38.223102+00:00 app[celery.1]: --- * ***  * -- Linux-3.13.0-66-generic-x86_64-with-debian-jessie-sid
-2015-12-21T12:30:38.262153+00:00 app[celery.1]: [2015-12-21 12:30:38,261: INFO/Beat] beat: Starting...
-2015-12-21T12:30:38.223098+00:00 app[celery.1]:  
-2015-12-21T12:30:38.301313+00:00 app[celery.1]: [2015-12-21 12:30:38,301: INFO/MainProcess] mingle: searching for neighbors
-2015-12-21T12:30:38.223105+00:00 app[celery.1]: - ** ---------- .&gt; results:     disabled
-2015-12-21T12:30:38.223109+00:00 app[celery.1]:                 
-2015-12-21T12:30:38.223100+00:00 app[celery.1]:  -------------- celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 v3.1.19 (Cipater)
-2015-12-21T12:30:38.223102+00:00 app[celery.1]: -- * - **** ---
-2015-12-21T12:30:38.223106+00:00 app[celery.1]: - *** --- * --- .&gt; concurrency: 8 (prefork)
-2015-12-21T12:30:38.223109+00:00 app[celery.1]:
-2015-12-21T12:30:38.223103+00:00 app[celery.1]: - ** ---------- [config]
-2015-12-21T12:30:38.223106+00:00 app[celery.1]: -- ******* ----
-2015-12-21T12:30:38.223110+00:00 app[celery.1]: [tasks]
-2015-12-21T12:30:38.223104+00:00 app[celery.1]: - ** ---------- .&gt; transport:   amqp://ssnipivn:**@jaguar.rmq.cloudamqp.com:5672/ssnipivn
-2015-12-21T12:30:38.223108+00:00 app[celery.1]:  -------------- .&gt; celery           exchange=celery(direct) key=celery
-2015-12-21T12:30:38.223111+00:00 app[celery.1]:
-2015-12-21T12:30:39.322701+00:00 app[celery.1]: [2015-12-21 12:30:39,322: INFO/MainProcess] mingle: all alone
-2015-12-21T12:30:39.352403+00:00 app[celery.1]: [2015-12-21 12:30:39,352: WARNING/MainProcess] celery@91af8d04-4b15-482e-937b-0f9a49a0eff7 ready.
-2015-12-21T12:30:36.537615+00:00 heroku[celery.1]: State changed from starting to up
-</code></p>
-
-<p>You could try sending test emails to admins with:</p>
-
-<p>```
-$ heroku run python manage.py shell
-Running python manage.py shell on dj-celery&hellip; up, run.9412
-/app/.heroku/python/lib/python2.7/site-packages/dotenv.py:53: UserWarning: Not reading /app/.env &ndash; it doesn&rsquo;t exist.
-  warnings.warn(&ldquo;Not reading {0} &ndash; it doesn&rsquo;t exist.&rdquo;.format(dotenv))
-Python 2.7.10 (default, May 27 2015, 20:38:41)
-[GCC 4.8.2] on linux2
-Type &ldquo;help&rdquo;, &ldquo;copyright&rdquo;, &ldquo;credits&rdquo; or &ldquo;license&rdquo; for more information.
-(InteractiveConsole)</p>
-
-<blockquote><blockquote><blockquote><p>from django.core import mail
-mail.mail_admins(&lsquo;test&rsquo;, &lsquo;test&rsquo;)
-```</p></blockquote></blockquote></blockquote>
-
-<p>That&rsquo;s it, email sending is not blocked anymore. The full project for this guide is located at:
-<a href="https://github.com/hoatle/django-celery">https://github.com/hoatle/django-celery</a></p>
-
-<h2>Remote Debugging Python Tip</h2>
-
-<p>This is a bonus if you need to remote debug Python applications. You could apply this for
-Django projects, too: <a href="http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging">http://dev.teracy.org/docs/develop/python_dev_guide.html#debugging</a></p>
-
-<h2>Summary</h2>
-
-<p>In this post, I&rsquo;ve guided you step by step to setup Celery as a distributed task queue for emails
-on Django projects. It&rsquo;s very easy to set everything up thanks to the django-boilerplate project.</p>
-
-<p>If you need any Django consultant or Django development, don&rsquo;t hesitate to contact us at:
-<a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#x68;&#x71;&#64;&#116;&#x65;&#114;&#97;&#99;&#x79;&#x2e;&#99;&#111;&#109;">&#104;&#x71;&#64;&#x74;&#101;&#114;&#x61;&#99;&#121;&#x2e;&#x63;&#111;&#109;</a> and we&rsquo;re very eager to work with you on Django, Python projects.</p>
-
-<p>Happy Django developing!</p>
-
-<h2>References</h2>
-
-<ul>
-<li><a href="https://github.com/bread-and-pepper/django-userena">https://github.com/bread-and-pepper/django-userena</a></li>
-<li><a href="http://www.celeryproject.org/">http://www.celeryproject.org/</a></li>
-<li><a href="https://pypi.python.org/pypi/django-celery-email">https://pypi.python.org/pypi/django-celery-email</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sphinx-deployment v0.3.0 with heroku deployment support]]></title>
-    <link href="http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support/"/>
-    <updated>2013-11-26T09:06:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/11/26/sphinx-deployment-v0-3-0-with-heroku-deployment-support</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
-
-<p>After v0.2.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with heroku<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment
-support for v0.3.0 release. This release introduces some breaking changes and you should know to
-upgrade successfully.</p>
-
-<!-- more -->
-
-
-<p><a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> is in active development phase and breaking changes are expected (you know,
-it&rsquo;s still v0.3.0).</p>
-
-<p>Simplicity is one of our <a href="http://dev.teracy.org/docs/intro.html#about-teracy">development philosophy</a>, and you could see it clearly with our following
-supported commands for <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>.</p>
-
-<h2>Supported Commands</h2>
-
-<p><strong>1. <code>$ make generate</code></strong></p>
-
-<p>For generating contents, alias for <code>$ make html</code></p>
-
-<p><strong>2. <code>$ make deploy</code></strong></p>
-
-<p>For short-cut deployment, it could be <code>$ make deploy_gh_pages</code>, <code>$ make deploy_rsync</code> or
-<code>$ make deploy_heroku</code> basing on the configuration of <code>DEPLOY_DEFAULT</code>.</p>
-
-<p><strong>3. <code>$ make gen_deploy</code></strong></p>
-
-<p>For short-cut generation and deployment: <code>$ make generate</code> and then <code>$ make deploy</code>.</p>
-
-<p>Basically, you just need to know 3 commands above after some settings (with a little configuration
-and setting up). Until now sphinx-deployment supports github pages<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> deployment, rsync<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>
-deployment and heroku deployment.</p>
-
-<p>Before setting up, you need to install and configure <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> first, and then:</p>
-
-<p><strong>4. <code>$ make setup_gh_pages</code></strong></p>
-
-<p>For the first time only to create <code>$(DEPLOY_DIR)</code> to track <code>$(DEPLOY_BRANCH)</code>. This is used for
-github pages deployment.</p>
-
-<p><strong>5. <code>$ make setup_heroku</code></strong></p>
-
-<p>For the first time only to create <code>$(DEPLOY_DIR_HEROKU</code> to track the heroku repo&rsquo;s master branch.
-This is used for heroku deployment.</p>
-
-<p>After setting up, you could deploy the docs easily with:</p>
-
-<p><strong>6. <code>$ make deploy_gh_pages</code></strong></p>
-
-<p>For deploying with github pages only.</p>
-
-<p><strong>7. <code>$ make deploy_rsync</code></strong></p>
-
-<p>For deploying with rsync only.</p>
-
-<p><strong>8. <code>$ make deploy_heroku</code></strong></p>
-
-<p>For deploying with heroku only.</p>
-
-<p>That&rsquo;s it, very easy to use. This is the first ultimate simple sphinx docs deployment solution
-provided so far, we hope that you love it as much as we love developing and using it.</p>
-
-<h2>Migration</h2>
-
-<p>Are you using v0.2.0 and want to upgrade? Just install it normally with <code>spxd.sh</code> bash script and
-adjust a little the configuration with the following migration instruction:</p>
-
-<ul>
-<li>Migration (from v0.2.0 to v0.3.0)
-
-<ul>
-<li><code>REPO_URL</code> was changed to <code>REPO_URL_GITHUB</code></li>
-<li><code>DEPLOY_BRANCH</code> was changed to <code>DEPLOY_BRANCH_GITHUB</code></li>
-<li><code>$ make push</code> was changed to <code>$ make deploy_gh_pages</code></li>
-<li><code>$ make rsync</code> was changed to <code>$ make deploy_rsync</code></li>
-</ul>
-</li>
-</ul>
-
-
-<h2>What&rsquo;s Next?</h2>
-
-<p>The next version we would like to introduce i18n feature and stabilize the project with improvements, bug fixes. Moreover,
-we&rsquo;re starting sphinx-live-view project for easier docs writing, too. Stay tuned for our
-upcoming exciting features and projects.</p>
-
-<p>Have a nice day and happy docs writing!</p>
-
-<p>P/S: Remember to head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> and read README for usage instruction.</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://heroku.com<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://help.github.com/categories/20/articles<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sphinx-deployment v0.2.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release/"/>
-    <updated>2013-09-25T20:56:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/09/25/sphinx-deployment-v0-2-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/sphinx.png" title="Sphinx Doc Logo" ></p>
-
-<p>After v0.1.0 release<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> of <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a>, we&rsquo;re making it better with improvements and new
-features for v0.2.0 release.</p>
-
-<!-- more -->
-
-
-<p>This release version includes an improvement and a new feature.</p>
-
-<p>We improved <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> by removing the duplication of git initialize step when
-<code>$ make setup_gh_pages</code>, this will reduce the time for setting up github pages to some mili-seconds,
-so it could be considered as performance improvement.</p>
-
-<p>We also would like to introduce a new feature that supports <code>Rsync</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> deployment out of the box.
-So by now, you could not only automatically deploy the <code>sphinx</code> docs project with Github Pages, but
-you could also automatically deploy it with <code>Rsync</code>.</p>
-
-<p><code>sphinx</code> deployment is never easy like this, please head to <a href="https://github.com/teracy-official/sphinx-deployment">sphinx-deployment</a> project, then read
-the introductions on <code>README</code> file and you&rsquo;re done.</p>
-
-<p>And what&rsquo;s next? For v0.3.0 release, we plan to support as many PaaS services as possible,
-the first one on the list is <code>heroku</code>. So stay tuned with our upcoming releases!</p>
-
-<p>Have a nice day and happy docs writing!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://blog.teracy.com/2013/08/18/sphinx-deployment-v0-1-0-release/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://en.wikipedia.org/wiki/Rsync<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
+<p>Happy developing!</p>
 ]]></content>
   </entry>
   

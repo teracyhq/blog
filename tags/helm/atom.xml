@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Helm | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/helm/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2017-05-09T08:38:25+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to set up CI/CD system for Next.js with Docker on gitlab-ci, travis-ci, Heroku and Kubernetes]]></title>
+    <link href="http://blog.teracy.com/2017/05/09/how-to-set-up-ci-cd-system-for-next.js-with-docker-on-gitlab-ci-travis-ci-heroku-and-kubernetes/"/>
+    <updated>2017-05-09T01:14:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/05/09/how-to-set-up-ci-cd-system-for-next.js-with-docker-on-gitlab-ci-travis-ci-heroku-and-kubernetes</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/05/09/nextjs-hello-world-travis-ci.png" title="travis-ci builds" ></p>
+
+<p>Setting up a CI/CD (continuous integration/continuous delivery) system for Docker applications to be
+deployed on staging and production environment with scalability and high availability is not hard.
+It took a while to get it done properly, and today I will show you how to set up that system properly
+with a Next.js application as an example. You can apply the same process for all other kinds of
+Docker applications. So let&rsquo;s get started.</p>
+
+<!-- more -->
+
+
+<h1>Prerequisites</h1>
+
+<p>Newcomers to Docker ecosystem can enjoy this tutorial.</p>
+
+<p>Experienced ones to Docker ecosystem can review this for your approach and suggest what we can do for
+a better approach.</p>
+
+<p>If you know these systems below, that&rsquo;s great and easier to follow this tutorial:</p>
+
+<ul>
+<li>Docker</li>
+<li>gitlab-ci, travis-ci as CI/CD system</li>
+<li>Heroku as a PaaS (Platform as a Service)</li>
+<li>Kubernetes (Production-Grade Container Scheduling and Management)</li>
+<li>Helm (The Kubernetes Package Manager)</li>
+</ul>
+
+
+<h1>Getting Started</h1>
+
+<p>First, you need to have Docker installed on your system. To make it easier for all platforms (Linux,
+macOS, Windows), we&rsquo;re going to use <code>teracy-dev</code> for local dev environment.</p>
+
+<p>To know why <code>teracy-dev</code>, see the blog <a href="/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">Teracy-dev &ndash; the Only Truly Universal Productive Development Platform With Docker on macOS, Linux and Windows</a>.</p>
+
+<p>You&rsquo;re not required to use teracy-dev, however, using it should help you follow this tutorial more easily.</p>
+
+<p>We&rsquo;re going to use <a href="https://github.com/acme101/nextjs-hello-world">https://github.com/acme101/nextjs-hello-world</a> as an example project.</p>
+
+<p><code>acme101</code> is a sample github organization which has all the best practices from <code>teracy-dev</code> applied
+for organizations, follow it and you can&rsquo;t get lost.</p>
+
+<p><code>nextjs-hello-world</code> is the simplest seed code for Next.js applications with Docker workflow, CI/CD system:</p>
+
+<ul>
+<li><p>CI/CD with gitlab-ci: <a href="https://gitlab.com/acme101/nextjs-hello-world/pipelines">https://gitlab.com/acme101/nextjs-hello-world/pipelines</a></p></li>
+<li><p>CI/CD with travis-ci: <a href="https://travis-ci.org/acme101/nextjs-hello-world/builds">https://travis-ci.org/acme101/nextjs-hello-world/builds</a></p></li>
+<li><p>Auto deployment to Heroku: <a href="https://acme-nextjs-staging.herokuapp.com/">https://acme-nextjs-staging.herokuapp.com/</a></p></li>
+<li><p>Auto deployment to GKE (Kubernetes) with terapp.com (A record domain): <a href="https://acme-nextjs-staging.terapp.com/">https://acme-nextjs-staging.terapp.com/</a></p></li>
+</ul>
+
+
+<p>To set up the project on local development:</p>
+
+<ul>
+<li><p>Follow: <a href="https://github.com/acme101/dev-setup/blob/master/README.md">https://github.com/acme101/dev-setup/blob/master/README.md</a></p></li>
+<li><p>Check out the repo into the <code>acme-dev/workspace</code> directory</p></li>
+</ul>
+
+
+<p>That&rsquo;s it, you&rsquo;re ready to work on the local dev environment.</p>
+
+<h1>Local Dev Environment</h1>
+
+<p>Our development philosophy is this: everything can and should be done on local development with
+consistent behaviors between all developers and production deployments.</p>
+
+<p>And Docker helps us with that to create a consistent build-time and run-time environment for all.</p>
+
+<p>Usually, there are 3 modes on local dev for our workflow:</p>
+
+<ul>
+<li><p>Dev Mode: developers work on this for new changes, this usually contains development dependencies.</p></li>
+<li><p>Prod Mode: developers need to make sure that production Docker image should work on local dev.
+This production Docker image, which is different from the one from dev mode, will contain only
+the production dependencies, and the runtime environment only.</p>
+
+<p>If developers can only make it work on dev mode, prod mode can break. If prod mode breaks, developers can
+check and fix it on local dev. This is really conveninent and time saving.</p></li>
+<li><p>Prod Review Mode: we should review the work from others and this mode help us for faster reviewing
+process. Basically, everyone&rsquo;s work branch will have the corresponding production Docker image that
+we can review it right away on our local dev environment. We don&rsquo;t have to checkout the codes to start
+reviewing.</p>
+
+<p>This is helpful for us to set up CI/CD system for reviewing process later: when a pull request is sent,
+the CI/CD system should deploy it right away for QA to validate, for example.</p></li>
+</ul>
+
+
+<p>The following is the more details about how to use these modes:</p>
+
+<h2>Dev Mode</h2>
+
+<p>To run dev mode on the current source code.</p>
+
+<p><code>
+$ vagrant ssh
+$ ws
+$ cd nextjs-hello-world
+$ docker-compose up -d dev &amp;&amp; docker-compose logs -f dev
+</code></p>
+
+<p>Open dev.nextjs.acme.dev (http + https modes) to check it out.</p>
+
+<h2>Prod Mode</h2>
+
+<p>To run prod mode on the current source code.</p>
+
+<p><code>
+$ docker-compose run --rm dev yarn run build &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.prod.yml build prod &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d prod
+</code></p>
+
+<p>We usually scale at least 2 or more containers, so please scale it on local dev too to make sure scaling should work:</p>
+
+<p><code>
+$ docker-compose -f docker-compose.yml -f docker-compose.prod.yml scale prod=2
+</code></p>
+
+<p>Open nextjs.acme.dev (http + https modes) to check it out.</p>
+
+<p>Don&rsquo;t forget to remove the container after checking out for cleaning up:</p>
+
+<p><code>
+$ docker-compose -f docker-compose.yml -f docker-compose.prod.yml stop prod &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.prod.yml rm -f prod
+</code></p>
+
+<h2>Prod Review Mode</h2>
+
+<p>To review prod mode from different built Docker image.</p>
+
+<p>For example, I need to review the <code>hoatle/nextjs-hello-world:features-1-something</code> Docker image
+from @hoatle.</p>
+
+<p><code>
+$ export DOCKER_IMAGE_REVIEW=hoatle/nextjs-hello-world:features-1-something &amp;&amp; \
+docker-compose -f docker-compose.yml -f docker-compose.review.yml pull review &amp;&amp; \
+docker-compose -f docker-compose.yml -f docker-compose.review.yml up -d review
+</code></p>
+
+<p>We usually scale at least 2 or more containers, so please scale it on local dev too to make sure scaling should work:</p>
+
+<p><code>
+$ docker-compose -f docker-compose.yml -f docker-compose.review.yml scale review=2
+</code></p>
+
+<p>Open review.nextjs.acme.dev (http + https modes) to check it out.</p>
+
+<p>Don&rsquo;t forget to remove the containers after checking out for cleaning up:</p>
+
+<p><code>
+$ docker-compose -f docker-compose.yml -f docker-compose.review.yml stop review &amp;&amp; \
+  docker-compose -f docker-compose.yml -f docker-compose.review.yml rm -f review
+</code></p>
+
+<p>That&rsquo;s how we, developers, usually work on local development. And to streamline the work, we need
+to deploy the applications on production system.</p>
+
+<p>The <code>docker-compose</code> commands above are rather long, maybe you can create bash files to run more easily,
+for example, <code>$ dev.sh start</code>, <code>$ dev.sh stop</code>, <code>$ prod.sh build</code>, <code>$ prod.sh start</code>, <code>$ prod.sh stop</code>,
+<code>$ review.sh start &lt;image_for_review&gt;</code> and <code>$ review.sh stop</code>.</p>
+
+<h1>Production System</h1>
+
+<p>We build Docker images for deploying so we can leverage any system that accept Docker image.</p>
+
+<p>In this tutorial, we use Heroku and Kubernetes, but you can choose whatever system that Docker is supported.</p>
+
+<p>Heroku is very easy to be used, just push the Docker image and it should work.</p>
+
+<p>Kubernetes (K8s) and Helm is easy to work with, it&rsquo;s mature and it gives us more control over everything.
+I recommend using Kubernetes for production system to automate it all.</p>
+
+<h2>Heroku Deployment</h2>
+
+<p>You can follow <a href="https://devcenter.heroku.com/articles/container-registry-and-runtime">https://devcenter.heroku.com/articles/container-registry-and-runtime</a> to deploy your
+Docker image to Heroku.</p>
+
+<h2>K8s Deployment</h2>
+
+<p>You can use Google Container Engine (GKE) to deploy K8s applications. Using Helm as the K8s package
+manager is more easier and convenient.</p>
+
+<p>I created the Helm chart for this application here:
+<a href="https://github.com/acme101/nextjs-hello-world/tree/develop/helm-charts/nextjs-hello-world">https://github.com/acme101/nextjs-hello-world/tree/develop/helm-charts/nextjs-hello-world</a></p>
+
+<p>We can install it right away:</p>
+
+<p><code>
+$ helm install halm-charts/nextjs-hello-world
+</code></p>
+
+<h1>CI/CD Systems</h1>
+
+<p>To automate all the development integration and production deployment, we use CI/CD systems. You can
+use any CI/CD systems available. In this sample project, I set up for gitlab-ci and travis-ci, they
+share the same steps and these steps can be applied to any other CI/CD systems.</p>
+
+<p>A typical CI/CD system will need to:</p>
+
+<ul>
+<li><p>check for new changes</p>
+
+<ul>
+<li>code style</li>
+<li>security</li>
+<li>all kinds of tests</li>
+</ul>
+</li>
+<li><p>when checks passes, build the production Docker image and push to the Docker registry</p></li>
+<li><p>take the production Docker image and deploy it to the production systems</p></li>
+<li><p>everyone enjoys the new changes!</p></li>
+</ul>
+
+
+<p>The CI/CD system should work on any forked repo, too.</p>
+
+<p>And to get it work, we need to provide the some environment variables settings. To know more about
+some of these variables, please follow:</p>
+
+<ul>
+<li><p>How to deploy on Heroku: <a href="https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-heroku.md">https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-heroku.md</a></p></li>
+<li><p>How to deploy on GCP: <a href="https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-gcp.md">https://github.com/acme101/dev-setup/blob/master/docs/how-to-deploy-on-gcp.md</a></p></li>
+</ul>
+
+
+<h1>Sum up</h1>
+
+<p>In this tutorial, I&rsquo;ve introduced the development philosophy and workflow that we apply for all our
+projects at Teracy and our clients' projects. I hope that it could be helpful to others to boost
+your productivity with software development.</p>
+
+<p>Happy developing!</p>
+]]></content>
+  </entry>
+  
+</feed>
