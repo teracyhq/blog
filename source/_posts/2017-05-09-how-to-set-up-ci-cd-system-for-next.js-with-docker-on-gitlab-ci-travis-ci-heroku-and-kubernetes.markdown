@@ -15,7 +15,7 @@ tags:
     - "Kubernetes"
     - "Helm"
 cover: /images/2017/05/09/nextjs-hello-world-travis-ci.png
-description: How to setup CI/CD system for Next.js with Docker on gitlab-ci, travis-ci, Heroku and Kubernetes
+description: How to set up CI/CD system for Next.js with Docker on gitlab-ci, travis-ci, Heroku and Kubernetes
 keywords: how to, CI/CD system, Next.js, Docker, gitlab-ci, travis-ci, Heroku, Kubernetes
 published: true
 ---
@@ -24,7 +24,7 @@ published: true
 
 Setting up a CI/CD (continuous integration/continuous delivery) system for Docker applications to be
 deployed on staging and production environment with scalability and high availability is not hard.
-It took a while to get it done properly, and today I will how you how to set up that system properly
+It took a while to get it done properly, and today I will show you how to set up that system properly
 with a Next.js application as an example. You can apply the same process for all other kinds of
 Docker applications. So let's get started.
 
@@ -51,7 +51,7 @@ If you know these systems below, that's great and easier to follow this tutorial
 First, you need to have Docker installed on your system. To make it easier for all platforms (Linux,
 macOS, Windows), we're going to use `teracy-dev` for local dev environment.
 
-To know why `teracy-dev`, see: http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/
+To know why `teracy-dev`, see the blog [Teracy-dev - the Only Truly Universal Productive Development Platform With Docker on macOS, Linux and Windows](/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/).
 
 
 You're not required to use teracy-dev, however, using it should help you follow this tutorial more easily.
@@ -70,9 +70,9 @@ for organizations, follow it and you can't get lost.
 
 - Auto deployment to Heroku: https://acme-nextjs-staging.herokuapp.com/
 
-- Auto deployment to GKE (Kubernetes) with terapp.com domain A record: https://acme-nextjs-staging.terapp.com/
+- Auto deployment to GKE (Kubernetes) with terapp.com (A record domain): https://acme-nextjs-staging.terapp.com/
 
-To setup the project on local development:
+To set up the project on local development:
 
 - Follow: https://github.com/acme101/dev-setup/blob/master/README.md
 
@@ -93,8 +93,8 @@ Usually, there are 3 modes on local dev for our workflow:
 - Dev Mode: developers work on this for new changes, this usually contains development dependencies.
 
 - Prod Mode: developers need to make sure that production Docker image should work on local dev.
-  This production Docker image is different from the one from dev mode is that it will contain only
-  the production dependencies, the runtime environment only.
+  This production Docker image, which is different from the one from dev mode, will contain only
+  the production dependencies, and the runtime environment only.
 
   If developers can only make it work on dev mode, prod mode can break. If prod mode breaks, developers can
  check and fix it on local dev. This is really conveninent and time saving.
@@ -104,11 +104,11 @@ Usually, there are 3 modes on local dev for our workflow:
   we can review it right away on our local dev environment. We don't have to checkout the codes to start
   reviewing.
 
-  This is helpful for us to setup CI/CD system for reviewing process later: when a pull request is sent,
+  This is helpful for us to set up CI/CD system for reviewing process later: when a pull request is sent,
   the CI/CD system should deploy it right away for QA to validate, for example.
 
 
-More details how to use this modes below:
+The following is the more details about how to use these modes:
 
 ## Dev Mode
 
@@ -181,6 +181,11 @@ $ docker-compose -f docker-compose.yml -f docker-compose.review.yml stop review 
 
 That's how we, developers, usually work on local development. And to streamline the work, we need
 to deploy the applications on production system.
+
+
+The `docker-compose` commands above are rather long, maybe you can create bash files to run more easily,
+for example, `$ dev.sh start`, `$ dev.sh stop`, `$ prod.sh build`, `$ prod.sh start`, `$ prod.sh stop`,
+`$ review.sh start <image_for_review>` and `$ review.sh stop`.
 
 
 # Production System
