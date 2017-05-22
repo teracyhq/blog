@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-05-09T08:38:25+00:00</updated>
+  <updated>2017-05-22T10:29:13+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Làm thế nào để tạo ra văn hoá làm việc từ xa có thể tự tồn tại]]></title>
+    <link href="http://blog.teracy.com/2017/05/21/lam-the-nao-de-tao-ra-van-hoa-lam-viec-tu-xa-co-the-tu-ton-tai/"/>
+    <updated>2017-05-21T01:14:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/05/21/lam-the-nao-de-tao-ra-van-hoa-lam-viec-tu-xa-co-the-tu-ton-tai</id>
+    <content type="html"><![CDATA[<p>Sự tồn tại hay diệt vong của đội ngũ làm việc từ xa phụ thuộc vào khả năng giao tiếp và phối hợp; nếu ngay từ đầu các nhân viên không hoà vào văn hoá của công ty, thì cơ hội để họ tiếp tục theo đuổi và tận tụy với công việc sẽ là rất nhỏ. Tuy nhiên, một nền văn hoá thực sự gắn kết và độc đáo có thể sẽ khiến cho các nhân viên (làm việc từ xa hoặc tại chỗ) trung thành, năng suất hơn và quan trọng nhất là khiến họ tự hào về công việc đang làm.</p>
+
+<p>Trong khi các nhân viên làm việc tại chỗ có thể chỉ cần tận dụng 5 phút giải lao cạnh máy nước lạnh để nói chuyện hoặc tán gẫu với nhau, thì việc định hình và duy trì văn hoá làm việc từ xa đòi hỏi nhiều nỗ lực hơn. Tạo dựng sự tương tác dễ dàng giữa các nhân viên là nhiệm vụ bạn cần làm, nhưng bằng cách nào?</p>
+
+<!-- more -->
+
+
+<p>Nhìn lại <a href="http://process.st/">Process Street</a>, nơi chúng tôi điều hành một con tàu từ xa, ở đó chúng tôi lựa chọn một hoặc hai điều để tạo dựng một nền văn hoá từ xa bền vững. Điều hay nhất của những nền văn hoá này là chúng có thể tự duy trì &ndash; chỉ cần thiết lập chúng và bổ sung tiểu tiết theo yêu cầu. Để xây dựng nền văn hoá này các đội ngũ làm việc từ xa chỉ cần đạt được một hoặc hai nhân tố then chốt, nhưng ở đây tôi sẽ chia sẻ 4 điều được coi là cốt lõi của sự thành công.</p>
+
+<p>Vì vậy, nếu bạn lần đầu thuê các nhân viên làm việc từ xa, cảm thấy lo lắng vì thiếu sự tương tác và khoảng cách giữa nhân viên và công ty, hãy tĩnh tâm và thật thoải mái. Chúng tôi đã thấu hiểu hoàn cảnh của bạn.</p>
+
+<h1>Làm việc từ xa là linh hoạt; bạn cũng nên như vậy</h1>
+
+<p><img class="center" src="http://blog.teracy.com/images/2017/05/21/lam-viec-tu-xa.png" title="làm việc từ xa linh hoạt" ></p>
+
+<p>Các nhân viên làm việc từ xa được hưởng lợi từ sự linh hoạt; việc áp dụng một khung giờ làm việc mệnh lệnh đối với họ sẽ là một thảm hoạ. Thay vì điều đó, bạn hãy khuyến khích nhân viên tự đưa ra khoảng thời gian trong ngày giúp họ có thể làm việc năng suất nhất.</p>
+
+<p>Ví dụ, một số người làm việc như những con cú đêm, và hiệu quả tốt nhất là làm việc vào buổi sáng và tối. Hãy để cho những người này được phép làm việc 4 tiếng buổi sáng và 4 tiếng buổi tối để họ cống hiến năng suất nhất, thay vì ép họ phải làm việc theo giờ hành chính. <a href="https://open.buffer.com/how-much-do-you-work-without-set-hours-a-buffer-case-study/">Buffer</a> là ví dụ điển hình khi họ đưa ra chính sách rằng nhân viên có thể làm việc vào giờ nào họ cảm thấy thoải mái nhất.</p>
+
+<p>Điều này không chỉ khiến nhân viên thấy vui vẻ với công việc mà còn giúp họ hoàn thành công việc tốt hơn và tạo môi trường nuôi dưỡng nền văn hoá làm việc từ xa.</p>
+
+<h1>Giao tiếp tập trung</h1>
+
+<p>Nền văn hoá từ xa sẽ không thể được nuôi dưỡng &ndash; đơn phương tồn tại &ndash; nếu quá trình giao tiếp diễn ra dàn trải bằng các tài khoản email và 5 ứng dụng khác nhau. Nếu các nhân viên trong đội không biết người khác đang nói về điều gì, hoặc không thể bình luận do đã xoá đi một chuỗi dài email, thì toàn bộ dự án có thể sẽ đổ bể.</p>
+
+<p>Tuy nhiên, nếu bạn khiến giao tiếp tập trung bằng cách đảm bảo mọi thứ chuyển tiếp chỉ trong 1 hoặc 2 ứng dụng, thì gần như các thành viên trong đội đều nắm rõ tình hình. Đây là bí quyết đối với các đội làm việc từ xa với các múi giờ khác nhau, bởi vì chúng sẽ gần như xoá đi vấn đề nảy sinh do giao tiếp chậm trễ giữa châu Mỹ và châu Âu &ndash; không bỏ sót bất kỳ điều gì (thậm chí những mảng lớn tin nhắn tới nhân viên offline) bởi vì mọi người đều biết cần phải làm thế nào để nắm được tình hình.</p>
+
+<p>Đây cũng chính là phương thức để chiến đấu với nguy cơ thực tế đó là sự cô lập, mà tất cả các nhân viên (các đội) làm việc từ xa đều phải đối mặt; nền văn hoá làm việc từ xa sẽ tiếp tục được nuôi dưỡng khi tránh được việc tự bị phá huỷ. Tại sao không áp dụng khi <a href="https://sandwichvideo.com/">Sandwich Video</a> đã có một video để chứng minh cho điều này?</p>
+
+<h1>Thêm gia vị cho văn hoá</h1>
+
+<p><img class="center" src="http://blog.teracy.com/images/2017/05/21/them-gia-vi-cho-van-hoa.png" title="Thêm gia vị cho văn hoá của bạn" ></p>
+
+<p>Văn hoá sẽ tự tồn tại nếu những người trong cuộc cảm thấy có điều gì đó đáng duy trì. Nếu quy trình xây dựng văn hoá công ty chỉ là &ldquo;giao tiếp, đảm bảo mọi người thấy được các tin nhắn có liên quan tới họ&rdquo;, thì nó giống như nói với ai đó chỉ quan tâm tới điều giản đơn. Nó không có tác dụng, vì thế bạn cần làm nhiều thứ hơn chứ không đơn thuần là đảm bảo việc chỉ cho mọi người cách giao tiếp với nhau.</p>
+
+<p>Bạn cần phải bổ sung sức sống cho văn hoá công ty, và cách tốt nhất là lôi cuốn được sự tham gia của toàn thể công ty, thu hút cá tính của họ chứ không chỉ là thảo luận công việc. Tạo dựng sự cạnh tranh hữu nghị trên cơ sở lợi ích chung hoặc lên lịch cho các sự kiện chung sẽ giúp tạo sự gắn kết giữa các nhân viên và trao đổi câu chuyện hài hước ngoài giờ làm.</p>
+
+<p>Ví dụ, tại Process Street, hiện chúng tôi đang tiến hành hai cuộc thi, và tương lai sẽ thực hiện thêm. Vì chúng tôi là những người nghiện game, nên việc tổ chức cuộc thi Heartstone cho toàn thể công ty sẽ phù hợp với văn hoá của chúng tôi; một trò chơi bài tập thể trong đó bạn sẽ đấu với những người chơi khác. Để đảm bảo cuộc thi không bị gian lận bởi chủ nghĩa kinh nghiệm, chúng tôi cũng giới hạn việc lựa chọn quân bài đối với cỗ bài sẵn có khi chúng tôi có cả những người chơi mới và lâu năm trong đội của mình.</p>
+
+<p>Nếu đội của bạn không giống kiểu thích trò chơi, bạn có thể tạo ra cuộc thi về các chủ đề khác. Chúng tôi cũng thực hiện cuộc thi giả tưởng để xem ai có thể tìm ra bộ phim hay nhất và tồi nhất. Mỗi tuần, các ứng viên sẽ post một phim lên kênh Slack chung, để sau đó chúng tôi cùng xem và đánh giá chất lượng, chúng tôi đã đánh dấu lưu ý một số như The Beast Must Die, Shivers và (gần đây nhất) là piranha Sharks. Mặc dù đó không phải là những phim hay nhất đáng xem, nhưng hoạt động này giúp chúng tôi xích lại gần nhau là một đội và là điều chúng tôi có thể thảo luận và gắn kết ngoài công việc.</p>
+
+<h1>Khơi mào </h1>
+
+<p><img class="center" src="http://blog.teracy.com/images/2017/05/21/khoi-mao.png" title="Khơi mào" ></p>
+
+<p>Sự hoà nhập là thứ ma bạn vừa phải bỏ công sức xây đắp, và (sau đó) vừa là thứ mà gần như bạn có thể để văn hoá xây đắp cho mình. Hãy đảm bảo <a href="https://www.getmailbird.com/supercharge-remote-teams-communications/">quy trình tạo sự hoà nhập</a> cho nhân viên là bền vững bằng cách giới nhiệu nhân viên mới với các thành viên khác trong đội và khuyến khích đội ngũ cũ cởi mở. Đừng khiến cho những cuộc trò chuyện bị ép buộc, mà hãy xây dựng nền tảng then chốt nhằm đảm bảo cho những nhân viên làm việc từ xa vừa biết phải liên hệ với ai khi gặp vấn đề vừa cảm thấy thoải mái khi làm điều đó.</p>
+
+<p>Khi nền văn hoá công ty được thiết lập bền vững, nó sẽ thực sự góp phần lớn cho quy trình tạo sự hoà nhập nhân viên, bởi vì các cuộc thi, sự kiện và tinh thần của đội sẽ gắn kết mọi nhân viên mới vào văn hoá công ty một cách tự nhiên. Bạn sẽ vẫn cần phải giới thiệu họ với đội của mình nhưng với <a href="https://www.getmailbird.com/supercharge-remote-teams-communications/">nền văn hoá giao tiếp</a>, các cuộc thi và sự phối hợp sẽ giúp những người mới hoà nhập với công ty vì mục đích chung.</p>
+
+<p>Bạn đã có được bí quyết để xây dựng văn hoá có thể tự tồn tại trong công ty, thậm chí khi đội ngũ nhân viên làm việc từ xa. Mặc dù cần một quy trình để thiết lập một nền văn hoá hiệu quả, nhưng kết quả mang lại là điều hiển nhiên. Làm cho nhân viên của bạn trung thành, năng suất hơn và trên hết là hạnh phúc với công việc họ đang làm, bất kể là làm việc từ xa hay không, bạn sẽ thấy rằng bất kể nền văn hoá bạn xây dựng điên rồ cỡ nào, nó cũng sẽ đem lại hiệu quả tích cực.</p>
+
+<p>Dịch từ: <a href="https://outsite.co/blog/self-sustaining-remote-culture/">HOW TO CREATE A SELF-SUSTAINING REMOTE CULTURE</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to set up CI/CD system for Next.js with Docker on gitlab-ci, travis-ci, Heroku and Kubernetes]]></title>
@@ -2827,120 +2887,6 @@ Một khi bạn đã thực hiện thử nghiệm với vài người dùng đ�
 <p>Một khi bạn bắt đầu thu thập thông tin phản hồi tích cực mạnh mẽ từ người dùng mục tiêu bằng cách kiểm tra các mẫu thử nghiệm, đó là thời gian để chuyển sang giai đoạn cuối cùng của quá trình thẩm định tinh gọn.</p>
 
 <p>(Mời bạn xem tiếp <a href="http://blog.teracy.com/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/">Phần 3</a>)</p>
-
-<p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 1)]]></title>
-    <link href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1/"/>
-    <updated>2016-10-04T10:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-1</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
-
-<p>Một trong những rủi ro lớn nhất khi xây dựng sản phẩm đó là xây dựng những điều sai. Bạn sẽ mất hàng tháng trời (thậm chí hàng năm) để xây dựng sản phẩm đó, chỉ tới khi nhận ra bạn không thể hoàn thành sản phẩm.</p>
-
-<p>Tại <a href="https://hanno.co/">Hanno</a>, chúng tôi thấy điều này xảy ra thường xuyên. Đó là lí do tại sao chúng tôi đã tập hợp thành cuốn sách &ldquo;Thẩm định tinh gọn&rdquo; (Lean Validation Playbook).</p>
-
-<h2>TẠI SAO CHÚNG TA CẦN THẨM ĐỊNH TINH GỌN</h2>
-
-<p>Trong trường hợp này, thẩm định tinh gọn nghĩa là bạn sẽ đi lướt nhanh để xác định bạn sẽ làm sản phẩm gì và làm như thế nào với nguồn lực càng ít càng tốt. Nguồn lực này có thể bao gồm thời gian, tiền bạc và công sức. Phương pháp khởi nghiệp tinh gọn là chủ trương của Eric Reis, người có ảnh hưởng rất lớn đến cách chúng ta làm việc thông qua cuốn sách của ông &ldquo;<a href="https://theleanstartup.com/">Khởi nghiệp tinh gọn</a>&rdquo;.</p>
-
-<p>Trong phần hướng dẫn ngắn này, bạn sẽ học được cách thẩm định sự phù hợp của sản phẩm với thị trường, khảo sát người dùng và sản phẩm dùng thử. Mục đích để đảm bảo ý tưởng sản phẩm đó khả thi, điều này giúp tiết kiệm thời gian và tiền bạc của bạn.</p>
-
-<!-- more -->
-
-
-<p>Cuối quá trình, bạn sẽ có thể tập trung vào việc xây dựng sản phẩm và tự tin rằng bạn có cơ hội thành công cao hơn!</p>
-
-<p>Bạn đã sẵn sang chưa? Chúng ta bắt đầu nhé.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/10/04/tham-dinh-san-pham-tinh-gon.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
-
-<h1>Quy Trình Tiến Hành </h1>
-
-<p>Quy trình thẩm định tinh gọn gồm có 4 bước riêng biệt. Chỉ khi bạn đã thực hiện tất cả 4 bước bạn mới có thể tự tin rằng ý tưởng sản phẩm đáng để phát triển.</p>
-
-<p><strong>1. Thẩm định vấn đề</strong></p>
-
-<p>Vấn đề gặp phải có đáng để xử lí không? Nếu người dùng không nghĩ đây là vần đề chính thì bạn có thể không cần đưa ra giải pháp.</p>
-
-<p><strong>2. Đánh giá thị trường</strong></p>
-
-<p>Một số người dùng có thể đồng ý rằng đây là vấn đề đáng để xử lí. Nhưng liệu có đủ để sản phẩm của bạn có chỗ đứng trên thị trường?</p>
-
-<p><strong>3. Thẩm định sản phẩm</strong></p>
-
-<p>Vấn đề có thể tồn tại nhưng sản phẩm của bạn có thực sự xử lí được vấn đề đó?</p>
-
-<p><strong>4. Thẩm định sự sẵn lòng chi trả</strong></p>
-
-<p>Có thể thị trường có nhu cầu và sản phẩm của bạn rất tuyệt vời. Nhưng liệu mọi người có sẵn sằng trả tiền mua sản phẩm đó không?</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/10/04/quy-trinh-tham-dinh-san-pham.jpg" title="Quy trình thẩm định sản phẩm" ></p>
-
-<h2>ĐIỀU GÌ XẢY RA NẾU Ý TƯỞNG CỦA BẠN ĐÁP ỨNG TẤT CẢ BỐN TIÊU CHÍ TRÊN? </h2>
-
-<p>Nếu ý tưởng đáp ứng cả bốn tiêu chí thẩm định thì bạn có thể thoải mái phát triển sản phẩm nếu bạn muốn. Nhưng bạn có thể cân nhắc kỹ hơn thay vì chọn phát triển sản phẩm luôn.</p>
-
-<p>Qua quá trình thẩm định tinh gọn, bạn chắc chắn nhận được rất nhiều thông tin phản hồi từ người sử dụng. Với sự hiểu biết sâu sắc hơn, bạn sẽ nhận ra có cơ hội giải quyết tốt hơn. Trong trường hợp này, bạn sẽ thấy dễ dàng để tập trung vào sản phẩm.</p>
-
-<p>Nếu bạn làm theo cách này, bạn có thể lặp lại quá trình thẩm định tinh gọn với ý tưởng sản phẩm đã cải tiến.</p>
-
-<p>Dù bằng cách nào, bạn có thể tự tin rằng bạn đang có một ý tưởng tốt để phát triển sản phẩm.</p>
-
-<h1>Thẩm Định Vấn Đề</h1>
-
-<p>Cho dù bạn có tự tin về ý tưởng sản phẩm như nào chăng nữa thì điều đầu tiên bạn cần là xác định liệu vấn đề đó có thực sự cần giải quyết. Để làm được điều này, lựa chọn tốt nhất của bạn là nói chuyện trực tiếp với người sử dụng tiềm năng. Trọng tâm ở đây là về việc đánh giá chất lượng các ý tưởng sản phẩm.</p>
-
-<p>Đầu tiên, chúng ta bắt đầu với một số lượng nhỏ người dùng đại diện phù hợp và xác định xem vấn đề đó họ có gặp phải không. Sau đó chúng ta <a href="https://leanstack.com/pivot-before-productmarket-fit-optimize-after/">tối ưu hóa và xác định</a> vấn đề này với nhiều người dùng hơn và ở quy mô lớn hơn.</p>
-
-<p>Những điều bạn thu được từ các cuộc phỏng vấn này sẽ giúp bạn tự tin để thúc đẩy ý tưởng của mình tiến xa hơn. Hoặc nó cũng sẽ cho bạn thấy rằng bạn cần phải đào sâu ý tưởng khi bạn tìm hiểu thêm những vấn đề cơ bản thực sự.</p>
-
-<p>Ba kỹ thuật được miêu tả dưới đây có thể dùng riêng biệt, nhưng chúng tạo thành một bộ các phương pháp có thể cung cấp một hình ảnh tốt hơn về vấn đề mà bạn đang cố gắng thẩm định.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/10/04/tham-dinh-van-de.jpg" title="Thẩm định vấn đề" ></p>
-
-<h2>PHƯƠNG PHÁP 1: TÌM NĂM NGƯỜI THAM GIA THỬ NGHIỆM</h2>
-
-<p>Việc tìm được ít nhất 5 người nói rằng họ muốn sử dụng sản phẩm giả thuyết của bạn là một dấu hiệu hợp lý chỉ ra rằng bạn có vấn đề rất đáng giải quyết. Trong khi điều này cũng không nhất thiết đảm bảo được vấn đề thực sự tồn tại hay giải pháp đề xuất của bạn là tốt hoặc đáng giá, nhưng đó là cách đơn giản nhất để bắt đầu thẩm định vấn đề của bạn.</p>
-
-<p>Dưới đây là một ví dụ từ Rob Walling, nhà sáng lập công cụ thư thương mại Drip:</p>
-
-<p>&ldquo;Tôi muốn tìm 10 người có thể sẵn sàng trả một số tiền nhất định để mua sản phẩm khi nó đã hoàn thiện. Điều này buộc tôi không phải chỉ suy nghĩ về tính năng, mà còn phải chắt lọc những ý tưởng để có được giá trị cốt lõi của nó: đây là lý do duy nhất một người nào đó sẽ sẵn sàng trả tiền cho tôi để mua sản phẩm. Tôi gửi email nói về giá trị cốt lõi ý tưởng của mình cho 17 người mà tôi biết hoặc ít nhất là có nghe nói họ gặp vấn đề tương tự. Bằng cách này, tôi không chỉ có khách hàng đầu tiên có thể cung cấp cho tôi thông tin phản hồi chi tiết về cách công cụ Drip hoạt động, mà tôi còn có được sự khởi đầu cho nền tảng doanh thu ban đầu để sử dụng phát triển sản phẩm.&rdquo;</p>
-
-<p>Nếu bạn có thể xây dựng một mối quan hệ tốt với những người sử dụng này và lưu giữ thông tin liên lạc của họ, họ thậm chí có thể sẵn sàng là năm khách hàng đầu tiên của bạn.</p>
-
-<h2>PHƯƠNG PHÁP 2: PHỎNG VẤN NGƯỜI SỬ DỤNG</h2>
-
-<p>Bằng cách ngồi xuống và nói chuyện với người dùng, bạn sẽ có thể hiểu nhiều hơn về vấn đề của bạn và người dùng của bạn. Trọng tâm ở đây là để hiểu những động cơ và nhu cầu của mỗi người dùng tiềm năng mà bạn nói chuyện và sử dụng thông tin phản hồi để cải thiện sản phẩm.</p>
-
-<p>Lý tưởng nhất, bạn sẽ muốn có cả một người phỏng vấn và một ngưới quan sát có trong buổi phỏng vấn. Trong khi người phỏng vấn trao đổi với người sử dụng, người quan sát sẽ ghi chép.</p>
-
-<p>Một số hoạt động tốt cho một cuộc phỏng vấn hiệu quả bao gồm việc khuyến khích người tham gia chia sẻ kinh nghiệm trong quá khứ cũng như nhu cầu và thách thức hiện tại của họ. Hỏi người tham gia đã cố gắng như nào để giải quyết vấn đề cụ thể này trong quá khứ và kết quả đạt được. Nói về điều này theo quan điểm cá nhân cho phép người tham gia biểu lộ cảm xúc, điều này cung cấp cho bạn cái nhìn sâu sắc hơn về động cơ người dùng và giúp bạn đồng cảm với nhu cầu của họ.</p>
-
-<p>Ngoài ra, tránh hỏi người được phỏng vấn muốn điều gì. Thật khó cho người được phỏng vấn chia sẻ chính xác họ muốn gì. Sẽ dễ dàng hơn để người được phỏng vấn nói với bạn những gì họ đang cố gắng để đạt được và bạn có thể hỏi về động cơ của họ sau cuộc phỏng vấn này. Có được những thông tin này cho phép bạn đánh giá liệu ý tưởng sản phẩm của bạn có giải quyết được nhu cầu cụ thể đó không hay liệu bạn cần phải sửa đổi ý tưởng một chút để giải quyết được vấn đề cấp bách hơn.</p>
-
-<p>Một vấn đề nữa trong phỏng vấn người dùng đó là các câu hỏi mang tính hướng dẫn, gợi ý. Đây là những câu hỏi được đặt ra với những giả định của người phỏng vấn, có thể dẫn đến kết quả sai. Hãy giữ các câu hỏi khách quan và kết thúc mở &ndash; kiểu như, &ldquo;Ấn tượng của bạn khi sử dụng tính năng X là gì?&rdquo; thay vì &ldquo;Mức độ dễ dàng để sử dụng tính năng X để điều hướng ra sao?&rdquo;. Chúng tôi đã biên soạn  <a href="https://logbook.hanno.co/7-best-practises-for-better-user-interviews/">những chỉ dẫn hữu ích hơn</a> để thực hiện tốt nhất cho các cuộc phỏng vấn người sử dụng.</p>
-
-<h2>PHƯƠNG PHÁP 3: NGHIÊN CỨU VỀ BẢN NGÃ</h2>
-
-<p>Bản ngã thường được mô tả như là quá trình khám phá điều chưa biết. Trong nghiên cứu bản ngã, bạn sẽ đóng vai trò của nhà thám hiểm dũng cảm và đi du lịch để khám phá môi trường làm việc cũng như môi trường sống thực tế của người dùng. Đây là hình thức nghiên cứu rất tốt để quan sát và tìm hiểu về hành vi (Bạn làm gì?), động lực (Tại sao bạn làm điều đó?) và nhận thức (Làm thế nào để bạn nghĩ về những gì bạn cần và những gì bạn làm?).</p>
-
-<p>Phương pháp này đưa ra cái nhìn sâu sắc vào bối cảnh, có thể là khó khăn để có được kết quả, song là phương pháp kiểm tra chính thức. Tìm hiểu về bối cảnh này giúp chúng ta hiểu những ảnh hưởng đến kinh nghiệm người dùng, đặc biệt là bên ngoài điều kiện phòng thí nghiệm, cuộc phỏng vấn và kiểm tra được giám sát.</p>
-
-<p>Chìa khóa ở đây là để phát hiện và nắm bắt được khoảnh khắc trong khi khám phá những động cơ thúc đẩy của người sử dụng.</p>
-
-<p>Hãy tưởng tượng rằng bạn đang xây dựng một sản phẩm để cải thiện phong thái làm việc của nhân viên văn phòng. Nghiên cứu môi trường tự nhiên sẽ là một công cụ có giá trị, thậm chí còn giá trị hơn so với các cuộc phỏng vấn người sử dụng. Bạn sẽ tự đặt mục tiêu cho mình là đến tận các văn phòng để quan sát người dùng, và xem liệu vấn đề còn tồn tại hay không. Bạn cũng có thể tới quan sát một loạt các cơ quan khác nhau, văn phòng khởi nghiệp, không gian làm việc nhóm, cũng như các văn phòng lớn điển hình.</p>
-
-<p>Tiến hành nghiên cứu môi trường tự nhiên sẽ giúp bạn xem liệu vấn đề có tồn tại và thậm chí có thể phát hiện ra những vấn đề mới để bạn có thể đào sâu các ý tưởng. Nghiên cứu môi trường tự nhiên là một lĩnh vực phức tạp mà có thể đi xa hơn những gì chúng tôi đã đề cập đến cho đến nay. Hãy tìm hiểu kỹ hơn về phương pháp này bằng cách đọc thêm về nó tại <a href="https://en.wikipedia.org/wiki/Ethnography">đây</a>.</p>
-
-<h2>TẠI SAO NHỮNG PHƯƠNG PHÁP NÀY QUAN TRỌNG?</h2>
-
-<p>Bằng cách tập trung vào nghiên cứu người sử dụng, bạn có thể tránh được những sai lầm phổ biến như việc giả định các vấn đề bạn đang đối phó cũng là vấn đề của người khác gặp phải. Thông thường, chúng ta hay gặp những tình huống chẳng hạn như một nhà thiết kế nói rằng:&ldquo;Tôi giả định là người dùng cuối, vì vậy sẽ là an toàn khi thiết kế một cái gì đó dựa trên nhu cầu của riêng tôi. Dù ý tưởng của tôi là gì đi nữa thì ý tưởng đó sẽ phù hợp với những khuôn mẫu cho những người dùng khác. &#8220;Hãy nhớ rằng bạn không phải là người dùng của bạn. Bởi vì bạn biết quá rõ các vấn đề của sản phẩm, những giải pháp dường như là hoàn hảo với bạn lại có thể là giải pháp tồi tệ đối với hầu hết người dùng. Giải quyết các vấn đề mà bạn đã xác định cũng có nghĩa rằng bạn đã dành thời gian đáng kể tìm hiểu các chủ đề và có thể hiểu nó sâu hơn so với người dùng bình thường. Quan điểm của bạn về vấn đề này ngay bây giờ chỉ là ý kiến chủ quan, hơn tất cả đó là lí do tại sao bạn cần sử dụng ý kiến từ người sử dụng, để đảm bảo bạn đang giải quyết vấn đề đó một cách thực tế chứ không phải chỉ là từ ý kiến chủ quan của bạn.</p>
-
-<p>(Mời bạn xem tiếp <a href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">phần 2</a>)</p>
 
 <p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
 ]]></content>
