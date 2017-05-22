@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Làm thế nào để tạo ra văn hoá làm việc từ xa tự lực, tự nhiên "
+title: "Làm thế nào để tạo ra văn hoá làm việc từ xa có thể tự tồn tại"
 author: hoavt
 date: 2017-05-21 01:14
 comments: true
@@ -11,7 +11,7 @@ tags:
     - "remote working"
     - "culture"
 cover: /images/2017/05/21/lam-viec-tu-xa.png
-description: Làm thế nào để tạo ra văn hoá làm việc từ xa tự lực, tự quản lý một cách hiệu quả?
+description: Làm thế nào để tạo ra văn hoá làm việc từ xa có thể tự tồn tại, hoạt động một cách hiệu quả?
 keywords: làm việc từ xa, remote working, culture, văn hoá
 published: true
 ---
@@ -19,14 +19,15 @@ published: true
 {% img center /images/2017/05/21/lam-viec-tu-xa.png làm việc từ xa linh hoạt %}
 
 
-Sự tồn tại hay diệt vong của đội ngũ làm việc từ xa phụ thuộc vào khả năng giao tiếp và phối hợp; nếu ngay từ đầu các nhân viên không hoà vào văn hoá của công ty, thì cơ hội để họ tiếp tục theo đuổi và tận tuỵ với công việc sẽ là rất nhỏ. Tuy nhiên, một nền văn hoá thực sự gắn kết và độc đáo có thể sẽ khiến cho các nhân viên (làm việc từ xa hoặc tại chỗ) trung thành, năng suất hơn và quan trọng nhất là khiến họ tự hào về công việc đang làm .
+Sự tồn tại hay diệt vong của đội ngũ làm việc từ xa phụ thuộc vào khả năng giao tiếp và phối hợp; nếu ngay từ đầu các nhân viên không hoà vào văn hoá của công ty, thì cơ hội để họ tiếp tục theo đuổi và tận tuỵ với công việc sẽ là rất nhỏ. Tuy nhiên, một nền văn hoá thực sự gắn kết và độc đáo có thể sẽ khiến cho các nhân viên (làm việc từ xa hoặc tại chỗ) trung thành, năng suất hơn và quan trọng nhất là khiến họ tự hào về công việc đang làm.
 
 Trong khi các nhân viên làm việc tại chỗ có thể chỉ cần tận dụng 5 phút giải lao cạnh máy nước lạnh để nói chuyện hoặc tán gẫu với nhau, thì việc định hình và duy trì văn hoá làm việc từ xa đòi hỏi nhiều nỗ lực hơn. Tạo dựng sự tương tác dễ dàng giữa các nhân viên là nhiệm vụ bạn cần làm, nhưng bằng cách nào?
 
-Nhìn lại [Process Street](http://process.st/), nơi chúng tôi điều hành một con tàu từ xa, ở đó chúng tôi lựa chọn một hoặc hai điều để tạo dựng một nền văn hoá từ xa bền vững. Điều hay nhất của những nền văn hoá này là chúng có thể tự duy trì-chỉ cần thiết lập chúng và bổ sung tiểu tiết nhỏ theo yêu cầu để duy trì. Để xây dựng nền văn hoá này  các đội ngũ làm việc từ xa chỉ cần đạt được một hoặc hai nhân tố then chốt, nhưng ở đây tôi sẽ chia sẻ 4 điều được coi là cốt lõi của sự thành công.
-Vì vậy, nếu bạn lần đầu thuê các nhân viên làm việc từ xa, cảm thấy lo lắng vì thiếu sự tương tác và khoảng cách giữa nhân viên và công ty, hãy tĩnh tâm và thật thoải mái Chúng tôi đã thấu hiểu hoàn cảnh của bạn.
+Nhìn lại [Process Street](http://process.st/), nơi chúng tôi điều hành một con tàu từ xa, ở đó chúng tôi lựa chọn một hoặc hai điều để tạo dựng một nền văn hoá từ xa bền vững. Điều hay nhất của những nền văn hoá này là chúng có thể tự duy trì - chỉ cần thiết lập chúng và bổ sung tiểu tiết theo yêu cầu. Để xây dựng nền văn hoá này các đội ngũ làm việc từ xa chỉ cần đạt được một hoặc hai nhân tố then chốt, nhưng ở đây tôi sẽ chia sẻ 4 điều được coi là cốt lõi của sự thành công.
 
-Công việc từ xa đòi hỏi tính linh hoạt; bạn cũng sẽ vậy
+Vì vậy, nếu bạn lần đầu thuê các nhân viên làm việc từ xa, cảm thấy lo lắng vì thiếu sự tương tác và khoảng cách giữa nhân viên và công ty, hãy tĩnh tâm và thật thoải mái. Chúng tôi đã thấu hiểu hoàn cảnh của bạn.
+
+Làm việc từ xa là linh hoạt; bạn cũng nên như vậy
 =======================================================
 {% img center /images/2017/05/21/lam-viec-tu-xa.png làm việc từ xa linh hoạt %}
 
@@ -50,19 +51,19 @@ Thêm gia vị cho văn hoá
 =======================
 {% img center /images/2017/05/21/them-gia-vi-cho-van-hoa.png Thêm gia vị cho văn hoá của bạn %}
 
-Văn hoá sẽ tự duy trì nếu những người trong cuộc thấy có điều đáng duy trì. Nếu quy trình xây dựng văn hoá công ty chỉ là "giao tiếp, đảm bảo mọi người thấy được các tin nhắn có liên quan tới họ", thì nó giống như nói với ai đó chỉ quan tâm tới điều giản đơn. Nó không có tác dụng vì thế cần làm nhiều hơn, chứ không đơn thuần là đảm bảo việc chỉ cho mọi người cách giao tiếp với nhau.
+Văn hoá sẽ tự tồn tại nếu những người trong cuộc cảm thấy có điều gì đó đáng duy trì. Nếu quy trình xây dựng văn hoá công ty chỉ là "giao tiếp, đảm bảo mọi người thấy được các tin nhắn có liên quan tới họ", thì nó giống như nói với ai đó chỉ quan tâm tới điều giản đơn. Nó không có tác dụng, vì thế bạn cần làm nhiều thứ hơn chứ không đơn thuần là đảm bảo việc chỉ cho mọi người cách giao tiếp với nhau.
 
 Bạn cần phải bổ sung sức sống cho văn hoá công ty, và cách tốt nhất là lôi cuốn được sự tham gia của toàn thể công ty, thu hút cá tính của họ chứ không chỉ là thảo luận công việc. Tạo dựng sự cạnh tranh hữu nghị trên cơ sở lợi ích chung hoặc lên lịch cho các sự kiện chung sẽ giúp tạo sự gắn kết giữa các nhân viên và trao đổi câu chuyện hài ước ngoài giờ làm.
 
-Ví dụ, tại Process Street, hiện chúng tôi đang tiến hành hai cuộc thi, và tương lai sẽ thực hiện thêm. Vì chúng tôi là ashamedly geeky, nên việc tổ chức cuộc thi Heartstone cho toàn thể công ty sẽ phù hợp với văn hoá của chúng tôi; một trò chơi bài tập thể trong đó bạn sẽ đấu với những người chơi khác. Để đảm bảo cuộc thi không bị gian lận bởi chủ nghĩa kinh nghiệm, chúng tôi cũng giới hạn việc lựa chọn quân bài đối với cỗ bài sẵn có khi chúng tôi có cả những người chơi mới và lâu năm trong đội của mình.
+Ví dụ, tại Process Street, hiện chúng tôi đang tiến hành hai cuộc thi, và tương lai sẽ thực hiện thêm. Vì chúng tôi là những người nghiện game, nên việc tổ chức cuộc thi Heartstone cho toàn thể công ty sẽ phù hợp với văn hoá của chúng tôi; một trò chơi bài tập thể trong đó bạn sẽ đấu với những người chơi khác. Để đảm bảo cuộc thi không bị gian lận bởi chủ nghĩa kinh nghiệm, chúng tôi cũng giới hạn việc lựa chọn quân bài đối với cỗ bài sẵn có khi chúng tôi có cả những người chơi mới và lâu năm trong đội của mình.
 
-Nếu đội của bạn không giống kiểu thích trò chơi, bạn có thể tạo ra cuộc thi về các chủ đề khác. Chúng tôi cũng thực hiện cuộc thi giả tưởng để xem ai có thể tìm ra bộ phim hay nhất và tồi nhất. Mỗi tuần, các ứng viên sẽ post một phim lên kênh Slack chung, để sau đó chúng tôi sẽ phải cùng xem Để đánh giá chất lượng, chúng tôi đã đánh dấu lưu ý một số như The Beast Must Die, Shivers và (gần đây nhất) là piranha Sharks. Mặc dù đó không phải là những phim hay nhất đáng xem, nhưng hoạt động này giúp chúng tôi xích lại gần nhau là một đội và là điều chúng tôi có thể thảo luận và gắn kết ngoài công việc.
+Nếu đội của bạn không giống kiểu thích trò chơi, bạn có thể tạo ra cuộc thi về các chủ đề khác. Chúng tôi cũng thực hiện cuộc thi giả tưởng để xem ai có thể tìm ra bộ phim hay nhất và tồi nhất. Mỗi tuần, các ứng viên sẽ post một phim lên kênh Slack chung, để sau đó chúng tôi cùng xem và đánh giá chất lượng, chúng tôi đã đánh dấu lưu ý một số như The Beast Must Die, Shivers và (gần đây nhất) là piranha Sharks. Mặc dù đó không phải là những phim hay nhất đáng xem, nhưng hoạt động này giúp chúng tôi xích lại gần nhau là một đội và là điều chúng tôi có thể thảo luận và gắn kết ngoài công việc.
 
 Khơi mào 
 =======
 {% img center /images/2017/05/21/khoi-mao.png Khơi mào %}
 
-Tạo sự hoà nhập vừa là điều bạn cần phải dành nhiều công sức xây đắp, (sau đó) vừa gần như để văn hoá công ty làm thay. Hãy đảm bảo [quy trình tạo sự hoà nhập](https://www.getmailbird.com/supercharge-remote-teams-communications/) cho nhân viên là bền vững bằng cách giới nhiệu nhân viên mới với các thành viên khác trong đội và khuyến khích đội ngũ cũ cởi mở. Đừng khiến cho những cuộc trò chuyện bị ép buộc, mà hãy xây dựng nền tảng then chốt nhằm đảm bảo cho những nhân viên làm việc từ xa vừa biết phải liên hệ với ai khi gặp vấn đề vừa cảm thấy thoải mái khi làm điều đó.
+Sự hoà nhập là thứ ma bạn vừa phải bỏ công sức xây đắp, và (sau đó) vừa là thứ mà gần như bạn có thể để văn hoá xây đắp cho mình. Hãy đảm bảo [quy trình tạo sự hoà nhập](https://www.getmailbird.com/supercharge-remote-teams-communications/) cho nhân viên là bền vững bằng cách giới nhiệu nhân viên mới với các thành viên khác trong đội và khuyến khích đội ngũ cũ cởi mở. Đừng khiến cho những cuộc trò chuyện bị ép buộc, mà hãy xây dựng nền tảng then chốt nhằm đảm bảo cho những nhân viên làm việc từ xa vừa biết phải liên hệ với ai khi gặp vấn đề vừa cảm thấy thoải mái khi làm điều đó.
 
 Khi nền văn hoá công ty được thiết lập bền vững, nó sẽ thực sự góp phần lớn cho quy trình tạo sự hoà nhập nhân viên, bởi vì các cuộc thi, sự kiện và tinh thần của đội sẽ gắn kết mọi nhân viên mới vào văn hoá công ty một cách tự nhiên. Bạn sẽ vẫn cần phải giới thiệu họ với đội của mình nhưng với [nền văn hoá giao tiếp](https://www.getmailbird.com/supercharge-remote-teams-communications/), các cuộc thi và sự phối hợp sẽ giúp những người mới hoà nhập với công ty vì mục đích chung.
 
