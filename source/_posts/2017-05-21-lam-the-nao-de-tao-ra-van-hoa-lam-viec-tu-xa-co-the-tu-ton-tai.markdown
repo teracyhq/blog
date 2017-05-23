@@ -45,6 +45,8 @@ Tuy nhiên, nếu bạn khiến giao tiếp tập trung bằng cách đảm bả
 
 Đây cũng chính là phương thức để chiến đấu với nguy cơ thực tế đó là sự cô lập, mà tất cả các nhân viên (các đội) làm việc từ xa đều phải đối mặt; nền văn hoá làm việc từ xa sẽ tiếp tục được nuôi dưỡng khi tránh được việc tự bị phá huỷ. Tại sao không áp dụng khi [Sandwich Video](https://sandwichvideo.com/) đã có một video để chứng minh cho điều này?
 
+[![Sandwich Video](https://img.youtube.com/vi/B6zVzWU95Sw/0.jpg)](https://www.youtube.com/watch?v=B6zVzWU95Sw&feature=youtu.be)
+
 Thêm gia vị cho văn hoá
 =======================
 {% img center /images/2017/05/21/them-gia-vi-cho-van-hoa.png Thêm gia vị cho văn hoá của bạn %}
@@ -53,7 +55,7 @@ Văn hoá sẽ tự tồn tại nếu những người trong cuộc cảm thấy
 
 Bạn cần phải bổ sung sức sống cho văn hoá công ty, và cách tốt nhất là lôi cuốn được sự tham gia của toàn thể công ty, thu hút cá tính của họ chứ không chỉ là thảo luận công việc. Tạo dựng sự cạnh tranh hữu nghị trên cơ sở lợi ích chung hoặc lên lịch cho các sự kiện chung sẽ giúp tạo sự gắn kết giữa các nhân viên và trao đổi câu chuyện hài hước ngoài giờ làm.
 
-Ví dụ, tại Process Street, hiện chúng tôi đang tiến hành hai cuộc thi, và tương lai sẽ thực hiện thêm. Vì chúng tôi là những người nghiện game, nên việc tổ chức cuộc thi Heartstone cho toàn thể công ty sẽ phù hợp với văn hoá của chúng tôi; một trò chơi bài tập thể trong đó bạn sẽ đấu với những người chơi khác. Để đảm bảo cuộc thi không bị gian lận bởi chủ nghĩa kinh nghiệm, chúng tôi cũng giới hạn việc lựa chọn quân bài đối với cỗ bài sẵn có khi chúng tôi có cả những người chơi mới và lâu năm trong đội của mình.
+Ví dụ, tại Process Street, hiện chúng tôi đang tiến hành hai cuộc thi, và tương lai sẽ thực hiện thêm. Chúng tôi là những người khác thường (geeky) không hề ngại ngùng, nên việc tổ chức cuộc thi Heartstone cho toàn thể công ty sẽ phù hợp với văn hoá của chúng tôi; một trò chơi bài tập thể trong đó bạn sẽ đấu với những người chơi khác. Để đảm bảo cuộc thi không bị gian lận bởi chủ nghĩa kinh nghiệm, chúng tôi cũng giới hạn việc lựa chọn quân bài đối với cỗ bài sẵn có khi chúng tôi có cả những người chơi mới và lâu năm trong đội của mình.
 
 Nếu đội của bạn không giống kiểu thích trò chơi, bạn có thể tạo ra cuộc thi về các chủ đề khác. Chúng tôi cũng thực hiện cuộc thi giả tưởng để xem ai có thể tìm ra bộ phim hay nhất và tồi nhất. Mỗi tuần, các ứng viên sẽ post một phim lên kênh Slack chung, để sau đó chúng tôi cùng xem và đánh giá chất lượng, chúng tôi đã đánh dấu lưu ý một số như The Beast Must Die, Shivers và (gần đây nhất) là piranha Sharks. Mặc dù đó không phải là những phim hay nhất đáng xem, nhưng hoạt động này giúp chúng tôi xích lại gần nhau là một đội và là điều chúng tôi có thể thảo luận và gắn kết ngoài công việc.
 
@@ -61,7 +63,7 @@ Khơi mào
 =======
 {% img center /images/2017/05/21/khoi-mao.png Khơi mào %}
 
-Sự hoà nhập là thứ ma bạn vừa phải bỏ công sức xây đắp, và (sau đó) vừa là thứ mà gần như bạn có thể để văn hoá xây đắp cho mình. Hãy đảm bảo [quy trình tạo sự hoà nhập](https://www.getmailbird.com/supercharge-remote-teams-communications/) cho nhân viên là bền vững bằng cách giới nhiệu nhân viên mới với các thành viên khác trong đội và khuyến khích đội ngũ cũ cởi mở. Đừng khiến cho những cuộc trò chuyện bị ép buộc, mà hãy xây dựng nền tảng then chốt nhằm đảm bảo cho những nhân viên làm việc từ xa vừa biết phải liên hệ với ai khi gặp vấn đề vừa cảm thấy thoải mái khi làm điều đó.
+Sự hoà nhập là thứ mà bạn vừa phải bỏ công sức xây đắp, và (sau đó) vừa là thứ mà gần như bạn có thể để văn hoá xây đắp cho mình. Hãy đảm bảo [quy trình tạo sự hoà nhập](https://www.getmailbird.com/supercharge-remote-teams-communications/) cho nhân viên là bền vững bằng cách giới nhiệu nhân viên mới với các thành viên khác trong đội và khuyến khích đội ngũ cũ cởi mở. Đừng khiến cho những cuộc trò chuyện bị ép buộc, mà hãy xây dựng nền tảng then chốt nhằm đảm bảo cho những nhân viên làm việc từ xa vừa biết phải liên hệ với ai khi gặp vấn đề vừa cảm thấy thoải mái khi làm điều đó.
 
 Khi nền văn hoá công ty được thiết lập bền vững, nó sẽ thực sự góp phần lớn cho quy trình tạo sự hoà nhập nhân viên, bởi vì các cuộc thi, sự kiện và tinh thần của đội sẽ gắn kết mọi nhân viên mới vào văn hoá công ty một cách tự nhiên. Bạn sẽ vẫn cần phải giới thiệu họ với đội của mình nhưng với [nền văn hoá giao tiếp](https://www.getmailbird.com/supercharge-remote-teams-communications/), các cuộc thi và sự phối hợp sẽ giúp những người mới hoà nhập với công ty vì mục đích chung.
 
