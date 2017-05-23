@@ -30,7 +30,7 @@ Hãy nhớ cụm từ then chốt này của [Sheryl Sandberg](https://en.wikipe
 
 ## 2. Ghi các việc chính cần làm vào thời khóa biểu.
 
-Đừng đợi đến khi bạn "có thời gian" rồi mới làm. Nếu bạn có những khoảng "thời gian rảnh" trong thời khóa biểu, thì giống như nước vậy, những việc không quan trọng sẽ tự động xen vào đó (tự bạn hay người khác) (xem phần [7](#section-7)).
+Đừng đợi đến khi có thời gian mới hoàn thành những việc quan trọng. Nếu như thời gian biểu của bạn còn khoảng trống, cũng giống như với nước vậy, những việc không quan trọng sẽ tự động bị xen vào đó (xem phần [7](#section-7)).
 
 
 ## 3. Không làm nhiều việc cùng một lúc.
