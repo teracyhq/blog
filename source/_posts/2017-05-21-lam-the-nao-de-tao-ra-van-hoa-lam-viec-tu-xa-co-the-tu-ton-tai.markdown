@@ -45,7 +45,7 @@ Tuy nhiên, nếu bạn khiến giao tiếp tập trung bằng cách đảm bả
 
 Đây cũng chính là phương thức để chiến đấu với nguy cơ thực tế đó là sự cô lập, mà tất cả các nhân viên (các đội) làm việc từ xa đều phải đối mặt; nền văn hoá làm việc từ xa sẽ tiếp tục được nuôi dưỡng khi tránh được việc tự bị phá huỷ. Tại sao không áp dụng khi [Sandwich Video](https://sandwichvideo.com/) đã có một video để chứng minh cho điều này?
 
-[![Sandwich Video](https://img.youtube.com/vi/B6zVzWU95Sw/0.jpg)](https://www.youtube.com/watch?v=B6zVzWU95Sw&feature=youtu.be)
+<iframe width="700" height="394" src="https://www.youtube.com/embed/B6zVzWU95Sw" frameborder="0" allowfullscreen></iframe>
 
 Thêm gia vị cho văn hoá
 =======================
