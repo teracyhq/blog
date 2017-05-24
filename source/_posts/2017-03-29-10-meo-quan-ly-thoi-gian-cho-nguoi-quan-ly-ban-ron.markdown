@@ -2,7 +2,7 @@
 layout: post
 title: "10 mẹo quản lý thời gian dành cho người quản lý bận rộn"
 author: datphan
-date: 2017-03-29 09:04
+date: 2017-05-24 09:04
 comments: true
 categories:
     - "vi"
@@ -73,4 +73,4 @@ Một người huấn luyện hoặc cố vấn tốt sẽ luôn giữ cho bạn
 Hãy tự chăm sóc bản thân mình thật tốt, cả thể xác lẫn tinh thần. Nếu không, bạn sẽ không làm gì tốt được.
 
 
-Bản gốc: [10 Time-Management Tips for Busy Executives](www.inc.com/ariana-ayu/10-time-management-tips-for-busy-executives.html)
+Dịch từ: [10 Time-Management Tips for Busy Executives](https://www.inc.com/ariana-ayu/10-time-management-tips-for-busy-executives.html)
