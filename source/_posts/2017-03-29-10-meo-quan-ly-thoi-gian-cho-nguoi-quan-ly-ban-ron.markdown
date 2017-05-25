@@ -9,7 +9,7 @@ categories:
     - "trans"
 tags:
     - "time"
-cover:
+cover: /images/2017/03/29/time-board.jpg
 description: Chỉ có từng đó giờ trong một ngày thôi cho nên chúng ta nên sử dụng thời gian đó càng hiệu quả càng tốt
 keywords:
 published: true
