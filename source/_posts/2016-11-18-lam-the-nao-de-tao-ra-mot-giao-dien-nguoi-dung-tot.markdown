@@ -74,7 +74,7 @@ Hãy thành thật với chính mình. Lần gần nhất bạn tạo ra màn h�
 
 Sự thực là thế giới chúng ta đang sống không hoàn hảo, và cái gì cũng có thể xảy ra. Máy chủ cần thời gian để trả lời, và khách hàng của bạn không phải lúc nào cũng sử dụng sản phẩm của bạn theo cái cách mà bạn muốn.
 
-Cho nên với tư cách là 1 người thiết kế sản phẩm, bạn phải xem xét những sự thực này.
+Cho nên với tư cách là 1 người thiết kế sản phẩm, bạn luôn phải cân nhắc đến những hiện thực này.
 
 Đó là lý do tại sao, đối với mỗi màn hình mà bạn định thiết kế có thể có tới 5 trạng thái:
 
@@ -178,14 +178,14 @@ Basecamp không có nội dung nào cho bạn xem nhưng thay vào không có g�
 {% img center /images/2016/11/18/image_8.jpg  %}
 
 
-Bộ môn nhập môn và các trạng thái sử dụng lần đầu là 1 chủ để đủ lớn cho 1 cuốn sách. Và cũng có một cuốn sách như thế, nếu bạn muốn đọc thì tôi khuyến khích cuốn *[The Elements of User Onboardin*g](https://www.useronboard.com/training/) của Samuel Hulick.
+Trạng thái sử dụng lần đầu là 1 chủ để đủ lớn để thành 1 cuốn sách. Và cũng có một cuốn sách như thế, nếu bạn muốn đọc thì tôi khuyến khích cuốn *[The Elements of User Onboardin*g](https://www.useronboard.com/training/) của Samuel Hulick.
 
 #### Người dùng xoá dữ liệu
 
  Loại thứ 2 trong trạng thái trống là trường hợp khi người dùng chủ động xoá dữ liệu khỏi màn hình. Ví dụ như là khi người dùng hoàn thành hết tất cả các công việc trong danh sách các công việc cần làm, đọc tất cả các thông báo, thu hồi tất cả email hay hoàn thành tải tất cả các bài nhạc.
 
 Các loại trạng thái trống là cơ hội lớn để thưởng cho khách hàng của bạn hay là kích thích hành động sâu hơn của họ. Ví dụ:
-  Thu hồi email, hãy nói "Không có tin mới?" Tuyệt vời! Hãy xem hình này nhé.
+  Đã lưu trữ hết email thì hãy nói "Đã hết email mới?, Thật tuyệt"
   Đã tải hết nhạc? nói “Tốt, giờ hãy nghe nó nào".
   Xem hết các thông báo rồi? nói “Dưới đây là 1 cái khác có thể bạn muốn đọc”.
   …
@@ -198,7 +198,7 @@ Khách hàng mà có xoá, làm sạch dữ liệu là người mà có tương 
 
 Trong nhiều trường hợp khi khách hàng đang lướt hay tìm kiếm 1 mẩu thông tin nào đó trong sản phẩm của bạn, sẽ có trường hợp họ không tìm thấy gì, cái ngữ cảnh này là những cơ hội tuyệt vời để suy luận về việc khách hàng của bạn có ý định tìm cái gì để có thể đưa ra những gợi ý thông minh.
 
-Cách làm của Amazon là các ví dụ tốt nhất tôi từng thấy trong kĩ thuật này. Tính toán chính tả và các tìm kiếm tương tự, trình tìm kiếm của Amazon rất hiếm khi không cho bạn kết quả nào. Thay vào đó, họ sẽ cho bạn kết quả gần nhất cùng với sửa các từ ngữ không hợp.
+Cách làm của Amazon là các ví dụ tốt nhất tôi từng thấy trong kĩ thuật này. Tự động sửa chính tả và đưa ra các kết quả tương tự, trình tìm kiếm của Amazon rất hiếm khi không cho bạn kết quả nào. Thay vào đó họ cho bạn kết quả gần nhất và chỉ cho bạn thấy những từ khóa nào không tìm thấy.
 
 {% img center /images/2016/11/18/image_10.jpg Ví dụ cho thấy tôi yêu thích dòng nhạc metal, có lẽ vậy. %}
 
@@ -258,7 +258,7 @@ Trạng thái thành phần là màn hình mà mọi người sẽ thấy khi tr
 
 Một vài quy tắc thiết kế trò chơi có thể hữu ích ở đây. Hãy xây dựng cái gọi là sự tăng tốc trong trạng thái này của sản phẩm.
 
-Đây là 1 điều khoản trong thiết kế trò chơi mà giúp 1 người chơi hình dung họ sẽ trở nên mạnh mẽ như thế nào trong tương lai, dẫn dắt họ qua danh sách các công việc định trước để hoàn thiện việc tiếp thu tầm nhìn này. Mẹo ở đây là làm cho người chơi không nhận ra rằng họ đang thực hiện cái gọi là nhàm chán để có thể tận dụng tối đa giá trị của sản phẩm.
+Đây là 1 khái niệm trong thiết kế trò chơi mà giúp 1 người chơi hình dung họ sẽ trở nên mạnh mẽ như thế nào trong tương lai, dẫn dắt họ qua danh sách các công việc định trước để hoàn thiện việc tiếp thu tầm nhìn này. Mẹo ở đây là làm cho người chơi không nhận ra rằng họ đang thực hiện cái gọi là nhàm chán để có thể tận dụng tối đa giá trị của sản phẩm.
 
 "Những người chơi tham gia vào quá trình tăng tốc không nghĩ tới sự nhàm chán họ phải lặp lại để có thể lên cấp, họ chỉ làm nó và thưởng thức tỉ lệ tăng tốc của kết quả… Hơn nữa, những người chơi này bị bắt trong 1 viễn cảnh mà nhân vật của họ sẽ mạnh mẽ theo 1 cách mà họ cũng chưa hiểu được. Nói theo kiểu chuyên ngành, họ đang suy luận sự tăng tiến cấu trúc sức mạnh theo luỹ thừa mà nó biến mất khỏi ranh giới định trước nhân vật của họ. Nó không giống như dòng chảy truyền thống, nhưng sự hăng say của người chơi là rất tương đồng."
 
