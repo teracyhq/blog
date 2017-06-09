@@ -31,7 +31,7 @@ Nếu công nghệ không tồn tại, không hoạt động đúng hoặc khôn
  
 2. Cắt giảm quản lý vi mô
 =========================
-Quản lý vi mô làm suy yếu khả năng tư duy của lực lượng lao động. Nó cũng sẽ khiến đội ngũ quản lý bị dàn trải,và nhân viên bị mất quyền tự chủ. Đây không phải là môi trường dành cho sự đổi mới phát triển, và có thể khiến cho những nhân viên tài năng rcủa bạn rời khỏi công ty.
+Quản lý vi mô làm suy yếu khả năng tư duy của lực lượng lao động. Nó cũng sẽ khiến đội ngũ quản lý bị dàn trải, và nhân viên bị mất quyền tự chủ. Đây không phải là môi trường dành cho sự đổi mới phát triển, và có thể khiến cho những nhân viên tài năng rcủa bạn rời khỏi công ty.
  
 3. Linh hoạt hơn
 ================
@@ -45,7 +45,7 @@ Nhân viên của bạn muốn biết có những cơ hội gì phía trước v
  
 5. Cơ hội giáo dục liên tục
 ===========================
-[87%](http://www.gallup.com/businessjournal/193274/millennials-jobs-development-opportunities.aspx) những người trẻ trẻ tuổi cho rằng sự phát triển rất quan trọng trong công việc, đó là nhân tố hàng đầu để duy trì nhân viên. Nếu bạn muốn nuôi dưỡng một lực lượng lao động đầy tham vọng, bạn phải cung cấp cho họ cơ hội để tiếp tục học tập, trau dồi kỹ năng và phát triển như các chuyên gia.
+[87%](http://www.gallup.com/businessjournal/193274/millennials-jobs-development-opportunities.aspx) những người trẻ tuổi cho rằng sự phát triển rất quan trọng trong công việc, đó là nhân tố hàng đầu để duy trì nhân viên. Nếu bạn muốn nuôi dưỡng một lực lượng lao động đầy tham vọng, bạn phải cung cấp cho họ cơ hội để tiếp tục học tập, trau dồi kỹ năng và phát triển như các chuyên gia.
  
 6. Môi trường làm việc lý tưởng
 =====================================
