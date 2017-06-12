@@ -10,7 +10,7 @@ categories:
 tags:
     - "leader"
     - "employees"
-cover: /images/2017/05/21/lam-viec-tu-xa.png
+cover: /images/2017/06/09/nhan-vien-nhay-viec.jpg
 description: Sự hài lòng của nhân viên sẽ mang lại tất cả những yếu tố thành công trong kinh doanh. Tuy nhiên có rất nhiều mong muốn của họ mà người lãnh đạo không hề biết...
 keywords: leader, employees, lãnh đạo, nhân viên, mong muốn
 published: true
