@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-13T05:05:56+00:00</updated>
+  <updated>2017-06-13T05:15:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -454,6 +454,83 @@ projects at Teracy and our clients&#8217; projects. I hope that it could be help
 your productivity with software development.</p>
 
 <p>Happy developing!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tại sao Tư Duy Hướng Sản Phẩm là thế hệ tiếp theo trong thiết kế trải nghiệm người dùng]]></title>
+    <link href="http://blog.teracy.com/2017/05/04/tai-sao-suy-nghi-huong-san-pham-la-cai-lon-nhat-trong-thiet-ke-ux/"/>
+    <updated>2017-05-04T10:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/05/04/tai-sao-suy-nghi-huong-san-pham-la-cai-lon-nhat-trong-thiet-ke-ux</id>
+    <content type="html"><![CDATA[<p>Khi suy nghĩ về UX (trải nghiệm người dùng), chúng ta thường nghĩ đến các tính năng đơn giản, đẹp và dễ sử dụng của sản phẩm, làm cho cuộc sống người sử dụng dễ dàng hơn. Nhưng sự thật rằng, tính năng nó chỉ là 1 phần nhỏ của sản phẩm. Chúng chỉ là một vài trong số nhiều giải pháp có thể nghĩ ra để giải quyết vấn đề của người dùng. Tư Duy Hướng Sản Phẩm có nghĩa là suy nghĩ về các vấn đề của đối tượng người dùng nào đó, trong công việc phải làm, mục tiêu và thu nhập.</p>
+
+<p><img class="center" src="images/2017/05/04/image_0.png"></p>
+
+<!-- more -->
+
+
+<p>Cốt lõi của trải nghiệm người dùng không phải là bộ các tính năng, mà thực ra nó là công việc mà người sử dụng muốn sản phẩm làm cho họ. Ví dụ như cốt lõi trải nghiệm người dùng của Uber là cho phép gọi xe taxi dễ dàng bất cứ lúc nào. Bộ đếm giờ, hiển thì chính xác khi nào thì xe sẽ tới, nó là một tính năng phù hợp để mở rộng trải nghiệm này. Nhưng sản phẩm Uber vẫn chạy dù có tính năng này hay không, nhưng tính năng đếm giờ này sẽ không thể chạy nếu không có sản phẩm. Có một mối quan hệ 1 chiều giữa tính năng và sản phẩm: Tính năng không chạy nếu thiếu sản phẩm. Đó là lý do tại sao người thiết kế nên suy nghĩ theo hướng sản phẩm trước.</p>
+
+<p><em>&ldquo;Nghĩ hướng sản phẩm, không hướng tính năng&rdquo;</em></p>
+
+<hr />
+
+<h3><strong>Khám phá mục đích của sản phẩm là gì</strong></h3>
+
+<p>Mỗi Sản phẩm đều có một trải nghiệm người dùng cốt lõi, cơ bản đó là lý do để sản phẩm tồn tại. Nó đáp ứng nhu cầu hoặc xử lý vấn đề nào đó của con người. Do đó nó trở nên ý nghĩa và cung cấp một giá trị nào đó. Nếu vấn đề không tồn tại hoặc giải pháp đưa ra không phù hợp, sản phẩm sẽ trở nên vô nghĩa và mọi người sẽ không ai dùng nó; rồi cuối cùng cũng sẽ dẫn đến sự thất bại của sản phẩm. Giải pháp sai có thể được sửa, nhưng vấn đề mà không tồn tại thì không thể điều chỉnh được. Vậy làm thế nào để có thể chắc chắn tìm được vấn đề đó? Chúng ta không thể chắc chắn 100%, nhưng chúng ta có thể tối thiểu hóa các rủi ro thật nhiều bằng cách quan sát và nói chuyện với mọi người. Từ đó, khám phá vấn đề và xây dựng giải pháp mà người sử dụng muốn.</p>
+
+<p><em>„Đó không phải là việc của khách hàng để biết mình muốn gì&#8221;</em> — Steve Jobs</p>
+
+<p>Ví dụ, (<a href="http://ipony.de/?p=3495]">Clay Christensen</a>) đã từng cố gắng cải thiện doanh số bán sữa lắc, anh ta cố làm cho sữa ngọt hơn, cung cấp nhiều hương vị và làm cái ly to hơn một tí. Nhưng không mang lại kết quả, cho đến khi anh ta bắt đầu quan sát người ta mua hàng của mình. Và tìm ra rằng khi người ta mua sữa lắc thì thực ra là họ muốn trên đường đi làm bớt nhàm chán hơn. Lợi ích lớn nhất sữa lắc mang lại là nó đặc và để được lâu hơn và cảm giác no hơn các loại sữa khác. Đây chính là vấn đề, người sửa dụng không biết như vậy. Cuối cùng thì anh bán sữa lắc này đã đưa ra giải pháp làm cho sữa đặc hơn và từ đó tăng trưởng doanh số cho mình.</p>
+
+<p><em>„Theo đuổi một vấn đề, không phải giải pháp&#8221;</em> — Laura Javier</p>
+
+<hr />
+
+<h3><strong>Tư duy hướng sản phẩm và xây dựng tính năng phù hợp với khách hàng phù hợp</strong></h3>
+
+<p>Tư Duy Hướng Sản Phẩm giúp xây dựng các tính năng thành công. Bằng việc xác định các vấn đề mà sản phẩm đang có, nó trả lời câu hỏi rằng &ldquo;tại sao chúng ta xây dựng sản phẩm này?&rdquo;. Xác định đối tượng khách hàng &ldquo;ai bị vấn đề này?&rdquo; và xác định giải pháp &ldquo;chúng ta sẽ làm cái này như thế nào?&rdquo; sẽ đủ đễ dẫn lối và tạo ra một tính năng mới. Sắp đặt một mục tiêu sẽ giúp đo lường thành quả của tính năng này.</p>
+
+<p><img class="center" src="images/2017/05/04/image_1.png"></p>
+
+<h4><strong>Bộ Vấn đề và Giải pháp</strong></h4>
+
+<p>Sản phẩm sẽ ý nghĩa hơn khi mà được cung cấp giải pháp phù hợp. Giải pháp này mô tả cách vấn đề sẽ được giải quyết như thế nào. Do đó, Bộ Vấn đề và Giải pháp định nghĩa trải nghiệm người dùng cốt lõi của sản phẩm. Các tính năng cụ thể sẽ chỉ trợ giúp và mở rộng trải nghiệm cốt lõi, nhưng sẽ không thể thay thế nó. Thiết kế tương tác (Interaction Design) và thiết kế trực quan (Visual Design) có thể làm sản phẩm đẹp, dễ sử dụng và làm sản phẩm nổi bật hơn so với các sản phẩm khác nhưng sẽ không làm sản phẩm có ý nghĩa hơn. Đây là lý do tại sao bộ vấn đề và giải pháp là tối quan trọng đối với sự thành công của sản phẩm.</p>
+
+<h4><strong>Định nghĩa sản phẩm</strong></h4>
+
+<p>Khi suy nghĩ hướng sản phẩm, trước tiên người thiết kế UX nên có thể trả lời được những câu hỏi sau:
+  Chúng ta đang giải quyết vấn đề gì? (Vấn đề người dùng)
+  Cho ai? (Đối tượng tham gia)
+  Tại sao? (Tầm nhìn)
+  Làm như thế nào? (Chiến lược)
+  Chúng ta muốn đạt được những gì? (Mục tiêu)</p>
+
+<p>Chỉ đến khi xong thì mới tới lúc nghĩ tới việc chính xác là chúng ta đang làm gì (Tính năng).</p>
+
+<p><img class="center" src="images/2017/05/04/image_2.png"></p>
+
+<hr />
+
+<h3><strong>Sức mạnh của Tư Duy Hướng Sản Phẩm</strong></h3>
+
+<p>Tư Duy Hướng Sản Phẩm mang lại nhiều lợi thế cho người thiết kế trong việc xây dựng tính năng phù hợp cho đúng đối tượng người dùng. Nó giúp hiểu được trải nghiệm người dùng một cách tổng quan; Không chỉ là Thiết kế tương tác và Thiết kế trực quan của các tính năng. Nó đảm bảo rằng các nhà thiết kế giải quyết các vấn đề thực sự của người sử dụng và theo đó làm giảm nguy cơ xây dựng một cái gì đó không ai muốn. Nó cho phép đưa ra các quyết định đúng đắn khi xây dựng các tính năng.</p>
+
+<p><em>&ldquo;Xây dựng tính năng thì dễ, xây dựng tính năng phù hợp cho người dùng dùng phù hợp mới khó&rdquo;</em></p>
+
+<p>Tư Duy Hướng Sản Phẩm cho phép nhà thiết kế UX hỏi được những câu hỏi đúng, để xậy dựng những tính năng đúng và để giao tiếp với những bên liên quan hiệu quả hơn. Nó cho phép người thiết kế nói &ldquo;không&rdquo; và cho phép ta do dự trước khi thêm tính năng mới nào. Bất cứ khi nào một tính năng mới được yêu cầu hoặc là ai đó có ý tưởng nào đó cho sản phẩm, người thiết kế sẽ có thể hỏi những câu hỏi phù hợp, trước khi phác thảo bản vẽ hoặc xậy dựng giao diện bắt mắt:
+  &ldquo;Cái này có khớp với sản phẩm?&rdquo;
+  &ldquo;Nó sẽ phục vụ cho vấn đề người dùng chứ?&rdquo;
+  &ldquo;Người ta muốn hay cần nó? Hãy thăm dò trước!&rdquo;
+Việc này sẽ giúp sản phẩm mềm mỏng và hiệu quả</p>
+
+<hr />
+
+<h3><strong>Kết luận</strong></h3>
+
+<p>Tư Duy Hướng Sản Phẩm đảm bảo cho người thiết kế xây dựng tính năng phù hợp với người dùng phù hợp và xử lý những vấn đề thực tế của mọi người. Nó tăng cường khả năng ra quyết định đúng và là nền tả cho việc thành công xây dựng sản phẩm mà người dùng muốn. Tư Duy Hướng Sản Phẩm đặt ra một mối quan hệ hiệu quả giữa việc quản lý sản phẩm và thiết kế giao diện người dùng và do đó dẫn tới sản phẩm sẽ mạnh mẽ hơn. Đó là lý do tại sao Tư Duy Hướng Sản Phẩm sẽ là thế hệ tiếp theo trong thiết kế trải nghiệm người dùng.</p>
+
+<p>Nguồn: <a href="https://medium.com/@jaf_designer/why-product-thinking-is-the-next-big-thing-in-ux-design-ee7de959f3fe">Why Product Thinking is the next big thing in UX Design</a></p>
 ]]></content>
   </entry>
   
@@ -2689,153 +2766,6 @@ and production deployment.</p>
 application development.</p>
 
 <p>Happy hacking!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cách tiếp cận tinh gọn để thẩm định sản phẩm (Phần 3)]]></title>
-    <link href="http://blog.teracy.com/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3/"/>
-    <updated>2016-10-28T10:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/10/28/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-3</id>
-    <content type="html"><![CDATA[<p>Đây là phần tiếp theo của <a href="http://blog.teracy.com/2016/10/04/cach-tiep-can-tinh-gon-de-tham-dinh-san-pham-phan-2/">Phần 2</a> và là phần cuối cùng của bài viết &ldquo;Cách tiếp cận tinh gọn để thẩm định sản phẩm&rdquo;.</p>
-
-<h1>Thẩm Định Sự Sẵn Sàng Chi Trả Của Người Dùng</h1>
-
-<p>Có rất nhiều cách để thẩm định sự sẵn sàng chi trả của người dùng, nhưng một trong những thách thức lớn nhất đó là chúng ta không thể hoàn toàn tin tưởng vào lời nói. Chúng ta đều biết những người nói &ldquo;Tất nhiên, tôi hoàn toàn muốn làm điều đó!&rdquo; nhưng sau đó họ không giữ lời đến thời điểm cam kết. Chúng ta muốn có được những khách hàng chi tiền sau khi họ nói càng nhiều càng tốt.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/10/28/tham-dinh-su-san-sang-chi-tra.jpg" title="Thẩm định sự sẵn sàng chi trả" ></p>
-
-<h2>CÁCH XÂY DỰNG MỘT TRANG WEB THẨM ĐỊNH</h2>
-
-<p>Trang web chỉ cần có 1 trang duy nhất là cũng đủ để xác nhận, đặc biệt được coi là một bước đầu tiên. Nhưng nếu bạn muốn dần dần bổ sung thêm nhiều trang và nội dung để tăng tính chính xác và tìm hiểu thêm thì đó cũng là một lựa chọn.</p>
-
-<p>Nếu bạn là dân kỹ thuật, bạn có thể tự thiết kế và lập trình trang web của mình, nhưng tốt hơn hết là hãy sử dựng công cụ xây dựng trang web có sẵn mẫu.</p>
-
-<!-- more -->
-
-
-<p>Dưới đây là một vài lựa chọn tốt để bạn xây dựng trang web thẩm định:</p>
-
-<ul>
-<li><a href="https://www.squarespace.com/">Squarespace</a> có một số thiết kế khá bắt mắt.</li>
-<li><a href="https://webflow.com/">Webflow</a> cho phép rất nhiều tùy biến và phù hợp để thiết kế những trang web có 1 trang duy nhất.</li>
-<li><a href="http://quickmvp.com/">QuickMVP</a> là một bộ công cụ rất hữu ích giúp tạo các landing pages để thẩm định các ý tưởng và sản phẩm. Nó đơn giản hóa quy trình tạo landing page, thiết lập quảng cáo và thu thập các số liệu thống kê.</li>
-</ul>
-
-
-<p>Bạn chắc chắn muốn có một vài thành phần trong trang web đơn giản của bạn.</p>
-
-<ul>
-<li>Hãy giải thích một cách rõ ràng và chính xác tính năng sản phẩm của bạn.</li>
-<li>Làm nổi bật những lợi điểm bán hàng độc nhất</li>
-<li>Giải quyết bất kỳ vấn đề quan trọng nào mà người dùng gặp phải trong quá trình kiểm thử. Nếu họ lo lắng về bảo mật, hiệu suất hay sự thoải mái thì hãy trình bày giải pháp của bạn với họ.</li>
-<li>Hãy thu hút, lôi kéo người dùng đến khu vực kiểm tra và thanh toán trong trang web của bạn. Điều này cũng cần rõ ràng và dứt khoát, như là &ldquo;Mua ngay chỉ với $99!&rdquo;.</li>
-<li>Hãy đảm bảo rằng trang thanh toán có biểu mẫu thu thập email, do đó bạn có thể thu thập được địa chỉ của các khách hàng tiềm năng. <a href="http://mailchimp.com/">MailChimp</a> là một lựa chọn tốt cho bạn.</li>
-<li>Thay vì xác nhận đơn đặt hàng của người dùng, bạn nên phô ra trang &ldquo;Sorry&rdquo; giải thích với họ tại sao bạn tiến hành các thí nghiệm. Bằng cách này họ sẽ không bị kỳ vọng sai khi nhận sản phẩm.</li>
-<li>Chạy phân tích trên trang web của bạn để theo dõi xem mọi người tương tác với trang web của bạn như thế nào. Bạn có thể dùng công cụ <a href="https://analytics.google.com/analytics/web/">Google Analytics</a>, nó rất đơn giản và miễn phí.</li>
-</ul>
-
-
-<p>Khi trang web thẩm định đi vào hoạt động, bạn sẽ cần thu hút nhiều người truy cập. Hãy cẩn trọng một chút khi làm điều này trong mạng lưới bạn bè và gia đình của bạn. Bạn đừng để rơi vào tình cảnh mọi người đưa ra phản hồi tích cực, đăng ký vào trang web của bạn chỉ vì họ biết bạn.</p>
-
-<p>Kỹ thuật tốt nhất để mang đến lượng traffic chủ quan đến trang web của bạn đó là chi một ít tiền cho <a href="https://www.facebook.com/business/products/ads">Facebook Ads</a> hoặc chiến dịch quảng cáo của <a href="https://www.google.com/adwords/?subid=vn-en-or-ot-aw-c-dyn-www.smashingmagazine.com!o2">Google AdWords</a>.</p>
-
-<p>Có thể bạn sẽ cần chi khoảng 100$ &ndash; 500$ cho vụ quảng cáo để có đủ người dùng truy nhập vào trang web của bạn để thẩm định. Chi phí này dường như cũng là khá tốn kém, đó cũng là lý do vì sao chúng tôi để giai đoạn thẩm định này ở gần cuối bài. Hãy suy nghĩ kỹ theo cách này, 100$ &ndash; 500% là chi phí an toàn và ít rủi ro hơn so với chi tiêu hàng ngàn đô la xây dựng một trang web thực sự. Hơn nữa, nếu ý tưởng sản phẩm mạnh mẽ thì số tiền này cũng không bị lãng phí. Bạn sẽ xây dựng được một danh sách lớn những người dùng quan tâm đến sản phẩm của bạn &ndash; có thể là những người sẽ đăng ký cho sản phẩm khi nó thực sự ra mắt.</p>
-
-<p><a href="https://www.facebook.com/business">Facebook</a> và <a href="https://www.google.com/adwords/?subid=vn-en-or-ot-aw-c-dyn-www.smashingmagazine.com!o2">Google AdWords</a> có khả năng nhắm mục tiêu rất cao, cho phép bạn trình bày giải pháp của mình đến đúng đối tượng mà bạn muốn trong giai đoạn &ldquo;Thẩm định vấn đề&rdquo;. Bạn cũng có thể tối ưu quảng cáo của mình bằng cách xem xét kỹ các dữ liệu từ những quảng cáo ban đầu như: số lần click, like và share và nơi người dùng tương tác với nó. Bắt đầu một chiến dịch quảng cáo trên Google AdWords hoặc Facebook thực sự rất đơn giản. Chúng tôi sẽ không chỉ ra các bước cài đặt quảng cáo này ở đây, bạn có thể tìm kiếm bằng Google để biết làm thế nào tạo một chiến dịch quảng cáo nhanh.</p>
-
-<p>Chúng tôi khuyên bạn nên để ý đến một vài số liệu:</p>
-
-<ul>
-<li><a href="https://www.smashingmagazine.com/2009/05/optimizing-conversion-rates-its-all-about-usability/">Tỷ lệ chuyển đổi</a></li>
-<li>Có bao nhiêu khách đã cố gắng để mua được sản phẩm?</li>
-<li>Tổng số &ldquo;bán hàng&rdquo;</li>
-<li>Tìm hiểu xem doanh số bán hàng đến từ đâu (về mặt địa lý).</li>
-<li>Tỷ lệ bỏ giỏ hàng</li>
-</ul>
-
-
-<p>Trong một gian hàng online thực tế, tỷ lệ rời bỏ giỏ hàng khoảng 60 &ndash; 80% (<a href="http://baymard.com/lists/cart-abandonment-rate">trung bình là 68%</a>). Điều này có nghĩa là sẽ có 7 trong số 10 người đến phần kiểm tra thanh toán nhưng không hoàn tất việc thanh toán.</p>
-
-<p>Để tìm hiếu kỹ vấn đề này hơn, chúng tôi gợi ý bạn những điều sau đây:</p>
-
-<ul>
-<li><strong><a href="https://www.smashingmagazine.com/2010/06/the-ultimate-guide-to-a-b-testing/">A/B test</a></strong>: Thử nghiệm với các tiêu đề và nội dung khác nhau để xem chúng ảnh hưởng đến chuyển đổi như thế nào. Tuy nhiên, các phát hiện của bạn sẽ chỉ có ý nghĩa thống kê nếu như bạn hướng được hàng nghìn lượt truy cập vào trang web của bạn.</li>
-<li><strong>Nói chuyện với khách hàng</strong>: Khi bạn thu thập địa chỉ email của ai đó, bạn sẽ có thể gửi tin nhắn hoặc bản tin cho họ và giải thích sản phẩm của bạn đang tiến triển thế nào. Tuy nhiên, bạn cũng có thể tiếp cận trực tiếp với họ và hỏi họ một vài câu hỏi để hiểu nhu cầu và động cơ của họ.</li>
-</ul>
-
-
-<h2>BẮT ĐẦU DỊCH VỤ CHĂM SÓC KHÁCH HÀNG</h2>
-
-<p>Nguyên tắc cơ bản của dịch vụ chăm sóc khách hàng là trước khi thực sự xây dựng một phần mềm nào đó, bạn nên giả lập dịch vụ và tự thực hiện đặt đơn hàng.</p>
-
-<p>Hãy xem một ví dụ khác từ thế giới thực. Giả sử chúng ta xây dựng <a href="https://hellopingpong.com/">PingPong</a> để giúp người dùng thu thập thông tin phản hồi và thực hiện các cuộc phỏng vấn. Công nghệ phía sau sản phảm này thực sự không phức tạp chút nào, nhưng đòi hỏi phải đầu tư vào thiết kế và phát triển để tung ra một sản phẩm hiệu quả. Rất nhiều công việc cần làm để có một sản phẩm thành công, nhưng ở giai đoạn đầu này, chúng ta vẫn còn nhiều giả định chưa được thẩm định về việc người dùng thực sự muốn gì.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/10/28/pingpong.png" title="Pingpong" ></p>
-
-<p>Thay vì thực hiện tất cả mọi việc và xây dựng một dịch vụ mà người dùng có thể đăng ký trực tiếp và sử dụng, thì chúng ta sẽ  đi theo con đường chăm sóc khách hàng. Vì vậy, cách duy nhất đối với khách hàng trả tiền để đăng ký đó là ngay bây giờ chúng ta phải đồng ý với họ sẽ tự thực hiện đơn hàng của họ. Cuối cùng thì sản phẩm sẽ được tiếp nhận và thực hiện các việc này một cách tự động. Tất nhiên sẽ luôn luôn có rủi ro đó là dịch vụ hướng dẫn này sẽ không thể bao quát được hết các nhu cầu và bạn sẽ phải chuyển xuống cho khách hàng; đây là một vấn đề khác mà bạn cần giải quyết và đó là một vấn đề nghiêm trọng của bạn.</p>
-
-<p>Điều này có thể giống như một cam kết về thời gian rất lớn, nhưng thực tế nó mang đến rất nhiều bài học quan trọng. Chúng tôi sẽ tự chạy dịch vụ ngay khi bắt đầu và xây dựng những mối quan hệ sâu sắc với một vài khách hàng đầu tiên của mình.  Bởi vì chúng tôi giao tiếp với họ nhiều, chúng tôi sẽ hỏi họ những câu hỏi liên quan đến nhu cầu và mong đợi của họ, sau đó sử dụng thông tin phản hồi của họ để tinh chỉnh mô hình kinh doanh của chúng tôi trước khi chúng tôi xây dựng một sản phẩm đầy đủ. Đây là một cách rất hay để thẩm định chính xác xem người dùng sẵn sàng chi trả cho cái gì và để tối đa hóa giá trị người dùng.</p>
-
-<p>Thêm nữa, thực hiện dịch vụ chăm sóc khách hàng có nghĩa là bạn sẽ có thể kiếm tiền ngay lập tức.</p>
-
-<h2>GIẢ LẬP LANDING PAGE</h2>
-
-<p>Cách tốt nhất để thẩm định mà không có sự tham gia của những người không thực sự muốn trả tiền mua sản phẩm của bạn đó là xây dựng một trang web tiếp thị giả mạo.</p>
-
-<p>Kỹ thuật này có vẻ như hơi gây ra hiểu lầm chút. Nhưng miễn là bạn không lấy tiền của mọi người cho những gì mà bạn không cung cấp cho họ, thường thì mọi người sẽ hiểu được động cơ của bạn.</p>
-
-<p>Hãy xem <a href="https://checkmaid.com/">Check Maid</a>, dịch vụ trực tuyến để tìm kiếm và đặt dịch vụ lau dọn nhà cửa. Khi nhóm tạo trang web lần đầu, thực sự họ vẫn chưa đi vào kinh doanh. Người sáng lập Check Maid ông Alex Brola nói:</p>
-
-<p><em>&ldquo;Chúng tôi thẩm định ý tưởng của mình mà không có lấy một nhân viên dọn dẹp vệ sinh nào cả. Chúng tôi đưa ra trang web, tạo một biểu mẫu đặt dịch vụ, số điện thoại và chạy một vài quảng cáo <a href="pay-per-clicks">trả tiền theo số lượt nhấp chuột</a> thông qua Google và Bing, và xem tỷ lệ chuyển đổi như thế nào để chúng tôi quyết định có thực sự cần những người người dọn vệ sinh hay không.&rdquo;</em></p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/10/28/gia-lap-landing-page.png" title="Gỉa lập landing page" ></p>
-
-<p>Việc thẩm định sự sẵn sàng chi trả bằng cách sử dụng landing page giả lập sẽ thực sự là cái mà bạn phải quan tâm. Nếu bạn làm nó sai, bạn có thể phá hủy thương hiệu của bạn và làm cho người dùng vô cùng thất vọng.</p>
-
-<p>Điều quan trọng là trình bày nội dung tiếp thị và hiển thị rõ ràng đường link &ldquo;Đăng ký&rdquo; hoặc &ldquo;Mua ngay&rdquo;. Khi người dùng click vào đường link này, bạn sẽ hiển thị một thông điệp giải thích tại sao dịch vụ vẫn chưa hoạt động, và đề nghị họ nhập địa chỉ email của họ để nhận thông tin cập nhật khi sản phẩm được tung ra. Hơn nữa, ý tưởng tốt là sẽ có phần thưởng cho những người dùng đầu tiên bằng cách nói với họ rằng họ sẽ được giảm giá hoặc những phần thưởng khác dành cho những người ủng hộ đầu tiên.</p>
-
-<p>Chúng tôi khuyên bạn không nên đi đi xa hơn ngoài việc lưu trữ địa chỉ email của họ (để bạn có thể liên lạc với họ sau này) và có thể thông tin về khu vực họ ở nếu như có liên quan đến sản phẩm của bạn (để đánh giá nhu cầu sử dụng theo vùng). Hãy để họ biết được sản phẩm vẫn chưa được hoàn thành càng sớm càng tốt. Nhiều điều luật, đặc biệt là ở Châu Âu, cấm  quảng cáo gây hiểu lầm &ndash; thật cẩn thận để không thanh toán hay tiết lộ thông tin cá nhân nhạy cảm một cách nhầm lẫn.</p>
-
-<p>Nếu bạn muốn tránh một trang langding page giả lập, bạn có thể lựa chọn theo cách chăm sóc khách hàng, cách này về mặt đạo đức mà nói thì ít nhạy cảm hơn và thường là một giải pháp thay thế rất tốt.</p>
-
-<h1>Thẩm Định Một Vài Ý Tưởng</h1>
-
-<p>Bây giờ bạn đã biết làm thế nào để thẩm định một ý tưởng của sản phẩm, cũng hãy tìm hiểu xem làm thế nào chúng ta có thể khám phá một vài ý tưởng sản phẩm:</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/10/28/tham-dinh-mot-so-y-tuong.jpg" title="Thẩm định sản phẩm tinh gọn" ></p>
-
-<p>Hãy xem 6 ý tưởng của chúng tôi được chỉ ra như thế nào khi chúng tôi đưa chúng vào trong quy trình thẩm định tinh gọn:</p>
-
-<ol>
-<li>Ý tưởng này thất bại ngay từ đầu vì chúng tôi không thể thẩm định được vấn đề.</li>
-<li>Ý tưởng này thẩm định được vấn đề nhưng không thể xây dựng được thị trường.</li>
-<li>Ý tưởng này thất bại khi thẩm định vấn đề.</li>
-<li>Ý tưởng này thẩm định được vấn đề và thị trường nhưng nó lại không thể thẩm định được sản phẩm.</li>
-<li>Đây là một vấn đề xoay quanh ý tưởng 4. Có thể nguyên mẫu đầu tiên của chúng tôi bị thất bại, vì vậy chúng tôi quyết định xây một nguyên mẫu mới. Lần này chúng tôi có thể học hỏi được vài điều từ những sai lầm của mình và thực hiện bước tiếp cận khác. Ý tưởng này thẩm định được sản phẩm, nhưng lại thất bại khi thẩm định sự sẵn sàng trả tiền mua sản phẩm của người dùng.</li>
-<li>Ý tưởng cuối cùng là thẩm định cả 4 giai đoạn. Trong số những ý tưởng này thì đây là ý tưởng mà chúng ta cần tìm hiểu và phát triển xa hơn nữa.</li>
-</ol>
-
-
-<p>Bạn sẽ thấy, nhiều ý tưởng tuyệt vời của bạn bị thất bại ngay từ đầu trong quy trình này. Việc tìm ra vấn đề mà bạn cố gắng giải quyết đơn giản không phải là vấn đề của người dùng thực sự vô cùng phổ biến. Nhưng với sự kiên trì và lặp đi lặp lại, cuối cùng bạn sẽ có được ý tưởng sản phẩm được thẩm định.</p>
-
-<p>Bạn có thể chú ý thấy rằng tính khả thi thẩm định ở mỗi giai đoạn khá thấp. Bạn có thể cần phải tinh chỉnh lại ý tưởng ban đầu của mình để giải quyết vấn đề cấp bách hơn mà bạn mới phát hiện ra. Điều này cũng thật tuyệt. Thực tế bạn luôn được khuyến khích như thế. Sự linh hoạt và luôn suy nghĩ thông thoáng về việc điều chỉnh ý tưởng có thể được trả xứng đáng nếu như làm đúng. Và đó cũng là lý do vì sao quy trình thẩm định tinh gọn đẩy bạn đến thất bại sớm và nhanh chóng trước khi bạn bị gắn chặt với ý tưởng hay sản phẩm của mình.</p>
-
-<p>Lưu ý rằng các tiêu chí trên cùng với trình tự của chúng, tất cả đơn giản chỉ là hướng dẫn mang tính gợi ý. Mục tiêu cuối cùng là thật tinh gọn như có thể, và bạn sẽ đứng ở vị trí tốt nhất để quyêt định ý tưởng của mình có ý nghĩa gì.</p>
-
-<h1>Tiếp Theo Là Gì?</h1>
-
-<p>Thậm chí nếu bạn đã thẩm định xong tất cả các vấn đề thì cũng không thể đảm bảo được rằng sản phẩm của bạn sẽ thành công. Quy trình thẩm định chỉ mới là bắt đầu thôi. Tuy nhiên nếu bạn thực hiện đầy đủ quy trình này và hoàn thành tất cả các giai đoạn, thì bạn đã có một vị thế tốt rồi đấy.</p>
-
-<p>Mục tiêu của quy trình thẩm định tinh gọn là giảm chi phí và thời gian lập trình. Đó là cách tốt nhất để bạn luôn tập trung, để tối thiểu hóa chi phí và tối đa hóa cơ hội thành công khi sản phẩm của bạn được tung ra.</p>
-
-<p>Nếu bạn muốn tìm hiểu thêm thông tin, bạn có thể đọc <a href="http://theleanstartup.com/">Khởi nghiệp tinh gọn</a> (The Lean Startup) của Eric Reiss. Như tên cuốn sách đã gợi ý, &ldquo;Thẩm định tinh gọn&rdquo; thực sự ảnh hưởng lớn đến cách làm việc tinh gọn.</p>
-
-<p>Bây giờ bạn đã thẩm định, bạn đã sẵn sàng để bắt đầu suy nghĩ về việc làm thế nào để biến sản phẩm thành hiện thực. Hãy bước nhanh lên, nhưng cũng hãy cẩn trọng nhé. Thường xuyên nói chuyện với người dùng của bạn và duy trì quy trình thật tinh gọn. Chúng tôi hi vọng bạn sẽ làm được những điều lớn lao trong tương lai.</p>
-
-<p>Chúc bạn may mắn!</p>
-
-<p>Dịch từ: <a href="https://www.smashingmagazine.com/2016/07/a-lean-approach-to-product-validation/">A lean apprroach to product validation</a></p>
 ]]></content>
   </entry>
   

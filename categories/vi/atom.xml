@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vi | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-13T05:05:56+00:00</updated>
+  <updated>2017-06-13T05:15:26+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -69,6 +69,83 @@ CREDIT: Getty Images</p>
 <p>Hãy tự chăm sóc bản thân mình thật tốt, cả thể xác lẫn tinh thần. Nếu không, bạn sẽ không làm gì tốt được.</p>
 
 <p>Dịch từ: <a href="https://www.inc.com/ariana-ayu/10-time-management-tips-for-busy-executives.html">10 Time-Management Tips for Busy Executives</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tại sao Tư Duy Hướng Sản Phẩm là thế hệ tiếp theo trong thiết kế trải nghiệm người dùng]]></title>
+    <link href="http://blog.teracy.com/2017/05/04/tai-sao-suy-nghi-huong-san-pham-la-cai-lon-nhat-trong-thiet-ke-ux/"/>
+    <updated>2017-05-04T10:40:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/05/04/tai-sao-suy-nghi-huong-san-pham-la-cai-lon-nhat-trong-thiet-ke-ux</id>
+    <content type="html"><![CDATA[<p>Khi suy nghĩ về UX (trải nghiệm người dùng), chúng ta thường nghĩ đến các tính năng đơn giản, đẹp và dễ sử dụng của sản phẩm, làm cho cuộc sống người sử dụng dễ dàng hơn. Nhưng sự thật rằng, tính năng nó chỉ là 1 phần nhỏ của sản phẩm. Chúng chỉ là một vài trong số nhiều giải pháp có thể nghĩ ra để giải quyết vấn đề của người dùng. Tư Duy Hướng Sản Phẩm có nghĩa là suy nghĩ về các vấn đề của đối tượng người dùng nào đó, trong công việc phải làm, mục tiêu và thu nhập.</p>
+
+<p><img class="center" src="images/2017/05/04/image_0.png"></p>
+
+<!-- more -->
+
+
+<p>Cốt lõi của trải nghiệm người dùng không phải là bộ các tính năng, mà thực ra nó là công việc mà người sử dụng muốn sản phẩm làm cho họ. Ví dụ như cốt lõi trải nghiệm người dùng của Uber là cho phép gọi xe taxi dễ dàng bất cứ lúc nào. Bộ đếm giờ, hiển thì chính xác khi nào thì xe sẽ tới, nó là một tính năng phù hợp để mở rộng trải nghiệm này. Nhưng sản phẩm Uber vẫn chạy dù có tính năng này hay không, nhưng tính năng đếm giờ này sẽ không thể chạy nếu không có sản phẩm. Có một mối quan hệ 1 chiều giữa tính năng và sản phẩm: Tính năng không chạy nếu thiếu sản phẩm. Đó là lý do tại sao người thiết kế nên suy nghĩ theo hướng sản phẩm trước.</p>
+
+<p><em>&ldquo;Nghĩ hướng sản phẩm, không hướng tính năng&rdquo;</em></p>
+
+<hr />
+
+<h3><strong>Khám phá mục đích của sản phẩm là gì</strong></h3>
+
+<p>Mỗi Sản phẩm đều có một trải nghiệm người dùng cốt lõi, cơ bản đó là lý do để sản phẩm tồn tại. Nó đáp ứng nhu cầu hoặc xử lý vấn đề nào đó của con người. Do đó nó trở nên ý nghĩa và cung cấp một giá trị nào đó. Nếu vấn đề không tồn tại hoặc giải pháp đưa ra không phù hợp, sản phẩm sẽ trở nên vô nghĩa và mọi người sẽ không ai dùng nó; rồi cuối cùng cũng sẽ dẫn đến sự thất bại của sản phẩm. Giải pháp sai có thể được sửa, nhưng vấn đề mà không tồn tại thì không thể điều chỉnh được. Vậy làm thế nào để có thể chắc chắn tìm được vấn đề đó? Chúng ta không thể chắc chắn 100%, nhưng chúng ta có thể tối thiểu hóa các rủi ro thật nhiều bằng cách quan sát và nói chuyện với mọi người. Từ đó, khám phá vấn đề và xây dựng giải pháp mà người sử dụng muốn.</p>
+
+<p><em>„Đó không phải là việc của khách hàng để biết mình muốn gì"</em> — Steve Jobs</p>
+
+<p>Ví dụ, (<a href="http://ipony.de/?p=3495]">Clay Christensen</a>) đã từng cố gắng cải thiện doanh số bán sữa lắc, anh ta cố làm cho sữa ngọt hơn, cung cấp nhiều hương vị và làm cái ly to hơn một tí. Nhưng không mang lại kết quả, cho đến khi anh ta bắt đầu quan sát người ta mua hàng của mình. Và tìm ra rằng khi người ta mua sữa lắc thì thực ra là họ muốn trên đường đi làm bớt nhàm chán hơn. Lợi ích lớn nhất sữa lắc mang lại là nó đặc và để được lâu hơn và cảm giác no hơn các loại sữa khác. Đây chính là vấn đề, người sửa dụng không biết như vậy. Cuối cùng thì anh bán sữa lắc này đã đưa ra giải pháp làm cho sữa đặc hơn và từ đó tăng trưởng doanh số cho mình.</p>
+
+<p><em>„Theo đuổi một vấn đề, không phải giải pháp"</em> — Laura Javier</p>
+
+<hr />
+
+<h3><strong>Tư duy hướng sản phẩm và xây dựng tính năng phù hợp với khách hàng phù hợp</strong></h3>
+
+<p>Tư Duy Hướng Sản Phẩm giúp xây dựng các tính năng thành công. Bằng việc xác định các vấn đề mà sản phẩm đang có, nó trả lời câu hỏi rằng &ldquo;tại sao chúng ta xây dựng sản phẩm này?&rdquo;. Xác định đối tượng khách hàng &ldquo;ai bị vấn đề này?&rdquo; và xác định giải pháp &ldquo;chúng ta sẽ làm cái này như thế nào?&rdquo; sẽ đủ đễ dẫn lối và tạo ra một tính năng mới. Sắp đặt một mục tiêu sẽ giúp đo lường thành quả của tính năng này.</p>
+
+<p><img class="center" src="images/2017/05/04/image_1.png"></p>
+
+<h4><strong>Bộ Vấn đề và Giải pháp</strong></h4>
+
+<p>Sản phẩm sẽ ý nghĩa hơn khi mà được cung cấp giải pháp phù hợp. Giải pháp này mô tả cách vấn đề sẽ được giải quyết như thế nào. Do đó, Bộ Vấn đề và Giải pháp định nghĩa trải nghiệm người dùng cốt lõi của sản phẩm. Các tính năng cụ thể sẽ chỉ trợ giúp và mở rộng trải nghiệm cốt lõi, nhưng sẽ không thể thay thế nó. Thiết kế tương tác (Interaction Design) và thiết kế trực quan (Visual Design) có thể làm sản phẩm đẹp, dễ sử dụng và làm sản phẩm nổi bật hơn so với các sản phẩm khác nhưng sẽ không làm sản phẩm có ý nghĩa hơn. Đây là lý do tại sao bộ vấn đề và giải pháp là tối quan trọng đối với sự thành công của sản phẩm.</p>
+
+<h4><strong>Định nghĩa sản phẩm</strong></h4>
+
+<p>Khi suy nghĩ hướng sản phẩm, trước tiên người thiết kế UX nên có thể trả lời được những câu hỏi sau:
+  Chúng ta đang giải quyết vấn đề gì? (Vấn đề người dùng)
+  Cho ai? (Đối tượng tham gia)
+  Tại sao? (Tầm nhìn)
+  Làm như thế nào? (Chiến lược)
+  Chúng ta muốn đạt được những gì? (Mục tiêu)</p>
+
+<p>Chỉ đến khi xong thì mới tới lúc nghĩ tới việc chính xác là chúng ta đang làm gì (Tính năng).</p>
+
+<p><img class="center" src="images/2017/05/04/image_2.png"></p>
+
+<hr />
+
+<h3><strong>Sức mạnh của Tư Duy Hướng Sản Phẩm</strong></h3>
+
+<p>Tư Duy Hướng Sản Phẩm mang lại nhiều lợi thế cho người thiết kế trong việc xây dựng tính năng phù hợp cho đúng đối tượng người dùng. Nó giúp hiểu được trải nghiệm người dùng một cách tổng quan; Không chỉ là Thiết kế tương tác và Thiết kế trực quan của các tính năng. Nó đảm bảo rằng các nhà thiết kế giải quyết các vấn đề thực sự của người sử dụng và theo đó làm giảm nguy cơ xây dựng một cái gì đó không ai muốn. Nó cho phép đưa ra các quyết định đúng đắn khi xây dựng các tính năng.</p>
+
+<p><em>&ldquo;Xây dựng tính năng thì dễ, xây dựng tính năng phù hợp cho người dùng dùng phù hợp mới khó&rdquo;</em></p>
+
+<p>Tư Duy Hướng Sản Phẩm cho phép nhà thiết kế UX hỏi được những câu hỏi đúng, để xậy dựng những tính năng đúng và để giao tiếp với những bên liên quan hiệu quả hơn. Nó cho phép người thiết kế nói &ldquo;không&rdquo; và cho phép ta do dự trước khi thêm tính năng mới nào. Bất cứ khi nào một tính năng mới được yêu cầu hoặc là ai đó có ý tưởng nào đó cho sản phẩm, người thiết kế sẽ có thể hỏi những câu hỏi phù hợp, trước khi phác thảo bản vẽ hoặc xậy dựng giao diện bắt mắt:
+  &ldquo;Cái này có khớp với sản phẩm?&rdquo;
+  &ldquo;Nó sẽ phục vụ cho vấn đề người dùng chứ?&rdquo;
+  &ldquo;Người ta muốn hay cần nó? Hãy thăm dò trước!&rdquo;
+Việc này sẽ giúp sản phẩm mềm mỏng và hiệu quả</p>
+
+<hr />
+
+<h3><strong>Kết luận</strong></h3>
+
+<p>Tư Duy Hướng Sản Phẩm đảm bảo cho người thiết kế xây dựng tính năng phù hợp với người dùng phù hợp và xử lý những vấn đề thực tế của mọi người. Nó tăng cường khả năng ra quyết định đúng và là nền tả cho việc thành công xây dựng sản phẩm mà người dùng muốn. Tư Duy Hướng Sản Phẩm đặt ra một mối quan hệ hiệu quả giữa việc quản lý sản phẩm và thiết kế giao diện người dùng và do đó dẫn tới sản phẩm sẽ mạnh mẽ hơn. Đó là lý do tại sao Tư Duy Hướng Sản Phẩm sẽ là thế hệ tiếp theo trong thiết kế trải nghiệm người dùng.</p>
+
+<p>Nguồn: <a href="https://medium.com/@jaf_designer/why-product-thinking-is-the-next-big-thing-in-ux-design-ee7de959f3fe">Why Product Thinking is the next big thing in UX Design</a></p>
 ]]></content>
   </entry>
   
@@ -348,193 +425,6 @@ và loại bỏ những công việc nửa vời?</p>
 <p>Còn bạn, bạn đã làm gì để quản lý thời gian tốt hơn và tăng hiệu suất công việc ở nơi làm việc, ở nhà hay phòng gym?</p>
 
 <p>Lược dịch từ: <a href="http://jamesclear.com/time-management-tips">3 Time Management Tips That Actually Work</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Trải nghiệm người dùng (UX) 101 cho các công ty khởi nghiệp]]></title>
-    <link href="http://blog.teracy.com/2017/03/12/trai-nghiem-nguoi-dung-101-cho-cac-cong-ty-khoi-nghiep/"/>
-    <updated>2017-03-12T09:41:00+00:00</updated>
-    <id>http://blog.teracy.com/2017/03/12/trai-nghiem-nguoi-dung-101-cho-cac-cong-ty-khoi-nghiep</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/03/12/ux-cho-cong-ty-khoi-nghiep.jpeg" title="UX cho công ty khởi nghiệp" ></p>
-
-<p>&ldquo;<em>Khách hàng không quan tâm đến giải pháp của bạn, họ quan tâm đến vấn đề của họ.</em>&rdquo; &ndash; Dave McClure</p>
-
-<p><strong>1. Ưu tiên tính hữu ích trước, tính sử dụng sau:</strong> Dụng cụ lột vỏ chuối có phải là một sản phẩm hữu
-ích không? Sản phẩm &amp; dịch vụ phải có tính hữu ích trước khi được đưa vào sử dụng. Sản phẩm cần có giá
-trị tiện ích rõ ràng khi đáp ứng nhu cầu về thể chất hoặc tâm lí của con người.</p>
-
-<p><em>Tại sao sản phẩm của bạn hữu ích?</em></p>
-
-<p><strong>2. Trọng tâm:</strong> Có điểm gì chung giữa Instagram, Dropbox, Basecamp, và Airbnb? Tất cả các ứng dụng
-đều có nhiệm vụ riêng và thực hiện tốt chức năng!</p>
-
-<p>Khổng Tử có câu &ldquo;<em>Nếu đuổi theo hai con thỏ, bạn sẽ chẳng bắt được con nào.</em>&rdquo;</p>
-
-<p>Mỗi sản phẩm có một điểm mạnh riêng và phải xác định được trọng điểm để làm cho sản phẩm có sức hút.
-Những công ty khởi nghiệp thường có xu hướng thêm quá nhiều tính năng, khiến cho sản phẩm không có
-điểm nhấn, không những không hữu ích mà còn không khả dụng, thế thì làm sao có thể thu hút được người mua.</p>
-
-<p><em>Nhiệm vụ quan trọng mà bạn cam kết thực hiện đối với người dùng sản phẩm của bạn là gì?</em></p>
-
-<!-- more -->
-
-
-<p><strong>3. Sản phẩm có mức giá tối thiểu</strong>: Người ta thường nói vế các sản phẩm có tính khả dụng tối thiếu,
-tuy nhiên chất lượng của chúng thường rất kém. Không phải vì các sản phẩm này do những người không đủ
-năng lực thực hiện mà bởi vì các sản phẩm này được phát hành sớm, không xuất phát từ quan điểm của
-người mua hay người sử dụng. Không phải vì các sản phẩm này không hữu dụng, mà bởi vì các sản phẩm
-này có những chức năng mà người dùng thực sự không dùng tới.</p>
-
-<p>Vì vậy, hãy bỏ những sản phẩm có tính khả thi cực tiểu đi và bắt đầu với một sản phẩm chỉ cần khách
-hàng sẵn sàng trả tiền mua. Bắt đầu với một sản phẩm chỉ cần người sử dụng yêu thích!</p>
-
-<p><em>Lý do lớn khiến khách hàng sẽ trả tiền để sử dụng sản phẩm của bạn là gì? Điều gì thực sự làm nên
-linh hồn sản phẩm của bạn?</em></p>
-
-<p><strong>4. Trải nghiệm người dùng không chỉ là giao diện người dùng:</strong> Nếu bạn cho rằng giao diện trông bắt
-mắt sẽ là một trải nghiệm người dùng tuyệt vời, thì bạn đã nhầm.</p>
-
-<p>Trải nghiệm người dùng (UX) thực chất tập trung vào tính hữu ích, tính khả dụng, và có ý nghĩa với
-người sử dụng trong khi giao diện người dùng và thiết kế hình ảnh đảm bảo rằng sản phẩm cuối cùng có
-&ldquo;vẻ ngoài&rdquo; bắt mắt.</p>
-
-<p><em>Sản phẩm của bạn thiên về tính hữu ích, tính khả dụng và có ý nghĩa hay thiên về hình thức bắt mắt?</em></p>
-
-<p><strong>5. Trải nghiệm người dùng là tất cả thuộc về người dùng:</strong> Trải nghiệm người dùng tập trung vào tính
-hữu ích, tính khả dụng, và có ý nghĩa đối với người dùng. Vì vậy, nếu bạn không thấu hiểu người dùng,
-bạn không thể làm thiết kế sản phẩm có ý nghĩa.</p>
-
-<p>Không bao giờ là quá muộn để tìm kiếm những nhu cầu thật sự của người sử dụng, hãy đi và quan sát những
-gì người dùng làm trong ngày hoặc đề nghị cho bạn xem những gì họ làm. Bạn sẽ biết nhiều hơn về cách
-làm thế nào để thiết kế sản phẩm của bạn một cách hoàn toàn khác biệt. Hãy nhớ rằng, người dùng chắc
-chắn không phải là bà, là bố, là bạn gái, hay đồng nghiệp của bạn!</p>
-
-<p><em>Liệu bạn đã tiếp xúc với ít nhất 10 người dùng thực tế và có tiềm năng chưa?</em></p>
-
-<p><strong>6. Sử dụng công cụ đồng cảm Empathy</strong>: Nhiều CEO khởi nghiệp tin rằng Axure và Photoshop là những
-công cụ trải nghiệm người dùng hữu ích nhất. Điều thú vị là, tất cả nhà khởi nghiệp đều lưu tâm về
-giao diện người dùng chứ không phải trải nghiệm người dùng!</p>
-
-<p>Đã khi nào bạn nghe về một công cụ tuyệt vời có tên Empathy chưa? Empathy được các chuyên gia sáng
-tạo hàng đầu trên toàn thế giới sử dụng để thiết kế các sản phẩm tuyệt vời.</p>
-
-<p>Vâng, tôi đang nói về sự đồng cảm của con người đơn thuần. Đồng cảm là khả năng nhận ra những trải
-nghiệm cảm xúc của người khác &ndash; người dùng. Bạn đồng cảm khi bạn cảm được những điều mà người khác đang
-cảm nhận, đó là những biểu cảm, hi vọng, khát khao và nỗi đau của họ.</p>
-
-<p>Nếu cô lập trong cách làm, bạn sẽ chỉ tạo ra  những sản phẩm mà không ai muốn sử dụng. Khi bạn đồng
-cảm với người dùng, bạn sẽ làm ra các sản phẩm tuyệt vời.</p>
-
-<p><em>Bạn có thể kể 5 câu chuyện người dùng tuyệt vời vể sản phẩm của bạn?</em></p>
-
-<p><strong>7. Định hình concept trên giấy</strong>: Khi concept được xây dựng bằng một công cụ điểm ảnh chính xác
-hoàn hảo, phản hồi về nó từ người dùng chỉ là màu sắc, phông chữ và bố cục, chứ chẳng bao giờ đề cập
-tới concept.</p>
-
-<p>Tuy nhiên, khi concept được phác hoạ trên giấy hoặc bảng trắng, người dùng sẽ phản hồi về lợi ích và
-tính hữu dụng của sản phẩm, đó là điều bạn thực sự cần! Nguyên mẫu được phác thảo trên giấy nhanh chóng,
-dễ dàng, liên hồi, và chi phí bằng 0. Thêm vào đó, bạn nhận được thông tin phản hồi về các khái niệm
-sản phẩm.</p>
-
-<p><em>Khi đã định hình xong ý tưởng sản phẩm, sẽ là lúc bạn cần sử dụng đến các công cụ prototyping ban
-đầu để tạo ra các wireframes chi tiết.</em></p>
-
-<p><strong>8. Thiết kế liên hồi</strong>: Người làm marketing sử dụng các phép mô phỏng thị trường và phần mềm để kiểm
-thử. Người thiết kế cũng cần phải tiến hành kiểm thử để phát hiện vấn đề và hiệu chỉnh. Trong nghề
-thiết kế, việc kiểm thử được thực hiện với những người dùng thực ở các giai đoạn khác nhau của nguyên mẫu.</p>
-
-<p>Các nhà thiết kế giỏi nhất thế giới luôn tuân thủ theo chu trình khép kín là thiết kế > kiểm thử người
-dùng > thiết kế. Nếu bạn không kiểm thử với người sử dụng thực, bạn sẽ không biết thiết kế có sai sót gì.</p>
-
-<p>Kiểm thử sớm và kiểm thử thường xuyên sẽ cho bạn sự tự tin để xây dựng một sản phẩm thực sự hữu ích
-và khả dụng. Hãy từ bỏ thiết kế sơ khai nếu chúng không hiệu quả, đừng ngần ngại thiết kế lại. Liên
-hồi, liên hồi và liên hồi.</p>
-
-<p><strong>9. Khảo sát vô ích</strong>: Thật dễ khi hỏi người dùng với những câu hỏi &ldquo;Bạn thích gì?&rdquo;, &ldquo;Điểm tốt và
-xấu của sản phẩm này là gì?&rdquo;, hoặc &ldquo;tôi có thể cải thiện sản phẩm bằng cách nào?&rdquo;</p>
-
-<p>Tất cả các câu hỏi trên sẽ cung cấp cho bạn ý kiến ​​của người sử dụng &ndash; rất cảm tính, không hề tốt đối
-với một sản phẩm mới. Vì vậy, hỏi ý kiến khách hàng là điều bạn KHÔNG BAO GIỜ phải làm!</p>
-
-<p>Nếu khảo sát là những ý kiến ​​cảm tính, hãy ném kết quả đó vào thùng rác, đó là vị trí của chúng! Thứ
-bạn cần là tìm hiểu hành vi người dùng.</p>
-
-<p>&ldquo;<em>Thật sự rất khó để thiết kế sản phẩm bởi các nhóm tập trung. Hầu hết người ta không biết mình muốn
-gì cho đến khi bạn cho họ thấy sản phẩm.</em>&rdquo; &ndash; Steve Jobs</p>
-
-<p><strong>10. Làm thế nào để kiểm thử với người dùng</strong>: Để hiểu hành vi người dùng, nó khá là đơn giản.
-Thực hiện theo 7 bước đơn giản này, và bạn sẽ hiểu rõ hành vi của người sử dụng trong bất cứ thời điểm nào:</p>
-
-<ol type="a">
-<li><p>Tạo một danh sách từ 3-5 nhiệm vụ quan trọng mà người dùng sẽ làm thường xuyên khi sử dụng sản phẩm
-của bạn. Các nhiệm vụ đó đại loại như tạo một hóa đơn, gửi lại hóa đơn, kiểm tra xem một hóa đơn đã
-được thanh toán chưa, và gửi lời nhắc nhở khi chậm thanh toán.</p></li>
-<li><p>Mời người dùng thực tới văn phòng của bạn, mỗi lần một người, và làm cho họ thật thoải mái.</p></li>
-<li><p>Cho người dùng thấy màn hình đầu tiên và yêu cầu họ hoàn thành nhiệm vụ 1. Khuyến khích họ luôn nói
-với bạn những gì họ đang làm.</p></li>
-<li><p>Chờ đợi và quan sát kỹ người dùng làm việc, không trả lời câu hỏi liên quan đến cách sử dụng của
-sản phẩm. Sau khi hoàn thành, có thể thành công hoặc gặp khó khăn, hãy đưa cho người dùng nhiệm vụ 2.</p></li>
-<li><p>Sau mỗi nhiệm vụ, đặt câu hỏi về lý do tại sao người dùng thực hiện theo cách đó, không hỏi về lí
-do thích hay không thích.</p></li>
-<li><p>Cuối cùng, tặng một món quà nhỏ cho người sử dụng, có thể là một tách cà phê và một ít bánh quy.</p></li>
-<li><p>Đừng lo lắng về việc phân tích, tâm trí của bạn được kết nối với một số ý tưởng để giải quyết vấn đề!</p></li>
-</ol>
-
-
-<p>Bây giờ bạn đã thuộc nhóm người hiểu được mặt tốt của kiểm thử tính khả dụng (UT), hứa với tôi là bạn
-sẽ làm điều này thường xuyên với sản phẩm của bạn.</p>
-
-<p>Bạn có thể sử dụng WebEx cho người dùng từ xa. Và bạn không cần đến nguyên mẫu thật, bạn có thể sử
-dụng nguyên mẫu trên giấy dễ dàng chỉ cần tiếp tục đẩy màn hình tiếp theo trên màn hình hiện tại.</p>
-
-<p><strong>11. Phân tích kết hợp với kiểm thử tính khả dụng</strong>: Phân tích là một cách tuyệt vời để biết người
-dùng đến từ đâu, những gì người dùng đã làm, và nơi mà người dùng rời đi. Phân tích là một điểm khởi
-đầu để xác định khả năng sử dụng.</p>
-
-<p>Tuy nhiên, phân tích sẽ không cần thiết khi bạn muốn hiểu lý do cho hành vi của người sử dụng: tại sao
-người dùng đến, tại sao người dùng làm những việc họ đang làm, và tại sao người dùng lại không làm việc
-gì đó. Kiểm thử tính khả dụng là một công cụ tốt để hiểu được lý do của hành vi người dùng, bây giờ
-bạn đã trở nên chuyên nghiệp!</p>
-
-<p><strong>12. Tôi phụ thuộc vào phản hồi người dùng</strong>: Người dùng gọi điện thoại hoặc gửi email khi họ gặp vấn
-đề không thể giải quyết thấu đáo. Hầu hết người dùng không bận tâm đến việc gửi phản hồi, họ chỉ từ
-bỏ sản phẩm của bạn. Bạn sẽ không bao giờ có thể tìm thấy hiệu quả sử dụng lớn hoặc giải pháp thay thế
-nhiệm vụ với phản hồi người dùng.</p>
-
-<p>Kiểm thử tính khả dụng giúp bạn gần gũi hơn với người sử dụng và hiểu các vấn đề thực tế rất sớm. Bạn
-sẽ giải quyết được một lượng lớn các vấn đề trước khi phát hành sản phẩm, giúp bạn tránh được rất nhiều
-vấn đề đau đầu sau này.</p>
-
-<p><strong>13. Phác hoạ cấu trúc khung sườn (Wireframes) bằng Keynote hoặc Powerpoint</strong>: Tôi đã thực hiện nguyên
-mẫu trên giấy và tôi đã thử nghiệm chúng &ndash; người dùng yêu thích sản phẩm của tôi, bây giờ liệu tôi có
-thể sử dụng các công cụ tạo mẫu UX?</p>
-
-<p>Bạn có thể sử dụng, đây là thời điểm để sử dụng tất cả các công cụ tạo mẫu tốt nhất. Vấn đề quan trọng
-trong giai đoạn này là thông tin phản hồi từ các bên liên quan &ndash; khách hàng, người sử dụng, chuyên gia&hellip;
-Vì vậy, chọn một công cụ sẽ giúp thu thập phản hồi rất tốt.</p>
-
-<p>Các công cụ cung cấp cho bạn giá trị tối đa trong giai đoạn này là Keynote (trên Mac) hoặc PowerPoint.
-Bạn có thể chi tiết hoá thiết kế của bạn rất tốt bằng cả hai công cụ. Điểm tốt nhất là bạn có thể gửi
-đến nhiều người cùng lúc để xem xét một cách dễ dàng, và bất cứ ai trong nhóm của bạn cũng có thể cùng xem xét.</p>
-
-<p><strong>14. 5 câu hỏi giao diện người dùng cần hỏi</strong>: Tuân thủ các nguyên tắc thiết kế và luôn theo sát thiết
-kế trực quan tốt nhất.</p>
-
-<p>Đừng quên hỏi 5 câu hỏi sau đây trong mỗi màn hình tương tác với người dùng để có được một sản phẩm
-thực sự hữu dụng:</p>
-
-<ol type="a">
-<li><p>Người dùng đang cần thông tin gì để hoàn thành nhiệm vụ/ nhiệm vụ phụ / lĩnh vực này?</p></li>
-<li><p>Cần làm gì để có thể cung cấp các thông tin còn thiếu?</p></li>
-<li><p>Các bước tiếp theo khả dĩ nhất mà người dùng sẽ thực hiện là gì?</p></li>
-<li><p>Chúng ta có thể giúp đỡ / hướng dẫn người dùng thực hiện bước dự tính tiếp theo bằng cách nào?</p></li>
-<li><p>Người dùng đang ở đâu và sẽ được gì sau khi hoàn thành nhiệm vụ này?</p></li>
-</ol>
-
-
-<p>Dịch từ: <a href="https://medium.com/start-up-vision/ux-101-for-startups-dc849621262f#.9m3w1g4rc">UX 101 for startups
-</a></p>
 ]]></content>
   </entry>
   
