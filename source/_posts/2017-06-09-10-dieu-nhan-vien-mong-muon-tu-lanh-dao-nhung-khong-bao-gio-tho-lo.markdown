@@ -16,6 +16,7 @@ keywords: leader, employees, lãnh đạo, nhân viên, mong muốn
 published: true
 ---
  {% img center /images/2017/06/09/nhan-vien-nhay-viec.jpg nhân viên nhảy việc %}
+ *CREDIT: Getty Images*
  
 Không có gì là bí mật cả. Sự hài lòng của nhân viên mang lại tất cả những yếu tố thành công trong kinh doanh. Một nhân viên nhảy việc có thể khiến công việc làm ăn bị thiệt hại khoảng 20% lương chi trả cho họ, chi phí kinh doanh của bạn xoay quanh 20% tiền lương của anh ta hoặc cô ấy - và đó chỉ là một phần của tác động. Năng suất lao động, văn hoá công ty và danh tiếng thương hiệu có thể bị ảnh hưởng chỉ vì sự ra đi của một thành viên.
 

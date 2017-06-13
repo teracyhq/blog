@@ -16,6 +16,7 @@ published: true
 ---
 
 {% img center /images/2017/03/29/time-board.jpg CREDIT: Getty Images%}
+CREDIT: Getty Images
 
 Thời gian là tài nguyên không thể làm mới lại được, do đó nó là một trong những thứ quý giá nhất mà chúng ta có được.
 

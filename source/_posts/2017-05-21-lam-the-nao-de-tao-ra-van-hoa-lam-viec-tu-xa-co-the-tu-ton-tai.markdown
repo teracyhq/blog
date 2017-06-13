@@ -29,6 +29,7 @@ Vì vậy, nếu bạn lần đầu thuê các nhân viên làm việc từ xa, 
 Làm việc từ xa là linh hoạt; bạn cũng nên như vậy
 =======================================================
 {% img center /images/2017/05/21/lam-viec-tu-xa.png làm việc từ xa linh hoạt %}
+*PHOTO: DAMIAN ZALESKI*
 
 Các nhân viên làm việc từ xa được hưởng lợi từ sự linh hoạt; việc áp dụng một khung giờ làm việc mệnh lệnh đối với họ sẽ là một thảm hoạ. Thay vì điều đó, bạn hãy khuyến khích nhân viên tự đưa ra khoảng thời gian trong ngày giúp họ có thể làm việc năng suất nhất.
 
