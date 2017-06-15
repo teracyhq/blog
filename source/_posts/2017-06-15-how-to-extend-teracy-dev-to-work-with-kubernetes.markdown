@@ -46,7 +46,7 @@ So let's find a way to extend teracy-dev to install `kubectl` and `gcloud`.
 
 ## Extending teracy-dev
 
-You can extend `teracy-dev`'s VM by your own choice of operating system and automate the provision
+You can extend `teracy-dev`'s VM by your own choice of operating system and automate the provisioning
 process by your own choice of configuration software. There is only one limitation is your imagination :-).
 
 To extend `teracy-dev`, we can use any kind of provisioners that are supported by vagrant (as `teracy-dev`
@@ -84,7 +84,7 @@ After that, `$ vagrant rsync-back` to sync back the changes from the VM to the h
 updated content should be like this: https://github.com/acme101/kubernetes-dev-setup/tree/1-dependency
 
 
-Now, to install chef-dk, just add the following Ruby code to `default.rb` recipe, it's never so easy:
+Now, to install `chef-dk`, just add the following Ruby code to `default.rb` recipe, it's never so easy:
 
 ```
 chef_dk 'my_chef_dk' do
@@ -264,7 +264,7 @@ Test Summary: 2 successful, 0 failures, 0 skipped
 
 That's how we develop and test the cookbook on local dev.
 
-You can see the cookbook here at: https://github.com/teracyhq-incubator/kubernetes-stack-cookbook
+You can see the cookbook here at https://github.com/teracyhq-incubator/kubernetes-stack-cookbook
 
 It's currently a very simple cookbook to support the installation of `kubectl` and `gcloud`. In
 the future, it will do more than that and support more platforms than current Ubuntu only.
@@ -311,7 +311,7 @@ gsutil 4.26
 ## Setting up Kubernetes local deployment
 
 I've shown you how to extend `teracy-dev` to install new software packages. It is very simple, just follow
-the steps I describe above to apply for all other projects.
+the steps I described above to apply for all other projects.
 
 `kubectl` and `gcloud` are used to work with Google Container Engine (GKE), however, we want
 to install Kubernetes to test on local dev, too. So I will have another blog post to cover this more
@@ -325,9 +325,9 @@ And other newcomer devs can just use your `dev-setup` without learning anything 
 the instructions and learn more to master later.
 
 There are still some areas of configuration for `teracy-dev` that needs improvement and it will be
-available on teracy-dev v0.5.0, so stay tune for our next very exciting upcoming release.
+available on teracy-dev v0.5.0, so stay tuned for our next very exciting upcoming release.
 
 I hope that this blog post can help you follow the current best practices to extend `teracy-dev`
 for your own need more easily. If you have any problem with it, let me know by dropping your comments.
 
-Happpy hacking!
+Happy hacking!
