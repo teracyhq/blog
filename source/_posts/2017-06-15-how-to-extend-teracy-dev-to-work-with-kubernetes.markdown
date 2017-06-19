@@ -47,7 +47,7 @@ So let's find a way to extend `teracy-dev` to install `kubectl` and `gcloud`.
 ## Extending `teracy-dev`
 
 You can extend `teracy-dev`'s VM by your own choice of operating system and automate the provisioning
-process by your own choice of configuration software. There is only one limitation is your imagination :-).
+process by your own choice of configuration software. "The only limit is your imagination" :-).
 
 To extend `teracy-dev`, we can use any kind of provisioners that are supported by vagrant (as `teracy-dev`
 is built on top of `vagrant`), you can see more info here: https://www.vagrantup.com/docs/provisioning/
