@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How to extend teracy-dev to work with Kubernetes - Teracy's Blog</title>
+  
+  <meta name="author" content="hoatle">
+
+  
+  <meta name="description" content="how to extend teracy-dev to work with Kubernetes">
+  <meta name="keywords" content="teracy-dev, extending, Kubernetes, Chef, vagrant">
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="How to extend teracy-dev to work with Kubernetes - Teracy's Blog" />
+  <meta property="og:description" content="how to extend teracy-dev to work with Kubernetes" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/2017/06/15/kubernetes_logo_with_border.png" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracyhq" />
+  <meta name="twitter:creator" content="@hoatle" />
+  <meta name="twitter:title" content="How to extend teracy-dev to work with Kubernetes - Teracy's Blog" />
+  <meta name="twitter:description" content="how to extend teracy-dev to work with Kubernetes" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/2017/06/15/kubernetes_logo_with_border.png" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="/javascripts/libs/jquery.browser.min.js" type="text/javascript"></script>
+<script src="/javascripts/font.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news/">News</a></li>
+  <li><a href="/categories/projects/">Projects</a></li>
+  <li><a href="/categories/how-to/">How-to</a></li>
+  <li><a href="/archives/">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">How to Extend Teracy-dev to Work With Kubernetes</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2017-06-15T11:05:00+00:00" datetime="2017-06-15T11:05:00+00:00" pubdate data-updated="true">Jun 15<span>th</span>, 2017</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p><img class="center" src="/images/2017/06/15/kubernetes_logo_with_border.png" title="Kubernetes Logo" >
+<em>Credit: Kubernetes</em></p>
+
+<p><code>teracy-dev</code> is developed with the goal to keep it as minimal and extensible as possible.
+The extension feature is so powerful that you can customize the VM in anyway you want. For example,
+in this blog post, I&rsquo;ll show you how to extend it to work with Kubernetes.</p>
+
+<!-- more -->
+
+
+<h2>About Kubernetes</h2>
+
+<p>We&rsquo;re leveraging Docker for all of our development workflow for our clients, internal and open
+source projects. <code>teracy-dev</code> is provisioned with Docker by default out of the box so that we can
+start working with Docker right away.</p>
+
+<p>However, Docker alone is not enough to work with container technology stack. The production deployment
+is different from the local Docker environment. There are many options for container production deployment,
+however, we choose Kubernetes as the first class as it&rsquo;s currently the big giant and the future of
+container orchestration that we believe in.</p>
+
+<p>Working with Kubernetes requires <code>kubectl</code> client to be available, and if you&rsquo;re starting to use
+GKE (Google Container Engine), <code>gcloud</code> (google cloud sdk) client should be available, too.</p>
+
+<p>So let&rsquo;s find a way to extend <code>teracy-dev</code> to install <code>kubectl</code> and <code>gcloud</code>.</p>
+
+<h2>Extending <code>teracy-dev</code></h2>
+
+<p>You can extend <code>teracy-dev</code>&rsquo;s VM by your own choice of operating system and automate the provisioning
+process by your own choice of configuration software. &ldquo;The only limit is your imagination&rdquo; :&ndash;).</p>
+
+<p>To extend <code>teracy-dev</code>, we can use any kind of provisioners that are supported by vagrant (as <code>teracy-dev</code>
+is built on top of <code>vagrant</code>), you can see more info here: <a href="https://www.vagrantup.com/docs/provisioning/">https://www.vagrantup.com/docs/provisioning/</a></p>
+
+<p>We choose <code>Chef</code> as it&rsquo;s our default provisioner that we have more years of usage experience. We intend
+to use <code>Ansible</code> for some future projects, too.</p>
+
+<h2>Installing <code>ChefDK</code></h2>
+
+<p>We&rsquo;re going to use <code>Acme 101</code> project which is used to show the best practices from <code>teracy-dev</code> applied
+for organizations.</p>
+
+<p>To work with Chef cookbooks, we need to install <code>ChefDK</code>. Fortunately, there is already an available cookbook
+for us to use to install <code>ChefDK</code> automatically on our VM: <a href="https://supermarket.chef.io/cookbooks/chef-dk">https://supermarket.chef.io/cookbooks/chef-dk</a></p>
+
+<p>Usually, we have <code>dev-setup</code> directory to extend <code>teracy-dev</code> (<code>acme-dev</code> in this case). The initial
+<code>dev-setup</code> content should be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/0-initial">https://github.com/acme101/kubernetes-dev-setup/tree/0-initial</a></p>
+
+<p>To install <code>ChefDK</code>, we must install the <code>chef-dk</code> cookbook and use it as follows:</p>
+
+<ul>
+<li><p>Add <code>depends 'chef-dk'</code> to <code>dev-setup/chef/main-cookbooks/acme/metadata.rb</code></p></li>
+<li><p>Install vendor cookbooks with the following commands within the VM:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ws
+</span><span class='line'>$ cd dev-setup/chef
+</span><span class='line'>$ docker-compose up</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Sync back the changes from the VM to the host machine:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant rsync-back</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The updated content should be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/1-dependency">https://github.com/acme101/kubernetes-dev-setup/tree/1-dependency</a></p>
+
+<p>Now, to install <code>chef-dk</code>, just add the following Ruby code to <code>default.rb</code> recipe, it&rsquo;s never so easy:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chef_dk 'my_chef_dk' do
+</span><span class='line'>  global_shell_init true
+</span><span class='line'>  action :install
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Make sure you have <code>berks-cookbooks</code> paths that <code>vagrant</code> can look up. The configuration step should
+be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/2-configuration">https://github.com/acme101/kubernetes-dev-setup/tree/2-configuration</a></p>
+
+<ul>
+<li>After that, <code>$ vagrant reload --provision</code> and voila, you should have <code>ChefDk</code> installed.</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ vagrant ssh
+</span><span class='line'>$ chef --version
+</span><span class='line'>Chef Development Kit Version: 1.4.3
+</span><span class='line'>chef-client version: 12.19.36
+</span><span class='line'>delivery version: master (41b94ffb5efd33723cf72a89bf4d273c8151c9dc)
+</span><span class='line'>berks version: 5.6.4
+</span><span class='line'>kitchen version: 1.16.0
+</span><span class='line'>inspec version: 1.25.1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s how we use Chef cookbooks to manage the VM&rsquo;s software automatically. We can do the same with
+all other types of Chef cookbooks shared and opensourced from the public Chef Supermarket: <a href="https://supermarket.chef.io/">https://supermarket.chef.io/</a>
+You can use all the public shared cookbooks to do almost anything you want for your VM.</p>
+
+<p>However, sometimes, there is not available cookbook that we want, then it&rsquo;s time we should
+build new cookbooks from scratch.</p>
+
+<h2>Creating new Chef cookbooks</h2>
+
+<p>From the steps above, we have <code>ChefDK</code> available to work with Chef cookbooks. To learn how to use it,
+you can follow: <a href="https://github.com/chef/chef-dk">https://github.com/chef/chef-dk</a></p>
+
+<p>I already created the initial <code>kubernetes-stack-cookbook</code> that we can work with. You need to clone
+the repo into the <code>workspace</code> directory:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd ~/acme-dev/workspace
+</span><span class='line'>$ git clone git@github.com:teracyhq-incubator/kubernetes-stack-cookbook.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can test the cookbook within the VM (<code>$ vagrant ssh</code>) with <code>rspec</code>, <code>kitchen</code> easily:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ws
+</span><span class='line'>$ cd kubernetes-stack-cookbook/
+</span><span class='line'>$ rspec</span></code></pre></td></tr></table></div></figure>
+
+
+<p>you should see the following similar content:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>kubernetes-stack::default
+</span><span class='line'>  When all attributes are default, on ubuntu 16.04
+</span><span class='line'>    converges successfully
+</span><span class='line'>
+</span><span class='line'>kubernetes-stack-test::gcloud_install_default
+</span><span class='line'>  When all attributes are default, on ubuntu 16.04
+</span><span class='line'>    converges successfully
+</span><span class='line'>    install gcloud
+</span><span class='line'>
+</span><span class='line'>kubernetes-stack-test::kubectl_install_default
+</span><span class='line'>  When all attributes are default, on ubuntu 16.04
+</span><span class='line'>    converges successfully
+</span><span class='line'>    install kubectl
+</span><span class='line'>
+</span><span class='line'>Finished in 1.35 seconds (files took 1.78 seconds to load)
+</span><span class='line'>5 examples, 0 failures
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>ChefSpec Coverage report generated...
+</span><span class='line'>
+</span><span class='line'>  Total Resources:   7
+</span><span class='line'>  Touched Resources: 2
+</span><span class='line'>  Touch Coverage:    28.57%
+</span><span class='line'>
+</span><span class='line'>Untouched Resources:
+</span><span class='line'>
+</span><span class='line'>  gcloud[install default gcloud]     kubernetes-stack-test/recipes/gcloud_install_default.rb:1
+</span><span class='line'>  execute[import google-cloud-sdk public key]   kubernetes-stack/resources/gcloud.rb:13
+</span><span class='line'>  apt_repository[google-cloud-sdk]   kubernetes-stack/resources/gcloud.rb:17
+</span><span class='line'>  bash[clean up the mismatched kubectl version]   kubernetes-stack/resources/kubectl.rb:20
+</span><span class='line'>  remote_file[/usr/local/bin/kubectl]   kubernetes-stack/resources/kubectl.rb:33</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and to test with <code>kitchen</code>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ws
+</span><span class='line'>$ cd kubernetes-stack-cookbook/
+</span><span class='line'>$ export KITCHEN_LOCAL_YAML=.kitchen.dokken.yml
+</span><span class='line'>$ kitchen test</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then you should see the following similar content:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>...
+</span><span class='line'>Starting Chef Client, version 13.2.7
+</span><span class='line'>[2017-06-14T17:53:24+00:00] WARN: Plugin Network: unable to detect ipaddress
+</span><span class='line'>resolving cookbooks for run list: ["kubernetes-stack-test::gcloud_install_default"]
+</span><span class='line'>Synchronizing Cookbooks:
+</span><span class='line'>  - kubernetes-stack-test (0.1.0)
+</span><span class='line'>  - kubernetes-stack (0.1.0)
+</span><span class='line'>Installing Cookbook Gems:
+</span><span class='line'>Compiling Cookbooks...
+</span><span class='line'>Converging 1 resources
+</span><span class='line'>Recipe: kubernetes-stack-test::gcloud_install_default
+</span><span class='line'>  * gcloud[install default gcloud] action install
+</span><span class='line'>    * execute[import google-cloud-sdk public key] action run
+</span><span class='line'>      - execute curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+</span><span class='line'>    * apt_repository[google-cloud-sdk] action add
+</span><span class='line'>      * execute[apt-cache gencaches] action nothing (skipped due to action :nothing)
+</span><span class='line'>      * apt_update[google-cloud-sdk] action nothing (skipped due to action :nothing)
+</span><span class='line'>      * file[/etc/apt/sources.list.d/google-cloud-sdk.list] action create
+</span><span class='line'>        - create new file /etc/apt/sources.list.d/google-cloud-sdk.list
+</span><span class='line'>        - update content in file /etc/apt/sources.list.d/google-cloud-sdk.list from none to 24ee22
+</span><span class='line'>        --- /etc/apt/sources.list.d/google-cloud-sdk.list 2017-06-14 17:53:25.296105380 +0000
+</span><span class='line'>        +++ /etc/apt/sources.list.d/.chef-google-cloud-sdk20170614-20-7wqkmu.list 2017-06-14 17:53:25.296105380 +0000
+</span><span class='line'>        @@ -1 +1,2 @@
+</span><span class='line'>        +deb      "http://packages.cloud.google.com/apt" cloud-sdk-xenial main
+</span><span class='line'>        - change mode from '' to '0644'
+</span><span class='line'>        - change owner from '' to 'root'
+</span><span class='line'>        - change group from '' to 'root'
+</span><span class='line'>      * execute[apt-cache gencaches] action run
+</span><span class='line'>        - execute apt-cache gencaches
+</span><span class='line'>      * apt_update[google-cloud-sdk] action update
+</span><span class='line'>        - force update new lists of packages
+</span><span class='line'>        * directory[/var/lib/apt/periodic] action create (up to date)
+</span><span class='line'>        * directory[/etc/apt/apt.conf.d] action create (up to date)
+</span><span class='line'>        * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing
+</span><span class='line'>          - create new file /etc/apt/apt.conf.d/15update-stamp
+</span><span class='line'>          - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+</span><span class='line'>          --- /etc/apt/apt.conf.d/15update-stamp  2017-06-14 17:53:26.136525380 +0000
+</span><span class='line'>          +++ /etc/apt/apt.conf.d/.chef-15update-stamp20170614-20-1r28edv 2017-06-14 17:53:26.136525380 +0000
+</span><span class='line'>          @@ -1 +1,2 @@
+</span><span class='line'>          +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2&gt;/dev/null || true";};
+</span><span class='line'>        * execute[apt-get -q update] action run
+</span><span class='line'>          - execute apt-get -q update
+</span><span class='line'>      
+</span><span class='line'>    
+</span><span class='line'>    * apt_package[google-cloud-sdk] action install
+</span><span class='line'>
+</span><span class='line'>      - install version 159.0.0-0 of package google-cloud-sdk
+</span><span class='line'>  
+</span><span class='line'>
+</span><span class='line'>Running handlers:
+</span><span class='line'>Running handlers complete
+</span><span class='line'>Chef Client finished, 9/13 resources updated in 55 seconds
+</span><span class='line'>       Finished converging &lt;smoke-gcloud-ubuntu-1604&gt; (1m0.97s).
+</span><span class='line'>-----&gt; Setting up &lt;smoke-gcloud-ubuntu-1604&gt;...
+</span><span class='line'>       Finished setting up &lt;smoke-gcloud-ubuntu-1604&gt; (0m0.00s).
+</span><span class='line'>-----&gt; Verifying &lt;smoke-gcloud-ubuntu-1604&gt;...
+</span><span class='line'>       Loaded tests from test/smoke/gcloud 
+</span><span class='line'>
+</span><span class='line'>Profile: tests from test/smoke/gcloud
+</span><span class='line'>Version: (not specified)
+</span><span class='line'>Target:  docker://16562c9afb7c00447169330fc584b442617a810f6b776d2eb6b78ce87d5d652f
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  Command which
+</span><span class='line'>     ✔  gcloud exit_status should eq 0
+</span><span class='line'>     ✔  gcloud stdout should match "/usr/bin/gcloud"
+</span><span class='line'>
+</span><span class='line'>Test Summary: 2 successful, 0 failures, 0 skipped
+</span><span class='line'>       Finished verifying &lt;smoke-gcloud-ubuntu-1604&gt; (0m0.64s).
+</span><span class='line'>-----&gt; Destroying &lt;smoke-gcloud-ubuntu-1604&gt;...
+</span><span class='line'>       Deleting kitchen sandbox at /home/vagrant/.dokken/kitchen_sandbox/1000b8c847-smoke-gcloud-ubuntu-1604
+</span><span class='line'>       Deleting verifier sandbox at /home/vagrant/.dokken/verifier_sandbox/1000b8c847-smoke-gcloud-ubuntu-1604
+</span><span class='line'>       Finished destroying &lt;smoke-gcloud-ubuntu-1604&gt; (0m10.67s).
+</span><span class='line'>       Finished testing &lt;smoke-gcloud-ubuntu-1604&gt; (1m55.61s).
+</span><span class='line'>-----&gt; Kitchen is finished. (4m12.76s)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s how we develop and test the cookbook on local dev.</p>
+
+<p>You can see the cookbook here at <a href="https://github.com/teracyhq-incubator/kubernetes-stack-cookbook">https://github.com/teracyhq-incubator/kubernetes-stack-cookbook</a></p>
+
+<p>It&rsquo;s currently a very simple cookbook to support the installation of <code>kubectl</code> and <code>gcloud</code>. In
+the future, it will do more than that and support more platforms than current Ubuntu only.</p>
+
+<h2>Installing <code>kubectl</code> and <code>gcloud</code></h2>
+
+<p>The <code>kubernetes-stack-cookbook</code> is not available on the Chef Supermarket (yet), so to use it, we need
+to install it from the github repo.</p>
+
+<p>To install <code>kubectl</code>, add this to the <code>default.rb</code> recipe:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>kubectl 'install the latest kubectl'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To install <code>gcloud</code>, add this to the <code>default.rb</code> recipe:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gcloud 'install the latest gcloud'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The configuration step should be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/3-kubectl-gcloud-installation">https://github.com/acme101/kubernetes-dev-setup/tree/3-kubectl-gcloud-installation</a></p>
+
+<p>After that, <code>$ vagrant reload --provision</code> and voila (again), you should have both of the packages installed.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ kubectl version
+</span><span class='line'>Client Version: version.Info{Major:"1", Minor:"6", GitVersion:"v1.6.4", GitCommit:"d6f433224538d4f9ca2f7ae19b252e6fcb66a3ae", GitTreeState:"clean", BuildDate:"2017-05-19T18:44:27Z", GoVersion:"go1.7.5", Compiler:"gc", Platform:"linux/amd64"}
+</span><span class='line'>The connection to the server localhost:8080 was refused - did you specify the right host or port?</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>vagrant@acme:~$ gcloud --version
+</span><span class='line'>Google Cloud SDK 159.0.0
+</span><span class='line'>alpha 2017.06.09
+</span><span class='line'>beta 2017.06.09
+</span><span class='line'>bq 2.0.24
+</span><span class='line'>core 2017.06.09
+</span><span class='line'>gcloud 
+</span><span class='line'>gsutil 4.26</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Setting up Kubernetes local deployment</h2>
+
+<p>I&rsquo;ve shown you how to extend <code>teracy-dev</code> to install new software packages. It is very simple, just follow
+the steps I described above to apply for all other projects.</p>
+
+<p><code>kubectl</code> and <code>gcloud</code> are used to work with Google Container Engine (GKE), however, we want
+to install Kubernetes to test on local dev, too. So I will have another blog post to cover this more
+complex setup: how to create a Kubernetes cluster to work on local dev so that we can test all your
+production Docker images on your local dev the same way it is deployed on the production system.</p>
+
+<h2>Summary</h2>
+
+<p>Now you should know how to extend <code>teracy-dev</code> with Chef cookbooks, this is a very common task to do.
+And other newcomer devs can just use your <code>dev-setup</code> without learning anything new, just follow
+the instructions and learn more to master later.</p>
+
+<p>There are still some areas of configuration for <code>teracy-dev</code> that needs improvement and it will be
+available on <code>teracy-dev</code> v0.5.0, so stay tuned for our next very exciting upcoming releases.</p>
+
+<p>I hope that this blog post can help you follow the current best practices to extend <code>teracy-dev</code>
+for your own need more easily. If you have any problem with it, let me know by dropping your comments.</p>
+
+<p>Happy hacking!</p>
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Mon Jun 19 09:31:54 2017</strong><br/>BLOG-116 | how to extend teracy-dev to work with Kubernetes: apply feedback
+</li><li><strong>Mon Jun 19 09:04:24 2017</strong><br/>BLOG-116 | how to extend teracy-dev to work with Kubernetes: apply feedback
+</li><li><strong>Thu Jun 15 03:11:20 2017</strong><br/>BLOG-116 | how to extend teracy-dev to work with Kubernetes: self review + fixes
+</li><li><strong>Thu Jun 15 03:10:05 2017</strong><br/>BLOG-116 | how to extend teracy-dev to work with Kubernetes: initial work
+</li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2017-06-15-how-to-extend-teracy-dev-to-work-with-kubernetes.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">hoatle</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2017-06-15T11:05:00+00:00" datetime="2017-06-15T11:05:00+00:00" pubdate data-updated="true">Jun 15<span>th</span>, 2017</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/en/'>en</a>, <a class='category' href='/categories/how-to/'>how-to</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/chef/'>chef</a>, <a class='tag' href='/tags/docker/'>docker</a>, <a class='tag' href='/tags/kubernetes/'>kubernetes</a>, <a class='tag' href='/tags/teracy-dev/'>teracy-dev</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/" data-via="teracyhq" data-counturl="http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2017/06/13/tai-sao-tu-duy-huong-san-pham-la-the-he-tiep-theo-trong-thiet-ke-trai-nghiem-nguoi-dung/" title="Previous Post: Tại sao Tư Duy Hướng Sản Phẩm là thế hệ tiếp theo trong thiết kế trải nghiệm người dùng">&laquo; Tại sao Tư Duy Hướng Sản Phẩm là thế hệ tiếp theo trong thiết kế trải nghiệm người dùng</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracyhq"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/">How to Extend Teracy-dev to Work With Kubernetes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/06/13/tai-sao-tu-duy-huong-san-pham-la-the-he-tiep-theo-trong-thiet-ke-trai-nghiem-nguoi-dung/">Tại Sao Tư Duy Hướng Sản Phẩm Là Thế Hệ Tiếp Theo Trong Thiết Kế Trải Nghiệm Người Dùng</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/06/09/10-dieu-nhan-vien-mong-muon-tu-lanh-dao-nhung-khong-bao-gio-tho-lo/">10 điều Nhân Viên Mong Muốn Từ Các Nhà Lãnh đạo (Nhưng Sẽ Không Thổ Lộ)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/05/24/10-meo-quan-ly-thoi-gian-cho-nguoi-quan-ly-ban-ron/">10 Mẹo Quản Lý Thời Gian Dành Cho Người Quản Lý Bận Rộn</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/05/21/lam-the-nao-de-tao-ra-van-hoa-lam-viec-tu-xa-co-the-tu-ton-tai/">Làm Thế Nào để tạo Ra Văn Hoá Làm Việc Từ Xa Có Thể Tự Tồn Tại</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracyhq">@teracyhq</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracyhq',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/';
+        var disqus_url = 'http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

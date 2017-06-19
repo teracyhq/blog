@@ -4,7 +4,7 @@
   <title><![CDATA[Category: how-to | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/how-to/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-13T09:51:55+00:00</updated>
+  <updated>2017-06-19T09:44:15+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,357 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to extend teracy-dev to work with Kubernetes]]></title>
+    <link href="http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/"/>
+    <updated>2017-06-15T11:05:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/06/15/kubernetes_logo_with_border.png" title="Kubernetes Logo" >
+<em>Credit: Kubernetes</em></p>
+
+<p><code>teracy-dev</code> is developed with the goal to keep it as minimal and extensible as possible.
+The extension feature is so powerful that you can customize the VM in anyway you want. For example,
+in this blog post, I&rsquo;ll show you how to extend it to work with Kubernetes.</p>
+
+<!-- more -->
+
+
+<h2>About Kubernetes</h2>
+
+<p>We&rsquo;re leveraging Docker for all of our development workflow for our clients, internal and open
+source projects. <code>teracy-dev</code> is provisioned with Docker by default out of the box so that we can
+start working with Docker right away.</p>
+
+<p>However, Docker alone is not enough to work with container technology stack. The production deployment
+is different from the local Docker environment. There are many options for container production deployment,
+however, we choose Kubernetes as the first class as it&rsquo;s currently the big giant and the future of
+container orchestration that we believe in.</p>
+
+<p>Working with Kubernetes requires <code>kubectl</code> client to be available, and if you&rsquo;re starting to use
+GKE (Google Container Engine), <code>gcloud</code> (google cloud sdk) client should be available, too.</p>
+
+<p>So let&rsquo;s find a way to extend <code>teracy-dev</code> to install <code>kubectl</code> and <code>gcloud</code>.</p>
+
+<h2>Extending <code>teracy-dev</code></h2>
+
+<p>You can extend <code>teracy-dev</code>&rsquo;s VM by your own choice of operating system and automate the provisioning
+process by your own choice of configuration software. &ldquo;The only limit is your imagination&rdquo; :&ndash;).</p>
+
+<p>To extend <code>teracy-dev</code>, we can use any kind of provisioners that are supported by vagrant (as <code>teracy-dev</code>
+is built on top of <code>vagrant</code>), you can see more info here: <a href="https://www.vagrantup.com/docs/provisioning/">https://www.vagrantup.com/docs/provisioning/</a></p>
+
+<p>We choose <code>Chef</code> as it&rsquo;s our default provisioner that we have more years of usage experience. We intend
+to use <code>Ansible</code> for some future projects, too.</p>
+
+<h2>Installing <code>ChefDK</code></h2>
+
+<p>We&rsquo;re going to use <code>Acme 101</code> project which is used to show the best practices from <code>teracy-dev</code> applied
+for organizations.</p>
+
+<p>To work with Chef cookbooks, we need to install <code>ChefDK</code>. Fortunately, there is already an available cookbook
+for us to use to install <code>ChefDK</code> automatically on our VM: <a href="https://supermarket.chef.io/cookbooks/chef-dk">https://supermarket.chef.io/cookbooks/chef-dk</a></p>
+
+<p>Usually, we have <code>dev-setup</code> directory to extend <code>teracy-dev</code> (<code>acme-dev</code> in this case). The initial
+<code>dev-setup</code> content should be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/0-initial">https://github.com/acme101/kubernetes-dev-setup/tree/0-initial</a></p>
+
+<p>To install <code>ChefDK</code>, we must install the <code>chef-dk</code> cookbook and use it as follows:</p>
+
+<ul>
+<li><p>Add <code>depends 'chef-dk'</code> to <code>dev-setup/chef/main-cookbooks/acme/metadata.rb</code></p></li>
+<li><p>Install vendor cookbooks with the following commands within the VM:</p></li>
+</ul>
+
+
+<p><code>
+$ ws
+$ cd dev-setup/chef
+$ docker-compose up
+</code></p>
+
+<ul>
+<li>Sync back the changes from the VM to the host machine:</li>
+</ul>
+
+
+<p><code>
+$ vagrant rsync-back
+</code></p>
+
+<p>The updated content should be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/1-dependency">https://github.com/acme101/kubernetes-dev-setup/tree/1-dependency</a></p>
+
+<p>Now, to install <code>chef-dk</code>, just add the following Ruby code to <code>default.rb</code> recipe, it&rsquo;s never so easy:</p>
+
+<p><code>
+chef_dk 'my_chef_dk' do
+  global_shell_init true
+  action :install
+end
+</code></p>
+
+<p>Make sure you have <code>berks-cookbooks</code> paths that <code>vagrant</code> can look up. The configuration step should
+be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/2-configuration">https://github.com/acme101/kubernetes-dev-setup/tree/2-configuration</a></p>
+
+<ul>
+<li>After that, <code>$ vagrant reload --provision</code> and voila, you should have <code>ChefDk</code> installed.</li>
+</ul>
+
+
+<p><code>
+$ vagrant ssh
+$ chef --version
+Chef Development Kit Version: 1.4.3
+chef-client version: 12.19.36
+delivery version: master (41b94ffb5efd33723cf72a89bf4d273c8151c9dc)
+berks version: 5.6.4
+kitchen version: 1.16.0
+inspec version: 1.25.1
+</code></p>
+
+<p>That&rsquo;s how we use Chef cookbooks to manage the VM&rsquo;s software automatically. We can do the same with
+all other types of Chef cookbooks shared and opensourced from the public Chef Supermarket: <a href="https://supermarket.chef.io/">https://supermarket.chef.io/</a>
+You can use all the public shared cookbooks to do almost anything you want for your VM.</p>
+
+<p>However, sometimes, there is not available cookbook that we want, then it&rsquo;s time we should
+build new cookbooks from scratch.</p>
+
+<h2>Creating new Chef cookbooks</h2>
+
+<p>From the steps above, we have <code>ChefDK</code> available to work with Chef cookbooks. To learn how to use it,
+you can follow: <a href="https://github.com/chef/chef-dk">https://github.com/chef/chef-dk</a></p>
+
+<p>I already created the initial <code>kubernetes-stack-cookbook</code> that we can work with. You need to clone
+the repo into the <code>workspace</code> directory:</p>
+
+<p><code>
+$ cd ~/acme-dev/workspace
+$ git clone git@github.com:teracyhq-incubator/kubernetes-stack-cookbook.git
+</code></p>
+
+<p>You can test the cookbook within the VM (<code>$ vagrant ssh</code>) with <code>rspec</code>, <code>kitchen</code> easily:</p>
+
+<p><code>
+$ ws
+$ cd kubernetes-stack-cookbook/
+$ rspec
+</code></p>
+
+<p>you should see the following similar content:</p>
+
+<p>```
+kubernetes-stack::default
+  When all attributes are default, on ubuntu 16.04</p>
+
+<pre><code>converges successfully
+</code></pre>
+
+<p>kubernetes-stack-test::gcloud_install_default
+  When all attributes are default, on ubuntu 16.04</p>
+
+<pre><code>converges successfully
+install gcloud
+</code></pre>
+
+<p>kubernetes-stack-test::kubectl_install_default
+  When all attributes are default, on ubuntu 16.04</p>
+
+<pre><code>converges successfully
+install kubectl
+</code></pre>
+
+<p>Finished in 1.35 seconds (files took 1.78 seconds to load)
+5 examples, 0 failures</p>
+
+<p>ChefSpec Coverage report generated&hellip;</p>
+
+<p>  Total Resources:   7
+  Touched Resources: 2
+  Touch Coverage:    28.57%</p>
+
+<p>Untouched Resources:</p>
+
+<p>  gcloud[install default gcloud]     kubernetes-stack-test/recipes/gcloud_install_default.rb:1
+  execute[import google-cloud-sdk public key]   kubernetes-stack/resources/gcloud.rb:13
+  apt_repository[google-cloud-sdk]   kubernetes-stack/resources/gcloud.rb:17
+  bash[clean up the mismatched kubectl version]   kubernetes-stack/resources/kubectl.rb:20
+  remote_file[/usr/local/bin/kubectl]   kubernetes-stack/resources/kubectl.rb:33
+```</p>
+
+<p>and to test with <code>kitchen</code>:</p>
+
+<p><code>
+$ ws
+$ cd kubernetes-stack-cookbook/
+$ export KITCHEN_LOCAL_YAML=.kitchen.dokken.yml
+$ kitchen test
+</code></p>
+
+<p>then you should see the following similar content:</p>
+
+<p>```
+&hellip;
+Starting Chef Client, version 13.2.7
+[2017-06-14T17:53:24+00:00] WARN: Plugin Network: unable to detect ipaddress
+resolving cookbooks for run list: [&ldquo;kubernetes-stack-test::gcloud_install_default&rdquo;]
+Synchronizing Cookbooks:
+  &ndash; kubernetes-stack-test (0.1.0)
+  &ndash; kubernetes-stack (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks&hellip;
+Converging 1 resources
+Recipe: kubernetes-stack-test::gcloud_install_default
+  * gcloud[install default gcloud] action install</p>
+
+<pre><code>* execute[import google-cloud-sdk public key] action run
+  - execute curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+* apt_repository[google-cloud-sdk] action add
+  * execute[apt-cache gencaches] action nothing (skipped due to action :nothing)
+  * apt_update[google-cloud-sdk] action nothing (skipped due to action :nothing)
+  * file[/etc/apt/sources.list.d/google-cloud-sdk.list] action create
+    - create new file /etc/apt/sources.list.d/google-cloud-sdk.list
+    - update content in file /etc/apt/sources.list.d/google-cloud-sdk.list from none to 24ee22
+    --- /etc/apt/sources.list.d/google-cloud-sdk.list 2017-06-14 17:53:25.296105380 +0000
+    +++ /etc/apt/sources.list.d/.chef-google-cloud-sdk20170614-20-7wqkmu.list 2017-06-14 17:53:25.296105380 +0000
+    @@ -1 +1,2 @@
+    +deb      "http://packages.cloud.google.com/apt" cloud-sdk-xenial main
+    - change mode from '' to '0644'
+    - change owner from '' to 'root'
+    - change group from '' to 'root'
+  * execute[apt-cache gencaches] action run
+    - execute apt-cache gencaches
+  * apt_update[google-cloud-sdk] action update
+    - force update new lists of packages
+    * directory[/var/lib/apt/periodic] action create (up to date)
+    * directory[/etc/apt/apt.conf.d] action create (up to date)
+    * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing
+      - create new file /etc/apt/apt.conf.d/15update-stamp
+      - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+      --- /etc/apt/apt.conf.d/15update-stamp  2017-06-14 17:53:26.136525380 +0000
+      +++ /etc/apt/apt.conf.d/.chef-15update-stamp20170614-20-1r28edv 2017-06-14 17:53:26.136525380 +0000
+      @@ -1 +1,2 @@
+      +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2&gt;/dev/null || true";};
+    * execute[apt-get -q update] action run
+      - execute apt-get -q update
+
+
+* apt_package[google-cloud-sdk] action install
+
+  - install version 159.0.0-0 of package google-cloud-sdk
+</code></pre>
+
+<p>Running handlers:
+Running handlers complete
+Chef Client finished, 9/13 resources updated in 55 seconds</p>
+
+<pre><code>   Finished converging &lt;smoke-gcloud-ubuntu-1604&gt; (1m0.97s).
+</code></pre>
+
+<p>&mdash;&mdash;&ndash;> Setting up &lt;smoke-gcloud-ubuntu-1604>&hellip;</p>
+
+<pre><code>   Finished setting up &lt;smoke-gcloud-ubuntu-1604&gt; (0m0.00s).
+</code></pre>
+
+<p>&mdash;&mdash;&ndash;> Verifying &lt;smoke-gcloud-ubuntu-1604>&hellip;</p>
+
+<pre><code>   Loaded tests from test/smoke/gcloud 
+</code></pre>
+
+<p>Profile: tests from test/smoke/gcloud
+Version: (not specified)
+Target:  docker://16562c9afb7c00447169330fc584b442617a810f6b776d2eb6b78ce87d5d652f</p>
+
+<p>  Command which</p>
+
+<pre><code> ✔  gcloud exit_status should eq 0
+ ✔  gcloud stdout should match "/usr/bin/gcloud"
+</code></pre>
+
+<p>Test Summary: 2 successful, 0 failures, 0 skipped</p>
+
+<pre><code>   Finished verifying &lt;smoke-gcloud-ubuntu-1604&gt; (0m0.64s).
+</code></pre>
+
+<p>&mdash;&mdash;&ndash;> Destroying &lt;smoke-gcloud-ubuntu-1604>&hellip;</p>
+
+<pre><code>   Deleting kitchen sandbox at /home/vagrant/.dokken/kitchen_sandbox/1000b8c847-smoke-gcloud-ubuntu-1604
+   Deleting verifier sandbox at /home/vagrant/.dokken/verifier_sandbox/1000b8c847-smoke-gcloud-ubuntu-1604
+   Finished destroying &lt;smoke-gcloud-ubuntu-1604&gt; (0m10.67s).
+   Finished testing &lt;smoke-gcloud-ubuntu-1604&gt; (1m55.61s).
+</code></pre>
+
+<p>&mdash;&mdash;&ndash;> Kitchen is finished. (4m12.76s)
+```</p>
+
+<p>That&rsquo;s how we develop and test the cookbook on local dev.</p>
+
+<p>You can see the cookbook here at <a href="https://github.com/teracyhq-incubator/kubernetes-stack-cookbook">https://github.com/teracyhq-incubator/kubernetes-stack-cookbook</a></p>
+
+<p>It&rsquo;s currently a very simple cookbook to support the installation of <code>kubectl</code> and <code>gcloud</code>. In
+the future, it will do more than that and support more platforms than current Ubuntu only.</p>
+
+<h2>Installing <code>kubectl</code> and <code>gcloud</code></h2>
+
+<p>The <code>kubernetes-stack-cookbook</code> is not available on the Chef Supermarket (yet), so to use it, we need
+to install it from the github repo.</p>
+
+<p>To install <code>kubectl</code>, add this to the <code>default.rb</code> recipe:</p>
+
+<p><code>
+kubectl 'install the latest kubectl'
+</code></p>
+
+<p>To install <code>gcloud</code>, add this to the <code>default.rb</code> recipe:</p>
+
+<p><code>
+gcloud 'install the latest gcloud'
+</code></p>
+
+<p>The configuration step should be like this: <a href="https://github.com/acme101/kubernetes-dev-setup/tree/3-kubectl-gcloud-installation">https://github.com/acme101/kubernetes-dev-setup/tree/3-kubectl-gcloud-installation</a></p>
+
+<p>After that, <code>$ vagrant reload --provision</code> and voila (again), you should have both of the packages installed.</p>
+
+<p><code>
+$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"6", GitVersion:"v1.6.4", GitCommit:"d6f433224538d4f9ca2f7ae19b252e6fcb66a3ae", GitTreeState:"clean", BuildDate:"2017-05-19T18:44:27Z", GoVersion:"go1.7.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+</code></p>
+
+<p><code>
+vagrant@acme:~$ gcloud --version
+Google Cloud SDK 159.0.0
+alpha 2017.06.09
+beta 2017.06.09
+bq 2.0.24
+core 2017.06.09
+gcloud
+gsutil 4.26
+</code></p>
+
+<h2>Setting up Kubernetes local deployment</h2>
+
+<p>I&rsquo;ve shown you how to extend <code>teracy-dev</code> to install new software packages. It is very simple, just follow
+the steps I described above to apply for all other projects.</p>
+
+<p><code>kubectl</code> and <code>gcloud</code> are used to work with Google Container Engine (GKE), however, we want
+to install Kubernetes to test on local dev, too. So I will have another blog post to cover this more
+complex setup: how to create a Kubernetes cluster to work on local dev so that we can test all your
+production Docker images on your local dev the same way it is deployed on the production system.</p>
+
+<h2>Summary</h2>
+
+<p>Now you should know how to extend <code>teracy-dev</code> with Chef cookbooks, this is a very common task to do.
+And other newcomer devs can just use your <code>dev-setup</code> without learning anything new, just follow
+the instructions and learn more to master later.</p>
+
+<p>There are still some areas of configuration for <code>teracy-dev</code> that needs improvement and it will be
+available on <code>teracy-dev</code> v0.5.0, so stay tuned for our next very exciting upcoming releases.</p>
+
+<p>I hope that this blog post can help you follow the current best practices to extend <code>teracy-dev</code>
+for your own need more easily. If you have any problem with it, let me know by dropping your comments.</p>
+
+<p>Happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[10 điều nhân viên mong muốn từ các nhà lãnh đạo (Nhưng sẽ không thổ lộ)]]></title>
@@ -478,428 +829,6 @@ we should do so that everyone can follow easily and we can support each other wi
 apply similarly.</p>
 
 <p>Happy hacking and don&rsquo;t forget to let us know your feedbacks and questions by leaving your comments!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker]]></title>
-    <link href="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/"/>
-    <updated>2016-11-07T07:18:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
-
-<p>React is an awesome library to work with, however, we must pick up other libraries to build up a
-robust application such as redux, redux-connect, server side rendering, redux-form, etc. After that,
-we must organize the application structure with best practices to develop and deploy it. Doing all
-these tasks requires some good experiences, so it&rsquo;s very difficult for a newbie. Good news is that there
-are many starter boilerplate projects out there for us to choose. And today we&rsquo;d like to introduce
-you a starter React boilerplate for faster development and deployment.</p>
-
-<!-- more -->
-
-
-<p>There is a good starter React boilerplate with the following outstanding batteries included:</p>
-
-<ul>
-<li>Universal rendering (both client and server side rendering from the same client side code)</li>
-<li>Babel for ES6+ for writing modern JS syntax today</li>
-<li>Webpack for bundling, hot module reloading</li>
-<li>Redux, Redux Dev Tools, redux-form, React Router</li>
-<li>ESLint consistent style checking</li>
-<li>Unit testing</li>
-<li>bootstrap and font-awesome</li>
-<li>And many other cool things</li>
-</ul>
-
-
-<p>However, the project is not active anymore, so we decided to fork and update it a bit to work with
-Docker easier and faster. Let&rsquo;s get started with
-<a href="https://github.com/hoatle/react-redux-universal-hot-example">https://github.com/hoatle/react-redux-universal-hot-example</a> then.</p>
-
-<h2>Prerequisites</h2>
-
-<p><img class="center" src="/images/2016/11/07/react-prerequisites.gif" title="React Project Prerequisites" ></p>
-
-<p>Make sure you have the following softwares installed:</p>
-
-<ul>
-<li>git</li>
-<li>docker</li>
-<li>docker-compose</li>
-</ul>
-
-
-<p>Make sure that docker and docker-compose are available by checking <code>git version</code>, <code>docker info</code> and
-<code>docker-compose version</code> as following:</p>
-
-<p><code>bash
-$ git version
-git version 2.10.2
-</code></p>
-
-<p><code>bash
-$ docker info
-Containers: 9
-Running: 1
-Paused: 0
-Stopped: 8
-Images: 216
-Server Version: 1.12.1
-Storage Driver: aufs
-Root Dir: /var/lib/docker/aufs
-Backing Filesystem: extfs
-Dirs: 244
-Dirperm1 Supported: true
-Logging Driver: json-file
-Cgroup Driver: cgroupfs
-Plugins:
-Volume: local
-Network: host bridge null overlay
-Swarm: inactive
-Runtimes: runc
-Default Runtime: runc
-Security Options: seccomp
-Kernel Version: 4.4.20-moby
-Operating System: Alpine Linux v3.4
-OSType: linux
-Architecture: x86_64
-CPUs: 2
-Total Memory: 1.953 GiB
-Name: moby
-ID: W2PL:SOAQ:Y24X:VTFK:2Z3X:3CON:HWRK:7EMB:E2D4:EAPJ:NSKY:YHJ2
-Docker Root Dir: /var/lib/docker
-Debug Mode (client): false
-Debug Mode (server): true
-File Descriptors: 20
-Goroutines: 34
-System Time: 2016-11-07T07:45:16.819335883Z
-EventsListeners: 1
-No Proxy: *.local, 169.254/16
-Username: hoatle
-Registry: https://index.docker.io/v1/
-Insecure Registries:
-127.0.0.0/8
-</code></p>
-
-<p><code>bash
-$ docker-compose version
-docker-compose version 1.8.0, build f3628c7
-docker-py version: 1.9.0
-CPython version: 2.7.9
-OpenSSL version: OpenSSL 1.0.2h 3 May 2016
-</code></p>
-
-<p>If you get the similar output, you&rsquo;re good to go to the next step.</p>
-
-<h2>Git clone the project</h2>
-
-<p><img class="center" src="/images/2016/11/07/react-clone.gif" title="React Project Git Clone" ></p>
-
-<p>We&rsquo;re developing a React application named: &ldquo;my-app&rdquo;. Let&rsquo;s clone the starter project first:</p>
-
-<p><code>bash
-$ mkdir -p ~/teracy-dev/workspace
-$ cd ~/teracy-dev/workspace
-$ git clone https://github.com/hoatle/react-redux-universal-hot-example.git my-app
-</code></p>
-
-<h2>Development</h2>
-
-<p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
-
-<p>Docker is really awesome to create an isolated consistent development and deployment environment and
-it&rsquo;s super fast, too. We&rsquo;re leveraging Docker and Docker workflow for all our projects at Teracy,
-both internal and outsourcing projects.
-After cloning the starter project, let&rsquo;s start developing with:</p>
-
-<p><code>bash
-$ cd ~/teracy-dev/workspace/my-app
-$ docker-compose pull &amp;&amp; docker-compose up
-</code></p>
-
-<p>If you get the following error output:</p>
-
-<p><code>bash
-ERROR: for dev Cannot start service dev: driver failed programming external connectivity on endpoint myapp_dev_1 (e2105083bdacaf5bb0684aa7a34ae0dc92b20cc748a31491368c7afa3e51da30): Error starting userland proxy: Bind for 0.0.0.0:3000 failed: port is already allocated
-ERROR: Encountered errors while bringing up the project.
-</code></p>
-
-<p>then make sure the port 3000 is available for &ldquo;my-app&rdquo; to use.</p>
-
-<p>If you get the following output:</p>
-
-<p><code>bash
-$ docker-compose pull &amp;&amp; docker-compose up
-Pulling dev (hoatle/react-redux-universal-hot-example:dev_latest)...
-dev_latest: Pulling from hoatle/react-redux-universal-hot-example
-43c265008fae: Already exists
-af36d2c7a148: Already exists
-143e9d501644: Already exists
-df720fc8e4f1: Already exists
-eae19baa28ff: Already exists
-9004de327d6a: Already exists
-753292cc4b91: Already exists
-21edf49ccd04: Pull complete
-5571a198d5e5: Pull complete
-12965aa2aa24: Pull complete
-cd5c00a0e311: Pull complete
-5b4a21012860: Pull complete
-Digest: sha256:947e1889ff53d65cd2e9dd3357d45cf8714504995564e0a7183a5ff13a605ac0
-Status: Downloaded newer image for hoatle/react-redux-universal-hot-example:dev_latest
-Creating myapp_dev_1
-Attaching to myapp_dev_1
-dev_1 | yarn install v0.16.1
-dev_1 | success Already up-to-date.
-dev_1 | Done in 0.31s.
-dev_1 | npm info it worked if it ends with ok
-dev_1 | npm info using npm@3.10.8
-dev_1 | npm info using node@v6.9.1
-dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~predev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~dev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 |
-dev_1 | &gt; numerologist-app@0.1.0-SNAPSHOT dev /opt/app
-dev_1 | &gt; concurrent --kill-others "npm run watch-client" "npm run start-dev" "npm run start-dev-api"
-dev_1 |
-dev_1 | Warning: "concurrent" command is deprecated, use "concurrently" instead.
-dev_1 |
-dev_1 | [1] npm
-dev_1 | [1] info it worked if it ends with ok
-dev_1 | [1] npm info using npm@3.10.8
-dev_1 | [1] npm info using node@v6.9.1
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] it worked if it ends with
-dev_1 | [0] ok
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] using
-dev_1 | [0] npm@3.10.8
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] using node@v6.9.1
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2]
-dev_1 | [2] it worked if it ends with
-dev_1 | [2] ok
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2]
-dev_1 | [2] using
-dev_1 | [2] npm@3.10.8
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2]
-dev_1 | [2] using
-dev_1 | [2] node@v6.9.1
-dev_1 | [1] npm
-dev_1 | [1]
-dev_1 | [1] info lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [1] npm
-dev_1 | [1]
-dev_1 | [1] info
-dev_1 | [1]
-dev_1 | [1] lifecycle
-dev_1 | [1] numerologist-app@0.1.0-SNAPSHOT~start-dev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [1]
-dev_1 | [1] &gt; numerologist-app@0.1.0-SNAPSHOT start-dev /opt/app
-dev_1 | [1] &gt; better-npm-run start-dev
-dev_1 | [1]
-dev_1 | [1] running better-npm-run in /opt/app
-dev_1 | [1] Executing script: start-dev
-dev_1 | [1]
-dev_1 | [1] to be executed: node ./bin/server.js
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] lifecycle
-dev_1 | [0] numerologist-app@0.1.0-SNAPSHOT~prewatch-client: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] lifecycle
-dev_1 | [0] numerologist-app@0.1.0-SNAPSHOT~watch-client: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [0]
-dev_1 | [0] &gt; numerologist-app@0.1.0-SNAPSHOT watch-client /opt/app
-dev_1 | [0] &gt; better-npm-run watch-client
-dev_1 | [0]
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2] lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev-api: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [0] running better-npm-run in /opt/app
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2] lifecycle
-dev_1 | [2] numerologist-app@0.1.0-SNAPSHOT~start-dev-api: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [2]
-dev_1 | [2] &gt; numerologist-app@0.1.0-SNAPSHOT start-dev-api /opt/app
-dev_1 | [2] &gt; better-npm-run start-dev-api
-dev_1 | [2]
-dev_1 | [0] Executing script: watch-client
-dev_1 | [0]
-dev_1 | [0] to be executed: node webpack/webpack-dev-server.js
-dev_1 | [2] running better-npm-run in /opt/app
-dev_1 | [2] Executing script: start-dev-api
-dev_1 | [2]
-dev_1 | [2] to be executed: node ./bin/api.js
-dev_1 | [0] ==&gt; 🚧 Webpack development server listening on port 3001
-dev_1 | [2] ----
-dev_1 | [2] ==&gt; 🌎 API is running on port 3030
-dev_1 | [2] ==&gt; 💻 Send requests to http://localhost:3030
-dev_1 | [1] ----
-dev_1 | [1] ==&gt; ✅ React Redux Example is running, talking to API server on 3030.
-dev_1 | [1] ==&gt; 💻 Open http://0.0.0.0:3000 in a browser to view the app.
-dev_1 | [0] Hash: 4bfaa3d4b9c381888d2a
-dev_1 | [0] Version: webpack 1.13.3
-dev_1 | [0] Time: 44424ms
-dev_1 | [0] Asset Size Chunks Chunk Names
-dev_1 | [0] af7ae505a9eed503f8b8e6982036873e.woff2 77.2 kB [emitted]
-dev_1 | [0] f4769f9bdb7466be65088239c12046d1.eot 20.1 kB [emitted]
-dev_1 | [0] fa2772327f55d8198301fdb8bcfc8158.woff 23.4 kB [emitted]
-dev_1 | [0] e18bbf611f2a2e43afc071aa2f4e1512.ttf 45.4 kB [emitted]
-dev_1 | [0] 89889688147bd7575d6327160d64e760.svg 109 kB [emitted]
-dev_1 | [0] 674f50d287a8c48dc19ba404d20fe713.eot 166 kB [emitted]
-dev_1 | [0] 448c34a56d699c29117adc64c43affeb.woff2 18 kB [emitted]
-dev_1 | [0] fee66e712a8a08eef5805a46892932ad.woff 98 kB [emitted]
-dev_1 | [0] b06871f281fee6b241d60582ae9369b9.ttf 166 kB [emitted]
-dev_1 | [0] 912ec66d7572ff821749319396470bde.svg 444 kB [emitted]
-dev_1 | [0] c29770d03d2e95e3ea5899d57c6cfeab.jpg 92.2 kB [emitted]
-dev_1 | [0] main-4bfaa3d4b9c381888d2a.js 9.61 MB 0 [emitted] main
-dev_1 | [0] webpack built 4bfaa3d4b9c381888d2a in 44424ms
-</code></p>
-
-<p>Then it&rsquo;s good to go, open <a href="http://localhost:3000">http://localhost:3000</a> to see the starter project home page.</p>
-
-<p>Try to make some changes to the source code, you should see the changes reflected immediately without
-any page reloading, this is called hot module reloading, a really awesome feature to boost development
-productivity.</p>
-
-<p><img class="center" src="/images/2016/11/07/react-instant-changes.gif" title="React Project Instant Changes" ></p>
-
-<h2>Deployment</h2>
-
-<p>We&rsquo;re going to deploy the Docker image. There are guides that you can follow:</p>
-
-<ul>
-<li>Deploy on Heroku: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md</a></li>
-<li>Simple deployment with docker-compose: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md</a></li>
-</ul>
-
-
-<p>There are many production best practices that we should improve for the starter project.</p>
-
-<h2>CI (continuous integration) and CD (continuous delivery)</h2>
-
-<p>By using CI and CD systems like travis-ci and gitlab-ci, we could stick to the following process:</p>
-
-<ul>
-<li>Pull request (merge request) is sent &ndash;> CI checks.</li>
-<li>Code changes &ndash;> CI checks.</li>
-<li>CI checking is passed, then CD starts.</li>
-<li>CD will deploy automatically, for example, to Heroku or other providers or your in-house data
-center.</li>
-</ul>
-
-
-<p>You can update all of these steps by adjusting the following files accordingly:</p>
-
-<ul>
-<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml</a></li>
-<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml</a></li>
-</ul>
-
-
-<p>At the CI checking step, we build Docker images (both development and production images):</p>
-
-<ul>
-<li><a href="https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/">https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/</a></li>
-<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry">https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry</a></li>
-</ul>
-
-
-<p>The development images install all development stuff (excluding the source code) so that
-all the developers should have the same development environment as long as they&rsquo;re using the same
-development image.</p>
-
-<p>The production (distribution) images install and package all runtime stuff so that everyone could
-run the applications right away with the same runtime environment.</p>
-
-<p>You can see these CI systems in action:</p>
-
-<ul>
-<li><a href="https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds">https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds</a></li>
-<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines">https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines</a></li>
-</ul>
-
-
-<p>Building on travis-ci is super fast and it&rsquo;s very slow on gitlab-ci. However, using gitlab is free
-for unlimited projects, it includes Docker registry for free, too.</p>
-
-<p>You can install gitlab on your server, it should be faster but you have to pay for the devops
-maintenance cost.</p>
-
-<p>If you could pay for Docker Hub, Github and Travis-CI, it&rsquo;s super fast and convenient for development
-without the devops maintenance cost.</p>
-
-<p>Or even better, ping us for consulting :&ndash;).</p>
-
-<h2>react-boilerplate introduction</h2>
-
-<p><code>react-redux-universal-hot-example</code> is a good start, however, there are still many improvements that
-we&rsquo;d like to add, for example:</p>
-
-<ul>
-<li>Better code and component organization convention. The Angular 2 convention is a really great
-inspiration for this.</li>
-<li>Update dependencies to latest versions.</li>
-<li>Build the deployment Docker that should include runtime stuff only, not development stuff.</li>
-<li>Server side code should be production ready and optimized.</li>
-</ul>
-
-
-<p>And there are more to do. So we intent to create a better <code>react-redux-universal-hot-example</code> version,
-we call it <code>react-boilerplate</code>.</p>
-
-<p>The project is located at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
-as possible when it&rsquo;s ready. So stay tuned! At present we should use <code>react-redux-universal-hot-example</code>.</p>
-
-<h2>React application consulting and developing service</h2>
-
-<p>We&rsquo;re offering React application consulting and developing service.</p>
-
-<p>If you want React development and production deployment help, don&rsquo;t hesitate to ping us. We&rsquo;re
-eager to help you to develop world-class React applications with better and better developer experience
-and production deployment.</p>
-
-<h2>Learn more</h2>
-
-<p>You should learn more about React at:</p>
-
-<ul>
-<li><a href="http://exploringjs.com/es6/">http://exploringjs.com/es6/</a></li>
-<li><a href="https://github.com/veggiemonk/awesome-docker">https://github.com/veggiemonk/awesome-docker</a></li>
-<li><a href="https://github.com/enaqx/awesome-react">https://github.com/enaqx/awesome-react</a></li>
-<li><a href="https://github.com/hoatle/react-redux-universal-hot-example#about">https://github.com/hoatle/react-redux-universal-hot-example#about</a></li>
-</ul>
-
-
-<p>Hopefully, this is a good start for React newbies to explore the whole new world of modern web
-application development.</p>
-
-<p>Happy hacking!</p>
 ]]></content>
   </entry>
   
