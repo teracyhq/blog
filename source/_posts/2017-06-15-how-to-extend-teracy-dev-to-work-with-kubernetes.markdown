@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to extend teracy-dev to work with Kubernetes"
-author: 
+author: hoatle
 date: 2017-06-15 11:05
 comments: true
 categories:
@@ -12,13 +12,13 @@ tags:
     - "chef"
     - "kubernetes"
     - "docker"
-cover: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo_with_border.png
+cover: /images/2017/06/15/kubernetes_logo_with_border.png
 description: how to extend teracy-dev to work with Kubernetes
 keywords: teracy-dev, extending, Kubernetes, Chef, vagrant
 published: true
 ---
 
-{% img center https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo_with_border.png Kubernetes Logo %}
+{% img center /images/2017/06/15/kubernetes_logo_with_border.png Kubernetes Logo %}
 *Credit: Kubernetes*
 
 `teracy-dev` is developed with the goal to keep it as minimal and extensible as possible.
@@ -36,15 +36,15 @@ start working with Docker right away.
 However, Docker alone is not enough to work with container technology stack. The production deployment
 is different from the local Docker environment. There are many options for container production deployment,
 however, we choose Kubernetes as the first class as it's currently the big giant and the future of
-container orchestration that we believe.
+container orchestration that we believe in.
 
 Working with Kubernetes requires `kubectl` client to be available, and if you're starting to use
 GKE (Google Container Engine), `gcloud` (google cloud sdk) client should be available, too.
 
-So let's find a way to extend teracy-dev to install `kubectl` and `gcloud`.
+So let's find a way to extend `teracy-dev` to install `kubectl` and `gcloud`.
 
 
-## Extending teracy-dev
+## Extending `teracy-dev`
 
 You can extend `teracy-dev`'s VM by your own choice of operating system and automate the provisioning
 process by your own choice of configuration software. There is only one limitation is your imagination :-).
@@ -56,19 +56,19 @@ We choose `Chef` as it's our default provisioner that we have more years of usag
 to use `Ansible` for some future projects, too.
 
 
-## Installing ChefDK
+## Installing `ChefDK`
 
 We're going to use `Acme 101` project which is used to show the best practices from `teracy-dev` applied
 for organizations.
 
-To work with Chef cookbooks, we need to install ChefDK. Fortunately, there is already an available cookbook
-for us to use to install ChefDK automatically on to our VM: https://supermarket.chef.io/cookbooks/chef-dk
+To work with Chef cookbooks, we need to install `ChefDK`. Fortunately, there is already an available cookbook
+for us to use to install `ChefDK` automatically on our VM: https://supermarket.chef.io/cookbooks/chef-dk
 
 
-Usually, we have `dev-setup` directory to extend `teracy-dev` (acme-dev in this case). The initial
+Usually, we have `dev-setup` directory to extend `teracy-dev` (`acme-dev` in this case). The initial
 `dev-setup` content should be like this: https://github.com/acme101/kubernetes-dev-setup/tree/0-initial
 
-To install ChefDK, we must install the chef-dk cookbook and use it as I did as follows:
+To install `ChefDK`, we must install the `chef-dk` cookbook and use it as follows:
 
 - Add `depends 'chef-dk'` to `dev-setup/chef/main-cookbooks/acme/metadata.rb`
 
@@ -80,8 +80,13 @@ $ cd dev-setup/chef
 $ docker-compose up
 ```
 
-After that, `$ vagrant rsync-back` to sync back the changes from the VM to the host machine and the
-updated content should be like this: https://github.com/acme101/kubernetes-dev-setup/tree/1-dependency
+- Sync back the changes from the VM to the host machine:
+
+```
+$ vagrant rsync-back
+```
+
+The updated content should be like this: https://github.com/acme101/kubernetes-dev-setup/tree/1-dependency
 
 
 Now, to install `chef-dk`, just add the following Ruby code to `default.rb` recipe, it's never so easy:
@@ -96,7 +101,7 @@ end
 Make sure you have `berks-cookbooks` paths that `vagrant` can look up. The configuration step should
 be like this: https://github.com/acme101/kubernetes-dev-setup/tree/2-configuration
 
-After that, `$ vagrant reload --provision` and voila, you should have ChefDk installed.
+- After that, `$ vagrant reload --provision` and voila, you should have `ChefDk` installed.
 
 ```
 $ vagrant ssh
@@ -118,7 +123,7 @@ build new cookbooks from scratch.
 
 ## Creating new Chef cookbooks
 
-From the step above, we have `ChefDK` available to work with Chef cookbooks. To learn how to use it,
+From the steps above, we have `ChefDK` available to work with Chef cookbooks. To learn how to use it,
 you can follow: https://github.com/chef/chef-dk
 
 I already created the initial `kubernetes-stack-cookbook` that we can work with. You need to clone
@@ -270,7 +275,7 @@ It's currently a very simple cookbook to support the installation of `kubectl` a
 the future, it will do more than that and support more platforms than current Ubuntu only.
 
 
-## Installing kubectl and gcloud
+## Installing `kubectl` and `gcloud`
 
 The `kubernetes-stack-cookbook` is not available on the Chef Supermarket (yet), so to use it, we need
 to install it from the github repo.
@@ -325,7 +330,7 @@ And other newcomer devs can just use your `dev-setup` without learning anything 
 the instructions and learn more to master later.
 
 There are still some areas of configuration for `teracy-dev` that needs improvement and it will be
-available on teracy-dev v0.5.0, so stay tuned for our next very exciting upcoming release.
+available on `teracy-dev` v0.5.0, so stay tuned for our next very exciting upcoming releases.
 
 I hope that this blog post can help you follow the current best practices to extend `teracy-dev`
 for your own need more easily. If you have any problem with it, let me know by dropping your comments.
