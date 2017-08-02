@@ -4,7 +4,7 @@
   <title><![CDATA[Category: news | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/news/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-30T12:30:09+00:00</updated>
+  <updated>2017-08-02T10:25:15+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
+    <link href="http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release/"/>
+    <updated>2017-07-27T03:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release</id>
+    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1 that introduces lots of features and changes to support more development, deployment stack along with Docker and Kubernetes.</p>
+
+<h2>v0.5.0-c1</h2>
+
+<p>As you known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
+
+<!-- more -->
+
+
+<h2>Changes</h2>
+
+<p>This major release includes some fixed bugs, document improvement and new features:</p>
+
+<ul>
+<li>Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.</li>
+<li>Update the document for the getting started with windows environment, nodejs debug.</li>
+<li>Add many tools to help your development process.</li>
+<li>Add the ability to extend and uniquely extend the array list in the JSON configuration file.</li>
+<li>Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.</li>
+</ul>
+
+
+<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>Along with the project base configuration we also introduce <a href="https://github.com/acme101">ACME101</a> which has many development stacks to use with teracy-dev. Hopefully, it will be useful for you and we&rsquo;re welcome any contribution, suggestion for ACME101. We&rsquo;re also adding more documents and guide for the project.</p>
+
+<p>We&rsquo;ll take all the feedbacks from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
+
+<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-c1</a> for your everyday
+projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
+<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Upcoming event: Productive development environment with teracy-dev]]></title>
@@ -339,58 +384,6 @@ in web projects. This is the second UI kit we share to <a href="http://www.bohem
 <li>Over 140 icons included.</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Free Bootflat UI kit for Sketch]]></title>
-    <link href="http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch/"/>
-    <updated>2014-10-08T00:00:00+00:00</updated>
-    <id>http://blog.teracy.com/2014/10/08/free-bootflat-ui-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/10/cover.png"></p>
-
-<p><strong><em>Why Sketch?</em></strong></p>
-
-<p><a href="http://www.bohemiancoding.com/sketch/">Sketch</a> is a powerful tool designed entirely to do UI. It&rsquo;s a young graphic program when compared
-to Photoshop but we see its user base&rsquo;s growing strong. Centered around vector design, Sketch is
-getting plenty of buzz among UI designers as an alternative to Adobe&rsquo;s Creative Suite. With Sketch,
-designs come out pixel perfect and in vector format, a requirement for multiple screen sizes.</p>
-
-<!-- more -->
-
-
-<p>You may not believe how much time this application have saved us when designing UI. It&rsquo;s simple,
-fast and so connected to the way designers work. You definitely should give Sketch a try in your
-next project. There are already a lot of articles about how Sketch excels in designing UI. Here to
-name a few:</p>
-
-<ul>
-<li><a href="http://blog.mengto.com/sketch-vs-photoshop/">Sketch VS Photoshop</a></li>
-<li><a href="http://blog.mengto.com/photoshop-users-how-to-switch-to-sketch/">Photoshop Users: How To Switch To Sketch</a></li>
-<li><a href="https://medium.com/@jm_denis/discovering-sketch-25545f6cb161">Discovering Sketch</a></li>
-</ul>
-
-
-<p><strong><em>Bootflat UI Kit</em></strong></p>
-
-<p>At the beginning, Teracy planned to develop its own UI kit and framework based on bootstrap. It&rsquo;s a
-great experience but developing and maintaining the UI kit will take time. Clock&rsquo;s still ticking.
-We have to release one of our ambitious products by the end of this year.
-So, we&rsquo;ve come to decide on finding an open source framework that matches our flat designs.</p>
-
-<p>And we found <a href="http://bootflat.github.io/">Bootflat</a> &ndash; an open source Flat UI kit based on Twitter Bootstrap 3 framework. For
-designers, they offer a free PSD, including a set of beautiful and pure elements, which you can
-use to create startup projects, websites or iOS/Android Apps. This will save a lot of developing
-time.</p>
-
-<p>There&rsquo;s still one thing that&rsquo;s bugging us though. As our company starts switching to Sketch for UI
-design, this beautiful framework doesn&rsquo;t provide the .sketch file of elements, only .psd. So we
-think &ldquo;OK, why not create one? Sketch community might find it helpful and it&rsquo;s also good for
-creators of Bootflat.&rdquo;</p>
-
-<p>So here it is, hope it&rsquo;s useful for Sketch lovers!</p>
-
-<p><a href="https://github.com/teracy-official/bootflat-ui-kit.sketch">Download the Bootflat UI kit for Sketch</a></p>
 ]]></content>
   </entry>
   

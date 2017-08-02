@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-30T12:30:09+00:00</updated>
+  <updated>2017-08-02T10:25:15+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
+    <link href="http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release/"/>
+    <updated>2017-07-27T03:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release</id>
+    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1 that introduces lots of features and changes to support more development, deployment stack along with Docker and Kubernetes.</p>
+
+<h2>v0.5.0-c1</h2>
+
+<p>As you known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
+
+<!-- more -->
+
+
+<h2>Changes</h2>
+
+<p>This major release includes some fixed bugs, document improvement and new features:</p>
+
+<ul>
+<li>Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.</li>
+<li>Update the document for the getting started with windows environment, nodejs debug.</li>
+<li>Add many tools to help your development process.</li>
+<li>Add the ability to extend and uniquely extend the array list in the JSON configuration file.</li>
+<li>Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.</li>
+</ul>
+
+
+<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>Along with the project base configuration we also introduce <a href="https://github.com/acme101">ACME101</a> which has many development stacks to use with teracy-dev. Hopefully, it will be useful for you and we&rsquo;re welcome any contribution, suggestion for ACME101. We&rsquo;re also adding more documents and guide for the project.</p>
+
+<p>We&rsquo;ll take all the feedbacks from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
+
+<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-c1</a> for your everyday
+projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
+<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Upcoming event: Productive development environment with teracy-dev]]></title>
@@ -410,60 +455,6 @@ and better and better.</p>
 <ol>
 <li id="fn:1">
 <p>http://blog.teracy.com/tags/teracy-dev/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[how to make JWT requests with httpie-jwt-auth plugin?]]></title>
-    <link href="http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin/"/>
-    <updated>2015-09-03T11:33:00+00:00</updated>
-    <id>http://blog.teracy.com/2015/09/03/how-to-make-jwt-requests-with-httpie-jwt-auth-plugin</id>
-    <content type="html"><![CDATA[<p>At Teracy, we embrace JWT (JSON Web Tokens)<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>  for REST APIs to make secure requests. Just for
-your information: &ldquo;JSON Web Tokens are an open, industry standard RFC 7519 method for representing
-claims securely between two parties&rdquo;.</p>
-
-<!-- more -->
-
-
-<p>We&rsquo;re using JWT for our REST APIs basing on the flask-boilerplate<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> project that are empowering
-our clients' web applications and our internal projects.</p>
-
-<p>And to test REST APIs, we&rsquo;re using a really simple powerful http client called httpie<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> .</p>
-
-<p>To make a JWT request with <code>httpie</code>, you need to use the following command:</p>
-
-<p><code>
-$ http example.org Authorization:'Bearer jwt_token_here'
-</code></p>
-
-<p>Hower, typing <code>Authorization</code> with the exact value format is a bit hard and error-prone, that&rsquo;s the
-reason why we created <a href="https://github.com/teracyhq/httpie-jwt-auth">httpie-jwt-auth</a> plugin with the first v0.1.0 release. After installing
-<code>httpie-jwt-auth</code>, you could use this instead:</p>
-
-<p><code>
-$ http --auth-type=jwt --auth=jwt_token_here: example.org
-</code></p>
-
-<p>That&rsquo;s it. It&rsquo;s really easy to use for any JWT requests with <code>httpie</code>.</p>
-
-<p>Please note that colon character at the end of <code>jwt_token_here</code>, we&rsquo;re going to work on removing
-the redundant colon character with: <a href="https://github.com/teracyhq/httpie-jwt-auth/issues/3">https://github.com/teracyhq/httpie-jwt-auth/issues/3</a></p>
-
-<p>Hope that you&rsquo;ll like it and use it as much as we do.</p>
-
-<p>Happy developing and debugging!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://jwt.io/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>https://github.com/teracyhq/flask-boilerplate<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>https://github.com/jkbrzt/httpie<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

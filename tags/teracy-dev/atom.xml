@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: teracy-dev | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/teracy-dev/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-30T12:30:09+00:00</updated>
+  <updated>2017-08-02T10:25:15+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
+    <link href="http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release/"/>
+    <updated>2017-07-27T03:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release</id>
+    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1 that introduces lots of features and changes to support more development, deployment stack along with Docker and Kubernetes.</p>
+
+<h2>v0.5.0-c1</h2>
+
+<p>As you known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
+
+<!-- more -->
+
+
+<h2>Changes</h2>
+
+<p>This major release includes some fixed bugs, document improvement and new features:</p>
+
+<ul>
+<li>Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.</li>
+<li>Update the document for the getting started with windows environment, nodejs debug.</li>
+<li>Add many tools to help your development process.</li>
+<li>Add the ability to extend and uniquely extend the array list in the JSON configuration file.</li>
+<li>Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.</li>
+</ul>
+
+
+<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>Along with the project base configuration we also introduce <a href="https://github.com/acme101">ACME101</a> which has many development stacks to use with teracy-dev. Hopefully, it will be useful for you and we&rsquo;re welcome any contribution, suggestion for ACME101. We&rsquo;re also adding more documents and guide for the project.</p>
+
+<p>We&rsquo;ll take all the feedbacks from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
+
+<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-c1</a> for your everyday
+projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
+<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to extend teracy-dev to work with Kubernetes]]></title>
@@ -570,214 +615,6 @@ projects from today by getting started with <a href="http://dev.teracy.org/docs/
 <a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
 
 <p>Enjoy and happy hacking!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev - the only truly universal productive development platform with Docker on macOS, Linux and Windows]]></title>
-    <link href="http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/"/>
-    <updated>2016-12-20T11:13:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows</id>
-    <content type="html"><![CDATA[<p>Docker is great to work with, it solves a lot of problems on development, distribution, and production
-deployment.</p>
-
-<p>Why Docker?  You can find the answer here:</p>
-
-<ul>
-<li><a href="http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/">http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/</a></li>
-<li><a href="http://thenewstack.io/hypervisors-container-era/">http://thenewstack.io/hypervisors-container-era/</a></li>
-<li><a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></li>
-</ul>
-
-
-<p>Docker works great on Linux, however, it&rsquo;s very challenging to make it work universal and consistent on
-Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from
-Docker community, too. However, we haven&rsquo;t achieved that stage yet (until <code>teracy-dev</code>).</p>
-
-<!-- more -->
-
-
-<p>These are some of the problems that Docker community has to deal with on Mac and Windows:</p>
-
-<ul>
-<li><p>No consistent universal development environment and workflow on Linux, Windows, Mac. This is a very
-important factor for team collaboration so that anyone from any OS platforms could collaborate and help
-each other with no differences in the development environment.</p></li>
-<li><p>Mounted volumes on VirtualBox use vboxsf, which is extremely slow. This is true for Boot2Docker and
-Vagrant default file sync mechanism on Virtualbox.</p></li>
-<li><p>Native Docker applications offered by Docker:</p>
-
-<ul>
-<li>Slow on Mac: <a href="https://github.com/docker/for-mac/issues/77">https://github.com/docker/for-mac/issues/77</a></li>
-<li>Only recent latest versions of Window 10 (&ldquo;Build 10586 or later&rdquo;) are supported</li>
-<li>Slow on Windows: <a href="https://github.com/docker/for-win/issues/188">https://github.com/docker/for-win/issues/188</a></li>
-</ul>
-</li>
-<li><p>File watching is broken on VirtualBox since vboxsf does not trigger the inotify file watching
-mechanism. <code>nodemon</code>, hello?</p></li>
-</ul>
-
-
-<p>There are a lot of Docker community projects trying to solve those problems:</p>
-
-<ul>
-<li><a href="https://github.com/brikis98/docker-osx-dev">https://github.com/brikis98/docker-osx-dev</a></li>
-<li><a href="https://github.com/blinkreaction/boot2docker-vagrant">https://github.com/blinkreaction/boot2docker-vagrant</a></li>
-<li><a href="https://github.com/codekitchen/dinghy">https://github.com/codekitchen/dinghy</a></li>
-<li><a href="https://github.com/leighmcculloch/docker-unison">https://github.com/leighmcculloch/docker-unison</a></li>
-<li><a href="https://github.com/gansbrest/hodor">https://github.com/gansbrest/hodor</a></li>
-<li><a href="https://github.com/adlogix/docker-machine-nfs">https://github.com/adlogix/docker-machine-nfs</a></li>
-<li>others&hellip;</li>
-</ul>
-
-
-<p>However, those existing projects do not really resolve all the problems or do not reflect
-our vision for a productive development platform.</p>
-
-<p>You can check out our <a href="/2016/08/19/teracy-dev-vision/">vision for teracy-dev</a> for such the
-productive development platform.</p>
-
-<p>That is the reason why we created <code>teracy-dev</code>. We&rsquo;ve been using and loving it for more than 3 years
-and counting.</p>
-
-<p><code>teracy-dev</code> reflects our vision for a truly universal productive development platform that anyone can
-use to develop software easily. It&rsquo;s very easy to customize any OS that you can use
-for your VM. It brings development and production environment closer and closer.</p>
-
-<p>It is very important for a distributed team like us to work with everyone from different teams all
-over the world on different projects with different stacks and <code>teracy-dev</code> helps us a lot.</p>
-
-<p>Moreover, <code>teracy-dev</code> is not tightly coupled with anything, you&rsquo;re free to choose anything to build
-up your development VM machine. You can choose different OS platforms, choose different software packages to
-be automatically installed with the help of different configuration management tools. It&rsquo;s up
-to you to choose anything other than default settings.</p>
-
-<p>With default settings, <code>teracy-dev</code> chooses Ubuntu as the base OS with <code>docker</code> and <code>docker-compose</code>
-installed to start developing software with Docker right away after <code>$ vagrant up</code>.</p>
-
-<p>teracy-dev v0.5.0 is leveraging Docker for development as we believe in the future of containers
-and Docker.</p>
-
-<p>Let&rsquo;s have some comparisons between <code>teracy-dev</code> and other solutions:</p>
-
-<table>
-<thead>
-<tr>
-<th>   Criteria                         </th>
-<th> teracy-dev </th>
-<th> docker-osx-dev </th>
-<th> Docker Toolbox </th>
-<th> Docker native app</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>same workflow on Linux, Mac, Windows</td>
-<td>    ✅      </td>
-<td>       ❌       </td>
-<td>     ❌        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>native speed on mounted volumes     </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ❌        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>2-way file sync                     </td>
-<td>    ✅      </td>
-<td>       ❌       </td>
-<td>     ✅        </td>
-<td>       ✅          </td>
-</tr>
-<tr>
-<td>file watching (inotify)             </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ❌        </td>
-<td>       ✅          </td>
-</tr>
-<tr>
-<td>open source                         </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ✅        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>customization                       </td>
-<td>    ✅      </td>
-<td>       🚫       </td>
-<td>     🚫        </td>
-<td>       ❌          </td>
-</tr>
-</tbody>
-</table>
-
-
-<p>✅: fully support</p>
-
-<p>❌: no or partial support</p>
-
-<p>🚫: can be achieved but not encouraged</p>
-
-<p>Let me explain the criteria:</p>
-
-<ul>
-<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows.
-Docker native app only supports >= Windows 10, that&rsquo;s why it&rsquo;s marked as ❌.</p></li>
-<li><p>&ldquo;native speed on mounted volumes&rdquo;: the speed should be as fast and native as on Linux</p></li>
-<li><p>&ldquo;2-way file sync&rdquo;: for syncing back and forth on mounted volumes, this is mandatory for development</p></li>
-<li><p>&ldquo;file watching (inotify)&rdquo;: for auto reload when files change</p></li>
-<li><p>&ldquo;customization&rdquo;: you have full control and are encouraged to change anything that you want to
-suit your need, no hidden stuff, no lock-in and can still upgrade seamlessly.</p></li>
-</ul>
-
-
-<p>Let&rsquo;s see what the same workflow means when developing a simple hello world <code>nodejs</code> application
-from scratch with teracy-dev by watching the following videos:</p>
-
-<p>On Linux (Ubuntu):</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/ze8p9imprgk" frameborder="0" allowfullscreen></iframe>
-
-
-<p>On Windows:</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/2200zvxIdAs" frameborder="0" allowfullscreen></iframe>
-
-
-<p>On macOS:</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/XF-FQQKG8PA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>They all contain the same steps, that&rsquo;s the meaning of the &ldquo;same workflow&rdquo;.</p>
-
-<p><code>teracy-dev</code> is not perfect, though. There are some improvements that we&rsquo;d like to address.</p>
-
-<p>The first thing we&rsquo;d like to improve is to reduce the setup time. It takes time (around 20-30 mins)
-to download the vagrant box (Ubuntu 16.04) for the first time. This is for the first time only, however.
-After the first time, you can destroy and provision the same VM within some minutes. We could use
-some other smaller boxes (for example, boot2docker base box) but we&rsquo;d like to stick to the most popular
-Linux OS that is widely used in production. We try to make development and production environment as
-close as possible. This is by default, you can choose different base boxes as you wish.</p>
-
-<p><code>teracy-dev</code> v0.5.0 is under preview stage, we need to add more documentation and get more community
-feedback.</p>
-
-<p><code>teracy-dev</code> is created to give back to open source community as we learn and get a lot from our amazing
-open source community.</p>
-
-<p>And we need you, please try and let us know your feedback and we&rsquo;ll together fix any problems.</p>
-
-<p>You should get started with <code>teracy-dev</code> here: <a href="http://dev.teracy.org/docs/develop/getting_started.html">http://dev.teracy.org/docs/develop/getting_started.html</a></p>
-
-<p>In summary, <code>teracy-dev</code> brings <code>Docker</code> closer to <code>Vagrant</code> = love.</p>
-
-<p>Thank you and happy hacking with <a href="https://github.com/teracyhq/dev">teracy-dev</a>!</p>
 ]]></content>
   </entry>
   

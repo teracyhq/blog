@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: vagrant | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/vagrant/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-30T12:30:09+00:00</updated>
+  <updated>2017-08-02T10:25:15+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
+    <link href="http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release/"/>
+    <updated>2017-07-27T03:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release</id>
+    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1 that introduces lots of features and changes to support more development, deployment stack along with Docker and Kubernetes.</p>
+
+<h2>v0.5.0-c1</h2>
+
+<p>As you known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
+
+<!-- more -->
+
+
+<h2>Changes</h2>
+
+<p>This major release includes some fixed bugs, document improvement and new features:</p>
+
+<ul>
+<li>Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.</li>
+<li>Update the document for the getting started with windows environment, nodejs debug.</li>
+<li>Add many tools to help your development process.</li>
+<li>Add the ability to extend and uniquely extend the array list in the JSON configuration file.</li>
+<li>Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.</li>
+</ul>
+
+
+<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>Along with the project base configuration we also introduce <a href="https://github.com/acme101">ACME101</a> which has many development stacks to use with teracy-dev. Hopefully, it will be useful for you and we&rsquo;re welcome any contribution, suggestion for ACME101. We&rsquo;re also adding more documents and guide for the project.</p>
+
+<p>We&rsquo;ll take all the feedbacks from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
+
+<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-c1</a> for your everyday
+projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
+<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-b1 release]]></title>
@@ -515,51 +560,6 @@ painful on Windows host machine. We are going to fix this problem on the next ve
 <p>http://www.vagrantup.com/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
 <p>https://www.docker.com/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-chef v0.1.0 release]]></title>
-    <link href="http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release/"/>
-    <updated>2013-09-23T02:30:00+00:00</updated>
-    <id>http://blog.teracy.com/2013/09/23/teracy-chef-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/09/23/chef-logo.png" title="Chef Logo" ></p>
-
-<p>&ldquo;automation&rdquo; is one of the most important <code>Teracy development philosophies</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> and <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>
-is one small step for us to automate all our infrastructure services, development experience and
-other services later.</p>
-
-<p>Today we&rsquo;re very happy to announce v0.1.0 release of <a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a>.</p>
-
-<!-- more -->
-
-
-<p><a href="https://code.teracy.org/projects/CHEF/repos/chef/browse">teracy-chef</a> is a &ldquo;base common project that other chef-specific projects should extend.&rdquo;
-It includes all common stuff (rake tasks, project layout management, etc.) that is easy to use
-right away. Moreover, it includes test-driven development with <code>Chef</code><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> thanks to
-<code>Chef best practices</code><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>.</p>
-
-<p>By using this base common project, we&rsquo;re going to extend it for <code>teracy-dev</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> to improve it to
-a next level.</p>
-
-<p>We hope that this could be useful to you as it is to us. There are many rooms for its improvements,
-though.</p>
-
-<p>Have a nice day and happy hacking!</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://dev.teracy.org/docs/develop/intro.html#about-teracy<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-<li id="fn:2">
-<p>http://www.opscode.com/chef/<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
-<li id="fn:3">
-<p>http://neverstopbuilding.net/chef-best-practices-a-series/<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
-<li id="fn:4">
-<p>https://github.com/teracy-official/dev<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

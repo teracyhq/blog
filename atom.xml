@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-06-30T12:30:09+00:00</updated>
+  <updated>2017-08-02T10:25:15+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
+    <link href="http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release/"/>
+    <updated>2017-07-27T03:41:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release</id>
+    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1 that introduces lots of features and changes to support more development, deployment stack along with Docker and Kubernetes.</p>
+
+<h2>v0.5.0-c1</h2>
+
+<p>As you known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
+
+<!-- more -->
+
+
+<h2>Changes</h2>
+
+<p>This major release includes some fixed bugs, document improvement and new features:</p>
+
+<ul>
+<li>Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.</li>
+<li>Update the document for the getting started with windows environment, nodejs debug.</li>
+<li>Add many tools to help your development process.</li>
+<li>Add the ability to extend and uniquely extend the array list in the JSON configuration file.</li>
+<li>Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.</li>
+</ul>
+
+
+<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>Along with the project base configuration we also introduce <a href="https://github.com/acme101">ACME101</a> which has many development stacks to use with teracy-dev. Hopefully, it will be useful for you and we&rsquo;re welcome any contribution, suggestion for ACME101. We&rsquo;re also adding more documents and guide for the project.</p>
+
+<p>We&rsquo;ll take all the feedbacks from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
+
+<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-c1</a> for your everyday
+projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
+
+<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
+<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Đưa FOMO vào sản phẩm của bạn - Công thức cho sự thành công]]></title>
@@ -2323,237 +2368,6 @@ open source community.</p>
 <p>(HẾT!)</p>
 
 <p>Bài dịch từ <a href="http://bokardo.com/principles-of-user-interface-design/">Principles of User Interface Design</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tư duy thiết kế: Cẩm nang cho sự đổi mới (Phần 1)]]></title>
-    <link href="http://blog.teracy.com/2016/11/22/tu-duy-thiet-ke-cam-nang-cho-su-doi-moi-phan-1/"/>
-    <updated>2016-11-22T10:18:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/11/22/tu-duy-thiet-ke-cam-nang-cho-su-doi-moi-phan-1</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/tu-duy-thiet-ke.jpeg" title="Tư duy thiết kế" ></p>
-
-<p>Liệu có một công thức nào để tạo ra các sản phẩm sáng tạo hay không? Trải nghiệm hay là dịch vụ? Tôi
-đang không nói đến việc cải tiến dần dần một cách thuần túy mà là một sự đổi mới mang tính đột phá.</p>
-
-<p>Nếu bạn có nghi ngờ thì cũng là điều dễ hiểu, tôi cũng đã từng hoài nghi khi tôi bắt đầu nghiên cứu
-của mình về khoa học đằng sau đổi mới cách đây nhiều năm. Sự thật về sự đổi mới là tất cả đều phụ
-thuộc yếu tố con người. Cuối cùng, chúng ta là những người tạo ra những đổi mới cho mọi người. Là
-một trong những giám đốc sản phẩm làm việc trên <a href="http://www.adobe.com/products/experience-design.html">Adobe Experience Design</a> (Adobe XD) ở San Francisco, tôi rất vui được chia sẻ với các bạn phương pháp mà
-tôi rất yêu thích, sử dụng, <a href="http://designthinkingnow.com/#/about/english">giảng dạy</a>, và học
-hỏi mỗi ngày tại nơi làm việc, và trong cuộc sống.</p>
-
-<!-- more -->
-
-
-<p>Khi bạn đọc bài viết này, tôi khuyến khích bạn áp dụng phương pháp &ldquo;tư duy cầu tiến&rdquo; (growth mindset)
-và để tâm trí của bạn tiếp thu những quan điểm mới. Carol Dweck, tác giả của cuốn &ldquo;Tư duy: Tâm lý học
-mới của sự thành công&rdquo; (Mindset: The New Psychology of Success), mô tả &ldquo;tư duy cầu tiến&rdquo; là nỗ lực
-cộng với việc học bằng sự phát triển và thành công. Điều này có nghĩa là nếu bạn đặt nỗ lực đúng chỗ
-và học từ những sai lầm của bạn, bạn sẽ thành công.</p>
-
-<h1>Quá trình tư duy thiết kế</h1>
-
-<p>Quá trình hay phương pháp này đã được phát triển bởi <a href="https://www.ideo.org/">IDEO</a> và được giảng
-dạy tại: <a href="http://dschool.stanford.edu/">Viện Thiết kế tại Đại học Stanford</a>. Phương pháp liên quan
-đến sự hợp tác lớn và lặp đi lặp lại thường xuyên. Phương pháp có năm giai đoạn rất rõ ràng: Thông
-Cảm, Xác Định, Tưởng Tượng, Nguyên Mẫu và Thử Nghiệm.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/qua-trinh-tu-duy-thiet-ke.jpeg" title="Quá trình tư duy thiết kế" ></p>
-
-<p>Mục tiêu cuối cùng của quá trình này là tạo ra một sản phẩm, dịch vụ, hoặc trải nghiệm mà người ta
-muốn (sự mong muốn), có tiềm năng thực sự để trở thành hữu dụng (tính khả năng), và có thể dễ dàng
-hoặc thuận tiện xây dựng về công nghệ (tính khả thi).</p>
-
-<p>Điều quan trọng là hãy tập trung vào một giai đoạn tại một thời điểm và lặp lại nhanh.</p>
-
-<p>Để mô tả từng giai đoạn của quá trình tư duy thiết kế, chúng ta hãy sử dụng Adobe XD làm ví dụ.
-Như mô tả của <a href="https://twitter.com/vincent_hardy">Vincent Hardy, Giám đốc Kỹ thuật của Adobe</a> trong
-bài viết của mình về xác định beta, đội Adobe XD của chúng tôi có một lịch trình phát hành rất tích
-cực, trong đó cứ 2 tuần sẽ có một bản build trước khi phát hành, và hàng tháng sẽ có các bản phát
-hành công khai. Chúng tôi duy trì một <a href="https://adobexd.uservoice.com/">trang web UserVoice</a> nơi mà người
-sử dụng có thể sắp xếp các lỗi và đề xuất tính năng mới, trong đó cung cấp cho chúng tôi cơ hội để
-học hỏi nhanh, xác nhận, ưu tiên, và thay đổi bất cứ khi nào cần thiết.</p>
-
-<p>Chúng tôi có một đội ngũ có nhiều kỹ năng và chuyên môn sâu (T-shaped) bao gồm các nhà thiết kế,
-các kỹ sư, quản lý lập trình, nhân viên marketing và các giám đốc sản phẩm giống như tôi.</p>
-
-<p>Một người có nhiều kỹ năng và chuyên môn sâu &ldquo;T-shaped&rdquo; là một người rất giỏi ở một lĩnh vực nào đó,
-nhưng cũng có thể đảm nhận các vai trò khác nhau trong nhóm, đòi hỏi người đó phải luôn luôn thích
-tìm hiểu và đặc biệt có sự thấu hiểu.</p>
-
-<p><strong>Tất cả mọi thứ trong thiết kế tư duy bắt đầu từ một thách thức thiết kế</strong></p>
-
-<p>Thách thức thiết kế của chúng tôi trước khi Adobe XD được tạo ra là:</p>
-
-<p><em>&ldquo;Photoshop và Illustrator không phải được thiết kế ban đầu cho những thách thức UX của hiện tại.&rdquo;</em></p>
-
-<p>Điều thú vị trong quá trình tư duy  thiết kế của chúng tôi chính là, trước khi chúng tôi bắt đầu nghĩ
-về những ý tưởng để &ldquo;giải quyết&rdquo; vấn đề này, chúng tôi ra ngoài và nói chuyện với mọi người.</p>
-
-<h1>Giai đoạn một: Đồng cảm</h1>
-
-<p>Đồng cảm là khả năng đặt mình vào vị trí của người khác để bắt đầu &ldquo;nhìn thấy&rdquo; những thứ thông qua đôi
-mắt của người khác.</p>
-
-<p>Có 3 cách để xây dựng sự đồng cảm: 1) các cuộc phỏng vấn, 2) quan sát và 3) trải nghiệm.</p>
-
-<p><strong>1) Phỏng vấn</strong></p>
-
-<p>Chúng tôi thường xuyên có các cuộc họp khách hàng, nơi chúng tôi khảo sát quy trình công việc hiện
-tại, tìm hiểu suy nghĩ của mỗi nhà thiết kế về môi trường mà họ làm việc, các điểm chưa hài lòng, kỳ
-vọng và các vấn đề khác. Các cuộc phỏng vấn của chúng tôi không chỉ giới hạn tại Hoa Kỳ mà chúng tôi
-còn tiến hành phỏng vấn ở các bộ phận khác trên thế giới. Thật hấp dẫn khi chứng kiến cách mọi người
-xem xét và giải quyết những thách thức khác nhau. Điều quan trọng là tham gia buổi phỏng vấn trong
-vai trò trung lập. Ngay cả khi bạn nghĩ rằng bạn biết câu trả lời, hãy hỏi tại sao.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/phong-van-khach-hang.jpeg" title="Các nhà quản lý sản phẩm Adobe XD phỏng vấn khách hàng ở Châu Âu" ></p>
-
-<p>Có một chương trình khung thú vị do Sakichi Toyoda phát triển đã được sử dụng tại Toyota trong suốt
-thời kì phát triển các phương pháp sản xuất của mình. Phương pháp này chỉ ra rằng nếu bạn hỏi
-&ldquo;Tại sao?&rdquo;  5 lần, bạn có thể tiếp cận được nguyên nhân của bất kỳ vấn đề. Điều đó giống như bạn là
-một đứa trẻ tò mò luôn háo hức muốn biết tại sao mọi thứ lại như vậy.</p>
-
-<p>Chiến lược tốt để thực hiện các cuộc phỏng vấn là thiết lập mối quan hệ, kết nối mạnh mẽ với người
-được phỏng vấn, thay vì tác động đến câu trả lời. Đừng bao giờ hỏi, <em>&ldquo;Điều này là tốt, phải không?&rdquo;</em>
-Thay vào đó, hãy hỏi <em>&ldquo;Bạn nghĩ gì về điều này?&rdquo;</em> Thậm chí hãy hỏi câu hay hơn, <em>&ldquo;Hãy kể cho tôi một
-câu chuyện mà bạn đã gặp trở ngại khi làm việc với X.&rdquo;</em> Tìm kiếm qua câu chuyện là một kỹ thuật rất
-mạnh mẽ mà có thể cung cấp cho bạn rất nhiều thông tin có giá trị. Ví dụ, nếu bạn cần phải hiểu những
-gì đang thịnh hành với thanh thiếu niên, thử hỏi họ những gì họ sẽ mua với $150.</p>
-
-<p>Kể chuyện và tìm kiếm những câu chuyện trong cuộc phỏng vấn là một cách tốt để thiết lập mối quan hệ
-và kết nối. Mới đây <a href="https://itunes.apple.com/us/podcast/human-tech/id1097159316?mt=2">Human Tech</a>
-đã trình bày một nghiên cứu đo hoạt động não trong các câu chuyện. Nghiên cứu cho thấy rằng trong
-thời gian đỉnh cao của một câu chuyện, hoạt động não của người nghe cũng tương tự và liên hệ chặt
-chẽ với hoạt động não của người kể chuyện &ndash; tạo ra sự kết nối thực sự giữa hai người.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/quy-trinh-phong-van.jpeg" title="Quy trình phỏng vấn" ></p>
-
-<p>Khi bạn hỏi một câu hỏi, hãy dành thời gian để người dùng của bạn được suy nghĩ. Im lặng cũng có thể
-chấp nhận! Thậm chí ngay cả khi im lặng có vẻ kì cục, nhưng tuyệt đối không được gián đoạn hoặc gây ảnh
-hưởng đến người được phỏng vấn.</p>
-
-<p>Nhìn chung, quá trình thiết kế tư duy thiên vể chất lượng hơn số lượng. Điều này có nghĩa là có thể
-ít người hơn trong cuộc phỏng vấn của bạn, nhưng hãy lựa chọn những người mà bạn nghĩ rằng có thể
-đại diện cho người dùng khác nhau của sản phẩm hoặc dịch vụ của bạn. Chúng tôi đang tìm kiếm những
-hiểu biết sâu sắc, không phải đơn thuần chỉ là sự thật.</p>
-
-<p>Tôi thấy cái nhìn sâu sắc cũng chính là một cái nhìn hiểu biết sâu sắc về một cái gì đó. Điều đó
-giống như là các nơ-ron thần kinh của bạn đang chờ bạn xác định và kích hoạt các phần thông tin khi
-kết nối với nhau, làm cho có ý nghĩa. Đó là khoảnh khắc bạn đột nhiên &ldquo;khám phá ra&rdquo;.</p>
-
-<p>Khái niệm của người sử dụng đặc biệt cũng có thể đem lại lợi ích nghiên cứu cho bạn. Ví dụ, nếu bạn
-cần phải phỏng vấn người sử dụng giỏ mua hàng, cũng phỏng vấn một người đàn ông vô gia cư, người đó
-sử dụng xe như một phương tiện di chuyển xung quanh hoặc thu thập vật liệu tái chế &ndash; thì đó là một
-người sử dụng đặc biệt. Người dùng đó sẽ cung cấp cho bạn những hiểu biết quan trọng.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/phong-van-nguoi-dung-dac-biet.jpeg" title="Phỏng vấn người dùng đặc biệt" ></p>
-
-<p><strong>2) Quan sát</strong></p>
-
-<p>Hãy giao nhiệm vụ cho người dùng của bạn và chỉ cần ngồi quan sát. Nếu bạn hỏi, &ldquo;Anh có gặp vấn đề
-gì khi mua những thứ từ Amazon?&rdquo; có thể bạn sẽ nhận được câu trả lời, &ldquo;Không vấn đề gì cả, rất dễ
-dàng để mua những thứ đó.&rdquo; Nhưng nếu bạn quan sát một người sử dụng nó từ phía sau họ, bạn sẽ thấy
-các vấn đề khi họ mua hàng.</p>
-
-<p>Gần đây, tại Adobe, chúng tôi tổ chức hội thảo trải nghiệm (experience-athon) nội bộ lần đầu tiên, ở đây chúng tôi
-đã giao cho người thiết kế Adobe một nhiệm vụ và chỉ đứng nhìn. Có sự tham dự của các kỹ sư sản phẩm
-và những người thiết kế trong nhóm XD. Rất nhanh chóng, chúng tôi đã xác định được nhiều vấn đề cần
-phải giải quyết tốt hơn, và chúng tôi đã làm việc để giải quyết những vấn đề này.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/kinh-nghiem-Adobe-xd.jpeg" title="hội thảo trải nghiệm của Adobe XD ở San Francisco" ></p>
-
-<p>Chúng tôi tin rằng điều quan trọng là các thành viên ở các lĩnh vực khác nhau trong đội Adobe XD
-(thiết kế, kỹ thuật và giám đốc sản phẩm) được tiếp xúc với thông tin phản hồi từ khách hàng trực
-tuyến của chúng tôi từ <a href="https://adobexd.uservoice.com/">Uservoice</a> và
-<a href="https://twitter.com/adobexd">Twitter)</a>, tại các hội nghị, các cuộc họp mặt, và các cuộc tiếp xúc
-khách hàng để tất cả các khía cạnh của sản phẩm đều đáp ứng được yêu cầu của khách hàng.</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/doi-Adobe-voi-khach-hang.jpeg" title="Đội Adobe XD với khách hàng tại Adobe MAX 2015" ></p>
-
-<p><strong>3) Trải nghiệm</strong></p>
-
-<p>Hãy sử dụng những gì khách hàng của bạn sử dụng. Đó có thể là sản phẩm của bạn, hoặc có thể là của
-một đối thủ cạnh tranh. Điều này sẽ giúp bạn trực tiếp trải nghiệm những điều khó chịu hay cảm giác
-vui sướng khi sử dụng sản phẩm.</p>
-
-<p>Tôi kiểm tra tất cả các thiết kế và các công cụ tạo mẫu mà tôi có thể. Không chỉ để xây dựng mô hình
-tinh thần mới, mà còn để xác định, giống như một nhà nhân chủng học, rằng liệu một người sử dụng gợi ý
-một tính năng nào đó đó có bị ảnh hưởng trực tiếp bởi một công cụ hay dịch vụ hiện có. Áp dụng tư
-duy mới và tránh mô hình tinh thần hiện có có lẽ một trong những điều khó thực hiện nhất.</p>
-
-<p>Thực tế thú vị: nhà thiết kế và giám đốc sản phẩm của Adobe sử dụng Adobe XD để thiết kế Adobe XD
-&ndash; đó là một kiểu ứng dụng! Điều này cũng cho chúng ta cơ hội cảm nhận những gì người dùng của chúng
-ta cảm nhận.</p>
-
-<p>Trong giai đoạn Đồng cảm, bạn có thể sử dụng một số công cụ mạnh mẽ, chẳng hạn như công cụ Empathy Maps,
-với công cụ này bạn có thể liệt kê những gì một người nói + làm (rõ ràng) và suy nghĩ + cảm giác (ẩn).</p>
-
-<p><img class="center" src="http://blog.teracy.com/images/2016/11/22/giai-doan-dong-cam.jpeg" title="Giai đoạn đồng cảm" ></p>
-
-<p>Sau khi giải nén dữ liệu từ các cuộc phỏng vấn, quan sát, và / hoặc trải nghiệm, bạn có thể tách các
-nhu cầu rõ ràng (nói và làm) từ những nhu cầu ẩn (suy nghĩ và cảm nhận). Sau đó là nơi bạn có thể tìm
-thấy những hiểu biết sâu sắc.</p>
-
-<h1>Giai đoạn hai: Xác định</h1>
-
-<p>Sau khi đã xây dựng sự đồng cảm, đến lúc cần xem xét lại thách thức thiết kế ban đầu và tái xác định
-các vấn đề.</p>
-
-<p>Để xác định, hoặc tái xác định vấn đề hoặc thách thức, một quan điểm (PoV) công thức có thể tính như
-sau: PoV = tính cách + nhu cầu + cái nhìn sâu sắc.</p>
-
-<p>Ví dụ:</p>
-
-<p><em>&ldquo;Sam, một nhà thiết kế cao cấp yêu thích việc làm hài lòng người sử dụng với các thiết kế giải quyết
-các vấn đề thực tế và nhìn đẹp, cần thiết kế, tạo mẫu và xác nhận nhanh hơn, bởi vì anh ta cảm thấy
-đang lãng phí quá nhiều thời gian vào các bước lặp đi lặp lại. Toàn bộ chuyển từ công cụ đến công cụ
-đều không thành công!&rdquo;</em>&#8221;</p>
-
-<p>Nhu cầu là những cảm xúc và chiều sâu. Cái nhìn sâu sắc là những điều bất ngờ, kết quả phỏng vấn,
-quan sát, mâu thuẫn đều có thể được sử dụng trong các giải pháp.</p>
-
-<p>Khi bạn sử dụng phương pháp đặt con người làm trung tâm của việc tìm kiếm cho một nhu cầu thực sự,
-bạn có một lợi thế cạnh tranh.</p>
-
-<p>Tôi thích cụm từ, &ldquo;Tư Duy Thiết Kế là việc tìm hiểu nhu cầu nhiều hơn việc giải quyết vấn đề.&rdquo; Vì vậy,
-cần có một công cụ tìm hiểu nhu cầu!</p>
-
-<p>Sau khi chúng tôi đã trải qua quá trình đồng cảm với Adobe XD, chúng tôi đã xác định được một vài
-điều quan trọng:</p>
-
-<ul>
-<li><p>Khi Photoshop và Illustrator ban đầu được tạo ra, các nhà thiết kế đã không phải đối mặt với những
-thách thức UX giống như những thách thức mà họ phải đối mặt ngày hôm nay.</p></li>
-<li><p>Có những công cụ khác nhau giải quyết các phần khác nhau của vấn đề. Có những công cụ thiết kế cho
-độ chính xác thấp (kiến trúc thông tin và wireframes), các công cụ thiết kế cho độ chính xác cao, và
-các công cụ chuyên biệt cho tạo mẫu, vv. Người dùng phải chuyển từ công cụ này sang công cụ khác để
-thiết kế, tạo mẫu, và xác nhận.</p></li>
-<li><p>Có rất nhiều sự bất đồng trong quá trình đồng cảm, đặc biệt là sau khi thử nghiệm một nguyên mẫu,
-khi sự thay đổi là cần thiết. Và sự xung đột giới hạn sự sáng tạo. Chúng tôi thấy rằng các nhà thiết
-kế đi nhanh hơn và thích khám phá các lựa chọn khác nhau, lặp lại và tiến nhanh.</p></li>
-<li><p>Hầu hết các công cụ được sử dụng bởi các nhà thiết kế phải chịu ảnh hưởng từ việc mất kiểm soát
-phạm vi dự án, xây dựng các tính năng phía trên các tính năng khác, không duy trì một cái nhìn toàn
-diện, có lỗi và đôi khi chậm.</p></li>
-</ul>
-
-
-<p>Vì vậy chúng ta rất dễ dàng có thể xác định một số trụ cột XD:</p>
-
-<ul>
-<li><p>Thiết kế với tốc độ của tư tưởng</p></li>
-<li><p>Hiệu suất và chất lượng</p></li>
-<li><p>Quy trình công việc có ý nghĩa</p></li>
-<li><p>Giao diện theo ngữ cảnh</p></li>
-</ul>
-
-
-<p>Với ý tưởng đó, chúng tôi đã bắt đầu với những điều sẽ trở thành Thiết kế Trải nghiệm Adobe, hoặc
-như chúng tôi chỉ đơn giản gọi nó là Adobe XD.</p>
-
-<p>(<a href="http://blog.teracy.com/2017/01/04/tu-duy-thiet-ke-cam-nang-cho-su-doi-moi-phan-2/">PHẦN 2</a>)</p>
-
-<p>Dịch từ: <a href="https://medium.com/@demianborba/design-thinking-a-manual-for-innovation-e0576b34eff6#.9ae4fd5dk">Design thinking: A manual for innovation</a></p>
 ]]></content>
   </entry>
   
