@@ -21,21 +21,21 @@ keywords: teracy-dev, vagrant, docker, chef, devops
 published: true
 ---
 
-We’re very happy to announce the release of teracy-dev v0.5.0-c1 that introduces lots of features and changes to support more development, deployment stack along with Docker and Kubernetes.
+We’re very happy to announce the release of teracy-dev v0.5.0-c1. This version introduces lots of features and changes which support more development, deployment stack along with Docker and Kubernetes.
 
 
 
 ## v0.5.0-c1
 
-As you known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.
+As you've known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.
 <!-- more -->
 
 ## Changes
 
-This major release includes some fixed bugs, document improvement and new features:
+This major release includes some bugs fixed, document improvement and new features:
 
 - Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.
-- Update the document for the getting started with windows environment, nodejs debug.
+- Update the document for the getting started with windows environment, nodejs debugging.
 - Add many tools to help your development process.
 - Add the ability to extend and uniquely extend the array list in the JSON configuration file.
 - Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.
