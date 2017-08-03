@@ -4,7 +4,7 @@
   <title><![CDATA[Category: news | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/news/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-08-02T10:25:15+00:00</updated>
+  <updated>2017-08-03T04:36:19+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -18,22 +18,22 @@
     <link href="http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release/"/>
     <updated>2017-07-27T03:41:00+00:00</updated>
     <id>http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release</id>
-    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1 that introduces lots of features and changes to support more development, deployment stack along with Docker and Kubernetes.</p>
+    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1. This version introduces lots of features and changes which support more development, deployment stack along with Docker and Kubernetes.</p>
 
 <h2>v0.5.0-c1</h2>
 
-<p>As you known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
+<p>As you&rsquo;ve known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
 
 <!-- more -->
 
 
 <h2>Changes</h2>
 
-<p>This major release includes some fixed bugs, document improvement and new features:</p>
+<p>This major release includes some bugs fixed, document improvement and new features:</p>
 
 <ul>
 <li>Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.</li>
-<li>Update the document for the getting started with windows environment, nodejs debug.</li>
+<li>Update the document for the getting started with windows environment, nodejs debugging.</li>
 <li>Add many tools to help your development process.</li>
 <li>Add the ability to extend and uniquely extend the array list in the JSON configuration file.</li>
 <li>Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.</li>
