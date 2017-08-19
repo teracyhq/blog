@@ -2,25 +2,21 @@ version: "3"
 
 services:
 
-  dev:
+  prod:
     build:
       context: .
-      dockerfile: Dockerfile-dev
+      dockerfile: Dockerfile
       args:
         CI_BUILD_ID: ${CI_BUILD_ID}
         CI_BUILD_REF: ${CI_BUILD_REF}
         CI_BUILD_TIME: ${CI_BUILD_TIME}
         CI_REGISTRY_IMAGE: ${CI_REGISTRY_IMAGE}
-    image: ${DOCKER_IMAGE_DEV:-teracy/blog:dev_latest}
+    image: ${DOCKER_IMAGE_PROD:-teracy/blog:latest}
     environment:
-      - VIRTUAL_HOST=dev.blog.teracy.dev
-      # TODO(hoatle): need to remove this to support https by default
+      - VIRTUAL_HOST=blog.teracy.dev
       - HTTPS_METHOD=noredirect
-    command: bash -c "rake generate && rake preview"
     ports:
-      - 4000
-    volumes:
-      - .:/opt/app
+      - 80
     # to get this work with https://github.com/jwilder/nginx-proxy
     # related: https://github.com/jwilder/nginx-proxy/issues/305
     network_mode: bridge
