@@ -28,7 +28,7 @@ very happy to announce the very first milestone release of it.
 
 ## What's new?
 
-This milestone release helps us to manage the installation of these packages: `kubectl`, `heml`,
+This milestone release helps us to manage the installation of these packages: `kubectl`, `helm`,
 and `gcloud` automatically.
 
 These are the client packages which are used to communicate and to work with the Google Cloud Platform,
