@@ -4,7 +4,7 @@
   <title><![CDATA[Category: en | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/en/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-08-03T04:36:19+00:00</updated>
+  <updated>2017-08-27T02:32:49+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[kubernetes-stack v0.1.0 Release]]></title>
+    <link href="http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release/"/>
+    <updated>2017-08-26T09:03:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s been more than two months since we introduced the inception of the <code>kubernetes-stack</code> cookbook
+from the blog post <a href="/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/">How to extend teracy-dev to work with Kubernetes</a> and today we&rsquo;re
+very happy to announce its very first milestone release.</p>
+
+<!-- more -->
+
+
+<h2>What&rsquo;s new?</h2>
+
+<p>This milestone release helps us to manage the installation of these packages: <code>kubectl</code>, <code>helm</code>,
+and <code>gcloud</code> automatically.</p>
+
+<p>These are the client packages which are used to communicate and to work with the Google Cloud Platform,
+Google Container Engine or any other Kubenertes servers.</p>
+
+<p>You can install, remove any valid versions of those packages onto Ubuntu or CentOS platforms and more
+supported platforms will come.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>This cookbook is designed to provide utilities for us to work with <code>Kubernetes</code> stack, so the next
+milestone will introduce <code>kubernetes</code> resource to set up and install <code>Kubernetes</code> server which
+should work the same as <code>Minukube</code> with better developer productivity enhancement. This
+will allow our developers to have a quick local deployment test with k8s on their workstations.</p>
+
+<p>By using this, we can save a lot of server cost, reduce testing time and speed up delivery time of
+application deployment.</p>
+
+<p>Developers will understand <code>Kubernetes</code> more deeply when they can do whatever they want with it.
+It&rsquo;s very safe! They can destroy and set up a new deployment anytime they want without causing any
+harm to their co-workers.</p>
+
+<p>You should check out how it should be used with <code>teracy-dev</code> at <a href="https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb">https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb</a></p>
+
+<p>I hope that this free cookbook could make your lives easier when working with <code>Kubernetes</code>:
+<a href="https://supermarket.chef.io/cookbooks/kubernetes-stack">https://supermarket.chef.io/cookbooks/kubernetes-stack</a></p>
+
+<p>Happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
@@ -742,58 +788,6 @@ we should do so that everyone can follow easily and we can support each other wi
 apply similarly.</p>
 
 <p>Happy hacking and don&rsquo;t forget to let us know your feedbacks and questions by leaving your comments!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Upcoming event: Productive development environment with teracy-dev]]></title>
-    <link href="http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev/"/>
-    <updated>2017-02-17T09:41:00+00:00</updated>
-    <id>http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/02/17/opentour01-productive-development-environment-teracy-dev.jpg" title="Productive development environment with teracy-dev" ></p>
-
-<p>We are very excited about an upcoming event with the topic &ldquo;Productive development environment with teracy-dev&rdquo;
-presented by Hoat Le, Co-founder, and CEO of Teracy. The event will be held on Thursday, February
-23 at 6:30 PM &ndash; 9:30 PM at Toong Hoang Dao Thuy (25T2 Hoang Dao Thuy, Ha Noi). This is
-the first event in the series of OpenTour&rsquo;s activities.</p>
-
-<p>OpenTour is started from the idea of ​​collaboration, and help each other of three open source communities in
-Vietnam, including OpenCPS, Vietnam OpenStack, and Docker Hanoi. OpenTour is a series of activities
-and events aiming at building Vietnamese FOSS ecosystem, building a network of FOSS experts to promote
-the use, application and development of FOSS in Vietnam, especially for ​​ICT enterprises
-and training institutions, on the base of absorbing ideas and activity patterns of the FOSS community
-in the world, and through shared activities and promoting.</p>
-
-<!-- more -->
-
-
-<p><strong>Agenda</strong>:</p>
-
-<ul>
-<li><p>Introduce about OpenTour</p></li>
-<li><p>teracy-dev: <a href="/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">the only truly universal productive development platform with Docker on macOS, Linux, and Windows for developers</a>.</p>
-
-<ul>
-<li><p>Introduce about teracy-dev</p></li>
-<li><p>The existing problems that many developers are struggling:</p>
-
-<ul>
-<li><p>The problems when there was no Docker yet</p></li>
-<li><p>The problems when there was no teracy-dev yet</p></li>
-<li><p>The approaches and solutions for these problems with teracy-dev</p></li>
-<li><p>The 4-year story of teracy-dev</p></li>
-<li><p>The Docker workflow with teracy-dev</p></li>
-</ul>
-</li>
-<li><p>teracy-dev demo with the real projects</p></li>
-<li><p>Questions and Answers</p></li>
-</ul>
-</li>
-</ul>
-
-
-<p>Join us! To have more details and register to join the event, please see the details at <a href="https://www.facebook.com/events/979555312146106/.">https://www.facebook.com/events/979555312146106/.</a>
-It&rsquo;s our honor to have your presence at this event. See you there!</p>
 ]]></content>
   </entry>
   

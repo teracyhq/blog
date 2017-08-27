@@ -4,7 +4,7 @@
   <title><![CDATA[Category: news | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/news/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-08-03T04:36:19+00:00</updated>
+  <updated>2017-08-27T02:32:49+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[kubernetes-stack v0.1.0 Release]]></title>
+    <link href="http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release/"/>
+    <updated>2017-08-26T09:03:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s been more than two months since we introduced the inception of the <code>kubernetes-stack</code> cookbook
+from the blog post <a href="/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/">How to extend teracy-dev to work with Kubernetes</a> and today we&rsquo;re
+very happy to announce its very first milestone release.</p>
+
+<!-- more -->
+
+
+<h2>What&rsquo;s new?</h2>
+
+<p>This milestone release helps us to manage the installation of these packages: <code>kubectl</code>, <code>helm</code>,
+and <code>gcloud</code> automatically.</p>
+
+<p>These are the client packages which are used to communicate and to work with the Google Cloud Platform,
+Google Container Engine or any other Kubenertes servers.</p>
+
+<p>You can install, remove any valid versions of those packages onto Ubuntu or CentOS platforms and more
+supported platforms will come.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>This cookbook is designed to provide utilities for us to work with <code>Kubernetes</code> stack, so the next
+milestone will introduce <code>kubernetes</code> resource to set up and install <code>Kubernetes</code> server which
+should work the same as <code>Minukube</code> with better developer productivity enhancement. This
+will allow our developers to have a quick local deployment test with k8s on their workstations.</p>
+
+<p>By using this, we can save a lot of server cost, reduce testing time and speed up delivery time of
+application deployment.</p>
+
+<p>Developers will understand <code>Kubernetes</code> more deeply when they can do whatever they want with it.
+It&rsquo;s very safe! They can destroy and set up a new deployment anytime they want without causing any
+harm to their co-workers.</p>
+
+<p>You should check out how it should be used with <code>teracy-dev</code> at <a href="https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb">https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb</a></p>
+
+<p>I hope that this free cookbook could make your lives easier when working with <code>Kubernetes</code>:
+<a href="https://supermarket.chef.io/cookbooks/kubernetes-stack">https://supermarket.chef.io/cookbooks/kubernetes-stack</a></p>
+
+<p>Happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
@@ -343,46 +389,6 @@ much as we do.</p>
 <p>http://matschaffer.github.io/knife-solo/<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Free Teracy Wireframe UI kit for Sketch]]></title>
-    <link href="http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch/"/>
-    <updated>2014-12-08T00:00:00+00:00</updated>
-    <id>http://blog.teracy.com/2014/12/08/free-teracy-wireframe-kit-for-sketch</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/12/cover.jpg"></p>
-
-<p>It’s always a good idea to begin with a wireframe when beginning a new web design or mobile app project.
-Wireframes can be a big time saver as they help both designers and developers come to an agreement on placement
-of major UI elements. The key is to get the layout nailed down so you don&rsquo;t have to change major layout when
- detailed design elements are in place.</p>
-
-<!-- more -->
-
-
-<p>In our design process at Teracy, wireframing and mockups takes an important position. We have developed
-a wireframe kit to speedup the design process and use it in our daily design workflow. Today, we are excited
- to share the version of our wireframe kit that we are using, which includes the most common UI elements
-in web projects. This is the second UI kit we share to <a href="http://www.bohemiancoding.com/sketch/">Sketch</a> community, you can also check out our first freebie <a href="https://github.com/teracy-official/bootflat-ui-kit.sketch">Bootflat UI kit for Sketch</a> shared not a long time ago.</p>
-
-<p>Here it is, hope it&rsquo;s useful for all Sketch lovers!</p>
-
-<p><a href="https://github.com/teracyhq/wireframe">Download the Teracy Wireframe kit for Sketch</a></p>
-
-<p><img class="center" src="/images/2014/12/ss2.jpg">
-<img class="center" src="/images/2014/12/ss1.jpg"></p>
-
-<p>Features:</p>
-
-<ul>
-<li>All UI Elements are Symbols.</li>
-<li>Symbols grouped by categories.</li>
-<li>UI elements for mobile devices will be added in the next version.</li>
-<li>Markups and annotations included.</li>
-<li>Over 140 icons included.</li>
-</ul>
 
 ]]></content>
   </entry>

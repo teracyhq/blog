@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-08-03T04:36:19+00:00</updated>
+  <updated>2017-08-27T02:32:49+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[kubernetes-stack v0.1.0 Release]]></title>
+    <link href="http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release/"/>
+    <updated>2017-08-26T09:03:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s been more than two months since we introduced the inception of the <code>kubernetes-stack</code> cookbook
+from the blog post <a href="/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/">How to extend teracy-dev to work with Kubernetes</a> and today we&rsquo;re
+very happy to announce its very first milestone release.</p>
+
+<!-- more -->
+
+
+<h2>What&rsquo;s new?</h2>
+
+<p>This milestone release helps us to manage the installation of these packages: <code>kubectl</code>, <code>helm</code>,
+and <code>gcloud</code> automatically.</p>
+
+<p>These are the client packages which are used to communicate and to work with the Google Cloud Platform,
+Google Container Engine or any other Kubenertes servers.</p>
+
+<p>You can install, remove any valid versions of those packages onto Ubuntu or CentOS platforms and more
+supported platforms will come.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>This cookbook is designed to provide utilities for us to work with <code>Kubernetes</code> stack, so the next
+milestone will introduce <code>kubernetes</code> resource to set up and install <code>Kubernetes</code> server which
+should work the same as <code>Minukube</code> with better developer productivity enhancement. This
+will allow our developers to have a quick local deployment test with k8s on their workstations.</p>
+
+<p>By using this, we can save a lot of server cost, reduce testing time and speed up delivery time of
+application deployment.</p>
+
+<p>Developers will understand <code>Kubernetes</code> more deeply when they can do whatever they want with it.
+It&rsquo;s very safe! They can destroy and set up a new deployment anytime they want without causing any
+harm to their co-workers.</p>
+
+<p>You should check out how it should be used with <code>teracy-dev</code> at <a href="https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb">https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb</a></p>
+
+<p>I hope that this free cookbook could make your lives easier when working with <code>Kubernetes</code>:
+<a href="https://supermarket.chef.io/cookbooks/kubernetes-stack">https://supermarket.chef.io/cookbooks/kubernetes-stack</a></p>
+
+<p>Happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
@@ -380,84 +426,6 @@ open source community.</p>
 <p>In summary, <code>teracy-dev</code> brings <code>Docker</code> closer to <code>Vagrant</code> = love.</p>
 
 <p>Thank you and happy hacking with <a href="https://github.com/teracyhq/dev">teracy-dev</a>!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev vision]]></title>
-    <link href="http://blog.teracy.com/2016/08/19/teracy-dev-vision/"/>
-    <updated>2016-08-19T16:27:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/08/19/teracy-dev-vision</id>
-    <content type="html"><![CDATA[<p>teracy-dev has been being developed and in use from the first days of Teracy, it&rsquo;s been
-about 3 years<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> now. We&rsquo;re in a hurry for a really big, exciting release for the next version of
-teracy-dev. I&rsquo;d like to take this chance to share with you about teracy-dev vision first and many
-other new features and improvements for the next long awaiting teracy-dev release.</p>
-
-<!-- more -->
-
-
-<p>Let&rsquo;s get started with a story about my first working days as a developer when joining my first
-company 8 years ago. As developers, it&rsquo;s expected that we should have our development environment
-ready before starting coding. At that time, my company used Maven to build Java projects and I was
-required to install it. However, as a junior, I had difficulties to install it on the Ubuntu
-computer provided to me. I struggled with it for nearly a day and eventually I had to ask for
-help to install it successfully. This is a true story. Now I can even install it in just some
-minutes with a few lines of commands because I have more experience.</p>
-
-<p>Now just imagine what if juniors don&rsquo;t have to set up these boring tools each by each but just enjoy
-coding, that&rsquo;s the more fun part. What if all developers should have the same development environment
-even they use different kinds of operating systems so that we don&rsquo;t have to deal with the very common
-problem: &ldquo;But it works on my machine&rdquo;. What if the production environment is easily set up exactly
-the same on a developer machine to debug and fix things and vice versa?</p>
-
-<p>These what ifs lead us to use <code>vagrant</code> as the base to complete these things as the first days of
-Teracy journey. We&rsquo;d like to upgrade the vagrant dev environment easily, for example, <code>$ git pull</code>
-then <code>$ vagrant reload --provision</code> and you&rsquo;re done. We have default configuration and we could
-override it easily. We&rsquo;d like to use this development environment for all our projects: from our
-internal projects to our clients' projects.</p>
-
-<p>We created teracy-dev to solve the mentioned problems above, help boost our productivity and it could
-even help us more than that. Everyone just enjoys it, we don&rsquo;t have to deal with installing things
-manually, it&rsquo;s auto provided with just one command (<code>$ vagrant up</code>) thanks to the provision software.
-We&rsquo;re using Chef to provision but we can use others to provision, too, for example Ansible, Puppet, etc.</p>
-
-<p>We see that teracy-dev is so useful for developers, so we&rsquo;d like to share it, shape its future
-together with anyone who wants to work with software. And we envision teracy-dev with the following
-statement:</p>
-
-<p><blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote></p>
-
-<p>That&rsquo;s our vision for teracy-dev as the base development platform and we&rsquo;re going to make it true.
-Note that it should be used for everyone, even with our QA engineers, with our manual testers, with
-our employees, with our users as long as they follow exactly a little setup instruction guide.</p>
-
-<p>I believe that everyone should use it as much as we enjoy using and developing it. It&rsquo;s been saving
-us and our clients a lot of money as we don&rsquo;t have to spend the time to set up development environment
-for each and every project manually.</p>
-
-<p>We improve it day by day though our projects, we listen to our developers, our clients for feedback
-on usage and development. However, we still have some problems with it. For example, on Windows, the
-file sharing system is really slow. It&rsquo;s not really lightweight and modular enough to serve every
-project&rsquo;s needs.</p>
-
-<p>We know all these problems and we&rsquo;re going to fix these all with the next version by leveraging
-Docker and Rsync. We intended to use Docker for long, we expected it should be in use since
-teracy-dev v0.4.0 but we failed to make it. Now we promise you that teracy-dev v0.5.0 will leverage
-Docker as the core workflow and it will rule the world of developers.</p>
-
-<p>We will add more documentation for usage, accelerate the development pace so that you should benefit
-from it as we do. Let&rsquo;s try using it once with
-<a href="http://dev.teracy.org/docs/0.4.2/getting_started.html">teracy-dev v0.4.2</a>, it&rsquo;s open source and
-totally free. You will love it as we do now for 3 years and counting. Let&rsquo;s together make it better
-and better and better.</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>http://blog.teracy.com/tags/teracy-dev/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
 ]]></content>
   </entry>
   
