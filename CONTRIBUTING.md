@@ -5,18 +5,18 @@ To contribute to this blog project.
 
 ## Once upon a time...
 
-From day one, we set up company blog to share things along the Teracy journey. You can check the blog
+From day one, we set up the company blog to share things along the Teracy journey. You can check the blog
 posts at http://blog.teracy.com
 
 From day one, we needed a brand (logo, the color scheme for the brand, etc.) and we're still
 improving it. We did not have any revenue at that time but we cared and we did this from day one.
 
-From day one, we set up social media accounts (like twitter, facebook, etc)
+From day one, we set up social media accounts (like twitter, facebook, etc).
 
-From day one, we set up public github organization account to create, work and collaborate on open
+From day one, we set up a public github organization account to create, work and collaborate on open
 source projects.
 
-From day one, @hoatle talked a lot about #teracy on his personal account, on company facebook account
+From day one, @hoatle talked a lot about #teracy on his personal account, on the company facebook account
 and regularly updated blog posts.
 
 From day one, we wanted to send our messages (about our vision, our culture, our goal, our
