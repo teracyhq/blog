@@ -171,3 +171,7 @@ And you're done!
   $ docker-compose exec dev /bin/bash
   app@a4e5c4766cd3:/opt/app$
   ```
+
+## Contributing
+
+Please see the CONTRIBUTING.md file.
