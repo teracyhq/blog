@@ -188,6 +188,12 @@ From the themes above, we need to define the topics and SEO related keywords her
   + about
   + how to
 
+- cloud
+  + AWS
+  + GCP
+  + Azure
+  + ...
+
 - container technology
   + about
   + Docker
