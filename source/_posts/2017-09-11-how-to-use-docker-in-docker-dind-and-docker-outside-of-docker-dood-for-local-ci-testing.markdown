@@ -32,7 +32,7 @@ as it's a very typical use case for local DevOps.
 
 ## The differences between DinD and DooD?
 
-DooD is the opposite of DinD.
+DinD is the opposite of DooD.
 
 DinD includes a whole Docker installation inside of it.
 
@@ -43,7 +43,7 @@ cleaner. DinD should support parallel running but DooD does not, or at least, no
 with my observation. If you want to conduct the clean testing, use DinD. If you want to conduct the
 faster testing, use DooD.
 
-Dood is simpler to use than DinD.
+DooD is simpler to use than DinD.
 
 And if you want to test with different versions of `docker`, `docker-compose`, use DinD and DooD.
 
@@ -51,9 +51,9 @@ And if you want to test with different versions of `docker`, `docker-compose`, u
 ## Local CI testing with DinD
 
 You can use https://hub.docker.com/r/library/docker/ for local testing, however, it's `alpine` image
-which is not very suitable for our general usage at Teracy. We prefer Ubuntu since it is the
-default travis-ci environment. By using Ubuntu Docker image for running CI scripts on all the CI systems
-(gitlab, drone, etc.), we can easily port the CI scripts between these CI systems.
+which is not very suitable for local CI testing since it is not the default travis-ci environment.
+We should use Ubuntu for executing CI scripts on all the CI systems (gitlab, drone, etc.) because we
+can port the CI scripts easily between these CI systems.
 
 That is the reason why we build `teracy/ubuntu` Docker images to be used with DinD, you can check out
 the project here: https://github.com/teracyhq/docker-files/tree/master/ubuntu and the built Docker
@@ -173,6 +173,43 @@ $ docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/$(
 # docker run --rm -it -v $(pwd):/opt/app -w /opt/app ubuntu bash
 # ls
 ```
+
+
+## Local CI Testing with a real project
+
+Let's see how we can conduct a local CI testing with the https://github.com/teracyhq/docker-files project.
+
+Let's dive into the .travis.yml file https://github.com/teracyhq/docker-files/blob/master/.travis.yml
+to test the following scripts:
+
+```yml
+before_install:
+# install the latest docker and docker-compose versions
+- sudo apt-get remove docker docker-engine
+- sudo curl -sSL https://get.docker.com/ | sh
+- sudo rm /usr/local/bin/docker-compose
+# the latest docker-compose version
+- export DOCKER_COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
+- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+- chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
+- docker version
+- docker-compose version
+```
+
+Let's see how to do local CI testing in action:
+
+<script type="text/javascript" src="https://asciinema.org/a/137314.js" id="asciicast-137314" async></script>
+
+
+This is just the very first step for basic testing.
+
+Later, we should convert this `.travis.yml` file into a `build.sh` to execute, this is the right way
+for local CI testing travis-ci and other similar CI systems.
+
+To do that, please follow https://github.com/teracyhq/docker-files/issues/42 and I'll update this
+section more when it's ready.
+
 
 ## Too many virtualization layers?
 
