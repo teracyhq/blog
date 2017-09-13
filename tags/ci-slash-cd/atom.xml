@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: CI/CD | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/ci-slash-cd/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-08-31T05:21:42+00:00</updated>
+  <updated>2017-09-13T07:34:35+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,259 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to use Docker in Docker (DinD) and Docker outside of Docker (DooD) for local CI testing]]></title>
+    <link href="http://blog.teracy.com/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing/"/>
+    <updated>2017-09-11T08:10:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/09/11/spintop-dind.jpg" title="Docker in Docker" >
+Credit: <a href="https://github.com/jpetazzo/dind">https://github.com/jpetazzo/dind</a></p>
+
+<p>Although running Docker inside Docker (DinD) or Docker outside of Docker (DooD) is generally not
+recommended, there are some legitimate use cases, such as development of Docker itself or for local
+CI testing. And in this blog post, I&rsquo;m going to show you how to use DinD or DooD for local CI testing
+as it&rsquo;s a very typical use case for local DevOps.</p>
+
+<!-- more -->
+
+
+<h2>The differences between DinD and DooD?</h2>
+
+<p>DinD is the opposite of DooD.</p>
+
+<p>DinD includes a whole Docker installation inside of it.</p>
+
+<p>DooD uses its underlying host&rsquo;s Docker installation by bind-mounting the Docker socket.</p>
+
+<p>Obviously, DooD should be faster because we can leverage its caching mechanism, and DinD should be
+cleaner. DinD should support parallel running but DooD does not, or at least, not very reliable
+with my observation. If you want to conduct the clean testing, use DinD. If you want to conduct the
+faster testing, use DooD.</p>
+
+<p>DooD is simpler to use than DinD.</p>
+
+<p>And if you want to test with different versions of <code>docker</code>, <code>docker-compose</code>, use DinD and DooD.</p>
+
+<h2>Local CI testing with DinD</h2>
+
+<p>You can use <a href="https://hub.docker.com/r/library/docker/">https://hub.docker.com/r/library/docker/</a> for local testing, however, it&rsquo;s <code>alpine</code> image
+which is not very suitable for local CI testing since it is not the default travis-ci environment.
+We should use Ubuntu for executing CI scripts on all the CI systems (gitlab, drone, etc.) because we
+can port the CI scripts easily between these CI systems.</p>
+
+<p>That is the reason why we build <code>teracy/ubuntu</code> Docker images to be used with DinD, you can check out
+the project here: <a href="https://github.com/teracyhq/docker-files/tree/master/ubuntu">https://github.com/teracyhq/docker-files/tree/master/ubuntu</a> and the built Docker
+images here: <a href="https://hub.docker.com/r/teracy/ubuntu/tags/">https://hub.docker.com/r/teracy/ubuntu/tags/</a></p>
+
+<p>We also have <code>docker-compose</code> installed to the <code>teracy/ubuntu</code> Docker images for faster testing
+with it.</p>
+
+<p>Let&rsquo;s see how it works:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137135.js" id="asciicast-137135" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```bash
+$ docker run &mdash;privileged &mdash;name df-docker -d docker:17.06.0-dind # start DinD container</p>
+
+<p>$ docker run &mdash;rm -it &mdash;link df-docker:docker docker:17.06.0 sh # run docker image (Alpine)</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose &mdash;version # no docker-compose</h1>
+
+<p>$ docker run &mdash;rm -it ubuntu bash # run Ubuntu image within the Docker Alpine container</p>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<p>$ docker run &mdash;rm -it &mdash;link df-docker:docker teracy/ubuntu:16.04-dind-17.06.0-ce bash # run Ubuntu image</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose version</h1>
+
+<p>$ docker run &mdash;rm -it alpine sh # run Alpine image with the Docker Ubuntu container</p>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<p>```</p>
+
+<h2>Local CI testing with DooD</h2>
+
+<p>Let&rsquo;s see how it works:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137139.js" id="asciicast-137139" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```
+$ docker run &mdash;rm -it -v /var/run/docker.sock:/var/run/docker.sock docker sh # start DooD container</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose &mdash;version # no docker-compose</h1>
+
+<p>$ docker run &mdash;rm -it ubuntu bash # run Ubuntu image within the Docker Alpine container</p>
+
+<h1>cat /etc/lsb-release</h1>
+
+<h1>exit</h1>
+
+<h1>cat /etc/alpine-release</h1>
+
+<h1>exit</h1>
+
+<p>$ docker run &mdash;rm -it -v /var/run/docker.sock:/var/run/docker.sock teracy/ubuntu:16.04-dind-17.06.0-ce bash # start DooD container</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose version</h1>
+
+<h1>docker run &mdash;rm -it alpine sh # run Alpine image with the Docker Ubuntu container</h1>
+
+<h1>cat /etc/alpine-release</h1>
+
+<h1>exit</h1>
+
+<h1>cat /etc/lsb-release</h1>
+
+<h1>exit</h1>
+
+<p>```</p>
+
+<h2>Volume mounting</h2>
+
+<p>Volume mounting is a bit tricky, you must understand the underlying mechanism of its to get it work.
+Basically, you need to make sure the mounting path from the running containers must be the same as the
+DinD containers or DooD containers.</p>
+
+<p>Let&rsquo;s see how volume mounting works with DinD:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137150.js" id="asciicast-137150" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```bash</p>
+
+<h1>volume mount with DinD</h1>
+
+<p>$ pwd
+$ ls
+$ docker run &mdash;privileged &mdash;name df-docker -d -v $(pwd):$(pwd) -w $(pwd) docker:17.06.0-dind # start DinD container
+$ docker run &mdash;rm -it &mdash;link df-docker:docker -v $(pwd):$(pwd) -w $(pwd) teracy/ubuntu:16.04-dind-17.06.0-ce bash</p>
+
+<h1>ls</h1>
+
+<h1>docker run &mdash;rm -it -v $(pwd):/opt/app -w /opt/app ubuntu bash</h1>
+
+<h1>ls</h1>
+
+<p>```</p>
+
+<p>Let&rsquo;s see how volume mounting works with DooD:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137152.js" id="asciicast-137152" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```bash</p>
+
+<h1>volume mount with DooD</h1>
+
+<p>$ pwd
+$ ls
+$ docker run &mdash;rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/$(pwd) -w $(pwd) teracy/ubuntu:16.04-dind-17.06.0-ce bash # start DooD container</p>
+
+<h1>ls</h1>
+
+<h1>docker run &mdash;rm -it -v $(pwd):/opt/app -w /opt/app ubuntu bash</h1>
+
+<h1>ls</h1>
+
+<p>```</p>
+
+<h2>Local CI Testing with a real project</h2>
+
+<p>Let&rsquo;s see how we can conduct a local CI testing with the <a href="https://github.com/teracyhq/docker-files">https://github.com/teracyhq/docker-files</a> project.</p>
+
+<p>Let&rsquo;s dive into the .travis.yml file <a href="https://github.com/teracyhq/docker-files/blob/master/.travis.yml">https://github.com/teracyhq/docker-files/blob/master/.travis.yml</a>
+to test the following scripts:</p>
+
+<p>```yml
+before_install:</p>
+
+<h1>install the latest docker and docker-compose versions</h1>
+
+<ul>
+<li>sudo apt-get remove docker docker-engine</li>
+<li>sudo curl -sSL <a href="https://get.docker.com/">https://get.docker.com/</a> | sh</li>
+<li>sudo rm /usr/local/bin/docker-compose
+
+<h1>the latest docker-compose version</h1></li>
+<li>export DOCKER_COMPOSE_VERSION=$(curl -s <a href="https://api.github.com/repos/docker/compose/releases/latest">https://api.github.com/repos/docker/compose/releases/latest</a> | grep &lsquo;tag_name&rsquo; | cut -d\&ldquo; -f4)</li>
+<li>curl -L <a href="https://github.com/docker/compose/releases/download/$">https://github.com/docker/compose/releases/download/$</a>{DOCKER_COMPOSE_VERSION}/docker-compose-<code>uname -s</code>&ndash;<code>uname -m</code> > docker-compose</li>
+<li>chmod +x docker-compose</li>
+<li>sudo mv docker-compose /usr/local/bin</li>
+<li>docker version</li>
+<li>docker-compose version
+```</li>
+</ul>
+
+
+<p>Let&rsquo;s see how to do local CI testing in action:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137314.js" id="asciicast-137314" async></script>
+
+
+<p>This is just the very first step for basic testing.</p>
+
+<p>Later, we should convert this <code>.travis.yml</code> file into a <code>build.sh</code> one to execute, this is the right way
+for local CI testing travis-ci and other similar CI systems.</p>
+
+<p>To do that, please follow <a href="https://github.com/teracyhq/docker-files/issues/42">https://github.com/teracyhq/docker-files/issues/42</a> and I&rsquo;ll update this
+section more when it&rsquo;s ready.</p>
+
+<h2>Too many virtualization layers?</h2>
+
+<p>At Teracy, the <code>teracy-dev</code> VM is virtualized on a host machine (and the host machine could be virtualized
+from another virtualized machine and so on).</p>
+
+<p>Within the <code>teracy-dev</code> VM, we use DinD. And within a Docker container, we can use Docker to run other
+Docker containers and so on.</p>
+
+<p>Yeah, welcome to the world of &ldquo;Inception&rdquo;, let&rsquo;s figure out where you are now :&ndash;)?</p>
+
+<p>Happy hacking!</p>
+
+<h2>References</h2>
+
+<ul>
+<li><a href="http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/">http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/</a></li>
+<li><a href="https://hub.docker.com/r/library/docker/">https://hub.docker.com/r/library/docker/</a></li>
+<li><a href="https://github.com/axltxl/docker-jenkins-dood">https://github.com/axltxl/docker-jenkins-dood</a></li>
+<li><a href="https://sreeninet.wordpress.com/2016/12/23/docker-in-docker-and-play-with-docker/">https://sreeninet.wordpress.com/2016/12/23/docker-in-docker-and-play-with-docker/</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to set up CI/CD system for Next.js with Docker on gitlab-ci, travis-ci, Heroku and Kubernetes]]></title>

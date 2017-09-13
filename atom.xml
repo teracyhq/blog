@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-08-31T05:21:42+00:00</updated>
+  <updated>2017-09-13T07:34:35+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,300 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to use Docker in Docker (DinD) and Docker outside of Docker (DooD) for local CI testing]]></title>
+    <link href="http://blog.teracy.com/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing/"/>
+    <updated>2017-09-11T08:10:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2017/09/11/spintop-dind.jpg" title="Docker in Docker" >
+Credit: <a href="https://github.com/jpetazzo/dind">https://github.com/jpetazzo/dind</a></p>
+
+<p>Although running Docker inside Docker (DinD) or Docker outside of Docker (DooD) is generally not
+recommended, there are some legitimate use cases, such as development of Docker itself or for local
+CI testing. And in this blog post, I&rsquo;m going to show you how to use DinD or DooD for local CI testing
+as it&rsquo;s a very typical use case for local DevOps.</p>
+
+<!-- more -->
+
+
+<h2>The differences between DinD and DooD?</h2>
+
+<p>DinD is the opposite of DooD.</p>
+
+<p>DinD includes a whole Docker installation inside of it.</p>
+
+<p>DooD uses its underlying host&rsquo;s Docker installation by bind-mounting the Docker socket.</p>
+
+<p>Obviously, DooD should be faster because we can leverage its caching mechanism, and DinD should be
+cleaner. DinD should support parallel running but DooD does not, or at least, not very reliable
+with my observation. If you want to conduct the clean testing, use DinD. If you want to conduct the
+faster testing, use DooD.</p>
+
+<p>DooD is simpler to use than DinD.</p>
+
+<p>And if you want to test with different versions of <code>docker</code>, <code>docker-compose</code>, use DinD and DooD.</p>
+
+<h2>Local CI testing with DinD</h2>
+
+<p>You can use <a href="https://hub.docker.com/r/library/docker/">https://hub.docker.com/r/library/docker/</a> for local testing, however, it&rsquo;s <code>alpine</code> image
+which is not very suitable for local CI testing since it is not the default travis-ci environment.
+We should use Ubuntu for executing CI scripts on all the CI systems (gitlab, drone, etc.) because we
+can port the CI scripts easily between these CI systems.</p>
+
+<p>That is the reason why we build <code>teracy/ubuntu</code> Docker images to be used with DinD, you can check out
+the project here: <a href="https://github.com/teracyhq/docker-files/tree/master/ubuntu">https://github.com/teracyhq/docker-files/tree/master/ubuntu</a> and the built Docker
+images here: <a href="https://hub.docker.com/r/teracy/ubuntu/tags/">https://hub.docker.com/r/teracy/ubuntu/tags/</a></p>
+
+<p>We also have <code>docker-compose</code> installed to the <code>teracy/ubuntu</code> Docker images for faster testing
+with it.</p>
+
+<p>Let&rsquo;s see how it works:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137135.js" id="asciicast-137135" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>docker run --privileged --name df-docker -d docker:17.06.0-dind <span class="c"># start DinD container</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it --link df-docker:docker docker:17.06.0 sh <span class="c"># run docker image (Alpine)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># docker version</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># docker-compose --version # no docker-compose</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it ubuntu bash <span class="c"># run Ubuntu image within the Docker Alpine container</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># uname -a</span>
+</span><span class='line'><span class="c"># exit</span>
+</span><span class='line'><span class="c"># uname -a</span>
+</span><span class='line'><span class="c"># exit</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it --link df-docker:docker teracy/ubuntu:16.04-dind-17.06.0-ce bash <span class="c"># run Ubuntu image</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># docker version</span>
+</span><span class='line'><span class="c"># docker-compose version</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it alpine sh <span class="c"># run Alpine image with the Docker Ubuntu container</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># uname -a</span>
+</span><span class='line'><span class="c"># exit</span>
+</span><span class='line'><span class="c"># uname -a</span>
+</span><span class='line'><span class="c"># exit</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Local CI testing with DooD</h2>
+
+<p>Let&rsquo;s see how it works:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137139.js" id="asciicast-137139" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock docker sh <span class="c"># start DooD container</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># docker version</span>
+</span><span class='line'><span class="c"># docker-compose --version # no docker-compose</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it ubuntu bash <span class="c"># run Ubuntu image within the Docker Alpine container</span>
+</span><span class='line'><span class="c"># cat /etc/lsb-release</span>
+</span><span class='line'><span class="c"># exit</span>
+</span><span class='line'><span class="c"># cat /etc/alpine-release</span>
+</span><span class='line'><span class="c"># exit</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock teracy/ubuntu:16.04-dind-17.06.0-ce bash <span class="c"># start DooD container</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># docker version</span>
+</span><span class='line'><span class="c"># docker-compose version</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># docker run --rm -it alpine sh # run Alpine image with the Docker Ubuntu container</span>
+</span><span class='line'><span class="c"># cat /etc/alpine-release</span>
+</span><span class='line'><span class="c"># exit</span>
+</span><span class='line'><span class="c"># cat /etc/lsb-release </span>
+</span><span class='line'><span class="c"># exit</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Volume mounting</h2>
+
+<p>Volume mounting is a bit tricky, you must understand the underlying mechanism of its to get it work.
+Basically, you need to make sure the mounting path from the running containers must be the same as the
+DinD containers or DooD containers.</p>
+
+<p>Let&rsquo;s see how volume mounting works with DinD:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137150.js" id="asciicast-137150" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># volume mount with DinD</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span><span class="nb">pwd</span>
+</span><span class='line'><span class="nv">$ </span>ls
+</span><span class='line'><span class="nv">$ </span>docker run --privileged --name df-docker -d -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span> -w <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span> docker:17.06.0-dind <span class="c"># start DinD container</span>
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it --link df-docker:docker -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span> -w <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span> teracy/ubuntu:16.04-dind-17.06.0-ce bash
+</span><span class='line'><span class="c"># ls</span>
+</span><span class='line'><span class="c"># docker run --rm -it -v $(pwd):/opt/app -w /opt/app ubuntu bash</span>
+</span><span class='line'><span class="c"># ls</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Let&rsquo;s see how volume mounting works with DooD:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137152.js" id="asciicast-137152" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># volume mount with DooD</span>
+</span><span class='line'><span class="nv">$ </span><span class="nb">pwd</span>
+</span><span class='line'><span class="nv">$ </span>ls
+</span><span class='line'><span class="nv">$ </span>docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/<span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span> -w <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span> teracy/ubuntu:16.04-dind-17.06.0-ce bash <span class="c"># start DooD container</span>
+</span><span class='line'><span class="c"># ls</span>
+</span><span class='line'><span class="c"># docker run --rm -it -v $(pwd):/opt/app -w /opt/app ubuntu bash</span>
+</span><span class='line'><span class="c"># ls</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Local CI Testing with a real project</h2>
+
+<p>Let&rsquo;s see how we can conduct a local CI testing with the <a href="https://github.com/teracyhq/docker-files">https://github.com/teracyhq/docker-files</a> project.</p>
+
+<p>Let&rsquo;s dive into the .travis.yml file <a href="https://github.com/teracyhq/docker-files/blob/master/.travis.yml">https://github.com/teracyhq/docker-files/blob/master/.travis.yml</a>
+to test the following scripts:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">before_install</span><span class="p-Indicator">:</span>
+</span><span class='line'><span class="c1"># install the latest docker and docker-compose versions</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">sudo apt-get remove docker docker-engine</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">sudo curl -sSL https://get.docker.com/ | sh</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">sudo rm /usr/local/bin/docker-compose</span>
+</span><span class='line'><span class="c1"># the latest docker-compose version</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">export DOCKER_COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep &#39;tag_name&#39; | cut -d\&quot; -f4)</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` &gt; docker-compose</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">chmod +x docker-compose</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">sudo mv docker-compose /usr/local/bin</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">docker version</span>
+</span><span class='line'><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">docker-compose version</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Let&rsquo;s see how to do local CI testing in action:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137314.js" id="asciicast-137314" async></script>
+
+
+<p>This is just the very first step for basic testing.</p>
+
+<p>Later, we should convert this <code>.travis.yml</code> file into a <code>build.sh</code> one to execute, this is the right way
+for local CI testing travis-ci and other similar CI systems.</p>
+
+<p>To do that, please follow <a href="https://github.com/teracyhq/docker-files/issues/42">https://github.com/teracyhq/docker-files/issues/42</a> and I&rsquo;ll update this
+section more when it&rsquo;s ready.</p>
+
+<h2>Too many virtualization layers?</h2>
+
+<p>At Teracy, the <code>teracy-dev</code> VM is virtualized on a host machine (and the host machine could be virtualized
+from another virtualized machine and so on).</p>
+
+<p>Within the <code>teracy-dev</code> VM, we use DinD. And within a Docker container, we can use Docker to run other
+Docker containers and so on.</p>
+
+<p>Yeah, welcome to the world of &ldquo;Inception&rdquo;, let&rsquo;s figure out where you are now :&ndash;)?</p>
+
+<p>Happy hacking!</p>
+
+<h2>References</h2>
+
+<ul>
+<li><a href="http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/">http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/</a></li>
+<li><a href="https://hub.docker.com/r/library/docker/">https://hub.docker.com/r/library/docker/</a></li>
+<li><a href="https://github.com/axltxl/docker-jenkins-dood">https://github.com/axltxl/docker-jenkins-dood</a></li>
+<li><a href="https://sreeninet.wordpress.com/2016/12/23/docker-in-docker-and-play-with-docker/">https://sreeninet.wordpress.com/2016/12/23/docker-in-docker-and-play-with-docker/</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[kubernetes-stack v0.1.0 Release]]></title>
@@ -2314,46 +2608,6 @@ open source community.</p>
 <p>In summary, <code>teracy-dev</code> brings <code>Docker</code> closer to <code>Vagrant</code> = love.</p>
 
 <p>Thank you and happy hacking with <a href="https://github.com/teracyhq/dev">teracy-dev</a>!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Nhà thiết kế không nên viết code. Họ nên nghiên cứu về nghiệp vụ.]]></title>
-    <link href="http://blog.teracy.com/2016/12/09/nha-thiet-ke-khong-nen-viet-code-ho-nen-nghien-cuu-ve-nghiep-vu/"/>
-    <updated>2016-12-09T10:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/12/09/nha-thiet-ke-khong-nen-viet-code-ho-nen-nghien-cuu-ve-nghiep-vu</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://blog.teracy.com/images/2016/12/09/designer-should-not-code.jpg" title="các nhà thiết kế không nên viết code, nên tập trung nghiên cứu nghiệp vụ" ></p>
-
-<p>Ngày nay càng ngày càng có nhiều công ty tìm kiếm các lãnh đạo thiết kế giỏi. Họ được biết rằng công ty của họ cần tập trung nhiều hơn vào tư duy thiết kế và quan tâm đến việc áp dụng các nguyên tắc thiết kế tập trung hơn nữa. Tuy nhiên, khi những công ty này nói chuyện với các nhà thiết kế, họ nghe về các kỹ năng &ndash; về sự nhất quán thương hiệu, và thiết kế bóng bảy, những người thiết kế có thể viết code, hướng dẫn phong cách, tạo mẫu và thử nghiệm &ndash; là công việc của người thiết kế.</p>
-
-<p>Tất cả những điều này đều rất tốt &ndash; thậm chí là bắt buộc. Nhưng với chúng ta, để hiểu một cách đúng đắn, cách tốt nhất để xây dựng doanh nghiệp là chúng ta phải tập trung vào cái làm cho doanh nghiệp thành công. Nói chung, trước tiên chúng ta phải hiểu nghiệp vụ đã. Sau đó, chúng ta sẽ hiểu hơn công việc ở đâu là quan trọng (và cần thực thi ở đâu).</p>
-
-<!-- more -->
-
-
-<p>Thay vì xem các nhà thiết kế là những người cần phải có thì hãy giải thích mục tiêu nghiệp vụ quan trọng với họ theo những cách cơ bản nhất. Tôi nghĩ những gợi ý của chúng ta về thiết kế sẽ có trọng lượng hơn nếu chúng ta có thể có những cuộc trao đổi sâu sắc, và sẽ có thể đưa ra những gợi ý đáng giá về các nguyên tắc nghiệp vụ cốt lõi.</p>
-
-<h1>Hiện tại chúng ta đang ở đâu</h1>
-
-<p>Có rất nhiều nhà thiết kế đã bắt đầu suy nghĩ nghiêm túc về việc quyết định của họ ảnh hưởng đến công ty ra sao. Nói chung, sự tập trung của chúng ta vào phân tích và nghiên cứu người dùng cũng đã giúp rất nhiều trong việc mang đến niềm tin lớn hơn cho tiếng nói của người thiết kế. Chúng ta cũng đã thấy nhiều ví dụ tuyệt vời của các công ty hàng đầu về thiết kế và các nhà thiết kế ảnh hưởng đến cốt lõi của các doanh nghiệp lớn như Airbnb, Pocket, Facebook, Google, Slack, và vô số công ty khác nữa.</p>
-
-<p>Tôi cho rằng những công ty này thành công như hiện nay bởi vì họ có những người thiết kế tập trung vào nghiệp vụ mà công ty cần hơn là tập trung vào việc mỗi điểm ảnh sẽ trông hoàn hảo như thế nào.</p>
-
-<h1>Chuyển đổi sự tập trung của chúng ta</h1>
-
-<p>Vậy chúng ta nên bắt đầu tư duy về việc ảnh hưởng của thiết kế tới kinh doanh như thế nào?</p>
-
-<p>Có thể là nên ra ngoài và học quản trị kinh doanh (MBA). (Tất cả những nhà thiết kế mà tôi biết đều đã làm điều này và đang tích cực đóng góp vào giá trị cốt lõi của doanh nghiệp). Nhưng thậm chí có thể làm những điều đơn giản hơn. Có thể là nói chuyện với đội kinh doanh để tìm hiểu tình hình thị trường. Có thể là nói chuyện với đội vận chuyển và thực hiện để hiểu tại sao các đơn hàng thường bị chậm một ngày. Có thể đọc qua việc lên kế hoạch cho quý 1 và tìm ra những sáng kiến quan trọng cho những quý không có gì làm ngoài việc tái cấu trúc file css. Có thể cần phải tham gia một lớp học buổi tối về kinh tế. Hay có lẽ chỉ cần dành thời gian buổi tối để tìm kiếm trên google về cách gây quỹ và cách bảng giá trị vốn hoá (Cap table) hoạt động như thế nào thay vì làm thế nào để sử dụng các plugin phác họa mới nhất.</p>
-
-<p>Có thể chúng ta nên dành thời gian để tìm hiểu về các nguyên tắc kinh doanh &ndash; làm thế nào để lựa chọn mô hình kinh doanh, làm thế nào để quản lý nhóm, làm thế nào để tiến hành phân tích cạnh tranh, làm thế nào để thực hiện dự án&hellip;</p>
-
-<p>Có thể chúng ta nên cố gắng tìm hiểu những vấn đề mà CEO hay VP gặp phải và cố gắng sử dụng thiết kế để giúp họ giải quyết vấn đề của họ? Có lẽ chúng ta nên cố gắng tìm ra những vấn đề làm họ thức dậy vào ban đêm và giúp họ giải quyết vấn đề đó &ndash; thay vì giải quyết vấn đề của chúng ta.</p>
-
-<h1>Tương lai</h1>
-
-<p>Tôi muốn nói rằng chúng ta không nên chuyển giao những trải nghiệm thiết kế nghèo nàn. Chúng ta phải tiếp tục phát triển và tập trung vào tay nghề của mình. Nếu chúng ta không làm vậy thì chúng ta sẽ bị thụt lùi. Nhưng cũng hãy bắt đầu hiểu doanh nghiệp chúng ta đang làm việc và chúng cần gì để phát triển. Nếu chúng ta có thể làm điều đó, chúng ta sẽ tiếp tục đạt được nhiều ảnh hưởng hơn và sẽ tiếp tục tạo ra những sản phẩm có sự ảnh hưởng lớn hơn &ndash; cho cả công ty của chúng ta và cho cả những người dùng sản phẩm.</p>
-
-<p>Dịch từ: <a href="https://medium.com/@joshuantaylor/designers-shouldn-t-code-they-should-study-business-dc3e7e203d39#.cp5ipre7v">Desiger shouldn&rsquo;t code. They should study business</a></p>
 ]]></content>
   </entry>
   

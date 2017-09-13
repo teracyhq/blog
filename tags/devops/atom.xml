@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag: devops | Teracy's Blog]]></title>
+  <title><![CDATA[Tag: DevOps | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/tags/devops/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-08-31T05:21:42+00:00</updated>
+  <updated>2017-09-13T07:34:35+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -14,632 +14,255 @@
 
   
   <entry>
-    <title type="html"><![CDATA[kubernetes-stack v0.1.0 Release]]></title>
-    <link href="http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release/"/>
-    <updated>2017-08-26T09:03:00+00:00</updated>
-    <id>http://blog.teracy.com/2017/08/26/kubernetes-stack-v0-1-0-release</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s been more than two months since we introduced the inception of the <code>kubernetes-stack</code> cookbook
-from the blog post <a href="/2017/06/15/how-to-extend-teracy-dev-to-work-with-kubernetes/">How to extend teracy-dev to work with Kubernetes</a> and today we&rsquo;re
-very happy to announce its very first milestone release.</p>
+    <title type="html"><![CDATA[How to use Docker in Docker (DinD) and Docker outside of Docker (DooD) for local CI testing]]></title>
+    <link href="http://blog.teracy.com/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing/"/>
+    <updated>2017-09-11T08:10:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/09/11/spintop-dind.jpg" title="Docker in Docker" >
+Credit: <a href="https://github.com/jpetazzo/dind">https://github.com/jpetazzo/dind</a></p>
+
+<p>Although running Docker inside Docker (DinD) or Docker outside of Docker (DooD) is generally not
+recommended, there are some legitimate use cases, such as development of Docker itself or for local
+CI testing. And in this blog post, I&rsquo;m going to show you how to use DinD or DooD for local CI testing
+as it&rsquo;s a very typical use case for local DevOps.</p>
 
 <!-- more -->
 
 
-<h2>What&rsquo;s new?</h2>
+<h2>The differences between DinD and DooD?</h2>
 
-<p>This milestone release helps us to manage the installation of these packages: <code>kubectl</code>, <code>helm</code>,
-and <code>gcloud</code> automatically.</p>
+<p>DinD is the opposite of DooD.</p>
 
-<p>These are the client packages which are used to communicate and to work with the Google Cloud Platform,
-Google Container Engine or any other Kubenertes servers.</p>
+<p>DinD includes a whole Docker installation inside of it.</p>
 
-<p>You can install, remove any valid versions of those packages onto Ubuntu or CentOS platforms and more
-supported platforms will come.</p>
+<p>DooD uses its underlying host&rsquo;s Docker installation by bind-mounting the Docker socket.</p>
 
-<h2>What&rsquo;s next?</h2>
+<p>Obviously, DooD should be faster because we can leverage its caching mechanism, and DinD should be
+cleaner. DinD should support parallel running but DooD does not, or at least, not very reliable
+with my observation. If you want to conduct the clean testing, use DinD. If you want to conduct the
+faster testing, use DooD.</p>
 
-<p>This cookbook is designed to provide utilities for us to work with <code>Kubernetes</code> stack, so the next
-milestone will introduce <code>kubernetes</code> resource to set up and install <code>Kubernetes</code> server which
-should work the same as <code>Minukube</code> with better developer productivity enhancement. This
-will allow our developers to have a quick local deployment test with k8s on their workstations.</p>
+<p>DooD is simpler to use than DinD.</p>
 
-<p>By using this, we can save a lot of server cost, reduce testing time and speed up delivery time of
-application deployment.</p>
+<p>And if you want to test with different versions of <code>docker</code>, <code>docker-compose</code>, use DinD and DooD.</p>
 
-<p>Developers will understand <code>Kubernetes</code> more deeply when they can do whatever they want with it.
-It&rsquo;s very safe! They can destroy and set up a new deployment anytime they want without causing any
-harm to their co-workers.</p>
+<h2>Local CI testing with DinD</h2>
 
-<p>You should check out how it should be used with <code>teracy-dev</code> at <a href="https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb">https://github.com/acme101/dev-setup/blob/develop/chef/main-cookbooks/acme/recipes/k8s.rb</a></p>
+<p>You can use <a href="https://hub.docker.com/r/library/docker/">https://hub.docker.com/r/library/docker/</a> for local testing, however, it&rsquo;s <code>alpine</code> image
+which is not very suitable for local CI testing since it is not the default travis-ci environment.
+We should use Ubuntu for executing CI scripts on all the CI systems (gitlab, drone, etc.) because we
+can port the CI scripts easily between these CI systems.</p>
 
-<p>I hope that this free cookbook could make your lives easier when working with <code>Kubernetes</code>:
-<a href="https://supermarket.chef.io/cookbooks/kubernetes-stack">https://supermarket.chef.io/cookbooks/kubernetes-stack</a></p>
+<p>That is the reason why we build <code>teracy/ubuntu</code> Docker images to be used with DinD, you can check out
+the project here: <a href="https://github.com/teracyhq/docker-files/tree/master/ubuntu">https://github.com/teracyhq/docker-files/tree/master/ubuntu</a> and the built Docker
+images here: <a href="https://hub.docker.com/r/teracy/ubuntu/tags/">https://hub.docker.com/r/teracy/ubuntu/tags/</a></p>
+
+<p>We also have <code>docker-compose</code> installed to the <code>teracy/ubuntu</code> Docker images for faster testing
+with it.</p>
+
+<p>Let&rsquo;s see how it works:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137135.js" id="asciicast-137135" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```bash
+$ docker run &mdash;privileged &mdash;name df-docker -d docker:17.06.0-dind # start DinD container</p>
+
+<p>$ docker run &mdash;rm -it &mdash;link df-docker:docker docker:17.06.0 sh # run docker image (Alpine)</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose &mdash;version # no docker-compose</h1>
+
+<p>$ docker run &mdash;rm -it ubuntu bash # run Ubuntu image within the Docker Alpine container</p>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<p>$ docker run &mdash;rm -it &mdash;link df-docker:docker teracy/ubuntu:16.04-dind-17.06.0-ce bash # run Ubuntu image</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose version</h1>
+
+<p>$ docker run &mdash;rm -it alpine sh # run Alpine image with the Docker Ubuntu container</p>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<h1>uname -a</h1>
+
+<h1>exit</h1>
+
+<p>```</p>
+
+<h2>Local CI testing with DooD</h2>
+
+<p>Let&rsquo;s see how it works:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137139.js" id="asciicast-137139" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```
+$ docker run &mdash;rm -it -v /var/run/docker.sock:/var/run/docker.sock docker sh # start DooD container</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose &mdash;version # no docker-compose</h1>
+
+<p>$ docker run &mdash;rm -it ubuntu bash # run Ubuntu image within the Docker Alpine container</p>
+
+<h1>cat /etc/lsb-release</h1>
+
+<h1>exit</h1>
+
+<h1>cat /etc/alpine-release</h1>
+
+<h1>exit</h1>
+
+<p>$ docker run &mdash;rm -it -v /var/run/docker.sock:/var/run/docker.sock teracy/ubuntu:16.04-dind-17.06.0-ce bash # start DooD container</p>
+
+<h1>docker version</h1>
+
+<h1>docker-compose version</h1>
+
+<h1>docker run &mdash;rm -it alpine sh # run Alpine image with the Docker Ubuntu container</h1>
+
+<h1>cat /etc/alpine-release</h1>
+
+<h1>exit</h1>
+
+<h1>cat /etc/lsb-release</h1>
+
+<h1>exit</h1>
+
+<p>```</p>
+
+<h2>Volume mounting</h2>
+
+<p>Volume mounting is a bit tricky, you must understand the underlying mechanism of its to get it work.
+Basically, you need to make sure the mounting path from the running containers must be the same as the
+DinD containers or DooD containers.</p>
+
+<p>Let&rsquo;s see how volume mounting works with DinD:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137150.js" id="asciicast-137150" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```bash</p>
+
+<h1>volume mount with DinD</h1>
+
+<p>$ pwd
+$ ls
+$ docker run &mdash;privileged &mdash;name df-docker -d -v $(pwd):$(pwd) -w $(pwd) docker:17.06.0-dind # start DinD container
+$ docker run &mdash;rm -it &mdash;link df-docker:docker -v $(pwd):$(pwd) -w $(pwd) teracy/ubuntu:16.04-dind-17.06.0-ce bash</p>
+
+<h1>ls</h1>
+
+<h1>docker run &mdash;rm -it -v $(pwd):/opt/app -w /opt/app ubuntu bash</h1>
+
+<h1>ls</h1>
+
+<p>```</p>
+
+<p>Let&rsquo;s see how volume mounting works with DooD:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137152.js" id="asciicast-137152" async></script>
+
+
+<p>The commands from the above video:</p>
+
+<p>```bash</p>
+
+<h1>volume mount with DooD</h1>
+
+<p>$ pwd
+$ ls
+$ docker run &mdash;rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/$(pwd) -w $(pwd) teracy/ubuntu:16.04-dind-17.06.0-ce bash # start DooD container</p>
+
+<h1>ls</h1>
+
+<h1>docker run &mdash;rm -it -v $(pwd):/opt/app -w /opt/app ubuntu bash</h1>
+
+<h1>ls</h1>
+
+<p>```</p>
+
+<h2>Local CI Testing with a real project</h2>
+
+<p>Let&rsquo;s see how we can conduct a local CI testing with the <a href="https://github.com/teracyhq/docker-files">https://github.com/teracyhq/docker-files</a> project.</p>
+
+<p>Let&rsquo;s dive into the .travis.yml file <a href="https://github.com/teracyhq/docker-files/blob/master/.travis.yml">https://github.com/teracyhq/docker-files/blob/master/.travis.yml</a>
+to test the following scripts:</p>
+
+<p>```yml
+before_install:</p>
+
+<h1>install the latest docker and docker-compose versions</h1>
+
+<ul>
+<li>sudo apt-get remove docker docker-engine</li>
+<li>sudo curl -sSL <a href="https://get.docker.com/">https://get.docker.com/</a> | sh</li>
+<li>sudo rm /usr/local/bin/docker-compose
+
+<h1>the latest docker-compose version</h1></li>
+<li>export DOCKER_COMPOSE_VERSION=$(curl -s <a href="https://api.github.com/repos/docker/compose/releases/latest">https://api.github.com/repos/docker/compose/releases/latest</a> | grep &lsquo;tag_name&rsquo; | cut -d\&ldquo; -f4)</li>
+<li>curl -L <a href="https://github.com/docker/compose/releases/download/$">https://github.com/docker/compose/releases/download/$</a>{DOCKER_COMPOSE_VERSION}/docker-compose-<code>uname -s</code>&ndash;<code>uname -m</code> > docker-compose</li>
+<li>chmod +x docker-compose</li>
+<li>sudo mv docker-compose /usr/local/bin</li>
+<li>docker version</li>
+<li>docker-compose version
+```</li>
+</ul>
+
+
+<p>Let&rsquo;s see how to do local CI testing in action:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/137314.js" id="asciicast-137314" async></script>
+
+
+<p>This is just the very first step for basic testing.</p>
+
+<p>Later, we should convert this <code>.travis.yml</code> file into a <code>build.sh</code> one to execute, this is the right way
+for local CI testing travis-ci and other similar CI systems.</p>
+
+<p>To do that, please follow <a href="https://github.com/teracyhq/docker-files/issues/42">https://github.com/teracyhq/docker-files/issues/42</a> and I&rsquo;ll update this
+section more when it&rsquo;s ready.</p>
+
+<h2>Too many virtualization layers?</h2>
+
+<p>At Teracy, the <code>teracy-dev</code> VM is virtualized on a host machine (and the host machine could be virtualized
+from another virtualized machine and so on).</p>
+
+<p>Within the <code>teracy-dev</code> VM, we use DinD. And within a Docker container, we can use Docker to run other
+Docker containers and so on.</p>
+
+<p>Yeah, welcome to the world of &ldquo;Inception&rdquo;, let&rsquo;s figure out where you are now :&ndash;)?</p>
 
 <p>Happy hacking!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev v0.5.0-c1 release]]></title>
-    <link href="http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release/"/>
-    <updated>2017-07-27T03:41:00+00:00</updated>
-    <id>http://blog.teracy.com/2017/07/27/teracy-dev-v0-5-0-c1-release</id>
-    <content type="html"><![CDATA[<p>We’re very happy to announce the release of teracy-dev v0.5.0-c1. This version introduces lots of features and changes which support more development, deployment stack along with Docker and Kubernetes.</p>
 
-<h2>v0.5.0-c1</h2>
-
-<p>As you&rsquo;ve known, the RC-1 version means “all minor bugs are fixed, the software works stably, and the code will be released unless there is a last minute bug found after test campaigns.”. However, to meet some requests from our clients and community, we added some features to this release.</p>
-
-<!-- more -->
-
-
-<h2>Changes</h2>
-
-<p>This major release includes some bugs fixed, document improvement and new features:</p>
+<h2>References</h2>
 
 <ul>
-<li>Support the project base configuration. From now, you can add a list of vagrant configuration to your JSON file and extend the configuration from that.</li>
-<li>Update the document for the getting started with windows environment, nodejs debugging.</li>
-<li>Add many tools to help your development process.</li>
-<li>Add the ability to extend and uniquely extend the array list in the JSON configuration file.</li>
-<li>Introduce ACME101 as the sample project which shows the best practices of using teracy-dev.</li>
+<li><a href="http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/">http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/</a></li>
+<li><a href="https://hub.docker.com/r/library/docker/">https://hub.docker.com/r/library/docker/</a></li>
+<li><a href="https://github.com/axltxl/docker-jenkins-dood">https://github.com/axltxl/docker-jenkins-dood</a></li>
+<li><a href="https://sreeninet.wordpress.com/2016/12/23/docker-in-docker-and-play-with-docker/">https://sreeninet.wordpress.com/2016/12/23/docker-in-docker-and-play-with-docker/</a></li>
 </ul>
 
-
-<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
-
-<h2>What&rsquo;s next?</h2>
-
-<p>Along with the project base configuration we also introduce <a href="https://github.com/acme101">ACME101</a> which has many development stacks to use with teracy-dev. Hopefully, it will be useful for you and we&rsquo;re welcome any contribution, suggestion for ACME101. We&rsquo;re also adding more documents and guide for the project.</p>
-
-<p>We&rsquo;ll take all the feedbacks from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
-
-<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-c1</a> for your everyday
-projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
-
-<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
-<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
-
-<p>Enjoy and happy hacking!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Upcoming event: Productive development environment with teracy-dev]]></title>
-    <link href="http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev/"/>
-    <updated>2017-02-17T09:41:00+00:00</updated>
-    <id>http://blog.teracy.com/2017/02/17/upcoming-event-productive-development-environment-with-teracy-dev</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/02/17/opentour01-productive-development-environment-teracy-dev.jpg" title="Productive development environment with teracy-dev" ></p>
-
-<p>We are very excited about an upcoming event with the topic &ldquo;Productive development environment with teracy-dev&rdquo;
-presented by Hoat Le, Co-founder, and CEO of Teracy. The event will be held on Thursday, February
-23 at 6:30 PM &ndash; 9:30 PM at Toong Hoang Dao Thuy (25T2 Hoang Dao Thuy, Ha Noi). This is
-the first event in the series of OpenTour&rsquo;s activities.</p>
-
-<p>OpenTour is started from the idea of ​​collaboration, and help each other of three open source communities in
-Vietnam, including OpenCPS, Vietnam OpenStack, and Docker Hanoi. OpenTour is a series of activities
-and events aiming at building Vietnamese FOSS ecosystem, building a network of FOSS experts to promote
-the use, application and development of FOSS in Vietnam, especially for ​​ICT enterprises
-and training institutions, on the base of absorbing ideas and activity patterns of the FOSS community
-in the world, and through shared activities and promoting.</p>
-
-<!-- more -->
-
-
-<p><strong>Agenda</strong>:</p>
-
-<ul>
-<li><p>Introduce about OpenTour</p></li>
-<li><p>teracy-dev: <a href="/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/">the only truly universal productive development platform with Docker on macOS, Linux, and Windows for developers</a>.</p>
-
-<ul>
-<li><p>Introduce about teracy-dev</p></li>
-<li><p>The existing problems that many developers are struggling:</p>
-
-<ul>
-<li><p>The problems when there was no Docker yet</p></li>
-<li><p>The problems when there was no teracy-dev yet</p></li>
-<li><p>The approaches and solutions for these problems with teracy-dev</p></li>
-<li><p>The 4-year story of teracy-dev</p></li>
-<li><p>The Docker workflow with teracy-dev</p></li>
-</ul>
-</li>
-<li><p>teracy-dev demo with the real projects</p></li>
-<li><p>Questions and Answers</p></li>
-</ul>
-</li>
-</ul>
-
-
-<p>Join us! To have more details and register to join the event, please see the details at <a href="https://www.facebook.com/events/979555312146106/.">https://www.facebook.com/events/979555312146106/.</a>
-It&rsquo;s our honor to have your presence at this event. See you there!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev v0.5.0-b1 release]]></title>
-    <link href="http://blog.teracy.com/2017/02/14/teracy-dev-v0-5-0-b1-release/"/>
-    <updated>2017-02-14T12:41:00+00:00</updated>
-    <id>http://blog.teracy.com/2017/02/14/teracy-dev-v0-5-0-b1-release</id>
-    <content type="html"><![CDATA[<p>We&rsquo;re very happy to announce our so long awaiting major release of teracy-dev, the v0.5.0-b1 release
-that introduces lots of features and changes, high performance with Docker workflow as the default.</p>
-
-<!-- more -->
-
-
-<h2>v0.5.0-b1</h2>
-
-<p>This is the beta 1 release of v0.5.0, what does it mean? By following the
-<a href="http://dev.teracy.org/docs/semantic_versioning.html">semantic versioning guide</a>, it means:</p>
-
-<p><blockquote><p>features completed, only minor bugs are expected. Avoid refactoring here, just fix bugs</p></blockquote></p>
-
-<p>This v0.5.0-b1 release is tested with all our projects and our clients' projects, so we can guarantee
-that the release has a very high quality and stability that you can use it for everyday projects.</p>
-
-<p>We&rsquo;re still lacking lots of documentation guides for users to explore and leverage all the supported
-features more easily.</p>
-
-<h2>Changes</h2>
-
-<p>This major release includes lots of features and improvements:</p>
-
-<ul>
-<li>high performance on Windows, especially file syncing</li>
-<li>Docker workflow out of the box, can use any versions of docker, docker-compose</li>
-<li>support all type of provisioners configurations</li>
-<li>use public_network by default</li>
-<li>config override the object within array</li>
-<li>Vagrantfile-ext support</li>
-<li>use rsync as the default sync mechanism (with the support from vagrant-gatling-rsync and
-vagrant-rsync-back plugins)</li>
-<li>reverse proxy support with /etc/hosts update for auto domain management</li>
-<li>auto vagrant plugins installation support</li>
-</ul>
-
-
-<p>There are more that you should explore yourselves when using <code>teracy-dev</code> for a while.</p>
-
-<h2>What&rsquo;s next?</h2>
-
-<p>We&rsquo;re working hard to add more documentations and guides. We&rsquo;ll fix bugs if any.</p>
-
-<p>After v0.5.0 final is release, we&rsquo;ll take on the next major release v0.6.0 that follow our
-<a href="/2016/08/19/teracy-dev-vision/">teracy-dev&rsquo;s vision</a>:</p>
-
-<p><blockquote><p>teracy-dev is the best universal development tool for everyone.</p></blockquote></p>
-
-<p>We&rsquo;ll take all the feedback from v0.5.0 usage to continue making <code>teracy-dev</code> better and greater.</p>
-
-<p>Don&rsquo;t hesitate to use <a href="https://github.com/teracyhq/dev">teracy-dev v0.5.0-b1</a> for your everyday
-projects from today by getting started with <a href="http://dev.teracy.org/docs/getting_started.html">http://dev.teracy.org/docs/getting_started.html</a></p>
-
-<p>If you have any feedbacks or problems, you&rsquo;re welcome to create issues for the project at
-<a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
-
-<p>Enjoy and happy hacking!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to develop and deploy React applications easily and fast with Webpack, ES6+ and Docker]]></title>
-    <link href="http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker/"/>
-    <updated>2016-11-07T07:18:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/11/07/how-to-develop-and-deploy-react-applications-easily-and-fast-with-webpack-es6-plus-and-docker</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
-
-<p>React is an awesome library to work with, however, we must pick up other libraries to build up a
-robust application such as redux, redux-connect, server side rendering, redux-form, etc. After that,
-we must organize the application structure with best practices to develop and deploy it. Doing all
-these tasks requires some good experiences, so it&rsquo;s very difficult for a newbie. Good news is that there
-are many starter boilerplate projects out there for us to choose. And today we&rsquo;d like to introduce
-you a starter React boilerplate for faster development and deployment.</p>
-
-<!-- more -->
-
-
-<p>There is a good starter React boilerplate with the following outstanding batteries included:</p>
-
-<ul>
-<li>Universal rendering (both client and server side rendering from the same client side code)</li>
-<li>Babel for ES6+ for writing modern JS syntax today</li>
-<li>Webpack for bundling, hot module reloading</li>
-<li>Redux, Redux Dev Tools, redux-form, React Router</li>
-<li>ESLint consistent style checking</li>
-<li>Unit testing</li>
-<li>bootstrap and font-awesome</li>
-<li>And many other cool things</li>
-</ul>
-
-
-<p>However, the project is not active anymore, so we decided to fork and update it a bit to work with
-Docker easier and faster. Let&rsquo;s get started with
-<a href="https://github.com/hoatle/react-redux-universal-hot-example">https://github.com/hoatle/react-redux-universal-hot-example</a> then.</p>
-
-<h2>Prerequisites</h2>
-
-<p><img class="center" src="/images/2016/11/07/react-prerequisites.gif" title="React Project Prerequisites" ></p>
-
-<p>Make sure you have the following softwares installed:</p>
-
-<ul>
-<li>git</li>
-<li>docker</li>
-<li>docker-compose</li>
-</ul>
-
-
-<p>Make sure that docker and docker-compose are available by checking <code>git version</code>, <code>docker info</code> and
-<code>docker-compose version</code> as following:</p>
-
-<p><code>bash
-$ git version
-git version 2.10.2
-</code></p>
-
-<p><code>bash
-$ docker info
-Containers: 9
-Running: 1
-Paused: 0
-Stopped: 8
-Images: 216
-Server Version: 1.12.1
-Storage Driver: aufs
-Root Dir: /var/lib/docker/aufs
-Backing Filesystem: extfs
-Dirs: 244
-Dirperm1 Supported: true
-Logging Driver: json-file
-Cgroup Driver: cgroupfs
-Plugins:
-Volume: local
-Network: host bridge null overlay
-Swarm: inactive
-Runtimes: runc
-Default Runtime: runc
-Security Options: seccomp
-Kernel Version: 4.4.20-moby
-Operating System: Alpine Linux v3.4
-OSType: linux
-Architecture: x86_64
-CPUs: 2
-Total Memory: 1.953 GiB
-Name: moby
-ID: W2PL:SOAQ:Y24X:VTFK:2Z3X:3CON:HWRK:7EMB:E2D4:EAPJ:NSKY:YHJ2
-Docker Root Dir: /var/lib/docker
-Debug Mode (client): false
-Debug Mode (server): true
-File Descriptors: 20
-Goroutines: 34
-System Time: 2016-11-07T07:45:16.819335883Z
-EventsListeners: 1
-No Proxy: *.local, 169.254/16
-Username: hoatle
-Registry: https://index.docker.io/v1/
-Insecure Registries:
-127.0.0.0/8
-</code></p>
-
-<p><code>bash
-$ docker-compose version
-docker-compose version 1.8.0, build f3628c7
-docker-py version: 1.9.0
-CPython version: 2.7.9
-OpenSSL version: OpenSSL 1.0.2h 3 May 2016
-</code></p>
-
-<p>If you get the similar output, you&rsquo;re good to go to the next step.</p>
-
-<h2>Git clone the project</h2>
-
-<p><img class="center" src="/images/2016/11/07/react-clone.gif" title="React Project Git Clone" ></p>
-
-<p>We&rsquo;re developing a React application named: &ldquo;my-app&rdquo;. Let&rsquo;s clone the starter project first:</p>
-
-<p><code>bash
-$ mkdir -p ~/teracy-dev/workspace
-$ cd ~/teracy-dev/workspace
-$ git clone https://github.com/hoatle/react-redux-universal-hot-example.git my-app
-</code></p>
-
-<h2>Development</h2>
-
-<p><img class="center" src="/images/2016/11/07/react-development.gif" title="React Project Development" ></p>
-
-<p>Docker is really awesome to create an isolated consistent development and deployment environment and
-it&rsquo;s super fast, too. We&rsquo;re leveraging Docker and Docker workflow for all our projects at Teracy,
-both internal and outsourcing projects.
-After cloning the starter project, let&rsquo;s start developing with:</p>
-
-<p><code>bash
-$ cd ~/teracy-dev/workspace/my-app
-$ docker-compose pull &amp;&amp; docker-compose up
-</code></p>
-
-<p>If you get the following error output:</p>
-
-<p><code>bash
-ERROR: for dev Cannot start service dev: driver failed programming external connectivity on endpoint myapp_dev_1 (e2105083bdacaf5bb0684aa7a34ae0dc92b20cc748a31491368c7afa3e51da30): Error starting userland proxy: Bind for 0.0.0.0:3000 failed: port is already allocated
-ERROR: Encountered errors while bringing up the project.
-</code></p>
-
-<p>then make sure the port 3000 is available for &ldquo;my-app&rdquo; to use.</p>
-
-<p>If you get the following output:</p>
-
-<p><code>bash
-$ docker-compose pull &amp;&amp; docker-compose up
-Pulling dev (hoatle/react-redux-universal-hot-example:dev_latest)...
-dev_latest: Pulling from hoatle/react-redux-universal-hot-example
-43c265008fae: Already exists
-af36d2c7a148: Already exists
-143e9d501644: Already exists
-df720fc8e4f1: Already exists
-eae19baa28ff: Already exists
-9004de327d6a: Already exists
-753292cc4b91: Already exists
-21edf49ccd04: Pull complete
-5571a198d5e5: Pull complete
-12965aa2aa24: Pull complete
-cd5c00a0e311: Pull complete
-5b4a21012860: Pull complete
-Digest: sha256:947e1889ff53d65cd2e9dd3357d45cf8714504995564e0a7183a5ff13a605ac0
-Status: Downloaded newer image for hoatle/react-redux-universal-hot-example:dev_latest
-Creating myapp_dev_1
-Attaching to myapp_dev_1
-dev_1 | yarn install v0.16.1
-dev_1 | success Already up-to-date.
-dev_1 | Done in 0.31s.
-dev_1 | npm info it worked if it ends with ok
-dev_1 | npm info using npm@3.10.8
-dev_1 | npm info using node@v6.9.1
-dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~predev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | npm info lifecycle numerologist-app@0.1.0-SNAPSHOT~dev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 |
-dev_1 | &gt; numerologist-app@0.1.0-SNAPSHOT dev /opt/app
-dev_1 | &gt; concurrent --kill-others "npm run watch-client" "npm run start-dev" "npm run start-dev-api"
-dev_1 |
-dev_1 | Warning: "concurrent" command is deprecated, use "concurrently" instead.
-dev_1 |
-dev_1 | [1] npm
-dev_1 | [1] info it worked if it ends with ok
-dev_1 | [1] npm info using npm@3.10.8
-dev_1 | [1] npm info using node@v6.9.1
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] it worked if it ends with
-dev_1 | [0] ok
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] using
-dev_1 | [0] npm@3.10.8
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] using node@v6.9.1
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2]
-dev_1 | [2] it worked if it ends with
-dev_1 | [2] ok
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2]
-dev_1 | [2] using
-dev_1 | [2] npm@3.10.8
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2]
-dev_1 | [2] using
-dev_1 | [2] node@v6.9.1
-dev_1 | [1] npm
-dev_1 | [1]
-dev_1 | [1] info lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [1] npm
-dev_1 | [1]
-dev_1 | [1] info
-dev_1 | [1]
-dev_1 | [1] lifecycle
-dev_1 | [1] numerologist-app@0.1.0-SNAPSHOT~start-dev: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [1]
-dev_1 | [1] &gt; numerologist-app@0.1.0-SNAPSHOT start-dev /opt/app
-dev_1 | [1] &gt; better-npm-run start-dev
-dev_1 | [1]
-dev_1 | [1] running better-npm-run in /opt/app
-dev_1 | [1] Executing script: start-dev
-dev_1 | [1]
-dev_1 | [1] to be executed: node ./bin/server.js
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] lifecycle
-dev_1 | [0] numerologist-app@0.1.0-SNAPSHOT~prewatch-client: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [0] npm
-dev_1 | [0]
-dev_1 | [0] info
-dev_1 | [0]
-dev_1 | [0] lifecycle
-dev_1 | [0] numerologist-app@0.1.0-SNAPSHOT~watch-client: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [0]
-dev_1 | [0] &gt; numerologist-app@0.1.0-SNAPSHOT watch-client /opt/app
-dev_1 | [0] &gt; better-npm-run watch-client
-dev_1 | [0]
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2] lifecycle numerologist-app@0.1.0-SNAPSHOT~prestart-dev-api: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [0] running better-npm-run in /opt/app
-dev_1 | [2] npm
-dev_1 | [2]
-dev_1 | [2] info
-dev_1 | [2] lifecycle
-dev_1 | [2] numerologist-app@0.1.0-SNAPSHOT~start-dev-api: numerologist-app@0.1.0-SNAPSHOT
-dev_1 | [2]
-dev_1 | [2] &gt; numerologist-app@0.1.0-SNAPSHOT start-dev-api /opt/app
-dev_1 | [2] &gt; better-npm-run start-dev-api
-dev_1 | [2]
-dev_1 | [0] Executing script: watch-client
-dev_1 | [0]
-dev_1 | [0] to be executed: node webpack/webpack-dev-server.js
-dev_1 | [2] running better-npm-run in /opt/app
-dev_1 | [2] Executing script: start-dev-api
-dev_1 | [2]
-dev_1 | [2] to be executed: node ./bin/api.js
-dev_1 | [0] ==&gt; 🚧 Webpack development server listening on port 3001
-dev_1 | [2] ----
-dev_1 | [2] ==&gt; 🌎 API is running on port 3030
-dev_1 | [2] ==&gt; 💻 Send requests to http://localhost:3030
-dev_1 | [1] ----
-dev_1 | [1] ==&gt; ✅ React Redux Example is running, talking to API server on 3030.
-dev_1 | [1] ==&gt; 💻 Open http://0.0.0.0:3000 in a browser to view the app.
-dev_1 | [0] Hash: 4bfaa3d4b9c381888d2a
-dev_1 | [0] Version: webpack 1.13.3
-dev_1 | [0] Time: 44424ms
-dev_1 | [0] Asset Size Chunks Chunk Names
-dev_1 | [0] af7ae505a9eed503f8b8e6982036873e.woff2 77.2 kB [emitted]
-dev_1 | [0] f4769f9bdb7466be65088239c12046d1.eot 20.1 kB [emitted]
-dev_1 | [0] fa2772327f55d8198301fdb8bcfc8158.woff 23.4 kB [emitted]
-dev_1 | [0] e18bbf611f2a2e43afc071aa2f4e1512.ttf 45.4 kB [emitted]
-dev_1 | [0] 89889688147bd7575d6327160d64e760.svg 109 kB [emitted]
-dev_1 | [0] 674f50d287a8c48dc19ba404d20fe713.eot 166 kB [emitted]
-dev_1 | [0] 448c34a56d699c29117adc64c43affeb.woff2 18 kB [emitted]
-dev_1 | [0] fee66e712a8a08eef5805a46892932ad.woff 98 kB [emitted]
-dev_1 | [0] b06871f281fee6b241d60582ae9369b9.ttf 166 kB [emitted]
-dev_1 | [0] 912ec66d7572ff821749319396470bde.svg 444 kB [emitted]
-dev_1 | [0] c29770d03d2e95e3ea5899d57c6cfeab.jpg 92.2 kB [emitted]
-dev_1 | [0] main-4bfaa3d4b9c381888d2a.js 9.61 MB 0 [emitted] main
-dev_1 | [0] webpack built 4bfaa3d4b9c381888d2a in 44424ms
-</code></p>
-
-<p>Then it&rsquo;s good to go, open <a href="http://localhost:3000">http://localhost:3000</a> to see the starter project home page.</p>
-
-<p>Try to make some changes to the source code, you should see the changes reflected immediately without
-any page reloading, this is called hot module reloading, a really awesome feature to boost development
-productivity.</p>
-
-<p><img class="center" src="/images/2016/11/07/react-instant-changes.gif" title="React Project Instant Changes" ></p>
-
-<h2>Deployment</h2>
-
-<p>We&rsquo;re going to deploy the Docker image. There are guides that you can follow:</p>
-
-<ul>
-<li>Deploy on Heroku: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-heroku.md</a></li>
-<li>Simple deployment with docker-compose: <a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/docs/dev-guide/how-to-deploy-on-production-with-docker-compose.md</a></li>
-</ul>
-
-
-<p>There are many production best practices that we should improve for the starter project.</p>
-
-<h2>CI (continuous integration) and CD (continuous delivery)</h2>
-
-<p>By using CI and CD systems like travis-ci and gitlab-ci, we could stick to the following process:</p>
-
-<ul>
-<li>Pull request (merge request) is sent &ndash;> CI checks.</li>
-<li>Code changes &ndash;> CI checks.</li>
-<li>CI checking is passed, then CD starts.</li>
-<li>CD will deploy automatically, for example, to Heroku or other providers or your in-house data
-center.</li>
-</ul>
-
-
-<p>You can update all of these steps by adjusting the following files accordingly:</p>
-
-<ul>
-<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.travis.yml</a></li>
-<li><a href="https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml">https://github.com/hoatle/react-redux-universal-hot-example/blob/master/.gitlab-ci.yml</a></li>
-</ul>
-
-
-<p>At the CI checking step, we build Docker images (both development and production images):</p>
-
-<ul>
-<li><a href="https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/">https://hub.docker.com/r/hoatle/react-redux-universal-hot-example/tags/</a></li>
-<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry">https://gitlab.com/hoatle/react-redux-universal-hot-example/container_registry</a></li>
-</ul>
-
-
-<p>The development images install all development stuff (excluding the source code) so that
-all the developers should have the same development environment as long as they&rsquo;re using the same
-development image.</p>
-
-<p>The production (distribution) images install and package all runtime stuff so that everyone could
-run the applications right away with the same runtime environment.</p>
-
-<p>You can see these CI systems in action:</p>
-
-<ul>
-<li><a href="https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds">https://travis-ci.org/hoatle/react-redux-universal-hot-example/builds</a></li>
-<li><a href="https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines">https://gitlab.com/hoatle/react-redux-universal-hot-example/pipelines</a></li>
-</ul>
-
-
-<p>Building on travis-ci is super fast and it&rsquo;s very slow on gitlab-ci. However, using gitlab is free
-for unlimited projects, it includes Docker registry for free, too.</p>
-
-<p>You can install gitlab on your server, it should be faster but you have to pay for the devops
-maintenance cost.</p>
-
-<p>If you could pay for Docker Hub, Github and Travis-CI, it&rsquo;s super fast and convenient for development
-without the devops maintenance cost.</p>
-
-<p>Or even better, ping us for consulting :&ndash;).</p>
-
-<h2>react-boilerplate introduction</h2>
-
-<p><code>react-redux-universal-hot-example</code> is a good start, however, there are still many improvements that
-we&rsquo;d like to add, for example:</p>
-
-<ul>
-<li>Better code and component organization convention. The Angular 2 convention is a really great
-inspiration for this.</li>
-<li>Update dependencies to latest versions.</li>
-<li>Build the deployment Docker that should include runtime stuff only, not development stuff.</li>
-<li>Server side code should be production ready and optimized.</li>
-</ul>
-
-
-<p>And there are more to do. So we intent to create a better <code>react-redux-universal-hot-example</code> version,
-we call it <code>react-boilerplate</code>.</p>
-
-<p>The project is located at: <a href="https://github.com/teracyhq/react-boilerplate">https://github.com/teracyhq/react-boilerplate</a> . We&rsquo;ll announce v0.1.0 as soon
-as possible when it&rsquo;s ready. So stay tuned! At present we should use <code>react-redux-universal-hot-example</code>.</p>
-
-<h2>React application consulting and developing service</h2>
-
-<p>We&rsquo;re offering React application consulting and developing service.</p>
-
-<p>If you want React development and production deployment help, don&rsquo;t hesitate to ping us. We&rsquo;re
-eager to help you to develop world-class React applications with better and better developer experience
-and production deployment.</p>
-
-<h2>Learn more</h2>
-
-<p>You should learn more about React at:</p>
-
-<ul>
-<li><a href="http://exploringjs.com/es6/">http://exploringjs.com/es6/</a></li>
-<li><a href="https://github.com/veggiemonk/awesome-docker">https://github.com/veggiemonk/awesome-docker</a></li>
-<li><a href="https://github.com/enaqx/awesome-react">https://github.com/enaqx/awesome-react</a></li>
-<li><a href="https://github.com/hoatle/react-redux-universal-hot-example#about">https://github.com/hoatle/react-redux-universal-hot-example#about</a></li>
-</ul>
-
-
-<p>Hopefully, this is a good start for React newbies to explore the whole new world of modern web
-application development.</p>
-
-<p>Happy hacking!</p>
 ]]></content>
   </entry>
   
