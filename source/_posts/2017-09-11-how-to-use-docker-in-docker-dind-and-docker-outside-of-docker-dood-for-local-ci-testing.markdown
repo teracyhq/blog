@@ -204,7 +204,7 @@ Let's see how to do local CI testing in action:
 
 This is just the very first step for basic testing.
 
-Later, we should convert this `.travis.yml` file into a `build.sh` to execute, this is the right way
+Later, we should convert this `.travis.yml` file into a `build.sh` one to execute, this is the right way
 for local CI testing travis-ci and other similar CI systems.
 
 To do that, please follow https://github.com/teracyhq/docker-files/issues/42 and I'll update this
