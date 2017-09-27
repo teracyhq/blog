@@ -1,0 +1,26 @@
+{
+  "provisioners": [{
+    "_id": "0",
+    "_ua_cookbooks_path": [
+      "workspace/blog/dev-setup/chef/main-cookbooks"
+    ],
+    "_ua_run_list": [
+      "teracy-blog"
+    ],
+    "json": {
+      "teracy": {
+        "blog": {
+          "project_guest_path": "/home/vagrant/workspace/blog"
+        }
+      }
+    }
+  }],
+  "plugins": [{
+    "_id": "2",
+    "options": {
+      "_ua_aliases": [
+        "dev.blog.teracy.dev", "review.blog.teracy.dev", "blog.teracy.dev"
+      ]
+    }
+  }]
+}
