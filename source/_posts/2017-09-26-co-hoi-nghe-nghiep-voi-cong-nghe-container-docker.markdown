@@ -69,8 +69,8 @@ Microsoft và Red Hat...
 
 Hiện tại ở Việt Nam, Docker cũng được sử dụng khá rộng rãi ở nhiều công ty lớn, nhỏ.
 
-Vậy Docker cho sinh viên cơ hội gì và cần làm gì để nắm bắt cơ hội đó?
-======================================================================
+### Vậy Docker cho sinh viên cơ hội gì và cần làm gì để nắm bắt cơ hội đó?
+
 
 Có 3 cơ hội mà ta có thể xét tới: lương, số lượng việc làm và cơ hội phát triển bản thân.
 
@@ -163,8 +163,7 @@ Hãy tham gia và góp ý cho nhóm Docker Hà Nội ngày càng tốt hơn, c�
 phát triển hơn.
 
 
-Tóm lại các bạn sinh viên cần nhớ:
-=================================
+### Tóm lại các bạn sinh viên cần nhớ:
 
 - Phần mềm tự do nguồn mở là tất yếu, trong đó có công nghệ container.
 - Nhiều cty lớn nhỏ ở Việt Nam và trên thế giới đã ứng dụng triển khai nhiều dự án trên công nghệ
