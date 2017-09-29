@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vi | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/vi/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-09-27T11:42:35+00:00</updated>
+  <updated>2017-09-29T03:48:04+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,201 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cơ hội nghề nghiệp với công nghệ container (Docker)]]></title>
+    <link href="http://blog.teracy.com/2017/09/26/co-hoi-nghe-nghiep-voi-cong-nghe-container-docker/"/>
+    <updated>2017-09-26T17:09:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/09/26/co-hoi-nghe-nghiep-voi-cong-nghe-container-docker</id>
+    <content type="html"><![CDATA[<p>Ở ngày hội phần mềm tự do nguồn mở 2017 <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> vừa rồi, tôi có dịp chia sẻ với các bạn sinh viên về cơ hội
+nghề nghiệp với công nghệ container, cụ thể là Docker. Để tiện chia sẻ rộng rãi hơn cả slide và nội
+dung thì các bạn có thể tham khảo ở bài viết này.</p>
+
+<!-- more -->
+
+
+
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTZErvq-qxVb3qcK68Q0kFymJX2PwPJCCAKkSKt1hPAd5DUJSf8IFFylB2lsEmK1fhU_-T6K6jRqXhi/embed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+<p>Tóm tắt nội dung toàn văn bài chia sẻ trong vòng 15' như sau:</p>
+
+<p>Chào các bạn, mình là Hoạt, hôm nay rất vinh dự được tới đây chia sẻ với các bạn về cơ hội nghề
+nghiệp với công nghệ container (cụ thể là Docker).</p>
+
+<p>Mình đã trong nghề được hơn 8 năm, trải qua nhiều vai trò khác nhau: từ nhân viên rồi team leader,
+rồi làm freelancer, rồi khởi nghiệp và hiện tại đang là CEO của Teracy.</p>
+
+<p>Xuyên suốt quá trình làm việc thì phần mềm tự do nguồn mở và triết lý của nó luôn luôn gắn với các
+hoạt động phát triển nghề và phát triển bản thân của mình. Công ty đầu tiên là công ty mã nguồn mở,
+làm freelancer cũng sử dụng và chia sẻ các dự án mã nguồn mở cá nhân, rồi tới công ty Teracy hiện tại
+thì càng đặc biệt chú trọng tới việc chia sẻ, hợp tác và phát triển các dự án mã nguồn mở &ndash; là định
+hướng ngay từ ban đầu khi thành lập công ty.</p>
+
+<p>Tự do nguồn mở là tất yếu. Mình rất thích triết lý của tự do nguồn mở vì nó có những giá trị mà mình
+theo đuổi: tập hợp sức mạnh tập thể để cùng tự do chia sẻ, hợp tác và phát triển.</p>
+
+<p>Theo ước tính thì có khoảng tới 90% các công ty có sử dụng mã nguồn mở. Có nhiều công ty trên thế
+giới tài trợ và trả lương cho nhân viên chỉ phát triển các dự án mã nguồn mở, đặc biệt là các công
+ty lớn như RedHat, Microsoft, Facebook, Docker, Gooogle, Apache&hellip;</p>
+
+<p>Và Docker là một công ty mã nguồn mở, có công nghệ container (Docker) là dự án tự do nguồn mở.</p>
+
+<p>Công nghệ nào sinh ra thì cũng để giải quyết các vấn đề đang tồn tại, giúp phát triển và triển khai
+các sản phẩm/ dịch vụ nhanh hơn để đưa ra thị trường đúng thời điểm.</p>
+
+<p>Bài toán mà công nghệ container giải quyết chính là bài toán ảo hoá ở một tầm cao mới, mọi thứ đều
+dễ dàng và thuận tiện hơn rất nhiều so với công nghệ trước đó, có thể ví đây là cuộc cách mạng ảo hoá
+cũng không có gì là quá.</p>
+
+<p>Tiền thân của Docker là dotCloud &ndash; cung cấp dịch vụ Platform as a Service (dịch vụ nền tảng).</p>
+
+<p>Trong quá trình vận hành dotCloud thì họ thấy cơ hội kinh doanh với công nghệ ảo hoá và họ chuyển
+sang mô hình kinh doanh mã nguồn mở với công nghệ container và đặt tên là Docker (tên sản phẩm và
+cũng là tên công ty).</p>
+
+<p>Docker được giới thiệu vào năm 2013 tại hội nghị PyCon và được đón nhận rất nồng nhiệt.</p>
+
+<p>Đến năm 2015, là 1 trong 20 dự án được yêu thích nhất trên GitHub, khoảng 11000 người tham gia đóng
+góp xây dựng, trong đó có một số công ty đóng góp nhiều như: Docker, Cisco, Google, Huawei, IBM,
+Microsoft và Red Hat&hellip;</p>
+
+<p>Hiện tại ở Việt Nam, Docker cũng được sử dụng khá rộng rãi ở nhiều công ty lớn, nhỏ.</p>
+
+<h3>Vậy Docker cho sinh viên cơ hội gì và cần làm gì để nắm bắt cơ hội đó?</h3>
+
+<p>Có 3 cơ hội mà ta có thể xét tới: lương, số lượng việc làm và cơ hội phát triển bản thân.</p>
+
+<p><strong>Về lương</strong>, theo khảo sát:</p>
+
+<ul>
+<li><p>Lương ở Mỹ: $5.8k-$10k/tháng</p></li>
+<li><p>Lương ở Việt Nam: $800-$4k/tháng, đây là con số khảo sát từ trong nhóm Docker Hà Nội và từ quan sát
+thực tế trên các trang tuyển dụng và các công ty khác.</p></li>
+</ul>
+
+
+<p>Đây là thống kê lương với người đã có kinh nghiệm làm việc khá trở lên.</p>
+
+<p><strong>Về cơ hội việc làm</strong>: nhiều công ty trong nước cần tuyển nhiều vị trí DevOps để làm việc với Docker,
+có thể kể đến như: VCCorp, FPT, VNG, Eway, Vega, TOPICA, Arimo, DEHA Việt Nam, Teracy và nhiều công
+ty khác nữa mà mình chưa có số liệu cụ thể thống kê chi tiết.</p>
+
+<p><strong>Và cơ hội phát triển bản thân</strong>: được phát triển toàn diện khi được học và làm việc với nhiều công nghệ,
+stack khác nhau với vai trò DevOps: tham gia cả quá trình phát triển và vận hành, có cái nhìn toàn
+diện hơn về cách phát triển, quy trình phát triển phần mềm.</p>
+
+<p><strong>Để nắm bắt được cơ hội trên thì sinh viên cần làm gì?</strong></p>
+
+<p>Cơ hội lớn thì thách thức càng lớn.</p>
+
+<p>Thách thức đầu tiên là nguồn nhân lực vừa thừa vừa thiếu. Số lượng sinh viên tốt nghiệp ngành CNTT
+đứng top 10 thế giới nhưng chất lượng đầu ra còn yếu, nhiều công ty gặp rất nhiều khó khăn để tuyển
+dụng được nhân lực chất lượng, có thể đảm nhiệm được công việc.</p>
+
+<p>Thách thức nữa là vì số lượng lớn nên mức độ cạnh tranh gay gắt hơn ở những vị trí thực tập, nhân viên
+mới.</p>
+
+<p>Và để làm việc được với công nghệ container thì đòi hỏi phải có kiến thức đủ rộng và đủ sâu để có thể
+hiểu và đảm nhiệm vai trò phát triển và vận hành cùng lúc được.</p>
+
+<p>Vậy sinh viên cần làm gì để có thể nắm bắt cơ hội này?</p>
+
+<ul>
+<li>Ưu tiên xây dựng cái gốc, nền tảng vững để có thể tiến xa và bay cao nhất có thể.</li>
+<li>Học tập suốt đời để biết thế giới đang ở đâu, đi về đâu và mình đang ở đâu trên thế giới đó; ngừng
+học là tụt hậu.</li>
+<li>Bằng cấp không nói lên được điều gì, chỉ có kinh nghiệm và khả năng thực tế tạo ra sản phẩm mới có
+tiếng nói.</li>
+<li>Hãy đặt mục tiêu làm việc với người nước ngoài, các dự án, công ty nước ngoài: trước mắt là khả
+năng ngoại ngữ đặc biệt quan trọng, ít nhất là phải đọc viết thành thạo.</li>
+<li>Mới bắt đầu, đừng quá đặt nặng vấn đề lương, hãy quan tâm đầu tư hơn cho bản thân, nâng cao giá
+trị bản thân, có môi trường phát triển bản thân thật tốt, đó mới là cơ hội sinh viên nên nắm bắt.
+Không quan trọng là công ty to hay nhỏ hay khởi nghiệp, quan trọng đó phải là nơi bạn được sống
+hết mình, cống hiến hết mình và được phát triển, hoàn thiện bản thân.</li>
+<li>Hãy thử nghiệm thật nhiều và sẽ có nhiều thất bại, đó là điều bình thường, bạn được thất bại trong
+giai đoạn đầu để cố gắng liên tục cho sự thành công của giai đoạn sau, càng về sau càng không được
+thất bại, nhất là các thất bại đã được thử thách trước đó.</li>
+<li>Sinh viên nên tham gia vào các dự án mã nguồn mở để học hỏi và thể hiện bản thân, xây dựng thương
+hiệu, sau khi giá trị bản thân tốt, thương hiệu tốt thì các cơ hội nghề nghiệp tốt luôn tự động tìm
+đến bạn, bạn từ chối không hết, ví dụ như:
+
+<ul>
+<li>Sử dụng, sửa lỗi, phát triển, làm bất kì điều gì để đóng góp cho dự án.</li>
+<li>Nắm bắt các quy trình dự án mã nguồn mở.</li>
+<li>Nắm bắt các công nghệ, công cụ xoay quanh dự án mã nguồn mở.</li>
+<li>Nắm bắt cách hoạt động, giao tiếp với dự án mã nguồn mở.</li>
+</ul>
+</li>
+<li>Hãy bớt ảo tưởng, để đến được đích mong muốn thì phải trải qua nhiều gian khổ, không dành cho tay mơ:
+
+<ul>
+<li>Biết mình đang ở đâu trong thế giới này, thế giới đang ở đâu và sẽ đi về đâu.</li>
+<li>Hãy nhớ lương bạn được trả tỉ lệ thuận với lợi ích, kết quả bạn đem lại.</li>
+<li>Lương không được đo bằng thời gian, công sức bỏ ra để học tập, để bị stress vì điều đó chứng tỏ
+khả năng của bạn còn hạn chế.
+ + Lương càng cao thì áp lực càng lớn, hãy trao đổi thẳng thắn về những khó khăn của mình với công
+   ty để điều chỉnh cho hài hoà, đó là cách khôn ngoan đảm bảo lợi ích cho cả 2 bên.</li>
+</ul>
+</li>
+<li>Chuyên nghiệp ngay từ hôm nay đi:
+
+<ul>
+<li>Chuyên nghiệp là khả năng làm việc hết tâm, hết sức và biết giá trị của mình đem lại cho công ty,
+tổ chức để cân bằng lợi ích giữa 2 bên.</li>
+<li>Chuyên nghiệp là biết nhìn xa trông rộng thay vì chỉ chăm chăm cái lợi trước mắt.
+ + Chuyên nghiệp là đừng răm rắp nghe lời chỉ đạo từ cấp trên, phải biết chủ động, tư duy và phản
+biện để có kết quả tốt nhất có thể.</li>
+<li>Chuyên nghiệp là làm những việc nhỏ nhất với sự cẩn thận và tận tâm nhất.</li>
+<li>Chuyên nghiệp là hãy đảm bảo hoàn thành công việc với kết quả tốt nhất, vượt ngoài mong đợi của
+lãnh đạo, khách hàng.</li>
+<li>Đó là những biểu hiện của sự chuyên nghiệp. Khi ứng tuyển vào các công ty mà bạn có ghi muốn làm
+   việc ở môi trường chuyên nghiệp thì đây chính là những đặc điểm của sự chuyên nghiệp đó mà bạn
+cần chuyên nghiệp ngay từ bây giờ.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Cơ hội rất lớn, thách thức cực nhiều và những hành động cụ thể rất cần. Mà để đến đích có nhiều con
+đường, con đường nào là tốt nhất, ít đau thương nhất? Chỉ có những con người đã trải qua đau thương
+mới giúp trả lời câu hỏi này. Vậy tìm những người này ở đâu để có thể giúp các bạn sinh viên?</p>
+
+<p>Đó là nhóm Docker Hà Nội, ở nơi đây có các anh chị làm ở nhiều công ty khác nhau đầy kinh nghiệm sẽ
+giúp các bạn đi trên con đường ít đau thương nhất để tới đích. Các anh chị đầy nhiệt huyết muốn dìu
+dắt các em sinh viên để cùng phát triển, xây dựng cộng đồng lớn mạnh hơn.</p>
+
+<p>Đó là cơ hội nghề nghiệp trước mắt mà các bạn sinh viên nào quan tâm thì hãy nắm bắt lấy, đừng để
+mất cơ hội.</p>
+
+<p>Hãy tham gia và góp ý cho nhóm Docker Hà Nội ngày càng tốt hơn, cộng đồng lớn mạnh hơn, giúp đỡ nhau
+phát triển hơn.</p>
+
+<h3>Tóm lại các bạn sinh viên cần nhớ:</h3>
+
+<ul>
+<li>Phần mềm tự do nguồn mở là tất yếu, trong đó có công nghệ container.</li>
+<li>Nhiều cty lớn nhỏ ở Việt Nam và trên thế giới đã ứng dụng triển khai nhiều dự án trên công nghệ
+container (Docker).</li>
+<li>Sinh viên cần biết những cơ hội, thách thức và hành động cụ thể để nắm bắt cơ hội, hãy bớt ảo tưởng
+và chuyên nghiệp ngay từ hôm nay.</li>
+<li>Để đi tới đích với con đường tốt nhất, ít đau thương nhất thì hãy tham gia Docker Hà Nội.</li>
+</ul>
+
+
+<p>Hy vọng những chia sẻ vừa rồi có ích cho các bạn, có thể giúp các bạn định hướng nghề nghiệp tốt hơn,
+nắm bắt cơ hội tốt hơn.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://sfd2017.vfossa.vn/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Đưa FOMO vào sản phẩm của bạn - Công thức cho sự thành công]]></title>
@@ -260,131 +455,6 @@ CREDIT: Getty Images</p>
 <p>Vì vậy, lần tới khi nghe một điều gì đó, hoặc ai đó nói về một ý tưởng hay đưa ra hoặc gợi ý một ý tưởng nào đó, bạn hãy dành ra năm phút để suy ngẫm. Hãy dành thời gian suy nghĩ về điều đó trước khi phản bác, trước khi nói rằng nó quá khó khăn hoặc như vậy là quá tốn công sức để thực hiện. Có thể những lý do biện minh là đúng, nhưng có thể có một sự thật khác đằng sau: Nó rất đáng giá.</p>
 
 <p>Dịch từ: <a href="https://signalvnoise.com/posts/3124-give-it-five-minutes">Give it five minutes</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vì sao ngắt kết nối internet sẽ giúp bạn tập trung hơn vào công việc?]]></title>
-    <link href="http://blog.teracy.com/2017/04/17/vi-sao-ngat-ket-noi-intetnet-se-giup-ban-tap-trung-hon-vao-cong-viec/"/>
-    <updated>2017-04-17T04:40:00+00:00</updated>
-    <id>http://blog.teracy.com/2017/04/17/vi-sao-ngat-ket-noi-intetnet-se-giup-ban-tap-trung-hon-vao-cong-viec</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/2017/04/17/bat-tat-internet.jpeg" title="Bật hay tắt internet?" ></p>
-
-<p>Cuộc sống năm 2016 thật là tuyệt vời. Dù ở nhà hay ra ngoài thì các bạn vẫn luôn luôn được kết nối internet.</p>
-
-<p>Chỉ với chiếc điện thoại thông minh là bạn đã có cả thế giới trong tầm tay rồi. Dường như điều đó thật
-tuyệt vời phải không? Nhưng thực tế lại không đúng như vậy.</p>
-
-<p>Hầu hết mọi người đang không sử dụng công nghệ mà bị công nghệ sử dụng.</p>
-
-<p>Các ứng dụng, trò chơi, video, các bài báo, quảng cáo hay các chương trình TV đều được thiết kế để thu
-hút sự chú ý của bạn. Do đó bạn đã lãng phí không biết bao nhiêu thời gian mỗi tuần mà không hề hay biết.
-Bạn tập trung vào tất cả mọi nơi nhưng sự tập trung đó lại không dừng đúng nơi.</p>
-
-<!-- more -->
-
-
-<p>Bạn có nghĩ vì sao Netflix bắt đầu mỗi tập phim trong 3, 2, 1 giây không? Khi điều đó xảy ra, bạn nghĩ:
-&ldquo;Mặc kệ, xem thêm cái này đã.&rdquo;</p>
-
-<p>Điều này cũng tương tự với YouTube. Bạn có nghĩ vì sao những gợi ý của nó lại tốt như thế không? Bạn bị
-đắm chìm vào trong những ràng buộc đó và điều này cũng áp dụng cho tất cả các nội dung. Sẽ luôn luôn
-có một video, 1 tập phim, bài báo, trò chơi tiếp theo lôi cuốn bạn.</p>
-
-<p>Lạ kỳ rằng, hầu như những người mà đọc những thể loại báo kiểu này đều biết rằng mất tập trung
-là rất tệ. Và trong những năm gần đây, có một số lượng lớn các bài báo và các sách nghiên cứu đã nói
-về ảnh hưởng xấu của việc xao lãng.</p>
-
-<p>Đặc biệt, <a href="https://www.ics.uci.edu/~gmark/chi08-mark.pdf">nghiên cứu của Gloria Mark và các đồng tác giả đã chỉ ra rằng</a> xao lãng có mối liên quan với
-mức độ căng thẳng hơn, sự thất vọng cao hơn, áp lực thời gian và nỗ lực.</p>
-
-<h1>Làm việc tập trung là rất khó. Chúng ta luôn bị phân tâm.</h1>
-
-<p>Và đó không phải là lỗi của bạn. Hầu hết các công nghệ đều tác động vào bản năng căn bản và khoá bạn lại,
-biến bạn thành người tiêu dùng.</p>
-
-<p>Vì vậy, đừng nghĩ về việc chống đối lại internet hay công nghệ. Tôi cá là bạn cũng đã từng thử làm như thế
-trong quá khứ. &ldquo;Tôi sẽ không bao giờ lướt web vô thức hàng giờ liền nữa&rdquo;. Đúng thế!</p>
-
-<p>Điều gì sẽ mang lại hiệu quả đây? Gần đây, <a href="http://dariusforoux.com/sciencebehindprocrastination/">tôi đã viết về việc làm thế nào để đánh bại sự trì hoãn
-bằng cách tạo ra 1 hệ thống</a>. Một trong những phần quan trọng nhất của hệ thống đó là:</p>
-
-<p><strong>HÃY NGẮT KẾT NỐI INTERNET</strong></p>
-
-<p>Và chỉ có duy nhất 1 lý do để làm điều đó: cái gì nhiều quá cũng không tốt, kể cả nhiều thứ tốt cũng thế.</p>
-
-<ul>
-<li><p>Luyện tập quá nhiều? Cơ thể sẽ bị quá tải.</p></li>
-<li><p>Yêu quá nhiều? Bạn sẽ làm người khác ngột ngạt.</p></li>
-<li><p>Làm việc quá nhiều? Bạn sẽ bị kiệt sức.</p></li>
-<li><p>Ăn quá nhiều? Bạn sẽ bị béo phì.</p></li>
-<li><p>Quá nhiều nước? Bạn sẽ bị chết đuối.</p></li>
-</ul>
-
-
-<p>Vậy tại sao bạn phải sử dụng internet quá nhiều như thế? Tôi đã tự hỏi chính mình điều này cách đây 2 năm.
-Tôi đã không có câu trả lời. Vì tôi đã nghĩ, tôi làm mọi thứ trong tầm kiểm duyệt của mình, tại sao
-lại không có internet?</p>
-
-<p>Tôi sớm phát hiện ra rằng không hề có sự kiểm duyệt với việc sử dụng internet. Nó giống như
-một bữa tiệc tự chọn vậy. Bạn đã no, nhưng bạn vẫn tiếp tục ăn. Và sau khi bạn đã nhồi nhét bản thân mình,
-bạn lại cảm thấy hối tiếc vì đã làm thế.</p>
-
-<p>Và điều này tương tự như việc sử dụng internet. Nó quá hấp dẫn, thoả mãn sự tò mò của bạn và có ở mọi
-nơi. Do vậy mà bạn đi khắp nơi cùng với nó, YouTube, Whatsapp, Facebook, Snapchat&hellip;</p>
-
-<p>Tôi đang cố loại bỏ mọi thứ làm mình xao lãng. Tuy nhiên, tôi cũng không muốn sống như một kẻ ẩn dật,
-vì vậy tôi phải tìm ra một nền tảng hợp lý có hiệu quả.</p>
-
-<p>Tôi đã tìm thấy rằng một tinh chỉnh đơn giản trong thái độ của tôi đối với internet đã làm được thủ thuật đó.</p>
-
-<p><strong>Tôi chuyển từ &ldquo;Luôn luôn kết nối&rdquo; thành &ldquo;Luôn luôn ngắt kết nối&rdquo;.</strong></p>
-
-<p>Thực tế, nó hoạt động như thế này:</p>
-
-<ul>
-<li><p>Trên điện thoại của mình, wifi và dữ liệu di động thường xuyên bị tắt. Tôi chỉ bật khi nào mình cần.</p></li>
-<li><p>Trên máy tính, tôi sử dụng 1 ứng dụng gọi là <a href="https://selfcontrolapp.com/">SelfControl</a> (chỉ dành cho máy Mac) trong suốt thời gian
-tôi làm việc (nếu bạn dùng Windows thì hãy thử <a href="https://focusme.com/">FocusMe</a>).  Ứng dụng này chặn các trang web làm bạn bị
-phân tán. Ưu điểm là những ứng dụng mà tôi cần như Evernote, DayOne, Office365 vẫn kết nối vì thế tôi có
-thể lưu trữ công việc của mình trên các dịch vụ đám mây.</p></li>
-</ul>
-
-
-<p><strong>&ldquo;Luôn luôn kết nối&rdquo; không phải là điều tốt cho sự tập trung và năng suất của bạn</strong></p>
-
-<p>Nó giống như đến phòng tập hoặc ăn tối, hay có một buổi tối lãng mạn với nửa kia của bạn. Bạn không làm
-những điều này trong 24 giờ một ngày.  Bạn chỉ làm khoảng 30 phút, một giờ hoặc một vài giờ. Làm những
-việc này quá nhiều đơn giản là không mang lại hiệu quả.</p>
-
-<p>Việc ngắt kết nối internet đã mang lại những điều kì diệu cho tôi. Tôi không cảm thấy cần phải cấp bách
-kiểm tra điện thoại, email hay các tin tức 500 lần mỗi ngày như trước kia nữa.</p>
-
-<p>Và sau một thời gian, bạn cảm thấy bạn không bị bỏ lỡ bất cứ điều gì cả. Điều đó mang lại cảm giác bình tĩnh
-cho cuộc sống của bạn.</p>
-
-<p>Tôi cũng nhận được nhiều hơn cho mỗi ngày của mình; tôi đạt được nhiều điều hơn trước kia, cảm thấy
-ít bị phân tâm hơn, và có nhiều thời gian cho những điều làm tôi hạnh phúc hơn.</p>
-
-<p>Vào cuối ngày, internet chỉ là một công cụ. Tuy nhiên, một số người trong chúng ta lại nghĩ nó là
-mọi thứ. Nhưng tôi khá tự tin rằng, nhiều năm tới tôi sẽ không cần nhìn lại và hối tiếc vì đã không dành
-đủ thời gian cho internet.</p>
-
-<p>Bạn có thể tưởng tượng được không? Bạn đang hấp hối trên giường bệnh và bạn nói với gia đình mình rằng: &ldquo;Tôi
-rất vui vì đã được xem quá nhiều FAIL Complilation trên YouTube&rdquo;.</p>
-
-<p>Chắc chắn là bạn sẽ không nhìn lại thời gian đó. Có thể bạn sẽ nhớ lại thời gian bạn ở bên gia đình
-và bạn bè của bạn, hay những kỷ niệm khi bạn đi du lịch, hay sự vui thích trong công việc của mình.</p>
-
-<p>Vì vậy hãy ngắt kết nối internet đi. Nó không mang lại cho bạn điều gì ngoài sự xao lãng.</p>
-
-<p>Và sau khi đọc bài viết này, bạn hãy ngắt kết nối internet đi nhé.</p>
-
-<p>Bạn sẽ có một số triệu chứng cai nghiện giống như cầm điện thoại lên khoảng 100 lần, hoặc ấn nút F trên
-bàn phím để mở Facebook mọi lúc. Nhưng tôi hứa với bạn điều này: Ngắt kết nối sẽ giúp bạn làm được nhiều hơn
-và đó chính là cuộc sống mà bạn hướng tới.</p>
-
-<p>Dịch từ: <a href="https://medium.com/the-mission/why-disconnecting-from-the-internet-improves-your-focus-167a824c3bb5#.7gqqh9ow6">Why Disconnecting From The Internet Improves Your Focus</a></p>
 ]]></content>
   </entry>
   

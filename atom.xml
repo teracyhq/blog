@@ -4,7 +4,7 @@
   <title><![CDATA[Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-09-27T11:42:35+00:00</updated>
+  <updated>2017-09-29T03:48:04+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,201 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cơ hội nghề nghiệp với công nghệ container (Docker)]]></title>
+    <link href="http://blog.teracy.com/2017/09/26/co-hoi-nghe-nghiep-voi-cong-nghe-container-docker/"/>
+    <updated>2017-09-26T17:09:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/09/26/co-hoi-nghe-nghiep-voi-cong-nghe-container-docker</id>
+    <content type="html"><![CDATA[<p>Ở ngày hội phần mềm tự do nguồn mở 2017 <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> vừa rồi, tôi có dịp chia sẻ với các bạn sinh viên về cơ hội
+nghề nghiệp với công nghệ container, cụ thể là Docker. Để tiện chia sẻ rộng rãi hơn cả slide và nội
+dung thì các bạn có thể tham khảo ở bài viết này.</p>
+
+<!-- more -->
+
+
+
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTZErvq-qxVb3qcK68Q0kFymJX2PwPJCCAKkSKt1hPAd5DUJSf8IFFylB2lsEmK1fhU_-T6K6jRqXhi/embed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+<p>Tóm tắt nội dung toàn văn bài chia sẻ trong vòng 15&#8217; như sau:</p>
+
+<p>Chào các bạn, mình là Hoạt, hôm nay rất vinh dự được tới đây chia sẻ với các bạn về cơ hội nghề
+nghiệp với công nghệ container (cụ thể là Docker).</p>
+
+<p>Mình đã trong nghề được hơn 8 năm, trải qua nhiều vai trò khác nhau: từ nhân viên rồi team leader,
+rồi làm freelancer, rồi khởi nghiệp và hiện tại đang là CEO của Teracy.</p>
+
+<p>Xuyên suốt quá trình làm việc thì phần mềm tự do nguồn mở và triết lý của nó luôn luôn gắn với các
+hoạt động phát triển nghề và phát triển bản thân của mình. Công ty đầu tiên là công ty mã nguồn mở,
+làm freelancer cũng sử dụng và chia sẻ các dự án mã nguồn mở cá nhân, rồi tới công ty Teracy hiện tại
+thì càng đặc biệt chú trọng tới việc chia sẻ, hợp tác và phát triển các dự án mã nguồn mở &ndash; là định
+hướng ngay từ ban đầu khi thành lập công ty.</p>
+
+<p>Tự do nguồn mở là tất yếu. Mình rất thích triết lý của tự do nguồn mở vì nó có những giá trị mà mình
+theo đuổi: tập hợp sức mạnh tập thể để cùng tự do chia sẻ, hợp tác và phát triển.</p>
+
+<p>Theo ước tính thì có khoảng tới 90% các công ty có sử dụng mã nguồn mở. Có nhiều công ty trên thế
+giới tài trợ và trả lương cho nhân viên chỉ phát triển các dự án mã nguồn mở, đặc biệt là các công
+ty lớn như RedHat, Microsoft, Facebook, Docker, Gooogle, Apache&hellip;</p>
+
+<p>Và Docker là một công ty mã nguồn mở, có công nghệ container (Docker) là dự án tự do nguồn mở.</p>
+
+<p>Công nghệ nào sinh ra thì cũng để giải quyết các vấn đề đang tồn tại, giúp phát triển và triển khai
+các sản phẩm/ dịch vụ nhanh hơn để đưa ra thị trường đúng thời điểm.</p>
+
+<p>Bài toán mà công nghệ container giải quyết chính là bài toán ảo hoá ở một tầm cao mới, mọi thứ đều
+dễ dàng và thuận tiện hơn rất nhiều so với công nghệ trước đó, có thể ví đây là cuộc cách mạng ảo hoá
+cũng không có gì là quá.</p>
+
+<p>Tiền thân của Docker là dotCloud &ndash; cung cấp dịch vụ Platform as a Service (dịch vụ nền tảng).</p>
+
+<p>Trong quá trình vận hành dotCloud thì họ thấy cơ hội kinh doanh với công nghệ ảo hoá và họ chuyển
+sang mô hình kinh doanh mã nguồn mở với công nghệ container và đặt tên là Docker (tên sản phẩm và
+cũng là tên công ty).</p>
+
+<p>Docker được giới thiệu vào năm 2013 tại hội nghị PyCon và được đón nhận rất nồng nhiệt.</p>
+
+<p>Đến năm 2015, là 1 trong 20 dự án được yêu thích nhất trên GitHub, khoảng 11000 người tham gia đóng
+góp xây dựng, trong đó có một số công ty đóng góp nhiều như: Docker, Cisco, Google, Huawei, IBM,
+Microsoft và Red Hat&hellip;</p>
+
+<p>Hiện tại ở Việt Nam, Docker cũng được sử dụng khá rộng rãi ở nhiều công ty lớn, nhỏ.</p>
+
+<h3>Vậy Docker cho sinh viên cơ hội gì và cần làm gì để nắm bắt cơ hội đó?</h3>
+
+<p>Có 3 cơ hội mà ta có thể xét tới: lương, số lượng việc làm và cơ hội phát triển bản thân.</p>
+
+<p><strong>Về lương</strong>, theo khảo sát:</p>
+
+<ul>
+<li><p>Lương ở Mỹ: $5.8k-$10k/tháng</p></li>
+<li><p>Lương ở Việt Nam: $800-$4k/tháng, đây là con số khảo sát từ trong nhóm Docker Hà Nội và từ quan sát
+thực tế trên các trang tuyển dụng và các công ty khác.</p></li>
+</ul>
+
+
+<p>Đây là thống kê lương với người đã có kinh nghiệm làm việc khá trở lên.</p>
+
+<p><strong>Về cơ hội việc làm</strong>: nhiều công ty trong nước cần tuyển nhiều vị trí DevOps để làm việc với Docker,
+có thể kể đến như: VCCorp, FPT, VNG, Eway, Vega, TOPICA, Arimo, DEHA Việt Nam, Teracy và nhiều công
+ty khác nữa mà mình chưa có số liệu cụ thể thống kê chi tiết.</p>
+
+<p><strong>Và cơ hội phát triển bản thân</strong>: được phát triển toàn diện khi được học và làm việc với nhiều công nghệ,
+stack khác nhau với vai trò DevOps: tham gia cả quá trình phát triển và vận hành, có cái nhìn toàn
+diện hơn về cách phát triển, quy trình phát triển phần mềm.</p>
+
+<p><strong>Để nắm bắt được cơ hội trên thì sinh viên cần làm gì?</strong></p>
+
+<p>Cơ hội lớn thì thách thức càng lớn.</p>
+
+<p>Thách thức đầu tiên là nguồn nhân lực vừa thừa vừa thiếu. Số lượng sinh viên tốt nghiệp ngành CNTT
+đứng top 10 thế giới nhưng chất lượng đầu ra còn yếu, nhiều công ty gặp rất nhiều khó khăn để tuyển
+dụng được nhân lực chất lượng, có thể đảm nhiệm được công việc.</p>
+
+<p>Thách thức nữa là vì số lượng lớn nên mức độ cạnh tranh gay gắt hơn ở những vị trí thực tập, nhân viên
+mới.</p>
+
+<p>Và để làm việc được với công nghệ container thì đòi hỏi phải có kiến thức đủ rộng và đủ sâu để có thể
+hiểu và đảm nhiệm vai trò phát triển và vận hành cùng lúc được.</p>
+
+<p>Vậy sinh viên cần làm gì để có thể nắm bắt cơ hội này?</p>
+
+<ul>
+<li>Ưu tiên xây dựng cái gốc, nền tảng vững để có thể tiến xa và bay cao nhất có thể.</li>
+<li>Học tập suốt đời để biết thế giới đang ở đâu, đi về đâu và mình đang ở đâu trên thế giới đó; ngừng
+học là tụt hậu.</li>
+<li>Bằng cấp không nói lên được điều gì, chỉ có kinh nghiệm và khả năng thực tế tạo ra sản phẩm mới có
+tiếng nói.</li>
+<li>Hãy đặt mục tiêu làm việc với người nước ngoài, các dự án, công ty nước ngoài: trước mắt là khả
+năng ngoại ngữ đặc biệt quan trọng, ít nhất là phải đọc viết thành thạo.</li>
+<li>Mới bắt đầu, đừng quá đặt nặng vấn đề lương, hãy quan tâm đầu tư hơn cho bản thân, nâng cao giá
+trị bản thân, có môi trường phát triển bản thân thật tốt, đó mới là cơ hội sinh viên nên nắm bắt.
+Không quan trọng là công ty to hay nhỏ hay khởi nghiệp, quan trọng đó phải là nơi bạn được sống
+hết mình, cống hiến hết mình và được phát triển, hoàn thiện bản thân.</li>
+<li>Hãy thử nghiệm thật nhiều và sẽ có nhiều thất bại, đó là điều bình thường, bạn được thất bại trong
+giai đoạn đầu để cố gắng liên tục cho sự thành công của giai đoạn sau, càng về sau càng không được
+thất bại, nhất là các thất bại đã được thử thách trước đó.</li>
+<li>Sinh viên nên tham gia vào các dự án mã nguồn mở để học hỏi và thể hiện bản thân, xây dựng thương
+hiệu, sau khi giá trị bản thân tốt, thương hiệu tốt thì các cơ hội nghề nghiệp tốt luôn tự động tìm
+đến bạn, bạn từ chối không hết, ví dụ như:
+
+<ul>
+<li>Sử dụng, sửa lỗi, phát triển, làm bất kì điều gì để đóng góp cho dự án.</li>
+<li>Nắm bắt các quy trình dự án mã nguồn mở.</li>
+<li>Nắm bắt các công nghệ, công cụ xoay quanh dự án mã nguồn mở.</li>
+<li>Nắm bắt cách hoạt động, giao tiếp với dự án mã nguồn mở.</li>
+</ul>
+</li>
+<li>Hãy bớt ảo tưởng, để đến được đích mong muốn thì phải trải qua nhiều gian khổ, không dành cho tay mơ:
+
+<ul>
+<li>Biết mình đang ở đâu trong thế giới này, thế giới đang ở đâu và sẽ đi về đâu.</li>
+<li>Hãy nhớ lương bạn được trả tỉ lệ thuận với lợi ích, kết quả bạn đem lại.</li>
+<li>Lương không được đo bằng thời gian, công sức bỏ ra để học tập, để bị stress vì điều đó chứng tỏ
+khả năng của bạn còn hạn chế.
+ + Lương càng cao thì áp lực càng lớn, hãy trao đổi thẳng thắn về những khó khăn của mình với công
+   ty để điều chỉnh cho hài hoà, đó là cách khôn ngoan đảm bảo lợi ích cho cả 2 bên.</li>
+</ul>
+</li>
+<li>Chuyên nghiệp ngay từ hôm nay đi:
+
+<ul>
+<li>Chuyên nghiệp là khả năng làm việc hết tâm, hết sức và biết giá trị của mình đem lại cho công ty,
+tổ chức để cân bằng lợi ích giữa 2 bên.</li>
+<li>Chuyên nghiệp là biết nhìn xa trông rộng thay vì chỉ chăm chăm cái lợi trước mắt.
+ + Chuyên nghiệp là đừng răm rắp nghe lời chỉ đạo từ cấp trên, phải biết chủ động, tư duy và phản
+biện để có kết quả tốt nhất có thể.</li>
+<li>Chuyên nghiệp là làm những việc nhỏ nhất với sự cẩn thận và tận tâm nhất.</li>
+<li>Chuyên nghiệp là hãy đảm bảo hoàn thành công việc với kết quả tốt nhất, vượt ngoài mong đợi của
+lãnh đạo, khách hàng.</li>
+<li>Đó là những biểu hiện của sự chuyên nghiệp. Khi ứng tuyển vào các công ty mà bạn có ghi muốn làm
+   việc ở môi trường chuyên nghiệp thì đây chính là những đặc điểm của sự chuyên nghiệp đó mà bạn
+cần chuyên nghiệp ngay từ bây giờ.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Cơ hội rất lớn, thách thức cực nhiều và những hành động cụ thể rất cần. Mà để đến đích có nhiều con
+đường, con đường nào là tốt nhất, ít đau thương nhất? Chỉ có những con người đã trải qua đau thương
+mới giúp trả lời câu hỏi này. Vậy tìm những người này ở đâu để có thể giúp các bạn sinh viên?</p>
+
+<p>Đó là nhóm Docker Hà Nội, ở nơi đây có các anh chị làm ở nhiều công ty khác nhau đầy kinh nghiệm sẽ
+giúp các bạn đi trên con đường ít đau thương nhất để tới đích. Các anh chị đầy nhiệt huyết muốn dìu
+dắt các em sinh viên để cùng phát triển, xây dựng cộng đồng lớn mạnh hơn.</p>
+
+<p>Đó là cơ hội nghề nghiệp trước mắt mà các bạn sinh viên nào quan tâm thì hãy nắm bắt lấy, đừng để
+mất cơ hội.</p>
+
+<p>Hãy tham gia và góp ý cho nhóm Docker Hà Nội ngày càng tốt hơn, cộng đồng lớn mạnh hơn, giúp đỡ nhau
+phát triển hơn.</p>
+
+<h3>Tóm lại các bạn sinh viên cần nhớ:</h3>
+
+<ul>
+<li>Phần mềm tự do nguồn mở là tất yếu, trong đó có công nghệ container.</li>
+<li>Nhiều cty lớn nhỏ ở Việt Nam và trên thế giới đã ứng dụng triển khai nhiều dự án trên công nghệ
+container (Docker).</li>
+<li>Sinh viên cần biết những cơ hội, thách thức và hành động cụ thể để nắm bắt cơ hội, hãy bớt ảo tưởng
+và chuyên nghiệp ngay từ hôm nay.</li>
+<li>Để đi tới đích với con đường tốt nhất, ít đau thương nhất thì hãy tham gia Docker Hà Nội.</li>
+</ul>
+
+
+<p>Hy vọng những chia sẻ vừa rồi có ích cho các bạn, có thể giúp các bạn định hướng nghề nghiệp tốt hơn,
+nắm bắt cơ hội tốt hơn.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://sfd2017.vfossa.vn/<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to use Docker in Docker (DinD) and Docker outside of Docker (DooD) for local CI testing]]></title>
@@ -2400,214 +2595,6 @@ Giai đoạn tạo ra ý tưởng có hai phần rõ ràng:</p>
 <p>(HẾT!)</p>
 
 <p>Dịch từ: <a href="https://medium.com/@demianborba/design-thinking-a-manual-for-innovation-e0576b34eff6#.9ae4fd5dk">Design thinking: A manual for innovation</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev - the only truly universal productive development platform with Docker on macOS, Linux and Windows]]></title>
-    <link href="http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/"/>
-    <updated>2016-12-20T11:13:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows</id>
-    <content type="html"><![CDATA[<p>Docker is great to work with, it solves a lot of problems on development, distribution, and production
-deployment.</p>
-
-<p>Why Docker?  You can find the answer here:</p>
-
-<ul>
-<li><a href="http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/">http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/</a></li>
-<li><a href="http://thenewstack.io/hypervisors-container-era/">http://thenewstack.io/hypervisors-container-era/</a></li>
-<li><a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></li>
-</ul>
-
-
-<p>Docker works great on Linux, however, it&rsquo;s very challenging to make it work universal and consistent on
-Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from
-Docker community, too. However, we haven&rsquo;t achieved that stage yet (until <code>teracy-dev</code>).</p>
-
-<!-- more -->
-
-
-<p>These are some of the problems that Docker community has to deal with on Mac and Windows:</p>
-
-<ul>
-<li><p>No consistent universal development environment and workflow on Linux, Windows, Mac. This is a very
-important factor for team collaboration so that anyone from any OS platforms could collaborate and help
-each other with no differences in the development environment.</p></li>
-<li><p>Mounted volumes on VirtualBox use vboxsf, which is extremely slow. This is true for Boot2Docker and
-Vagrant default file sync mechanism on Virtualbox.</p></li>
-<li><p>Native Docker applications offered by Docker:</p>
-
-<ul>
-<li>Slow on Mac: <a href="https://github.com/docker/for-mac/issues/77">https://github.com/docker/for-mac/issues/77</a></li>
-<li>Only recent latest versions of Window 10 (&ldquo;Build 10586 or later&rdquo;) are supported</li>
-<li>Slow on Windows: <a href="https://github.com/docker/for-win/issues/188">https://github.com/docker/for-win/issues/188</a></li>
-</ul>
-</li>
-<li><p>File watching is broken on VirtualBox since vboxsf does not trigger the inotify file watching
-mechanism. <code>nodemon</code>, hello?</p></li>
-</ul>
-
-
-<p>There are a lot of Docker community projects trying to solve those problems:</p>
-
-<ul>
-<li><a href="https://github.com/brikis98/docker-osx-dev">https://github.com/brikis98/docker-osx-dev</a></li>
-<li><a href="https://github.com/blinkreaction/boot2docker-vagrant">https://github.com/blinkreaction/boot2docker-vagrant</a></li>
-<li><a href="https://github.com/codekitchen/dinghy">https://github.com/codekitchen/dinghy</a></li>
-<li><a href="https://github.com/leighmcculloch/docker-unison">https://github.com/leighmcculloch/docker-unison</a></li>
-<li><a href="https://github.com/gansbrest/hodor">https://github.com/gansbrest/hodor</a></li>
-<li><a href="https://github.com/adlogix/docker-machine-nfs">https://github.com/adlogix/docker-machine-nfs</a></li>
-<li>others&hellip;</li>
-</ul>
-
-
-<p>However, those existing projects do not really resolve all the problems or do not reflect
-our vision for a productive development platform.</p>
-
-<p>You can check out our <a href="http://blog.teracy.com/2016/08/19/teracy-dev-vision/">vision for teracy-dev</a> for such the
-productive development platform.</p>
-
-<p>That is the reason why we created <code>teracy-dev</code>. We&rsquo;ve been using and loving it for more than 3 years
-and counting.</p>
-
-<p><code>teracy-dev</code> reflects our vision for a truly universal productive development platform that anyone can
-use to develop software easily. It&rsquo;s very easy to customize any OS that you can use
-for your VM. It brings development and production environment closer and closer.</p>
-
-<p>It is very important for a distributed team like us to work with everyone from different teams all
-over the world on different projects with different stacks and <code>teracy-dev</code> helps us a lot.</p>
-
-<p>Moreover, <code>teracy-dev</code> is not tightly coupled with anything, you&rsquo;re free to choose anything to build
-up your development VM machine. You can choose different OS platforms, choose different software packages to
-be automatically installed with the help of different configuration management tools. It&rsquo;s up
-to you to choose anything other than default settings.</p>
-
-<p>With default settings, <code>teracy-dev</code> chooses Ubuntu as the base OS with <code>docker</code> and <code>docker-compose</code>
-installed to start developing software with Docker right away after <code>$ vagrant up</code>.</p>
-
-<p>teracy-dev v0.5.0 is leveraging Docker for development as we believe in the future of containers
-and Docker.</p>
-
-<p>Let&rsquo;s have some comparisons between <code>teracy-dev</code> and other solutions:</p>
-
-<table>
-<thead>
-<tr>
-<th>   Criteria                         </th>
-<th> teracy-dev </th>
-<th> docker-osx-dev </th>
-<th> Docker Toolbox </th>
-<th> Docker native app</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>same workflow on Linux, Mac, Windows</td>
-<td>    ✅      </td>
-<td>       ❌       </td>
-<td>     ❌        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>native speed on mounted volumes     </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ❌        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>2-way file sync                     </td>
-<td>    ✅      </td>
-<td>       ❌       </td>
-<td>     ✅        </td>
-<td>       ✅          </td>
-</tr>
-<tr>
-<td>file watching (inotify)             </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ❌        </td>
-<td>       ✅          </td>
-</tr>
-<tr>
-<td>open source                         </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ✅        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>customization                       </td>
-<td>    ✅      </td>
-<td>       🚫       </td>
-<td>     🚫        </td>
-<td>       ❌          </td>
-</tr>
-</tbody>
-</table>
-
-
-<p>✅: fully support</p>
-
-<p>❌: no or partial support</p>
-
-<p>🚫: can be achieved but not encouraged</p>
-
-<p>Let me explain the criteria:</p>
-
-<ul>
-<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows.
-Docker native app only supports >= Windows 10, that&rsquo;s why it&rsquo;s marked as ❌.</p></li>
-<li><p>&ldquo;native speed on mounted volumes&rdquo;: the speed should be as fast and native as on Linux</p></li>
-<li><p>&ldquo;2-way file sync&rdquo;: for syncing back and forth on mounted volumes, this is mandatory for development</p></li>
-<li><p>&ldquo;file watching (inotify)&rdquo;: for auto reload when files change</p></li>
-<li><p>&ldquo;customization&rdquo;: you have full control and are encouraged to change anything that you want to
-suit your need, no hidden stuff, no lock-in and can still upgrade seamlessly.</p></li>
-</ul>
-
-
-<p>Let&rsquo;s see what the same workflow means when developing a simple hello world <code>nodejs</code> application
-from scratch with teracy-dev by watching the following videos:</p>
-
-<p>On Linux (Ubuntu):</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/ze8p9imprgk" frameborder="0" allowfullscreen></iframe>
-
-
-<p>On Windows:</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/2200zvxIdAs" frameborder="0" allowfullscreen></iframe>
-
-
-<p>On macOS:</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/XF-FQQKG8PA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>They all contain the same steps, that&rsquo;s the meaning of the &ldquo;same workflow&rdquo;.</p>
-
-<p><code>teracy-dev</code> is not perfect, though. There are some improvements that we&rsquo;d like to address.</p>
-
-<p>The first thing we&rsquo;d like to improve is to reduce the setup time. It takes time (around 20-30 mins)
-to download the vagrant box (Ubuntu 16.04) for the first time. This is for the first time only, however.
-After the first time, you can destroy and provision the same VM within some minutes. We could use
-some other smaller boxes (for example, boot2docker base box) but we&rsquo;d like to stick to the most popular
-Linux OS that is widely used in production. We try to make development and production environment as
-close as possible. This is by default, you can choose different base boxes as you wish.</p>
-
-<p><code>teracy-dev</code> v0.5.0 is under preview stage, we need to add more documentation and get more community
-feedback.</p>
-
-<p><code>teracy-dev</code> is created to give back to open source community as we learn and get a lot from our amazing
-open source community.</p>
-
-<p>And we need you, please try and let us know your feedback and we&rsquo;ll together fix any problems.</p>
-
-<p>You should get started with <code>teracy-dev</code> here: <a href="http://dev.teracy.org/docs/develop/getting_started.html">http://dev.teracy.org/docs/develop/getting_started.html</a></p>
-
-<p>In summary, <code>teracy-dev</code> brings <code>Docker</code> closer to <code>Vagrant</code> = love.</p>
-
-<p>Thank you and happy hacking with <a href="https://github.com/teracyhq/dev">teracy-dev</a>!</p>
 ]]></content>
   </entry>
   
