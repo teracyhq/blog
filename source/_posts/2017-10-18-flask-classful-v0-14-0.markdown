@@ -87,7 +87,7 @@ You should check out the changelog and the docs for more detailed information:
 Lessons learned?
 ----------------
 
-We released v0.14.0 without breaking changes, notice and migration docs which hurt our users
+We released v0.14.0 without breaking changes notice and migration docs which hurt our users
 from upgrading. From now on, we will avoid introducing breaking changes but should add deprecated
 warnings before breaking things for the next version releases.
 
