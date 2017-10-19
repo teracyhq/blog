@@ -18,15 +18,17 @@ module Jekyll
   class VideoTag < Liquid::Tag
     @video = nil
     @poster = ''
+    @preload = 'none'
     @height = ''
     @width = ''
 
     def initialize(tag_name, markup, tokens)
-      if markup =~ /(https?:\S+)(\s+(https?:\S+))?(\s+(https?:\S+))?(\s+(\d+)\s(\d+))?(\s+(https?:\S+))?/i
+      if markup =~ /(\S+)(\s+(https?:\S+))?(\s+(https?:\S+))?(\s+(\d+)\s(\d+)(\s(\S+))?)?(\s+(https?:\S+))?/i
         @video  = [$1, $3, $5].compact
         @width  = $7
         @height = $8
-        @poster = $10
+        @preload = $10
+        @poster = $12
       end
       super
     end
@@ -36,10 +38,11 @@ module Jekyll
       type = {
         'mp4' => "type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"'",
         'ogv' => "type='video/ogg; codecs=theora, vorbis'",
-        'webm' => "type='video/webm; codecs=vp8, vorbis'"
+        'webm' => "type='video/webm; codecs=vp8, vorbis'",
+        'mov' => "type='video/mp4'",
       }
       if @video.size > 0
-        video =  "<video width='#{@width}' height='#{@height}' preload='none' controls poster='#{@poster}'>"
+        video =  "<video width='#{@width}' height='#{@height}' preload='#{@preload}' controls poster='#{@poster}'>"
         @video.each do |v|
           t = v.match(/([^\.]+)$/)[1]
           video += "<source src='#{v}' #{type[t]}>"
