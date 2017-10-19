@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>flask-classful v0.14.0 - Teracy's Blog</title>
+  
+  <meta name="author" content="hoatle">
+
+  
+  <meta name="description" content="flask-classful v0.14.0 release announcement">
+  <meta name="keywords" content="flask-classful, flask-classy, v0.14.0, release, announcement">
+
+  
+
+  
+
+  <meta property="og:url" content="http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="flask-classful v0.14.0 - Teracy's Blog" />
+  <meta property="og:description" content="flask-classful v0.14.0 release announcement" />
+
+  <meta property="og:image" content="http://blog.teracy.com/images/teracy_logo.png" />
+
+
+
+  <meta property="fb:app_id" content="523191011095012" />
+
+
+
+  <meta property="fb:admins" content="627914300" />
+
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@teracyhq" />
+  <meta name="twitter:creator" content="@hoatle" />
+  <meta name="twitter:title" content="flask-classful v0.14.0 - Teracy's Blog" />
+  <meta name="twitter:description" content="flask-classful v0.14.0 release announcement" />
+
+  <meta name="twitter:image:src" content="http://blog.teracy.com/images/teracy_logo.png" />
+
+  <meta name="twitter:domain" content="http://blog.teracy.com" />
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Teracy's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="/javascripts/libs/jquery.browser.min.js" type="text/javascript"></script>
+<script src="/javascripts/font.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42868657-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Teracy's Blog</a></h1>
+  
+    <h2>Get experience shared!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.teracy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/categories/news/">News</a></li>
+  <li><a href="/categories/projects/">Projects</a></li>
+  <li><a href="/categories/how-to/">How-to</a></li>
+  <li><a href="/archives/">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article itemscope itemtype="http://schema.org/Article" class="hentry" role="article">
+  
+  <header>
+    
+      <h1 itemprop="name" class="entry-title">Flask-classful v0.14.0</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2017-10-18T04:56:00+00:00" datetime="2017-10-18T04:56:00+00:00" pubdate data-updated="true">Oct 18<span>th</span>, 2017</time>
+        
+      </p>
+    
+  </header>
+
+
+<div itemprop="articleBody" class="entry-content"><p><code>Flask-Classful</code> v0.14.0 is the most significant release version since we decided to fork <code>Flask-Classy</code>
+in August 2015 to continue the project development. To be honest, this release also has the most
+community contribution yet. I&rsquo;d like to take this opportunity to thank everyone involved, without
+your support and contribution, releasing this version is impossible.</p>
+
+<!-- more -->
+
+
+<h2>Community support</h2>
+
+<p>Thank you <a href="https://github.com/apiguy/">@apiguy</a> for creating such a beautiful library.</p>
+
+<p>Thank you, everyone who contributed to the project since the fork:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git log 48b7b030f16506e6eea9e217f5aa004b2cf2472f.. --format="%aN &lt;%aE&gt;" --reverse | sort | uniq
+</span><span class='line'>Andrew Roberts &lt;adroberts@...&gt;
+</span><span class='line'>Chris McNabb &lt;raizyr@...&gt;
+</span><span class='line'>Eli Gundry &lt;eligundry@...&gt;
+</span><span class='line'>Freedom Dumlao &lt;freedomdumlao@...&gt;
+</span><span class='line'>Hayden Chudy &lt;hjc1710@...&gt;
+</span><span class='line'>Hoat Le &lt;hoatle@...&gt;
+</span><span class='line'>Matt Billenstein &lt;matt@...&gt;
+</span><span class='line'>Nick Phillips &lt;nsphilli@...&gt;
+</span><span class='line'>Niklas B &lt;niklas@...&gt;
+</span><span class='line'>Stephane Rufer &lt;stephane.rufer@...&gt;
+</span><span class='line'>blurrcat &lt;blurrcat@...&gt;
+</span><span class='line'>hieptq &lt;hieptq8888@...&gt;
+</span><span class='line'>slhawkins &lt;slhawkins@...&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And thank you <a href="https://github.com/hjc">@hjc</a> for your helpful feedbacks and accepting
+the committer invitation. I hope that we will have more and more committers like you to join the
+project.</p>
+
+<p>Thank you to everyone who has been using the library for your everyday projects, creating issues and
+feedbacks to make the library better.</p>
+
+<h2>What&rsquo;s new?</h2>
+
+<p>So what&rsquo;s new with this release?</p>
+
+<p>We have released <code>Flask-Classful</code> v0.6.11, v0.7.0, v0.7.1, v0.8.0, v0.9.0, v0.10.0, v0.11.0, v0.12.0,
+v0.13.0, v0.13.1 since the fork, but mostly for bug fixes and small improvements.</p>
+
+<p>v0.14.0 introduces a lot of exciting changes that you&rsquo;d love to use it right away. These are some of
+the most exciting changes:</p>
+
+<ul>
+<li>Type hints support for py3</li>
+<li><code>base_class</code> introduced</li>
+<li>Add options passing to <code>werkzeug.Routing.Rule</code> from register function</li>
+<li>Enable using custom decorators in FlaskView</li>
+<li>Should allow specifying excluded methods from becoming routes</li>
+<li>Better representations</li>
+<li>Docker workflow along with teracy-dev for better dev setup</li>
+</ul>
+
+
+<p>You should check out the changelog and the docs for more detailed information:</p>
+
+<ul>
+<li><p>Changelog: <a href="https://github.com/teracyhq/flask-classful/blob/develop/CHANGELOG.md#2017-10-05-hoat-le-hoatleteracycom">https://github.com/teracyhq/flask-classful/blob/develop/CHANGELOG.md#2017-10-05-hoat-le-hoatleteracycom</a></p></li>
+<li><p>Docs: <a href="http://flask-classful.teracy.org/">http://flask-classful.teracy.org/</a></p></li>
+</ul>
+
+
+<h2>Lessons learned?</h2>
+
+<p>We released v0.14.0 without breaking changes notice and migration docs which hurt our users
+from upgrading. From now on, we will avoid introducing breaking changes but should add deprecated
+warnings before breaking things for the next version releases.</p>
+
+<p>v0.14.1 is on its way to fix this problem by updating the changelog and docs.</p>
+
+<p>So rest assured and enjoy the release :&ndash;).</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>We created a roadmap release for v0.15.0 and we&rsquo;re waiting for the community feedbacks and ideas for
+it.</p>
+
+<p>We will add more sample projects, some projects with integration with other
+popular libraries to create top-notch REST APIs. If you have such projects to be promoted,
+please let us know then.</p>
+
+<p>Enjoy and happy hacking!</p>
+</div>
+
+
+  <footer>
+    
+      <div class="revision">
+    <hr/>
+    <p><strong>Latest Change Log:</strong></p>
+    <ul><li><strong>Thu Oct 19 03:31:15 2017</strong><br/>Update 2017-10-18-flask-classful-v0-14-0.markdown
+</li><li><strong>Thu Oct 19 03:15:00 2017</strong><br/>Update 2017-10-18-flask-classful-v0-14-0.markdown
+</li><li><strong>Wed Oct 18 12:16:04 2017</strong><br/>@ #129 | flask-classful v0.14.0 release announcement
+</li></ul><a href=https://github.com/teracyhq/blog/commits/HEAD/source/_posts/2017-10-18-flask-classful-v0-14-0.markdown target=_blank>View all changes on Github</a>
+    <hr/>
+</div>
+
+    
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn">hoatle</span></span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time itemprop="datePublished" content="2017-10-18T04:56:00+00:00" datetime="2017-10-18T04:56:00+00:00" pubdate data-updated="true">Oct 18<span>th</span>, 2017</time>
+      
+
+<span class="categories">posted in
+  
+    <a class='category' href='/categories/en/'>en</a>, <a class='category' href='/categories/news/'>news</a>, <a class='category' href='/categories/projects/'>projects</a>
+  
+</span>
+
+
+      
+
+<span class="tags">tagged with
+  
+    <a class='tag' href='/tags/flask/'>flask</a>, <a class='tag' href='/tags/flask-classful/'>flask-classful</a>, <a class='tag' href='/tags/python/'>python</a>
+  
+</span>
+
+
+    </p>
+    
+      
+        
+            
+            
+        
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+<div class="cc-license">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+        <img alt="Creative Commons Attribution-ShareAlike 3.0 Unported License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a><br />
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+
+    
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/" data-via="teracyhq" data-counturl="http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-href="http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/" data-send="true" data-width="450"
+         data-show-faces="false">
+     </div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2017/09/26/co-hoi-nghe-nghiep-voi-cong-nghe-container-docker/" title="Previous Post: Cơ hội nghề nghiệp với công nghệ container (Docker)">&laquo; Cơ hội nghề nghiệp với công nghệ container (Docker)</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+    <h1>Like Us</h1>
+    <div class="fb-like-box"
+        data-href="https://www.facebook.com/teracyhq"
+        data-width="260"
+        data-show-faces=""
+        data-header="false"
+        data-stream=""
+        data-show-border="false">
+    </div>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2017/10/18/flask-classful-v0-14-0/">Flask-classful v0.14.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/09/26/co-hoi-nghe-nghiep-voi-cong-nghe-container-docker/">Cơ Hội Nghề Nghiệp Với Công Nghệ Container (Docker)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/09/11/how-to-use-docker-in-docker-dind-and-docker-outside-of-docker-dood-for-local-ci-testing/">How to Use Docker in Docker (DinD) and Docker Outside of Docker (DooD) for Local CI Testing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/08/26/kubernetes-stack-v0-1-0-release/">Kubernetes-stack v0.1.0 Release</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/07/27/teracy-dev-v0-5-0-c1-release/">Teracy-dev v0.5.0-c1 Release</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Fork Our Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/teracyhq">@teracyhq</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'teracyhq',
+            count: 3,
+            skip_forks: true,
+            skip_repos: [ "blog", "teracy-dev", "teracy-official.github.io", "django-tutorial" ],
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - Teracy -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'teracy-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/';
+        var disqus_url = 'http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=625149054184531";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

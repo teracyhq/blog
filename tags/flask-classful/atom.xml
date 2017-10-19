@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: flask-classful | Teracy's Blog]]></title>
+  <link href="http://blog.teracy.com/tags/flask-classful/atom.xml" rel="self"/>
+  <link href="http://blog.teracy.com/"/>
+  <updated>2017-10-19T04:12:43+00:00</updated>
+  <id>http://blog.teracy.com/</id>
+  <author>
+    <name><![CDATA[Teracy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[flask-classful v0.14.0]]></title>
+    <link href="http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/"/>
+    <updated>2017-10-18T04:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0</id>
+    <content type="html"><![CDATA[<p><code>Flask-Classful</code> v0.14.0 is the most significant release version since we decided to fork <code>Flask-Classy</code>
+in August 2015 to continue the project development. To be honest, this release also has the most
+community contribution yet. I&rsquo;d like to take this opportunity to thank everyone involved, without
+your support and contribution, releasing this version is impossible.</p>
+
+<!-- more -->
+
+
+<h2>Community support</h2>
+
+<p>Thank you <a href="https://github.com/apiguy/">@apiguy</a> for creating such a beautiful library.</p>
+
+<p>Thank you, everyone who contributed to the project since the fork:</p>
+
+<p><code>
+$ git log 48b7b030f16506e6eea9e217f5aa004b2cf2472f.. --format="%aN &lt;%aE&gt;" --reverse | sort | uniq
+Andrew Roberts &lt;adroberts@...&gt;
+Chris McNabb &lt;raizyr@...&gt;
+Eli Gundry &lt;eligundry@...&gt;
+Freedom Dumlao &lt;freedomdumlao@...&gt;
+Hayden Chudy &lt;hjc1710@...&gt;
+Hoat Le &lt;hoatle@...&gt;
+Matt Billenstein &lt;matt@...&gt;
+Nick Phillips &lt;nsphilli@...&gt;
+Niklas B &lt;niklas@...&gt;
+Stephane Rufer &lt;stephane.rufer@...&gt;
+blurrcat &lt;blurrcat@...&gt;
+hieptq &lt;hieptq8888@...&gt;
+slhawkins &lt;slhawkins@...&gt;
+</code></p>
+
+<p>And thank you <a href="https://github.com/hjc">@hjc</a> for your helpful feedbacks and accepting
+the committer invitation. I hope that we will have more and more committers like you to join the
+project.</p>
+
+<p>Thank you to everyone who has been using the library for your everyday projects, creating issues and
+feedbacks to make the library better.</p>
+
+<h2>What&rsquo;s new?</h2>
+
+<p>So what&rsquo;s new with this release?</p>
+
+<p>We have released <code>Flask-Classful</code> v0.6.11, v0.7.0, v0.7.1, v0.8.0, v0.9.0, v0.10.0, v0.11.0, v0.12.0,
+v0.13.0, v0.13.1 since the fork, but mostly for bug fixes and small improvements.</p>
+
+<p>v0.14.0 introduces a lot of exciting changes that you&rsquo;d love to use it right away. These are some of
+the most exciting changes:</p>
+
+<ul>
+<li>Type hints support for py3</li>
+<li><code>base_class</code> introduced</li>
+<li>Add options passing to <code>werkzeug.Routing.Rule</code> from register function</li>
+<li>Enable using custom decorators in FlaskView</li>
+<li>Should allow specifying excluded methods from becoming routes</li>
+<li>Better representations</li>
+<li>Docker workflow along with teracy-dev for better dev setup</li>
+</ul>
+
+
+<p>You should check out the changelog and the docs for more detailed information:</p>
+
+<ul>
+<li><p>Changelog: <a href="https://github.com/teracyhq/flask-classful/blob/develop/CHANGELOG.md#2017-10-05-hoat-le-hoatleteracycom">https://github.com/teracyhq/flask-classful/blob/develop/CHANGELOG.md#2017-10-05-hoat-le-hoatleteracycom</a></p></li>
+<li><p>Docs: <a href="http://flask-classful.teracy.org/">http://flask-classful.teracy.org/</a></p></li>
+</ul>
+
+
+<h2>Lessons learned?</h2>
+
+<p>We released v0.14.0 without breaking changes notice and migration docs which hurt our users
+from upgrading. From now on, we will avoid introducing breaking changes but should add deprecated
+warnings before breaking things for the next version releases.</p>
+
+<p>v0.14.1 is on its way to fix this problem by updating the changelog and docs.</p>
+
+<p>So rest assured and enjoy the release :&ndash;).</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>We created a roadmap release for v0.15.0 and we&rsquo;re waiting for the community feedbacks and ideas for
+it.</p>
+
+<p>We will add more sample projects, some projects with integration with other
+popular libraries to create top-notch REST APIs. If you have such projects to be promoted,
+please let us know then.</p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
+  
+</feed>

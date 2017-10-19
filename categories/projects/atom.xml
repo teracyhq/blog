@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Teracy's Blog]]></title>
   <link href="http://blog.teracy.com/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.teracy.com/"/>
-  <updated>2017-09-29T03:48:04+00:00</updated>
+  <updated>2017-10-19T04:12:43+00:00</updated>
   <id>http://blog.teracy.com/</id>
   <author>
     <name><![CDATA[Teracy]]></name>
@@ -12,6 +12,101 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[flask-classful v0.14.0]]></title>
+    <link href="http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0/"/>
+    <updated>2017-10-18T04:56:00+00:00</updated>
+    <id>http://blog.teracy.com/2017/10/18/flask-classful-v0-14-0</id>
+    <content type="html"><![CDATA[<p><code>Flask-Classful</code> v0.14.0 is the most significant release version since we decided to fork <code>Flask-Classy</code>
+in August 2015 to continue the project development. To be honest, this release also has the most
+community contribution yet. I&rsquo;d like to take this opportunity to thank everyone involved, without
+your support and contribution, releasing this version is impossible.</p>
+
+<!-- more -->
+
+
+<h2>Community support</h2>
+
+<p>Thank you <a href="https://github.com/apiguy/">@apiguy</a> for creating such a beautiful library.</p>
+
+<p>Thank you, everyone who contributed to the project since the fork:</p>
+
+<p><code>
+$ git log 48b7b030f16506e6eea9e217f5aa004b2cf2472f.. --format="%aN &lt;%aE&gt;" --reverse | sort | uniq
+Andrew Roberts &lt;adroberts@...&gt;
+Chris McNabb &lt;raizyr@...&gt;
+Eli Gundry &lt;eligundry@...&gt;
+Freedom Dumlao &lt;freedomdumlao@...&gt;
+Hayden Chudy &lt;hjc1710@...&gt;
+Hoat Le &lt;hoatle@...&gt;
+Matt Billenstein &lt;matt@...&gt;
+Nick Phillips &lt;nsphilli@...&gt;
+Niklas B &lt;niklas@...&gt;
+Stephane Rufer &lt;stephane.rufer@...&gt;
+blurrcat &lt;blurrcat@...&gt;
+hieptq &lt;hieptq8888@...&gt;
+slhawkins &lt;slhawkins@...&gt;
+</code></p>
+
+<p>And thank you <a href="https://github.com/hjc">@hjc</a> for your helpful feedbacks and accepting
+the committer invitation. I hope that we will have more and more committers like you to join the
+project.</p>
+
+<p>Thank you to everyone who has been using the library for your everyday projects, creating issues and
+feedbacks to make the library better.</p>
+
+<h2>What&rsquo;s new?</h2>
+
+<p>So what&rsquo;s new with this release?</p>
+
+<p>We have released <code>Flask-Classful</code> v0.6.11, v0.7.0, v0.7.1, v0.8.0, v0.9.0, v0.10.0, v0.11.0, v0.12.0,
+v0.13.0, v0.13.1 since the fork, but mostly for bug fixes and small improvements.</p>
+
+<p>v0.14.0 introduces a lot of exciting changes that you&rsquo;d love to use it right away. These are some of
+the most exciting changes:</p>
+
+<ul>
+<li>Type hints support for py3</li>
+<li><code>base_class</code> introduced</li>
+<li>Add options passing to <code>werkzeug.Routing.Rule</code> from register function</li>
+<li>Enable using custom decorators in FlaskView</li>
+<li>Should allow specifying excluded methods from becoming routes</li>
+<li>Better representations</li>
+<li>Docker workflow along with teracy-dev for better dev setup</li>
+</ul>
+
+
+<p>You should check out the changelog and the docs for more detailed information:</p>
+
+<ul>
+<li><p>Changelog: <a href="https://github.com/teracyhq/flask-classful/blob/develop/CHANGELOG.md#2017-10-05-hoat-le-hoatleteracycom">https://github.com/teracyhq/flask-classful/blob/develop/CHANGELOG.md#2017-10-05-hoat-le-hoatleteracycom</a></p></li>
+<li><p>Docs: <a href="http://flask-classful.teracy.org/">http://flask-classful.teracy.org/</a></p></li>
+</ul>
+
+
+<h2>Lessons learned?</h2>
+
+<p>We released v0.14.0 without breaking changes notice and migration docs which hurt our users
+from upgrading. From now on, we will avoid introducing breaking changes but should add deprecated
+warnings before breaking things for the next version releases.</p>
+
+<p>v0.14.1 is on its way to fix this problem by updating the changelog and docs.</p>
+
+<p>So rest assured and enjoy the release :&ndash;).</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>We created a roadmap release for v0.15.0 and we&rsquo;re waiting for the community feedbacks and ideas for
+it.</p>
+
+<p>We will add more sample projects, some projects with integration with other
+popular libraries to create top-notch REST APIs. If you have such projects to be promoted,
+please let us know then.</p>
+
+<p>Enjoy and happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[kubernetes-stack v0.1.0 Release]]></title>
@@ -218,214 +313,6 @@ projects from today by getting started with <a href="http://dev.teracy.org/docs/
 <a href="https://github.com/teracyhq/dev/issues">https://github.com/teracyhq/dev/issues</a></p>
 
 <p>Enjoy and happy hacking!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[teracy-dev - the only truly universal productive development platform with Docker on macOS, Linux and Windows]]></title>
-    <link href="http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows/"/>
-    <updated>2016-12-20T11:13:00+00:00</updated>
-    <id>http://blog.teracy.com/2016/12/20/teracy-dev-the-only-truly-universal-productive-development-platform-with-docker-on-macos-linux-and-windows</id>
-    <content type="html"><![CDATA[<p>Docker is great to work with, it solves a lot of problems on development, distribution, and production
-deployment.</p>
-
-<p>Why Docker?  You can find the answer here:</p>
-
-<ul>
-<li><a href="http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/">http://thenewstack.io/why-did-docker-catch-on-quickly-and-why-is-it-so-interesting/</a></li>
-<li><a href="http://thenewstack.io/hypervisors-container-era/">http://thenewstack.io/hypervisors-container-era/</a></li>
-<li><a href="https://blog.codeship.com/why-docker/">https://blog.codeship.com/why-docker/</a></li>
-</ul>
-
-
-<p>Docker works great on Linux, however, it&rsquo;s very challenging to make it work universal and consistent on
-Mac and Windows. There are lots of efforts to solve this problem, from Docker themselves and from
-Docker community, too. However, we haven&rsquo;t achieved that stage yet (until <code>teracy-dev</code>).</p>
-
-<!-- more -->
-
-
-<p>These are some of the problems that Docker community has to deal with on Mac and Windows:</p>
-
-<ul>
-<li><p>No consistent universal development environment and workflow on Linux, Windows, Mac. This is a very
-important factor for team collaboration so that anyone from any OS platforms could collaborate and help
-each other with no differences in the development environment.</p></li>
-<li><p>Mounted volumes on VirtualBox use vboxsf, which is extremely slow. This is true for Boot2Docker and
-Vagrant default file sync mechanism on Virtualbox.</p></li>
-<li><p>Native Docker applications offered by Docker:</p>
-
-<ul>
-<li>Slow on Mac: <a href="https://github.com/docker/for-mac/issues/77">https://github.com/docker/for-mac/issues/77</a></li>
-<li>Only recent latest versions of Window 10 (&ldquo;Build 10586 or later&rdquo;) are supported</li>
-<li>Slow on Windows: <a href="https://github.com/docker/for-win/issues/188">https://github.com/docker/for-win/issues/188</a></li>
-</ul>
-</li>
-<li><p>File watching is broken on VirtualBox since vboxsf does not trigger the inotify file watching
-mechanism. <code>nodemon</code>, hello?</p></li>
-</ul>
-
-
-<p>There are a lot of Docker community projects trying to solve those problems:</p>
-
-<ul>
-<li><a href="https://github.com/brikis98/docker-osx-dev">https://github.com/brikis98/docker-osx-dev</a></li>
-<li><a href="https://github.com/blinkreaction/boot2docker-vagrant">https://github.com/blinkreaction/boot2docker-vagrant</a></li>
-<li><a href="https://github.com/codekitchen/dinghy">https://github.com/codekitchen/dinghy</a></li>
-<li><a href="https://github.com/leighmcculloch/docker-unison">https://github.com/leighmcculloch/docker-unison</a></li>
-<li><a href="https://github.com/gansbrest/hodor">https://github.com/gansbrest/hodor</a></li>
-<li><a href="https://github.com/adlogix/docker-machine-nfs">https://github.com/adlogix/docker-machine-nfs</a></li>
-<li>others&hellip;</li>
-</ul>
-
-
-<p>However, those existing projects do not really resolve all the problems or do not reflect
-our vision for a productive development platform.</p>
-
-<p>You can check out our <a href="/2016/08/19/teracy-dev-vision/">vision for teracy-dev</a> for such the
-productive development platform.</p>
-
-<p>That is the reason why we created <code>teracy-dev</code>. We&rsquo;ve been using and loving it for more than 3 years
-and counting.</p>
-
-<p><code>teracy-dev</code> reflects our vision for a truly universal productive development platform that anyone can
-use to develop software easily. It&rsquo;s very easy to customize any OS that you can use
-for your VM. It brings development and production environment closer and closer.</p>
-
-<p>It is very important for a distributed team like us to work with everyone from different teams all
-over the world on different projects with different stacks and <code>teracy-dev</code> helps us a lot.</p>
-
-<p>Moreover, <code>teracy-dev</code> is not tightly coupled with anything, you&rsquo;re free to choose anything to build
-up your development VM machine. You can choose different OS platforms, choose different software packages to
-be automatically installed with the help of different configuration management tools. It&rsquo;s up
-to you to choose anything other than default settings.</p>
-
-<p>With default settings, <code>teracy-dev</code> chooses Ubuntu as the base OS with <code>docker</code> and <code>docker-compose</code>
-installed to start developing software with Docker right away after <code>$ vagrant up</code>.</p>
-
-<p>teracy-dev v0.5.0 is leveraging Docker for development as we believe in the future of containers
-and Docker.</p>
-
-<p>Let&rsquo;s have some comparisons between <code>teracy-dev</code> and other solutions:</p>
-
-<table>
-<thead>
-<tr>
-<th>   Criteria                         </th>
-<th> teracy-dev </th>
-<th> docker-osx-dev </th>
-<th> Docker Toolbox </th>
-<th> Docker native app</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>same workflow on Linux, Mac, Windows</td>
-<td>    ✅      </td>
-<td>       ❌       </td>
-<td>     ❌        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>native speed on mounted volumes     </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ❌        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>2-way file sync                     </td>
-<td>    ✅      </td>
-<td>       ❌       </td>
-<td>     ✅        </td>
-<td>       ✅          </td>
-</tr>
-<tr>
-<td>file watching (inotify)             </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ❌        </td>
-<td>       ✅          </td>
-</tr>
-<tr>
-<td>open source                         </td>
-<td>    ✅      </td>
-<td>       ✅       </td>
-<td>     ✅        </td>
-<td>       ❌          </td>
-</tr>
-<tr>
-<td>customization                       </td>
-<td>    ✅      </td>
-<td>       🚫       </td>
-<td>     🚫        </td>
-<td>       ❌          </td>
-</tr>
-</tbody>
-</table>
-
-
-<p>✅: fully support</p>
-
-<p>❌: no or partial support</p>
-
-<p>🚫: can be achieved but not encouraged</p>
-
-<p>Let me explain the criteria:</p>
-
-<ul>
-<li><p>&ldquo;same workflow on Linux, Mac, Windows&rdquo;: the usage should be the same on Mac, Linux, Windows.
-Docker native app only supports >= Windows 10, that&rsquo;s why it&rsquo;s marked as ❌.</p></li>
-<li><p>&ldquo;native speed on mounted volumes&rdquo;: the speed should be as fast and native as on Linux</p></li>
-<li><p>&ldquo;2-way file sync&rdquo;: for syncing back and forth on mounted volumes, this is mandatory for development</p></li>
-<li><p>&ldquo;file watching (inotify)&rdquo;: for auto reload when files change</p></li>
-<li><p>&ldquo;customization&rdquo;: you have full control and are encouraged to change anything that you want to
-suit your need, no hidden stuff, no lock-in and can still upgrade seamlessly.</p></li>
-</ul>
-
-
-<p>Let&rsquo;s see what the same workflow means when developing a simple hello world <code>nodejs</code> application
-from scratch with teracy-dev by watching the following videos:</p>
-
-<p>On Linux (Ubuntu):</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/ze8p9imprgk" frameborder="0" allowfullscreen></iframe>
-
-
-<p>On Windows:</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/2200zvxIdAs" frameborder="0" allowfullscreen></iframe>
-
-
-<p>On macOS:</p>
-
-<iframe width="100%" height="630" src="https://www.youtube.com/embed/XF-FQQKG8PA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>They all contain the same steps, that&rsquo;s the meaning of the &ldquo;same workflow&rdquo;.</p>
-
-<p><code>teracy-dev</code> is not perfect, though. There are some improvements that we&rsquo;d like to address.</p>
-
-<p>The first thing we&rsquo;d like to improve is to reduce the setup time. It takes time (around 20-30 mins)
-to download the vagrant box (Ubuntu 16.04) for the first time. This is for the first time only, however.
-After the first time, you can destroy and provision the same VM within some minutes. We could use
-some other smaller boxes (for example, boot2docker base box) but we&rsquo;d like to stick to the most popular
-Linux OS that is widely used in production. We try to make development and production environment as
-close as possible. This is by default, you can choose different base boxes as you wish.</p>
-
-<p><code>teracy-dev</code> v0.5.0 is under preview stage, we need to add more documentation and get more community
-feedback.</p>
-
-<p><code>teracy-dev</code> is created to give back to open source community as we learn and get a lot from our amazing
-open source community.</p>
-
-<p>And we need you, please try and let us know your feedback and we&rsquo;ll together fix any problems.</p>
-
-<p>You should get started with <code>teracy-dev</code> here: <a href="http://dev.teracy.org/docs/develop/getting_started.html">http://dev.teracy.org/docs/develop/getting_started.html</a></p>
-
-<p>In summary, <code>teracy-dev</code> brings <code>Docker</code> closer to <code>Vagrant</code> = love.</p>
-
-<p>Thank you and happy hacking with <a href="https://github.com/teracyhq/dev">teracy-dev</a>!</p>
 ]]></content>
   </entry>
   
